@@ -123,9 +123,80 @@
         .cos-212::before { background: var(--dark-blue); }
         .wtw-211::before { background: var(--orange); }
         .wtw-218::before { background: var(--yellow); }
+
+        /* Navigation */
+        .site-nav {
+            background: var(--black);
+            padding: 0 20px;
+            display: flex;
+            align-items: center;
+            gap: 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 3px solid var(--red);
+        }
+
+        .site-nav a {
+            color: #999;
+            text-decoration: none;
+            font-size: 11px;
+            font-weight: 800;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            padding: 16px 20px;
+            transition: color 0.2s ease, background 0.2s ease;
+            font-family: "Futura", "Arial", sans-serif;
+        }
+
+        .site-nav a:hover {
+            color: #fff;
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        .site-nav a.active {
+            color: #fff;
+            border-bottom: 3px solid var(--red);
+            margin-bottom: -3px;
+        }
+
+        .nav-spacer {
+            flex: 1;
+        }
+
+        .nav-label {
+            color: #555;
+            font-size: 10px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            padding-right: 10px;
+            font-family: "Futura", "Arial", sans-serif;
+        }
+
+        @media (max-width: 768px) {
+            .site-nav {
+                padding: 0 10px;
+                flex-wrap: wrap;
+            }
+            .site-nav a {
+                padding: 12px 12px;
+                font-size: 10px;
+            }
+            .nav-label {
+                display: none;
+            }
+        }
     </style>
 </head>
 <body>
+    <nav class="site-nav">
+        <span class="nav-label">Navigate</span>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="Semester1Timetable2026.html" class="active">Semester 1 Timetable</a>
+        <a href="index.html">Semester 2 Timetable</a>
+    </nav>
+
     <div class="container">
         <h1>Timetable</h1>
 

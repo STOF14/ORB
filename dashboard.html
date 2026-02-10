@@ -1,0 +1,1129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semester 1 2026 — Academic Overview</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #000000;
+            --secondary: #E63946;
+            --accent: #457B9D;
+            --bg: #F8F9FA;
+            --grid-line: #D1D5DB;
+            --text-muted: #6B7280;
+        }
+
+        body {
+            background: var(--bg);
+            color: var(--primary);
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* Navigation */
+        .site-nav {
+            background: var(--primary);
+            padding: 0 40px;
+            display: flex;
+            align-items: center;
+            gap: 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 3px solid var(--secondary);
+        }
+
+        .site-nav a {
+            color: #999;
+            text-decoration: none;
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            padding: 16px 20px;
+            transition: color 0.2s ease, background 0.2s ease;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        }
+
+        .site-nav a:hover {
+            color: #fff;
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        .site-nav a.active {
+            color: #fff;
+            border-bottom: 3px solid var(--secondary);
+            margin-bottom: -3px;
+        }
+
+        .nav-spacer {
+            flex: 1;
+        }
+
+        .nav-label {
+            color: #555;
+            font-size: 10px;
+            font-weight: 500;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            padding-right: 10px;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        }
+
+        /* Grid System */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 60px 40px;
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 20px;
+        }
+
+        /* Typography Hierarchy */
+        h1 {
+            font-size: 72px;
+            font-weight: 300;
+            letter-spacing: -2px;
+            line-height: 1;
+            text-transform: uppercase;
+        }
+
+        h2 {
+            font-size: 48px;
+            font-weight: 300;
+            letter-spacing: -1px;
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            font-size: 24px;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+        }
+
+        h4 {
+            font-size: 14px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            margin-bottom: 10px;
+        }
+
+        /* Header */
+        header {
+            grid-column: 1 / -1;
+            border-bottom: 1px solid var(--primary);
+            padding-bottom: 40px;
+            margin-bottom: 40px;
+        }
+
+        .header-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 40px;
+            align-items: end;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+
+        .stat-box {
+            border-left: 3px solid var(--primary);
+            padding-left: 15px;
+        }
+
+        .stat-number {
+            font-size: 48px;
+            font-weight: 300;
+            line-height: 1;
+            margin-bottom: 5px;
+        }
+
+        .stat-label {
+            font-size: 11px;
+            font-weight: 500;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: var(--text-muted);
+        }
+
+        /* Module Cards - Asymmetric Grid */
+        .module {
+            grid-column: span 6;
+            background: white;
+            border: 1px solid var(--primary);
+            padding: 0;
+            margin-bottom: 20px;
+            transition: transform 0.2s ease;
+        }
+
+        .module:hover {
+            transform: translateY(-2px);
+        }
+
+        .module:nth-child(odd) {
+            grid-column: 1 / 8;
+        }
+
+        .module:nth-child(even) {
+            grid-column: 6 / -1;
+        }
+
+        .module-header {
+            background: var(--primary);
+            color: white;
+            padding: 30px;
+            display: grid;
+            grid-template-columns: 1fr auto;
+            align-items: baseline;
+            gap: 20px;
+        }
+
+        .module-code {
+            font-size: 36px;
+            font-weight: 300;
+            letter-spacing: -1px;
+        }
+
+        .credits {
+            font-size: 14px;
+            font-weight: 500;
+            letter-spacing: 1px;
+            border: 2px solid white;
+            padding: 6px 12px;
+        }
+
+        .module-content {
+            padding: 30px;
+        }
+
+        .module-title {
+            font-size: 18px;
+            font-weight: 500;
+            margin-bottom: 30px;
+            letter-spacing: 0.5px;
+        }
+
+        /* Information Grid */
+        .info-section {
+            margin-bottom: 30px;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: 140px 1fr;
+            gap: 15px 20px;
+            font-size: 14px;
+        }
+
+        .info-label {
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            font-size: 11px;
+            color: var(--text-muted);
+        }
+
+        .info-value {
+            font-weight: 400;
+        }
+
+        /* Assessment Table */
+        .assessment-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 14px;
+        }
+
+        .assessment-table th {
+            text-align: left;
+            padding: 12px 15px;
+            background: var(--primary);
+            color: white;
+            font-weight: 500;
+            font-size: 11px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .assessment-table td {
+            padding: 12px 15px;
+            border-bottom: 1px solid var(--grid-line);
+        }
+
+        .assessment-table tr:hover {
+            background: #F3F4F6;
+        }
+
+        .percentage {
+            font-weight: 700;
+            font-size: 18px;
+            color: var(--secondary);
+        }
+
+        /* Warning Box */
+        .warning {
+            background: var(--secondary);
+            color: white;
+            padding: 25px;
+            margin-top: 25px;
+        }
+
+        .warning h4 {
+            color: white;
+            margin-bottom: 12px;
+            font-size: 12px;
+        }
+
+        .warning ul {
+            list-style: none;
+            font-size: 13px;
+            line-height: 1.8;
+        }
+
+        .warning li::before {
+            content: "—";
+            margin-right: 8px;
+        }
+
+        /* Timeline Section */
+        .timeline-section {
+            grid-column: 1 / -1;
+            margin-top: 60px;
+            padding-top: 60px;
+            border-top: 1px solid var(--primary);
+        }
+
+        .timeline-header {
+            margin-bottom: 40px;
+        }
+
+        .timeline {
+            display: grid;
+            grid-template-columns: 180px 1fr;
+            gap: 30px;
+        }
+
+        .timeline-item {
+            display: contents;
+        }
+
+        .timeline-date {
+            font-weight: 700;
+            font-size: 14px;
+            text-align: right;
+            padding-right: 30px;
+            border-right: 3px solid var(--primary);
+        }
+
+        .timeline-content {
+            padding-bottom: 30px;
+        }
+
+        .timeline-title {
+            font-size: 18px;
+            font-weight: 500;
+            margin-bottom: 5px;
+        }
+
+        .timeline-details {
+            font-size: 13px;
+            color: var(--text-muted);
+        }
+
+        .critical-date {
+            color: var(--secondary);
+        }
+
+        /* Footer Links */
+        .footer-links {
+            grid-column: 1 / -1;
+            margin-top: 60px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .link-card {
+            border: 1px solid var(--primary);
+            padding: 25px;
+            text-align: center;
+            text-decoration: none;
+            color: var(--primary);
+            transition: all 0.2s ease;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .link-card:hover {
+            background: var(--primary);
+            color: white;
+        }
+
+        /* Typography Blocks */
+        .text-block {
+            font-size: 13px;
+            line-height: 1.7;
+            margin-bottom: 15px;
+        }
+
+        /* Color Blocks for Visual Interest */
+        .color-accent {
+            width: 40px;
+            height: 3px;
+            background: var(--accent);
+            margin: 15px 0;
+        }
+
+        .color-accent-red {
+            background: var(--secondary);
+        }
+
+        /* Schedule Grid */
+        .schedule-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            font-size: 12px;
+            margin: 20px 0;
+        }
+
+        .schedule-item {
+            padding: 15px;
+            background: #F9FAFB;
+            border-left: 3px solid var(--accent);
+        }
+
+        .schedule-time {
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+                padding: 30px 20px;
+            }
+
+            .module {
+                grid-column: 1 / -1 !important;
+            }
+
+            .header-grid {
+                grid-template-columns: 1fr;
+            }
+
+            h1 {
+                font-size: 48px;
+            }
+
+            h2 {
+                font-size: 36px;
+            }
+
+            .timeline {
+                grid-template-columns: 100px 1fr;
+                gap: 15px;
+            }
+
+            .timeline-date {
+                font-size: 12px;
+            }
+
+            .footer-links {
+                grid-template-columns: 1fr;
+            }
+
+            .site-nav {
+                padding: 0 15px;
+                flex-wrap: wrap;
+            }
+
+            .site-nav a {
+                padding: 12px 12px;
+                font-size: 10px;
+            }
+
+            .nav-label {
+                display: none;
+            }
+        }
+
+        /* Subtle Grid Background */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: 
+                linear-gradient(var(--grid-line) 1px, transparent 1px),
+                linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
+            background-size: 20px 20px;
+            opacity: 0.3;
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        /* Print Styles */
+        @media print {
+            body::before { display: none; }
+            .link-card { border: 1px solid #000; }
+            .site-nav { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <nav class="site-nav">
+        <span class="nav-label">Navigate</span>
+        <a href="dashboard.html" class="active">Dashboard</a>
+        <a href="Semester1Timetable2026.html">Semester 1 Timetable</a>
+        <a href="index.html">Semester 2 Timetable</a>
+    </nav>
+
+    <div class="container">
+        <header>
+            <div class="header-grid">
+                <div>
+                    <h1>Semester<br>1 / 2026</h1>
+                    <div class="color-accent"></div>
+                    <p style="font-size: 14px; color: var(--text-muted); margin-top: 10px;">
+                        University of Pretoria — Academic Programme Overview
+                    </p>
+                </div>
+                <div class="stats-grid">
+                    <div class="stat-box">
+                        <div class="stat-number">56+</div>
+                        <div class="stat-label">Total Credits</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-number">5</div>
+                        <div class="stat-label">Modules</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-number">33</div>
+                        <div class="stat-label">Hours / Week</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-number" style="color: var(--secondary);">40%</div>
+                        <div class="stat-label">Min. Pass</div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- WTW 211 -->
+        <article class="module">
+            <div class="module-header">
+                <div class="module-code">WTW 211</div>
+                <div class="credits">12 CREDITS</div>
+            </div>
+            <div class="module-content">
+                <h3 class="module-title">Linear Algebra</h3>
+                <div class="color-accent"></div>
+
+                <div class="info-section">
+                    <h4>Instructors</h4>
+                    <div class="info-grid">
+                        <div class="info-label">Coordinator</div>
+                        <div class="info-value">Dr SY Madanha — Maths 2-22</div>
+                        <div class="info-label">Lecturer</div>
+                        <div class="info-value">Prof BG Rodrigues — Botany 2-10</div>
+                        <div class="info-label">Contact</div>
+                        <div class="info-value">wtw211@up.ac.za</div>
+                    </div>
+                </div>
+
+                <div class="info-section">
+                    <h4>Schedule</h4>
+                    <div class="schedule-grid">
+                        <div class="schedule-item">
+                            <div class="schedule-time">Group 1</div>
+                            Mon 12:30–13:20 • Fri 07:30–08:20
+                        </div>
+                        <div class="schedule-item">
+                            <div class="schedule-time">Group 2</div>
+                            Tue 13:30–14:20 • Thu 16:30–17:20
+                        </div>
+                        <div class="schedule-item" style="grid-column: span 2;">
+                            <div class="schedule-time">Tutorials</div>
+                            Wed 07:30–08:50 (Te Water) or 15:30–16:50 (Roos Hall)
+                        </div>
+                    </div>
+                </div>
+
+                <div class="info-section">
+                    <h4>Assessment</h4>
+                    <table class="assessment-table">
+                        <thead>
+                            <tr>
+                                <th>Component</th>
+                                <th>Date</th>
+                                <th style="text-align: right;">Weight</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Semester Test 1</td>
+                                <td>Tuesday, 18 March</td>
+                                <td style="text-align: right;"><span class="percentage">35%</span></td>
+                            </tr>
+                            <tr>
+                                <td>Semester Test 2</td>
+                                <td>Friday, 8 May</td>
+                                <td style="text-align: right;"><span class="percentage">35%</span></td>
+                            </tr>
+                            <tr>
+                                <td>Assignments + Tutorials</td>
+                                <td>5 Assignments, 3 Tutorial Tests</td>
+                                <td style="text-align: right;"><span class="percentage">30%</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p class="text-block" style="font-weight: 500;">
+                        Final Mark: 60% Semester + 40% Exam
+                    </p>
+                </div>
+
+                <div class="info-section">
+                    <h4>Topics</h4>
+                    <p class="text-block">
+                        Inverse matrices • Spanning sets • Linear independence • Subspaces • 
+                        Dimension and rank • Linear transformations • Eigenvalues and eigenvectors • 
+                        Similarity and diagonalization
+                    </p>
+                </div>
+
+                <div class="warning">
+                    <h4>Requirements</h4>
+                    <ul>
+                        <li>Exam admission requires ≥40% semester mark</li>
+                        <li>Pass requires ≥50% final and ≥40% exam</li>
+                        <li>No calculators permitted</li>
+                        <li>Tutorial attendance compulsory</li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+        <!-- WTW 218 -->
+        <article class="module">
+            <div class="module-header">
+                <div class="module-code">WTW 218</div>
+                <div class="credits">12 CREDITS</div>
+            </div>
+            <div class="module-content">
+                <h3 class="module-title">Calculus 218 — Multivariable Functions</h3>
+                <div class="color-accent"></div>
+
+                <div class="info-section">
+                    <h4>Instructors</h4>
+                    <div class="info-grid">
+                        <div class="info-label">Coordinator</div>
+                        <div class="info-value">Dr W van Amstel — Maths 2-16</div>
+                        <div class="info-label">Lecturer</div>
+                        <div class="info-value">Dr M Wortel — Maths 2-19</div>
+                        <div class="info-label">Contact</div>
+                        <div class="info-value">wtw218@up.ac.za</div>
+                    </div>
+                </div>
+
+                <div class="info-section">
+                    <h4>Assessment</h4>
+                    <table class="assessment-table">
+                        <thead>
+                            <tr>
+                                <th>Component</th>
+                                <th>Details</th>
+                                <th style="text-align: right;">Weight</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Semester Test 1</td>
+                                <td>Monday, 16 March</td>
+                                <td style="text-align: right;"><span class="percentage">35%</span></td>
+                            </tr>
+                            <tr>
+                                <td>Semester Test 2</td>
+                                <td>Saturday, 2 May</td>
+                                <td style="text-align: right;"><span class="percentage">35%</span></td>
+                            </tr>
+                            <tr>
+                                <td>Tutorial Tests</td>
+                                <td>Best 3 of 4</td>
+                                <td style="text-align: right;"><span class="percentage">25%</span></td>
+                            </tr>
+                            <tr>
+                                <td>Homework</td>
+                                <td>8 Assignments via ClickUP</td>
+                                <td style="text-align: right;"><span class="percentage">5%</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="info-section">
+                    <h4>Topics</h4>
+                    <p class="text-block">
+                        Functions of several variables • Limits and continuity • Partial derivatives • 
+                        Differentiability • Chain rule • Implicit function theorem • Gradient • 
+                        Optimization • Lagrange multipliers • Double and triple integrals • 
+                        Polar, cylindrical, and spherical coordinates
+                    </p>
+                </div>
+
+                <div class="warning">
+                    <h4>Critical Dates</h4>
+                    <ul>
+                        <li>Tutorial registration deadline: Thursday, 12 February</li>
+                        <li>HW1 due: Monday, 2 March (Chapter 2)</li>
+                        <li>Exam: Saturday, 13 June 2026</li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+        <!-- PHY 255 -->
+        <article class="module">
+            <div class="module-header">
+                <div class="module-code">PHY 255</div>
+                <div class="credits">24 CREDITS</div>
+            </div>
+            <div class="module-content">
+                <h3 class="module-title">Physics — Thermodynamics, Modern Physics, Practicals</h3>
+                <div class="color-accent color-accent-red"></div>
+
+                <div class="info-section">
+                    <h4>Instructors</h4>
+                    <div class="info-grid">
+                        <div class="info-label">Coordinator</div>
+                        <div class="info-value">Dr C Janse van Rensburg — NSc1 5-4</div>
+                        <div class="info-label">Thermodynamics</div>
+                        <div class="info-value">Dr AGJ Machatine (9 Feb – 5 Mar)</div>
+                        <div class="info-label">Modern Physics</div>
+                        <div class="info-value">Dr C Janse van Rensburg (5 Mar – 26 May)</div>
+                        <div class="info-label">Practicals</div>
+                        <div class="info-value">Prof CC Theron — NSc1 5-12</div>
+                    </div>
+                </div>
+
+                <div class="info-section">
+                    <h4>Semester Mark Breakdown (50%)</h4>
+                    <table class="assessment-table">
+                        <thead>
+                            <tr>
+                                <th>Component</th>
+                                <th style="text-align: right;">Weight</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Thermodynamics Continuous</td>
+                                <td style="text-align: right;"><span class="percentage">20.42%</span></td>
+                            </tr>
+                            <tr>
+                                <td>Modern Physics Continuous</td>
+                                <td style="text-align: right;"><span class="percentage">49.58%</span></td>
+                            </tr>
+                            <tr>
+                                <td>Modelling (Leg 1 + 3)</td>
+                                <td style="text-align: right;"><span class="percentage">15%</span></td>
+                            </tr>
+                            <tr>
+                                <td>Error Analysis (Leg 2)</td>
+                                <td style="text-align: right;"><span class="percentage">15%</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="info-section">
+                    <h4>Practical Structure</h4>
+                    <p class="text-block">
+                        <strong>Two-Phase Submission System:</strong> Phase 1 must be completed in-class 
+                        (3-hour session). Phase 2 project work has 48-hour deadline. 12 practicals total: 
+                        7 Modelling (P01–04, P10–12) and 5 Error Analysis (P05–09).
+                    </p>
+                </div>
+
+                <div class="warning">
+                    <h4>Critical Requirements</h4>
+                    <ul>
+                        <li>40% subminimum in all 4 sections required</li>
+                        <li>All 12 practicals must be completed</li>
+                        <li>No late reports at semester end = Exam refusal</li>
+                        <li>Test 1: Wednesday, 19 March, 15:00–18:00</li>
+                        <li>Test 2: Friday, 16 May, 15:00–18:00</li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+        <!-- COS 212 -->
+        <article class="module">
+            <div class="module-header">
+                <div class="module-code">COS 212</div>
+                <div class="credits">CONTINUOUS</div>
+            </div>
+            <div class="module-content">
+                <h3 class="module-title">Data Structures and Algorithms</h3>
+                <div class="color-accent"></div>
+
+                <div class="info-section">
+                    <h4>Instructors</h4>
+                    <div class="info-grid">
+                        <div class="info-label">Coordinator</div>
+                        <div class="info-value">Mr Werner Hauger — IT 4-20</div>
+                        <div class="info-label">Lecturer</div>
+                        <div class="info-value">Mr Sean Macmillan</div>
+                        <div class="info-label">Contact</div>
+                        <div class="info-value">cos212queries@cs.up.ac.za</div>
+                    </div>
+                </div>
+
+                <div class="info-section">
+                    <h4>Schedule</h4>
+                    <div class="schedule-grid">
+                        <div class="schedule-item">
+                            <div class="schedule-time">Lectures</div>
+                            Mon 16:30 • Wed 09:30 • Thu 16:30
+                        </div>
+                        <div class="schedule-item">
+                            <div class="schedule-time">Tutorial</div>
+                            Fri 09:30 (Louw Hall)
+                        </div>
+                        <div class="schedule-item" style="grid-column: span 2;">
+                            <div class="schedule-time">Practicals (Informatorium)</div>
+                            Tue 10:30 • Wed 14:30 • Fri 11:30 (3 hours each)
+                        </div>
+                    </div>
+                </div>
+
+                <div class="info-section">
+                    <h4>Assessment</h4>
+                    <table class="assessment-table">
+                        <thead>
+                            <tr>
+                                <th>Component</th>
+                                <th>Details</th>
+                                <th style="text-align: right;">Weight</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Practicals</td>
+                                <td>Best 4 of 5</td>
+                                <td style="text-align: right;"><span class="percentage">20%</span></td>
+                            </tr>
+                            <tr>
+                                <td>Tutorials</td>
+                                <td>Best 9 of 11</td>
+                                <td style="text-align: right;"><span class="percentage">10%</span></td>
+                            </tr>
+                            <tr>
+                                <td>Homework</td>
+                                <td>3 Assignments</td>
+                                <td style="text-align: right;"><span class="percentage">10%</span></td>
+                            </tr>
+                            <tr>
+                                <td>Exam Opportunities</td>
+                                <td>3 × 20% each</td>
+                                <td style="text-align: right;"><span class="percentage">60%</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="info-section">
+                    <h4>Exam Opportunities (1.5 hours, open book)</h4>
+                    <div class="info-grid">
+                        <div class="info-label">EO1</div>
+                        <div class="info-value">28 March, 10:00–11:30</div>
+                        <div class="info-label">EO2</div>
+                        <div class="info-value">7 May, 10:00–11:30</div>
+                        <div class="info-label">EO3</div>
+                        <div class="info-value">8 June, 11:15–12:45</div>
+                    </div>
+                </div>
+
+                <div class="warning">
+                    <h4>Requirements</h4>
+                    <ul>
+                        <li>Pass: ≥50% final and ≥40% avg on exam opportunities</li>
+                        <li>EO3 entrance requires ≥20% final mark</li>
+                        <li>Practicals only in booked Informatorium labs</li>
+                        <li>No Java built-in data structures unless permitted</li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+        <!-- COS 210 -->
+        <article class="module">
+            <div class="module-header">
+                <div class="module-code">COS 210</div>
+                <div class="credits">8 CREDITS</div>
+            </div>
+            <div class="module-content">
+                <h3 class="module-title">Theoretical Computer Science</h3>
+                <div class="color-accent"></div>
+
+                <div class="info-section">
+                    <h4>Instructors</h4>
+                    <div class="info-grid">
+                        <div class="info-label">Coordinator</div>
+                        <div class="info-value">Prof Nils Timm — IT 4-39</div>
+                        <div class="info-label">Assistant</div>
+                        <div class="info-value">Mr Steven Jordaan (Tutorials)</div>
+                    </div>
+                </div>
+
+                <div class="info-section">
+                    <h4>Schedule</h4>
+                    <div class="schedule-grid">
+                        <div class="schedule-item">
+                            <div class="schedule-time">Lectures</div>
+                            Mon 11:30 • Wed 08:30 (IT 2-26)
+                        </div>
+                        <div class="schedule-item">
+                            <div class="schedule-time">Tutorial</div>
+                            Fri 14:30–15:20 (IT 2-26)
+                        </div>
+                    </div>
+                </div>
+
+                <div class="info-section">
+                    <h4>Semester Mark (60%)</h4>
+                    <table class="assessment-table">
+                        <thead>
+                            <tr>
+                                <th>Component</th>
+                                <th>Details</th>
+                                <th style="text-align: right;">Weight</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Worksheets</td>
+                                <td>Best 9 of 10</td>
+                                <td style="text-align: right;"><span class="percentage">10%</span></td>
+                            </tr>
+                            <tr>
+                                <td>Class Tests</td>
+                                <td>Best 2 of 3</td>
+                                <td style="text-align: right;"><span class="percentage">20%</span></td>
+                            </tr>
+                            <tr>
+                                <td>Semester Test 1</td>
+                                <td>Wednesday, 18 March</td>
+                                <td style="text-align: right;"><span class="percentage">35%</span></td>
+                            </tr>
+                            <tr>
+                                <td>Semester Test 2</td>
+                                <td>Saturday, 16 May</td>
+                                <td style="text-align: right;"><span class="percentage">35%</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p class="text-block" style="font-weight: 500; margin-top: 15px;">
+                        Exam (40%): Friday, 6 June, 07:30 (Informatorium)
+                    </p>
+                </div>
+
+                <div class="info-section">
+                    <h4>Topics</h4>
+                    <p class="text-block">
+                        Finite automata • Regular languages • Context-free grammars • 
+                        Pushdown automata • Turing machines • Church-Turing thesis • 
+                        Decidability • P vs NP • NP-complete class
+                    </p>
+                </div>
+
+                <div class="warning">
+                    <h4>Requirements</h4>
+                    <ul>
+                        <li>Exam refusal if semester mark < 40%</li>
+                        <li>Pass requires ≥40% exam and ≥50% final</li>
+                        <li>Worksheets: Released Wed, due next Tue</li>
+                        <li>All tests at Informatorium (on campus only)</li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+        <!-- Timeline -->
+        <section class="timeline-section">
+            <div class="timeline-header">
+                <h2>Critical Dates</h2>
+                <div class="color-accent color-accent-red"></div>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">09 Feb</div>
+                    <div class="timeline-content">
+                        <div class="timeline-title">Semester Begins</div>
+                        <div class="timeline-details">PHY 255 Thermodynamics starts</div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">12 Feb</div>
+                    <div class="timeline-content">
+                        <div class="timeline-title">Registration Deadline</div>
+                        <div class="timeline-details">WTW 218 tutorial registration closes</div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">05 Mar</div>
+                    <div class="timeline-content">
+                        <div class="timeline-title">Course Transition</div>
+                        <div class="timeline-details">PHY 255: Thermodynamics → Modern Physics</div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date critical-date">16 Mar</div>
+                    <div class="timeline-content">
+                        <div class="timeline-title critical-date">WTW 218 Test 1</div>
+                        <div class="timeline-details">Semester Test 1</div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date critical-date">18 Mar</div>
+                    <div class="timeline-content">
+                        <div class="timeline-title critical-date">Double Header</div>
+                        <div class="timeline-details">WTW 211 + COS 210 Semester Tests</div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date critical-date">19 Mar</div>
+                    <div class="timeline-content">
+                        <div class="timeline-title critical-date">PHY 255 Test 1</div>
+                        <div class="timeline-details">15:00–18:00 (3 hours)</div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date critical-date">28 Mar</div>
+                    <div class="timeline-content">
+                        <div class="timeline-title critical-date">COS 212 EO1</div>
+                        <div class="timeline-details">10:00–11:30, Centenary 4,5,6</div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">29 Mar – 06 Apr</div>
+                    <div class="timeline-content">
+                        <div class="timeline-title">Recess Week</div>
+                        <div class="timeline-details">No lectures (WTW modules)</div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date critical-date">02 May</div>
+                    <div class="timeline-content">
+                        <div class="timeline-title critical-date">WTW 218 Test 2</div>
+                        <div class="timeline-details">Saturday test</div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date critical-date">07 May</div>
+                    <div class="timeline-content">
+                        <div class="timeline-title critical-date">COS 212 EO2</div>
+                        <div class="timeline-details">10:00–11:30, Centenary 4,5,6</div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date critical-date">08 May</div>
+                    <div class="timeline-content">
+                        <div class="timeline-title critical-date">WTW 211 Test 2</div>
+                        <div class="timeline-details">Friday</div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date critical-date">16 May</div>
+                    <div class="timeline-content">
+                        <div class="timeline-title critical-date">Triple Header Day</div>
+                        <div class="timeline-details">COS 210 ST2 (12:30) + PHY 255 Test 2 (15:00)</div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date critical-date">06 Jun</div>
+                    <div class="timeline-content">
+                        <div class="timeline-title critical-date">COS 210 Exam</div>
+                        <div class="timeline-details">07:30, Informatorium</div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date critical-date">08 Jun</div>
+                    <div class="timeline-content">
+                        <div class="timeline-title critical-date">COS 212 EO3</div>
+                        <div class="timeline-details">11:15–12:45 (≥20% required)</div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date critical-date">13 Jun</div>
+                    <div class="timeline-content">
+                        <div class="timeline-title critical-date">WTW 218 Exam</div>
+                        <div class="timeline-details">Saturday</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer Links -->
+        <div class="footer-links">
+            <a href="https://clickup.up.ac.za" class="link-card" target="_blank">ClickUP Portal</a>
+            <a href="http://portal.cs.up.ac.za" class="link-card" target="_blank">CS Portal</a>
+            <a href="http://ff.cs.up.ac.za" class="link-card" target="_blank">Fitchfork</a>
+            <a href="https://www.library.up.ac.za" class="link-card" target="_blank">Library</a>
+            <a href="mailto:fly@up.ac.za" class="link-card">FLY@UP Support</a>
+            <a href="tel:0124202333" class="link-card">Counselling</a>
+            <a href="tel:0800006428" class="link-card">Crisis Line</a>
+            <a href="mailto:cos212queries@cs.up.ac.za" class="link-card">COS 212</a>
+        </div>
+
+        <footer style="grid-column: 1 / -1; margin-top: 60px; padding-top: 40px; border-top: 1px solid var(--grid-line);">
+            <p style="font-size: 11px; color: var(--text-muted); letter-spacing: 1px; text-transform: uppercase;">
+                University of Pretoria — Semester 1, 2026 — Non-official reference
+            </p>
+            <p style="font-size: 11px; color: var(--text-muted); margin-top: 10px;">
+                Verify all dates and requirements via official channels • ClickUP for updates
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
