@@ -2,8 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Timetable</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="apple-mobile-web-app-title" content="Timetable" />
+    <title>Semester 2 — Timetable</title>
     <style>
         :root {
             --red: #e63946;
@@ -175,17 +179,197 @@
         }
 
         @media (max-width: 768px) {
+            body {
+                padding: 0 0 80px 0;
+                padding-bottom: calc(80px + env(safe-area-inset-bottom));
+            }
+
+            .container {
+                max-width: 100%;
+                padding: 15px 12px;
+            }
+
+            h1 {
+                font-size: 28px;
+                margin-bottom: 15px;
+            }
+
             .site-nav {
-                padding: 0 10px;
-                flex-wrap: wrap;
-            }
-            .site-nav a {
-                padding: 12px 12px;
-                font-size: 10px;
-            }
-            .nav-label {
                 display: none;
             }
+
+            .bottom-nav {
+                display: flex;
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                background: var(--black);
+                border-top: 3px solid var(--red);
+                z-index: 200;
+                padding-bottom: env(safe-area-inset-bottom);
+            }
+
+            .bottom-nav a {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 4px;
+                padding: 10px 5px;
+                color: #666;
+                text-decoration: none;
+                font-family: "Futura", "Arial", sans-serif;
+                font-size: 9px;
+                font-weight: 800;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                transition: color 0.2s ease;
+                -webkit-tap-highlight-color: transparent;
+            }
+
+            .bottom-nav a.active {
+                color: #fff;
+            }
+
+            .bottom-nav .nav-icon {
+                font-size: 20px;
+                line-height: 1;
+            }
+
+            .whats-next {
+                display: block;
+                background: var(--black);
+                color: #fff;
+                padding: 16px;
+                margin-bottom: 15px;
+                border-left: 5px solid var(--red);
+            }
+
+            .whats-next-label {
+                font-size: 9px;
+                font-weight: 800;
+                letter-spacing: 2px;
+                text-transform: uppercase;
+                color: var(--red);
+                margin-bottom: 6px;
+            }
+
+            .whats-next-class {
+                font-size: 16px;
+                font-weight: 700;
+                margin-bottom: 3px;
+            }
+
+            .whats-next-time {
+                font-size: 12px;
+                color: #999;
+                font-weight: 600;
+            }
+
+            .whats-next.done {
+                border-left-color: #666;
+            }
+
+            .whats-next.done .whats-next-label {
+                color: #666;
+            }
+
+            .day {
+                margin-bottom: 12px;
+                border-width: 2px;
+            }
+
+            .day-header {
+                font-size: 16px;
+                padding: 12px 15px;
+                position: sticky;
+                top: 0;
+                z-index: 10;
+            }
+
+            .day-header::before {
+                width: 28px;
+                height: 28px;
+            }
+
+            .day.today {
+                border-color: var(--red);
+                border-width: 2px;
+            }
+
+            .day.today .day-header {
+                background: var(--red);
+            }
+
+            .day.today .day-header::before {
+                background: #fff !important;
+            }
+
+            .day.not-today {
+                opacity: 0.55;
+                transition: opacity 0.3s ease;
+            }
+
+            .day.not-today:active,
+            .day.not-today:focus-within {
+                opacity: 1;
+            }
+
+            .event {
+                grid-template-columns: 90px 1fr;
+                gap: 10px;
+                padding: 12px 15px;
+                border-bottom-width: 1px;
+                min-height: 44px;
+            }
+
+            .event::before {
+                width: 5px;
+            }
+
+            .time {
+                font-size: 13px;
+            }
+
+            .activity {
+                font-size: 13px;
+            }
+
+            .event.empty.hidden-empty {
+                display: none;
+            }
+
+            .toggle-empty {
+                display: inline-block;
+                background: none;
+                border: 2px solid var(--black);
+                color: var(--black);
+                font-family: "Futura", "Arial", sans-serif;
+                font-size: 10px;
+                font-weight: 800;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                padding: 8px 14px;
+                margin-bottom: 15px;
+                cursor: pointer;
+                -webkit-tap-highlight-color: transparent;
+            }
+
+            .toggle-empty.active {
+                background: var(--black);
+                color: #fff;
+            }
+        }
+
+        @media (min-width: 769px) {
+            .bottom-nav { display: none; }
+            .whats-next { display: none; }
+            .toggle-empty { display: none; }
+        }
+
+        .nav-label {
+            display: none;
         }
     </style>
 </head>
@@ -199,6 +383,14 @@
 
     <div class="container">
         <h1>Timetable</h1>
+
+        <div class="whats-next" id="whatsNext">
+            <div class="whats-next-label">Next Up</div>
+            <div class="whats-next-class" id="nextClass">—</div>
+            <div class="whats-next-time" id="nextTime"></div>
+        </div>
+
+        <button class="toggle-empty active" id="toggleEmpty" onclick="toggleEmptySlots()">Hide Free Periods</button>
 
         <div class="day monday">
             <div class="day-header">Monday</div>
@@ -270,5 +462,130 @@
             <div class="event cos-210"><div class="time">16:30-17:20</div><div class="activity">COS 210 Practical (IT 2-26)</div></div>
         </div>
     </div>
+
+    <nav class="bottom-nav">
+        <a href="dashboard.html">
+            <span class="nav-icon">◻</span>
+            Overview
+        </a>
+        <a href="Semester1Timetable2026.html">
+            <span class="nav-icon">①</span>
+            Sem 1
+        </a>
+        <a href="index.html" class="active">
+            <span class="nav-icon">②</span>
+            Sem 2
+        </a>
+    </nav>
+
+    <script>
+        const DAYS = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'];
+
+        function highlightToday() {
+            const today = DAYS[new Date().getDay()];
+            const dayDivs = document.querySelectorAll('.day');
+            let todayFound = false;
+
+            dayDivs.forEach(day => {
+                const dayClass = Array.from(day.classList).find(c => DAYS.includes(c));
+                if (dayClass === today) {
+                    day.classList.add('today');
+                    todayFound = true;
+                    if (window.innerWidth <= 768) {
+                        setTimeout(() => day.scrollIntoView({ behavior: 'smooth', block: 'start' }), 300);
+                    }
+                } else {
+                    day.classList.add('not-today');
+                }
+            });
+
+            if (!todayFound) {
+                dayDivs.forEach(d => d.classList.remove('not-today'));
+            }
+        }
+
+        function updateWhatsNext() {
+            const banner = document.getElementById('whatsNext');
+            const classEl = document.getElementById('nextClass');
+            const timeEl = document.getElementById('nextTime');
+            if (!banner) return;
+
+            const now = new Date();
+            const today = DAYS[now.getDay()];
+            const currentMinutes = now.getHours() * 60 + now.getMinutes();
+
+            const todayBlock = document.querySelector('.day.' + today);
+            if (!todayBlock) {
+                classEl.textContent = 'No classes today';
+                timeEl.textContent = 'Enjoy your weekend';
+                banner.classList.add('done');
+                return;
+            }
+
+            const events = todayBlock.querySelectorAll('.event:not(.empty)');
+            let nextEvent = null;
+            let currentEvent = null;
+
+            events.forEach(ev => {
+                const timeText = ev.querySelector('.time').textContent;
+                const [startStr, endStr] = timeText.split('-');
+                const [sH, sM] = startStr.split(':').map(Number);
+                const [eH, eM] = endStr.split(':').map(Number);
+                const startMin = sH * 60 + sM;
+                const endMin = eH * 60 + eM;
+
+                if (currentMinutes >= startMin && currentMinutes < endMin) {
+                    currentEvent = { el: ev, start: startStr, end: endStr };
+                } else if (currentMinutes < startMin && !nextEvent) {
+                    nextEvent = { el: ev, start: startStr, end: endStr };
+                }
+            });
+
+            if (currentEvent) {
+                const text = currentEvent.el.querySelector('.activity').textContent.trim();
+                banner.querySelector('.whats-next-label').textContent = 'Right Now';
+                classEl.textContent = text;
+                timeEl.textContent = currentEvent.start + ' — ' + currentEvent.end;
+                const cls = Array.from(currentEvent.el.classList).find(c => c.includes('-'));
+                if (cls === 'phy-255') banner.style.borderLeftColor = '#e63946';
+                else if (cls === 'cos-210') banner.style.borderLeftColor = '#457b9d';
+                else if (cls === 'cos-212') banner.style.borderLeftColor = '#1d3557';
+                else if (cls === 'wtw-211') banner.style.borderLeftColor = '#f4a261';
+                else if (cls === 'wtw-218') banner.style.borderLeftColor = '#e9c46a';
+            } else if (nextEvent) {
+                const text = nextEvent.el.querySelector('.activity').textContent.trim();
+                banner.querySelector('.whats-next-label').textContent = 'Next Up';
+                classEl.textContent = text;
+                timeEl.textContent = nextEvent.start + ' — ' + nextEvent.end;
+                const cls = Array.from(nextEvent.el.classList).find(c => c.includes('-'));
+                if (cls === 'phy-255') banner.style.borderLeftColor = '#e63946';
+                else if (cls === 'cos-210') banner.style.borderLeftColor = '#457b9d';
+                else if (cls === 'cos-212') banner.style.borderLeftColor = '#1d3557';
+                else if (cls === 'wtw-211') banner.style.borderLeftColor = '#f4a261';
+                else if (cls === 'wtw-218') banner.style.borderLeftColor = '#e9c46a';
+            } else {
+                classEl.textContent = 'Done for today';
+                timeEl.textContent = 'No more classes';
+                banner.classList.add('done');
+            }
+        }
+
+        let emptyHidden = true;
+        function toggleEmptySlots() {
+            const empties = document.querySelectorAll('.event.empty');
+            const btn = document.getElementById('toggleEmpty');
+            emptyHidden = !emptyHidden;
+            empties.forEach(e => e.classList.toggle('hidden-empty', emptyHidden));
+            btn.textContent = emptyHidden ? 'Show Free Periods' : 'Hide Free Periods';
+            btn.classList.toggle('active', emptyHidden);
+        }
+
+        highlightToday();
+        updateWhatsNext();
+        if (window.innerWidth <= 768) {
+            document.querySelectorAll('.event.empty').forEach(e => e.classList.add('hidden-empty'));
+        }
+        setInterval(updateWhatsNext, 60000);
+    </script>
 </body>
 </html>

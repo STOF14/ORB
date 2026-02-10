@@ -2,7 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="theme-color" content="#000000">
+    <meta name="apple-mobile-web-app-title" content="Dashboard">
     <title>Semester 1 2026 — Academic Overview</title>
     <style>
         * {
@@ -18,6 +22,11 @@
             --bg: #F8F9FA;
             --grid-line: #D1D5DB;
             --text-muted: #6B7280;
+            --mod-red: #E63946;
+            --mod-blue: #457B9D;
+            --mod-dark-blue: #1D3557;
+            --mod-orange: #F4A261;
+            --mod-yellow: #E9C46A;
         }
 
         body {
@@ -28,6 +37,7 @@
             line-height: 1.6;
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
+            scroll-behavior: smooth;
         }
 
         /* Navigation */
@@ -399,6 +409,25 @@
             background: var(--secondary);
         }
 
+        /* Per-module accent colors */
+        .module-wtw-211 { border-left: 5px solid var(--mod-orange); }
+        .module-wtw-218 { border-left: 5px solid var(--mod-yellow); }
+        .module-phy-255 { border-left: 5px solid var(--mod-red); }
+        .module-cos-212 { border-left: 5px solid var(--mod-dark-blue); }
+        .module-cos-210 { border-left: 5px solid var(--mod-blue); }
+
+        .module-wtw-211 .color-accent { background: var(--mod-orange); }
+        .module-wtw-218 .color-accent { background: var(--mod-yellow); }
+        .module-phy-255 .color-accent { background: var(--mod-red); }
+        .module-cos-212 .color-accent { background: var(--mod-dark-blue); }
+        .module-cos-210 .color-accent { background: var(--mod-blue); }
+
+        .module-wtw-211 .schedule-item { border-left-color: var(--mod-orange); }
+        .module-wtw-218 .schedule-item { border-left-color: var(--mod-yellow); }
+        .module-phy-255 .schedule-item { border-left-color: var(--mod-red); }
+        .module-cos-212 .schedule-item { border-left-color: var(--mod-dark-blue); }
+        .module-cos-210 .schedule-item { border-left-color: var(--mod-blue); }
+
         /* Schedule Grid */
         .schedule-grid {
             display: grid;
@@ -421,53 +450,233 @@
 
         /* Responsive */
         @media (max-width: 768px) {
+            body {
+                padding-bottom: calc(80px + env(safe-area-inset-bottom));
+            }
+
             .container {
                 grid-template-columns: 1fr;
-                padding: 30px 20px;
+                padding: 20px 15px;
+                gap: 12px;
             }
 
             .module {
                 grid-column: 1 / -1 !important;
+                margin-bottom: 8px;
             }
 
             .header-grid {
                 grid-template-columns: 1fr;
+                gap: 25px;
             }
 
             h1 {
-                font-size: 48px;
+                font-size: 42px;
             }
 
             h2 {
-                font-size: 36px;
+                font-size: 28px;
             }
 
-            .timeline {
-                grid-template-columns: 100px 1fr;
-                gap: 15px;
+            .stats-grid {
+                grid-template-columns: repeat(4, 1fr);
+                gap: 8px;
             }
 
-            .timeline-date {
+            .stat-number {
+                font-size: 28px;
+            }
+
+            .stat-label {
+                font-size: 9px;
+            }
+
+            .stat-box {
+                border-left-width: 2px;
+                padding-left: 10px;
+            }
+
+            /* Module header — tap to collapse */
+            .module-header {
+                padding: 20px;
+                cursor: pointer;
+                -webkit-tap-highlight-color: transparent;
+            }
+
+            .module-header::after {
+                content: '▾';
+                font-size: 18px;
+                color: rgba(255,255,255,0.5);
+                position: absolute;
+                right: 20px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+
+            .module-header {
+                position: relative;
+            }
+
+            .module-code {
+                font-size: 24px;
+            }
+
+            .credits {
+                font-size: 11px;
+                padding: 4px 8px;
+                border-width: 1px;
+            }
+
+            .module-content {
+                padding: 20px 15px;
+            }
+
+            .module.collapsed .module-content {
+                display: none;
+            }
+
+            .module.collapsed .module-header::after {
+                content: '▸';
+            }
+
+            .module-title {
+                font-size: 15px;
+                margin-bottom: 20px;
+            }
+
+            /* Info grid */
+            .info-grid {
+                grid-template-columns: 1fr;
+                gap: 8px;
+            }
+
+            .info-label {
+                margin-top: 5px;
+            }
+
+            /* Tables */
+            .assessment-table th,
+            .assessment-table td {
+                padding: 10px 10px;
                 font-size: 12px;
             }
 
-            .footer-links {
+            .percentage {
+                font-size: 15px;
+            }
+
+            /* Schedule grid */
+            .schedule-grid {
                 grid-template-columns: 1fr;
             }
 
-            .site-nav {
-                padding: 0 15px;
-                flex-wrap: wrap;
+            .schedule-item[style*="grid-column: span 2"] {
+                grid-column: span 1 !important;
             }
 
-            .site-nav a {
-                padding: 12px 12px;
+            /* Warning boxes */
+            .warning {
+                padding: 18px;
+                margin-top: 18px;
+            }
+
+            .warning ul {
+                font-size: 12px;
+            }
+
+            /* Timeline */
+            .timeline-section {
+                margin-top: 30px;
+                padding-top: 30px;
+            }
+
+            .timeline {
+                grid-template-columns: 80px 1fr;
+                gap: 10px;
+            }
+
+            .timeline-date {
+                font-size: 11px;
+                padding-right: 15px;
+            }
+
+            .timeline-title {
+                font-size: 14px;
+            }
+
+            .timeline-content {
+                padding-bottom: 20px;
+            }
+
+            /* Footer links */
+            .footer-links {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 10px;
+                margin-top: 30px;
+            }
+
+            .link-card {
+                padding: 18px 10px;
                 font-size: 10px;
+                min-height: 44px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            /* Hide top nav on mobile */
+            .site-nav {
+                display: none;
+            }
+
+            /* Bottom tab bar */
+            .bottom-nav {
+                display: flex;
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                background: #000;
+                border-top: 3px solid #E63946;
+                z-index: 200;
+                padding-bottom: env(safe-area-inset-bottom);
+            }
+
+            .bottom-nav a {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 4px;
+                padding: 10px 5px;
+                color: #666;
+                text-decoration: none;
+                font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+                font-size: 9px;
+                font-weight: 700;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                transition: color 0.2s ease;
+                -webkit-tap-highlight-color: transparent;
+            }
+
+            .bottom-nav a.active {
+                color: #fff;
+            }
+
+            .bottom-nav .nav-icon {
+                font-size: 20px;
+                line-height: 1;
             }
 
             .nav-label {
                 display: none;
             }
+        }
+
+        /* Desktop: hide mobile-only elements */
+        @media (min-width: 769px) {
+            .bottom-nav { display: none; }
         }
 
         /* Subtle Grid Background */
@@ -535,7 +744,7 @@
         </header>
 
         <!-- WTW 211 -->
-        <article class="module">
+        <article class="module module-wtw-211" id="wtw-211">
             <div class="module-header">
                 <div class="module-code">WTW 211</div>
                 <div class="credits">12 CREDITS</div>
@@ -629,7 +838,7 @@
         </article>
 
         <!-- WTW 218 -->
-        <article class="module">
+        <article class="module module-wtw-218" id="wtw-218">
             <div class="module-header">
                 <div class="module-code">WTW 218</div>
                 <div class="credits">12 CREDITS</div>
@@ -707,14 +916,14 @@
         </article>
 
         <!-- PHY 255 -->
-        <article class="module">
+        <article class="module module-phy-255" id="phy-255">
             <div class="module-header">
                 <div class="module-code">PHY 255</div>
                 <div class="credits">24 CREDITS</div>
             </div>
             <div class="module-content">
                 <h3 class="module-title">Physics — Thermodynamics, Modern Physics, Practicals</h3>
-                <div class="color-accent color-accent-red"></div>
+                <div class="color-accent"></div>
 
                 <div class="info-section">
                     <h4>Instructors</h4>
@@ -783,7 +992,7 @@
         </article>
 
         <!-- COS 212 -->
-        <article class="module">
+        <article class="module module-cos-212" id="cos-212">
             <div class="module-header">
                 <div class="module-code">COS 212</div>
                 <div class="credits">CONTINUOUS</div>
@@ -882,7 +1091,7 @@
         </article>
 
         <!-- COS 210 -->
-        <article class="module">
+        <article class="module module-cos-210" id="cos-210">
             <div class="module-header">
                 <div class="module-code">COS 210</div>
                 <div class="credits">8 CREDITS</div>
@@ -1125,5 +1334,46 @@
             </p>
         </footer>
     </div>
+
+    <nav class="bottom-nav">
+        <a href="dashboard.html" class="active">
+            <span class="nav-icon">◻</span>
+            Overview
+        </a>
+        <a href="Semester1Timetable2026.html">
+            <span class="nav-icon">①</span>
+            Sem 1
+        </a>
+        <a href="index.html">
+            <span class="nav-icon">②</span>
+            Sem 2
+        </a>
+    </nav>
+
+    <script>
+        // Collapsible modules on mobile
+        if (window.innerWidth <= 768) {
+            document.querySelectorAll('.module-header').forEach(header => {
+                header.addEventListener('click', () => {
+                    header.closest('.module').classList.toggle('collapsed');
+                });
+            });
+
+            // Start with all modules collapsed except the first
+            const modules = document.querySelectorAll('.module');
+            modules.forEach((mod, i) => {
+                if (i > 0) mod.classList.add('collapsed');
+            });
+        }
+
+        // Smooth scroll for anchor links (from timetable)
+        if (window.location.hash) {
+            const target = document.querySelector(window.location.hash);
+            if (target) {
+                target.classList.remove('collapsed');
+                setTimeout(() => target.scrollIntoView({ behavior: 'smooth', block: 'start' }), 100);
+            }
+        }
+    </script>
 </body>
 </html>
