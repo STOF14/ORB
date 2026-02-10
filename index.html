@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timetable</title>
+    <style>
+        :root {
+            --red: #e63946;
+            --blue: #457b9d;
+            --dark-blue: #1d3557;
+            --orange: #f4a261;
+            --yellow: #e9c46a;
+            --paper: #f5f5f0;
+            --black: #000;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: var(--paper);
+            font-family: "Futura", "Arial", sans-serif;
+            padding: 40px 20px;
+            color: var(--black);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 48px;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 40px;
+        }
+
+        .day {
+            margin-bottom: 30px;
+            background: #fff;
+            border: 3px solid var(--black);
+            overflow: hidden;
+        }
+
+        .day-header {
+            background: var(--black);
+            color: #fff;
+            padding: 15px 20px;
+            font-size: 24px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            position: relative;
+        }
+
+        .day-header::before {
+            content: "";
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+
+        .monday .day-header::before { background: var(--red); }
+        .tuesday .day-header::before { background: var(--blue); }
+        .wednesday .day-header::before { background: var(--orange); }
+        .thursday .day-header::before { background: var(--dark-blue); }
+        .friday .day-header::before { background: var(--yellow); }
+
+        .event {
+            padding: 15px 20px;
+            border-bottom: 2px solid var(--black);
+            display: grid;
+            grid-template-columns: 120px 1fr;
+            gap: 20px;
+            align-items: center;
+            position: relative;
+            background: #fff;
+        }
+
+        .event:last-child {
+            border-bottom: none;
+        }
+
+        .event.empty {
+            background: var(--paper);
+        }
+
+        .time {
+            font-size: 16px;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        .activity {
+            font-size: 16px;
+            font-weight: 600;
+            color: #222;
+            min-height: 20px;
+        }
+
+        .event::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 8px;
+            background: transparent;
+        }
+
+        .phy-255::before { background: var(--red); }
+        .cos-210::before { background: var(--blue); }
+        .cos-212::before { background: var(--dark-blue); }
+        .wtw-211::before { background: var(--orange); }
+        .wtw-218::before { background: var(--yellow); }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Timetable</h1>
+
+        <div class="day monday">
+            <div class="day-header">Monday</div>
+            <div class="event empty"><div class="time">07:30-08:20</div><div class="activity"></div></div>
+            <div class="event phy-255"><div class="time">08:30-09:20</div><div class="activity">PHY 255 Lecture (NS1 5-42)</div></div>
+            <div class="event empty"><div class="time">09:30-10:20</div><div class="activity"></div></div>
+            <div class="event empty"><div class="time">10:30-11:20</div><div class="activity"></div></div>
+            <div class="event cos-210"><div class="time">11:30-12:20</div><div class="activity">COS 210 Lecture (IT 2-26)</div></div>
+            <div class="event wtw-211"><div class="time">12:30-13:20</div><div class="activity">WTW 211 Lecture (HB 4-3)</div></div>
+            <div class="event phy-255"><div class="time">13:30-14:20</div><div class="activity">PHY 255 Practical (NS1 5-42)</div></div>
+            <div class="event phy-255"><div class="time">14:30-15:20</div><div class="activity">PHY 255 Practical (NS1 5-42)</div></div>
+            <div class="event phy-255"><div class="time">15:30-16:20</div><div class="activity">PHY 255 Practical (NS1 5-42)</div></div>
+            <div class="event cos-212"><div class="time">16:30-17:20</div><div class="activity">COS 212 Lecture (Large Chemistry Hall)</div></div>
+        </div>
+
+        <div class="day tuesday">
+            <div class="day-header">Tuesday</div>
+            <div class="event empty"><div class="time">07:30-08:20</div><div class="activity"></div></div>
+            <div class="event wtw-218"><div class="time">08:30-09:20</div><div class="activity">WTW 218 Lecture (HB 4-3)</div></div>
+            <div class="event empty"><div class="time">09:30-10:20</div><div class="activity"></div></div>
+            <div class="event cos-212"><div class="time">10:30-11:20</div><div class="activity">COS 212 Practical (Informatorium Grey Lab)</div></div>
+            <div class="event cos-212"><div class="time">11:30-12:20</div><div class="activity">COS 212 Practical (Informatorium Grey Lab)</div></div>
+            <div class="event cos-212"><div class="time">12:30-13:20</div><div class="activity">COS 212 Practical (Informatorium Grey Lab)</div></div>
+            <div class="event empty"><div class="time">13:30-14:20</div><div class="activity"></div></div>
+            <div class="event phy-255"><div class="time">14:30-15:20</div><div class="activity">PHY 255 Tutorial (NS1 5-42)</div></div>
+            <div class="event phy-255"><div class="time">15:30-16:20</div><div class="activity">PHY 255 Tutorial (NS1 5-42)</div></div>
+            <div class="event phy-255"><div class="time">16:30-17:20</div><div class="activity">PHY 255 Tutorial (NS1 5-42)</div></div>
+        </div>
+
+        <div class="day wednesday">
+            <div class="day-header">Wednesday</div>
+            <div class="event empty"><div class="time">07:30-08:20</div><div class="activity"></div></div>
+            <div class="event cos-210"><div class="time">08:30-09:20</div><div class="activity">COS 210 Lecture (IT 2-26)</div></div>
+            <div class="event cos-212"><div class="time">09:30-10:20</div><div class="activity">COS 212 Lecture (Louw Hall)</div></div>
+            <div class="event empty"><div class="time">10:30-11:20</div><div class="activity"></div></div>
+            <div class="event wtw-218"><div class="time">11:30-12:20</div><div class="activity">WTW 218 Tutorial (Botany 2-26)</div></div>
+            <div class="event wtw-218"><div class="time">12:30-13:20</div><div class="activity">WTW 218 Tutorial (Botany 2-26)</div></div>
+            <div class="event empty"><div class="time">13:30-14:20</div><div class="activity"></div></div>
+            <div class="event wtw-211"><div class="time">14:30-15:20</div><div class="activity">WTW 211 Tutorial (Te Water Hall)</div></div>
+            <div class="event wtw-211"><div class="time">15:30-16:20</div><div class="activity">WTW 211 Tutorial (Te Water Hall)</div></div>
+            <div class="event empty"><div class="time">16:30-17:20</div><div class="activity"></div></div>
+        </div>
+
+        <div class="day thursday">
+            <div class="day-header">Thursday</div>
+            <div class="event empty"><div class="time">07:30-08:20</div><div class="activity"></div></div>
+            <div class="event wtw-218"><div class="time">08:30-09:20</div><div class="activity">WTW 218 Lecture (HB 4-3)</div></div>
+            <div class="event empty"><div class="time">09:30-10:20</div><div class="activity"></div></div>
+            <div class="event empty"><div class="time">10:30-11:20</div><div class="activity"></div></div>
+            <div class="event empty"><div class="time">11:30-12:20</div><div class="activity"></div></div>
+            <div class="event phy-255"><div class="time">12:30-13:20</div><div class="activity">PHY 255 Lecture (NS1 5-42)</div></div>
+            <div class="event phy-255"><div class="time">13:30-14:20</div><div class="activity">PHY 255 Lecture (NS1 5-42)</div></div>
+            <div class="event empty"><div class="time">14:30-15:20</div><div class="activity"></div></div>
+            <div class="event empty"><div class="time">15:30-16:20</div><div class="activity"></div></div>
+            <div class="event cos-212"><div class="time">16:30-17:20</div><div class="activity">COS 212 Lecture (Roos Hall)</div></div>
+        </div>
+
+        <div class="day friday">
+            <div class="day-header">Friday</div>
+            <div class="event wtw-211"><div class="time">07:30-08:20</div><div class="activity">WTW 211 Lecture (AE Annex)</div></div>
+            <div class="event phy-255"><div class="time">08:30-09:20</div><div class="activity">PHY 255 Lecture (NS1 5-42)</div></div>
+            <div class="event cos-212"><div class="time">09:30-10:20</div><div class="activity">COS 212 Lecture (Louw Hall)</div></div>
+            <div class="event empty"><div class="time">10:30-11:20</div><div class="activity"></div></div>
+            <div class="event empty"><div class="time">11:30-12:20</div><div class="activity"></div></div>
+            <div class="event empty"><div class="time">12:30-13:20</div><div class="activity"></div></div>
+            <div class="event empty"><div class="time">13:30-14:20</div><div class="activity"></div></div>
+            <div class="event cos-210"><div class="time">14:30-15:20</div><div class="activity">COS 210 Practical (IT 2-26)</div></div>
+            <div class="event cos-210"><div class="time">15:30-16:20</div><div class="activity">COS 210 Practical (IT 2-26)</div></div>
+            <div class="event cos-210"><div class="time">16:30-17:20</div><div class="activity">COS 210 Practical (IT 2-26)</div></div>
+        </div>
+    </div>
+</body>
+</html>
