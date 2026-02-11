@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day Planner</title>
+    <style>
+        :root {
+            --red: #e63946;
+            --blue: #457b9d;
+            --dark-blue: #1d3557;
+            --orange: #f4a261;
+            --yellow: #e9c46a;
+            --paper: #f5f5f0;
+            --black: #000;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: var(--paper);
+            font-family: "Futura", "Arial", sans-serif;
+            padding: 40px 20px;
+            color: var(--black);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        nav {
+            background: var(--black);
+            padding: 15px 20px;
+            margin-bottom: 30px;
+            border: 3px solid var(--black);
+            display: flex;
+            gap: 30px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: color 0.2s;
+        }
+
+        nav a:hover {
+            color: var(--yellow);
+        }
+
+        nav a.active {
+            color: var(--red);
+            text-decoration: underline;
+        }
+
+        h1 {
+            font-size: 48px;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+        }
+
+        .date-display {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 40px;
+            color: var(--dark-blue);
+        }
+
+        .section {
+            margin-bottom: 30px;
+            background: #fff;
+            border: 3px solid var(--black);
+            overflow: hidden;
+        }
+
+        .section-header {
+            background: var(--black);
+            color: #fff;
+            padding: 15px 20px;
+            font-size: 24px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .hour-row {
+            padding: 15px 20px;
+            border-bottom: 2px solid var(--black);
+            display: grid;
+            grid-template-columns: 120px 1fr;
+            gap: 20px;
+            align-items: center;
+            background: #fff;
+        }
+
+        .hour-row:last-child {
+            border-bottom: none;
+        }
+
+        .hour-time {
+            font-size: 16px;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        .hour-input {
+            font-family: "Futura", "Arial", sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+            padding: 8px 12px;
+            border: 2px solid var(--black);
+            background: #fff;
+            width: 100%;
+            outline: none;
+        }
+
+        .hour-input:focus {
+            background: var(--paper);
+        }
+
+        .todo-controls {
+            padding: 20px;
+            display: flex;
+            gap: 10px;
+            border-bottom: 2px solid var(--black);
+        }
+
+        .todo-input {
+            flex: 1;
+            font-family: "Futura", "Arial", sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+            padding: 10px 15px;
+            border: 2px solid var(--black);
+            background: #fff;
+            outline: none;
+        }
+
+        .priority-select {
+            font-family: "Futura", "Arial", sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+            padding: 10px 15px;
+            border: 2px solid var(--black);
+            background: #fff;
+            outline: none;
+        }
+
+        .add-btn, .delete-btn {
+            font-family: "Futura", "Arial", sans-serif;
+            font-size: 16px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            padding: 10px 20px;
+            border: 2px solid var(--black);
+            background: var(--black);
+            color: #fff;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .add-btn:hover {
+            background: var(--dark-blue);
+        }
+
+        .delete-btn {
+            padding: 5px 10px;
+            font-size: 12px;
+        }
+
+        .delete-btn:hover {
+            background: var(--red);
+        }
+
+        .todo-list {
+            padding: 20px;
+            min-height: 100px;
+        }
+
+        .todo-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 12px 0;
+            position: relative;
+            padding-left: 20px;
+        }
+
+        .todo-item::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 8px;
+        }
+
+        .todo-item.priority-urgent::before { background: var(--red); }
+        .todo-item.priority-important::before { background: var(--blue); }
+        .todo-item.priority-medium::before { background: var(--orange); }
+        .todo-item.priority-low::before { background: var(--yellow); }
+
+        .todo-checkbox {
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+        }
+
+        .todo-text {
+            flex: 1;
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        .todo-text.checked {
+            text-decoration: line-through;
+            opacity: 0.6;
+        }
+
+        .notes-container {
+            padding: 20px;
+        }
+
+        .notes-textarea {
+            width: 100%;
+            min-height: 200px;
+            font-family: "Futura", "Arial", sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+            padding: 15px;
+            border: 2px solid var(--black);
+            background: #fff;
+            outline: none;
+            resize: vertical;
+        }
+
+        .notes-textarea:focus {
+            background: var(--paper);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="index.html">Timetable</a>
+            <a href="planner.html" class="active">Day Planner</a>
+        </nav>
+
+        <h1>Day Planner</h1>
+        <div class="date-display" id="dateDisplay"></div>
+
+        <div class="section">
+            <div class="section-header">Hourly Schedule</div>
+            <div id="hourlySchedule"></div>
+        </div>
+
+        <div class="section">
+            <div class="section-header">To-Do List</div>
+            <div class="todo-controls">
+                <input type="text" class="todo-input" id="todoInput" placeholder="Add a new task...">
+                <select class="priority-select" id="prioritySelect">
+                    <option value="urgent">🔴 Urgent</option>
+                    <option value="important">🔵 Important</option>
+                    <option value="medium" selected>🟠 Medium</option>
+                    <option value="low">🟡 Low</option>
+                </select>
+                <button class="add-btn" id="addTodoBtn">Add</button>
+            </div>
+            <div class="todo-list" id="todoList"></div>
+        </div>
+
+        <div class="section">
+            <div class="section-header">Notes</div>
+            <div class="notes-container">
+                <textarea class="notes-textarea" id="notesTextarea" placeholder="Write your notes here..."></textarea>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Get current date and format it
+        function formatDate(date) {
+            const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+            return date.toLocaleDateString('en-US', options);
+        }
+
+        function getDateKey(date) {
+            return date.toISOString().split('T')[0];
+        }
+
+        const today = new Date();
+        const dateKey = getDateKey(today);
+        document.getElementById('dateDisplay').textContent = formatDate(today);
+
+        // Create hourly schedule (matching timetable time slots)
+        function createHourlySchedule() {
+            const container = document.getElementById('hourlySchedule');
+            const timeSlots = [
+                '07:30-08:20',
+                '08:30-09:20',
+                '09:30-10:20',
+                '10:30-11:20',
+                '11:30-12:20',
+                '12:30-13:20',
+                '13:30-14:20',
+                '14:30-15:20',
+                '15:30-16:20',
+                '16:30-17:20'
+            ];
+            
+            timeSlots.forEach(timeSlot => {
+                const row = document.createElement('div');
+                row.className = 'hour-row';
+                
+                const timeDiv = document.createElement('div');
+                timeDiv.className = 'hour-time';
+                timeDiv.textContent = timeSlot;
+                
+                const input = document.createElement('input');
+                input.type = 'text';
+                input.className = 'hour-input';
+                input.dataset.hour = timeSlot;
+                input.placeholder = 'What are you doing?';
+                
+                row.appendChild(timeDiv);
+                row.appendChild(input);
+                container.appendChild(row);
+            });
+        }
+
+        // Load data from localStorage
+        function loadData() {
+            const data = JSON.parse(localStorage.getItem(`planner_${dateKey}`)) || {
+                schedule: {},
+                todos: [],
+                notes: ''
+            };
+
+            // Load schedule
+            document.querySelectorAll('.hour-input').forEach(input => {
+                const hour = input.dataset.hour;
+                input.value = data.schedule[hour] || '';
+            });
+
+            // Load todos
+            data.todos.forEach(todo => addTodoToDOM(todo));
+
+            // Load notes
+            document.getElementById('notesTextarea').value = data.notes || '';
+        }
+
+        // Save data to localStorage
+        function saveData() {
+            const data = {
+                schedule: {},
+                todos: [],
+                notes: document.getElementById('notesTextarea').value
+            };
+
+            // Save schedule
+            document.querySelectorAll('.hour-input').forEach(input => {
+                const hour = input.dataset.hour;
+                if (input.value) {
+                    data.schedule[hour] = input.value;
+                }
+            });
+
+            // Save todos
+            document.querySelectorAll('.todo-item').forEach(item => {
+                data.todos.push({
+                    text: item.querySelector('.todo-text').textContent,
+                    checked: item.querySelector('.todo-checkbox').checked,
+                    priority: item.dataset.priority
+                });
+            });
+
+            localStorage.setItem(`planner_${dateKey}`, JSON.stringify(data));
+        }
+
+        // Add event listeners to save on input
+        function setupAutoSave() {
+            document.querySelectorAll('.hour-input').forEach(input => {
+                input.addEventListener('input', saveData);
+            });
+
+            document.getElementById('notesTextarea').addEventListener('input', saveData);
+        }
+
+        // Add todo to DOM
+        function addTodoToDOM(todo) {
+            const item = document.createElement('div');
+            item.className = `todo-item priority-${todo.priority}`;
+            item.dataset.priority = todo.priority;
+
+            const checkbox = document.createElement('input');
+            checkbox.type = 'checkbox';
+            checkbox.className = 'todo-checkbox';
+            checkbox.checked = todo.checked;
+            checkbox.addEventListener('change', function() {
+                text.classList.toggle('checked', this.checked);
+                saveData();
+            });
+
+            const text = document.createElement('span');
+            text.className = 'todo-text';
+            if (todo.checked) {
+                text.classList.add('checked');
+            }
+            text.textContent = todo.text;
+
+            const deleteBtn = document.createElement('button');
+            deleteBtn.className = 'delete-btn';
+            deleteBtn.textContent = 'Delete';
+            deleteBtn.addEventListener('click', function() {
+                item.remove();
+                saveData();
+            });
+
+            item.appendChild(checkbox);
+            item.appendChild(text);
+            item.appendChild(deleteBtn);
+            document.getElementById('todoList').appendChild(item);
+        }
+
+        // Add todo button handler
+        document.getElementById('addTodoBtn').addEventListener('click', function() {
+            const input = document.getElementById('todoInput');
+            const priority = document.getElementById('prioritySelect').value;
+            const text = input.value.trim();
+
+            if (text) {
+                const todo = {
+                    text: text,
+                    checked: false,
+                    priority: priority
+                };
+                addTodoToDOM(todo);
+                input.value = '';
+                saveData();
+            }
+        });
+
+        // Allow Enter key to add todo
+        document.getElementById('todoInput').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                document.getElementById('addTodoBtn').click();
+            }
+        });
+
+        // Initialize
+        createHourlySchedule();
+        setupAutoSave();
+        loadData();
+    </script>
+</body>
+</html>
