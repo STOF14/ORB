@@ -777,40 +777,110 @@
         .progress-section {
             grid-column: 1 / -1;
             margin-bottom: 30px;
+            display: grid;
+            grid-template-columns: auto 1fr auto;
+            gap: 25px;
+            align-items: center;
+            border: 1px solid var(--primary);
+            background: #fff;
+            padding: 25px 30px;
         }
 
-        .progress-bar-container {
-            background: #e5e7eb;
-            height: 8px;
-            border-radius: 4px;
-            overflow: hidden;
-            margin-top: 10px;
-        }
-
-        .progress-bar-fill {
-            height: 100%;
-            border-radius: 4px;
-            background: linear-gradient(90deg, var(--secondary), var(--mod-orange));
-            transition: width 0.6s ease;
-        }
-
-        .progress-info {
-            display: flex;
-            justify-content: space-between;
-            align-items: baseline;
-            margin-top: 8px;
+        .progress-stat {
+            border-left: 3px solid var(--secondary);
+            padding-left: 15px;
         }
 
         .progress-pct {
-            font-size: 28px;
+            font-size: 48px;
             font-weight: 300;
             line-height: 1;
+            margin-bottom: 5px;
+        }
+
+        .progress-label {
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: var(--text-muted);
+        }
+
+        .progress-track {
+            position: relative;
+            height: 3px;
+            background: var(--grid-line);
+        }
+
+        .progress-bar-fill {
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            background: var(--primary);
+            transition: width 0.6s ease;
+        }
+
+        .progress-marker {
+            position: absolute;
+            top: -6px;
+            width: 3px;
+            height: 15px;
+            background: var(--secondary);
+            transform: translateX(-1px);
+            transition: left 0.6s ease;
+        }
+
+        .progress-ticks {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 6px;
+        }
+
+        .progress-ticks span {
+            font-size: 8px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            color: var(--text-muted);
+        }
+
+        .progress-meta {
+            text-align: right;
+            border-right: 3px solid var(--primary);
+            padding-right: 15px;
+        }
+
+        .progress-days {
+            font-size: 36px;
+            font-weight: 300;
+            line-height: 1;
+            margin-bottom: 5px;
         }
 
         .progress-detail {
-            font-size: 12px;
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
             color: var(--text-muted);
-            font-weight: 500;
+        }
+
+        @media (max-width: 768px) {
+            .progress-section {
+                grid-template-columns: 1fr 1fr;
+                gap: 15px;
+                padding: 20px;
+            }
+
+            .progress-track {
+                grid-column: 1 / -1;
+                order: -1;
+            }
+
+            .progress-pct { font-size: 36px; }
+            .progress-days { font-size: 28px; }
+            .progress-meta { text-align: left; border-right: none; padding-right: 0; border-left: 3px solid var(--primary); padding-left: 15px; }
         }
 
         /* Weekly Review Section */
@@ -954,13 +1024,20 @@
 
         <!-- Semester Progress -->
         <section class="progress-section" id="progressSection">
-            <h4>Semester Progress</h4>
-            <div class="progress-bar-container">
-                <div class="progress-bar-fill" id="progressFill" style="width:0%"></div>
-            </div>
-            <div class="progress-info">
+            <div class="progress-stat">
                 <div class="progress-pct" id="progressPct">0%</div>
-                <div class="progress-detail" id="progressDetail"></div>
+                <div class="progress-label">Complete</div>
+            </div>
+            <div class="progress-track">
+                <div class="progress-bar-fill" id="progressFill" style="width:0%"></div>
+                <div class="progress-marker" id="progressMarker" style="left:0%"></div>
+                <div class="progress-ticks">
+                    <span>Feb</span><span>Mar</span><span>Apr</span><span>May</span><span>Jun</span>
+                </div>
+            </div>
+            <div class="progress-meta">
+                <div class="progress-days" id="progressDays">0</div>
+                <div class="progress-detail" id="progressDetail">Days Left</div>
             </div>
         </section>
 
@@ -1706,9 +1783,11 @@
             const daysLeft = Math.max(0, Math.ceil((semEnd - now) / (1000 * 60 * 60 * 24)));
             const weeksLeft = Math.round(daysLeft / 7);
             document.getElementById('progressFill').style.width = pct + '%';
+            document.getElementById('progressMarker').style.left = pct + '%';
             document.getElementById('progressPct').textContent = pct + '%';
+            document.getElementById('progressDays').textContent = daysLeft;
             document.getElementById('progressDetail').textContent =
-                daysLeft + ' days left (' + weeksLeft + ' weeks) — ends 13 Jun';
+                weeksLeft + ' Weeks Left';
         }
         renderProgress();
 
