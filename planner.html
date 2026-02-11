@@ -560,6 +560,200 @@
 
             .auth-bar .user-name { display: none; }
         }
+
+        /* Free Period Optimizer */
+        .free-periods {
+            margin-top: 20px;
+            padding: 20px;
+            background: #fff;
+            border: 2px solid var(--blue);
+            border-left: 5px solid var(--blue);
+        }
+
+        .free-periods h3 {
+            font-size: 11px;
+            font-weight: 800;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--blue);
+            margin-bottom: 12px;
+        }
+
+        .free-slot {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;
+            font-size: 13px;
+        }
+
+        .free-slot:last-child { border-bottom: none; }
+
+        .free-slot-time {
+            font-weight: 700;
+            min-width: 110px;
+            font-size: 12px;
+        }
+
+        .free-slot-suggestion {
+            color: var(--text-muted);
+            font-size: 12px;
+            font-style: italic;
+        }
+
+        .free-slot-duration {
+            margin-left: auto;
+            font-size: 10px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: var(--blue);
+            white-space: nowrap;
+        }
+
+        /* Habit Tracker */
+        .habit-tracker {
+            margin-top: 25px;
+            padding: 20px;
+            background: #fff;
+            border: 2px solid var(--orange);
+            border-left: 5px solid var(--orange);
+        }
+
+        .habit-tracker h3 {
+            font-size: 11px;
+            font-weight: 800;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--orange);
+            margin-bottom: 12px;
+        }
+
+        .habit-list { list-style: none; }
+
+        .habit-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 8px 0;
+            border-bottom: 1px solid #f0f0f0;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .habit-item:last-child { border-bottom: none; }
+
+        .habit-item input[type="checkbox"] {
+            width: 18px;
+            height: 18px;
+            accent-color: var(--orange);
+            cursor: pointer;
+        }
+
+        .habit-item.done label {
+            text-decoration: line-through;
+            color: #999;
+        }
+
+        .habit-item label { cursor: pointer; flex: 1; }
+
+        .habit-streak {
+            font-size: 10px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            color: var(--text-muted);
+            text-transform: uppercase;
+        }
+
+        .habit-score {
+            margin-top: 12px;
+            text-align: right;
+            font-size: 12px;
+            font-weight: 700;
+            color: var(--orange);
+            letter-spacing: 0.5px;
+        }
+
+        /* Sleep Logger */
+        .sleep-logger {
+            margin-top: 25px;
+            padding: 20px;
+            background: #fff;
+            border: 2px solid var(--dark-blue);
+            border-left: 5px solid var(--dark-blue);
+        }
+
+        .sleep-logger h3 {
+            font-size: 11px;
+            font-weight: 800;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--dark-blue);
+            margin-bottom: 12px;
+        }
+
+        .sleep-inputs {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .sleep-field {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .sleep-field label {
+            font-size: 10px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: var(--text-muted);
+        }
+
+        .sleep-field input[type="time"] {
+            font-family: inherit;
+            font-size: 16px;
+            font-weight: 600;
+            padding: 6px 10px;
+            border: 2px solid var(--grid-line);
+            background: #fafafa;
+            color: var(--black);
+        }
+
+        .sleep-field input[type="time"]:focus {
+            outline: none;
+            border-color: var(--dark-blue);
+        }
+
+        .sleep-result {
+            font-size: 24px;
+            font-weight: 300;
+            color: var(--dark-blue);
+            margin-left: auto;
+        }
+
+        .sleep-result small {
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            display: block;
+        }
+
+        .sleep-quality {
+            margin-top: 8px;
+            font-size: 11px;
+            font-weight: 600;
+        }
+
+        .sleep-quality.good { color: #22c55e; }
+        .sleep-quality.ok { color: var(--orange); }
+        .sleep-quality.bad { color: var(--red); }
     </style>
 </head>
 <body>
@@ -607,6 +801,38 @@
         <div class="planner-footer">
             <div class="stats" id="stats"></div>
             <button class="clear-btn" onclick="clearDay()">Clear Day</button>
+        </div>
+
+        <!-- Free Period Optimizer -->
+        <div class="free-periods" id="freePeriods" style="display:none;">
+            <h3>Free Period Optimizer</h3>
+            <div id="freeSlotsList"></div>
+        </div>
+
+        <!-- Habit Tracker -->
+        <div class="habit-tracker" id="habitTracker">
+            <h3>Daily Habits</h3>
+            <ul class="habit-list" id="habitList"></ul>
+            <div class="habit-score" id="habitScore"></div>
+        </div>
+
+        <!-- Sleep Logger -->
+        <div class="sleep-logger" id="sleepLogger">
+            <h3>Sleep Log</h3>
+            <div class="sleep-inputs">
+                <div class="sleep-field">
+                    <label>Bedtime</label>
+                    <input type="time" id="sleepBed" value="23:00">
+                </div>
+                <div class="sleep-field">
+                    <label>Wake Up</label>
+                    <input type="time" id="sleepWake" value="06:30">
+                </div>
+                <div class="sleep-result" id="sleepResult">
+                    &mdash;<small>hours</small>
+                </div>
+            </div>
+            <div class="sleep-quality" id="sleepQuality"></div>
         </div>
     </div>
 
@@ -1120,6 +1346,164 @@
                 renderPlanner();
             }
         }, 60000);
+
+        // ── Free Period Optimizer ──
+        const STUDY_SUGGESTIONS = [
+            'Review lecture notes',
+            'Practice problems',
+            'Read textbook chapter',
+            'Work on assignment',
+            'Flashcard review',
+            'Past paper practice',
+            'Group study prep',
+            'Lab report writing',
+        ];
+
+        function renderFreePeriods() {
+            const container = document.getElementById('freePeriods');
+            const list = document.getElementById('freeSlotsList');
+            const jsDay = currentDate.getDay();
+            if (jsDay === 0 || jsDay === 6) { container.style.display = 'none'; return; }
+            const daySchedule = TIMETABLE[jsDay] || {};
+            const classSlots = new Set(Object.keys(daySchedule));
+            const uniSlots = TIME_SLOTS.filter(s => {
+                const h = parseInt(s.start.split(':')[0]);
+                return h >= 7 && h < 17;
+            });
+            const freeSlots = [];
+            let blockStart = null, blockSlots = [];
+            uniSlots.forEach(slot => {
+                if (!classSlots.has(slot.start)) {
+                    if (!blockStart) blockStart = slot.start;
+                    blockSlots.push(slot);
+                } else {
+                    if (blockStart) {
+                        freeSlots.push({ start: blockStart, end: blockSlots[blockSlots.length - 1].end, duration: blockSlots.length * 50 });
+                        blockStart = null; blockSlots = [];
+                    }
+                }
+            });
+            if (blockStart) freeSlots.push({ start: blockStart, end: blockSlots[blockSlots.length - 1].end, duration: blockSlots.length * 50 });
+            if (freeSlots.length === 0) { container.style.display = 'none'; return; }
+            container.style.display = 'block';
+            list.innerHTML = freeSlots.map((slot, i) => {
+                const suggestion = STUDY_SUGGESTIONS[i % STUDY_SUGGESTIONS.length];
+                const dur = slot.duration >= 60 ? Math.floor(slot.duration / 60) + 'h ' + (slot.duration % 60) + 'm' : slot.duration + ' min';
+                return '<div class="free-slot">' +
+                    '<span class="free-slot-time">' + slot.start + ' \u2013 ' + slot.end + '</span>' +
+                    '<span class="free-slot-suggestion">' + suggestion + '</span>' +
+                    '<span class="free-slot-duration">' + dur + '</span></div>';
+            }).join('');
+        }
+
+        // ── Habit Tracker ──
+        const HABITS = [
+            { id: 'exercise', label: 'Exercise / Gym' },
+            { id: 'review', label: 'Review lecture notes' },
+            { id: 'water', label: 'Drink 2L+ water' },
+            { id: 'no_phone', label: 'No phone in lectures' },
+            { id: 'sleep8', label: '8 hours sleep' },
+            { id: 'meal', label: '3 proper meals' },
+        ];
+
+        function loadHabitData(dateStr) {
+            try { return JSON.parse(localStorage.getItem('habits_' + dateStr)) || {}; }
+            catch { return {}; }
+        }
+
+        function saveHabitData(dateStr, data) {
+            localStorage.setItem('habits_' + dateStr, JSON.stringify(data));
+        }
+
+        function getStreak(habitId) {
+            let streak = 0;
+            const d = new Date(currentDate);
+            d.setDate(d.getDate() - 1);
+            for (let i = 0; i < 30; i++) {
+                const data = loadHabitData(dateKey(d));
+                if (data[habitId]) { streak++; d.setDate(d.getDate() - 1); }
+                else break;
+            }
+            return streak;
+        }
+
+        function renderHabits() {
+            const list = document.getElementById('habitList');
+            const key = dateKey(currentDate);
+            const data = loadHabitData(key);
+            let doneCount = 0;
+            list.innerHTML = HABITS.map(h => {
+                const checked = data[h.id] || false;
+                if (checked) doneCount++;
+                const streak = getStreak(h.id);
+                const streakText = streak > 0 ? streak + 'd streak' : '';
+                return '<li class="habit-item' + (checked ? ' done' : '') + '">' +
+                    '<input type="checkbox" id="habit_' + h.id + '" ' + (checked ? 'checked' : '') +
+                    ' onchange="toggleHabit(\'' + h.id + '\', this.checked)">' +
+                    '<label for="habit_' + h.id + '">' + h.label + '</label>' +
+                    (streakText ? '<span class="habit-streak">\uD83D\uDD25 ' + streakText + '</span>' : '') +
+                    '</li>';
+            }).join('');
+            document.getElementById('habitScore').textContent = doneCount + ' / ' + HABITS.length + ' completed';
+        }
+
+        function toggleHabit(habitId, checked) {
+            const key = dateKey(currentDate);
+            const data = loadHabitData(key);
+            data[habitId] = checked;
+            saveHabitData(key, data);
+            renderHabits();
+        }
+
+        // ── Sleep Logger ──
+        function loadSleep() {
+            const key = dateKey(currentDate);
+            try {
+                const data = JSON.parse(localStorage.getItem('sleep_' + key));
+                if (data) {
+                    document.getElementById('sleepBed').value = data.bed || '23:00';
+                    document.getElementById('sleepWake').value = data.wake || '06:30';
+                    calcSleep();
+                } else {
+                    document.getElementById('sleepBed').value = '23:00';
+                    document.getElementById('sleepWake').value = '06:30';
+                    document.getElementById('sleepResult').innerHTML = '\u2014<small>hours</small>';
+                    document.getElementById('sleepQuality').textContent = '';
+                }
+            } catch {
+                document.getElementById('sleepResult').innerHTML = '\u2014<small>hours</small>';
+            }
+        }
+
+        function calcSleep() {
+            const bed = document.getElementById('sleepBed').value;
+            const wake = document.getElementById('sleepWake').value;
+            if (!bed || !wake) return;
+            const [bh, bm] = bed.split(':').map(Number);
+            const [wh, wm] = wake.split(':').map(Number);
+            let bedMin = bh * 60 + bm, wakeMin = wh * 60 + wm;
+            if (wakeMin <= bedMin) wakeMin += 24 * 60;
+            const hours = ((wakeMin - bedMin) / 60).toFixed(1);
+            document.getElementById('sleepResult').innerHTML = hours + '<small>hours</small>';
+            const quality = document.getElementById('sleepQuality');
+            if (hours >= 7.5) { quality.textContent = '\u2713 Great sleep'; quality.className = 'sleep-quality good'; }
+            else if (hours >= 6) { quality.textContent = '\u26A0 Could be better'; quality.className = 'sleep-quality ok'; }
+            else { quality.textContent = '\u2717 Not enough sleep'; quality.className = 'sleep-quality bad'; }
+            localStorage.setItem('sleep_' + dateKey(currentDate), JSON.stringify({ bed: bed, wake: wake, hours: parseFloat(hours) }));
+        }
+
+        document.getElementById('sleepBed').addEventListener('change', calcSleep);
+        document.getElementById('sleepWake').addEventListener('change', calcSleep);
+
+        // Hook into renderPlanner to also render new sections
+        const _origRenderPlanner = renderPlanner;
+        renderPlanner = async function() {
+            await _origRenderPlanner();
+            renderFreePeriods();
+            renderHabits();
+            loadSleep();
+        };
+        renderPlanner();
     </script>
 </body>
 </html>
