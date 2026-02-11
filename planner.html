@@ -297,6 +297,41 @@
             color: #999;
         }
 
+        /* Class slots (auto-filled from timetable) */
+        .planner-table tbody tr.class-slot {
+            background: #f0f4ff;
+        }
+
+        .planner-table tbody tr.class-slot.past-slot {
+            opacity: 0.45;
+        }
+
+        .class-badge {
+            display: inline-block;
+            font-size: 9px;
+            font-weight: 800;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            padding: 3px 8px;
+            color: #fff;
+            border-radius: 2px;
+            margin-right: 8px;
+            vertical-align: middle;
+        }
+
+        .class-badge.phy-255 { background: var(--red); }
+        .class-badge.cos-210 { background: var(--blue); }
+        .class-badge.cos-212 { background: var(--dark-blue); }
+        .class-badge.wtw-211 { background: var(--orange); }
+        .class-badge.wtw-218 { background: var(--yellow); color: #000; }
+
+        .class-text {
+            font-size: 13px;
+            font-weight: 600;
+            color: #444;
+            line-height: 1.5;
+        }
+
         /* Section Headers */
         .section-row td {
             background: var(--paper);
@@ -534,6 +569,7 @@
         <a href="Semester1Timetable2026.html">Semester 1 Timetable</a>
         <a href="index.html">Semester 2 Timetable</a>
         <a href="planner.html" class="active">Day Planner</a>
+        <a href="timer.html">Focus Timer</a>
     </nav>
 
     <div class="auth-bar" id="authBar">
@@ -590,6 +626,10 @@
         <a href="planner.html" class="active">
             <span class="nav-icon">▤</span>
             Planner
+        </a>
+        <a href="timer.html">
+            <span class="nav-icon">◉</span>
+            Focus
         </a>
     </nav>
 
@@ -805,6 +845,61 @@
             }
         }
 
+        // ── Timetable auto-fill data (Semester 1) ──
+        // Maps day-of-week (1=Mon..5=Fri) + time-slot start to class info
+        const TIMETABLE = {
+            1: { // Monday
+                '08:30': { code: 'phy-255', text: 'PHY 255 Lecture (NS1 5-42)' },
+                '11:30': { code: 'cos-210', text: 'COS 210 Lecture (IT 2-26)' },
+                '12:30': { code: 'wtw-211', text: 'WTW 211 Lecture (HB 4-3)' },
+                '13:30': { code: 'phy-255', text: 'PHY 255 Practical (NS1 5-42)' },
+                '14:30': { code: 'phy-255', text: 'PHY 255 Practical (NS1 5-42)' },
+                '15:30': { code: 'phy-255', text: 'PHY 255 Practical (NS1 5-42)' },
+                '16:30': { code: 'cos-212', text: 'COS 212 Lecture (Large Chemistry Hall)' },
+            },
+            2: { // Tuesday
+                '08:30': { code: 'wtw-218', text: 'WTW 218 Lecture (HB 4-3) G02' },
+                '14:30': { code: 'phy-255', text: 'PHY 255 Tutorial (NS1 5-42)' },
+                '15:30': { code: 'phy-255', text: 'PHY 255 Tutorial (NS1 5-42)' },
+                '16:30': { code: 'phy-255', text: 'PHY 255 Tutorial (NS1 5-42)' },
+            },
+            3: { // Wednesday
+                '08:30': { code: 'cos-210', text: 'COS 210 Lecture (IT 2-26)' },
+                '09:30': { code: 'cos-212', text: 'COS 212 Lecture (Louw Hall)' },
+                '11:30': { code: 'wtw-218', text: 'WTW 218 Tutorial (Botany 2-26) T03' },
+                '12:30': { code: 'wtw-218', text: 'WTW 218 Tutorial (Botany 2-26) T03' },
+                '14:30': { code: 'wtw-211', text: 'WTW 211 Tutorial (Te Water Hall) T02' },
+                '15:30': { code: 'wtw-211', text: 'WTW 211 Tutorial (Te Water Hall) T02' },
+            },
+            4: { // Thursday
+                '08:30': { code: 'wtw-218', text: 'WTW 218 Lecture (HB 4-3) G01' },
+                '12:30': { code: 'phy-255', text: 'PHY 255 Lecture (NS1 5-42)' },
+                '13:30': { code: 'phy-255', text: 'PHY 255 Lecture (NS1 5-42)' },
+                '16:30': { code: 'cos-212', text: 'COS 212 Lecture (Roos Hall)' },
+            },
+            5: { // Friday
+                '07:30': { code: 'wtw-211', text: 'WTW 211 Lecture (AE Annex)' },
+                '08:30': { code: 'phy-255', text: 'PHY 255 Lecture (NS1 5-42)' },
+                '09:30': { code: 'cos-212', text: 'COS 212 Lecture (Louw Hall)' },
+                '11:30': { code: 'cos-212', text: 'COS 212 Practical (Informatorium)' },
+                '12:30': { code: 'cos-212', text: 'COS 212 Practical (Informatorium)' },
+                '13:30': { code: 'cos-212', text: 'COS 212 Practical (Informatorium)' },
+                '14:30': { code: 'cos-210', text: 'COS 210 Practical (IT 2-26)' },
+                '15:30': { code: 'cos-210', text: 'COS 210 Practical (IT 2-26)' },
+                '16:30': { code: 'cos-210', text: 'COS 210 Practical (IT 2-26)' },
+            },
+        };
+
+        function getClassForSlot(date, slotStart) {
+            // JS: 0=Sun, 1=Mon, ..., 6=Sat
+            // Map to our TIMETABLE keys: 1=Mon, ..., 5=Fri
+            const jsDay = date.getDay();
+            if (jsDay === 0 || jsDay === 6) return null; // weekend
+            const daySchedule = TIMETABLE[jsDay];
+            if (!daySchedule) return null;
+            return daySchedule[slotStart] || null;
+        }
+
         // Time slots: same intervals as timetable (XX:30–XX:20), from 05:30 to 00:00
         const TIME_SLOTS = [
             { start: '05:30', end: '06:20', section: 'early' },
@@ -893,6 +988,7 @@
                 const tr = document.createElement('tr');
                 const slotStart = timeToMinutes(slot.start);
                 const slotEnd = timeToMinutes(slot.end);
+                const classInfo = getClassForSlot(currentDate, slot.start);
 
                 if (isToday) {
                     if (currentMin >= slotStart && currentMin < slotEnd) {
@@ -905,21 +1001,36 @@
                 const checked = data['check_' + i] || false;
                 if (checked) tr.classList.add('checked-row');
 
-                tr.innerHTML =
+                const timeCellHtml =
                     '<td class="time-cell">' +
-                        slot.start + '–' + slot.end +
+                        slot.start + '\u2013' + slot.end +
                         '<span class="time-period">' + getPeriodLabel(slot.start) + '</span>' +
-                    '</td>' +
-                    '<td class="activity-cell">' +
-                        '<textarea class="activity-input" rows="1" placeholder="Plan something..." ' +
-                        'data-index="' + i + '">' +
-                        (data['slot_' + i] || '') +
-                        '</textarea>' +
-                    '</td>' +
-                    '<td class="check-cell">' +
-                        '<input type="checkbox" data-index="' + i + '" ' +
-                        (checked ? 'checked' : '') + '>' +
                     '</td>';
+
+                if (classInfo) {
+                    tr.classList.add('class-slot');
+                    tr.innerHTML = timeCellHtml +
+                        '<td class="activity-cell" style="padding: 12px 16px;">' +
+                            '<span class="class-badge ' + classInfo.code + '">' + classInfo.code.replace('-', ' ').toUpperCase() + '</span>' +
+                            '<span class="class-text">' + classInfo.text + '</span>' +
+                        '</td>' +
+                        '<td class="check-cell">' +
+                            '<input type="checkbox" data-index="' + i + '" ' +
+                            (checked ? 'checked' : '') + '>' +
+                        '</td>';
+                } else {
+                    tr.innerHTML = timeCellHtml +
+                        '<td class="activity-cell">' +
+                            '<textarea class="activity-input" rows="1" placeholder="Plan something..." ' +
+                            'data-index="' + i + '">' +
+                            (data['slot_' + i] || '') +
+                            '</textarea>' +
+                        '</td>' +
+                        '<td class="check-cell">' +
+                            '<input type="checkbox" data-index="' + i + '" ' +
+                            (checked ? 'checked' : '') + '>' +
+                        '</td>';
+                }
 
                 tbody.appendChild(tr);
             });
