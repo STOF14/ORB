@@ -29,7 +29,7 @@
             background: var(--paper);
             font-family: "Futura", "Arial", sans-serif;
             padding: 40px 20px;
-            color: var(--black);
+            color: #181818;
         }
 
         .container {
@@ -435,6 +435,26 @@
     </style>
 </head>
 <body>
+            <div id="orbitdesk-loader" role="dialog" aria-label="Loading OrbitDesk" style="position:fixed;z-index:9999;top:0;left:0;width:100vw;height:100vh;background:#fff;display:flex;align-items:center;justify-content:center;transition:opacity 0.6s;">
+                <div style="display:grid;grid-template-columns:1fr 1fr;align-items:center;justify-items:center;width:100vw;height:100vh;">
+                    <div style="display:flex;flex-direction:column;align-items:flex-end;justify-content:center;padding-right:2vw;">
+                        <span style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:64px;font-weight:900;color:#e63946;line-height:1;letter-spacing:-2px;text-transform:uppercase;">Orbit</span>
+                        <span style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:64px;font-weight:900;color:#000;line-height:1;letter-spacing:-2px;text-transform:uppercase;">Desk</span>
+                    </div>
+                    <div style="display:flex;align-items:center;justify-content:center;">
+                        <svg id="swiss-logo" width="160" height="160" viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="0" y="0" width="160" height="160" fill="#fff"/>
+                            <rect id="swiss-bar" x="30" y="75" width="100" height="10" rx="5" fill="#e63946"/>
+                            <rect id="swiss-bar-v" x="75" y="30" width="10" height="100" rx="5" fill="#e63946"/>
+                            <circle id="swiss-dot" cx="80" cy="80" r="28" fill="#fff" stroke="#000" stroke-width="4"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+    <!-- Firebase SDK (compat for simplicity in a plain HTML file) -->
+    <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore-compat.js"></script>
     <nav class="site-nav">
         <span class="nav-label">Navigate</span>
         <a href="dashboard.html">Dashboard</a>
@@ -445,88 +465,292 @@
     </nav>
 
     <div class="container">
-        <div class="page-header">
-            <h1>Timetable</h1>
-            <button class="edit-toggle" id="editToggle" type="button" aria-pressed="false">Edit</button>
+                        <div style="display:flex;align-items:center;gap:18px;justify-content:center;margin-bottom:18px;">
+                            <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="OrbitDesk mini logo" role="img">
+                                <rect x="0" y="0" width="38" height="38" rx="8" fill="#fff"/>
+                                <rect x="8" y="17" width="22" height="4" rx="2" fill="#e63946"/>
+                                <rect x="17" y="8" width="4" height="22" rx="2" fill="#e63946"/>
+                                <circle cx="19" cy="19" r="8" fill="#fff" stroke="#000" stroke-width="2"/>
+                            </svg>
+                            <span style="font-family:'Futura','Arial',sans-serif;font-weight:900;font-size:1.3em;color:#1d3557;letter-spacing:2px;">OrbitDesk</span>
+                        </div>
+        <div class="bauhaus-construction">
+            <div class="bauhaus-bg">
+                <svg id="bauhaus-svg" width="100%" height="220" viewBox="0 0 600 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+                            <feGaussianBlur stdDeviation="6" result="coloredBlur"/>
+                            <feMerge>
+                                <feMergeNode in="coloredBlur"/>
+                                <feMergeNode in="SourceGraphic"/>
+                            </feMerge>
+                        </filter>
+                    </defs>
+                    <rect x="0" y="0" width="600" height="220" fill="#e63946"/>
+                    <circle id="egg-circle" cx="120" cy="110" r="80" fill="#f4a261"/>
+                    <rect id="egg-rect" x="320" y="40" width="180" height="140" fill="#457b9d"/>
+                    <rect x="420" y="120" width="80" height="80" fill="#e9c46a"/>
+                    <circle cx="500" cy="60" r="40" fill="#1d3557"/>
+                    <!-- Impossible cursor animation shapes -->
+                    <g id="impossible-cursor-group"></g>
+                </svg>
+            </div>
+            <div class="bauhaus-text">
+                <h1 id="egg-title">UNDER CONSTRUCTION</h1>
+                <p>Semester 2 timetable is coming soon.<br>Check back later for updates!</p>
+            </div>
         </div>
 
-        <div class="whats-next" id="whatsNext">
-            <div class="whats-next-label">Next Up</div>
-            <div class="whats-next-class" id="nextClass">—</div>
-            <div class="whats-next-time" id="nextTime"></div>
-        </div>
+    <style>
+        .bauhaus-construction {
+            position: relative;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 60px;
+            margin-bottom: 60px;
+        }
+        .bauhaus-bg {
+            width: 100%;
+            max-width: 600px;
+            margin-bottom: -40px;
+            z-index: 1;
+        }
+        .bauhaus-text {
+            position: relative;
+            z-index: 2;
+            background: rgba(245,245,240,0.95);
+            padding: 32px 48px;
+            border-radius: 24px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.08);
+            text-align: center;
+            animation: fadeInBauhaus 1.2s cubic-bezier(.68,-0.55,.27,1.55);
+        }
+        .bauhaus-text h1 {
+            font-size: 56px;
+            font-family: "Futura", "Arial", sans-serif;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 6px;
+            color: #e63946;
+            margin-bottom: 24px;
+            animation: popTitle 1s cubic-bezier(.68,-0.55,.27,1.55);
+        }
+        .bauhaus-text p {
+            font-size: 22px;
+            font-family: "Futura", "Arial", sans-serif;
+            font-weight: 700;
+            color: #1d3557;
+            margin-bottom: 0;
+            animation: fadeInText 1.5s cubic-bezier(.68,-0.55,.27,1.55);
+        }
+        @keyframes fadeInBauhaus {
+            0% { opacity: 0; transform: translateY(40px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes popTitle {
+            0% { transform: scale(0.7); opacity: 0; }
+            80% { transform: scale(1.1); opacity: 1; }
+            100% { transform: scale(1); }
+        }
+        @keyframes fadeInText {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+        #egg-circle {
+            transition: fill 0.5s, r 0.5s;
+        }
+        #egg-rect {
+            transition: fill 0.5s, width 0.5s;
+        }
+        .egg-surprise {
+            color: #f4a261 !important;
+            animation: eggSurprise 1s infinite alternate;
+        }
+        @keyframes eggSurprise {
+            0% { letter-spacing: 6px; }
+            100% { letter-spacing: 16px; }
+        }
+    </style>
+    <script>
+                // Swiss Style OrbitDesk Loader Animation
+                (function() {
+                    const loader = document.getElementById('orbitdesk-loader');
+                    const bar = document.getElementById('swiss-bar');
+                    const barV = document.getElementById('swiss-bar-v');
+                    const dot = document.getElementById('swiss-dot');
+                    let t = 0;
+                    let anim;
+                    let minTime = 1200; // Minimum loader time in ms
+                    let maxTime = 5000; // Maximum loader time in ms
+                    let start = Date.now();
+                    function animateSwissLogo() {
+                        t += 0.06;
+                        // Animate bars: grow/shrink and rotate
+                        const h = 10 + 6 * Math.abs(Math.sin(t));
+                        bar.setAttribute('height', h);
+                        bar.setAttribute('y', 80 - h/2);
+                        barV.setAttribute('width', h);
+                        barV.setAttribute('x', 80 - h/2);
+                        // Animate dot: pulse and slight move
+                        const r = 28 + 4 * Math.sin(t*2);
+                        dot.setAttribute('r', r);
+                        dot.setAttribute('cx', 80 + Math.sin(t)*6);
+                        dot.setAttribute('cy', 80 + Math.cos(t)*6);
+                        anim = requestAnimationFrame(animateSwissLogo);
+                    }
+                    animateSwissLogo();
+                    function hideLoader() {
+                        loader.style.opacity = '0';
+                        setTimeout(() => {
+                            loader.style.display = 'none';
+                            cancelAnimationFrame(anim);
+                        }, 600);
+                    }
+                    // Hide loader after minTime if DOM is ready, else after maxTime
+                    window.addEventListener('load', () => {
+                        const elapsed = Date.now() - start;
+                        setTimeout(hideLoader, Math.max(minTime - elapsed, 0));
+                    });
+                    setTimeout(hideLoader, maxTime);
+                    if (window.history && window.history.pushState) {
+                        window.addEventListener('popstate', () => {
+                            loader.style.display = 'none';
+                        });
+                    }
+                })();
+        // Bauhaus SVG animation
+        document.addEventListener('DOMContentLoaded', function() {
+            const circle = document.getElementById('egg-circle');
+            const rect = document.getElementById('egg-rect');
+            let grow = false;
+            setInterval(() => {
+                grow = !grow;
+                circle.setAttribute('r', grow ? '100' : '80');
+                circle.setAttribute('fill', grow ? '#e9c46a' : '#f4a261');
+                rect.setAttribute('width', grow ? '220' : '180');
+                rect.setAttribute('fill', grow ? '#e63946' : '#457b9d');
+            }, 1200);
 
-        <button class="toggle-empty active" id="toggleEmpty" onclick="toggleEmptySlots()">Hide Free Periods</button>
+            // Easter Egg: Konami Code
+            const code = ["ArrowUp","ArrowUp","ArrowDown","ArrowDown","ArrowLeft","ArrowRight","ArrowLeft","ArrowRight","b","a"];
+            let pos = 0;
+            document.addEventListener('keydown', function(e) {
+                if (e.key === code[pos]) {
+                    pos++;
+                    if (pos === code.length) {
+                        const title = document.getElementById('egg-title');
+                        title.textContent = 'BAUHAUS PARTY!';
+                        title.classList.add('egg-surprise');
+                        circle.setAttribute('fill', '#fff');
+                        rect.setAttribute('fill', '#fff');
+                        document.body.style.background = 'linear-gradient(135deg, #e63946 0%, #f4a261 100%)';
+                        pos = 0;
+                    }
+                } else {
+                    pos = 0;
+                }
+            });
 
-        <div class="day monday">
-            <div class="day-header">Monday</div>
-            <div class="event empty"><div class="time">07:30-08:20</div><div class="activity"></div></div>
-            <div class="event phy-255"><div class="time">08:30-09:20</div><div class="activity">PHY 255 Lecture (NS1 5-42)</div></div>
-            <div class="event empty"><div class="time">09:30-10:20</div><div class="activity"></div></div>
-            <div class="event empty"><div class="time">10:30-11:20</div><div class="activity"></div></div>
-            <div class="event cos-210"><div class="time">11:30-12:20</div><div class="activity">COS 210 Lecture (IT 2-26)</div></div>
-            <div class="event wtw-211"><div class="time">12:30-13:20</div><div class="activity">WTW 211 Lecture (HB 4-3)</div></div>
-            <div class="event phy-255"><div class="time">13:30-14:20</div><div class="activity">PHY 255 Practical (NS1 5-42)</div></div>
-            <div class="event phy-255"><div class="time">14:30-15:20</div><div class="activity">PHY 255 Practical (NS1 5-42)</div></div>
-            <div class="event phy-255"><div class="time">15:30-16:20</div><div class="activity">PHY 255 Practical (NS1 5-42)</div></div>
-            <div class="event cos-212"><div class="time">16:30-17:20</div><div class="activity">COS 212 Lecture (Large Chemistry Hall)</div></div>
-        </div>
-
-        <div class="day tuesday">
-            <div class="day-header">Tuesday</div>
-            <div class="event empty"><div class="time">07:30-08:20</div><div class="activity"></div></div>
-            <div class="event wtw-218"><div class="time">08:30-09:20</div><div class="activity">WTW 218 Lecture (HB 4-3) G02</div></div>
-            <div class="event empty"><div class="time">09:30-10:20</div><div class="activity"></div></div>
-            <div class="event empty"><div class="time">10:30-11:20</div><div class="activity"></div></div>
-            <div class="event empty"><div class="time">11:30-12:20</div><div class="activity"></div></div>
-            <div class="event empty"><div class="time">12:30-13:20</div><div class="activity"></div></div>
-            <div class="event empty"><div class="time">13:30-14:20</div><div class="activity"></div></div>
-            <div class="event phy-255"><div class="time">14:30-15:20</div><div class="activity">PHY 255 Tutorial (NS1 5-42)</div></div>
-            <div class="event phy-255"><div class="time">15:30-16:20</div><div class="activity">PHY 255 Tutorial (NS1 5-42)</div></div>
-            <div class="event phy-255"><div class="time">16:30-17:20</div><div class="activity">PHY 255 Tutorial (NS1 5-42)</div></div>
-        </div>
-
-        <div class="day wednesday">
-            <div class="day-header">Wednesday</div>
-            <div class="event empty"><div class="time">07:30-08:20</div><div class="activity"></div></div>
-            <div class="event cos-210"><div class="time">08:30-09:20</div><div class="activity">COS 210 Lecture (IT 2-26)</div></div>
-            <div class="event cos-212"><div class="time">09:30-10:20</div><div class="activity">COS 212 Lecture (Louw Hall)</div></div>
-            <div class="event empty"><div class="time">10:30-11:20</div><div class="activity"></div></div>
-            <div class="event wtw-218"><div class="time">11:30-12:20</div><div class="activity">WTW 218 Tutorial (Botany 2-26) T03</div></div>
-            <div class="event wtw-218"><div class="time">12:30-13:20</div><div class="activity">WTW 218 Tutorial (Botany 2-26) T03</div></div>
-            <div class="event empty"><div class="time">13:30-14:20</div><div class="activity"></div></div>
-            <div class="event wtw-211"><div class="time">14:30-15:20</div><div class="activity">WTW 211 Tutorial (Te Water Hall) T02</div></div>
-            <div class="event wtw-211"><div class="time">15:30-16:20</div><div class="activity">WTW 211 Tutorial (Te Water Hall) T02</div></div>
-            <div class="event empty"><div class="time">16:30-17:20</div><div class="activity"></div></div>
-        </div>
-
-        <div class="day thursday">
-            <div class="day-header">Thursday</div>
-            <div class="event empty"><div class="time">07:30-08:20</div><div class="activity"></div></div>
-            <div class="event wtw-218"><div class="time">08:30-09:20</div><div class="activity">WTW 218 Lecture (HB 4-3) G01</div></div>
-            <div class="event empty"><div class="time">09:30-10:20</div><div class="activity"></div></div>
-            <div class="event empty"><div class="time">10:30-11:20</div><div class="activity"></div></div>
-            <div class="event empty"><div class="time">11:30-12:20</div><div class="activity"></div></div>
-            <div class="event phy-255"><div class="time">12:30-13:20</div><div class="activity">PHY 255 Lecture (NS1 5-42)</div></div>
-            <div class="event phy-255"><div class="time">13:30-14:20</div><div class="activity">PHY 255 Lecture (NS1 5-42)</div></div>
-            <div class="event empty"><div class="time">14:30-15:20</div><div class="activity"></div></div>
-            <div class="event empty"><div class="time">15:30-16:20</div><div class="activity"></div></div>
-            <div class="event cos-212"><div class="time">16:30-17:20</div><div class="activity">COS 212 Lecture (Roos Hall)</div></div>
-        </div>
-
-        <div class="day friday">
-            <div class="day-header">Friday</div>
-            <div class="event wtw-211"><div class="time">07:30-08:20</div><div class="activity">WTW 211 Lecture (AE Annex)</div></div>
-            <div class="event phy-255"><div class="time">08:30-09:20</div><div class="activity">PHY 255 Lecture (NS1 5-42)</div></div>
-            <div class="event cos-212"><div class="time">09:30-10:20</div><div class="activity">COS 212 Lecture (Louw Hall)</div></div>
-            <div class="event empty"><div class="time">10:30-11:20</div><div class="activity"></div></div>
-            <div class="event cos-212"><div class="time">11:30-12:20</div><div class="activity">COS 212 Practical (Informatorium CBT 1,2,3 Labs)</div></div>
-            <div class="event cos-212"><div class="time">12:30-13:20</div><div class="activity">COS 212 Practical (Informatorium CBT 1,2,3 Labs)</div></div>
-            <div class="event cos-212"><div class="time">13:30-14:20</div><div class="activity">COS 212 Practical (Informatorium CBT 1,2,3 Labs)</div></div>
-            <div class="event cos-210"><div class="time">14:30-15:20</div><div class="activity">COS 210 Practical (IT 2-26)</div></div>
-            <div class="event cos-210"><div class="time">15:30-16:20</div><div class="activity">COS 210 Practical (IT 2-26)</div></div>
-            <div class="event cos-210"><div class="time">16:30-17:20</div><div class="activity">COS 210 Practical (IT 2-26)</div></div>
-        </div>
+            // Impossible cursor animation
+            const svg = document.getElementById('bauhaus-svg');
+            const group = document.getElementById('impossible-cursor-group');
+            const afterimages = [];
+            const shapes = [
+                {type: 'circle', r: 22, color: '#e9c46a', orbit: 40, speed: 0.04, phase: 0},
+                {type: 'circle', r: 12, color: '#1d3557', orbit: 70, speed: -0.03, phase: Math.PI/2},
+                {type: 'polygon', sides: 3, r: 18, color: '#fff', orbit: 100, speed: 0.02, phase: Math.PI},
+                {type: 'line', len: 60, color: '#f4a261', orbit: 60, speed: 0.06, phase: Math.PI/3},
+            ];
+            let mouse = {x: 300, y: 110};
+            let t = 0;
+            svg.addEventListener('mousemove', e => {
+                const rect = svg.getBoundingClientRect();
+                mouse.x = e.clientX - rect.left;
+                mouse.y = e.clientY - rect.top;
+            });
+            function drawAfterimages() {
+                // Remove old afterimages
+                while (afterimages.length > 30) {
+                    const el = afterimages.shift();
+                    group.removeChild(el);
+                }
+                afterimages.forEach((el, i) => {
+                    el.setAttribute('opacity', (0.25 * (1 - i/30)).toFixed(2));
+                });
+            }
+            function animateImpossibleCursor() {
+                t += 1;
+                group.innerHTML = '';
+                // Quantum jump: sometimes teleport shapes
+                const quantum = Math.random() < 0.01;
+                shapes.forEach((shape, i) => {
+                    let angle = shape.phase + t * shape.speed;
+                    let orbit = shape.orbit;
+                    // Sometimes orbit grows/shrinks
+                    if (Math.random() < 0.005) orbit += (Math.random() - 0.5) * 60;
+                    // Sometimes shape splits
+                    let split = Math.random() < 0.01;
+                    let n = split ? 2 : 1;
+                    for (let j = 0; j < n; j++) {
+                        let a = angle + (split ? j * Math.PI : 0);
+                        let x = mouse.x + Math.cos(a) * orbit;
+                        let y = mouse.y + Math.sin(a) * orbit;
+                        if (quantum && Math.random() < 0.5) {
+                            x = Math.random() * 600;
+                            y = Math.random() * 220;
+                        }
+                        let el;
+                        if (shape.type === 'circle') {
+                            el = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+                            el.setAttribute('cx', x);
+                            el.setAttribute('cy', y);
+                            el.setAttribute('r', shape.r);
+                            el.setAttribute('fill', shape.color);
+                            el.setAttribute('filter', 'url(#glow)');
+                        } else if (shape.type === 'polygon') {
+                            el = document.createElementNS('http://www.w3.org/2000/svg', 'polygon');
+                            let points = [];
+                            for (let k = 0; k < shape.sides; k++) {
+                                let theta = a + (2 * Math.PI * k / shape.sides);
+                                let px = x + Math.cos(theta) * shape.r;
+                                let py = y + Math.sin(theta) * shape.r;
+                                points.push(px + ',' + py);
+                            }
+                            el.setAttribute('points', points.join(' '));
+                            el.setAttribute('fill', shape.color);
+                            el.setAttribute('filter', 'url(#glow)');
+                        } else if (shape.type === 'line') {
+                            el = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+                            let x2 = x + Math.cos(a + Math.PI/2) * shape.len;
+                            let y2 = y + Math.sin(a + Math.PI/2) * shape.len;
+                            el.setAttribute('x1', x);
+                            el.setAttribute('y1', y);
+                            el.setAttribute('x2', x2);
+                            el.setAttribute('y2', y2);
+                            el.setAttribute('stroke', shape.color);
+                            el.setAttribute('stroke-width', 6);
+                            el.setAttribute('stroke-linecap', 'round');
+                            el.setAttribute('filter', 'url(#glow)');
+                        }
+                        group.appendChild(el);
+                        // Afterimage
+                        if (Math.random() < 0.2) {
+                            let after = el.cloneNode(true);
+                            after.setAttribute('opacity', '0.18');
+                            afterimages.push(after);
+                            group.appendChild(after);
+                        }
+                    }
+                });
+                drawAfterimages();
+                requestAnimationFrame(animateImpossibleCursor);
+            }
+            animateImpossibleCursor();
+        });
+    </script>
     </div>
 
     <nav class="bottom-nav">
@@ -658,13 +882,71 @@
         const MODULE_CLASSES = ['phy-255', 'cos-210', 'cos-212', 'wtw-211', 'wtw-218'];
         let editMode = false;
 
-        function loadEdits() {
+        // ── Firebase Setup ──
+        const firebaseConfig = {
+            apiKey: "AIzaSyArdb2Dm8ruW10w6bUYakIz75QuBhP1SD4",
+            authDomain: "time-management-a4285.firebaseapp.com",
+            projectId: "time-management-a4285",
+            storageBucket: "time-management-a4285.firebasestorage.app",
+            messagingSenderId: "453419428813",
+            appId: "1:453419428813:web:c84c1e002db8beaa8a7284",
+            measurementId: "G-K7HQWV2ZE5"
+        };
+
+        firebase.initializeApp(firebaseConfig);
+        const auth = firebase.auth();
+        const db = firebase.firestore();
+
+        db.enablePersistence({ synchronizeTabs: true }).catch(err => {
+            console.warn('Firestore persistence failed:', err.code);
+        });
+
+        let currentUser = null;
+
+        function signInWithGoogle() {
+            const provider = new firebase.auth.GoogleAuthProvider();
+            auth.signInWithPopup(provider).catch(err => {
+                console.error('Sign-in error:', err);
+                alert('Sign-in failed: ' + err.message);
+            });
+        }
+
+        function signOutUser() {
+            auth.signOut();
+        }
+
+        auth.onAuthStateChanged(user => {
+            currentUser = user;
+            // Optionally update UI for auth state
+            applyEdits();
+        });
+
+        function docRefEdits() {
+            return db.collection('users').doc(currentUser.uid)
+                     .collection('meta').doc(EDIT_STORAGE_KEY);
+        }
+
+        async function loadEdits() {
+            if (currentUser) {
+                try {
+                    const snap = await docRefEdits().get();
+                    if (snap.exists) {
+                        localStorage.setItem(EDIT_STORAGE_KEY, JSON.stringify(snap.data().edits || {}));
+                        return snap.data().edits || {};
+                    }
+                } catch (e) { console.warn('Firestore read failed:', e); }
+            }
             try { return JSON.parse(localStorage.getItem(EDIT_STORAGE_KEY)) || {}; }
             catch { return {}; }
         }
 
-        function saveEdits(edits) {
+        async function saveEdits(edits) {
             localStorage.setItem(EDIT_STORAGE_KEY, JSON.stringify(edits));
+            if (currentUser) {
+                try {
+                    await docRefEdits().set({ edits }, { merge: true });
+                } catch (e) { console.error('Firestore write error:', e); }
+            }
         }
 
         function renderEventDisplay(eventEl, timeText, activityText, isOverride) {
