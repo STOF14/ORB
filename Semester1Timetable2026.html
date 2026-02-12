@@ -739,6 +739,21 @@
             }
         }
 
+        function persistEdit(eventEl, timeValue, activityValue) {
+            const edits = loadEdits();
+            const id = eventEl.dataset.eventId;
+            const defaultTime = eventEl.dataset.defaultTime || '';
+            const defaultActivity = eventEl.dataset.defaultActivity || '';
+
+            if (timeValue === defaultTime && activityValue === defaultActivity) {
+                delete edits[id];
+            } else {
+                edits[id] = { time: timeValue, activity: activityValue };
+            }
+
+            saveEdits(edits);
+        }
+
         function applyEdits() {
             const edits = loadEdits();
             document.querySelectorAll('.event').forEach((eventEl, index) => {
@@ -795,6 +810,19 @@
 
                 timeEl.innerHTML = '<input class="edit-time" type="text" value="' + timeValue.replace(/"/g, '&quot;') + '">';
                 activityEl.innerHTML = '<input class="edit-activity" type="text" placeholder="Add activity" value="' + activityValue.replace(/"/g, '&quot;') + '">';
+
+                const timeInput = timeEl.querySelector('.edit-time');
+                const activityInput = activityEl.querySelector('.edit-activity');
+
+                const autosave = () => {
+                    const nextTime = timeInput.value.trim();
+                    const nextActivity = activityInput.value.trim();
+                    persistEdit(eventEl, nextTime, nextActivity);
+                    updateModuleClass(eventEl, nextActivity, true);
+                };
+
+                timeInput.addEventListener('input', autosave);
+                activityInput.addEventListener('input', autosave);
             });
         }
 
@@ -849,7 +877,22 @@
             document.querySelectorAll('.event.empty').forEach(e => e.classList.add('hidden-empty'));
         }
         // Update "What's Next" every minute
-        setInterval(updateWhatsNext, 60000);
+        let whatsNextInterval = null;
+        function startWhatsNextInterval() {
+            if (whatsNextInterval) clearInterval(whatsNextInterval);
+            whatsNextInterval = setInterval(updateWhatsNext, 60000);
+        }
+
+        document.addEventListener('visibilitychange', () => {
+            if (document.visibilityState === 'visible') {
+                updateWhatsNext();
+                startWhatsNextInterval();
+            } else {
+                if (whatsNextInterval) clearInterval(whatsNextInterval);
+            }
+        });
+
+        startWhatsNextInterval();
     </script>
 </body>
 </html>
