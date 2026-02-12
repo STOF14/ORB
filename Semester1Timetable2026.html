@@ -45,6 +45,58 @@
             margin-bottom: 40px;
         }
 
+        .page-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+            margin-bottom: 40px;
+        }
+
+        .page-header h1 {
+            margin-bottom: 0;
+        }
+
+        .edit-toggle {
+            background: transparent;
+            border: 1px solid var(--black);
+            color: var(--black);
+            font-family: inherit;
+            font-size: 9px;
+            font-weight: 800;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            padding: 6px 12px;
+            cursor: pointer;
+            transition: background 0.2s ease, color 0.2s ease;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        .edit-toggle[aria-pressed="true"] {
+            background: var(--black);
+            color: #fff;
+        }
+
+        .edit-time,
+        .edit-activity {
+            width: 100%;
+            border: 1px solid #ddd;
+            padding: 6px 8px;
+            font-family: inherit;
+            font-size: 14px;
+            font-weight: 600;
+            color: #222;
+            background: #fff;
+        }
+
+        .edit-activity {
+            min-height: 28px;
+        }
+
+        body.edit-mode .event {
+            background: #fffdf5;
+        }
+
         .day {
             margin-bottom: 30px;
             background: #fff;
@@ -201,6 +253,15 @@
             h1 {
                 font-size: 28px;
                 margin-bottom: 15px;
+            }
+
+            .page-header {
+                margin-bottom: 15px;
+            }
+
+            .edit-toggle {
+                font-size: 8px;
+                padding: 6px 10px;
             }
 
             /* Hide top nav on mobile */
@@ -408,7 +469,10 @@
     </nav>
 
     <div class="container">
-        <h1>Timetable</h1>
+        <div class="page-header">
+            <h1>Timetable</h1>
+            <button class="edit-toggle" id="editToggle" type="button" aria-pressed="false">Edit</button>
+        </div>
 
         <div class="whats-next" id="whatsNext">
             <div class="whats-next-label">Next Up</div>
@@ -620,7 +684,164 @@
             btn.classList.toggle('active', emptyHidden);
         }
 
+        const EDIT_STORAGE_KEY = 'timetable_sem1_edits';
+        const MODULE_CLASSES = ['phy-255', 'cos-210', 'cos-212', 'wtw-211', 'wtw-218'];
+        let editMode = false;
+
+        function loadEdits() {
+            try { return JSON.parse(localStorage.getItem(EDIT_STORAGE_KEY)) || {}; }
+            catch { return {}; }
+        }
+
+        function saveEdits(edits) {
+            localStorage.setItem(EDIT_STORAGE_KEY, JSON.stringify(edits));
+        }
+
+        function renderEventDisplay(eventEl, timeText, activityText, isOverride) {
+            const timeEl = eventEl.querySelector('.time');
+            const activityEl = eventEl.querySelector('.activity');
+            timeEl.textContent = timeText;
+
+            const defaultActivity = eventEl.dataset.defaultActivity || '';
+            const defaultHref = eventEl.dataset.defaultHref || '';
+
+            activityEl.innerHTML = '';
+            if (!isOverride && defaultHref && activityText === defaultActivity) {
+                const link = document.createElement('a');
+                link.href = defaultHref;
+                link.textContent = activityText;
+                activityEl.appendChild(link);
+            } else {
+                activityEl.textContent = activityText;
+            }
+        }
+
+        function detectModuleClass(text) {
+            const val = text.toLowerCase();
+            if (/\bphy\s*-?\s*255\b/.test(val)) return 'phy-255';
+            if (/\bcos\s*-?\s*210\b/.test(val)) return 'cos-210';
+            if (/\bcos\s*-?\s*212\b/.test(val)) return 'cos-212';
+            if (/\bwtw\s*-?\s*211\b/.test(val)) return 'wtw-211';
+            if (/\bwtw\s*-?\s*218\b/.test(val)) return 'wtw-218';
+            return null;
+        }
+
+        function updateModuleClass(eventEl, activityText, isOverride) {
+            MODULE_CLASSES.forEach(cls => eventEl.classList.remove(cls));
+            const defaultModule = eventEl.dataset.defaultModule || '';
+            const moduleClass = isOverride ? detectModuleClass(activityText) : defaultModule;
+            if (moduleClass) eventEl.classList.add(moduleClass);
+
+            if (activityText.trim()) {
+                eventEl.classList.remove('empty');
+            } else {
+                eventEl.classList.add('empty');
+            }
+        }
+
+        function applyEdits() {
+            const edits = loadEdits();
+            document.querySelectorAll('.event').forEach((eventEl, index) => {
+                if (!eventEl.dataset.eventId) {
+                    eventEl.dataset.eventId = String(index);
+                }
+
+                const timeEl = eventEl.querySelector('.time');
+                const activityEl = eventEl.querySelector('.activity');
+                const timeInput = eventEl.querySelector('.edit-time');
+                const activityInput = eventEl.querySelector('.edit-activity');
+                const hasInputs = Boolean(timeInput || activityInput);
+
+                if (!eventEl.dataset.defaultTime && !hasInputs) {
+                    eventEl.dataset.defaultTime = timeEl.textContent.trim();
+                }
+
+                if (!eventEl.dataset.defaultActivity && !hasInputs) {
+                    const link = activityEl ? activityEl.querySelector('a') : null;
+                    eventEl.dataset.defaultActivity = link ? link.textContent.trim() : activityEl.textContent.trim();
+                    eventEl.dataset.defaultHref = link ? link.getAttribute('href') : '';
+                }
+
+                if (!eventEl.dataset.defaultModule && !hasInputs) {
+                    const cls = MODULE_CLASSES.find(c => eventEl.classList.contains(c));
+                    if (cls) eventEl.dataset.defaultModule = cls;
+                }
+
+                const defaultTime = eventEl.dataset.defaultTime || (timeInput ? timeInput.value.trim() : timeEl.textContent.trim());
+                const defaultActivity = eventEl.dataset.defaultActivity || (activityInput ? activityInput.value.trim() : activityEl.textContent.trim());
+                const defaultHref = eventEl.dataset.defaultHref || '';
+
+                const override = edits[eventEl.dataset.eventId];
+                const timeText = override && override.time ? override.time : defaultTime;
+                const activityText = override && override.activity !== undefined ? override.activity : defaultActivity;
+                eventEl.dataset.defaultHref = defaultHref;
+                renderEventDisplay(eventEl, timeText, activityText, Boolean(override));
+                updateModuleClass(eventEl, activityText, Boolean(override));
+            });
+        }
+
+        function enterEditMode() {
+            editMode = true;
+            document.body.classList.add('edit-mode');
+            const toggle = document.getElementById('editToggle');
+            toggle.textContent = 'Done';
+            toggle.setAttribute('aria-pressed', 'true');
+
+            document.querySelectorAll('.event').forEach(eventEl => {
+                const timeEl = eventEl.querySelector('.time');
+                const activityEl = eventEl.querySelector('.activity');
+                const timeValue = timeEl.textContent.trim();
+                const activityValue = activityEl.textContent.trim();
+
+                timeEl.innerHTML = '<input class="edit-time" type="text" value="' + timeValue.replace(/"/g, '&quot;') + '">';
+                activityEl.innerHTML = '<input class="edit-activity" type="text" placeholder="Add activity" value="' + activityValue.replace(/"/g, '&quot;') + '">';
+            });
+        }
+
+        function exitEditMode() {
+            const edits = {};
+            document.querySelectorAll('.event').forEach(eventEl => {
+                const id = eventEl.dataset.eventId;
+                const timeInput = eventEl.querySelector('.edit-time');
+                const activityInput = eventEl.querySelector('.edit-activity');
+                if (!timeInput || !activityInput) return;
+
+                const timeValue = timeInput.value.trim();
+                const activityValue = activityInput.value.trim();
+                const defaultTime = eventEl.dataset.defaultTime || '';
+                const defaultActivity = eventEl.dataset.defaultActivity || '';
+
+                if (timeValue !== defaultTime || activityValue !== defaultActivity) {
+                    edits[id] = { time: timeValue, activity: activityValue };
+                }
+            });
+
+            saveEdits(edits);
+            applyEdits();
+
+            editMode = false;
+            document.body.classList.remove('edit-mode');
+            const toggle = document.getElementById('editToggle');
+            toggle.textContent = 'Edit';
+            toggle.setAttribute('aria-pressed', 'false');
+            updateWhatsNext();
+        }
+
+        function setupEditToggle() {
+            const toggle = document.getElementById('editToggle');
+            if (!toggle) return;
+            toggle.addEventListener('click', () => {
+                if (editMode) {
+                    exitEditMode();
+                } else {
+                    enterEditMode();
+                }
+            });
+        }
+
         // Init
+        applyEdits();
+        setupEditToggle();
         highlightToday();
         updateWhatsNext();
         // Auto-hide empties on mobile
