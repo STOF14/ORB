@@ -2,11 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <meta name="theme-color" content="#000000" />
     <meta name="apple-mobile-web-app-title" content="Focus" />
+    <link rel="manifest" href="manifest.json" />
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/icon-192.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="icons/icon-512.png" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <meta name="apple-touch-startup-image" content="icons/icon-512.png" />
     <title>Focus Timer</title>
     <style>
         :root {
@@ -470,45 +477,40 @@
                     const dot = document.getElementById('swiss-dot');
                     let t = 0;
                     let anim;
-                    let minTime = 1200; // Minimum loader time in ms
-                    let maxTime = 5000; // Maximum loader time in ms
-                    let start = Date.now();
-                    function animateSwissLogo() {
-                        t += 0.06;
-                        // Animate bars: grow/shrink and rotate
-                        const h = 10 + 6 * Math.abs(Math.sin(t));
-                        bar.setAttribute('height', h);
-                        bar.setAttribute('y', 80 - h/2);
-                        barV.setAttribute('width', h);
-                        barV.setAttribute('x', 80 - h/2);
-                        // Rotate the cross
-                        const rot = Math.sin(t/1.5) * 18;
-                        barsGroup.setAttribute('transform', `rotate(${rot} 80 80)`);
-                        // Animate dot: bounce and pulse
-                        const r = 28 + 4 * Math.abs(Math.sin(t*2));
-                        dot.setAttribute('r', r);
-                        dot.setAttribute('cx', 80);
-                        dot.setAttribute('cy', 80 + Math.abs(Math.sin(t*2))*18);
-                        anim = requestAnimationFrame(animateSwissLogo);
-                    }
-                    animateSwissLogo();
-                    function hideLoader() {
-                        loader.style.opacity = '0';
+                    const LOADER_KEY = 'orbitdesk_loader_shown';
+                    const loaderAlreadyShown = sessionStorage.getItem(LOADER_KEY);
+                    if (!loaderAlreadyShown) {
+                        function animateSwissLogo() {
+                            t += 0.06;
+                            const h = 10 + 6 * Math.abs(Math.sin(t));
+                            bar.setAttribute('height', h);
+                            bar.setAttribute('y', 80 - h/2);
+                            barV.setAttribute('width', h);
+                            barV.setAttribute('x', 80 - h/2);
+                            const rot = Math.sin(t/1.5) * 18;
+                            barsGroup.setAttribute('transform', `rotate(${rot} 80 80)`);
+                            const r = 28 + 4 * Math.abs(Math.sin(t*2));
+                            dot.setAttribute('r', r);
+                            dot.setAttribute('cx', 80);
+                            dot.setAttribute('cy', 80 + Math.abs(Math.sin(t*2))*18);
+                            anim = requestAnimationFrame(animateSwissLogo);
+                        }
+                        animateSwissLogo();
                         setTimeout(() => {
-                            loader.style.display = 'none';
-                            cancelAnimationFrame(anim);
-                        }, 600);
-                    }
-                    // Hide loader after minTime if DOM is ready, else after maxTime
-                    window.addEventListener('load', () => {
-                        const elapsed = Date.now() - start;
-                        setTimeout(hideLoader, Math.max(minTime - elapsed, 0));
-                    });
-                    setTimeout(hideLoader, maxTime);
-                    if (window.history && window.history.pushState) {
-                        window.addEventListener('popstate', () => {
-                            loader.style.display = 'none';
-                        });
+                            loader.style.opacity = '0';
+                            setTimeout(() => {
+                                loader.style.display = 'none';
+                                cancelAnimationFrame(anim);
+                            }, 600);
+                        }, 3000);
+                        sessionStorage.setItem(LOADER_KEY, '1');
+                        if (window.history && window.history.pushState) {
+                            window.addEventListener('popstate', () => {
+                                loader.style.display = 'none';
+                            });
+                        }
+                    } else {
+                        loader.style.display = 'none';
                     }
                 })();
         // Durations in seconds

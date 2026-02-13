@@ -2,11 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <meta name="theme-color" content="#000000" />
     <meta name="apple-mobile-web-app-title" content="Timetable" />
+    <link rel="manifest" href="manifest.json" />
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/icon-192.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="icons/icon-512.png" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Timetable" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-touch-startup-image" content="icons/icon-512.png" />
     <title>Semester 2 — Timetable</title>
     <style>
         :root {
@@ -546,6 +559,29 @@
             margin-bottom: 0;
             animation: fadeInText 1.5s cubic-bezier(.68,-0.55,.27,1.55);
         }
+        @media (max-width: 600px) {
+            .bauhaus-bg svg {
+                height: 120px !important;
+                min-width: 0 !important;
+            }
+            .bauhaus-text {
+                padding: 18px 8px;
+                border-radius: 14px;
+            }
+            .bauhaus-text h1 {
+                font-size: 28px;
+                letter-spacing: 2px;
+                margin-bottom: 12px;
+            }
+            .bauhaus-text p {
+                font-size: 15px;
+            }
+            .bauhaus-construction {
+                margin-top: 24px;
+                margin-bottom: 24px;
+                min-height: 180px;
+            }
+        }
         @keyframes fadeInBauhaus {
             0% { opacity: 0; transform: translateY(40px); }
             100% { opacity: 1; transform: translateY(0); }
@@ -625,83 +661,79 @@
         document.addEventListener('DOMContentLoaded', function() {
             const circle = document.getElementById('egg-circle');
             const rect = document.getElementById('egg-rect');
-            let grow = false;
-            setInterval(() => {
-                grow = !grow;
-                circle.setAttribute('r', grow ? '100' : '80');
-                circle.setAttribute('fill', grow ? '#e9c46a' : '#f4a261');
-                rect.setAttribute('width', grow ? '220' : '180');
-                rect.setAttribute('fill', grow ? '#e63946' : '#457b9d');
-            }, 1200);
-
-            // Easter Egg: Konami Code
-            const code = ["ArrowUp","ArrowUp","ArrowDown","ArrowDown","ArrowLeft","ArrowRight","ArrowLeft","ArrowRight","b","a"];
-            let pos = 0;
-            document.addEventListener('keydown', function(e) {
-                if (e.key === code[pos]) {
-                    pos++;
-                    if (pos === code.length) {
-                        const title = document.getElementById('egg-title');
-                        title.textContent = 'BAUHAUS PARTY!';
-                        title.classList.add('egg-surprise');
-                        circle.setAttribute('fill', '#fff');
-                        rect.setAttribute('fill', '#fff');
-                        document.body.style.background = 'linear-gradient(135deg, #e63946 0%, #f4a261 100%)';
-                        pos = 0;
-                    }
-                } else {
-                    pos = 0;
-                }
-            });
-
-            // Impossible cursor animation
-            const svg = document.getElementById('bauhaus-svg');
-            const group = document.getElementById('impossible-cursor-group');
-            const afterimages = [];
-            const shapes = [
-                {type: 'circle', r: 22, color: '#e9c46a', orbit: 40, speed: 0.04, phase: 0},
-                {type: 'circle', r: 12, color: '#1d3557', orbit: 70, speed: -0.03, phase: Math.PI/2},
-                {type: 'polygon', sides: 3, r: 18, color: '#fff', orbit: 100, speed: 0.02, phase: Math.PI},
-                {type: 'line', len: 60, color: '#f4a261', orbit: 60, speed: 0.06, phase: Math.PI/3},
-            ];
-            let mouse = {x: 300, y: 110};
-            let t = 0;
-            svg.addEventListener('mousemove', e => {
-                const rect = svg.getBoundingClientRect();
-                mouse.x = e.clientX - rect.left;
-                mouse.y = e.clientY - rect.top;
-            });
-            function drawAfterimages() {
-                // Remove old afterimages
-                while (afterimages.length > 30) {
-                    const el = afterimages.shift();
-                    group.removeChild(el);
-                }
-                afterimages.forEach((el, i) => {
-                    el.setAttribute('opacity', (0.25 * (1 - i/30)).toFixed(2));
-                });
-            }
-            function animateImpossibleCursor() {
-                t += 1;
-                group.innerHTML = '';
-                // Quantum jump: sometimes teleport shapes
-                const quantum = Math.random() < 0.01;
-                shapes.forEach((shape, i) => {
-                    let angle = shape.phase + t * shape.speed;
-                    let orbit = shape.orbit;
-                    // Sometimes orbit grows/shrinks
-                    if (Math.random() < 0.005) orbit += (Math.random() - 0.5) * 60;
-                    // Sometimes shape splits
-                    let split = Math.random() < 0.01;
-                    let n = split ? 2 : 1;
-                    for (let j = 0; j < n; j++) {
-                        let a = angle + (split ? j * Math.PI : 0);
-                        let x = mouse.x + Math.cos(a) * orbit;
-                        let y = mouse.y + Math.sin(a) * orbit;
-                        if (quantum && Math.random() < 0.5) {
-                            x = Math.random() * 600;
-                            y = Math.random() * 220;
+                (function() {
+                    const loader = document.getElementById('orbitdesk-loader');
+                    const bar = document.getElementById('swiss-bar');
+                    const barV = document.getElementById('swiss-bar-v');
+                    const barsGroup = document.getElementById('swiss-bars-group');
+                    const dot = document.getElementById('swiss-dot');
+                    let t = 0;
+                    let anim;
+                    const LOADER_KEY = 'orbitdesk_loader_shown';
+                    const loaderAlreadyShown = sessionStorage.getItem(LOADER_KEY);
+                    if (!loaderAlreadyShown) {
+                        function animateSwissLogo() {
+                            t += 0.06;
+                            const h = 10 + 6 * Math.abs(Math.sin(t));
+                            bar.setAttribute('height', h);
+                            bar.setAttribute('y', 80 - h/2);
+                            barV.setAttribute('width', h);
+                            barV.setAttribute('x', 80 - h/2);
+                            const rot = Math.sin(t/1.5) * 18;
+                            barsGroup.setAttribute('transform', `rotate(${rot} 80 80)`);
+                            const r = 28 + 4 * Math.abs(Math.sin(t*2));
+                            dot.setAttribute('r', r);
+                            dot.setAttribute('cx', 80);
+                            dot.setAttribute('cy', 80 + Math.abs(Math.sin(t*2))*18);
+                            anim = requestAnimationFrame(animateSwissLogo);
                         }
+                        animateSwissLogo();
+                        setTimeout(() => {
+                            loader.style.opacity = '0';
+                            setTimeout(() => {
+                                loader.style.display = 'none';
+                                cancelAnimationFrame(anim);
+                            }, 600);
+                        }, 3000);
+                        sessionStorage.setItem(LOADER_KEY, '1');
+                        if (window.history && window.history.pushState) {
+                            window.addEventListener('popstate', () => {
+                                loader.style.display = 'none';
+                            });
+                        }
+                    } else {
+                        loader.style.display = 'none';
+                    }
+                })();
+        });
+    </script>
+            <!-- Impossible Cursor Animation for Bauhaus SVG -->
+            <script>
+            (function() {
+                const group = document.getElementById('impossible-cursor-group');
+                if (!group) return;
+                // Only animate if SVG is visible
+                const svg = document.getElementById('bauhaus-svg');
+                if (!svg) return;
+                // Reduce animation on mobile for performance
+                const isMobile = window.innerWidth <= 600;
+                const shapes = [
+                    { type: 'circle', r: isMobile ? 8 : 16, color: '#fff', orbit: 60, speed: 0.012, phase: 0 },
+                    { type: 'polygon', r: isMobile ? 10 : 20, sides: 3, color: '#e63946', orbit: 90, speed: 0.009, phase: 1 },
+                    { type: 'polygon', r: isMobile ? 7 : 14, sides: 4, color: '#457b9d', orbit: 110, speed: 0.007, phase: 2 },
+                    { type: 'line', len: isMobile ? 18 : 36, color: '#f4a261', orbit: 80, speed: 0.011, phase: 3 }
+                ];
+                let t = 0;
+                function animate() {
+                    t += 1;
+                    group.innerHTML = '';
+                    const cx = isMobile ? 180 : 300;
+                    const cy = 110;
+                    shapes.forEach((shape, i) => {
+                        let angle = shape.phase + t * shape.speed;
+                        let orbit = shape.orbit;
+                        let x = cx + Math.cos(angle) * orbit;
+                        let y = cy + Math.sin(angle) * orbit;
                         let el;
                         if (shape.type === 'circle') {
                             el = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
@@ -714,7 +746,7 @@
                             el = document.createElementNS('http://www.w3.org/2000/svg', 'polygon');
                             let points = [];
                             for (let k = 0; k < shape.sides; k++) {
-                                let theta = a + (2 * Math.PI * k / shape.sides);
+                                let theta = angle + (2 * Math.PI * k / shape.sides);
                                 let px = x + Math.cos(theta) * shape.r;
                                 let py = y + Math.sin(theta) * shape.r;
                                 points.push(px + ',' + py);
@@ -724,33 +756,24 @@
                             el.setAttribute('filter', 'url(#glow)');
                         } else if (shape.type === 'line') {
                             el = document.createElementNS('http://www.w3.org/2000/svg', 'line');
-                            let x2 = x + Math.cos(a + Math.PI/2) * shape.len;
-                            let y2 = y + Math.sin(a + Math.PI/2) * shape.len;
+                            let x2 = x + Math.cos(angle + Math.PI/2) * shape.len;
+                            let y2 = y + Math.sin(angle + Math.PI/2) * shape.len;
                             el.setAttribute('x1', x);
                             el.setAttribute('y1', y);
                             el.setAttribute('x2', x2);
                             el.setAttribute('y2', y2);
                             el.setAttribute('stroke', shape.color);
-                            el.setAttribute('stroke-width', 6);
+                            el.setAttribute('stroke-width', isMobile ? 3 : 6);
                             el.setAttribute('stroke-linecap', 'round');
                             el.setAttribute('filter', 'url(#glow)');
                         }
                         group.appendChild(el);
-                        // Afterimage
-                        if (Math.random() < 0.2) {
-                            let after = el.cloneNode(true);
-                            after.setAttribute('opacity', '0.18');
-                            afterimages.push(after);
-                            group.appendChild(after);
-                        }
-                    }
-                });
-                drawAfterimages();
-                requestAnimationFrame(animateImpossibleCursor);
-            }
-            animateImpossibleCursor();
-        });
-    </script>
+                    });
+                    requestAnimationFrame(animate);
+                }
+                animate();
+            })();
+            </script>
     </div>
 
     <nav class="bottom-nav">

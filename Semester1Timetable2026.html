@@ -2,11 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <meta name="theme-color" content="#000000" />
     <meta name="apple-mobile-web-app-title" content="Timetable" />
+    <link rel="manifest" href="manifest.json" />
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/icon-192.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="icons/icon-512.png" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <meta name="apple-touch-startup-image" content="icons/icon-512.png" />
     <title>Semester 1 — Timetable</title>
     <style>
         :root {
@@ -521,21 +528,21 @@
                 <div class="event phy-255"><div class="time">14:30-15:20</div><div class="activity"><a href="dashboard.html#phy-255">PHY 255 Practical (NS1 5-42)</a></div></div>
                 <div class="event phy-255"><div class="time">15:30-16:20</div><div class="activity"><a href="dashboard.html#phy-255">PHY 255 Practical (NS1 5-42)</a></div></div>
                 <div class="event cos-212"><div class="time">16:30-17:20</div><div class="activity"><a href="dashboard.html#cos-212">COS 212 Lecture (Large Chemistry Hall)</a></div></div>
-        </div>
+        </section>
 
         <section class="day tuesday" aria-label="Tuesday">
-                <div class="day-header">Tuesday</div>
-                    <div class="event empty"><div class="time">07:30-08:20</div><div class="activity"></div></div>
-                    <div class="event wtw-218"><div class="time">08:30-09:20</div><div class="activity"><a href="dashboard.html#wtw-218">WTW 218 Lecture (HB 4-3) G02</a></div></div>
-                    <div class="event empty"><div class="time">09:30-10:20</div><div class="activity"></div></div>
-                    <div class="event empty"><div class="time">10:30-11:20</div><div class="activity"></div></div>
-                    <div class="event empty"><div class="time">11:30-12:20</div><div class="activity"></div></div>
-                    <div class="event empty"><div class="time">12:30-13:20</div><div class="activity"></div></div>
-                    <div class="event empty"><div class="time">13:30-14:20</div><div class="activity"></div></div>
-                    <div class="event phy-255"><div class="time">14:30-15:20</div><div class="activity"><a href="dashboard.html#phy-255">PHY 255 Tutorial (NS1 5-42)</a></div></div>
-                    <div class="event phy-255"><div class="time">15:30-16:20</div><div class="activity"><a href="dashboard.html#phy-255">PHY 255 Tutorial (NS1 5-42)</a></div></div>
-                    <div class="event phy-255"><div class="time">16:30-17:20</div><div class="activity"><a href="dashboard.html#phy-255">PHY 255 Tutorial (NS1 5-42)</a></div></div>
-        </div>
+            <div class="day-header">Tuesday</div>
+                <div class="event empty"><div class="time">07:30-08:20</div><div class="activity"></div></div>
+                <div class="event wtw-218"><div class="time">08:30-09:20</div><div class="activity"><a href="dashboard.html#wtw-218">WTW 218 Lecture (HB 4-3) G02</a></div></div>
+                <div class="event empty"><div class="time">09:30-10:20</div><div class="activity"></div></div>
+                <div class="event empty"><div class="time">10:30-11:20</div><div class="activity"></div></div>
+                <div class="event empty"><div class="time">11:30-12:20</div><div class="activity"></div></div>
+                <div class="event empty"><div class="time">12:30-13:20</div><div class="activity"></div></div>
+                <div class="event empty"><div class="time">13:30-14:20</div><div class="activity"></div></div>
+                <div class="event phy-255"><div class="time">14:30-15:20</div><div class="activity"><a href="dashboard.html#phy-255">PHY 255 Tutorial (NS1 5-42)</a></div></div>
+                <div class="event phy-255"><div class="time">15:30-16:20</div><div class="activity"><a href="dashboard.html#phy-255">PHY 255 Tutorial (NS1 5-42)</a></div></div>
+                <div class="event phy-255"><div class="time">16:30-17:20</div><div class="activity"><a href="dashboard.html#phy-255">PHY 255 Tutorial (NS1 5-42)</a></div></div>
+        </section>
 
         <section class="day wednesday" aria-label="Wednesday">
                 <div class="day-header">Wednesday</div>
@@ -549,7 +556,7 @@
                     <div class="event empty"><div class="time">14:30-15:20</div><div class="activity"></div></div>
                     <div class="event wtw-211"><div class="time">15:30-16:20</div><div class="activity"><a href="dashboard.html#wtw-211">WTW 211 Tutorial (Roos Hall) T02 [Starts at 16:00]</a></div></div>
                     <div class="event wtw-211"><div class="time">16:30-17:20</div><div class="activity"><a href="dashboard.html#wtw-211">WTW 211 Tutorial (Roos Hall) T02</a></div></div>
-        </div>
+        </section>
 
         <section class="day thursday" aria-label="Thursday">
                 <div class="day-header">Thursday</div>
@@ -563,7 +570,7 @@
                     <div class="event empty"><div class="time">14:30-15:20</div><div class="activity"></div></div>
                     <div class="event empty"><div class="time">15:30-16:20</div><div class="activity"></div></div>
                     <div class="event cos-212"><div class="time">16:30-17:20</div><div class="activity"><a href="dashboard.html#cos-212">COS 212 Lecture (Roos Hall)</a></div></div>
-        </div>
+        </section>
 
         <section class="day friday" aria-label="Friday">
                 <div class="day-header">Friday</div>
@@ -577,7 +584,7 @@
                     <div class="event cos-210"><div class="time">14:30-15:20</div><div class="activity"><a href="dashboard.html#cos-210">COS 210 Tutorial (IT 2-26)</a></div></div>
                     <div class="event empty"><div class="time">15:30-16:20</div><div class="activity"></div></div>
                     <div class="event empty"><div class="time">16:30-17:20</div><div class="activity"></div></div>
-        </div>
+        </section>
     </main>
 
     <nav class="bottom-nav">
@@ -604,7 +611,7 @@
     </nav>
 
     <script>
-                // Swiss Style OrbitDesk Loader Animation
+                // Swiss Style OrbitDesk Loader Animation (show only on initial entry, 3s duration)
                 (function() {
                     const loader = document.getElementById('orbitdesk-loader');
                     const bar = document.getElementById('swiss-bar');
@@ -613,37 +620,45 @@
                     const dot = document.getElementById('swiss-dot');
                     let t = 0;
                     let anim;
-                    function animateSwissLogo() {
-                        t += 0.06;
-                        // Animate bars: grow/shrink and rotate
-                        const h = 10 + 6 * Math.abs(Math.sin(t));
-                        bar.setAttribute('height', h);
-                        bar.setAttribute('y', 80 - h/2);
-                        barV.setAttribute('width', h);
-                        barV.setAttribute('x', 80 - h/2);
-                        // Rotate the cross
-                        const rot = Math.sin(t/1.5) * 18;
-                        barsGroup.setAttribute('transform', `rotate(${rot} 80 80)`);
-                        // Animate dot: bounce and pulse
-                        const r = 28 + 4 * Math.abs(Math.sin(t*2));
-                        dot.setAttribute('r', r);
-                        dot.setAttribute('cx', 80);
-                        dot.setAttribute('cy', 80 + Math.abs(Math.sin(t*2))*18);
-                        anim = requestAnimationFrame(animateSwissLogo);
-                    }
-                    animateSwissLogo();
-                    // Hide loader after 5s
-                    setTimeout(() => {
-                        loader.style.opacity = '0';
+                    // Only show loader if not previously shown in this session
+                    const LOADER_KEY = 'orbitdesk_loader_shown';
+                    const loaderAlreadyShown = sessionStorage.getItem(LOADER_KEY);
+                    if (!loaderAlreadyShown) {
+                        function animateSwissLogo() {
+                            t += 0.06;
+                            // Animate bars: grow/shrink and rotate
+                            const h = 10 + 6 * Math.abs(Math.sin(t));
+                            bar.setAttribute('height', h);
+                            bar.setAttribute('y', 80 - h/2);
+                            barV.setAttribute('width', h);
+                            barV.setAttribute('x', 80 - h/2);
+                            // Rotate the cross
+                            const rot = Math.sin(t/1.5) * 18;
+                            barsGroup.setAttribute('transform', `rotate(${rot} 80 80)`);
+                            // Animate dot: bounce and pulse
+                            const r = 28 + 4 * Math.abs(Math.sin(t*2));
+                            dot.setAttribute('r', r);
+                            dot.setAttribute('cx', 80);
+                            dot.setAttribute('cy', 80 + Math.abs(Math.sin(t*2))*18);
+                            anim = requestAnimationFrame(animateSwissLogo);
+                        }
+                        animateSwissLogo();
+                        // Hide loader after 3s
                         setTimeout(() => {
-                            loader.style.display = 'none';
-                            cancelAnimationFrame(anim);
-                        }, 600);
-                    }, 5000);
-                    if (window.history && window.history.pushState) {
-                        window.addEventListener('popstate', () => {
-                            loader.style.display = 'none';
-                        });
+                            loader.style.opacity = '0';
+                            setTimeout(() => {
+                                loader.style.display = 'none';
+                                cancelAnimationFrame(anim);
+                            }, 600);
+                        }, 3000);
+                        sessionStorage.setItem(LOADER_KEY, '1');
+                        if (window.history && window.history.pushState) {
+                            window.addEventListener('popstate', () => {
+                                loader.style.display = 'none';
+                            });
+                        }
+                    } else {
+                        loader.style.display = 'none';
                     }
                 })();
         const DAYS = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'];
