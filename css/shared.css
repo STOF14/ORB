@@ -1,0 +1,187 @@
+/* ============================================================
+   OrbitDesk — Shared Stylesheet
+   CSS variables, reset, navigation, loader, brand
+   ============================================================ */
+
+:root {
+    --red: #e63946;
+    --blue: #457b9d;
+    --dark-blue: #1d3557;
+    --orange: #f4a261;
+    --yellow: #e9c46a;
+    --paper: #f5f5f0;
+    --black: #000;
+    --bg: #f8f9fa;
+    --grid-line: #d1d5db;
+    --text-muted: #6b7280;
+
+    /* Dashboard aliases */
+    --primary: #000000;
+    --secondary: #e63946;
+    --accent: #457b9d;
+    --mod-red: #e63946;
+    --mod-blue: #457b9d;
+    --mod-dark-blue: #1d3557;
+    --mod-orange: #f4a261;
+    --mod-yellow: #e9c46a;
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ── Navigation ── */
+.site-nav {
+    background: var(--black);
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    gap: 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 3px solid var(--red);
+}
+
+.site-nav a {
+    color: #999;
+    text-decoration: none;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    padding: 16px 20px;
+    transition: color 0.2s ease, background 0.2s ease;
+    font-family: "Futura", "Arial", sans-serif;
+}
+
+.site-nav a:hover {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.site-nav a.active {
+    color: #fff;
+    border-bottom: 3px solid var(--red);
+    margin-bottom: -3px;
+}
+
+.nav-label { display: none; }
+
+/* ── Bottom Nav (mobile) ── */
+.bottom-nav {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .site-nav { display: none; }
+
+    .bottom-nav {
+        display: flex;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: #000;
+        border-top: 3px solid var(--red);
+        z-index: 200;
+        padding-bottom: env(safe-area-inset-bottom);
+    }
+
+    .bottom-nav a {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 4px;
+        padding: 10px 5px;
+        color: #666;
+        text-decoration: none;
+        font-family: "Futura", "Arial", sans-serif;
+        font-size: 9px;
+        font-weight: 800;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        transition: color 0.2s ease;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    .bottom-nav a.active { color: #fff; }
+
+    .bottom-nav .nav-icon {
+        font-size: 20px;
+        line-height: 1;
+    }
+}
+
+@media (min-width: 769px) {
+    .bottom-nav { display: none; }
+}
+
+/* ── OrbitDesk Loader ── */
+.orbitdesk-loader {
+    position: fixed;
+    z-index: 9999;
+    top: 0; left: 0;
+    width: 100vw; height: 100vh;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.6s;
+}
+
+.orbitdesk-loader__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.orbitdesk-loader__text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    padding-right: 2vw;
+}
+
+.orbitdesk-loader__word {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 64px;
+    font-weight: 900;
+    line-height: 1;
+    letter-spacing: -2px;
+    text-transform: uppercase;
+}
+
+.orbitdesk-loader__word--orbit { color: #e63946; }
+.orbitdesk-loader__word--desk  { color: #000; }
+
+.orbitdesk-loader__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ── OrbitDesk Mini Brand ── */
+.orbitdesk-brand {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    justify-content: center;
+    margin-bottom: 18px;
+}
+
+.orbitdesk-brand__name {
+    font-family: 'Futura', 'Arial', sans-serif;
+    font-weight: 900;
+    font-size: 1.3em;
+    color: var(--dark-blue);
+    letter-spacing: 2px;
+}

@@ -1,0 +1,1040 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="apple-mobile-web-app-title" content="Timetable" />
+    <link rel="manifest" href="manifest.json" />
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/icon-192.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="icons/icon-512.png" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <meta name="apple-touch-startup-image" content="icons/icon-512.png" />
+    <title>Semester 1 — Timetable</title>
+    <style>
+        :root {
+            --red: #e63946;
+            --blue: #457b9d;
+            --dark-blue: #1d3557;
+            --orange: #f4a261;
+            --yellow: #e9c46a;
+            --paper: #f5f5f0;
+            --black: #000;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: var(--paper);
+            font-family: "Futura", "Arial", sans-serif;
+            padding: 40px 20px;
+            color: var(--black);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 48px;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 40px;
+        }
+
+        .page-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+            margin-bottom: 40px;
+        }
+
+        .page-header h1 {
+            margin-bottom: 0;
+        }
+
+        .edit-toggle {
+            background: transparent;
+            border: 1px solid var(--black);
+            color: var(--black);
+            font-family: inherit;
+            font-size: 9px;
+            font-weight: 800;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            padding: 6px 12px;
+            cursor: pointer;
+            transition: background 0.2s ease, color 0.2s ease;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        .edit-toggle[aria-pressed="true"] {
+            background: var(--black);
+            color: #fff;
+        }
+
+        .edit-time,
+        .edit-activity {
+            width: 100%;
+            border: 1px solid #ddd;
+            padding: 6px 8px;
+            font-family: inherit;
+            font-size: 14px;
+            font-weight: 600;
+            color: #222;
+            background: #fff;
+        }
+
+        .edit-activity {
+            min-height: 28px;
+        }
+
+        body.edit-mode .event {
+            background: #fffdf5;
+        }
+
+        .day {
+            margin-bottom: 30px;
+            background: #fff;
+            border: 3px solid var(--black);
+            overflow: hidden;
+        }
+
+        .day-header {
+            background: var(--black);
+            color: #fff;
+            padding: 15px 20px;
+            font-size: 24px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            position: relative;
+        }
+
+        .day-header::before {
+            content: "";
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+
+        .monday .day-header::before { background: var(--red); }
+        .tuesday .day-header::before { background: var(--blue); }
+        .wednesday .day-header::before { background: var(--orange); }
+        .thursday .day-header::before { background: var(--dark-blue); }
+        .friday .day-header::before { background: var(--yellow); }
+
+        .event {
+            padding: 15px 20px;
+            border-bottom: 2px solid var(--black);
+            display: grid;
+            grid-template-columns: 120px 1fr;
+            gap: 20px;
+            align-items: center;
+            position: relative;
+            background: #fff;
+        }
+
+        .event:last-child {
+            border-bottom: none;
+        }
+
+        .event.empty {
+            background: var(--paper);
+        }
+
+        .time {
+            font-size: 16px;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        .activity {
+            font-size: 16px;
+            font-weight: 600;
+            color: #222;
+            min-height: 20px;
+        }
+
+        .event::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 8px;
+            background: transparent;
+        }
+
+        .phy-255::before { background: var(--red); }
+        .cos-210::before { background: var(--blue); }
+        .cos-212::before { background: var(--dark-blue); }
+        .wtw-211::before { background: var(--orange); }
+        .wtw-218::before { background: var(--yellow); }
+
+        .activity a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .activity a:hover {
+            text-decoration: underline;
+        }
+
+        /* Navigation */
+        .site-nav {
+            background: var(--black);
+            padding: 0 20px;
+            display: flex;
+            align-items: center;
+            gap: 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 3px solid var(--red);
+        }
+
+        .site-nav a {
+            color: #999;
+            text-decoration: none;
+            font-size: 11px;
+            font-weight: 800;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            padding: 16px 20px;
+            transition: color 0.2s ease, background 0.2s ease;
+            font-family: "Futura", "Arial", sans-serif;
+        }
+
+        .site-nav a:hover {
+            color: #fff;
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        .site-nav a.active {
+            color: #fff;
+            border-bottom: 3px solid var(--red);
+            margin-bottom: -3px;
+        }
+
+        .nav-spacer {
+            flex: 1;
+        }
+
+        .nav-label {
+            color: #555;
+            font-size: 10px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            padding-right: 10px;
+            font-family: "Futura", "Arial", sans-serif;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 0 0 80px 0;
+                padding-bottom: calc(80px + env(safe-area-inset-bottom));
+            }
+
+            .container {
+                max-width: 100%;
+                padding: 15px 12px;
+            }
+
+            h1 {
+                font-size: 28px;
+                margin-bottom: 15px;
+            }
+
+            .page-header {
+                margin-bottom: 15px;
+            }
+
+            .edit-toggle {
+                font-size: 8px;
+                padding: 6px 10px;
+            }
+
+            /* Hide top nav on mobile */
+            .site-nav {
+                display: none;
+            }
+
+            /* Bottom tab bar */
+            .bottom-nav {
+                display: flex;
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                background: var(--black);
+                border-top: 3px solid var(--red);
+                z-index: 200;
+                padding-bottom: env(safe-area-inset-bottom);
+            }
+
+            .bottom-nav a {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 4px;
+                padding: 10px 5px;
+                color: #666;
+                text-decoration: none;
+                font-family: "Futura", "Arial", sans-serif;
+                font-size: 9px;
+                font-weight: 800;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                transition: color 0.2s ease;
+                -webkit-tap-highlight-color: transparent;
+            }
+
+            .bottom-nav a.active {
+                color: #fff;
+            }
+
+            .bottom-nav .nav-icon {
+                font-size: 20px;
+                line-height: 1;
+            }
+
+            /* "What's Next" banner */
+            .whats-next {
+                display: block;
+                background: var(--black);
+                color: #fff;
+                padding: 16px;
+                margin-bottom: 15px;
+                border-left: 5px solid var(--red);
+            }
+
+            .whats-next-label {
+                font-size: 9px;
+                font-weight: 800;
+                letter-spacing: 2px;
+                text-transform: uppercase;
+                color: var(--red);
+                margin-bottom: 6px;
+            }
+
+            .whats-next-class {
+                font-size: 16px;
+                font-weight: 700;
+                margin-bottom: 3px;
+            }
+
+            .whats-next-time {
+                font-size: 12px;
+                color: #999;
+                font-weight: 600;
+            }
+
+            .whats-next.done {
+                border-left-color: #666;
+            }
+
+            .whats-next.done .whats-next-label {
+                color: #666;
+            }
+
+            /* Day cards */
+            .day {
+                margin-bottom: 12px;
+                border-width: 2px;
+            }
+
+            .day-header {
+                font-size: 16px;
+                padding: 12px 15px;
+                position: sticky;
+                top: 0;
+                z-index: 10;
+            }
+
+            .day-header::before {
+                width: 28px;
+                height: 28px;
+            }
+
+            /* Highlight today */
+            .day.today {
+                border-color: var(--red);
+                border-width: 2px;
+            }
+
+            .day.today .day-header {
+                background: var(--red);
+            }
+
+            .day.today .day-header::before {
+                background: #fff !important;
+            }
+
+            /* Dim other days */
+            .day.not-today {
+                opacity: 0.55;
+                transition: opacity 0.3s ease;
+            }
+
+            .day.not-today:active,
+            .day.not-today:focus-within {
+                opacity: 1;
+            }
+
+            /* Events */
+            .event {
+                grid-template-columns: 90px 1fr;
+                gap: 10px;
+                padding: 12px 15px;
+                border-bottom-width: 1px;
+                min-height: 44px;
+            }
+
+            .event::before {
+                width: 5px;
+            }
+
+            .time {
+                font-size: 13px;
+            }
+
+            .activity {
+                font-size: 13px;
+            }
+
+            .activity a {
+                display: block;
+                padding: 2px 0;
+            }
+
+            /* Hide empty slots toggle */
+            .event.empty.hidden-empty {
+                display: none;
+            }
+
+            /* Toggle button */
+            .toggle-empty {
+                display: inline-block;
+                background: none;
+                border: 2px solid var(--black);
+                color: var(--black);
+                font-family: "Futura", "Arial", sans-serif;
+                font-size: 10px;
+                font-weight: 800;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                padding: 8px 14px;
+                margin-bottom: 15px;
+                cursor: pointer;
+                -webkit-tap-highlight-color: transparent;
+            }
+
+            .toggle-empty.active {
+                background: var(--black);
+                color: #fff;
+            }
+        }
+
+        /* Desktop: hide mobile-only elements */
+        @media (min-width: 769px) {
+            .bottom-nav { display: none; }
+            .whats-next { display: none; }
+            .toggle-empty { display: none; }
+        }
+
+        .nav-label {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+            <div id="orbitdesk-loader" role="dialog" aria-label="Loading OrbitDesk" style="position:fixed;z-index:9999;top:0;left:0;width:100vw;height:100vh;background:#fff;display:flex;align-items:center;justify-content:center;transition:opacity 0.6s;">
+                <div style="display:grid;grid-template-columns:1fr 1fr;align-items:center;justify-items:center;width:100vw;height:100vh;">
+                    <div style="display:flex;flex-direction:column;align-items:flex-end;justify-content:center;padding-right:2vw;">
+                        <span style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:64px;font-weight:900;color:#e63946;line-height:1;letter-spacing:-2px;text-transform:uppercase;">Orbit</span>
+                        <span style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:64px;font-weight:900;color:#000;line-height:1;letter-spacing:-2px;text-transform:uppercase;">Desk</span>
+                    </div>
+                    <div style="display:flex;align-items:center;justify-content:center;">
+                        <svg id="swiss-logo" width="160" height="160" viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="OrbitDesk Swiss Loader Logo" role="img">
+                            <rect x="0" y="0" width="160" height="160" fill="#fff"/>
+                            <g id="swiss-bars-group">
+                                <rect id="swiss-bar" x="30" y="75" width="100" height="10" rx="5" fill="#e63946"/>
+                                <rect id="swiss-bar-v" x="75" y="30" width="10" height="100" rx="5" fill="#e63946"/>
+                            </g>
+                            <circle id="swiss-dot" cx="80" cy="80" r="28" fill="#fff" stroke="#000" stroke-width="4" filter="url(#shadow)"/>
+                            <defs>
+                                <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+                                    <feDropShadow dx="0" dy="6" stdDeviation="4" flood-color="#000" flood-opacity="0.18"/>
+                                </filter>
+                            </defs>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+    <!-- Firebase SDK (compat for simplicity in a plain HTML file) -->
+    <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore-compat.js"></script>
+    <nav class="site-nav" role="navigation" aria-label="Main Navigation">
+        <span class="nav-label">Navigate</span>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="Semester1Timetable2026.html" class="active">Semester 1 Timetable</a>
+        <a href="index.html">Semester 2 Timetable</a>
+        <a href="planner.html">Day Planner</a>
+        <a href="timer.html">Focus Timer</a>
+    </nav>
+
+    <main class="container" role="main">
+        <header class="page-header">
+                        <h1>Timetable</h1>
+                        <button class="edit-toggle" id="editToggle" type="button" aria-pressed="false">Edit</button>
+        </header>
+
+        <section class="whats-next" id="whatsNext" aria-live="polite">
+            <div class="whats-next-label">Next Up</div>
+            <div class="whats-next-class" id="nextClass">—</div>
+            <div class="whats-next-time" id="nextTime"></div>
+        </section>
+
+        <button class="toggle-empty active" id="toggleEmpty" onclick="toggleEmptySlots()" aria-pressed="true">Hide Free Periods</button>
+
+        <section class="day monday" aria-label="Monday">
+            <div class="day-header">Monday</div>
+                <div class="event empty"><div class="time">07:30-08:20</div><div class="activity"></div></div>
+                <div class="event phy-255"><div class="time">08:30-09:20</div><div class="activity"><a href="dashboard.html#phy-255">PHY 255 Lecture (NS1 5-42)</a></div></div>
+                <div class="event empty"><div class="time">09:30-10:20</div><div class="activity"></div></div>
+                <div class="event empty"><div class="time">10:30-11:20</div><div class="activity"></div></div>
+                <div class="event cos-210"><div class="time">11:30-12:20</div><div class="activity"><a href="dashboard.html#cos-210">COS 210 Lecture (IT 2-26)</a></div></div>
+                <div class="event wtw-211"><div class="time">12:30-13:20</div><div class="activity"><a href="dashboard.html#wtw-211">WTW 211 Lecture (Centenary 5)</a></div></div>
+                <div class="event phy-255"><div class="time">13:30-14:20</div><div class="activity"><a href="dashboard.html#phy-255">PHY 255 Practical (NS1 5-42)</a></div></div>
+                <div class="event phy-255"><div class="time">14:30-15:20</div><div class="activity"><a href="dashboard.html#phy-255">PHY 255 Practical (NS1 5-42)</a></div></div>
+                <div class="event phy-255"><div class="time">15:30-16:20</div><div class="activity"><a href="dashboard.html#phy-255">PHY 255 Practical (NS1 5-42)</a></div></div>
+                <div class="event cos-212"><div class="time">16:30-17:20</div><div class="activity"><a href="dashboard.html#cos-212">COS 212 Lecture (Large Chemistry Hall)</a></div></div>
+        </section>
+
+        <section class="day tuesday" aria-label="Tuesday">
+            <div class="day-header">Tuesday</div>
+                <div class="event empty"><div class="time">07:30-08:20</div><div class="activity"></div></div>
+                <div class="event wtw-218"><div class="time">08:30-09:20</div><div class="activity"><a href="dashboard.html#wtw-218">WTW 218 Lecture (HB 4-3) G02</a></div></div>
+                <div class="event empty"><div class="time">09:30-10:20</div><div class="activity"></div></div>
+                <div class="event empty"><div class="time">10:30-11:20</div><div class="activity"></div></div>
+                <div class="event empty"><div class="time">11:30-12:20</div><div class="activity"></div></div>
+                <div class="event empty"><div class="time">12:30-13:20</div><div class="activity"></div></div>
+                <div class="event empty"><div class="time">13:30-14:20</div><div class="activity"></div></div>
+                <div class="event phy-255"><div class="time">14:30-15:20</div><div class="activity"><a href="dashboard.html#phy-255">PHY 255 Tutorial (NS1 5-42)</a></div></div>
+                <div class="event phy-255"><div class="time">15:30-16:20</div><div class="activity"><a href="dashboard.html#phy-255">PHY 255 Tutorial (NS1 5-42)</a></div></div>
+                <div class="event phy-255"><div class="time">16:30-17:20</div><div class="activity"><a href="dashboard.html#phy-255">PHY 255 Tutorial (NS1 5-42)</a></div></div>
+        </section>
+
+        <section class="day wednesday" aria-label="Wednesday">
+                <div class="day-header">Wednesday</div>
+                    <div class="event empty"><div class="time">07:30-08:20</div><div class="activity"></div></div>
+                    <div class="event cos-210"><div class="time">08:30-09:20</div><div class="activity"><a href="dashboard.html#cos-210">COS 210 Lecture (IT 2-26)</a></div></div>
+                    <div class="event cos-212"><div class="time">09:30-10:20</div><div class="activity"><a href="dashboard.html#cos-212">COS 212 Lecture (Louw Hall)</a></div></div>
+                    <div class="event empty"><div class="time">10:30-11:20</div><div class="activity"></div></div>
+                    <div class="event wtw-218"><div class="time">11:30-12:20</div><div class="activity"><a href="dashboard.html#wtw-218">WTW 218 Tutorial (HB 4-9) T03</a></div></div>
+                    <div class="event wtw-218"><div class="time">12:30-13:20</div><div class="activity"><a href="dashboard.html#wtw-218">WTW 218 Tutorial (HB 4-9) T03 [Ends at 12:50]</a></div></div>
+                    <div class="event empty"><div class="time">13:30-14:20</div><div class="activity"></div></div>
+                    <div class="event empty"><div class="time">14:30-15:20</div><div class="activity"></div></div>
+                    <div class="event wtw-211"><div class="time">15:30-16:20</div><div class="activity"><a href="dashboard.html#wtw-211">WTW 211 Tutorial (Roos Hall) T02 [Starts at 16:00]</a></div></div>
+                    <div class="event wtw-211"><div class="time">16:30-17:20</div><div class="activity"><a href="dashboard.html#wtw-211">WTW 211 Tutorial (Roos Hall) T02</a></div></div>
+        </section>
+
+        <section class="day thursday" aria-label="Thursday">
+                <div class="day-header">Thursday</div>
+                    <div class="event empty"><div class="time">07:30-08:20</div><div class="activity"></div></div>
+                    <div class="event wtw-218"><div class="time">08:30-09:20</div><div class="activity"><a href="dashboard.html#wtw-218">WTW 218 Lecture (HB 4-3) G01</a></div></div>
+                    <div class="event empty"><div class="time">09:30-10:20</div><div class="activity"></div></div>
+                    <div class="event empty"><div class="time">10:30-11:20</div><div class="activity"></div></div>
+                    <div class="event empty"><div class="time">11:30-12:20</div><div class="activity"></div></div>
+                    <div class="event phy-255"><div class="time">12:30-13:20</div><div class="activity"><a href="dashboard.html#phy-255">PHY 255 Lecture (NS1 5-42)</a></div></div>
+                    <div class="event phy-255"><div class="time">13:30-14:20</div><div class="activity"><a href="dashboard.html#phy-255">PHY 255 Lecture (NS1 5-42)</a></div></div>
+                    <div class="event empty"><div class="time">14:30-15:20</div><div class="activity"></div></div>
+                    <div class="event empty"><div class="time">15:30-16:20</div><div class="activity"></div></div>
+                    <div class="event cos-212"><div class="time">16:30-17:20</div><div class="activity"><a href="dashboard.html#cos-212">COS 212 Lecture (Roos Hall)</a></div></div>
+        </section>
+
+        <section class="day friday" aria-label="Friday">
+                <div class="day-header">Friday</div>
+                    <div class="event wtw-211"><div class="time">07:30-08:20</div><div class="activity"><a href="dashboard.html#wtw-211">WTW 211 Lecture (Centenary 5)</a></div></div>
+                    <div class="event phy-255"><div class="time">08:30-09:20</div><div class="activity"><a href="dashboard.html#phy-255">PHY 255 Lecture (NS1 5-42)</a></div></div>
+                    <div class="event cos-212"><div class="time">09:30-10:20</div><div class="activity"><a href="dashboard.html#cos-212">COS 212 Tutorial [Lecture] (Louw Hall)</a></div></div>
+                    <div class="event empty"><div class="time">10:30-11:20</div><div class="activity"></div></div>
+                    <div class="event cos-212"><div class="time">11:30-12:20</div><div class="activity"><a href="dashboard.html#cos-212">COS 212 Practical (Informatorium CBT 1,2,3 Labs)</a></div></div>
+                    <div class="event cos-212"><div class="time">12:30-13:20</div><div class="activity"><a href="dashboard.html#cos-212">COS 212 Practical (Informatorium CBT 1,2,3 Labs)</a></div></div>
+                    <div class="event cos-212"><div class="time">13:30-14:20</div><div class="activity"><a href="dashboard.html#cos-212">COS 212 Practical (Informatorium CBT 1,2,3 Labs)</a></div></div>
+                    <div class="event cos-210"><div class="time">14:30-15:20</div><div class="activity"><a href="dashboard.html#cos-210">COS 210 Tutorial (IT 2-26)</a></div></div>
+                    <div class="event empty"><div class="time">15:30-16:20</div><div class="activity"></div></div>
+                    <div class="event empty"><div class="time">16:30-17:20</div><div class="activity"></div></div>
+        </section>
+    </main>
+
+    <nav class="bottom-nav">
+        <a href="dashboard.html">
+            <span class="nav-icon">◻</span>
+            Overview
+        </a>
+        <a href="Semester1Timetable2026.html" class="active">
+            <span class="nav-icon">①</span>
+            Sem 1
+        </a>
+        <a href="index.html">
+            <span class="nav-icon">②</span>
+            Sem 2
+        </a>
+        <a href="planner.html">
+            <span class="nav-icon">▤</span>
+            Planner
+        </a>
+        <a href="timer.html">
+            <span class="nav-icon">◉</span>
+            Focus
+        </a>
+    </nav>
+
+    <script>
+                // Swiss Style OrbitDesk Loader Animation (show only on initial entry, 3s duration)
+                (function() {
+                    const loader = document.getElementById('orbitdesk-loader');
+                    const bar = document.getElementById('swiss-bar');
+                    const barV = document.getElementById('swiss-bar-v');
+                    const barsGroup = document.getElementById('swiss-bars-group');
+                    const dot = document.getElementById('swiss-dot');
+                    let t = 0;
+                    let anim;
+                    // Only show loader if not previously shown in this session
+                    const LOADER_KEY = 'orbitdesk_loader_shown';
+                    const loaderAlreadyShown = sessionStorage.getItem(LOADER_KEY);
+                    if (!loaderAlreadyShown) {
+                        function animateSwissLogo() {
+                            t += 0.06;
+                            // Animate bars: grow/shrink and rotate
+                            const h = 10 + 6 * Math.abs(Math.sin(t));
+                            bar.setAttribute('height', h);
+                            bar.setAttribute('y', 80 - h/2);
+                            barV.setAttribute('width', h);
+                            barV.setAttribute('x', 80 - h/2);
+                            // Rotate the cross
+                            const rot = Math.sin(t/1.5) * 18;
+                            barsGroup.setAttribute('transform', `rotate(${rot} 80 80)`);
+                            // Animate dot: bounce and pulse
+                            const r = 28 + 4 * Math.abs(Math.sin(t*2));
+                            dot.setAttribute('r', r);
+                            dot.setAttribute('cx', 80);
+                            dot.setAttribute('cy', 80 + Math.abs(Math.sin(t*2))*18);
+                            anim = requestAnimationFrame(animateSwissLogo);
+                        }
+                        animateSwissLogo();
+                        // Hide loader after 3s
+                        setTimeout(() => {
+                            loader.style.opacity = '0';
+                            setTimeout(() => {
+                                loader.style.display = 'none';
+                                cancelAnimationFrame(anim);
+                            }, 600);
+                        }, 3000);
+                        sessionStorage.setItem(LOADER_KEY, '1');
+                        if (window.history && window.history.pushState) {
+                            window.addEventListener('popstate', () => {
+                                loader.style.display = 'none';
+                            });
+                        }
+                    } else {
+                        loader.style.display = 'none';
+                    }
+                })();
+        const DAYS = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'];
+
+        function highlightToday() {
+            const today = DAYS[new Date().getDay()];
+            const dayDivs = document.querySelectorAll('.day');
+            let todayFound = false;
+
+            dayDivs.forEach(day => {
+                const dayClass = Array.from(day.classList).find(c => DAYS.includes(c));
+                if (dayClass === today) {
+                    day.classList.add('today');
+                    todayFound = true;
+                    // Scroll to today on mobile
+                    if (window.innerWidth <= 768) {
+                        setTimeout(() => day.scrollIntoView({ behavior: 'smooth', block: 'start' }), 300);
+                    }
+                } else {
+                    day.classList.add('not-today');
+                }
+            });
+
+            // Weekend — no highlight
+            if (!todayFound) {
+                dayDivs.forEach(d => d.classList.remove('not-today'));
+            }
+        }
+
+        function updateWhatsNext() {
+            const banner = document.getElementById('whatsNext');
+            const classEl = document.getElementById('nextClass');
+            const timeEl = document.getElementById('nextTime');
+            if (!banner) return;
+
+            const now = new Date();
+            const today = DAYS[now.getDay()];
+            const currentMinutes = now.getHours() * 60 + now.getMinutes();
+
+            // Find today's day block
+            const todayBlock = document.querySelector('.day.' + today);
+            if (!todayBlock) {
+                classEl.textContent = 'No classes today';
+                timeEl.textContent = 'Enjoy your weekend';
+                banner.classList.add('done');
+                return;
+            }
+
+            const events = todayBlock.querySelectorAll('.event:not(.empty)');
+            let nextEvent = null;
+            let currentEvent = null;
+
+            events.forEach(ev => {
+                const timeText = ev.querySelector('.time').textContent;
+                const [startStr, endStr] = timeText.split('-');
+                const [sH, sM] = startStr.split(':').map(Number);
+                const [eH, eM] = endStr.split(':').map(Number);
+                const startMin = sH * 60 + sM;
+                const endMin = eH * 60 + eM;
+
+                if (currentMinutes >= startMin && currentMinutes < endMin) {
+                    currentEvent = { el: ev, start: startStr, end: endStr };
+                } else if (currentMinutes < startMin && !nextEvent) {
+                    nextEvent = { el: ev, start: startStr, end: endStr };
+                }
+            });
+
+            if (currentEvent) {
+                const activity = currentEvent.el.querySelector('.activity');
+                const text = activity.textContent.trim();
+                banner.querySelector('.whats-next-label').textContent = 'Right Now';
+                classEl.textContent = text;
+                timeEl.textContent = currentEvent.start + ' — ' + currentEvent.end;
+                // Use module color for the border
+                const cls = Array.from(currentEvent.el.classList).find(c => c.includes('-'));
+                if (cls === 'phy-255') banner.style.borderLeftColor = '#e63946';
+                else if (cls === 'cos-210') banner.style.borderLeftColor = '#457b9d';
+                else if (cls === 'cos-212') banner.style.borderLeftColor = '#1d3557';
+                else if (cls === 'wtw-211') banner.style.borderLeftColor = '#f4a261';
+                else if (cls === 'wtw-218') banner.style.borderLeftColor = '#e9c46a';
+            } else if (nextEvent) {
+                const activity = nextEvent.el.querySelector('.activity');
+                const text = activity.textContent.trim();
+                banner.querySelector('.whats-next-label').textContent = 'Next Up';
+                classEl.textContent = text;
+                timeEl.textContent = nextEvent.start + ' — ' + nextEvent.end;
+                const cls = Array.from(nextEvent.el.classList).find(c => c.includes('-'));
+                if (cls === 'phy-255') banner.style.borderLeftColor = '#e63946';
+                else if (cls === 'cos-210') banner.style.borderLeftColor = '#457b9d';
+                else if (cls === 'cos-212') banner.style.borderLeftColor = '#1d3557';
+                else if (cls === 'wtw-211') banner.style.borderLeftColor = '#f4a261';
+                else if (cls === 'wtw-218') banner.style.borderLeftColor = '#e9c46a';
+            } else {
+                classEl.textContent = 'Done for today';
+                timeEl.textContent = 'No more classes';
+                banner.classList.add('done');
+            }
+        }
+
+        let emptyHidden = true;
+        function toggleEmptySlots() {
+            const empties = document.querySelectorAll('.event.empty');
+            const btn = document.getElementById('toggleEmpty');
+            emptyHidden = !emptyHidden;
+            empties.forEach(e => e.classList.toggle('hidden-empty', emptyHidden));
+            btn.textContent = emptyHidden ? 'Show Free Periods' : 'Hide Free Periods';
+            btn.classList.toggle('active', emptyHidden);
+        }
+
+        const EDIT_STORAGE_KEY = 'timetable_sem1_edits';
+        const MODULE_CLASSES = ['phy-255', 'cos-210', 'cos-212', 'wtw-211', 'wtw-218'];
+        let editMode = false;
+
+        // ── Firebase Setup ──
+        const firebaseConfig = {
+            apiKey: "AIzaSyArdb2Dm8ruW10w6bUYakIz75QuBhP1SD4",
+            authDomain: "time-management-a4285.firebaseapp.com",
+            projectId: "time-management-a4285",
+            storageBucket: "time-management-a4285.firebasestorage.app",
+            messagingSenderId: "453419428813",
+            appId: "1:453419428813:web:c84c1e002db8beaa8a7284",
+            measurementId: "G-K7HQWV2ZE5"
+        };
+
+        firebase.initializeApp(firebaseConfig);
+        const auth = firebase.auth();
+        const db = firebase.firestore();
+
+        db.enablePersistence({ synchronizeTabs: true }).catch(err => {
+            console.warn('Firestore persistence failed:', err.code);
+        });
+
+        let currentUser = null;
+
+        function signInWithGoogle() {
+            const provider = new firebase.auth.GoogleAuthProvider();
+            auth.signInWithPopup(provider).catch(err => {
+                console.error('Sign-in error:', err);
+                alert('Sign-in failed: ' + err.message);
+            });
+        }
+
+        function signOutUser() {
+            auth.signOut();
+        }
+
+        auth.onAuthStateChanged(user => {
+            currentUser = user;
+            // Optionally update UI for auth state
+            applyEdits();
+        });
+
+        function docRefEdits() {
+            return db.collection('users').doc(currentUser.uid)
+                     .collection('meta').doc(EDIT_STORAGE_KEY);
+        }
+
+        async function loadEdits() {
+            if (currentUser) {
+                try {
+                    const snap = await docRefEdits().get();
+                    if (snap.exists) {
+                        localStorage.setItem(EDIT_STORAGE_KEY, JSON.stringify(snap.data().edits || {}));
+                        return snap.data().edits || {};
+                    }
+                } catch (e) { console.warn('Firestore read failed:', e); }
+            }
+            try { return JSON.parse(localStorage.getItem(EDIT_STORAGE_KEY)) || {}; }
+            catch { return {}; }
+        }
+
+        async function saveEdits(edits) {
+            localStorage.setItem(EDIT_STORAGE_KEY, JSON.stringify(edits));
+            if (currentUser) {
+                try {
+                    await docRefEdits().set({ edits }, { merge: true });
+                } catch (e) { console.error('Firestore write error:', e); }
+            }
+        }
+
+        function renderEventDisplay(eventEl, timeText, activityText, isOverride) {
+            const timeEl = eventEl.querySelector('.time');
+            const activityEl = eventEl.querySelector('.activity');
+            timeEl.textContent = timeText;
+
+            const defaultActivity = eventEl.dataset.defaultActivity || '';
+            const defaultHref = eventEl.dataset.defaultHref || '';
+
+            activityEl.innerHTML = '';
+            if (!isOverride && defaultHref && activityText === defaultActivity) {
+                const link = document.createElement('a');
+                link.href = defaultHref;
+                link.textContent = activityText;
+                activityEl.appendChild(link);
+            } else {
+                activityEl.textContent = activityText;
+            }
+        }
+
+        function detectModuleClass(text) {
+            const val = text.toLowerCase();
+            if (/\bphy\s*-?\s*255\b/.test(val)) return 'phy-255';
+            if (/\bcos\s*-?\s*210\b/.test(val)) return 'cos-210';
+            if (/\bcos\s*-?\s*212\b/.test(val)) return 'cos-212';
+            if (/\bwtw\s*-?\s*211\b/.test(val)) return 'wtw-211';
+            if (/\bwtw\s*-?\s*218\b/.test(val)) return 'wtw-218';
+            return null;
+        }
+
+        function updateModuleClass(eventEl, activityText, isOverride) {
+            MODULE_CLASSES.forEach(cls => eventEl.classList.remove(cls));
+            const defaultModule = eventEl.dataset.defaultModule || '';
+            const moduleClass = isOverride ? detectModuleClass(activityText) : defaultModule;
+            if (moduleClass) eventEl.classList.add(moduleClass);
+
+            if (activityText.trim()) {
+                eventEl.classList.remove('empty');
+            } else {
+                eventEl.classList.add('empty');
+            }
+        }
+
+        function persistEdit(eventEl, timeValue, activityValue) {
+            const edits = loadEdits();
+            const id = eventEl.dataset.eventId;
+            const defaultTime = eventEl.dataset.defaultTime || '';
+            const defaultActivity = eventEl.dataset.defaultActivity || '';
+
+            if (timeValue === defaultTime && activityValue === defaultActivity) {
+                delete edits[id];
+            } else {
+                edits[id] = { time: timeValue, activity: activityValue };
+            }
+
+            saveEdits(edits);
+        }
+
+        function applyEdits() {
+            const edits = loadEdits();
+            document.querySelectorAll('.event').forEach((eventEl, index) => {
+                if (!eventEl.dataset.eventId) {
+                    eventEl.dataset.eventId = String(index);
+                }
+
+                const timeEl = eventEl.querySelector('.time');
+                const activityEl = eventEl.querySelector('.activity');
+                const timeInput = eventEl.querySelector('.edit-time');
+                const activityInput = eventEl.querySelector('.edit-activity');
+                const hasInputs = Boolean(timeInput || activityInput);
+
+                if (!eventEl.dataset.defaultTime && !hasInputs) {
+                    eventEl.dataset.defaultTime = timeEl.textContent.trim();
+                }
+
+                if (!eventEl.dataset.defaultActivity && !hasInputs) {
+                    const link = activityEl ? activityEl.querySelector('a') : null;
+                    eventEl.dataset.defaultActivity = link ? link.textContent.trim() : activityEl.textContent.trim();
+                    eventEl.dataset.defaultHref = link ? link.getAttribute('href') : '';
+                }
+
+                if (!eventEl.dataset.defaultModule && !hasInputs) {
+                    const cls = MODULE_CLASSES.find(c => eventEl.classList.contains(c));
+                    if (cls) eventEl.dataset.defaultModule = cls;
+                }
+
+                const defaultTime = eventEl.dataset.defaultTime || (timeInput ? timeInput.value.trim() : timeEl.textContent.trim());
+                const defaultActivity = eventEl.dataset.defaultActivity || (activityInput ? activityInput.value.trim() : activityEl.textContent.trim());
+                const defaultHref = eventEl.dataset.defaultHref || '';
+
+                const override = edits[eventEl.dataset.eventId];
+                const timeText = override && override.time ? override.time : defaultTime;
+                const activityText = override && override.activity !== undefined ? override.activity : defaultActivity;
+                eventEl.dataset.defaultHref = defaultHref;
+                renderEventDisplay(eventEl, timeText, activityText, Boolean(override));
+                updateModuleClass(eventEl, activityText, Boolean(override));
+            });
+        }
+
+        function enterEditMode() {
+            editMode = true;
+            document.body.classList.add('edit-mode');
+            const toggle = document.getElementById('editToggle');
+            toggle.textContent = 'Done';
+            toggle.setAttribute('aria-pressed', 'true');
+
+            document.querySelectorAll('.event').forEach(eventEl => {
+                const timeEl = eventEl.querySelector('.time');
+                const activityEl = eventEl.querySelector('.activity');
+                const timeValue = timeEl.textContent.trim();
+                const activityValue = activityEl.textContent.trim();
+
+                timeEl.innerHTML = '<input class="edit-time" type="text" value="' + timeValue.replace(/"/g, '&quot;') + '">';
+                activityEl.innerHTML = '<input class="edit-activity" type="text" placeholder="Add activity" value="' + activityValue.replace(/"/g, '&quot;') + '">';
+
+                const timeInput = timeEl.querySelector('.edit-time');
+                const activityInput = activityEl.querySelector('.edit-activity');
+
+                const autosave = () => {
+                    const nextTime = timeInput.value.trim();
+                    const nextActivity = activityInput.value.trim();
+                    persistEdit(eventEl, nextTime, nextActivity);
+                    updateModuleClass(eventEl, nextActivity, true);
+                };
+
+                timeInput.addEventListener('input', autosave);
+                activityInput.addEventListener('input', autosave);
+            });
+        }
+
+        function exitEditMode() {
+            const edits = {};
+            document.querySelectorAll('.event').forEach(eventEl => {
+                const id = eventEl.dataset.eventId;
+                const timeInput = eventEl.querySelector('.edit-time');
+                const activityInput = eventEl.querySelector('.edit-activity');
+                if (!timeInput || !activityInput) return;
+
+                const timeValue = timeInput.value.trim();
+                const activityValue = activityInput.value.trim();
+                const defaultTime = eventEl.dataset.defaultTime || '';
+                const defaultActivity = eventEl.dataset.defaultActivity || '';
+
+                if (timeValue !== defaultTime || activityValue !== defaultActivity) {
+                    edits[id] = { time: timeValue, activity: activityValue };
+                }
+            });
+
+            saveEdits(edits);
+            applyEdits();
+
+            editMode = false;
+            document.body.classList.remove('edit-mode');
+            const toggle = document.getElementById('editToggle');
+            toggle.textContent = 'Edit';
+            toggle.setAttribute('aria-pressed', 'false');
+            updateWhatsNext();
+        }
+
+        function setupEditToggle() {
+            const toggle = document.getElementById('editToggle');
+            if (!toggle) return;
+            toggle.addEventListener('click', () => {
+                if (editMode) {
+                    exitEditMode();
+                } else {
+                    enterEditMode();
+                }
+            });
+        }
+
+        // Init
+        applyEdits();
+        setupEditToggle();
+        highlightToday();
+        updateWhatsNext();
+        // Auto-hide empties on mobile
+        if (window.innerWidth <= 768) {
+            document.querySelectorAll('.event.empty').forEach(e => e.classList.add('hidden-empty'));
+        }
+        // Update "What's Next" every minute
+        let whatsNextInterval = null;
+        function startWhatsNextInterval() {
+            if (whatsNextInterval) clearInterval(whatsNextInterval);
+            whatsNextInterval = setInterval(updateWhatsNext, 60000);
+        }
+
+        document.addEventListener('visibilitychange', () => {
+            if (document.visibilityState === 'visible') {
+                updateWhatsNext();
+                startWhatsNextInterval();
+            } else {
+                if (whatsNextInterval) clearInterval(whatsNextInterval);
+            }
+        });
+
+        startWhatsNextInterval();
+    </script>
+</body>
+</html>

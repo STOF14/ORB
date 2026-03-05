@@ -11,1018 +11,46 @@
     <link rel="apple-touch-icon" sizes="180x180" href="icons/icon-192.png" />
     <link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png" />
     <link rel="icon" type="image/png" sizes="512x512" href="icons/icon-512.png" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="format-detection" content="telephone=no" />
     <meta name="apple-touch-fullscreen" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-    <meta name="apple-mobile-web-app-title" content="Timetable" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-touch-startup-image" content="icons/icon-512.png" />
     <title>Semester 1 2026 — Academic Overview</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        :root {
-            --primary: #000000;
-            --secondary: #E63946;
-            --accent: #457B9D;
-            --bg: #F8F9FA;
-            --grid-line: #D1D5DB;
-            --text-muted: #6B7280;
-            --mod-red: #E63946;
-            --mod-blue: #457B9D;
-            --mod-dark-blue: #1D3557;
-            --mod-orange: #F4A261;
-            --mod-yellow: #E9C46A;
-        }
-
-        body {
-            background: var(--bg);
-            color: #181818;
-            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-            font-size: 16px;
-            line-height: 1.6;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-            scroll-behavior: smooth;
-        }
-
-        /* Navigation */
-        .site-nav {
-            background: var(--primary);
-            padding: 0 40px;
-            display: flex;
-            align-items: center;
-            gap: 0;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            border-bottom: 3px solid var(--secondary);
-        }
-
-        .site-nav a {
-            color: #999;
-            text-decoration: none;
-            font-size: 11px;
-            font-weight: 700;
-            letter-spacing: 1.5px;
-            text-transform: uppercase;
-            padding: 16px 20px;
-            transition: color 0.2s ease, background 0.2s ease;
-            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-        }
-
-        .site-nav a:hover {
-            color: #fff;
-            background: rgba(255, 255, 255, 0.08);
-        }
-
-        .site-nav a.active {
-            color: #fff;
-            border-bottom: 3px solid var(--secondary);
-            margin-bottom: -3px;
-        }
-
-        .nav-spacer {
-            flex: 1;
-        }
-
-        .nav-label {
-            color: #555;
-            font-size: 10px;
-            font-weight: 500;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            padding-right: 10px;
-            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-        }
-
-        /* Grid System */
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 60px 40px;
-            display: grid;
-            grid-template-columns: repeat(12, 1fr);
-            gap: 20px;
-        }
-
-        /* Typography Hierarchy */
-        h1 {
-            font-size: 72px;
-            font-weight: 300;
-            letter-spacing: -2px;
-            line-height: 1;
-            text-transform: uppercase;
-        }
-
-        h2 {
-            font-size: 48px;
-            font-weight: 300;
-            letter-spacing: -1px;
-            margin-bottom: 20px;
-        }
-
-        h3 {
-            font-size: 24px;
-            font-weight: 500;
-            letter-spacing: 0.5px;
-            text-transform: uppercase;
-            margin-bottom: 15px;
-        }
-
-        h4 {
-            font-size: 14px;
-            font-weight: 700;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            color: var(--text-muted);
-            margin-bottom: 10px;
-        }
-
-        /* Header */
-        header {
-            grid-column: 1 / -1;
-            border-bottom: 1px solid var(--primary);
-            padding-bottom: 40px;
-            margin-bottom: 40px;
-        }
-
-        .header-grid {
-            display: grid;
-            grid-template-columns: 2fr 1fr;
-            gap: 40px;
-            align-items: end;
-        }
-
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 15px;
-        }
-
-        .stat-box {
-            border-left: 3px solid var(--primary);
-            padding-left: 15px;
-        }
-
-        .stat-number {
-            font-size: 48px;
-            font-weight: 300;
-            line-height: 1;
-            margin-bottom: 5px;
-        }
-
-        .stat-label {
-            font-size: 11px;
-            font-weight: 500;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            color: var(--text-muted);
-        }
-
-        /* Module Cards - Asymmetric Grid */
-        .module {
-            grid-column: span 6;
-            background: white;
-            border: 1px solid var(--primary);
-            padding: 0;
-            margin-bottom: 20px;
-            transition: transform 0.2s ease;
-        }
-
-        .module:hover {
-            transform: translateY(-2px);
-        }
-
-        .module:nth-child(odd) {
-            grid-column: 1 / 8;
-        }
-
-        .module:nth-child(even) {
-            grid-column: 6 / -1;
-        }
-
-        .module-header {
-            background: var(--primary);
-            color: white;
-            padding: 30px;
-            display: grid;
-            grid-template-columns: 1fr auto;
-            align-items: baseline;
-            gap: 20px;
-        }
-
-        .module-code {
-            font-size: 36px;
-            font-weight: 300;
-            letter-spacing: -1px;
-        }
-
-        .credits {
-            font-size: 14px;
-            font-weight: 500;
-            letter-spacing: 1px;
-            border: 2px solid white;
-            padding: 6px 12px;
-        }
-
-        .module-content {
-            padding: 30px;
-        }
-
-        .module-title {
-            font-size: 18px;
-            font-weight: 500;
-            margin-bottom: 30px;
-            letter-spacing: 0.5px;
-        }
-
-        /* Information Grid */
-        .info-section {
-            margin-bottom: 30px;
-        }
-
-        .info-grid {
-            display: grid;
-            grid-template-columns: 140px 1fr;
-            gap: 15px 20px;
-            font-size: 14px;
-        }
-
-        .info-label {
-            font-weight: 700;
-            letter-spacing: 0.5px;
-            text-transform: uppercase;
-            font-size: 11px;
-            color: var(--text-muted);
-        }
-
-        .info-value {
-            font-weight: 400;
-        }
-
-        /* Assessment Table */
-        .assessment-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 20px 0;
-            font-size: 14px;
-        }
-
-        .assessment-table th {
-            text-align: left;
-            padding: 12px 15px;
-            background: var(--primary);
-            color: white;
-            font-weight: 500;
-            font-size: 11px;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-        }
-
-        .assessment-table td {
-            padding: 12px 15px;
-            border-bottom: 1px solid var(--grid-line);
-        }
-
-        .assessment-table tr:hover {
-            background: #F3F4F6;
-        }
-
-        .percentage {
-            font-weight: 700;
-            font-size: 18px;
-            color: var(--secondary);
-        }
-
-        /* Warning Box */
-        .warning {
-            background: var(--secondary);
-            color: white;
-            padding: 25px;
-            margin-top: 25px;
-        }
-
-        .warning h4 {
-            color: white;
-            margin-bottom: 12px;
-            font-size: 12px;
-        }
-
-        .warning ul {
-            list-style: none;
-            font-size: 13px;
-            line-height: 1.8;
-        }
-
-        .warning li::before {
-            content: "—";
-            margin-right: 8px;
-        }
-
-        /* Timeline Section */
-        .timeline-section {
-            grid-column: 1 / -1;
-            margin-top: 60px;
-            padding-top: 60px;
-            border-top: 1px solid var(--primary);
-        }
-
-        .timeline-header {
-            margin-bottom: 40px;
-        }
-
-        .timeline {
-            display: grid;
-            grid-template-columns: 180px 1fr;
-            gap: 30px;
-        }
-
-        .timeline-item {
-            display: contents;
-        }
-
-        .timeline-date {
-            font-weight: 700;
-            font-size: 14px;
-            text-align: right;
-            padding-right: 30px;
-            border-right: 3px solid var(--primary);
-        }
-
-        .timeline-content {
-            padding-bottom: 30px;
-        }
-
-        .timeline-title {
-            font-size: 18px;
-            font-weight: 500;
-            margin-bottom: 5px;
-        }
-
-        .timeline-details {
-            font-size: 13px;
-            color: var(--text-muted);
-        }
-
-        .critical-date {
-            color: var(--secondary);
-        }
-
-        /* Footer Links */
-        .footer-links {
-            grid-column: 1 / -1;
-            margin-top: 60px;
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 20px;
-        }
-
-        .link-card {
-            border: 1px solid var(--primary);
-            padding: 25px;
-            text-align: center;
-            text-decoration: none;
-            color: var(--primary);
-            transition: all 0.2s ease;
-            font-size: 12px;
-            font-weight: 700;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-        }
-
-        .link-card:hover {
-            background: var(--primary);
-            color: white;
-        }
-
-        /* Typography Blocks */
-        .text-block {
-            font-size: 13px;
-            line-height: 1.7;
-            margin-bottom: 15px;
-        }
-
-        /* Color Blocks for Visual Interest */
-        .color-accent {
-            width: 40px;
-            height: 3px;
-            background: var(--accent);
-            margin: 15px 0;
-        }
-
-        .color-accent-red {
-            background: var(--secondary);
-        }
-
-        /* Per-module accent colors */
-        .module-wtw-211 { border-left: 5px solid var(--mod-orange); }
-        .module-wtw-218 { border-left: 5px solid var(--mod-yellow); }
-        .module-phy-255 { border-left: 5px solid var(--mod-red); }
-        .module-cos-212 { border-left: 5px solid var(--mod-dark-blue); }
-        .module-cos-210 { border-left: 5px solid var(--mod-blue); }
-
-        .module-wtw-211 .color-accent { background: var(--mod-orange); }
-        .module-wtw-218 .color-accent { background: var(--mod-yellow); }
-        .module-phy-255 .color-accent { background: var(--mod-red); }
-        .module-cos-212 .color-accent { background: var(--mod-dark-blue); }
-        .module-cos-210 .color-accent { background: var(--mod-blue); }
-
-        .module-wtw-211 .schedule-item { border-left-color: var(--mod-orange); }
-        .module-wtw-218 .schedule-item { border-left-color: var(--mod-yellow); }
-        .module-phy-255 .schedule-item { border-left-color: var(--mod-red); }
-        .module-cos-212 .schedule-item { border-left-color: var(--mod-dark-blue); }
-        .module-cos-210 .schedule-item { border-left-color: var(--mod-blue); }
-
-        /* Schedule Grid */
-        .schedule-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 10px;
-            font-size: 12px;
-            margin: 20px 0;
-        }
-
-        .schedule-item {
-            padding: 15px;
-            background: #F9FAFB;
-            border-left: 3px solid var(--accent);
-        }
-
-        .schedule-time {
-            font-weight: 700;
-            margin-bottom: 4px;
-        }
-
-        /* Responsive */
-        @media (max-width: 768px) {
-            body {
-                padding-bottom: calc(80px + env(safe-area-inset-bottom));
-            }
-
-            .container {
-                grid-template-columns: 1fr;
-                padding: 20px 15px;
-                gap: 12px;
-            }
-
-            .module {
-                grid-column: 1 / -1 !important;
-                margin-bottom: 8px;
-            }
-
-            .header-grid {
-                grid-template-columns: 1fr;
-                gap: 25px;
-            }
-
-            h1 {
-                font-size: 42px;
-            }
-
-            h2 {
-                font-size: 28px;
-            }
-
-            .stats-grid {
-                grid-template-columns: repeat(4, 1fr);
-                gap: 8px;
-            }
-
-            .stat-number {
-                font-size: 28px;
-            }
-
-            .stat-label {
-                font-size: 9px;
-            }
-
-            .stat-box {
-                border-left-width: 2px;
-                padding-left: 10px;
-            }
-
-            /* Module header — tap to collapse */
-            .module-header {
-                padding: 20px;
-                cursor: pointer;
-                -webkit-tap-highlight-color: transparent;
-            }
-
-            .module-header::after {
-                content: '▾';
-                font-size: 18px;
-                color: rgba(255,255,255,0.5);
-                position: absolute;
-                right: 20px;
-                top: 50%;
-                transform: translateY(-50%);
-            }
-
-            .module-header {
-                position: relative;
-            }
-
-            .module-code {
-                font-size: 24px;
-            }
-
-            .credits {
-                font-size: 11px;
-                padding: 4px 8px;
-                border-width: 1px;
-            }
-
-            .module-content {
-                padding: 20px 15px;
-            }
-
-            .module.collapsed .module-content {
-                display: none;
-            }
-
-            .module.collapsed .module-header::after {
-                content: '▸';
-            }
-
-            .module-title {
-                font-size: 15px;
-                margin-bottom: 20px;
-            }
-
-            /* Info grid */
-            .info-grid {
-                grid-template-columns: 1fr;
-                gap: 8px;
-            }
-
-            .info-label {
-                margin-top: 5px;
-            }
-
-            /* Tables */
-            .assessment-table th,
-            .assessment-table td {
-                padding: 10px 10px;
-                font-size: 12px;
-            }
-
-            .percentage {
-                font-size: 15px;
-            }
-
-            /* Schedule grid */
-            .schedule-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .schedule-item[style*="grid-column: span 2"] {
-                grid-column: span 1 !important;
-            }
-
-            /* Warning boxes */
-            .warning {
-                padding: 18px;
-                margin-top: 18px;
-            }
-
-            .warning ul {
-                font-size: 12px;
-            }
-
-            /* Timeline */
-            .timeline-section {
-                margin-top: 30px;
-                padding-top: 30px;
-            }
-
-            .timeline {
-                grid-template-columns: 80px 1fr;
-                gap: 10px;
-            }
-
-            .timeline-date {
-                font-size: 11px;
-                padding-right: 15px;
-            }
-
-            .timeline-title {
-                font-size: 14px;
-            }
-
-            .timeline-content {
-                padding-bottom: 20px;
-            }
-
-            /* Footer links */
-            .footer-links {
-                grid-template-columns: repeat(2, 1fr);
-                gap: 10px;
-                margin-top: 30px;
-            }
-
-            .link-card {
-                padding: 18px 10px;
-                font-size: 10px;
-                min-height: 44px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
-
-            /* Hide top nav on mobile */
-            .site-nav {
-                display: none;
-            }
-
-            /* Bottom tab bar */
-            .bottom-nav {
-                display: flex;
-                position: fixed;
-                bottom: 0;
-                left: 0;
-                right: 0;
-                background: #000;
-                border-top: 3px solid #E63946;
-                z-index: 200;
-                padding-bottom: env(safe-area-inset-bottom);
-            }
-
-            .bottom-nav a {
-                flex: 1;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                gap: 4px;
-                padding: 10px 5px;
-                color: #666;
-                text-decoration: none;
-                font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-                font-size: 9px;
-                font-weight: 700;
-                letter-spacing: 1px;
-                text-transform: uppercase;
-                transition: color 0.2s ease;
-                -webkit-tap-highlight-color: transparent;
-            }
-
-            .bottom-nav a.active {
-                color: #fff;
-            }
-
-            .bottom-nav .nav-icon {
-                font-size: 20px;
-                line-height: 1;
-            }
-
-            .nav-label {
-                display: none;
-            }
-        }
-
-        /* Desktop: hide mobile-only elements */
-        @media (min-width: 769px) {
-            .bottom-nav { display: none; }
-        }
-
-        /* Subtle Grid Background */
-        body::before {
-            content: '';
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-image: 
-                linear-gradient(var(--grid-line) 1px, transparent 1px),
-                linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
-            background-size: 20px 20px;
-            opacity: 0.3;
-            pointer-events: none;
-            z-index: -1;
-        }
-
-        /* Print Styles */
-        @media print {
-            body::before { display: none; }
-            .link-card { border: 1px solid #000; }
-            .site-nav { display: none; }
-        }
-
-        /* Countdown Section */
-        .countdown-section {
-            grid-column: 1 / -1;
-            margin-bottom: 40px;
-        }
-
-        .countdown-header {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            margin-bottom: 20px;
-        }
-
-        .countdown-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-            gap: 15px;
-        }
-
-        .countdown-card {
-            background: #fff;
-            border: 1px solid var(--primary);
-            padding: 20px;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .countdown-card::before {
-            content: '';
-            position: absolute;
-            left: 0; top: 0; bottom: 0;
-            width: 4px;
-        }
-
-        .countdown-card.urgent::before { background: var(--secondary); }
-        .countdown-card.soon::before { background: var(--mod-orange); }
-        .countdown-card.normal::before { background: var(--accent); }
-        .countdown-card.past { opacity: 0.4; }
-        .countdown-card.past::before { background: var(--grid-line); }
-
-        .countdown-days {
-            font-size: 36px;
-            font-weight: 300;
-            line-height: 1;
-            margin-bottom: 5px;
-        }
-
-        .countdown-card.urgent .countdown-days { color: var(--secondary); }
-        .countdown-card.soon .countdown-days { color: var(--mod-orange); }
-
-        .countdown-unit {
-            font-size: 11px;
-            font-weight: 700;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            color: var(--text-muted);
-        }
-
-        .countdown-event {
-            font-size: 14px;
-            font-weight: 600;
-            margin-top: 10px;
-        }
-
-        .countdown-date {
-            font-size: 11px;
-            color: var(--text-muted);
-            margin-top: 3px;
-        }
-
-        /* Semester Progress Bar */
-        .progress-section {
-            grid-column: 1 / -1;
-            margin-bottom: 30px;
-            display: grid;
-            grid-template-columns: auto 1fr auto;
-            gap: 25px;
-            align-items: center;
-            border: 1px solid var(--primary);
-            background: #fff;
-            padding: 25px 30px;
-        }
-
-        .progress-stat {
-            border-left: 3px solid var(--secondary);
-            padding-left: 15px;
-        }
-
-        .progress-pct {
-            font-size: 48px;
-            font-weight: 300;
-            line-height: 1;
-            margin-bottom: 5px;
-        }
-
-        .progress-label {
-            font-size: 11px;
-            font-weight: 700;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            color: var(--text-muted);
-        }
-
-        .progress-track {
-            position: relative;
-            height: 3px;
-            background: var(--grid-line);
-        }
-
-        .progress-bar-fill {
-            position: absolute;
-            left: 0;
-            top: 0;
-            height: 100%;
-            background: var(--primary);
-            transition: width 0.6s ease;
-        }
-
-        .progress-marker {
-            position: absolute;
-            top: -6px;
-            width: 3px;
-            height: 15px;
-            background: var(--secondary);
-            transform: translateX(-1px);
-            transition: left 0.6s ease;
-        }
-
-        .progress-ticks {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 6px;
-        }
-
-        .progress-ticks span {
-            font-size: 8px;
-            font-weight: 700;
-            letter-spacing: 0.5px;
-            text-transform: uppercase;
-            color: var(--text-muted);
-        }
-
-        .progress-meta {
-            text-align: right;
-            border-right: 3px solid var(--primary);
-            padding-right: 15px;
-        }
-
-        .progress-days {
-            font-size: 36px;
-            font-weight: 300;
-            line-height: 1;
-            margin-bottom: 5px;
-        }
-
-        .progress-detail {
-            font-size: 11px;
-            font-weight: 700;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            color: var(--text-muted);
-        }
-
-        @media (max-width: 768px) {
-            .progress-section {
-                grid-template-columns: 1fr 1fr;
-                gap: 15px;
-                padding: 20px;
-            }
-
-            .progress-track {
-                grid-column: 1 / -1;
-                order: -1;
-            }
-
-            .progress-pct { font-size: 36px; }
-            .progress-days { font-size: 28px; }
-            .progress-meta { text-align: left; border-right: none; padding-right: 0; border-left: 3px solid var(--primary); padding-left: 15px; }
-        }
-
-        /* Weekly Review Section */
-        .weekly-review {
-            grid-column: 1 / -1;
-            margin-top: 40px;
-            padding-top: 40px;
-            border-top: 1px solid var(--primary);
-        }
-
-        .review-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-            gap: 15px;
-            margin-top: 20px;
-        }
-
-        .review-card {
-            background: #fff;
-            border: 1px solid var(--grid-line);
-            padding: 20px;
-            text-align: center;
-        }
-
-        .review-value {
-            font-size: 36px;
-            font-weight: 300;
-            line-height: 1;
-            margin-bottom: 5px;
-        }
-
-        .review-label {
-            font-size: 10px;
-            font-weight: 700;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            color: var(--text-muted);
-        }
-
-        .review-sub {
-            font-size: 11px;
-            color: var(--text-muted);
-            margin-top: 6px;
-        }
-
-        .sleep-chart {
-            display: flex;
-            align-items: flex-end;
-            gap: 6px;
-            height: 60px;
-            justify-content: center;
-            margin: 10px 0 5px;
-        }
-
-        .sleep-bar {
-            width: 20px;
-            background: var(--accent);
-            border-radius: 2px 2px 0 0;
-            transition: height 0.3s;
-        }
-
-        .sleep-bar.low { background: var(--secondary); }
-        .sleep-bar.good { background: #22c55e; }
-
-        .sleep-day-labels {
-            display: flex;
-            gap: 6px;
-            justify-content: center;
-        }
-
-        .sleep-day-labels span {
-            width: 20px;
-            font-size: 8px;
-            font-weight: 700;
-            letter-spacing: 0.5px;
-            text-transform: uppercase;
-            color: var(--text-muted);
-            text-align: center;
-        }
-
-        @media (max-width: 768px) {
-            .countdown-grid {
-                grid-template-columns: repeat(2, 1fr);
-                gap: 8px;
-            }
-
-            .countdown-card { padding: 15px; }
-            .countdown-days { font-size: 28px; }
-            .countdown-event { font-size: 12px; }
-
-            .review-grid {
-                grid-template-columns: repeat(2, 1fr);
-                gap: 8px;
-            }
-
-            .review-card { padding: 15px; }
-            .review-value { font-size: 28px; }
-        }
-    </style>
+    <link rel="stylesheet" href="css/shared.css" />
+    <link rel="stylesheet" href="css/dashboard.css" />
 </head>
 <body>
-            <div id="orbitdesk-loader" style="position:fixed;z-index:9999;top:0;left:0;width:100vw;height:100vh;background:#fff;display:flex;align-items:center;justify-content:center;transition:opacity 0.6s;">
-                <div style="display:grid;grid-template-columns:1fr 1fr;align-items:center;justify-items:center;width:100vw;height:100vh;">
-                    <div style="display:flex;flex-direction:column;align-items:flex-end;justify-content:center;padding-right:2vw;">
-                        <span style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:64px;font-weight:900;color:#e63946;line-height:1;letter-spacing:-2px;text-transform:uppercase;">Orbit</span>
-                        <span style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:64px;font-weight:900;color:#000;line-height:1;letter-spacing:-2px;text-transform:uppercase;">Desk</span>
-                    </div>
-                    <div style="display:flex;align-items:center;justify-content:center;">
-                        <svg id="swiss-logo" width="160" height="160" viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect x="0" y="0" width="160" height="160" fill="#fff"/>
-                            <g id="swiss-bars-group">
-                                <rect id="swiss-bar" x="30" y="75" width="100" height="10" rx="5" fill="#e63946"/>
-                                <rect id="swiss-bar-v" x="75" y="30" width="10" height="100" rx="5" fill="#e63946"/>
-                            </g>
-                            <circle id="swiss-dot" cx="80" cy="80" r="28" fill="#fff" stroke="#000" stroke-width="4" filter="url(#shadow)"/>
-                            <defs>
-                                <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
-                                    <feDropShadow dx="0" dy="6" stdDeviation="4" flood-color="#000" flood-opacity="0.18"/>
-                                </filter>
-                            </defs>
-                        </svg>
-                    </div>
-                </div>
+    <!-- Loader -->
+    <div id="orbitdesk-loader" class="orbitdesk-loader" role="dialog" aria-label="Loading OrbitDesk">
+        <div class="orbitdesk-loader__grid">
+            <div class="orbitdesk-loader__text">
+                <span class="orbitdesk-loader__word orbitdesk-loader__word--orbit">Orbit</span>
+                <span class="orbitdesk-loader__word orbitdesk-loader__word--desk">Desk</span>
             </div>
-    <!-- Firebase SDK (compat for simplicity in a plain HTML file) -->
+            <div class="orbitdesk-loader__logo">
+                <svg id="swiss-logo" width="160" height="160" viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="OrbitDesk Swiss Loader Logo" role="img">
+                    <rect x="0" y="0" width="160" height="160" fill="#fff"/>
+                    <g id="swiss-bars-group">
+                        <rect id="swiss-bar" x="30" y="75" width="100" height="10" rx="5" fill="#e63946"/>
+                        <rect id="swiss-bar-v" x="75" y="30" width="10" height="100" rx="5" fill="#e63946"/>
+                    </g>
+                    <circle id="swiss-dot" cx="80" cy="80" r="28" fill="#fff" stroke="#000" stroke-width="4" filter="url(#shadow)"/>
+                    <defs>
+                        <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+                            <feDropShadow dx="0" dy="6" stdDeviation="4" flood-color="#000" flood-opacity="0.18"/>
+                        </filter>
+                    </defs>
+                </svg>
+            </div>
+        </div>
+    </div>
+
+    <!-- Firebase SDK -->
     <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-auth-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore-compat.js"></script>
-    <nav class="site-nav">
+
+    <!-- Navigation -->
+    <nav class="site-nav" role="navigation" aria-label="Main Navigation">
         <span class="nav-label">Navigate</span>
         <a href="dashboard.html" class="active">Dashboard</a>
         <a href="Semester1Timetable2026.html">Semester 1 Timetable</a>
@@ -1032,15 +60,17 @@
     </nav>
 
     <div class="container">
-                        <div style="display:flex;align-items:center;gap:18px;justify-content:center;margin-bottom:18px;">
-                            <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="OrbitDesk mini logo" role="img">
-                                <rect x="0" y="0" width="38" height="38" rx="8" fill="#fff"/>
-                                <rect x="8" y="17" width="22" height="4" rx="2" fill="#e63946"/>
-                                <rect x="17" y="8" width="4" height="22" rx="2" fill="#e63946"/>
-                                <circle cx="19" cy="19" r="8" fill="#fff" stroke="#000" stroke-width="2"/>
-                            </svg>
-                            <span style="font-family:'Futura','Arial',sans-serif;font-weight:900;font-size:1.3em;color:#1d3557;letter-spacing:2px;">OrbitDesk</span>
-                        </div>
+        <!-- OrbitDesk Brand -->
+        <div class="orbitdesk-brand" style="justify-content:center;margin-bottom:18px;grid-column:1/-1;">
+            <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="OrbitDesk mini logo" role="img">
+                <rect x="0" y="0" width="38" height="38" rx="8" fill="#fff"/>
+                <rect x="8" y="17" width="22" height="4" rx="2" fill="#e63946"/>
+                <rect x="17" y="8" width="4" height="22" rx="2" fill="#e63946"/>
+                <circle cx="19" cy="19" r="8" fill="#fff" stroke="#000" stroke-width="2"/>
+            </svg>
+            <span class="orbitdesk-brand__name">OrbitDesk</span>
+        </div>
+
         <header>
             <div class="header-grid">
                 <div>
@@ -1095,9 +125,7 @@
             <div class="countdown-header">
                 <h3>Coming Up</h3>
             </div>
-            <div class="countdown-grid" id="countdownGrid">
-                <!-- Generated by JS -->
-            </div>
+            <div class="countdown-grid" id="countdownGrid"></div>
         </section>
 
         <!-- WTW 211 -->
@@ -1109,7 +137,6 @@
             <div class="module-content">
                 <h3 class="module-title">Linear Algebra</h3>
                 <div class="color-accent"></div>
-
                 <div class="info-section">
                     <h4>Instructors</h4>
                     <div class="info-grid">
@@ -1121,7 +148,6 @@
                         <div class="info-value">wtw211@up.ac.za</div>
                     </div>
                 </div>
-
                 <div class="info-section">
                     <h4>Schedule</h4>
                     <div class="schedule-grid">
@@ -1139,49 +165,28 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="info-section">
                     <h4>Assessment</h4>
                     <table class="assessment-table">
                         <thead>
-                            <tr>
-                                <th>Component</th>
-                                <th>Date</th>
-                                <th style="text-align: right;">Weight</th>
-                            </tr>
+                            <tr><th>Component</th><th>Date</th><th style="text-align: right;">Weight</th></tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td>Semester Test 1</td>
-                                <td>Tuesday, 18 March</td>
-                                <td style="text-align: right;"><span class="percentage">35%</span></td>
-                            </tr>
-                            <tr>
-                                <td>Semester Test 2</td>
-                                <td>Friday, 8 May</td>
-                                <td style="text-align: right;"><span class="percentage">35%</span></td>
-                            </tr>
-                            <tr>
-                                <td>Assignments + Tutorials</td>
-                                <td>5 Assignments, 3 Tutorial Tests</td>
-                                <td style="text-align: right;"><span class="percentage">30%</span></td>
-                            </tr>
+                            <tr><td>Semester Test 1</td><td>Tuesday, 18 March</td><td style="text-align: right;"><span class="percentage">35%</span></td></tr>
+                            <tr><td>Semester Test 2</td><td>Friday, 8 May</td><td style="text-align: right;"><span class="percentage">35%</span></td></tr>
+                            <tr><td>Assignments + Tutorials</td><td>5 Assignments, 3 Tutorial Tests</td><td style="text-align: right;"><span class="percentage">30%</span></td></tr>
                         </tbody>
                     </table>
-                    <p class="text-block" style="font-weight: 500;">
-                        Final Mark: 60% Semester + 40% Exam
-                    </p>
+                    <p class="text-block" style="font-weight: 500;">Final Mark: 60% Semester + 40% Exam</p>
                 </div>
-
                 <div class="info-section">
                     <h4>Topics</h4>
                     <p class="text-block">
-                        Inverse matrices • Spanning sets • Linear independence • Subspaces • 
-                        Dimension and rank • Linear transformations • Eigenvalues and eigenvectors • 
+                        Inverse matrices • Spanning sets • Linear independence • Subspaces •
+                        Dimension and rank • Linear transformations • Eigenvalues and eigenvectors •
                         Similarity and diagonalization
                     </p>
                 </div>
-
                 <div class="warning">
                     <h4>Requirements</h4>
                     <ul>
@@ -1203,7 +208,6 @@
             <div class="module-content">
                 <h3 class="module-title">Calculus 218 — Multivariable Functions</h3>
                 <div class="color-accent"></div>
-
                 <div class="info-section">
                     <h4>Instructors</h4>
                     <div class="info-grid">
@@ -1215,52 +219,29 @@
                         <div class="info-value">wtw218@up.ac.za</div>
                     </div>
                 </div>
-
                 <div class="info-section">
                     <h4>Assessment</h4>
                     <table class="assessment-table">
                         <thead>
-                            <tr>
-                                <th>Component</th>
-                                <th>Details</th>
-                                <th style="text-align: right;">Weight</th>
-                            </tr>
+                            <tr><th>Component</th><th>Details</th><th style="text-align: right;">Weight</th></tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td>Semester Test 1</td>
-                                <td>Monday, 16 March</td>
-                                <td style="text-align: right;"><span class="percentage">35%</span></td>
-                            </tr>
-                            <tr>
-                                <td>Semester Test 2</td>
-                                <td>Saturday, 2 May</td>
-                                <td style="text-align: right;"><span class="percentage">35%</span></td>
-                            </tr>
-                            <tr>
-                                <td>Tutorial Tests</td>
-                                <td>Best 3 of 4</td>
-                                <td style="text-align: right;"><span class="percentage">25%</span></td>
-                            </tr>
-                            <tr>
-                                <td>Homework</td>
-                                <td>8 Assignments via ClickUP</td>
-                                <td style="text-align: right;"><span class="percentage">5%</span></td>
-                            </tr>
+                            <tr><td>Semester Test 1</td><td>Monday, 16 March</td><td style="text-align: right;"><span class="percentage">35%</span></td></tr>
+                            <tr><td>Semester Test 2</td><td>Saturday, 2 May</td><td style="text-align: right;"><span class="percentage">35%</span></td></tr>
+                            <tr><td>Tutorial Tests</td><td>Best 3 of 4</td><td style="text-align: right;"><span class="percentage">25%</span></td></tr>
+                            <tr><td>Homework</td><td>8 Assignments via ClickUP</td><td style="text-align: right;"><span class="percentage">5%</span></td></tr>
                         </tbody>
                     </table>
                 </div>
-
                 <div class="info-section">
                     <h4>Topics</h4>
                     <p class="text-block">
-                        Functions of several variables • Limits and continuity • Partial derivatives • 
-                        Differentiability • Chain rule • Implicit function theorem • Gradient • 
-                        Optimization • Lagrange multipliers • Double and triple integrals • 
+                        Functions of several variables • Limits and continuity • Partial derivatives •
+                        Differentiability • Chain rule • Implicit function theorem • Gradient •
+                        Optimization • Lagrange multipliers • Double and triple integrals •
                         Polar, cylindrical, and spherical coordinates
                     </p>
                 </div>
-
                 <div class="warning">
                     <h4>Critical Dates</h4>
                     <ul>
@@ -1281,7 +262,6 @@
             <div class="module-content">
                 <h3 class="module-title">Physics — Thermodynamics, Modern Physics, Practicals</h3>
                 <div class="color-accent"></div>
-
                 <div class="info-section">
                     <h4>Instructors</h4>
                     <div class="info-grid">
@@ -1295,46 +275,28 @@
                         <div class="info-value">Prof CC Theron — NSc1 5-12</div>
                     </div>
                 </div>
-
                 <div class="info-section">
                     <h4>Semester Mark Breakdown (50%)</h4>
                     <table class="assessment-table">
                         <thead>
-                            <tr>
-                                <th>Component</th>
-                                <th style="text-align: right;">Weight</th>
-                            </tr>
+                            <tr><th>Component</th><th style="text-align: right;">Weight</th></tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td>Thermodynamics Continuous</td>
-                                <td style="text-align: right;"><span class="percentage">20.42%</span></td>
-                            </tr>
-                            <tr>
-                                <td>Modern Physics Continuous</td>
-                                <td style="text-align: right;"><span class="percentage">49.58%</span></td>
-                            </tr>
-                            <tr>
-                                <td>Modelling (Leg 1 + 3)</td>
-                                <td style="text-align: right;"><span class="percentage">15%</span></td>
-                            </tr>
-                            <tr>
-                                <td>Error Analysis (Leg 2)</td>
-                                <td style="text-align: right;"><span class="percentage">15%</span></td>
-                            </tr>
+                            <tr><td>Thermodynamics Continuous</td><td style="text-align: right;"><span class="percentage">20.42%</span></td></tr>
+                            <tr><td>Modern Physics Continuous</td><td style="text-align: right;"><span class="percentage">49.58%</span></td></tr>
+                            <tr><td>Modelling (Leg 1 + 3)</td><td style="text-align: right;"><span class="percentage">15%</span></td></tr>
+                            <tr><td>Error Analysis (Leg 2)</td><td style="text-align: right;"><span class="percentage">15%</span></td></tr>
                         </tbody>
                     </table>
                 </div>
-
                 <div class="info-section">
                     <h4>Practical Structure</h4>
                     <p class="text-block">
-                        <strong>Two-Phase Submission System:</strong> Phase 1 must be completed in-class 
-                        (3-hour session). Phase 2 project work has 48-hour deadline. 12 practicals total: 
+                        <strong>Two-Phase Submission System:</strong> Phase 1 must be completed in-class
+                        (3-hour session). Phase 2 project work has 48-hour deadline. 12 practicals total:
                         7 Modelling (P01–04, P10–12) and 5 Error Analysis (P05–09).
                     </p>
                 </div>
-
                 <div class="warning">
                     <h4>Critical Requirements</h4>
                     <ul>
@@ -1357,7 +319,6 @@
             <div class="module-content">
                 <h3 class="module-title">Data Structures and Algorithms</h3>
                 <div class="color-accent"></div>
-
                 <div class="info-section">
                     <h4>Instructors</h4>
                     <div class="info-grid">
@@ -1369,7 +330,6 @@
                         <div class="info-value">cos212queries@cs.up.ac.za</div>
                     </div>
                 </div>
-
                 <div class="info-section">
                     <h4>Schedule</h4>
                     <div class="schedule-grid">
@@ -1387,42 +347,20 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="info-section">
                     <h4>Assessment</h4>
                     <table class="assessment-table">
                         <thead>
-                            <tr>
-                                <th>Component</th>
-                                <th>Details</th>
-                                <th style="text-align: right;">Weight</th>
-                            </tr>
+                            <tr><th>Component</th><th>Details</th><th style="text-align: right;">Weight</th></tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td>Practicals</td>
-                                <td>Best 4 of 5</td>
-                                <td style="text-align: right;"><span class="percentage">20%</span></td>
-                            </tr>
-                            <tr>
-                                <td>Tutorials</td>
-                                <td>Best 9 of 11</td>
-                                <td style="text-align: right;"><span class="percentage">10%</span></td>
-                            </tr>
-                            <tr>
-                                <td>Homework</td>
-                                <td>3 Assignments</td>
-                                <td style="text-align: right;"><span class="percentage">10%</span></td>
-                            </tr>
-                            <tr>
-                                <td>Exam Opportunities</td>
-                                <td>3 × 20% each</td>
-                                <td style="text-align: right;"><span class="percentage">60%</span></td>
-                            </tr>
+                            <tr><td>Practicals</td><td>Best 4 of 5</td><td style="text-align: right;"><span class="percentage">20%</span></td></tr>
+                            <tr><td>Tutorials</td><td>Best 9 of 11</td><td style="text-align: right;"><span class="percentage">10%</span></td></tr>
+                            <tr><td>Homework</td><td>3 Assignments</td><td style="text-align: right;"><span class="percentage">10%</span></td></tr>
+                            <tr><td>Exam Opportunities</td><td>3 × 20% each</td><td style="text-align: right;"><span class="percentage">60%</span></td></tr>
                         </tbody>
                     </table>
                 </div>
-
                 <div class="info-section">
                     <h4>Exam Opportunities (1.5 hours, open book)</h4>
                     <div class="info-grid">
@@ -1434,7 +372,6 @@
                         <div class="info-value">8 June, 11:15–12:45</div>
                     </div>
                 </div>
-
                 <div class="warning">
                     <h4>Requirements</h4>
                     <ul>
@@ -1456,7 +393,6 @@
             <div class="module-content">
                 <h3 class="module-title">Theoretical Computer Science</h3>
                 <div class="color-accent"></div>
-
                 <div class="info-section">
                     <h4>Instructors</h4>
                     <div class="info-grid">
@@ -1466,7 +402,6 @@
                         <div class="info-value">Mr Steven Jordaan (Tutorials)</div>
                     </div>
                 </div>
-
                 <div class="info-section">
                     <h4>Schedule</h4>
                     <div class="schedule-grid">
@@ -1480,54 +415,31 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="info-section">
                     <h4>Semester Mark (60%)</h4>
                     <table class="assessment-table">
                         <thead>
-                            <tr>
-                                <th>Component</th>
-                                <th>Details</th>
-                                <th style="text-align: right;">Weight</th>
-                            </tr>
+                            <tr><th>Component</th><th>Details</th><th style="text-align: right;">Weight</th></tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td>Worksheets</td>
-                                <td>Best 9 of 10</td>
-                                <td style="text-align: right;"><span class="percentage">10%</span></td>
-                            </tr>
-                            <tr>
-                                <td>Class Tests</td>
-                                <td>Best 2 of 3</td>
-                                <td style="text-align: right;"><span class="percentage">20%</span></td>
-                            </tr>
-                            <tr>
-                                <td>Semester Test 1</td>
-                                <td>Wednesday, 18 March</td>
-                                <td style="text-align: right;"><span class="percentage">35%</span></td>
-                            </tr>
-                            <tr>
-                                <td>Semester Test 2</td>
-                                <td>Saturday, 16 May</td>
-                                <td style="text-align: right;"><span class="percentage">35%</span></td>
-                            </tr>
+                            <tr><td>Worksheets</td><td>Best 9 of 10</td><td style="text-align: right;"><span class="percentage">10%</span></td></tr>
+                            <tr><td>Class Tests</td><td>Best 2 of 3</td><td style="text-align: right;"><span class="percentage">20%</span></td></tr>
+                            <tr><td>Semester Test 1</td><td>Wednesday, 18 March</td><td style="text-align: right;"><span class="percentage">35%</span></td></tr>
+                            <tr><td>Semester Test 2</td><td>Saturday, 16 May</td><td style="text-align: right;"><span class="percentage">35%</span></td></tr>
                         </tbody>
                     </table>
                     <p class="text-block" style="font-weight: 500; margin-top: 15px;">
                         Exam (40%): Friday, 6 June, 07:30 (Informatorium)
                     </p>
                 </div>
-
                 <div class="info-section">
                     <h4>Topics</h4>
                     <p class="text-block">
-                        Finite automata • Regular languages • Context-free grammars • 
-                        Pushdown automata • Turing machines • Church-Turing thesis • 
+                        Finite automata • Regular languages • Context-free grammars •
+                        Pushdown automata • Turing machines • Church-Turing thesis •
                         Decidability • P vs NP • NP-complete class
                     </p>
                 </div>
-
                 <div class="warning">
                     <h4>Requirements</h4>
                     <ul>
@@ -1546,7 +458,6 @@
                 <h2>Critical Dates</h2>
                 <div class="color-accent color-accent-red"></div>
             </div>
-
             <div class="timeline">
                 <div class="timeline-item">
                     <div class="timeline-date">09 Feb</div>
@@ -1555,7 +466,6 @@
                         <div class="timeline-details">PHY 255 Thermodynamics starts</div>
                     </div>
                 </div>
-
                 <div class="timeline-item">
                     <div class="timeline-date">12 Feb</div>
                     <div class="timeline-content">
@@ -1563,7 +473,6 @@
                         <div class="timeline-details">WTW 218 tutorial registration closes</div>
                     </div>
                 </div>
-
                 <div class="timeline-item">
                     <div class="timeline-date">05 Mar</div>
                     <div class="timeline-content">
@@ -1571,15 +480,13 @@
                         <div class="timeline-details">PHY 255: Thermodynamics → Modern Physics</div>
                     </div>
                 </div>
-
                 <div class="timeline-item">
                     <div class="timeline-date critical-date">16 Mar</div>
                     <div class="timeline-content">
-                        <div class="timeline-title critical-date">WTW 218 Test 1</div>
+                        <div class="timeline-title critical-date">WTW 218 Semester Test 1</div>
                         <div class="timeline-details">Semester Test 1</div>
                     </div>
                 </div>
-
                 <div class="timeline-item">
                     <div class="timeline-date critical-date">18 Mar</div>
                     <div class="timeline-content">
@@ -1587,7 +494,6 @@
                         <div class="timeline-details">WTW 211 + COS 210 Semester Tests</div>
                     </div>
                 </div>
-
                 <div class="timeline-item">
                     <div class="timeline-date critical-date">19 Mar</div>
                     <div class="timeline-content">
@@ -1595,7 +501,6 @@
                         <div class="timeline-details">15:00–18:00 (3 hours)</div>
                     </div>
                 </div>
-
                 <div class="timeline-item">
                     <div class="timeline-date critical-date">28 Mar</div>
                     <div class="timeline-content">
@@ -1603,7 +508,6 @@
                         <div class="timeline-details">10:00–11:30, Centenary 4,5,6</div>
                     </div>
                 </div>
-
                 <div class="timeline-item">
                     <div class="timeline-date">29 Mar – 06 Apr</div>
                     <div class="timeline-content">
@@ -1611,7 +515,6 @@
                         <div class="timeline-details">No lectures (WTW modules)</div>
                     </div>
                 </div>
-
                 <div class="timeline-item">
                     <div class="timeline-date critical-date">02 May</div>
                     <div class="timeline-content">
@@ -1619,7 +522,6 @@
                         <div class="timeline-details">Saturday test</div>
                     </div>
                 </div>
-
                 <div class="timeline-item">
                     <div class="timeline-date critical-date">07 May</div>
                     <div class="timeline-content">
@@ -1627,7 +529,6 @@
                         <div class="timeline-details">10:00–11:30, Centenary 4,5,6</div>
                     </div>
                 </div>
-
                 <div class="timeline-item">
                     <div class="timeline-date critical-date">08 May</div>
                     <div class="timeline-content">
@@ -1635,7 +536,6 @@
                         <div class="timeline-details">Friday</div>
                     </div>
                 </div>
-
                 <div class="timeline-item">
                     <div class="timeline-date critical-date">16 May</div>
                     <div class="timeline-content">
@@ -1643,7 +543,6 @@
                         <div class="timeline-details">COS 210 ST2 (12:30) + PHY 255 Test 2 (15:00)</div>
                     </div>
                 </div>
-
                 <div class="timeline-item">
                     <div class="timeline-date critical-date">06 Jun</div>
                     <div class="timeline-content">
@@ -1651,7 +550,6 @@
                         <div class="timeline-details">07:30, Informatorium</div>
                     </div>
                 </div>
-
                 <div class="timeline-item">
                     <div class="timeline-date critical-date">08 Jun</div>
                     <div class="timeline-content">
@@ -1659,7 +557,6 @@
                         <div class="timeline-details">11:15–12:45 (≥20% required)</div>
                     </div>
                 </div>
-
                 <div class="timeline-item">
                     <div class="timeline-date critical-date">13 Jun</div>
                     <div class="timeline-content">
@@ -1698,366 +595,18 @@
         </footer>
     </div>
 
+    <!-- Bottom Navigation (mobile) -->
     <nav class="bottom-nav">
-        <a href="dashboard.html" class="active">
-            <span class="nav-icon">◻</span>
-            Overview
-        </a>
-        <a href="Semester1Timetable2026.html">
-            <span class="nav-icon">①</span>
-            Sem 1
-        </a>
-        <a href="index.html">
-            <span class="nav-icon">②</span>
-            Sem 2
-        </a>
-        <a href="planner.html">
-            <span class="nav-icon">▤</span>
-            Planner
-        </a>
-        <a href="timer.html">
-            <span class="nav-icon">◉</span>
-            Focus
-        </a>
+        <a href="dashboard.html" class="active"><span class="nav-icon">◻</span>Overview</a>
+        <a href="Semester1Timetable2026.html"><span class="nav-icon">①</span>Sem 1</a>
+        <a href="index.html"><span class="nav-icon">②</span>Sem 2</a>
+        <a href="planner.html"><span class="nav-icon">▤</span>Planner</a>
+        <a href="timer.html"><span class="nav-icon">◉</span>Focus</a>
     </nav>
 
-    <script>
-                // Swiss Style OrbitDesk Loader Animation
-                (function() {
-                    const loader = document.getElementById('orbitdesk-loader');
-                    const bar = document.getElementById('swiss-bar');
-                    const barV = document.getElementById('swiss-bar-v');
-                    const barsGroup = document.getElementById('swiss-bars-group');
-                    const dot = document.getElementById('swiss-dot');
-                    let t = 0;
-                    let anim;
-                    const LOADER_KEY = 'orbitdesk_loader_shown';
-                    const loaderAlreadyShown = sessionStorage.getItem(LOADER_KEY);
-                    if (!loaderAlreadyShown) {
-                        function animateSwissLogo() {
-                            t += 0.06;
-                            const h = 10 + 6 * Math.abs(Math.sin(t));
-                            bar.setAttribute('height', h);
-                            bar.setAttribute('y', 80 - h/2);
-                            barV.setAttribute('width', h);
-                            barV.setAttribute('x', 80 - h/2);
-                            const rot = Math.sin(t/1.5) * 18;
-                            barsGroup.setAttribute('transform', `rotate(${rot} 80 80)`);
-                            const r = 28 + 4 * Math.abs(Math.sin(t*2));
-                            dot.setAttribute('r', r);
-                            dot.setAttribute('cx', 80);
-                            dot.setAttribute('cy', 80 + Math.abs(Math.sin(t*2))*18);
-                            anim = requestAnimationFrame(animateSwissLogo);
-                        }
-                        animateSwissLogo();
-                        setTimeout(() => {
-                            loader.style.opacity = '0';
-                            setTimeout(() => {
-                                loader.style.display = 'none';
-                                cancelAnimationFrame(anim);
-                            }, 600);
-                        }, 3000);
-                        sessionStorage.setItem(LOADER_KEY, '1');
-                        if (window.history && window.history.pushState) {
-                            window.addEventListener('popstate', () => {
-                                loader.style.display = 'none';
-                            });
-                        }
-                    } else {
-                        loader.style.display = 'none';
-                    }
-                })();
-        // ── Firebase Setup ──
-        const firebaseConfig = {
-            apiKey: "AIzaSyArdb2Dm8ruW10w6bUYakIz75QuBhP1SD4",
-            authDomain: "time-management-a4285.firebaseapp.com",
-            projectId: "time-management-a4285",
-            storageBucket: "time-management-a4285.firebasestorage.app",
-            messagingSenderId: "453419428813",
-            appId: "1:453419428813:web:c84c1e002db8beaa8a7284",
-            measurementId: "G-K7HQWV2ZE5"
-        };
-
-        firebase.initializeApp(firebaseConfig);
-        const auth = firebase.auth();
-        const db = firebase.firestore();
-
-        // Enable offline persistence
-        db.enablePersistence({ synchronizeTabs: true }).catch(err => {
-            console.warn('Firestore persistence failed:', err.code);
-        });
-
-        let currentUser = null;
-
-        // ── Auth Functions ──
-        function signInWithGoogle() {
-            const provider = new firebase.auth.GoogleAuthProvider();
-            auth.signInWithPopup(provider).catch(err => {
-                console.error('Sign-in error:', err);
-                alert('Sign-in failed: ' + err.message);
-            });
-        }
-
-        function signOutUser() {
-            auth.signOut();
-        }
-
-        auth.onAuthStateChanged(user => {
-            currentUser = user;
-            // Optionally update UI for auth state
-            renderWeeklyReview();
-        });
-
-        // ── Firestore doc path helpers ──
-        function docRefPlanner(dateStr) {
-            return db.collection('users').doc(currentUser.uid)
-                     .collection('planner').doc(dateStr);
-        }
-        function docRefStats() {
-            return db.collection('users').doc(currentUser.uid)
-                     .collection('meta').doc('focus_stats');
-        }
-        function docRefSleep(dateStr) {
-            return db.collection('users').doc(currentUser.uid)
-                     .collection('sleep').doc(dateStr);
-        }
-
-        // ── Data: load (Firestore if signed in, localStorage fallback) ──
-        async function loadPlannerData(key) {
-            if (currentUser) {
-                try {
-                    const snap = await docRefPlanner(key).get();
-                    if (snap.exists) {
-                        localStorage.setItem('planner_' + key, JSON.stringify(snap.data()));
-                        return snap.data();
-                    }
-                } catch (e) { console.warn('Firestore planner read failed:', e); }
-            }
-            try { return JSON.parse(localStorage.getItem('planner_' + key)) || {}; }
-            catch { return {}; }
-        }
-
-        async function loadStatsData() {
-            if (currentUser) {
-                try {
-                    const snap = await docRefStats().get();
-                    if (snap.exists) {
-                        localStorage.setItem('focus_stats', JSON.stringify(snap.data()));
-                        return snap.data();
-                    }
-                } catch (e) { console.warn('Firestore stats read failed:', e); }
-            }
-            try { return JSON.parse(localStorage.getItem('focus_stats')) || {}; }
-            catch { return {}; }
-        }
-
-        async function loadSleepData(key) {
-            if (currentUser) {
-                try {
-                    const snap = await docRefSleep(key).get();
-                    if (snap.exists) {
-                        localStorage.setItem('sleep_' + key, JSON.stringify(snap.data()));
-                        return snap.data();
-                    }
-                } catch (e) { console.warn('Firestore sleep read failed:', e); }
-            }
-            try { return JSON.parse(localStorage.getItem('sleep_' + key)) || null; }
-            catch { return null; }
-        }
-        // Collapsible modules on mobile
-        if (window.innerWidth <= 768) {
-            document.querySelectorAll('.module-header').forEach(header => {
-                header.addEventListener('click', () => {
-                    header.closest('.module').classList.toggle('collapsed');
-                });
-            });
-
-            // Start with all modules collapsed except the first
-            const modules = document.querySelectorAll('.module');
-            modules.forEach((mod, i) => {
-                if (i > 0) mod.classList.add('collapsed');
-            });
-        }
-
-        // Smooth scroll for anchor links (from timetable)
-        if (window.location.hash) {
-            const target = document.querySelector(window.location.hash);
-            if (target) {
-                target.classList.remove('collapsed');
-                setTimeout(() => target.scrollIntoView({ behavior: 'smooth', block: 'start' }), 100);
-            }
-        }
-
-        // ── Live Countdowns ──
-        const CRITICAL_DATES = [
-            { date: '2026-03-16', event: 'WTW 218 Test 1', type: 'test' },
-            { date: '2026-03-18', event: 'WTW 211 Semester Test', type: 'test' },
-            { date: '2026-03-18', event: 'COS 210 Semester Test', type: 'test' },
-            { date: '2026-03-19', event: 'PHY 255 Test 1', type: 'test' },
-            { date: '2026-03-28', event: 'COS 212 EO1', type: 'exam' },
-            { date: '2026-05-02', event: 'WTW 218 Test 2', type: 'test' },
-            { date: '2026-05-07', event: 'COS 212 EO2', type: 'exam' },
-            { date: '2026-05-08', event: 'WTW 211 Test 2', type: 'test' },
-            { date: '2026-05-16', event: 'COS 210 ST2 + PHY 255 Test 2', type: 'test' },
-            { date: '2026-06-06', event: 'COS 210 Exam', type: 'exam' },
-            { date: '2026-06-08', event: 'COS 212 EO3', type: 'exam' },
-            { date: '2026-06-13', event: 'WTW 218 Exam', type: 'exam' },
-        ];
-
-        function renderCountdowns() {
-            const grid = document.getElementById('countdownGrid');
-            if (!grid) return;
-            const now = new Date();
-            now.setHours(0, 0, 0, 0);
-
-            const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
-                            'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-
-            // Filter to only show upcoming + recently past (within 2 days)
-            const relevant = CRITICAL_DATES.filter(item => {
-                const d = new Date(item.date + 'T00:00:00');
-                const diff = Math.ceil((d - now) / (1000 * 60 * 60 * 24));
-                return diff >= -2;
-            }).slice(0, 8); // Show max 8
-
-            grid.innerHTML = relevant.map(item => {
-                const d = new Date(item.date + 'T00:00:00');
-                const diff = Math.ceil((d - now) / (1000 * 60 * 60 * 24));
-                let urgency = 'normal';
-                let dayText = diff;
-                let unitText = 'days';
-
-                if (diff < 0) {
-                    urgency = 'past';
-                    dayText = Math.abs(diff);
-                    unitText = diff === -1 ? 'day ago' : 'days ago';
-                } else if (diff === 0) {
-                    urgency = 'urgent';
-                    dayText = 'TODAY';
-                    unitText = '';
-                } else if (diff === 1) {
-                    urgency = 'urgent';
-                    dayText = '1';
-                    unitText = 'day';
-                } else if (diff <= 7) {
-                    urgency = 'urgent';
-                    unitText = 'days';
-                } else if (diff <= 21) {
-                    urgency = 'soon';
-                    unitText = 'days';
-                }
-
-                const dateStr = d.getDate() + ' ' + MONTHS[d.getMonth()];
-
-                return '<div class="countdown-card ' + urgency + '">' +
-                    '<div class="countdown-days">' + dayText + '</div>' +
-                    '<div class="countdown-unit">' + unitText + '</div>' +
-                    '<div class="countdown-event">' + item.event + '</div>' +
-                    '<div class="countdown-date">' + dateStr + '</div>' +
-                    '</div>';
-            }).join('');
-        }
-
-        renderCountdowns();
-        // Update countdowns at midnight
-        setInterval(renderCountdowns, 60000);
-
-        // ── Semester Progress Bar ──
-        function renderProgress() {
-            const semStart = new Date('2026-02-09T00:00:00');
-            const semEnd = new Date('2026-06-13T00:00:00');
-            const now = new Date();
-            const total = semEnd - semStart;
-            const elapsed = now - semStart;
-            let pct = Math.min(100, Math.max(0, (elapsed / total) * 100));
-            pct = Math.round(pct * 10) / 10;
-            const daysLeft = Math.max(0, Math.ceil((semEnd - now) / (1000 * 60 * 60 * 24)));
-            const weeksLeft = Math.round(daysLeft / 7);
-            document.getElementById('progressFill').style.width = pct + '%';
-            document.getElementById('progressMarker').style.left = pct + '%';
-            document.getElementById('progressPct').textContent = pct + '%';
-            document.getElementById('progressDays').textContent = daysLeft;
-            document.getElementById('progressDetail').textContent =
-                weeksLeft + ' Weeks Left';
-        }
-        renderProgress();
-
-        // ── Weekly Review ──
-        async function renderWeeklyReview() {
-            const grid = document.getElementById('reviewGrid');
-            if (!grid) return;
-            const now = new Date();
-            const dayOfWeek = now.getDay();
-            const mondayOffset = dayOfWeek === 0 ? -6 : 1 - dayOfWeek;
-            const monday = new Date(now);
-            monday.setDate(now.getDate() + mondayOffset);
-            monday.setHours(0, 0, 0, 0);
-
-            let totalFocusSessions = 0, totalFocusMinutes = 0;
-            let tasksCompleted = 0, tasksTotal = 0;
-            let sleepHours = [];
-            const dayLabels = ['M', 'T', 'W', 'T', 'F', 'S', 'S'];
-
-            // Load stats once for all days
-            const stats = await loadStatsData();
-
-            for (let i = 0; i < 7; i++) {
-                const d = new Date(monday);
-                d.setDate(monday.getDate() + i);
-                const key = d.getFullYear() + '-' +
-                    String(d.getMonth() + 1).padStart(2, '0') + '-' +
-                    String(d.getDate()).padStart(2, '0');
-
-                // Focus stats
-                if (stats[key]) {
-                    totalFocusSessions += stats[key].sessions || 0;
-                    totalFocusMinutes += stats[key].minutes || 0;
-                }
-
-                // Planner data
-                const planner = await loadPlannerData(key);
-                for (let s = 0; s < 19; s++) {
-                    if (planner['slot_' + s] && planner['slot_' + s].trim()) tasksTotal++;
-                    if (planner['check_' + s]) tasksCompleted++;
-                }
-
-                // Sleep data
-                const sleep = await loadSleepData(key);
-                sleepHours.push(sleep ? parseFloat(sleep.hours) || 0 : 0);
-            }
-
-            const avgSleep = sleepHours.filter(h => h > 0);
-            const avgSleepVal = avgSleep.length ? (avgSleep.reduce((a, b) => a + b, 0) / avgSleep.length).toFixed(1) : '\u2014';
-
-            const maxSleep = 10;
-            let sleepChartHtml = '<div class="sleep-chart">';
-            sleepHours.forEach((h, i) => {
-                const height = h > 0 ? Math.max(4, (h / maxSleep) * 60) : 2;
-                const cls = h === 0 ? '' : h < 7 ? 'low' : 'good';
-                sleepChartHtml += '<div class="sleep-bar ' + cls + '" style="height:' + height + 'px" title="' + dayLabels[i] + ': ' + h + 'h"></div>';
-            });
-            sleepChartHtml += '</div><div class="sleep-day-labels">';
-            dayLabels.forEach(l => { sleepChartHtml += '<span>' + l + '</span>'; });
-            sleepChartHtml += '</div>';
-
-            grid.innerHTML =
-                '<div class="review-card">' +
-                    '<div class="review-value">' + totalFocusSessions + '</div>' +
-                    '<div class="review-label">Focus Sessions</div>' +
-                    '<div class="review-sub">' + totalFocusMinutes + ' minutes total</div>' +
-                '</div>' +
-                '<div class="review-card">' +
-                    '<div class="review-value">' + tasksCompleted + '</div>' +
-                    '<div class="review-label">Tasks Done</div>' +
-                    '<div class="review-sub">' + tasksTotal + ' planned this week</div>' +
-                '</div>' +
-                '<div class="review-card">' +
-                    '<div class="review-value">' + avgSleepVal + '</div>' +
-                    '<div class="review-label">Avg Sleep (hrs)</div>' +
-                    sleepChartHtml +
-                '</div>';
-        }
-        renderWeeklyReview();
-    </script>
+    <!-- Scripts -->
+    <script src="js/firebase-config.js"></script>
+    <script src="js/loader.js"></script>
+    <script src="js/dashboard.js"></script>
 </body>
 </html>

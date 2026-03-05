@@ -1,0 +1,909 @@
+/* ============================================================
+   OrbitDesk — Dashboard Stylesheet
+   12-col grid, typography, module cards, countdowns, progress,
+   weekly review, sleep chart, responsive, print
+   ============================================================ */
+
+body {
+    background: var(--bg);
+    color: #181818;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+}
+
+/* ── Nav overrides for Dashboard (Helvetica + wider padding) ── */
+.site-nav {
+    background: var(--primary);
+    padding: 0 40px;
+}
+
+.site-nav a {
+    font-weight: 700;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.nav-label {
+    display: inline;
+    color: #555;
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding-right: 10px;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+/* ── Container: 12-col grid ── */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 40px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px;
+}
+
+/* ── Typography ── */
+h1 {
+    font-size: 72px;
+    font-weight: 300;
+    letter-spacing: -2px;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 48px;
+    font-weight: 300;
+    letter-spacing: -1px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+h4 {
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-bottom: 10px;
+}
+
+/* ── Header ── */
+header {
+    grid-column: 1 / -1;
+    border-bottom: 1px solid var(--primary);
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+}
+
+.header-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+    align-items: end;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.stat-box {
+    border-left: 3px solid var(--primary);
+    padding-left: 15px;
+}
+
+.stat-number {
+    font-size: 48px;
+    font-weight: 300;
+    line-height: 1;
+    margin-bottom: 5px;
+}
+
+.stat-label {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--text-muted);
+}
+
+/* ── Module Cards — Asymmetric Grid ── */
+.module {
+    grid-column: span 6;
+    background: white;
+    border: 1px solid var(--primary);
+    padding: 0;
+    margin-bottom: 20px;
+    transition: transform 0.2s ease;
+}
+
+.module:hover {
+    transform: translateY(-2px);
+}
+
+.module:nth-child(odd) {
+    grid-column: 1 / 8;
+}
+
+.module:nth-child(even) {
+    grid-column: 6 / -1;
+}
+
+.module-header {
+    background: var(--primary);
+    color: white;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: baseline;
+    gap: 20px;
+}
+
+.module-code {
+    font-size: 36px;
+    font-weight: 300;
+    letter-spacing: -1px;
+}
+
+.credits {
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border: 2px solid white;
+    padding: 6px 12px;
+}
+
+.module-content {
+    padding: 30px;
+}
+
+.module-title {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 30px;
+    letter-spacing: 0.5px;
+}
+
+/* ── Information Grid ── */
+.info-section {
+    margin-bottom: 30px;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: 140px 1fr;
+    gap: 15px 20px;
+    font-size: 14px;
+}
+
+.info-label {
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    font-size: 11px;
+    color: var(--text-muted);
+}
+
+.info-value {
+    font-weight: 400;
+}
+
+/* ── Assessment Table ── */
+.assessment-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 14px;
+}
+
+.assessment-table th {
+    text-align: left;
+    padding: 12px 15px;
+    background: var(--primary);
+    color: white;
+    font-weight: 500;
+    font-size: 11px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.assessment-table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid var(--grid-line);
+}
+
+.assessment-table tr:hover {
+    background: #F3F4F6;
+}
+
+.percentage {
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--secondary);
+}
+
+/* ── Warning Box ── */
+.warning {
+    background: var(--secondary);
+    color: white;
+    padding: 25px;
+    margin-top: 25px;
+}
+
+.warning h4 {
+    color: white;
+    margin-bottom: 12px;
+    font-size: 12px;
+}
+
+.warning ul {
+    list-style: none;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+.warning li::before {
+    content: "—";
+    margin-right: 8px;
+}
+
+/* ── Timeline Section ── */
+.timeline-section {
+    grid-column: 1 / -1;
+    margin-top: 60px;
+    padding-top: 60px;
+    border-top: 1px solid var(--primary);
+}
+
+.timeline-header {
+    margin-bottom: 40px;
+}
+
+.timeline {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    gap: 30px;
+}
+
+.timeline-item {
+    display: contents;
+}
+
+.timeline-date {
+    font-weight: 700;
+    font-size: 14px;
+    text-align: right;
+    padding-right: 30px;
+    border-right: 3px solid var(--primary);
+}
+
+.timeline-content {
+    padding-bottom: 30px;
+}
+
+.timeline-title {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.timeline-details {
+    font-size: 13px;
+    color: var(--text-muted);
+}
+
+.critical-date {
+    color: var(--secondary);
+}
+
+/* ── Footer Links ── */
+.footer-links {
+    grid-column: 1 / -1;
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.link-card {
+    border: 1px solid var(--primary);
+    padding: 25px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--primary);
+    transition: all 0.2s ease;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.link-card:hover {
+    background: var(--primary);
+    color: white;
+}
+
+/* ── Typography Blocks ── */
+.text-block {
+    font-size: 13px;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+/* ── Color Blocks ── */
+.color-accent {
+    width: 40px;
+    height: 3px;
+    background: var(--accent);
+    margin: 15px 0;
+}
+
+.color-accent-red {
+    background: var(--secondary);
+}
+
+/* ── Per-module accent colors ── */
+.module-wtw-211 { border-left: 5px solid var(--mod-orange); }
+.module-wtw-218 { border-left: 5px solid var(--mod-yellow); }
+.module-phy-255 { border-left: 5px solid var(--mod-red); }
+.module-cos-212 { border-left: 5px solid var(--mod-dark-blue); }
+.module-cos-210 { border-left: 5px solid var(--mod-blue); }
+
+.module-wtw-211 .color-accent { background: var(--mod-orange); }
+.module-wtw-218 .color-accent { background: var(--mod-yellow); }
+.module-phy-255 .color-accent { background: var(--mod-red); }
+.module-cos-212 .color-accent { background: var(--mod-dark-blue); }
+.module-cos-210 .color-accent { background: var(--mod-blue); }
+
+.module-wtw-211 .schedule-item { border-left-color: var(--mod-orange); }
+.module-wtw-218 .schedule-item { border-left-color: var(--mod-yellow); }
+.module-phy-255 .schedule-item { border-left-color: var(--mod-red); }
+.module-cos-212 .schedule-item { border-left-color: var(--mod-dark-blue); }
+.module-cos-210 .schedule-item { border-left-color: var(--mod-blue); }
+
+/* ── Schedule Grid ── */
+.schedule-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    font-size: 12px;
+    margin: 20px 0;
+}
+
+.schedule-item {
+    padding: 15px;
+    background: #F9FAFB;
+    border-left: 3px solid var(--accent);
+}
+
+.schedule-time {
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+/* ── Subtle Grid Background ── */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image:
+        linear-gradient(var(--grid-line) 1px, transparent 1px),
+        linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
+    background-size: 20px 20px;
+    opacity: 0.3;
+    pointer-events: none;
+    z-index: -1;
+}
+
+/* ── Countdown Section ── */
+.countdown-section {
+    grid-column: 1 / -1;
+    margin-bottom: 40px;
+}
+
+.countdown-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.countdown-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 15px;
+}
+
+.countdown-card {
+    background: #fff;
+    border: 1px solid var(--primary);
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.countdown-card::before {
+    content: '';
+    position: absolute;
+    left: 0; top: 0; bottom: 0;
+    width: 4px;
+}
+
+.countdown-card.urgent::before { background: var(--secondary); }
+.countdown-card.soon::before { background: var(--mod-orange); }
+.countdown-card.normal::before { background: var(--accent); }
+.countdown-card.past { opacity: 0.4; }
+.countdown-card.past::before { background: var(--grid-line); }
+
+.countdown-days {
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 1;
+    margin-bottom: 5px;
+}
+
+.countdown-card.urgent .countdown-days { color: var(--secondary); }
+.countdown-card.soon .countdown-days { color: var(--mod-orange); }
+
+.countdown-unit {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--text-muted);
+}
+
+.countdown-event {
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.countdown-date {
+    font-size: 11px;
+    color: var(--text-muted);
+    margin-top: 3px;
+}
+
+.countdown-time {
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--text-muted);
+    margin-top: 4px;
+}
+
+.countdown-venue {
+    font-size: 10px;
+    color: var(--text-muted);
+    margin-top: 2px;
+    line-height: 1.3;
+}
+
+.countdown-card.exam .countdown-event {
+    border-left: 2px solid var(--secondary);
+    padding-left: 6px;
+}
+
+/* ── Semester Progress Bar ── */
+.progress-section {
+    grid-column: 1 / -1;
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 25px;
+    align-items: center;
+    border: 1px solid var(--primary);
+    background: #fff;
+    padding: 25px 30px;
+}
+
+.progress-stat {
+    border-left: 3px solid var(--secondary);
+    padding-left: 15px;
+}
+
+.progress-pct {
+    font-size: 48px;
+    font-weight: 300;
+    line-height: 1;
+    margin-bottom: 5px;
+}
+
+.progress-label {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--text-muted);
+}
+
+.progress-track {
+    position: relative;
+    height: 3px;
+    background: var(--grid-line);
+}
+
+.progress-bar-fill {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background: var(--primary);
+    transition: width 0.6s ease;
+}
+
+.progress-marker {
+    position: absolute;
+    top: -6px;
+    width: 3px;
+    height: 15px;
+    background: var(--secondary);
+    transform: translateX(-1px);
+    transition: left 0.6s ease;
+}
+
+.progress-ticks {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 6px;
+}
+
+.progress-ticks span {
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: var(--text-muted);
+}
+
+.progress-meta {
+    text-align: right;
+    border-right: 3px solid var(--primary);
+    padding-right: 15px;
+}
+
+.progress-days {
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 1;
+    margin-bottom: 5px;
+}
+
+.progress-detail {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--text-muted);
+}
+
+/* ── Weekly Review Section ── */
+.weekly-review {
+    grid-column: 1 / -1;
+    margin-top: 40px;
+    padding-top: 40px;
+    border-top: 1px solid var(--primary);
+}
+
+.review-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.review-card {
+    background: #fff;
+    border: 1px solid var(--grid-line);
+    padding: 20px;
+    text-align: center;
+}
+
+.review-value {
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 1;
+    margin-bottom: 5px;
+}
+
+.review-label {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--text-muted);
+}
+
+.review-sub {
+    font-size: 11px;
+    color: var(--text-muted);
+    margin-top: 6px;
+}
+
+.sleep-chart {
+    display: flex;
+    align-items: flex-end;
+    gap: 6px;
+    height: 60px;
+    justify-content: center;
+    margin: 10px 0 5px;
+}
+
+.sleep-bar {
+    width: 20px;
+    background: var(--accent);
+    border-radius: 2px 2px 0 0;
+    transition: height 0.3s;
+}
+
+.sleep-bar.low { background: var(--secondary); }
+.sleep-bar.good { background: #22c55e; }
+
+.sleep-day-labels {
+    display: flex;
+    gap: 6px;
+    justify-content: center;
+}
+
+.sleep-day-labels span {
+    width: 20px;
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    text-align: center;
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+    body {
+        padding-bottom: calc(80px + env(safe-area-inset-bottom));
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+        padding: 20px 15px;
+        gap: 12px;
+    }
+
+    .module {
+        grid-column: 1 / -1 !important;
+        margin-bottom: 8px;
+    }
+
+    .header-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    h1 {
+        font-size: 42px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 8px;
+    }
+
+    .stat-number {
+        font-size: 28px;
+    }
+
+    .stat-label {
+        font-size: 9px;
+    }
+
+    .stat-box {
+        border-left-width: 2px;
+        padding-left: 10px;
+    }
+
+    /* Module header — tap to collapse */
+    .module-header {
+        padding: 20px;
+        cursor: pointer;
+        -webkit-tap-highlight-color: transparent;
+        position: relative;
+    }
+
+    .module-header::after {
+        content: '▾';
+        font-size: 18px;
+        color: rgba(255,255,255,0.5);
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .module-code {
+        font-size: 24px;
+    }
+
+    .credits {
+        font-size: 11px;
+        padding: 4px 8px;
+        border-width: 1px;
+    }
+
+    .module-content {
+        padding: 20px 15px;
+    }
+
+    .module.collapsed .module-content {
+        display: none;
+    }
+
+    .module.collapsed .module-header::after {
+        content: '▸';
+    }
+
+    .module-title {
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+
+    /* Info grid */
+    .info-grid {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+
+    .info-label {
+        margin-top: 5px;
+    }
+
+    /* Tables */
+    .assessment-table th,
+    .assessment-table td {
+        padding: 10px 10px;
+        font-size: 12px;
+    }
+
+    .percentage {
+        font-size: 15px;
+    }
+
+    /* Schedule grid */
+    .schedule-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .schedule-item[style*="grid-column: span 2"] {
+        grid-column: span 1 !important;
+    }
+
+    /* Warning boxes */
+    .warning {
+        padding: 18px;
+        margin-top: 18px;
+    }
+
+    .warning ul {
+        font-size: 12px;
+    }
+
+    /* Timeline */
+    .timeline-section {
+        margin-top: 30px;
+        padding-top: 30px;
+    }
+
+    .timeline {
+        grid-template-columns: 80px 1fr;
+        gap: 10px;
+    }
+
+    .timeline-date {
+        font-size: 11px;
+        padding-right: 15px;
+    }
+
+    .timeline-title {
+        font-size: 14px;
+    }
+
+    .timeline-content {
+        padding-bottom: 20px;
+    }
+
+    /* Footer links */
+    .footer-links {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        margin-top: 30px;
+    }
+
+    .link-card {
+        padding: 18px 10px;
+        font-size: 10px;
+        min-height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Dashboard bottom-nav font override */
+    .bottom-nav a {
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-weight: 700;
+    }
+
+    .nav-label {
+        display: none;
+    }
+
+    /* Progress mobile */
+    .progress-section {
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    .progress-track {
+        grid-column: 1 / -1;
+        order: -1;
+    }
+
+    .progress-pct { font-size: 36px; }
+    .progress-days { font-size: 28px; }
+    .progress-meta {
+        text-align: left;
+        border-right: none;
+        padding-right: 0;
+        border-left: 3px solid var(--primary);
+        padding-left: 15px;
+    }
+
+    /* Countdown mobile */
+    .countdown-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+    }
+
+    .countdown-card { padding: 15px; }
+    .countdown-days { font-size: 28px; }
+    .countdown-event { font-size: 12px; }
+
+    /* Review mobile */
+    .review-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+    }
+
+    .review-card { padding: 15px; }
+    .review-value { font-size: 28px; }
+}
+
+/* Desktop: hide mobile-only elements */
+@media (min-width: 769px) {
+}
+
+/* ── Print Styles ── */
+@media print {
+    body::before { display: none; }
+    .link-card { border: 1px solid #000; }
+    .site-nav { display: none; }
+}

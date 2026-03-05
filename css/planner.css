@@ -1,0 +1,645 @@
+/* ============================================================
+   OrbitDesk — Planner Stylesheet
+   Day planner, habits, sleep logger, auth bar
+   ============================================================ */
+
+body {
+    background: var(--paper);
+    font-family: "Futura", "Helvetica Neue", "Arial", sans-serif;
+    color: #181818;
+}
+
+/* Planner nav uses same font fallback */
+.site-nav a {
+    font-family: "Futura", "Helvetica Neue", "Arial", sans-serif;
+}
+
+/* Container */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px 120px;
+}
+
+/* Header */
+.planner-header {
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 1;
+    margin-bottom: 15px;
+}
+
+.date-controls {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.date-btn {
+    background: var(--black);
+    color: #fff;
+    border: none;
+    width: 36px;
+    height: 36px;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.date-btn:hover { background: var(--red); }
+
+.date-display {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    min-width: 280px;
+    text-align: center;
+}
+
+.today-btn {
+    background: none;
+    border: 2px solid var(--black);
+    color: var(--black);
+    font-family: inherit;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: all 0.2s;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.today-btn:hover {
+    background: var(--black);
+    color: #fff;
+}
+
+.day-label {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--text-muted);
+}
+
+/* ── Planner Table ── */
+.planner-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border: 3px solid var(--black);
+}
+
+.planner-table thead th {
+    background: var(--black);
+    color: #fff;
+    padding: 14px 20px;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.planner-table thead th:first-child {
+    width: 130px;
+}
+
+.planner-table thead th:last-child {
+    width: 50px;
+    text-align: center;
+}
+
+.planner-table tbody tr {
+    border-bottom: 1px solid var(--grid-line);
+    transition: background 0.15s;
+}
+
+.planner-table tbody tr:hover {
+    background: #f9fafb;
+}
+
+.planner-table tbody tr.current-slot {
+    background: #fef3c7;
+    border-left: 5px solid var(--orange);
+}
+
+.planner-table tbody tr.past-slot {
+    opacity: 0.45;
+}
+
+.planner-table tbody tr.section-morning td {
+    border-top: 3px solid var(--blue);
+}
+
+.planner-table tbody tr.section-afternoon td {
+    border-top: 3px solid var(--orange);
+}
+
+.planner-table tbody tr.section-evening td {
+    border-top: 3px solid var(--dark-blue);
+}
+
+.time-cell {
+    padding: 12px 16px;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+    vertical-align: top;
+    color: var(--black);
+    border-right: 1px solid var(--grid-line);
+    user-select: none;
+}
+
+.time-period {
+    display: block;
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-top: 2px;
+}
+
+.activity-cell {
+    padding: 0;
+    vertical-align: top;
+}
+
+.activity-input {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 500;
+    background: transparent;
+    color: var(--black);
+    min-height: 44px;
+    resize: none;
+    line-height: 1.5;
+}
+
+.activity-input::placeholder {
+    color: #ccc;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.activity-input:focus {
+    background: #eff6ff;
+}
+
+.check-cell {
+    text-align: center;
+    vertical-align: top;
+    padding: 10px 8px;
+    border-left: 1px solid var(--grid-line);
+}
+
+.check-cell input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    accent-color: var(--red);
+}
+
+.planner-table tbody tr.checked-row {
+    background: #f0fdf4;
+}
+
+.planner-table tbody tr.checked-row .activity-input {
+    text-decoration: line-through;
+    color: #999;
+}
+
+/* Class slots (auto-filled from timetable) */
+.planner-table tbody tr.class-slot {
+    background: #f0f4ff;
+}
+
+.planner-table tbody tr.class-slot.past-slot {
+    opacity: 0.45;
+}
+
+.class-badge {
+    display: inline-block;
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 3px 8px;
+    color: #fff;
+    border-radius: 2px;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+.class-badge.phy-255 { background: var(--red); }
+.class-badge.cos-210 { background: var(--blue); }
+.class-badge.cos-212 { background: var(--dark-blue); }
+.class-badge.wtw-211 { background: var(--orange); }
+.class-badge.wtw-218 { background: var(--yellow); color: #000; }
+
+.class-text {
+    font-size: 13px;
+    font-weight: 600;
+    color: #444;
+    line-height: 1.5;
+}
+
+/* Section Headers */
+.section-row td {
+    background: var(--paper);
+    padding: 8px 16px;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    border-bottom: 2px solid var(--grid-line);
+}
+
+/* ── Clear & Stats ── */
+.planner-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.clear-btn {
+    background: none;
+    border: 2px solid var(--red);
+    color: var(--red);
+    font-family: inherit;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.clear-btn:hover {
+    background: var(--red);
+    color: #fff;
+}
+
+.stats {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--text-muted);
+    letter-spacing: 0.5px;
+}
+
+.stats span {
+    font-weight: 800;
+    color: var(--black);
+}
+
+/* ── Auth Bar ── */
+.auth-bar {
+    background: #111;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 12px;
+    font-size: 12px;
+    color: #999;
+    border-bottom: 1px solid #333;
+}
+
+.auth-bar .user-info {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.auth-bar .user-avatar {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 2px solid var(--red);
+}
+
+.auth-bar .user-name {
+    color: #ccc;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.auth-btn {
+    background: var(--red);
+    color: #fff;
+    border: none;
+    font-family: inherit;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    padding: 6px 14px;
+    cursor: pointer;
+    transition: opacity 0.2s;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.auth-btn:hover { opacity: 0.85; }
+
+.auth-btn.sign-out {
+    background: transparent;
+    border: 1px solid #555;
+    color: #999;
+}
+
+.sync-status {
+    font-size: 10px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #555;
+}
+
+.sync-status.synced { color: #22c55e; }
+.sync-status.syncing { color: var(--orange); }
+.sync-status.offline { color: var(--red); }
+
+/* ── Free Period Optimizer ── */
+.free-periods {
+    margin-top: 20px;
+    padding: 20px;
+    background: #fff;
+    border: 2px solid var(--blue);
+    border-left: 5px solid var(--blue);
+}
+
+.free-periods h3 {
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--blue);
+    margin-bottom: 12px;
+}
+
+.free-slot {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+    font-size: 13px;
+}
+
+.free-slot:last-child { border-bottom: none; }
+
+.free-slot-time {
+    font-weight: 700;
+    min-width: 110px;
+    font-size: 12px;
+}
+
+.free-slot-suggestion {
+    color: var(--text-muted);
+    font-size: 12px;
+    font-style: italic;
+}
+
+.free-slot-duration {
+    margin-left: auto;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--blue);
+    white-space: nowrap;
+}
+
+/* ── Habit Tracker ── */
+.habit-tracker {
+    margin-top: 25px;
+    padding: 20px;
+    background: #fff;
+    border: 2px solid var(--orange);
+    border-left: 5px solid var(--orange);
+}
+
+.habit-tracker h3 {
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--orange);
+    margin-bottom: 12px;
+}
+
+.habit-list { list-style: none; }
+
+.habit-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 0;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.habit-item:last-child { border-bottom: none; }
+
+.habit-item input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    accent-color: var(--orange);
+    cursor: pointer;
+}
+
+.habit-item.done label {
+    text-decoration: line-through;
+    color: #999;
+}
+
+.habit-item label { cursor: pointer; flex: 1; }
+
+.habit-streak {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: var(--text-muted);
+    text-transform: uppercase;
+}
+
+.habit-score {
+    margin-top: 12px;
+    text-align: right;
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--orange);
+    letter-spacing: 0.5px;
+}
+
+/* ── Sleep Logger ── */
+.sleep-logger {
+    margin-top: 25px;
+    padding: 20px;
+    background: #fff;
+    border: 2px solid var(--dark-blue);
+    border-left: 5px solid var(--dark-blue);
+}
+
+.sleep-logger h3 {
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--dark-blue);
+    margin-bottom: 12px;
+}
+
+.sleep-inputs {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.sleep-field {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.sleep-field label {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--text-muted);
+}
+
+.sleep-field input[type="time"] {
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 6px 10px;
+    border: 2px solid var(--grid-line);
+    background: #fafafa;
+    color: var(--black);
+}
+
+.sleep-field input[type="time"]:focus {
+    outline: none;
+    border-color: var(--dark-blue);
+}
+
+.sleep-result {
+    font-size: 24px;
+    font-weight: 300;
+    color: var(--dark-blue);
+    margin-left: auto;
+}
+
+.sleep-result small {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    display: block;
+}
+
+.sleep-quality {
+    margin-top: 8px;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.sleep-quality.good { color: #22c55e; }
+.sleep-quality.ok { color: var(--orange); }
+.sleep-quality.bad { color: var(--red); }
+
+/* ── Subtle grid background ── */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background-image:
+        linear-gradient(var(--grid-line) 1px, transparent 1px),
+        linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
+    background-size: 20px 20px;
+    opacity: 0.15;
+    pointer-events: none;
+    z-index: -1;
+}
+
+/* ── Mobile ── */
+@media (max-width: 768px) {
+    body {
+        padding-bottom: 0;
+    }
+
+    .container {
+        padding: 15px 10px 100px;
+    }
+
+    h1 { font-size: 28px; margin-bottom: 10px; }
+
+    .date-controls { gap: 8px; flex-wrap: wrap; }
+
+    .date-display {
+        font-size: 15px;
+        min-width: 200px;
+    }
+
+    .time-cell {
+        padding: 10px 8px;
+        font-size: 12px;
+    }
+
+    .activity-input {
+        padding: 10px 8px;
+        font-size: 13px;
+    }
+
+    .planner-table thead th {
+        padding: 10px 8px;
+        font-size: 10px;
+    }
+
+    .planner-table thead th:first-child { width: 90px; }
+
+    .planner-footer {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+    }
+
+    .auth-bar {
+        padding: 8px 10px;
+        font-size: 11px;
+    }
+
+    .auth-bar .user-name { display: none; }
+}

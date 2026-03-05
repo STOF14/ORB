@@ -1,0 +1,442 @@
+/* ============================================================
+   OrbitDesk — Timetable Stylesheet
+   Shared between Semester 1 & Semester 2 timetable pages
+   ============================================================ */
+
+body {
+    background: var(--paper);
+    font-family: "Futura", "Arial", sans-serif;
+    padding: 40px 20px;
+    color: var(--black);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+}
+
+.page-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 40px;
+}
+
+.page-header h1 {
+    margin-bottom: 0;
+}
+
+.edit-toggle {
+    background: transparent;
+    border: 1px solid var(--black);
+    color: var(--black);
+    font-family: inherit;
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    padding: 6px 12px;
+    cursor: pointer;
+    transition: background 0.2s ease, color 0.2s ease;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.edit-toggle[aria-pressed="true"] {
+    background: var(--black);
+    color: #fff;
+}
+
+.edit-time,
+.edit-activity {
+    width: 100%;
+    border: 1px solid #ddd;
+    padding: 6px 8px;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 600;
+    color: #222;
+    background: #fff;
+}
+
+.edit-activity {
+    min-height: 28px;
+}
+
+body.edit-mode .event {
+    background: #fffdf5;
+}
+
+.day {
+    margin-bottom: 30px;
+    background: #fff;
+    border: 3px solid var(--black);
+    overflow: hidden;
+}
+
+.day-header {
+    background: var(--black);
+    color: #fff;
+    padding: 15px 20px;
+    font-size: 24px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+.day-header::before {
+    content: "";
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.monday .day-header::before { background: var(--red); }
+.tuesday .day-header::before { background: var(--blue); }
+.wednesday .day-header::before { background: var(--orange); }
+.thursday .day-header::before { background: var(--dark-blue); }
+.friday .day-header::before { background: var(--yellow); }
+
+.event {
+    padding: 15px 20px;
+    border-bottom: 2px solid var(--black);
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    gap: 20px;
+    align-items: center;
+    position: relative;
+    background: #fff;
+}
+
+.event:last-child {
+    border-bottom: none;
+}
+
+.event.empty {
+    background: var(--paper);
+}
+
+.time {
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.activity {
+    font-size: 16px;
+    font-weight: 600;
+    color: #222;
+    min-height: 20px;
+}
+
+.event::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 8px;
+    background: transparent;
+}
+
+.phy-255::before { background: var(--red); }
+.cos-210::before { background: var(--blue); }
+.cos-212::before { background: var(--dark-blue); }
+.wtw-211::before { background: var(--orange); }
+.wtw-218::before { background: var(--yellow); }
+
+.activity a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.activity a:hover {
+    text-decoration: underline;
+}
+
+/* ── Under-Construction (Bauhaus) ── */
+.bauhaus-construction {
+    position: relative;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.bauhaus-bg {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: -40px;
+    z-index: 1;
+}
+
+.bauhaus-text {
+    position: relative;
+    z-index: 2;
+    background: rgba(245, 245, 240, 0.95);
+    padding: 32px 48px;
+    border-radius: 24px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    animation: fadeInBauhaus 1.2s cubic-bezier(.68, -0.55, .27, 1.55);
+}
+
+.bauhaus-text h1 {
+    font-size: 56px;
+    color: var(--red);
+    margin-bottom: 24px;
+    animation: popTitle 1s cubic-bezier(.68, -0.55, .27, 1.55);
+}
+
+.bauhaus-text p {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--dark-blue);
+    margin-bottom: 0;
+    animation: fadeInText 1.5s cubic-bezier(.68, -0.55, .27, 1.55);
+}
+
+@keyframes fadeInBauhaus {
+    0%   { opacity: 0; transform: translateY(40px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes popTitle {
+    0%   { transform: scale(0.7); opacity: 0; }
+    80%  { transform: scale(1.1); opacity: 1; }
+    100% { transform: scale(1); }
+}
+
+@keyframes fadeInText {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+#egg-circle   { transition: fill 0.5s, r 0.5s; }
+#egg-rect     { transition: fill 0.5s, width 0.5s; }
+.egg-surprise { color: var(--orange) !important; animation: eggSurprise 1s infinite alternate; }
+
+@keyframes eggSurprise {
+    0%   { letter-spacing: 6px; }
+    100% { letter-spacing: 16px; }
+}
+
+/* ── What's Next Banner ── */
+.whats-next {
+    display: none;
+}
+
+.whats-next-label {
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--red);
+    margin-bottom: 6px;
+}
+
+.whats-next-class {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 3px;
+}
+
+.whats-next-time {
+    font-size: 12px;
+    color: #999;
+    font-weight: 600;
+}
+
+.whats-next.done {
+    border-left-color: #666;
+}
+
+.whats-next.done .whats-next-label {
+    color: #666;
+}
+
+/* ── Toggle Empty ── */
+.toggle-empty {
+    display: none;
+}
+
+/* ── Mobile Responsive ── */
+@media (max-width: 768px) {
+    body {
+        padding: 0 0 80px 0;
+        padding-bottom: calc(80px + env(safe-area-inset-bottom));
+    }
+
+    .container {
+        max-width: 100%;
+        padding: 15px 12px;
+    }
+
+    h1 {
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+
+    .page-header {
+        margin-bottom: 15px;
+    }
+
+    .edit-toggle {
+        font-size: 8px;
+        padding: 6px 10px;
+    }
+
+    /* "What's Next" banner */
+    .whats-next {
+        display: block;
+        background: var(--black);
+        color: #fff;
+        padding: 16px;
+        margin-bottom: 15px;
+        border-left: 5px solid var(--red);
+    }
+
+    /* Day cards */
+    .day {
+        margin-bottom: 12px;
+        border-width: 2px;
+    }
+
+    .day-header {
+        font-size: 16px;
+        padding: 12px 15px;
+        position: sticky;
+        top: 0;
+        z-index: 10;
+    }
+
+    .day-header::before {
+        width: 28px;
+        height: 28px;
+    }
+
+    /* Highlight today */
+    .day.today {
+        border-color: var(--red);
+        border-width: 2px;
+    }
+
+    .day.today .day-header {
+        background: var(--red);
+    }
+
+    .day.today .day-header::before {
+        background: #fff !important;
+    }
+
+    /* Dim other days */
+    .day.not-today {
+        opacity: 0.55;
+        transition: opacity 0.3s ease;
+    }
+
+    .day.not-today:active,
+    .day.not-today:focus-within {
+        opacity: 1;
+    }
+
+    /* Events */
+    .event {
+        grid-template-columns: 90px 1fr;
+        gap: 10px;
+        padding: 12px 15px;
+        border-bottom-width: 1px;
+        min-height: 44px;
+    }
+
+    .event::before {
+        width: 5px;
+    }
+
+    .time {
+        font-size: 13px;
+    }
+
+    .activity {
+        font-size: 13px;
+    }
+
+    .activity a {
+        display: block;
+        padding: 2px 0;
+    }
+
+    /* Hide empty slots toggle */
+    .event.empty.hidden-empty {
+        display: none;
+    }
+
+    /* Toggle button */
+    .toggle-empty {
+        display: inline-block;
+        background: none;
+        border: 2px solid var(--black);
+        color: var(--black);
+        font-family: "Futura", "Arial", sans-serif;
+        font-size: 10px;
+        font-weight: 800;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        padding: 8px 14px;
+        margin-bottom: 15px;
+        cursor: pointer;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    .toggle-empty.active {
+        background: var(--black);
+        color: #fff;
+    }
+
+    /* Bauhaus mobile */
+    .bauhaus-bg svg {
+        height: 120px !important;
+        min-width: 0 !important;
+    }
+
+    .bauhaus-text {
+        padding: 18px 8px;
+        border-radius: 14px;
+    }
+
+    .bauhaus-text h1 {
+        font-size: 28px;
+        letter-spacing: 2px;
+        margin-bottom: 12px;
+    }
+
+    .bauhaus-text p { font-size: 15px; }
+
+    .bauhaus-construction {
+        margin-top: 24px;
+        margin-bottom: 24px;
+        min-height: 180px;
+    }
+}
+
+/* Desktop: hide mobile-only elements */
+@media (min-width: 769px) {
+    .whats-next { display: none; }
+    .toggle-empty { display: none; }
+}
