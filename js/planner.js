@@ -39,6 +39,16 @@ function docRef(dateStr) {
              .collection('planner').doc(dateStr);
 }
 
+function habitsDocRef(dateStr) {
+    return db.collection('users').doc(currentUser.uid)
+             .collection('habits').doc(dateStr);
+}
+
+function sleepDocRef(dateStr) {
+    return db.collection('users').doc(currentUser.uid)
+             .collection('sleep').doc(dateStr);
+}
+
 // ── Data: load / save ──
 let cachedData = {};
 
@@ -161,6 +171,42 @@ async function migrateLocalToFirestore() {
     } catch (e) {
         console.error('Migration failed:', e);
     }
+
+    // Migrate habits and sleep too
+    const habitKeys = [];
+    const sleepKeys = [];
+    for (let i = 0; i < localStorage.length; i++) {
+        const k = localStorage.key(i);
+        if (k && k.startsWith('habits_')) habitKeys.push(k);
+        if (k && k.startsWith('sleep_')) sleepKeys.push(k);
+    }
+    if (habitKeys.length > 0 || sleepKeys.length > 0) {
+        const batch2 = db.batch();
+        habitKeys.forEach(k => {
+            const dateStr = k.replace('habits_', '');
+            try {
+                const data = JSON.parse(localStorage.getItem(k));
+                if (data && Object.keys(data).length > 0) {
+                    batch2.set(habitsDocRef(dateStr), data, { merge: true });
+                }
+            } catch {}
+        });
+        sleepKeys.forEach(k => {
+            const dateStr = k.replace('sleep_', '');
+            try {
+                const data = JSON.parse(localStorage.getItem(k));
+                if (data && Object.keys(data).length > 0) {
+                    batch2.set(sleepDocRef(dateStr), data, { merge: true });
+                }
+            } catch {}
+        });
+        try {
+            await batch2.commit();
+            console.log('Migrated habits/sleep to Firestore');
+        } catch (e) {
+            console.error('Habits/sleep migration failed:', e);
+        }
+    }
 }
 
 // ── Timetable auto-fill data (Semester 1) ──
@@ -176,7 +222,7 @@ const TIMETABLE = {
     },
     2: { // Tuesday
         '08:30': { code: 'wtw-218', text: 'WTW 218 Lecture (HB 4-3) G02' },
-        '14:30': { code: 'phy-255', text: 'PHY 255 Tutorial (NS1 5-42)' },
+        '14:30': { code: 'phy-255', text: 'PHY 255 Lecture (NS1 5-42)' },
         '15:30': { code: 'phy-255', text: 'PHY 255 Tutorial (NS1 5-42)' },
         '16:30': { code: 'phy-255', text: 'PHY 255 Tutorial (NS1 5-42)' },
     },
@@ -190,7 +236,7 @@ const TIMETABLE = {
     },
     4: { // Thursday
         '08:30': { code: 'wtw-218', text: 'WTW 218 Lecture (HB 4-3) G01' },
-        '12:30': { code: 'phy-255', text: 'PHY 255 Lecture (NS1 5-42)' },
+        '12:30': { code: 'phy-255', text: 'PHY 255 Tutorial (NS1 5-42)' },
         '13:30': { code: 'phy-255', text: 'PHY 255 Lecture (NS1 5-42)' },
         '16:30': { code: 'cos-212', text: 'COS 212 Lecture (Roos Hall)' },
     },
@@ -320,10 +366,15 @@ async function renderPlanner() {
 
         if (classInfo) {
             tr.classList.add('class-slot');
+            const savedText = data['slot_' + i];
+            const displayText = (savedText !== undefined && savedText !== '') ? savedText : classInfo.text;
             tr.innerHTML = timeCellHtml +
-                '<td class="activity-cell" style="padding: 12px 16px;">' +
+                '<td class="activity-cell">' +
+                    '<textarea class="activity-input" rows="1" placeholder="' + classInfo.text + '" ' +
+                    'data-index="' + i + '" data-class="' + classInfo.code + '">' +
+                    (savedText || '') +
+                    '</textarea>' +
                     '<span class="class-badge ' + classInfo.code + '">' + classInfo.code.replace('-', ' ').toUpperCase() + '</span>' +
-                    '<span class="class-text">' + classInfo.text + '</span>' +
                 '</td>' +
                 '<td class="check-cell">' +
                     '<input type="checkbox" data-index="' + i + '" ' +
@@ -387,9 +438,12 @@ function autoResize(el) {
 function updateStats() {
     const data = cachedData;
     let filled = 0, checked = 0, total = TIME_SLOTS.length;
+    const jsDay = currentDate.getDay();
+    const daySchedule = (jsDay >= 1 && jsDay <= 5) ? (TIMETABLE[jsDay] || {}) : {};
 
-    TIME_SLOTS.forEach((_, i) => {
-        if (data['slot_' + i] && data['slot_' + i].trim()) filled++;
+    TIME_SLOTS.forEach((slot, i) => {
+        const hasClass = !!daySchedule[slot.start];
+        if ((data['slot_' + i] && data['slot_' + i].trim()) || hasClass) filled++;
         if (data['check_' + i]) checked++;
     });
 
@@ -495,6 +549,27 @@ function loadHabitData(dateStr) {
 
 function saveHabitData(dateStr, data) {
     localStorage.setItem('habits_' + dateStr, JSON.stringify(data));
+    if (currentUser) {
+        habitsDocRef(dateStr).set(data, { merge: true }).catch(err => {
+            console.warn('Habits sync error:', err);
+        });
+    }
+}
+
+async function loadHabitDataAsync(dateStr) {
+    if (currentUser) {
+        try {
+            const snap = await habitsDocRef(dateStr).get();
+            if (snap.exists) {
+                const data = snap.data();
+                localStorage.setItem('habits_' + dateStr, JSON.stringify(data));
+                return data;
+            }
+        } catch (e) {
+            console.warn('Habits Firestore read failed:', e);
+        }
+    }
+    return loadHabitData(dateStr);
 }
 
 function getStreak(habitId) {
@@ -509,10 +584,10 @@ function getStreak(habitId) {
     return streak;
 }
 
-function renderHabits() {
+async function renderHabits() {
     const list = document.getElementById('habitList');
     const key = dateKey(currentDate);
-    const data = loadHabitData(key);
+    const data = await loadHabitDataAsync(key);
     let doneCount = 0;
     list.innerHTML = HABITS.map(h => {
         const checked = data[h.id] || false;
@@ -538,22 +613,32 @@ function toggleHabit(habitId, checked) {
 }
 
 // ── Sleep Logger ──
-function loadSleep() {
+async function loadSleep() {
     const key = dateKey(currentDate);
-    try {
-        const data = JSON.parse(localStorage.getItem('sleep_' + key));
-        if (data) {
-            document.getElementById('sleepBed').value = data.bed || '23:00';
-            document.getElementById('sleepWake').value = data.wake || '06:30';
-            calcSleep();
-        } else {
-            document.getElementById('sleepBed').value = '23:00';
-            document.getElementById('sleepWake').value = '06:30';
-            document.getElementById('sleepResult').innerHTML = '\u2014<small>hours</small>';
-            document.getElementById('sleepQuality').textContent = '';
+    let data = null;
+    if (currentUser) {
+        try {
+            const snap = await sleepDocRef(key).get();
+            if (snap.exists) {
+                data = snap.data();
+                localStorage.setItem('sleep_' + key, JSON.stringify(data));
+            }
+        } catch (e) {
+            console.warn('Sleep Firestore read failed:', e);
         }
-    } catch {
+    }
+    if (!data) {
+        try { data = JSON.parse(localStorage.getItem('sleep_' + key)); } catch {}
+    }
+    if (data) {
+        document.getElementById('sleepBed').value = data.bed || '23:00';
+        document.getElementById('sleepWake').value = data.wake || '06:30';
+        calcSleep();
+    } else {
+        document.getElementById('sleepBed').value = '23:00';
+        document.getElementById('sleepWake').value = '06:30';
         document.getElementById('sleepResult').innerHTML = '\u2014<small>hours</small>';
+        document.getElementById('sleepQuality').textContent = '';
     }
 }
 
@@ -571,7 +656,13 @@ function calcSleep() {
     if (hours >= 7.5) { quality.textContent = '\u2713 Great sleep'; quality.className = 'sleep-quality good'; }
     else if (hours >= 6) { quality.textContent = '\u26A0 Could be better'; quality.className = 'sleep-quality ok'; }
     else { quality.textContent = '\u2717 Not enough sleep'; quality.className = 'sleep-quality bad'; }
-    localStorage.setItem('sleep_' + dateKey(currentDate), JSON.stringify({ bed: bed, wake: wake, hours: parseFloat(hours) }));
+    const sleepData = { bed: bed, wake: wake, hours: parseFloat(hours) };
+    localStorage.setItem('sleep_' + dateKey(currentDate), JSON.stringify(sleepData));
+    if (currentUser) {
+        sleepDocRef(dateKey(currentDate)).set(sleepData, { merge: true }).catch(err => {
+            console.warn('Sleep sync error:', err);
+        });
+    }
 }
 
 document.getElementById('sleepBed').addEventListener('change', calcSleep);
