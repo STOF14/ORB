@@ -1,0 +1,584 @@
+/* ============================================================
+   OrbitDesk — Assignments & Deadlines Stylesheet
+   Kanban board, add form, deadline list, filters
+   ============================================================ */
+
+body {
+    background: var(--bg);
+    color: #181818;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    scroll-behavior: smooth;
+}
+
+/* ── Nav overrides ── */
+.site-nav { background: var(--black); padding: 0 40px; }
+.site-nav a { font-weight: 700; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+.nav-label {
+    display: inline; color: #555; font-size: 10px; font-weight: 500;
+    letter-spacing: 2px; text-transform: uppercase; padding-right: 10px;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+/* ── Container ── */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 40px 80px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px;
+}
+
+/* ── Auth Bar ── */
+.auth-bar {
+    background: #111;
+    color: #999;
+    padding: 8px 40px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 11px;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+.sync-status {
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 9px;
+    padding: 3px 8px;
+    border: 1px solid #333;
+}
+.sync-status.online { color: #22c55e; border-color: #22c55e; }
+.sync-status.offline { color: #f59e0b; border-color: #f59e0b; }
+.auth-btn {
+    background: none;
+    border: 1px solid #555;
+    color: #ccc;
+    padding: 5px 14px;
+    font-size: 11px;
+    font-weight: 600;
+    cursor: pointer;
+    letter-spacing: 0.5px;
+    transition: all 0.2s;
+}
+.auth-btn:hover { border-color: #fff; color: #fff; }
+.user-info { display: flex; align-items: center; gap: 8px; }
+.user-avatar { width: 22px; height: 22px; border-radius: 50%; }
+.user-name { font-size: 11px; color: #ccc; }
+.signout-btn {
+    background: none; border: none; color: #666;
+    cursor: pointer; font-size: 10px; text-decoration: underline;
+}
+
+/* ── Typography ── */
+h1 {
+    font-size: 54px;
+    font-weight: 300;
+    letter-spacing: -2px;
+    line-height: 1;
+    text-transform: uppercase;
+}
+h3 {
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+h4 {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-bottom: 10px;
+}
+
+/* ── Header ── */
+header {
+    grid-column: 1 / -1;
+    border-bottom: 1px solid var(--black);
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+}
+.header-row {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 30px;
+    align-items: end;
+}
+.color-accent {
+    width: 40px; height: 3px;
+    background: var(--secondary);
+    margin: 12px 0;
+}
+.header-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+.header-stat {
+    border-left: 3px solid var(--black);
+    padding-left: 12px;
+}
+.header-stat-number {
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 1;
+    margin-bottom: 4px;
+}
+.header-stat-label {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--text-muted);
+}
+
+/* ── Filter Bar ── */
+.filter-bar {
+    grid-column: 1 / -1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.filter-btn {
+    background: none;
+    border: 1px solid var(--grid-line);
+    padding: 6px 14px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: var(--text-muted);
+    transition: all 0.2s;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+.filter-btn:hover { border-color: var(--black); color: var(--black); }
+.filter-btn.active { background: var(--black); color: #fff; border-color: var(--black); }
+.filter-sep {
+    width: 1px; height: 20px;
+    background: var(--grid-line);
+    margin: 0 4px;
+}
+
+/* ── Add Section ── */
+.add-section {
+    grid-column: 1 / -1;
+    background: #fff;
+    border: 1px solid var(--black);
+    padding: 25px 30px;
+    margin-bottom: 10px;
+}
+.add-form { display: flex; flex-direction: column; gap: 12px; }
+.form-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+.form-group { display: flex; flex-direction: column; gap: 4px; }
+.form-group.full { grid-column: 1 / -1; }
+.form-group label {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--text-muted);
+}
+.form-group input,
+.form-group select,
+.form-group textarea {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    padding: 8px 10px;
+    border: 1px solid var(--grid-line);
+    background: #fff;
+    outline: none;
+    transition: border-color 0.2s;
+}
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: var(--black);
+}
+.form-group textarea { resize: vertical; }
+.submit-btn {
+    align-self: flex-start;
+    background: var(--black);
+    color: #fff;
+    border: none;
+    padding: 10px 30px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background 0.2s;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+.submit-btn:hover { background: var(--secondary); }
+
+/* ── Kanban Board ── */
+.kanban {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-bottom: 30px;
+}
+.kanban-col {
+    background: #fff;
+    border: 1px solid var(--grid-line);
+    min-height: 200px;
+}
+.kanban-col-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 18px;
+    border-bottom: 1px solid var(--grid-line);
+}
+.kanban-col[data-status="todo"] .kanban-col-header { border-bottom: 3px solid var(--accent); }
+.kanban-col[data-status="in-progress"] .kanban-col-header { border-bottom: 3px solid var(--mod-orange); }
+.kanban-col[data-status="done"] .kanban-col-header { border-bottom: 3px solid #22c55e; }
+.kanban-count {
+    font-size: 18px;
+    font-weight: 300;
+    color: var(--text-muted);
+}
+.kanban-items {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* ── Kanban Card ── */
+.kanban-card {
+    border: 1px solid var(--grid-line);
+    padding: 14px 16px;
+    background: #FAFAFA;
+    position: relative;
+    transition: transform 0.15s, box-shadow 0.15s;
+    cursor: default;
+}
+.kanban-card:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.kanban-card::before {
+    content: '';
+    position: absolute;
+    left: 0; top: 0; bottom: 0;
+    width: 4px;
+}
+.kanban-card[data-module="PHY 255"]::before { background: var(--mod-red); }
+.kanban-card[data-module="WTW 211"]::before { background: var(--mod-orange); }
+.kanban-card[data-module="WTW 218"]::before { background: var(--mod-yellow); }
+.kanban-card[data-module="COS 210"]::before { background: var(--mod-blue); }
+.kanban-card[data-module="COS 212"]::before { background: var(--mod-dark-blue); }
+.kanban-card[data-module="Other"]::before { background: var(--grid-line); }
+
+.card-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 6px;
+}
+.card-module {
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--text-muted);
+}
+.card-type {
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    padding: 2px 6px;
+    border: 1px solid var(--grid-line);
+}
+.card-title {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+.card-due {
+    font-size: 11px;
+    color: var(--text-muted);
+}
+.card-due.overdue { color: var(--secondary); font-weight: 700; }
+.card-due.today { color: var(--secondary); font-weight: 700; }
+.card-due.soon { color: var(--mod-orange); font-weight: 600; }
+.card-notes {
+    font-size: 11px;
+    color: var(--text-muted);
+    margin-top: 6px;
+    line-height: 1.5;
+}
+.card-priority-high { border-left: 4px solid var(--secondary) !important; }
+.card-priority-high::before { display: none; }
+
+.card-actions {
+    display: flex;
+    gap: 6px;
+    margin-top: 8px;
+}
+.card-action-btn {
+    background: none;
+    border: 1px solid var(--grid-line);
+    padding: 3px 8px;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: var(--text-muted);
+    transition: all 0.15s;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+.card-action-btn:hover { border-color: var(--black); color: var(--black); }
+.card-action-btn.delete:hover { border-color: var(--secondary); color: var(--secondary); }
+
+/* ── Deadline List ── */
+.deadline-list-section {
+    grid-column: 1 / -1;
+    margin-top: 20px;
+}
+.deadline-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.deadline-row {
+    display: grid;
+    grid-template-columns: 80px 100px 1fr auto auto;
+    gap: 15px;
+    align-items: center;
+    padding: 14px 18px;
+    background: #fff;
+    border: 1px solid var(--grid-line);
+    font-size: 13px;
+}
+.deadline-row::before {
+    content: '';
+    position: absolute;
+    left: 0; top: 0; bottom: 0;
+    width: 3px;
+}
+.deadline-days {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 1;
+    text-align: center;
+}
+.deadline-days-label {
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    text-align: center;
+}
+.deadline-module {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.deadline-title { font-weight: 500; }
+.deadline-date {
+    font-size: 11px;
+    color: var(--text-muted);
+    white-space: nowrap;
+}
+.deadline-status {
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    padding: 3px 8px;
+    border: 1px solid var(--grid-line);
+}
+
+/* ── Grid background ── */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-image:
+        linear-gradient(var(--grid-line) 1px, transparent 1px),
+        linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
+    background-size: 20px 20px;
+    opacity: 0.3;
+    pointer-events: none;
+    z-index: -1;
+}
+
+/* ── Add toggle (mobile) ── */
+.add-toggle {
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.toggle-icon {
+    font-size: 18px;
+    transition: transform 0.2s;
+    color: var(--text-muted);
+}
+.add-section.collapsed .toggle-icon {
+    transform: rotate(-90deg);
+}
+.add-section.collapsed .add-form {
+    display: none;
+}
+
+/* ── Empty state ── */
+.empty-state {
+    text-align: center;
+    padding: 25px 15px;
+    color: var(--text-muted);
+    font-size: 13px;
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+    body { padding-bottom: calc(80px + env(safe-area-inset-bottom)); }
+
+    .container {
+        grid-template-columns: 1fr;
+        padding: 16px 12px 100px;
+        gap: 12px;
+    }
+
+    header, .filter-bar, .add-section, .kanban,
+    .deadline-list-section { grid-column: 1 / -1; }
+
+    /* Typography */
+    h1 { font-size: 32px; letter-spacing: -1px; }
+    h3 { font-size: 16px; }
+    h4 { font-size: 11px; }
+
+    /* Header */
+    .header-row {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+    .color-accent { margin: 8px 0; }
+    .header-stats {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 8px;
+    }
+    .header-stat { padding-left: 10px; border-left-width: 2px; }
+    .header-stat-number { font-size: 28px; }
+    .header-stat-label { font-size: 9px; }
+
+    /* Filter bar — horizontally scrollable */
+    .filter-bar {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+        gap: 6px;
+        padding-bottom: 4px;
+        margin-bottom: 6px;
+    }
+    .filter-bar::-webkit-scrollbar { display: none; }
+    .filter-btn {
+        white-space: nowrap;
+        flex-shrink: 0;
+        padding: 8px 12px;
+        font-size: 10px;
+        min-height: 36px;
+    }
+    .filter-sep { display: none; }
+
+    /* Add form — touch-friendly inputs */
+    .add-section {
+        padding: 18px 14px;
+    }
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        font-size: 16px; /* prevents iOS zoom on focus */
+        padding: 12px;
+        min-height: 44px;
+        border-radius: 0;
+        -webkit-appearance: none;
+    }
+    .form-group label { font-size: 10px; margin-bottom: 2px; }
+    .submit-btn {
+        width: 100%;
+        padding: 14px;
+        font-size: 13px;
+        min-height: 48px;
+    }
+
+    /* Kanban — stacked columns with horizontal tabs on small screens */
+    .kanban {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+    .kanban-col { min-height: 120px; }
+    .kanban-col-header { padding: 12px 14px; }
+    .kanban-col-header h4 { margin-bottom: 0; }
+    .kanban-items { padding: 8px; gap: 6px; }
+
+    /* Cards — bigger tap targets */
+    .kanban-card { padding: 14px; }
+    .card-title { font-size: 14px; }
+    .card-due { font-size: 12px; }
+    .card-notes { font-size: 12px; }
+    .card-actions { gap: 6px; flex-wrap: wrap; }
+    .card-action-btn {
+        padding: 8px 12px;
+        font-size: 10px;
+        min-height: 36px;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    /* Deadline rows — compact mobile layout */
+    .deadline-row {
+        grid-template-columns: 54px 1fr;
+        gap: 4px 10px;
+        padding: 12px 14px;
+        position: relative;
+    }
+    .deadline-days { font-size: 20px; }
+    .deadline-days-label { font-size: 8px; }
+    .deadline-module { grid-column: 2; font-size: 9px; }
+    .deadline-title { grid-column: 2; font-size: 13px; }
+    .deadline-date { grid-column: 2; font-size: 11px; }
+    .deadline-status { grid-column: 2; justify-self: start; }
+
+    /* Nav & auth */
+    .site-nav { display: none; }
+    .auth-bar { padding: 8px 12px; }
+    .auth-bar .user-name { display: none; }
+
+    /* OrbitDesk brand — smaller */
+    .orbitdesk-brand svg { width: 30px; height: 30px; }
+    .orbitdesk-brand__name { font-size: 1.1em; }
+}
+
+/* Extra small screens (< 380px) */
+@media (max-width: 380px) {
+    h1 { font-size: 26px; }
+    .container { padding: 12px 8px 100px; }
+    .header-stats { grid-template-columns: 1fr 1fr 1fr; gap: 4px; }
+    .header-stat-number { font-size: 22px; }
+    .kanban-card { padding: 10px; }
+    .card-title { font-size: 13px; }
+    .deadline-row { padding: 10px 10px; }
+}

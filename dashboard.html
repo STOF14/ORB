@@ -57,6 +57,8 @@
         <a href="index.html">Semester 2 Timetable</a>
         <a href="planner.html">Day Planner</a>
         <a href="timer.html">Focus Timer</a>
+        <a href="assignments.html">Assignments</a>
+        <a href="analytics.html">Analytics</a>
     </nav>
 
     <div class="container">
@@ -654,14 +656,30 @@
         </footer>
     </div>
 
-    <!-- Bottom Navigation (mobile) -->
-    <nav class="bottom-nav">
-        <a href="dashboard.html" class="active"><span class="nav-icon">◻</span>Overview</a>
-        <a href="Semester1Timetable2026.html"><span class="nav-icon">①</span>Sem 1</a>
-        <a href="index.html"><span class="nav-icon">②</span>Sem 2</a>
-        <a href="planner.html"><span class="nav-icon">▤</span>Planner</a>
-        <a href="timer.html"><span class="nav-icon">◉</span>Focus</a>
+    <!-- Mobile Navigation -->
+    <nav class="bottom-nav" aria-label="Mobile navigation">
+        <span class="bottom-nav__page">Dashboard</span>
+        <button class="nav-toggle" id="navToggle" aria-label="Open navigation" aria-expanded="false">
+            <span class="nav-toggle__icon"><span></span><span></span><span></span></span>
+            <span class="nav-toggle__label">Menu</span>
+        </button>
     </nav>
+    <div class="nav-overlay" id="navOverlay" role="dialog" aria-label="Site navigation">
+        <div class="nav-overlay__header">
+            <span class="nav-overlay__brand">OrbitDesk</span>
+            <button class="nav-overlay__close" id="navClose" aria-label="Close navigation">Close</button>
+        </div>
+        <nav class="nav-overlay__links">
+            <a href="dashboard.html" class="active">Dashboard</a>
+            <a href="Semester1Timetable2026.html">Semester 1 Timetable</a>
+            <a href="index.html">Semester 2 Timetable</a>
+            <a href="planner.html">Day Planner</a>
+            <a href="timer.html">Focus Timer</a>
+            <a href="assignments.html">Assignments</a>
+            <a href="analytics.html">Analytics</a>
+        </nav>
+    </div>
+    <script>(function(){var t=document.getElementById('navToggle'),o=document.getElementById('navOverlay'),c=document.getElementById('navClose');function open(){o.classList.add('open');t.setAttribute('aria-expanded','true');document.body.style.overflow='hidden';}function shut(){o.classList.remove('open');t.setAttribute('aria-expanded','false');document.body.style.overflow='';}t.addEventListener('click',open);c.addEventListener('click',shut);})();</script>
 
     <!-- Scripts -->
     <script src="js/firebase-config.js"></script>

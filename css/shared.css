@@ -44,7 +44,12 @@
     top: 0;
     z-index: 100;
     border-bottom: 3px solid var(--red);
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
 }
+
+.site-nav::-webkit-scrollbar { display: none; }
 
 .site-nav a {
     color: #999;
@@ -56,6 +61,8 @@
     padding: 16px 20px;
     transition: color 0.2s ease, background 0.2s ease;
     font-family: "Futura", "Arial", sans-serif;
+    white-space: nowrap;
+    flex-shrink: 0;
 }
 
 .site-nav a:hover {
@@ -71,7 +78,7 @@
 
 .nav-label { display: none; }
 
-/* ── Bottom Nav (mobile) ── */
+/* ── Bottom Nav Bar (mobile) ── */
 .bottom-nav {
     display: none;
 }
@@ -81,44 +88,167 @@
 
     .bottom-nav {
         display: flex;
+        align-items: center;
+        justify-content: space-between;
         position: fixed;
         bottom: 0;
         left: 0;
         right: 0;
         background: #000;
-        border-top: 3px solid var(--red);
+        border-top: 2px solid var(--red);
         z-index: 200;
+        height: 52px;
+        padding: 0 24px;
         padding-bottom: env(safe-area-inset-bottom);
     }
 
-    .bottom-nav a {
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 4px;
-        padding: 10px 5px;
-        color: #666;
-        text-decoration: none;
+    .bottom-nav__page {
         font-family: "Futura", "Arial", sans-serif;
-        font-size: 9px;
+        font-size: 10px;
         font-weight: 800;
-        letter-spacing: 1px;
+        letter-spacing: 2px;
         text-transform: uppercase;
-        transition: color 0.2s ease;
+        color: #fff;
+    }
+
+    .nav-toggle {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 14px 0;
         -webkit-tap-highlight-color: transparent;
     }
 
-    .bottom-nav a.active { color: #fff; }
+    .nav-toggle__label {
+        font-family: "Futura", "Arial", sans-serif;
+        font-size: 10px;
+        font-weight: 800;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #999;
+        transition: color 0.15s;
+    }
 
-    .bottom-nav .nav-icon {
-        font-size: 20px;
-        line-height: 1;
+    .nav-toggle:active .nav-toggle__label { color: #fff; }
+
+    .nav-toggle__icon {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        width: 18px;
+    }
+
+    .nav-toggle__icon span {
+        display: block;
+        height: 2px;
+        background: var(--red);
+        width: 100%;
     }
 }
 
 @media (min-width: 769px) {
-    .bottom-nav { display: none; }
+    .bottom-nav { display: none !important; }
+}
+
+/* ── Full-screen Nav Overlay ── */
+.nav-overlay {
+    position: fixed;
+    inset: 0;
+    background: #000;
+    z-index: 500;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.15s ease, visibility 0.15s;
+}
+
+.nav-overlay.open {
+    opacity: 1;
+    visibility: visible;
+}
+
+.nav-overlay__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 24px 20px;
+    border-bottom: 2px solid var(--red);
+}
+
+.nav-overlay__brand {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 900;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.nav-overlay__close {
+    background: none;
+    border: none;
+    font-family: "Futura", "Arial", sans-serif;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--red);
+    cursor: pointer;
+    padding: 8px 0;
+    -webkit-tap-highlight-color: transparent;
+    transition: color 0.15s;
+}
+
+.nav-overlay__close:active { color: #fff; }
+
+.nav-overlay__links {
+    display: flex;
+    flex-direction: column;
+    padding: 16px 0;
+    flex: 1;
+    overflow-y: auto;
+}
+
+.nav-overlay__links a {
+    display: block;
+    padding: 20px 24px;
+    color: #555;
+    text-decoration: none;
+    font-family: "Futura", "Arial", sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #151515;
+    transition: color 0.15s;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.nav-overlay__links a:active {
+    background: rgba(255, 255, 255, 0.03);
+}
+
+.nav-overlay__links a.active {
+    color: #fff;
+    border-left: 3px solid var(--red);
+    padding-left: 21px;
+}
+
+@media (min-width: 769px) {
+    .nav-overlay { display: none !important; }
+}
+
+/* Tablet: compact top nav */
+@media (min-width: 769px) and (max-width: 1100px) {
+    .site-nav a {
+        padding: 14px 12px;
+        font-size: 10px;
+        letter-spacing: 1px;
+    }
 }
 
 /* ── OrbitDesk Loader ── */
