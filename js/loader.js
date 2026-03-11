@@ -1,13 +1,13 @@
 /* ============================================================
-   OrbitDesk — Swiss-Style Loader Animation
+   Orb — Orbital Loader Animation
    IIFE: shows loader only on first visit (sessionStorage gating)
    ============================================================ */
 (function () {
     var loader    = document.getElementById('orbitdesk-loader');
-    var bar       = document.getElementById('swiss-bar');
-    var barV      = document.getElementById('swiss-bar-v');
-    var barsGroup = document.getElementById('swiss-bars-group');
-    var dot       = document.getElementById('swiss-dot');
+    var ringGroup = document.getElementById('orb-ring-group');
+    var ring      = document.getElementById('orb-ring');
+    var core      = document.getElementById('orb-core');
+    var planet    = document.getElementById('orb-planet');
 
     if (!loader) return;
 
@@ -16,25 +16,27 @@
     var LOADER_KEY = 'orbitdesk_loader_shown';
 
     if (!sessionStorage.getItem(LOADER_KEY)) {
-        /* Animate the Swiss logo */
-        function animateSwissLogo() {
-            t += 0.06;
-            var h = 10 + 6 * Math.abs(Math.sin(t));
-            if (bar)  { bar.setAttribute('height', h);  bar.setAttribute('y', 80 - h / 2); }
-            if (barV) { barV.setAttribute('width', h);   barV.setAttribute('x', 80 - h / 2); }
-            if (barsGroup) {
-                var rot = Math.sin(t / 1.5) * 18;
-                barsGroup.setAttribute('transform', 'rotate(' + rot + ' 80 80)');
+        /* Animate the Orb logo */
+        function animateOrbLogo() {
+            t += 0.03;
+            /* Planet orbits the center */
+            if (ringGroup) {
+                var deg = (t * 60) % 360;
+                ringGroup.setAttribute('transform', 'rotate(' + deg + ' 80 80)');
             }
-            if (dot) {
-                var r = 28 + 4 * Math.abs(Math.sin(t * 2));
-                dot.setAttribute('r', r);
-                dot.setAttribute('cx', 80);
-                dot.setAttribute('cy', 80 + Math.abs(Math.sin(t * 2)) * 18);
+            /* Core pulses subtly */
+            if (core) {
+                var r = 16 + 3 * Math.abs(Math.sin(t * 2));
+                core.setAttribute('r', r);
             }
-            anim = requestAnimationFrame(animateSwissLogo);
+            /* Outer ring breathes */
+            if (ring) {
+                var rr = 56 + 2 * Math.abs(Math.sin(t * 1.5));
+                ring.setAttribute('r', rr);
+            }
+            anim = requestAnimationFrame(animateOrbLogo);
         }
-        animateSwissLogo();
+        animateOrbLogo();
 
         /* Hide after 3 s */
         setTimeout(function () {

@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Orb — Logo System</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Mono:wght@300;400;500&family=Playfair+Display:wght@700;900&family=Syne:wght@400;700;800&family=Barlow+Condensed:wght@300;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --black: #0d0d0d;
+      --white: #f4f3ee;
+      --red: #E63222;
+      --mid: #8a8a8a;
+      --card-bg: #ffffff;
+      --border: #d8d6cf;
+    }
+
+    body {
+      background: var(--white);
+      font-family: 'DM Mono', monospace;
+      padding: 60px 40px;
+      min-height: 100vh;
+    }
+
+    /* Swiss grid lines */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(0,0,0,0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0,0,0,0.04) 1px, transparent 1px);
+      background-size: 40px 40px;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .page {
+      position: relative;
+      z-index: 1;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    /* Header */
+    .page-header {
+      border-top: 4px solid var(--black);
+      padding-top: 20px;
+      margin-bottom: 64px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+
+    .page-title {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 52px;
+      letter-spacing: 0.04em;
+      color: var(--black);
+      line-height: 1;
+    }
+
+    .page-title span {
+      color: var(--red);
+    }
+
+    .page-meta {
+      font-size: 9px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--mid);
+      text-align: right;
+      line-height: 1.8;
+    }
+
+    /* Grid layout */
+    .logo-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2px;
+    }
+
+    .logo-grid .wide {
+      grid-column: span 2;
+    }
+
+    /* Card */
+    .card {
+      background: var(--card-bg);
+      padding: 48px 40px 32px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 280px;
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.2s ease;
+    }
+
+    .card:hover {
+      z-index: 10;
+      transform: scale(1.01);
+    }
+
+    .card-label {
+      position: absolute;
+      top: 14px;
+      left: 16px;
+      font-size: 8px;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--mid);
+      font-family: 'DM Mono', monospace;
+    }
+
+    .card-num {
+      position: absolute;
+      top: 14px;
+      right: 16px;
+      font-size: 9px;
+      letter-spacing: 0.1em;
+      color: var(--border);
+      font-family: 'DM Mono', monospace;
+    }
+
+    /* ─── 1. WORDMARK ─── */
+    .wordmark-logo {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0;
+    }
+
+    .wm-line {
+      height: 2px;
+      width: 100%;
+      background: var(--black);
+      margin-bottom: 12px;
+    }
+
+    .wm-text {
+      font-family: 'Syne', sans-serif;
+      font-weight: 800;
+      font-size: 72px;
+      letter-spacing: -0.06em;
+      color: var(--black);
+      line-height: 1;
+    }
+
+    .wm-text .red { color: var(--red); }
+
+    .wm-sub {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 300;
+      font-size: 11px;
+      letter-spacing: 0.4em;
+      text-transform: uppercase;
+      color: var(--mid);
+      margin-top: 8px;
+    }
+
+    /* ─── 2. LETTERMARK ─── */
+    .lm-wrap {
+      position: relative;
+      width: 100px;
+      height: 100px;
+    }
+
+    .lm-square {
+      width: 100px;
+      height: 100px;
+      background: var(--black);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .lm-letter {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 78px;
+      color: var(--white);
+      letter-spacing: -0.04em;
+      line-height: 1;
+    }
+
+    .lm-dot {
+      position: absolute;
+      bottom: -6px;
+      right: -6px;
+      width: 20px;
+      height: 20px;
+      background: var(--red);
+      border-radius: 50%;
+    }
+
+    /* ─── 3. PICTORIAL MARK ─── */
+    .pm-svg {
+      animation: slowSpin 10s linear infinite;
+    }
+
+    @keyframes slowSpin {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+
+    /* ─── 4. ABSTRACT ─── */
+    .ab-svg {
+      overflow: visible;
+    }
+
+    /* ─── 5. MASCOT ─── */
+    .mascot-wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .mascot-name {
+      font-family: 'Syne', sans-serif;
+      font-weight: 700;
+      font-size: 13px;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--black);
+    }
+
+    /* ─── 6. COMBINATION ─── */
+    .combo-wrap {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+    }
+
+    .combo-text {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .combo-name {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 56px;
+      letter-spacing: 0.08em;
+      color: var(--black);
+      line-height: 1;
+    }
+
+    .combo-tagline {
+      font-size: 8px;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--red);
+      font-family: 'DM Mono', monospace;
+      margin-top: 4px;
+    }
+
+    /* ─── 7. EMBLEM ─── */
+    .emblem-wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    /* Footer */
+    .page-footer {
+      border-top: 1px solid var(--border);
+      margin-top: 2px;
+      padding-top: 16px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .footer-text {
+      font-size: 8px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--mid);
+    }
+
+    .footer-text span { color: var(--red); }
+
+  </style>
+</head>
+<body>
+<div class="page">
+
+  <header class="page-header">
+    <div class="page-title">ORB<span>.</span><br>Logo System</div>
+    <div class="page-meta">
+      Academic Management App<br>
+      Brand Identity — 2026<br>
+      7 Mark Types
+    </div>
+  </header>
+
+  <div class="logo-grid">
+
+    <!-- 1. WORDMARK -->
+    <div class="card wide">
+      <span class="card-label">01 — Wordmark</span>
+      <span class="card-num">text-based</span>
+      <div class="wordmark-logo">
+        <div class="wm-line"></div>
+        <div class="wm-text">OR<span class="red">B</span></div>
+        <div class="wm-sub">Academic Management System</div>
+      </div>
+    </div>
+
+    <!-- 2. LETTERMARK -->
+    <div class="card" style="background:#0d0d0d;">
+      <span class="card-label" style="color:#555;">02 — Lettermark</span>
+      <span class="card-num" style="color:#333;">initials</span>
+      <div class="lm-wrap">
+        <div class="lm-square">
+          <span class="lm-letter">O</span>
+        </div>
+        <div class="lm-dot"></div>
+      </div>
+    </div>
+
+    <!-- 3. PICTORIAL MARK -->
+    <div class="card" style="background:#f4f3ee;">
+      <span class="card-label">03 — Pictorial Mark</span>
+      <span class="card-num">graphic</span>
+      <svg class="pm-svg" width="100" height="100" viewBox="0 0 100 100" fill="none">
+        <!-- Outer ring -->
+        <circle cx="50" cy="50" r="46" stroke="#0d0d0d" stroke-width="3"/>
+        <!-- Mid ring dashed -->
+        <circle cx="50" cy="50" r="30" stroke="#0d0d0d" stroke-width="1" stroke-dasharray="4 4"/>
+        <!-- Core -->
+        <circle cx="50" cy="50" r="10" fill="#0d0d0d"/>
+        <!-- Orbiting planet -->
+        <circle cx="50" cy="4" r="7" fill="#E63222"/>
+      </svg>
+    </div>
+
+    <!-- 4. ABSTRACT -->
+    <div class="card" style="background:#0d0d0d;">
+      <span class="card-label" style="color:#555;">04 — Abstract Mark</span>
+      <span class="card-num" style="color:#333;">geometric</span>
+      <svg class="ab-svg" width="110" height="110" viewBox="0 0 110 110" fill="none">
+        <!-- Three overlapping circles — Venn/orbit abstraction -->
+        <circle cx="55" cy="38" r="28" stroke="#f4f3ee" stroke-width="2.5"/>
+        <circle cx="38" cy="66" r="28" stroke="#f4f3ee" stroke-width="2.5"/>
+        <circle cx="72" cy="66" r="28" stroke="#f4f3ee" stroke-width="2.5"/>
+        <!-- Center fill -->
+        <circle cx="55" cy="57" r="9" fill="#E63222"/>
+      </svg>
+    </div>
+
+    <!-- 5. MASCOT -->
+    <div class="card" style="background:#fdf9f0;">
+      <span class="card-label">05 — Mascot</span>
+      <span class="card-num">character</span>
+      <div class="mascot-wrap">
+        <svg width="80" height="100" viewBox="0 0 80 100" fill="none">
+          <!-- Body: planet shape -->
+          <ellipse cx="40" cy="58" rx="26" ry="28" fill="#0d0d0d"/>
+          <!-- Ring around body -->
+          <ellipse cx="40" cy="58" rx="38" ry="10" stroke="#E63222" stroke-width="2.5" fill="none"/>
+          <!-- Face: two eyes -->
+          <circle cx="32" cy="52" r="4" fill="#f4f3ee"/>
+          <circle cx="48" cy="52" r="4" fill="#f4f3ee"/>
+          <circle cx="33" cy="52" r="1.5" fill="#0d0d0d"/>
+          <circle cx="49" cy="52" r="1.5" fill="#0d0d0d"/>
+          <!-- Smile -->
+          <path d="M33 62 Q40 68 47 62" stroke="#f4f3ee" stroke-width="2" stroke-linecap="round" fill="none"/>
+          <!-- Graduation cap -->
+          <rect x="26" y="26" width="28" height="5" rx="1" fill="#E63222"/>
+          <polygon points="40,14 54,26 26,26" fill="#E63222"/>
+          <line x1="54" y1="26" x2="58" y2="34" stroke="#E63222" stroke-width="2"/>
+          <circle cx="58" cy="36" r="2.5" fill="#E63222"/>
+        </svg>
+        <div class="mascot-name">Orby</div>
+      </div>
+    </div>
+
+    <!-- 6. COMBINATION MARK -->
+    <div class="card wide" style="background:#0d0d0d;">
+      <span class="card-label" style="color:#555;">06 — Combination Mark</span>
+      <span class="card-num" style="color:#333;">text + image</span>
+      <div class="combo-wrap">
+        <svg width="70" height="70" viewBox="0 0 70 70" fill="none">
+          <circle cx="35" cy="35" r="32" stroke="#f4f3ee" stroke-width="2"/>
+          <circle cx="35" cy="35" r="13" fill="#f4f3ee"/>
+          <circle cx="35" cy="3" r="5.5" fill="#E63222"/>
+        </svg>
+        <div class="combo-text">
+          <div class="combo-name" style="color:#f4f3ee;">ORB</div>
+          <div class="combo-tagline">Stay in orbit. Stay on track.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 7. EMBLEM -->
+    <div class="card" style="background:#f4f3ee; min-height:320px;">
+      <span class="card-label">07 — Emblem</span>
+      <span class="card-num">badge</span>
+      <div class="emblem-wrap">
+        <svg width="160" height="180" viewBox="0 0 160 180" fill="none">
+          <!-- Badge shield shape -->
+          <path d="M80 8 L148 36 L148 100 Q148 148 80 172 Q12 148 12 100 L12 36 Z"
+                fill="#0d0d0d" stroke="#0d0d0d" stroke-width="1"/>
+          <!-- Inner border -->
+          <path d="M80 20 L138 44 L138 100 Q138 140 80 160 Q22 140 22 100 L22 44 Z"
+                fill="none" stroke="#E63222" stroke-width="1.5"/>
+          <!-- Orbit mark inside badge -->
+          <circle cx="80" cy="88" r="30" stroke="#f4f3ee" stroke-width="1.5"/>
+          <circle cx="80" cy="88" r="13" fill="#f4f3ee"/>
+          <circle cx="80" cy="58" r="5" fill="#E63222"/>
+          <!-- ORB text in badge -->
+          <text x="80" y="138" text-anchor="middle"
+                font-family="Bebas Neue, sans-serif"
+                font-size="18" fill="#f4f3ee" letter-spacing="6">ORB</text>
+          <!-- Top banner -->
+          <rect x="34" y="30" width="92" height="16" fill="#E63222"/>
+          <text x="80" y="42" text-anchor="middle"
+                font-family="DM Mono, monospace"
+                font-size="7" fill="#f4f3ee" letter-spacing="3">ACADEMIC</text>
+        </svg>
+      </div>
+    </div>
+
+  </div>
+
+  <footer class="page-footer">
+    <div class="footer-text">Orb Brand System — <span>All Rights Reserved 2026</span></div>
+    <div class="footer-text">Swiss International Typographic Style</div>
+  </footer>
+
+</div>
+</body>
+</html>

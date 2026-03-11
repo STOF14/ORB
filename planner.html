@@ -20,23 +20,23 @@
 </head>
 <body>
     <!-- Loader -->
-    <div id="orbitdesk-loader" class="orbitdesk-loader" role="dialog" aria-label="Loading OrbitDesk">
+    <div id="orbitdesk-loader" class="orbitdesk-loader" role="dialog" aria-label="Loading Orb">
         <div class="orbitdesk-loader__grid">
             <div class="orbitdesk-loader__text">
-                <span class="orbitdesk-loader__word orbitdesk-loader__word--orbit">Orbit</span>
-                <span class="orbitdesk-loader__word orbitdesk-loader__word--desk">Desk</span>
+                <span class="orbitdesk-loader__word orbitdesk-loader__word--orb">Orb</span>
             </div>
             <div class="orbitdesk-loader__logo">
-                <svg id="swiss-logo" width="160" height="160" viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="OrbitDesk Swiss Loader Logo" role="img">
+                <svg id="orb-logo" width="160" height="160" viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Orb loader logo" role="img">
                     <rect x="0" y="0" width="160" height="160" fill="#fff"/>
-                    <g id="swiss-bars-group">
-                        <rect id="swiss-bar" x="30" y="75" width="100" height="10" rx="5" fill="#e63946"/>
-                        <rect id="swiss-bar-v" x="75" y="30" width="10" height="100" rx="5" fill="#e63946"/>
+                    <g id="orb-ring-group">
+                        <circle id="orb-ring" cx="80" cy="80" r="56" stroke="#000" stroke-width="3" fill="none"/>
+                        <circle id="orb-planet" cx="80" cy="24" r="11" fill="#e63946" filter="url(#shadow)"/>
                     </g>
-                    <circle id="swiss-dot" cx="80" cy="80" r="28" fill="#fff" stroke="#000" stroke-width="4" filter="url(#shadow)"/>
+                    <circle cx="80" cy="80" r="36" stroke="#000" stroke-width="1.5" stroke-dasharray="6 6" fill="none"/>
+                    <circle id="orb-core" cx="80" cy="80" r="16" fill="#000"/>
                     <defs>
                         <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
-                            <feDropShadow dx="0" dy="6" stdDeviation="4" flood-color="#000" flood-opacity="0.18"/>
+                            <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#000" flood-opacity="0.18"/>
                         </filter>
                     </defs>
                 </svg>
@@ -70,15 +70,19 @@
     </div>
 
     <div class="container">
-        <!-- OrbitDesk Brand -->
-        <div class="orbitdesk-brand" style="justify-content:center;margin-bottom:18px;">
-            <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="OrbitDesk mini logo" role="img">
+        <!-- Orb Brand -->
+        <div class="orbitdesk-brand orbitdesk-brand--masthead">
+            <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Orb mini logo" role="img">
                 <rect x="0" y="0" width="38" height="38" rx="8" fill="#fff"/>
-                <rect x="8" y="17" width="22" height="4" rx="2" fill="#e63946"/>
-                <rect x="17" y="8" width="4" height="22" rx="2" fill="#e63946"/>
-                <circle cx="19" cy="19" r="8" fill="#fff" stroke="#000" stroke-width="2"/>
+                <circle cx="19" cy="19" r="13" stroke="#000" stroke-width="1.5" fill="none"/>
+                <circle cx="19" cy="19" r="8" stroke="#000" stroke-width="0.75" stroke-dasharray="3 3" fill="none"/>
+                <circle cx="19" cy="19" r="4" fill="#000"/>
+                <circle cx="19" cy="6" r="3" fill="#e63946"/>
             </svg>
-            <span class="orbitdesk-brand__name">OrbitDesk</span>
+            <div class="orbitdesk-brand__meta">
+                <span class="orbitdesk-brand__eyebrow">Daily Orbit</span>
+                <span class="orbitdesk-brand__name">Orb</span>
+            </div>
         </div>
 
         <div class="planner-header">
@@ -92,6 +96,130 @@
             <div class="day-label" id="dayLabel"></div>
         </div>
 
+        <section class="planner-mode-card" aria-label="Planner mode">
+            <div>
+                <div class="planner-mode-card__eyebrow">Planning Style</div>
+                <h2>Choose how you want to plan this day</h2>
+                <p class="planner-mode-card__copy">Use the full timetable when you want slots, or switch to rough mode for a lighter per-module plan with notes and quick suggestions.</p>
+            </div>
+            <div class="planner-mode-toggle" role="tablist" aria-label="Planner modes">
+                <button class="planner-mode-btn active" id="timedModeBtn" type="button" data-mode="timed" aria-pressed="true">Timed view</button>
+                <button class="planner-mode-btn" id="roughModeBtn" type="button" data-mode="rough" aria-pressed="false">Rough day view</button>
+            </div>
+        </section>
+
+        <section class="rough-plan" id="roughPlan" hidden>
+            <div class="rough-plan__header">
+                <div>
+                    <div class="rough-plan__eyebrow">Untimed Day Plan</div>
+                    <h2>Rough plan for this day</h2>
+                    <p class="rough-plan__copy">Keep it simple: dump thoughts, list what matters by module, and let Orb suggest where to focus next.</p>
+                </div>
+                <div class="rough-plan__summary" id="roughPlanSummary"></div>
+            </div>
+
+            <div class="rough-plan__grid">
+                <section class="rough-card rough-card--notes">
+                    <div class="rough-card__header">
+                        <div>
+                            <div class="rough-card__eyebrow">Brain Dump</div>
+                            <h3>Notes</h3>
+                        </div>
+                    </div>
+                    <textarea id="roughNotes" class="rough-notes-input" rows="6" placeholder="Dump thoughts, reminders, things to not forget..."></textarea>
+                </section>
+
+                <section class="rough-card rough-card--smart">
+                    <div class="rough-card__header">
+                        <div>
+                            <div class="rough-card__eyebrow">Smart Nudge</div>
+                            <h3>Suggested focus</h3>
+                        </div>
+                    </div>
+                    <div class="rough-suggestions" id="roughSuggestions"></div>
+                </section>
+            </div>
+
+            <section class="rough-card rough-card--tasks">
+                <div class="rough-card__header rough-card__header--stacked">
+                    <div>
+                        <div class="rough-card__eyebrow">Module Buckets</div>
+                        <h3>Tasks by area</h3>
+                    </div>
+                    <p class="rough-card__hint">Short tasks only. Treat this like a focused scratchpad, not a full project board.</p>
+                </div>
+
+                <div class="rough-buckets" id="roughBuckets">
+                    <article class="rough-bucket" data-bucket="PHY 255">
+                        <div class="rough-bucket__top">
+                            <div>
+                                <div class="rough-bucket__label">Module</div>
+                                <h4>PHY 255</h4>
+                            </div>
+                            <button type="button" class="rough-add-btn" data-bucket="PHY 255">+ task</button>
+                        </div>
+                        <div class="rough-task-list" id="roughBucketPhy"></div>
+                    </article>
+
+                    <article class="rough-bucket" data-bucket="WTW 211">
+                        <div class="rough-bucket__top">
+                            <div>
+                                <div class="rough-bucket__label">Module</div>
+                                <h4>WTW 211</h4>
+                            </div>
+                            <button type="button" class="rough-add-btn" data-bucket="WTW 211">+ task</button>
+                        </div>
+                        <div class="rough-task-list" id="roughBucketWtw211"></div>
+                    </article>
+
+                    <article class="rough-bucket" data-bucket="WTW 218">
+                        <div class="rough-bucket__top">
+                            <div>
+                                <div class="rough-bucket__label">Module</div>
+                                <h4>WTW 218</h4>
+                            </div>
+                            <button type="button" class="rough-add-btn" data-bucket="WTW 218">+ task</button>
+                        </div>
+                        <div class="rough-task-list" id="roughBucketWtw218"></div>
+                    </article>
+
+                    <article class="rough-bucket" data-bucket="COS 210">
+                        <div class="rough-bucket__top">
+                            <div>
+                                <div class="rough-bucket__label">Module</div>
+                                <h4>COS 210</h4>
+                            </div>
+                            <button type="button" class="rough-add-btn" data-bucket="COS 210">+ task</button>
+                        </div>
+                        <div class="rough-task-list" id="roughBucketCos210"></div>
+                    </article>
+
+                    <article class="rough-bucket" data-bucket="COS 212">
+                        <div class="rough-bucket__top">
+                            <div>
+                                <div class="rough-bucket__label">Module</div>
+                                <h4>COS 212</h4>
+                            </div>
+                            <button type="button" class="rough-add-btn" data-bucket="COS 212">+ task</button>
+                        </div>
+                        <div class="rough-task-list" id="roughBucketCos212"></div>
+                    </article>
+
+                    <article class="rough-bucket rough-bucket--neutral" data-bucket="Life/Admin">
+                        <div class="rough-bucket__top">
+                            <div>
+                                <div class="rough-bucket__label">Other</div>
+                                <h4>Life / Admin</h4>
+                            </div>
+                            <button type="button" class="rough-add-btn" data-bucket="Life/Admin">+ task</button>
+                        </div>
+                        <div class="rough-task-list" id="roughBucketLife"></div>
+                    </article>
+                </div>
+            </section>
+        </section>
+
+        <div id="timedPlannerView">
         <table class="planner-table">
             <thead>
                 <tr>
@@ -108,6 +236,7 @@
         <div class="planner-footer">
             <div class="stats" id="stats"></div>
             <button class="clear-btn" onclick="clearDay()">Clear Day</button>
+        </div>
         </div>
 
         <!-- Free Period Optimizer -->
@@ -153,7 +282,7 @@
     </nav>
     <div class="nav-overlay" id="navOverlay" role="dialog" aria-label="Site navigation">
         <div class="nav-overlay__header">
-            <span class="nav-overlay__brand">OrbitDesk</span>
+            <span class="nav-overlay__brand">Orb</span>
             <button class="nav-overlay__close" id="navClose" aria-label="Close navigation">Close</button>
         </div>
         <nav class="nav-overlay__links">
@@ -171,6 +300,7 @@
     <!-- Scripts -->
     <script src="js/firebase-config.js"></script>
     <script src="js/loader.js"></script>
+    <script src="js/mobile-workflow.js"></script>
     <script src="js/planner.js"></script>
 </body>
 </html>

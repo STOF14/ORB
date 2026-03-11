@@ -1,5 +1,5 @@
 /* ============================================================
-   OrbitDesk — Assignments & Deadlines Stylesheet
+   Orb — Assignments & Deadlines Stylesheet
    Kanban board, add form, deadline list, filters
    ============================================================ */
 
@@ -34,14 +34,15 @@ body {
 
 /* ── Auth Bar ── */
 .auth-bar {
-    background: #111;
+    background: linear-gradient(180deg, #090909 0%, #111 100%);
     color: #999;
-    padding: 8px 40px;
+    padding: max(8px, env(safe-area-inset-top)) 40px 8px;
     display: flex;
     align-items: center;
     gap: 12px;
     font-size: 11px;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    box-shadow: inset 0 -1px 0 rgba(230, 57, 70, 0.18);
 }
 .sync-status {
     font-weight: 700;
@@ -454,7 +455,7 @@ body::before {
 
     .container {
         grid-template-columns: 1fr;
-        padding: 16px 12px 100px;
+        padding: 16px 12px calc(112px + env(safe-area-inset-bottom));
         gap: 12px;
     }
 
@@ -489,20 +490,23 @@ body::before {
         gap: 6px;
         padding-bottom: 4px;
         margin-bottom: 6px;
+        scroll-snap-type: x proximity;
     }
     .filter-bar::-webkit-scrollbar { display: none; }
     .filter-btn {
         white-space: nowrap;
         flex-shrink: 0;
-        padding: 8px 12px;
+        padding: 10px 12px;
         font-size: 10px;
-        min-height: 36px;
+        min-height: 44px;
+        scroll-snap-align: start;
     }
     .filter-sep { display: none; }
 
     /* Add form — touch-friendly inputs */
     .add-section {
         padding: 18px 14px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
     }
     .form-row {
         grid-template-columns: 1fr;
@@ -530,7 +534,10 @@ body::before {
         grid-template-columns: 1fr;
         gap: 12px;
     }
-    .kanban-col { min-height: 120px; }
+    .kanban-col {
+        min-height: 120px;
+        box-shadow: 0 8px 18px rgba(0, 0, 0, 0.05);
+    }
     .kanban-col-header { padding: 12px 14px; }
     .kanban-col-header h4 { margin-bottom: 0; }
     .kanban-items { padding: 8px; gap: 6px; }
@@ -544,7 +551,7 @@ body::before {
     .card-action-btn {
         padding: 8px 12px;
         font-size: 10px;
-        min-height: 36px;
+        min-height: 40px;
         -webkit-tap-highlight-color: transparent;
     }
 
@@ -562,14 +569,36 @@ body::before {
     .deadline-date { grid-column: 2; font-size: 11px; }
     .deadline-status { grid-column: 2; justify-self: start; }
 
+    .deadline-list-section,
+    .deadline-row {
+        box-shadow: 0 8px 18px rgba(0, 0, 0, 0.04);
+    }
+
     /* Nav & auth */
     .site-nav { display: none; }
     .auth-bar { padding: 8px 12px; }
     .auth-bar .user-name { display: none; }
 
-    /* OrbitDesk brand — smaller */
+    /* Orb brand — smaller */
     .orbitdesk-brand svg { width: 30px; height: 30px; }
     .orbitdesk-brand__name { font-size: 1.1em; }
+}
+
+@media (max-width: 420px) {
+    .container {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    .filter-btn {
+        padding: 10px 10px;
+        letter-spacing: 1px;
+    }
+
+    .deadline-row {
+        grid-template-columns: 48px 1fr;
+        gap: 4px 8px;
+    }
 }
 
 /* Extra small screens (< 380px) */

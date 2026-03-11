@@ -1,5 +1,5 @@
 /* ============================================================
-   OrbitDesk — Timetable Stylesheet
+   Orb — Timetable Stylesheet
    Shared between Semester 1 & Semester 2 timetable pages
    ============================================================ */
 
@@ -285,7 +285,7 @@ body.edit-mode .event {
 
     .container {
         max-width: 100%;
-        padding: 15px 12px;
+        padding: 15px 10px calc(112px + env(safe-area-inset-bottom));
     }
 
     h1 {
@@ -310,12 +310,14 @@ body.edit-mode .event {
         padding: 16px;
         margin-bottom: 15px;
         border-left: 5px solid var(--red);
+        box-shadow: 0 10px 22px rgba(0, 0, 0, 0.18);
     }
 
     /* Day cards */
     .day {
         margin-bottom: 12px;
         border-width: 2px;
+        box-shadow: 0 8px 18px rgba(0, 0, 0, 0.05);
     }
 
     .day-header {
@@ -324,6 +326,7 @@ body.edit-mode .event {
         position: sticky;
         top: 0;
         z-index: 10;
+        min-height: 52px;
     }
 
     .day-header::before {
@@ -398,10 +401,11 @@ body.edit-mode .event {
         font-weight: 800;
         letter-spacing: 1px;
         text-transform: uppercase;
-        padding: 8px 14px;
+        padding: 10px 14px;
         margin-bottom: 15px;
         cursor: pointer;
         -webkit-tap-highlight-color: transparent;
+        min-height: 44px;
     }
 
     .toggle-empty.active {
@@ -432,6 +436,29 @@ body.edit-mode .event {
         margin-top: 24px;
         margin-bottom: 24px;
         min-height: 180px;
+    }
+}
+
+@media (max-width: 420px) {
+    .container {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    .day-header {
+        padding: 10px 12px;
+        font-size: 15px;
+    }
+
+    .event {
+        grid-template-columns: 78px 1fr;
+        padding: 10px 12px;
+        gap: 8px;
+    }
+
+    .time,
+    .activity {
+        font-size: 12px;
     }
 }
 

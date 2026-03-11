@@ -1,7 +1,30 @@
-/* ── OrbitDesk — Planner Logic ── */
+/* ── Orb — Planner Logic ── */
 /* Requires: firebase-config.js loaded first */
 
 let unsubscribeSnapshot = null;
+let plannerMode = localStorage.getItem('planner_mode_preference') || 'timed';
+let modeTransitionTimer = null;
+let roughCarrySyncedKey = null;
+const MODE_TRANSITION_MS = 320;
+const ROUGH_CARRY_LOOKBACK_DAYS = 45;
+
+const ROUGH_BUCKETS = ['PHY 255', 'WTW 211', 'WTW 218', 'COS 210', 'COS 212', 'Life/Admin'];
+const ROUGH_BUCKET_ELEMENT_IDS = {
+    'PHY 255': 'roughBucketPhy',
+    'WTW 211': 'roughBucketWtw211',
+    'WTW 218': 'roughBucketWtw218',
+    'COS 210': 'roughBucketCos210',
+    'COS 212': 'roughBucketCos212',
+    'Life/Admin': 'roughBucketLife'
+};
+const ROUGH_TEMPLATE_SUGGESTIONS = {
+    'PHY 255': ['revise lecture notes', 'finish tutorial questions', 'summarize practical work'],
+    'WTW 211': ['review proofs', 'do 5 algebra questions', 'rewrite weak concepts'],
+    'WTW 218': ['practice multivariable problems', 'review tutorial mistakes', 'do quick derivative drill'],
+    'COS 210': ['review lecture examples', 'trace one algorithm by hand', 'clean up notes'],
+    'COS 212': ['practice coding question', 'review practical prep', 'read ahead for next topic'],
+    'Life/Admin': ['sort admin task', 'reset room and desk', 'plan tomorrow']
+};
 
 // ── Auth handler ──
 auth.onAuthStateChanged(user => {
@@ -132,6 +155,14 @@ function updateFieldsFromData(data) {
             cb.closest('tr').classList.toggle('checked-row', checked);
         }
     });
+
+    const notesEl = document.getElementById('roughNotes');
+    if (notesEl && focused !== notesEl) {
+        const notes = data.roughNotes || '';
+        if (notesEl.value !== notes) notesEl.value = notes;
+    }
+
+    renderRoughPlan();
 }
 
 // ── Migrate localStorage → Firestore ──
@@ -296,6 +327,407 @@ const MONTHS = ['January', 'February', 'March', 'April', 'May', 'June',
 
 let currentDate = new Date();
 
+function genRoughTaskId() {
+    return 'rough_' + Date.now().toString(36) + Math.random().toString(36).slice(2, 6);
+}
+
+function escapeHtml(str) {
+    const div = document.createElement('div');
+    div.textContent = str;
+    return div.innerHTML;
+}
+
+function getRoughTasks(data = cachedData) {
+    const tasks = data.roughTasks;
+    if (!tasks || typeof tasks !== 'object' || Array.isArray(tasks)) return {};
+    return tasks;
+}
+
+function getBucketTasks(bucket, data = cachedData) {
+    const tasks = getRoughTasks(data)[bucket];
+    return Array.isArray(tasks) ? tasks : [];
+}
+
+function normalizeRoughTask(task, fallbackDateKey) {
+    const id = task && task.id ? task.id : genRoughTaskId();
+    return {
+        id,
+        carryId: task && task.carryId ? task.carryId : id,
+        text: task && typeof task.text === 'string' ? task.text : '',
+        done: !!(task && task.done),
+        createdOn: task && task.createdOn ? task.createdOn : fallbackDateKey,
+        carriedFrom: task && task.carriedFrom ? task.carriedFrom : null
+    };
+}
+
+function normalizeRoughTasksInData(data, fallbackDateKey) {
+    if (!data || typeof data !== 'object') return false;
+    const roughTasks = getRoughTasks(data);
+    let changed = false;
+
+    ROUGH_BUCKETS.forEach(bucket => {
+        const tasks = Array.isArray(roughTasks[bucket]) ? roughTasks[bucket] : null;
+        if (!tasks) return;
+        const normalized = tasks.map(task => {
+            const nextTask = normalizeRoughTask(task, fallbackDateKey);
+            if (!task || task.id !== nextTask.id || task.carryId !== nextTask.carryId || task.createdOn !== nextTask.createdOn || task.carriedFrom !== nextTask.carriedFrom || task.done !== nextTask.done || task.text !== nextTask.text) {
+                changed = true;
+            }
+            return nextTask;
+        });
+        data.roughTasks[bucket] = normalized;
+    });
+
+    return changed;
+}
+
+async function readPlannerDataForKey(key) {
+    if (currentUser) {
+        try {
+            const snap = await docRef(key).get();
+            if (snap.exists) {
+                const data = snap.data() || {};
+                saveDataLocal(key, data);
+                return data;
+            }
+        } catch (e) {
+            console.warn('Planner carry read failed, using local:', e);
+        }
+    }
+    return loadDataLocal(key);
+}
+
+function buildRoughCarryClone(task, fromDateKey) {
+    return {
+        id: genRoughTaskId(),
+        carryId: task.carryId,
+        text: task.text,
+        done: false,
+        createdOn: task.createdOn || fromDateKey,
+        carriedFrom: fromDateKey
+    };
+}
+
+async function syncCarriedRoughTasksForDate(key) {
+    let changed = normalizeRoughTasksInData(cachedData, key);
+    const currentCarryIds = new Set();
+
+    ROUGH_BUCKETS.forEach(bucket => {
+        getBucketTasks(bucket).forEach(task => {
+            const normalized = normalizeRoughTask(task, key);
+            currentCarryIds.add(normalized.carryId);
+        });
+    });
+
+    const latestByCarry = new Map();
+    const scanDate = new Date(currentDate);
+
+    for (let offset = 1; offset <= ROUGH_CARRY_LOOKBACK_DAYS; offset++) {
+        scanDate.setDate(scanDate.getDate() - 1);
+        const prevKey = dateKey(scanDate);
+        const prevData = await readPlannerDataForKey(prevKey);
+        normalizeRoughTasksInData(prevData, prevKey);
+
+        ROUGH_BUCKETS.forEach(bucket => {
+            getBucketTasks(bucket, prevData).forEach(task => {
+                const normalized = normalizeRoughTask(task, prevKey);
+                if (!normalized.text.trim()) return;
+                if (latestByCarry.has(normalized.carryId)) return;
+                latestByCarry.set(normalized.carryId, { task: normalized, bucket, dateKey: prevKey });
+            });
+        });
+    }
+
+    latestByCarry.forEach(entry => {
+        if (entry.task.done) return;
+        if (currentCarryIds.has(entry.task.carryId)) return;
+        ensureBucketTasks(entry.bucket).push(buildRoughCarryClone(entry.task, entry.dateKey));
+        currentCarryIds.add(entry.task.carryId);
+        changed = true;
+    });
+
+    if (changed) {
+        saveCurrentPlannerData();
+    }
+}
+
+function ensureBucketTasks(bucket) {
+    if (!cachedData.roughTasks || typeof cachedData.roughTasks !== 'object' || Array.isArray(cachedData.roughTasks)) {
+        cachedData.roughTasks = {};
+    }
+    if (!Array.isArray(cachedData.roughTasks[bucket])) {
+        cachedData.roughTasks[bucket] = [];
+    }
+    return cachedData.roughTasks[bucket];
+}
+
+function saveCurrentPlannerData() {
+    saveData(dateKey(currentDate), cachedData);
+}
+
+function setPlannerMode(mode) {
+    const nextMode = mode === 'rough' ? 'rough' : 'timed';
+    if (nextMode === plannerMode) return;
+    plannerMode = nextMode;
+    localStorage.setItem('planner_mode_preference', plannerMode);
+    updatePlannerModeUI({ animate: true });
+}
+
+function setViewVisible(view, visible) {
+    if (!view) return;
+    view.hidden = !visible;
+    view.classList.remove('planner-morph-enter', 'planner-morph-exit');
+    view.classList.toggle('planner-morph-active', visible);
+}
+
+function updatePlannerModeUI(opts = {}) {
+    const animate = !!opts.animate;
+    const timedView = document.getElementById('timedPlannerView');
+    const roughView = document.getElementById('roughPlan');
+    const timedBtn = document.getElementById('timedModeBtn');
+    const roughBtn = document.getElementById('roughModeBtn');
+    const timedExtras = ['freePeriods', 'habitTracker', 'sleepLogger']
+        .map(id => document.getElementById(id))
+        .filter(Boolean);
+    const showRough = plannerMode === 'rough';
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const timedGroup = [timedView].concat(timedExtras).filter(Boolean);
+    const roughGroup = [roughView].filter(Boolean);
+    const showGroup = showRough ? roughGroup : timedGroup;
+    const hideGroup = showRough ? timedGroup : roughGroup;
+
+    if (timedBtn) {
+        timedBtn.classList.toggle('active', !showRough);
+        timedBtn.setAttribute('aria-pressed', String(!showRough));
+    }
+    if (roughBtn) {
+        roughBtn.classList.toggle('active', showRough);
+        roughBtn.setAttribute('aria-pressed', String(showRough));
+    }
+
+    if (!animate || reduceMotion) {
+        if (modeTransitionTimer) {
+            clearTimeout(modeTransitionTimer);
+            modeTransitionTimer = null;
+        }
+        timedGroup.forEach(view => setViewVisible(view, !showRough));
+        roughGroup.forEach(view => setViewVisible(view, showRough));
+        return;
+    }
+
+    if (modeTransitionTimer) {
+        clearTimeout(modeTransitionTimer);
+        modeTransitionTimer = null;
+    }
+
+    showGroup.forEach(view => {
+        view.hidden = false;
+        view.classList.remove('planner-morph-exit');
+        view.classList.add('planner-morph-enter');
+        // Force layout so the transition starts from enter state.
+        void view.offsetHeight;
+        view.classList.add('planner-morph-active');
+        view.classList.remove('planner-morph-enter');
+    });
+
+    hideGroup.forEach(view => {
+        view.classList.remove('planner-morph-enter', 'planner-morph-active');
+        view.classList.add('planner-morph-exit');
+    });
+
+    modeTransitionTimer = setTimeout(() => {
+        hideGroup.forEach(view => {
+            view.hidden = true;
+            view.classList.remove('planner-morph-enter', 'planner-morph-exit', 'planner-morph-active');
+        });
+        showGroup.forEach(view => {
+            view.hidden = false;
+            view.classList.remove('planner-morph-enter', 'planner-morph-exit');
+            view.classList.add('planner-morph-active');
+        });
+        modeTransitionTimer = null;
+    }, MODE_TRANSITION_MS);
+}
+
+function countClassLoad() {
+    const daySchedule = TIMETABLE[currentDate.getDay()] || {};
+    const counts = {};
+    Object.values(daySchedule).forEach(entry => {
+        const bucket = entry.code.replace('-', ' ').toUpperCase();
+        counts[bucket] = (counts[bucket] || 0) + 1;
+    });
+    return counts;
+}
+
+function addRoughTask(bucket, text) {
+    const items = ensureBucketTasks(bucket);
+    const id = genRoughTaskId();
+    items.push({ id, carryId: id, text: text || '', done: false, createdOn: dateKey(currentDate), carriedFrom: null });
+    saveCurrentPlannerData();
+    renderRoughPlan();
+}
+
+function toggleRoughTask(bucket, taskId, done) {
+    const items = ensureBucketTasks(bucket);
+    const task = items.find(item => item.id === taskId);
+    if (!task) return;
+    task.done = done;
+    saveCurrentPlannerData();
+    renderRoughPlan();
+    updateStats();
+}
+
+function updateRoughTaskText(bucket, taskId, text) {
+    const items = ensureBucketTasks(bucket);
+    const task = items.find(item => item.id === taskId);
+    if (!task) return;
+    task.text = text;
+    saveCurrentPlannerData();
+    renderRoughPlanSummary();
+    renderRoughSuggestions();
+}
+
+function deleteRoughTask(bucket, taskId) {
+    const items = ensureBucketTasks(bucket);
+    cachedData.roughTasks[bucket] = items.filter(item => item.id !== taskId);
+    saveCurrentPlannerData();
+    renderRoughPlan();
+    updateStats();
+}
+
+function getRoughTaskCounts() {
+    let total = 0;
+    let done = 0;
+    ROUGH_BUCKETS.forEach(bucket => {
+        getBucketTasks(bucket).forEach(task => {
+            if (!task.text || !task.text.trim()) return;
+            total++;
+            if (task.done) done++;
+        });
+    });
+    return { total, done, pending: total - done };
+}
+
+function getSuggestedModules() {
+    const classLoad = countClassLoad();
+    const modules = ROUGH_BUCKETS.map(bucket => {
+        if (bucket === 'Life/Admin') return null;
+        const tasks = getBucketTasks(bucket).filter(task => task.text && task.text.trim());
+        const pending = tasks.filter(task => !task.done).length;
+        return {
+            bucket,
+            pending,
+            classCount: classLoad[bucket] || 0,
+            score: pending * 3 + (classLoad[bucket] || 0)
+        };
+    }).filter(Boolean).sort((a, b) => b.score - a.score);
+
+    return modules;
+}
+
+function renderRoughPlanSummary() {
+    const summary = document.getElementById('roughPlanSummary');
+    if (!summary) return;
+    const counts = getRoughTaskCounts();
+    const noteCount = (cachedData.roughNotes || '').trim().length;
+    summary.innerHTML =
+        '<div class="rough-plan__summary-number">' + counts.pending + '</div>' +
+        '<div class="rough-plan__summary-copy">pending tasks' + (noteCount ? ' · notes saved' : '') + '</div>';
+}
+
+function renderRoughSuggestions() {
+    const el = document.getElementById('roughSuggestions');
+    if (!el) return;
+
+    const classLoad = countClassLoad();
+    const ranked = getSuggestedModules();
+    const counts = getRoughTaskCounts();
+    const cards = [];
+
+    if (ranked.length && ranked[0].score > 0) {
+        const top = ranked[0];
+        cards.push({
+            title: top.bucket,
+            body: top.pending > 0
+                ? top.pending + ' rough task' + (top.pending === 1 ? '' : 's') + ' still open. This is your best focus block.'
+                : 'You have class load here today. Add one small review task so the day has direction.'
+        });
+    }
+
+    const busyModule = Object.entries(classLoad).sort((a, b) => b[1] - a[1])[0];
+    if (busyModule && !cards.some(card => card.title === busyModule[0])) {
+        cards.push({
+            title: busyModule[0],
+            body: 'Heaviest class presence today. Good place for a short prep or recap task.'
+        });
+    }
+
+    if (counts.total === 0) {
+        cards.push({
+            title: 'Start simple',
+            body: 'Add 1 to 3 tasks only. One academic task, one catch-up task, one life/admin task is enough.'
+        });
+    } else if ((cachedData.roughNotes || '').trim().length < 20) {
+        cards.push({
+            title: 'Use the notes box',
+            body: 'Drop deadlines, worries, or random reminders there so your task buckets stay clean.'
+        });
+    }
+
+    while (cards.length < 3) {
+        const bucket = ROUGH_BUCKETS[cards.length] || 'Life/Admin';
+        const templates = ROUGH_TEMPLATE_SUGGESTIONS[bucket] || ROUGH_TEMPLATE_SUGGESTIONS['Life/Admin'];
+        cards.push({
+            title: bucket,
+            body: 'Try: ' + templates[0]
+        });
+    }
+
+    el.innerHTML = cards.slice(0, 3).map(card =>
+        '<article class="rough-suggestion-card">' +
+            '<div class="rough-suggestion-card__title">' + escapeHtml(card.title) + '</div>' +
+            '<p>' + escapeHtml(card.body) + '</p>' +
+        '</article>'
+    ).join('');
+}
+
+function renderRoughBuckets() {
+    ROUGH_BUCKETS.forEach(bucket => {
+        const el = document.getElementById(ROUGH_BUCKET_ELEMENT_IDS[bucket]);
+        if (!el) return;
+        const tasks = getBucketTasks(bucket);
+
+        if (!tasks.length) {
+            const suggestions = ROUGH_TEMPLATE_SUGGESTIONS[bucket] || [];
+            el.innerHTML = '<div class="rough-task-empty">' +
+                'Nothing here yet' + (suggestions[0] ? ' · try “' + escapeHtml(suggestions[0]) + '”' : '') +
+                '</div>';
+            return;
+        }
+
+        el.innerHTML = tasks.map(task =>
+            '<div class="rough-task' + (task.done ? ' is-done' : '') + '">' +
+                '<label class="rough-task__checkwrap">' +
+                    '<input type="checkbox" data-role="rough-check" data-bucket="' + escapeHtml(bucket) + '" data-task-id="' + task.id + '" ' + (task.done ? 'checked' : '') + '>' +
+                    '<span></span>' +
+                '</label>' +
+                '<input class="rough-task__input" type="text" data-role="rough-text" data-bucket="' + escapeHtml(bucket) + '" data-task-id="' + task.id + '" value="' + escapeHtml(task.text || '') + '" placeholder="Write one clear task...">' +
+                '<button type="button" class="rough-task__delete" data-role="rough-delete" data-bucket="' + escapeHtml(bucket) + '" data-task-id="' + task.id + '" aria-label="Delete task">×</button>' +
+            '</div>'
+        ).join('');
+    });
+}
+
+function renderRoughPlan() {
+    const notesEl = document.getElementById('roughNotes');
+    if (notesEl && document.activeElement !== notesEl && notesEl.value !== (cachedData.roughNotes || '')) {
+        notesEl.value = cachedData.roughNotes || '';
+    }
+    renderRoughPlanSummary();
+    renderRoughSuggestions();
+    renderRoughBuckets();
+}
+
 function dateKey(d) {
     return d.getFullYear() + '-' +
            String(d.getMonth() + 1).padStart(2, '0') + '-' +
@@ -324,6 +756,10 @@ function timeToMinutes(t) {
 async function renderPlanner() {
     const key = dateKey(currentDate);
     const data = await loadData(key);
+    if (roughCarrySyncedKey !== key) {
+        await syncCarriedRoughTasksForDate(key);
+        roughCarrySyncedKey = key;
+    }
     listenToDate(key);
     const tbody = document.getElementById('plannerBody');
     const now = new Date();
@@ -421,6 +857,8 @@ async function renderPlanner() {
     });
 
     updateStats();
+    renderRoughPlan();
+    updatePlannerModeUI();
 
     if (isToday) {
         const cur = tbody.querySelector('.current-slot');
@@ -440,6 +878,7 @@ function updateStats() {
     let filled = 0, checked = 0, total = TIME_SLOTS.length;
     const jsDay = currentDate.getDay();
     const daySchedule = (jsDay >= 1 && jsDay <= 5) ? (TIMETABLE[jsDay] || {}) : {};
+    const roughCounts = getRoughTaskCounts();
 
     TIME_SLOTS.forEach((slot, i) => {
         const hasClass = !!daySchedule[slot.start];
@@ -449,7 +888,10 @@ function updateStats() {
 
     document.getElementById('stats').innerHTML =
         '<span>' + filled + '</span> / ' + total + ' planned — ' +
-        '<span>' + checked + '</span> / ' + total + ' done';
+        '<span>' + checked + '</span> / ' + total + ' done' +
+        (roughCounts.total ? ' · <span>' + roughCounts.pending + '</span> rough tasks left' : '');
+
+    renderRoughPlanSummary();
 }
 
 function changeDate(delta) {
@@ -473,15 +915,59 @@ async function clearDay() {
     renderPlanner();
 }
 
-// Init
-renderPlanner();
+function bindPlannerModeToggle() {
+    const timedBtn = document.getElementById('timedModeBtn');
+    const roughBtn = document.getElementById('roughModeBtn');
+    if (timedBtn) timedBtn.addEventListener('click', () => setPlannerMode('timed'));
+    if (roughBtn) roughBtn.addEventListener('click', () => setPlannerMode('rough'));
+}
 
-// Update current-slot highlighting every minute
-setInterval(() => {
-    if (dateKey(new Date()) === dateKey(currentDate)) {
-        renderPlanner();
+function bindRoughPlanEvents() {
+    const notesEl = document.getElementById('roughNotes');
+    const bucketsEl = document.getElementById('roughBuckets');
+
+    if (notesEl) {
+        notesEl.addEventListener('input', function () {
+            cachedData.roughNotes = this.value;
+            saveCurrentPlannerData();
+            renderRoughPlanSummary();
+            renderRoughSuggestions();
+        });
     }
-}, 60000);
+
+    if (bucketsEl) {
+        bucketsEl.addEventListener('click', event => {
+            const addBtn = event.target.closest('.rough-add-btn');
+            if (addBtn) {
+                addRoughTask(addBtn.dataset.bucket, '');
+                setTimeout(() => {
+                    const list = document.getElementById(ROUGH_BUCKET_ELEMENT_IDS[addBtn.dataset.bucket]);
+                    const lastInput = list ? list.querySelector('.rough-task:last-child .rough-task__input') : null;
+                    if (lastInput) lastInput.focus();
+                }, 0);
+                return;
+            }
+
+            const deleteBtn = event.target.closest('[data-role="rough-delete"]');
+            if (deleteBtn) {
+                deleteRoughTask(deleteBtn.dataset.bucket, deleteBtn.dataset.taskId);
+            }
+        });
+
+        bucketsEl.addEventListener('change', event => {
+            if (event.target.matches('[data-role="rough-check"]')) {
+                toggleRoughTask(event.target.dataset.bucket, event.target.dataset.taskId, event.target.checked);
+            }
+        });
+
+        bucketsEl.addEventListener('input', event => {
+            if (event.target.matches('[data-role="rough-text"]')) {
+                updateRoughTaskText(event.target.dataset.bucket, event.target.dataset.taskId, event.target.value);
+            }
+        });
+    }
+}
+
 
 // ── Free Period Optimizer ──
 const STUDY_SUGGESTIONS = [
@@ -675,5 +1161,17 @@ renderPlanner = async function() {
     renderFreePeriods();
     renderHabits();
     loadSleep();
+    updatePlannerModeUI();
 };
+
+bindPlannerModeToggle();
+bindRoughPlanEvents();
+updatePlannerModeUI();
 renderPlanner();
+
+// Update current-slot highlighting every minute
+setInterval(() => {
+    if (dateKey(new Date()) === dateKey(currentDate)) {
+        renderPlanner();
+    }
+}, 60000);

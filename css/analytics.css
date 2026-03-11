@@ -1,5 +1,5 @@
 /* ============================================================
-   OrbitDesk — Analytics & Review Stylesheet
+   Orb — Analytics & Review Stylesheet
    Summary cards, bar charts, habit grid, module breakdown
    ============================================================ */
 
@@ -34,14 +34,15 @@ body {
 
 /* ── Auth Bar ── */
 .auth-bar {
-    background: #111;
+    background: linear-gradient(180deg, #090909 0%, #111 100%);
     color: #999;
-    padding: 8px 40px;
+    padding: max(8px, env(safe-area-inset-top)) 40px 8px;
     display: flex;
     align-items: center;
     gap: 12px;
     font-size: 11px;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    box-shadow: inset 0 -1px 0 rgba(230, 57, 70, 0.18);
 }
 .sync-status {
     font-weight: 700; letter-spacing: 1px; text-transform: uppercase;
@@ -283,7 +284,7 @@ body::before {
 
     .container {
         grid-template-columns: 1fr;
-        padding: 16px 12px 100px;
+        padding: 16px 12px calc(112px + env(safe-area-inset-bottom));
         gap: 12px;
     }
 
@@ -314,10 +315,10 @@ body::before {
     .period-btn {
         flex: 1;
         min-width: 0;
-        padding: 10px 8px;
+        padding: 12px 10px;
         font-size: 10px;
         text-align: center;
-        min-height: 40px;
+        min-height: 44px;
         white-space: nowrap;
         -webkit-tap-highlight-color: transparent;
     }
@@ -327,7 +328,10 @@ body::before {
         grid-template-columns: 1fr 1fr;
         gap: 8px;
     }
-    .summary-card { padding: 18px 14px; }
+    .summary-card {
+        padding: 18px 14px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    }
     .summary-value { font-size: 30px; }
     .summary-label { font-size: 9px; }
     .summary-sub { font-size: 10px; }
@@ -336,6 +340,7 @@ body::before {
     .chart-section {
         grid-column: 1 / -1;
         padding: 18px 14px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
     }
 
     /* Bar charts — taller on mobile so bars are visible */
@@ -386,9 +391,35 @@ body::before {
     .auth-bar { padding: 8px 12px; }
     .auth-bar .user-name { display: none; }
 
-    /* OrbitDesk brand — smaller */
+    /* Orb brand — smaller */
     .orbitdesk-brand svg { width: 30px; height: 30px; }
     .orbitdesk-brand__name { font-size: 1.1em; }
+}
+
+@media (max-width: 420px) {
+    .container {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    .period-btn {
+        padding: 12px 8px;
+        letter-spacing: 1px;
+    }
+
+    .chart-section,
+    .summary-card {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .bar-chart {
+        height: 92px;
+    }
+
+    .bar-chart.tall {
+        height: 118px;
+    }
 }
 
 /* Extra small screens (< 380px) */

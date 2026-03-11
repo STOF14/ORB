@@ -1,4 +1,4 @@
-/* ── OrbitDesk — Timer Styles (Dark Theme) ── */
+/* ── Orb — Timer Styles (Dark Theme) ── */
 
 body {
     background: var(--black);
@@ -221,9 +221,105 @@ body {
 /* ── Responsive ── */
 
 @media (max-width: 768px) {
-    .timer-container { padding: 30px 15px 100px; }
-    .clock { width: 250px; height: 250px; }
-    .time-display { font-size: 56px; }
-    .mode-tabs { margin-bottom: 30px; }
-    .mode-tab { padding: 10px 16px; font-size: 10px; }
+    .timer-container {
+        padding: 24px 14px calc(116px + env(safe-area-inset-bottom));
+        justify-content: flex-start;
+    }
+
+    .mode-tabs {
+        width: 100%;
+        margin-bottom: 26px;
+    }
+
+    .mode-tab {
+        flex: 1;
+        min-height: 44px;
+        padding: 12px 10px;
+        font-size: 10px;
+    }
+
+    .clock {
+        width: min(76vw, 290px);
+        height: min(76vw, 290px);
+        margin-bottom: 28px;
+    }
+
+    .time-display { font-size: clamp(48px, 14vw, 64px); }
+
+    .session-label { font-size: 10px; }
+
+    .controls {
+        gap: 12px;
+        margin-bottom: 28px;
+    }
+
+    .ctrl-btn {
+        width: 58px;
+        height: 58px;
+    }
+
+    .ctrl-btn.primary {
+        width: 78px;
+        height: 78px;
+    }
+
+    .module-selector {
+        width: 100%;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+        padding-bottom: 2px;
+        margin-bottom: 24px;
+    }
+
+    .module-selector::-webkit-scrollbar { display: none; }
+
+    .mod-btn {
+        flex-shrink: 0;
+        min-height: 44px;
+        padding: 10px 14px;
+    }
+
+    .stats-bar {
+        width: 100%;
+        justify-content: space-between;
+        gap: 10px;
+        padding: 18px 0 0;
+    }
+
+    .stat-value { font-size: 24px; }
+}
+
+@media (max-width: 420px) {
+    .timer-container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .clock {
+        width: min(82vw, 270px);
+        height: min(82vw, 270px);
+    }
+
+    .controls {
+        gap: 10px;
+    }
+
+    .ctrl-btn {
+        width: 54px;
+        height: 54px;
+        font-size: 20px;
+    }
+
+    .ctrl-btn.primary {
+        width: 72px;
+        height: 72px;
+        font-size: 24px;
+    }
+
+    .stats-bar {
+        gap: 6px;
+    }
 }

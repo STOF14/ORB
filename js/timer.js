@@ -1,4 +1,4 @@
-/* ── OrbitDesk — Focus Timer Logic ── */
+/* ── Orb — Focus Timer Logic ── */
 /* No Firebase required — localStorage only */
 
 const DURATIONS = {

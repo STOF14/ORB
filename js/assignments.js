@@ -1,5 +1,5 @@
 /* ============================================================
-   OrbitDesk — Assignments & Deadlines Logic
+   Orb — Assignments & Deadlines Logic
    Firebase-synced kanban board for tracking work
    ============================================================ */
 

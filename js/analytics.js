@@ -1,5 +1,5 @@
 /* ============================================================
-   OrbitDesk — Analytics & Review Logic
+   Orb — Analytics & Review Logic
    Aggregates planner, focus, sleep, habit, and assignment data
    ============================================================ */
 

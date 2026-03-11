@@ -1,5 +1,5 @@
 /* ============================================================
-   OrbitDesk — Dashboard Stylesheet
+   Orb — Dashboard Stylesheet
    12-col grid, typography, module cards, countdowns, progress,
    weekly review, sleep chart, responsive, print
    ============================================================ */
@@ -680,7 +680,7 @@ body::before {
 
     .container {
         grid-template-columns: 1fr;
-        padding: 20px 15px;
+        padding: 18px 12px calc(112px + env(safe-area-inset-bottom));
         gap: 12px;
     }
 
@@ -726,6 +726,7 @@ body::before {
         cursor: pointer;
         -webkit-tap-highlight-color: transparent;
         position: relative;
+        min-height: 64px;
     }
 
     .module-header::after {
@@ -782,6 +783,12 @@ body::before {
         font-size: 12px;
     }
 
+    .assessment-table {
+        display: block;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
     .percentage {
         font-size: 15px;
     }
@@ -799,6 +806,7 @@ body::before {
     .warning {
         padding: 18px;
         margin-top: 18px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
     }
 
     .warning ul {
@@ -843,6 +851,7 @@ body::before {
         display: flex;
         align-items: center;
         justify-content: center;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
     }
 
     /* Dashboard bottom-nav font override */
@@ -883,7 +892,11 @@ body::before {
         gap: 8px;
     }
 
-    .countdown-card { padding: 15px; }
+    .countdown-card {
+        padding: 15px;
+        min-height: 96px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    }
     .countdown-days { font-size: 28px; }
     .countdown-event { font-size: 12px; }
 
@@ -893,8 +906,41 @@ body::before {
         gap: 8px;
     }
 
-    .review-card { padding: 15px; }
+    .review-card {
+        padding: 15px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    }
     .review-value { font-size: 28px; }
+}
+
+@media (max-width: 420px) {
+    .container {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    h1 {
+        font-size: 34px;
+    }
+
+    .module-header {
+        padding: 16px 14px;
+    }
+
+    .module-content,
+    .progress-section,
+    .warning {
+        padding: 14px;
+    }
+
+    .timeline {
+        grid-template-columns: 1fr;
+        gap: 4px;
+    }
+
+    .timeline-date {
+        padding-right: 0;
+    }
 }
 
 /* Desktop: hide mobile-only elements */

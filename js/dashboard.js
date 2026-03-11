@@ -1,4 +1,4 @@
-/* ── OrbitDesk — Dashboard Logic ── */
+/* ── Orb — Dashboard Logic ── */
 /* Requires: firebase-config.js loaded first */
 
 // ── Auth listener ──

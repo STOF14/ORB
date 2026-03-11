@@ -1,5 +1,5 @@
 /* ============================================================
-   OrbitDesk — Timetable Logic
+   Orb — Timetable Logic
    Edit persistence, auth, highlight today, What's Next,
    toggle empty, Bauhaus animation
    Requires: firebase-config.js loaded first

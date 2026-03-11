@@ -1,5 +1,5 @@
 /* ============================================================
-   OrbitDesk — Planner Stylesheet
+   Orb — Planner Stylesheet
    Day planner, habits, sleep logger, auth bar
    ============================================================ */
 
@@ -95,6 +95,341 @@ h1 {
     letter-spacing: 2px;
     text-transform: uppercase;
     color: var(--text-muted);
+}
+
+.planner-mode-card {
+    display: grid;
+    grid-template-columns: 1.5fr auto;
+    gap: 18px;
+    align-items: center;
+    padding: 22px;
+    margin-bottom: 24px;
+    background: linear-gradient(135deg, #ffffff 0%, #f7f4ef 100%);
+    border: 3px solid var(--black);
+    box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.08);
+}
+
+.planner-mode-card h2,
+.rough-plan__header h2,
+.rough-card h3,
+.rough-bucket h4 {
+    margin: 0;
+}
+
+.planner-mode-card__eyebrow,
+.rough-plan__eyebrow,
+.rough-card__eyebrow,
+.rough-bucket__label {
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-bottom: 6px;
+}
+
+.planner-mode-card__copy,
+.rough-plan__copy,
+.rough-card__hint,
+.rough-suggestion-card p {
+    margin: 8px 0 0;
+    font-size: 13px;
+    line-height: 1.55;
+    color: var(--text-muted);
+}
+
+.planner-mode-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px;
+    background: #111;
+}
+
+.planner-mode-btn {
+    border: none;
+    background: transparent;
+    color: rgba(255, 255, 255, 0.72);
+    padding: 12px 16px;
+    font-family: inherit;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background 0.22s ease, color 0.22s ease, transform 0.22s ease;
+}
+
+.planner-mode-btn.active {
+    background: #fff;
+    color: var(--black);
+}
+
+.planner-mode-btn:hover {
+    transform: translateY(-1px);
+}
+
+#timedPlannerView,
+.rough-plan,
+.free-periods,
+.habit-tracker,
+.sleep-logger {
+    transition: opacity 0.32s ease, transform 0.32s ease, filter 0.32s ease;
+    transform-origin: top center;
+}
+
+.planner-morph-enter {
+    opacity: 0;
+    transform: translateY(10px) scale(0.985);
+    filter: blur(2px);
+}
+
+.planner-morph-active {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    filter: blur(0);
+}
+
+.planner-morph-exit {
+    opacity: 0;
+    transform: translateY(-8px) scale(0.985);
+    filter: blur(2px);
+    pointer-events: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    #timedPlannerView,
+    .rough-plan,
+    .free-periods,
+    .habit-tracker,
+    .sleep-logger,
+    .planner-mode-btn {
+        transition: none !important;
+        transform: none !important;
+        filter: none !important;
+    }
+}
+
+.rough-plan {
+    margin-bottom: 24px;
+}
+
+.rough-plan__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    margin-bottom: 18px;
+}
+
+.rough-plan__summary {
+    min-width: 150px;
+    padding: 16px 18px;
+    background: #111;
+    color: #fff;
+    text-align: right;
+}
+
+.rough-plan__summary-number {
+    font-size: 34px;
+    font-weight: 900;
+    line-height: 0.95;
+}
+
+.rough-plan__summary-copy {
+    margin-top: 8px;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.72);
+}
+
+.rough-plan__grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+    gap: 18px;
+    margin-bottom: 18px;
+}
+
+.rough-card {
+    padding: 20px;
+    background: #fff;
+    border: 2px solid var(--black);
+}
+
+.rough-card--notes {
+    border-left: 5px solid var(--yellow);
+}
+
+.rough-card--smart {
+    border-left: 5px solid var(--blue);
+}
+
+.rough-card--tasks {
+    border-left: 5px solid var(--red);
+}
+
+.rough-card__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 14px;
+}
+
+.rough-card__header--stacked {
+    align-items: flex-end;
+}
+
+.rough-notes-input {
+    width: 100%;
+    min-height: 140px;
+    resize: vertical;
+    border: 2px solid var(--grid-line);
+    background: #faf7ef;
+    padding: 14px 16px;
+    font-family: inherit;
+    font-size: 14px;
+    line-height: 1.55;
+    color: var(--black);
+}
+
+.rough-notes-input:focus,
+.rough-task__input:focus {
+    outline: none;
+    border-color: var(--black);
+    background: #fff;
+}
+
+.rough-suggestions {
+    display: grid;
+    gap: 10px;
+}
+
+.rough-suggestion-card {
+    padding: 14px 16px;
+    background: #f4f8ff;
+    border: 1px solid #c5d8ff;
+}
+
+.rough-suggestion-card__title {
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    color: var(--blue);
+}
+
+.rough-buckets {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+}
+
+.rough-bucket {
+    padding: 16px;
+    background: #fcfcfc;
+    border: 1px solid var(--grid-line);
+    border-top: 4px solid var(--red);
+}
+
+.rough-bucket[data-bucket="WTW 211"] {
+    border-top-color: var(--orange);
+}
+
+.rough-bucket[data-bucket="WTW 218"] {
+    border-top-color: var(--yellow);
+}
+
+.rough-bucket[data-bucket="COS 210"] {
+    border-top-color: var(--blue);
+}
+
+.rough-bucket[data-bucket="COS 212"] {
+    border-top-color: var(--dark-blue);
+}
+
+.rough-bucket--neutral {
+    border-top-color: #888;
+}
+
+.rough-bucket__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 14px;
+}
+
+.rough-add-btn {
+    border: 1px solid var(--black);
+    background: #fff;
+    color: var(--black);
+    padding: 8px 10px;
+    font-family: inherit;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.rough-task-list {
+    display: grid;
+    gap: 10px;
+}
+
+.rough-task {
+    display: grid;
+    grid-template-columns: 22px minmax(0, 1fr) 30px;
+    gap: 10px;
+    align-items: center;
+}
+
+.rough-task__checkwrap {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rough-task__checkwrap input {
+    width: 18px;
+    height: 18px;
+    margin: 0;
+    accent-color: var(--red);
+}
+
+.rough-task__input {
+    width: 100%;
+    border: 1px solid var(--grid-line);
+    background: #fff;
+    padding: 10px 12px;
+    font-family: inherit;
+    font-size: 13px;
+    color: var(--black);
+}
+
+.rough-task.is-done .rough-task__input {
+    text-decoration: line-through;
+    color: #909090;
+    background: #f5f5f5;
+}
+
+.rough-task__delete {
+    border: none;
+    background: transparent;
+    color: #8b8b8b;
+    font-size: 22px;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.rough-task-empty {
+    padding: 12px 0 4px;
+    font-size: 12px;
+    color: var(--text-muted);
+    font-style: italic;
 }
 
 /* ── Planner Table ── */
@@ -330,8 +665,8 @@ h1 {
 
 /* ── Auth Bar ── */
 .auth-bar {
-    background: #111;
-    padding: 10px 20px;
+    background: linear-gradient(180deg, #090909 0%, #111 100%);
+    padding: max(10px, env(safe-area-inset-top)) 20px 10px;
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -339,6 +674,7 @@ h1 {
     font-size: 12px;
     color: #999;
     border-bottom: 1px solid #333;
+    box-shadow: inset 0 -1px 0 rgba(230, 57, 70, 0.18);
 }
 
 .auth-bar .user-info {
@@ -611,34 +947,141 @@ body::before {
     }
 
     .container {
-        padding: 15px 10px 100px;
+        padding: 16px 10px calc(120px + env(safe-area-inset-bottom));
     }
 
     h1 { font-size: 28px; margin-bottom: 10px; }
 
-    .date-controls { gap: 8px; flex-wrap: wrap; }
+    .planner-header {
+        margin-bottom: 18px;
+    }
+
+    .date-controls {
+        gap: 8px;
+        flex-wrap: wrap;
+        align-items: stretch;
+    }
 
     .date-display {
         font-size: 15px;
-        min-width: 200px;
+        min-width: 0;
+        flex: 1 1 100%;
+        order: -1;
+        padding: 10px 12px;
+        border: 2px solid var(--black);
+        background: #fff;
+        line-height: 1.25;
     }
 
-    .time-cell {
-        padding: 10px 8px;
-        font-size: 12px;
+    .date-btn,
+    .today-btn,
+    .clear-btn,
+    .auth-btn,
+    .rough-add-btn {
+        min-height: 44px;
     }
 
-    .activity-input {
-        padding: 10px 8px;
-        font-size: 13px;
+    .date-btn {
+        width: 44px;
+        height: 44px;
+        font-size: 20px;
     }
 
-    .planner-table thead th {
-        padding: 10px 8px;
+    .today-btn {
+        padding: 10px 14px;
         font-size: 10px;
     }
 
-    .planner-table thead th:first-child { width: 90px; }
+    .planner-mode-card,
+    .rough-plan__header,
+    .rough-plan__grid,
+    .rough-buckets {
+        grid-template-columns: 1fr;
+    }
+
+    .planner-mode-card,
+    .rough-plan__header {
+        display: grid;
+    }
+
+    .planner-mode-toggle {
+        width: 100%;
+        justify-content: stretch;
+    }
+
+    .planner-mode-btn {
+        flex: 1;
+        min-height: 44px;
+        padding: 12px 10px;
+    }
+
+    .rough-plan__summary {
+        text-align: left;
+        min-width: 0;
+        padding: 14px;
+    }
+
+    .rough-plan__summary-number {
+        font-size: 28px;
+    }
+
+    .rough-card,
+    .rough-bucket,
+    .free-periods,
+    .habit-tracker,
+    .sleep-logger {
+        padding: 14px;
+    }
+
+    .rough-bucket__top {
+        gap: 8px;
+    }
+
+    .rough-task {
+        grid-template-columns: 24px minmax(0, 1fr) 28px;
+    }
+
+    .rough-task__checkwrap input {
+        width: 20px;
+        height: 20px;
+    }
+
+    .rough-task__input,
+    .rough-notes-input {
+        font-size: 16px;
+    }
+
+    .rough-task__delete {
+        min-width: 28px;
+        min-height: 36px;
+    }
+
+    .planner-table {
+        border-width: 2px;
+    }
+
+    .time-cell {
+        padding: 10px 6px;
+        font-size: 11px;
+        width: 84px;
+    }
+
+    .activity-input {
+        padding: 11px 8px;
+        font-size: 14px;
+    }
+
+    .planner-table thead th {
+        padding: 10px 7px;
+        font-size: 9px;
+    }
+
+    .planner-table thead th:first-child { width: 84px; }
+
+    .check-cell input[type="checkbox"] {
+        width: 20px;
+        height: 20px;
+    }
 
     .planner-footer {
         flex-direction: column;
@@ -652,4 +1095,50 @@ body::before {
     }
 
     .auth-bar .user-name { display: none; }
+}
+
+@media (max-width: 420px) {
+    .container {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    h1 {
+        font-size: 24px;
+        letter-spacing: 1.3px;
+    }
+
+    .planner-mode-card {
+        padding: 14px;
+        gap: 12px;
+    }
+
+    .planner-mode-card__copy,
+    .rough-plan__copy,
+    .rough-card__hint,
+    .rough-suggestion-card p {
+        font-size: 12px;
+    }
+
+    .date-controls {
+        gap: 6px;
+    }
+
+    .today-btn {
+        padding: 10px 10px;
+        letter-spacing: 1px;
+    }
+
+    .time-cell {
+        width: 78px;
+        font-size: 10px;
+    }
+
+    .planner-table thead th:first-child {
+        width: 78px;
+    }
+
+    .class-badge {
+        display: none;
+    }
 }

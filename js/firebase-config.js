@@ -1,5 +1,5 @@
 /* ============================================================
-   OrbitDesk — Firebase Configuration
+   Orb — Firebase Configuration
    Shared Firebase init, auth, Firestore, helpers
    ============================================================ */
 
