@@ -5,6 +5,7 @@
 auth.onAuthStateChanged(user => {
     currentUser = user;
     renderWeeklyReview();
+    loadUserModules();
 });
 
 // ── Firestore doc path helpers ──

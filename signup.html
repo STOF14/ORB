@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up | Timetable App</title>
+  <link rel="stylesheet" href="css/shared.css">
+  <link rel="stylesheet" href="css/dashboard.css">
+  <link rel="stylesheet" href="css/assignments.css">
+  <link rel="icon" href="icons/icon-192.png">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#2d3a4a">
+  <style>
+    .login-container { max-width: 400px; margin: 8vh auto 0 auto; background: var(--card-bg, #fff); border-radius: 16px; box-shadow: 0 4px 24px rgba(0,0,0,0.08); padding: 2.5rem 2rem 2rem 2rem; display: flex; flex-direction: column; align-items: center; }
+    .login-logo { width: 64px; height: 64px; margin-bottom: 1.5rem; }
+    .login-title { font-size: 2rem; font-weight: 700; margin-bottom: 1.5rem; color: var(--primary, #2d3a4a); }
+    .login-form { width: 100%; display: flex; flex-direction: column; gap: 1.2rem; }
+    .login-form input { font-size: 1rem; padding: 0.75rem 1rem; border-radius: 8px; border: 1px solid #d0d4da; background: #f8fafc; outline: none; transition: border 0.2s; }
+    .login-form input:focus { border: 1.5px solid var(--primary, #2d3a4a); }
+    .login-form button { background: var(--primary, #2d3a4a); color: #fff; font-weight: 600; border: none; border-radius: 8px; padding: 0.9rem 0; font-size: 1.1rem; cursor: pointer; transition: background 0.2s; }
+    .login-form button:active { background: #1a2330; }
+    .login-links { margin-top: 1.2rem; display: flex; justify-content: flex-end; width: 100%; font-size: 0.97rem; }
+    .login-links a { color: var(--primary, #2d3a4a); text-decoration: none; font-weight: 500; transition: color 0.2s; }
+    .login-links a:hover { color: #1a2330; }
+    .login-error { color: #c0392b; background: #ffeaea; border-radius: 6px; padding: 0.7rem 1rem; margin-bottom: 0.5rem; width: 100%; text-align: center; font-size: 1rem; display: none; }
+    @media (max-width: 600px) { .login-container { margin: 0; min-height: 100vh; border-radius: 0; box-shadow: none; padding: 2.5rem 1rem 2rem 1rem; } }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <img src="icons/icon-192.png" alt="App Logo" class="login-logo">
+    <div class="login-title">Create your account</div>
+    <div id="signupError" class="login-error"></div>
+    <form id="signupForm" class="login-form" autocomplete="on">
+      <input type="email" id="signupEmail" placeholder="Email address" required autofocus>
+      <input type="password" id="signupPassword" placeholder="Password (min 6 chars)" required minlength="6">
+      <input type="password" id="signupPassword2" placeholder="Repeat password" required minlength="6">
+      <button type="submit">Sign Up</button>
+    </form>
+    <div class="login-links">
+      <a href="login.html">Already have an account?</a>
+    </div>
+  </div>
+  <script src="js/firebase-config.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-auth-compat.js"></script>
+  <script src="js/signup.js"></script>
+</body>
+</html>

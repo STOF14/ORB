@@ -1,0 +1,127 @@
+<!-- ============================================================
+     Orb — dashboard.html changes
+     ============================================================
+
+     STEP 1: Add this BEFORE the closing </body> tag in dashboard.html,
+     after your existing <script> tags:
+
+     <script src="js/dashboard-modules.js"></script>
+
+     ============================================================
+
+     STEP 2: Find the hardcoded module articles in dashboard.html.
+     They look like this (lines ~137–530):
+
+         <article class="module module-wtw-211" id="wtw-211">
+             ...
+         </article>
+         <article class="module module-wtw-218" id="wtw-218">
+             ...
+         </article>
+         ... (3 more)
+
+     Replace ALL FIVE of them with this single div:
+
+-->
+
+<div id="modulesContainer">
+    <!-- Modules load here dynamically from Firestore -->
+    <div class="modules-loading">
+        <span>Loading your modules…</span>
+    </div>
+</div>
+
+<!-- ============================================================
+
+     STEP 3: In dashboard.js, find your existing auth listener:
+
+         auth.onAuthStateChanged(user => {
+             currentUser = user;
+             renderWeeklyReview();
+         });
+
+     Add ONE line — loadUserModules() — so it becomes:
+
+         auth.onAuthStateChanged(user => {
+             currentUser = user;
+             renderWeeklyReview();
+             loadUserModules();    // ← add this
+         });
+
+     That's it. The rest is handled by dashboard-modules.js.
+
+     ============================================================
+
+     STEP 4 (optional — CSS): Add these two rules to dashboard.css
+     so the loading state and empty state look clean:
+
+-->
+
+<style>
+.modules-loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+    color: var(--text-muted, #8a8a8a);
+    font-family: 'DM Mono', monospace;
+    font-size: 13px;
+    letter-spacing: 0.1em;
+}
+
+.onboarding-prompt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 20px;
+    text-align: center;
+    gap: 16px;
+}
+
+.onboarding-prompt .onboarding-icon {
+    font-size: 48px;
+    line-height: 1;
+    color: var(--red, #E63222);
+}
+
+.onboarding-prompt h2 {
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+    font-size: 28px;
+    letter-spacing: -0.02em;
+}
+
+.onboarding-prompt p {
+    font-family: 'DM Mono', monospace;
+    font-size: 13px;
+    color: var(--text-muted, #8a8a8a);
+    line-height: 1.7;
+}
+
+.btn-primary {
+    background: var(--black, #0d0d0d);
+    color: var(--white, #f4f3ee);
+    border: none;
+    padding: 12px 28px;
+    font-family: 'DM Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-top: 8px;
+    transition: background 0.2s;
+}
+
+.btn-primary:hover {
+    background: var(--red, #E63222);
+}
+
+.no-modules {
+    padding: 40px 20px;
+    text-align: center;
+    color: var(--text-muted, #8a8a8a);
+    font-family: 'DM Mono', monospace;
+    font-size: 13px;
+}
+</style>

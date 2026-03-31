@@ -1,0 +1,238 @@
+/* ============================================================
+   Orb — One-time Firestore Seed Script
+   Run this ONCE from the browser console while logged in as yourself.
+   It writes your 5 modules to Firestore under your UID.
+   After running, delete this file or comment it out.
+   ============================================================ */
+
+async function seedMyModules() {
+    if (!currentUser) {
+        console.error('Not logged in. Sign in first, then run seedMyModules().');
+        return;
+    }
+
+    const modules = [
+  {
+    "code": "WTW 211",
+    "name": "Linear Algebra",
+    "credits": 12,
+    "creditsDisplay": "12 CREDITS",
+    "instructors": [
+      { "role": "Coordinator", "name": "Dr SY Madanha", "office": "Maths 2-22" },
+      { "role": "Lecturer",    "name": "Prof BG Rodrigues", "office": "Botany 2-10" },
+      { "role": "Contact",     "name": "wtw211@up.ac.za", "office": "" }
+    ],
+    "schedule": [
+      { "label": "Group 1",  "time": "Mon 12:30–13:20 • Fri 07:30–08:20", "span": false },
+      { "label": "Group 2",  "time": "Tue 13:30–14:20 • Thu 16:30–17:20", "span": false },
+      { "label": "Tutorials","time": "Wed 07:30–08:50 (Te Water) or 15:30–16:50 (Roos Hall)", "span": true }
+    ],
+    "assessmentSections": [
+      {
+        "heading": "Assessment",
+        "finalMarkNote": "Final Mark: 60% Semester + 40% Exam",
+        "rows": [
+          { "component": "Semester Test 1",        "details": "Tuesday, 18 March",             "weight": "35%" },
+          { "component": "Semester Test 2",        "details": "Friday, 8 May",                 "weight": "35%" },
+          { "component": "Assignments + Tutorials","details": "5 Assignments, 3 Tutorial Tests","weight": "30%" }
+        ]
+      }
+    ],
+    "infoSections": [
+      { "heading": "Topics", "type": "text", "content": "Inverse matrices • Spanning sets • Linear independence • Subspaces • Dimension and rank • Linear transformations • Eigenvalues and eigenvectors • Similarity and diagonalization" }
+    ],
+    "requirements": [
+      "Exam admission requires ≥40% semester mark",
+      "Pass requires ≥50% final and ≥40% exam",
+      "No calculators permitted",
+      "Tutorial attendance compulsory"
+    ],
+    "requirementsHeading": "Requirements"
+  },
+  {
+    "code": "WTW 218",
+    "name": "Calculus 218 — Multivariable Functions",
+    "credits": 12,
+    "creditsDisplay": "12 CREDITS",
+    "instructors": [
+      { "role": "Coordinator", "name": "Dr W van Amstel", "office": "Maths 2-16" },
+      { "role": "Lecturer",    "name": "Dr M Wortel",     "office": "Maths 2-19" },
+      { "role": "Contact",     "name": "wtw218@up.ac.za", "office": "" }
+    ],
+    "schedule": [],
+    "assessmentSections": [
+      {
+        "heading": "Assessment",
+        "finalMarkNote": "",
+        "rows": [
+          { "component": "Semester Test 1", "details": "Monday, 16 March",         "weight": "35%" },
+          { "component": "Semester Test 2", "details": "Saturday, 2 May",           "weight": "35%" },
+          { "component": "Tutorial Tests",  "details": "Best 3 of 4",               "weight": "25%" },
+          { "component": "Homework",        "details": "8 Assignments via ClickUP", "weight": "5%"  }
+        ]
+      }
+    ],
+    "infoSections": [
+      { "heading": "Topics", "type": "text", "content": "Functions of several variables • Limits and continuity • Partial derivatives • Differentiability • Chain rule • Implicit function theorem • Gradient • Optimization • Lagrange multipliers • Double and triple integrals • Polar, cylindrical, and spherical coordinates" }
+    ],
+    "requirements": [
+      "Tutorial registration deadline: Thursday, 12 February",
+      "HW1 due: Monday, 2 March (Chapter 2)",
+      "Exam: Saturday, 13 June 2026"
+    ],
+    "requirementsHeading": "Critical Dates"
+  },
+  {
+    "code": "PHY 255",
+    "name": "Physics — Thermodynamics, Modern Physics, Practicals",
+    "credits": 24,
+    "creditsDisplay": "24 CREDITS",
+    "instructors": [
+      { "role": "Coordinator",    "name": "Dr C Janse van Rensburg",          "office": "NS1 5-4 (cz@up.ac.za)" },
+      { "role": "Thermodynamics", "name": "Dr AGJ Machatine",                 "office": "9 Feb – 5 Mar" },
+      { "role": "Modern Physics", "name": "Dr P Vaandrager",                  "office": "NS1 5-20 (paul.vaandrager@up.ac.za) · 5 Mar – 26 May" },
+      { "role": "Practicals",     "name": "Prof CC Theron",                   "office": "NSc1 5-12" },
+      { "role": "Tutors",         "name": "Albert Roux & Barend Steenekamp",  "office": "NS1 5-42" },
+      { "role": "Consultation",   "name": "Tue 11:30–12:20 & Fri 09:30–10:20","office": "NS1 5-42 / 5-20" }
+    ],
+    "schedule": [
+      { "label": "Lectures",              "time": "Mon 08:30 • Tue 14:30 • Thu 13:30 • Fri 08:30", "span": false },
+      { "label": "Tutorials",             "time": "Tue 15:20–17:20 • Thu 12:30–13:20 (NS1 5-42)",  "span": false },
+      { "label": "Practicals (NS1 5-42)", "time": "Mon 13:30–16:20 — 3-hour sessions",              "span": true  }
+    ],
+    "assessmentSections": [
+      {
+        "heading": "Semester Mark Breakdown (50%)",
+        "finalMarkNote": "",
+        "rows": [
+          { "component": "Thermodynamics Continuous", "details": "9 Feb – 5 Mar",               "weight": "20.42%" },
+          { "component": "Modern Physics Continuous", "details": "5 Mar – 26 May",              "weight": "49.58%" },
+          { "component": "Modelling Practicals",      "details": "Leg 1 + 3 (P01–04, P10–12)", "weight": "15%"    },
+          { "component": "Error Analysis",            "details": "Leg 2 (P05–09)",              "weight": "15%"    }
+        ]
+      },
+      {
+        "heading": "Modern Physics CAM (49.58% of Semester Mark)",
+        "finalMarkNote": "40% CAM subminimum for exam entrance • 40% exam subminimum to pass PHY 255",
+        "rows": [
+          { "component": "Class Tests",     "details": "6 × 6% (no aegrotat — exemption with valid docs)", "weight": "36%" },
+          { "component": "Semester Test 1", "details": "Tuesday, 21 April 14:30–17:30",                    "weight": "28%" },
+          { "component": "Semester Test 2", "details": "Saturday, 16 May 15:00–18:00",                     "weight": "36%" }
+        ]
+      }
+    ],
+    "infoSections": [
+      { "heading": "Modern Physics Topics",  "type": "text", "content": "Special relativity • Time dilation & length contraction • Lorentz transformations • Relativistic energy & momentum • Blackbody radiation • Photoelectric effect • Compton scattering • Bohr model • de Broglie waves • Heisenberg uncertainty • Schrödinger equation • Quantum tunnelling • Atomic structure • Nuclear physics • Elementary particles" },
+      { "heading": "Textbooks",              "type": "text", "content": "Notes on clickUP (primary) • Serway, Moses & Moyer, Modern Physics 3rd ed. • Taylor, Zafiratos & Dubson, Modern Physics for Scientists and Engineers 2nd ed. • Beiser, Concepts of Modern Physics 5th ed." },
+      { "heading": "Practical Structure",    "type": "text", "content": "Two-phase submission: Phase 1 completed in-class (3-hour session), Phase 2 project work has 48-hour deadline • 12 practicals total: 7 Modelling (P01–04, P10–12) + 5 Error Analysis (P05–09)" }
+    ],
+    "requirements": [
+      "40% subminimum in all 4 assessment sections required",
+      "All 12 practicals must be completed — no late reports at semester end",
+      "PHY 255 Block: Thu 19 Mar, 15:00–18:00 (Thermo ST + Modern CT1 17:00–18:00)",
+      "Modern Physics ST1: Tue 21 Apr, 14:30–17:30",
+      "Modern Physics ST2: Sat 16 May, 15:00–18:00",
+      "Aegrotat Test: last week of lectures (covers ST1 + ST2 scope)",
+      "All tests closed book — formula sheet provided"
+    ],
+    "requirementsHeading": "Critical Requirements"
+  },
+  {
+    "code": "COS 212",
+    "name": "Data Structures and Algorithms",
+    "credits": null,
+    "creditsDisplay": "CONTINUOUS",
+    "instructors": [
+      { "role": "Coordinator", "name": "Mr Werner Hauger",  "office": "IT 4-20" },
+      { "role": "Lecturer",    "name": "Mr Sean Macmillan", "office": "" },
+      { "role": "Contact",     "name": "cos212queries@cs.up.ac.za", "office": "" }
+    ],
+    "schedule": [
+      { "label": "Lectures",                   "time": "Mon 16:30 • Wed 09:30 • Thu 16:30",              "span": false },
+      { "label": "Tutorial",                   "time": "Fri 09:30 (Louw Hall)",                          "span": false },
+      { "label": "Practicals (Informatorium)", "time": "Tue 10:30 • Wed 14:30 • Fri 11:30 (3 hrs each)", "span": true  }
+    ],
+    "assessmentSections": [
+      {
+        "heading": "Assessment",
+        "finalMarkNote": "",
+        "rows": [
+          { "component": "Practicals",         "details": "Best 4 of 5",  "weight": "20%" },
+          { "component": "Tutorials",          "details": "Best 9 of 11", "weight": "10%" },
+          { "component": "Homework",           "details": "3 Assignments","weight": "10%" },
+          { "component": "Exam Opportunities", "details": "3 × 20% each", "weight": "60%" }
+        ]
+      },
+      {
+        "heading": "Exam Opportunities (1.5 hours, open book)",
+        "finalMarkNote": "",
+        "infoGrid": [
+          { "label": "EO1", "value": "28 March, 10:00–11:30" },
+          { "label": "EO2", "value": "7 May, 10:00–11:30"    },
+          { "label": "EO3", "value": "8 June, 11:15–12:45"   }
+        ]
+      }
+    ],
+    "infoSections": [],
+    "requirements": [
+      "Pass: ≥50% final and ≥40% avg on exam opportunities",
+      "EO3 entrance requires ≥20% final mark",
+      "Practicals only in booked Informatorium labs",
+      "No Java built-in data structures unless permitted"
+    ],
+    "requirementsHeading": "Requirements"
+  },
+  {
+    "code": "COS 210",
+    "name": "Theoretical Computer Science",
+    "credits": 8,
+    "creditsDisplay": "8 CREDITS",
+    "instructors": [
+      { "role": "Coordinator", "name": "Prof Nils Timm",    "office": "IT 4-39" },
+      { "role": "Assistant",   "name": "Mr Steven Jordaan", "office": "Tutorials" }
+    ],
+    "schedule": [
+      { "label": "Lectures", "time": "Mon 11:30 • Wed 08:30 (IT 2-26)", "span": false },
+      { "label": "Tutorial", "time": "Fri 14:30–15:20 (IT 2-26)",       "span": false }
+    ],
+    "assessmentSections": [
+      {
+        "heading": "Semester Mark (60%)",
+        "finalMarkNote": "Exam (40%): Friday, 6 June, 07:30 (Informatorium)",
+        "rows": [
+          { "component": "Worksheets",      "details": "Best 9 of 10",        "weight": "10%" },
+          { "component": "Class Tests",     "details": "Best 2 of 3",         "weight": "20%" },
+          { "component": "Semester Test 1", "details": "Wednesday, 18 March", "weight": "35%" },
+          { "component": "Semester Test 2", "details": "Saturday, 16 May",    "weight": "35%" }
+        ]
+      }
+    ],
+    "infoSections": [
+      { "heading": "Topics", "type": "text", "content": "Finite automata • Regular languages • Context-free grammars • Pushdown automata • Turing machines • Church-Turing thesis • Decidability • P vs NP • NP-complete class" }
+    ],
+    "requirements": [
+      "Exam refusal if semester mark < 40%",
+      "Pass requires ≥40% exam and ≥50% final",
+      "Worksheets: Released Wed, due next Tue",
+      "All tests at Informatorium (on campus only)"
+    ],
+    "requirementsHeading": "Requirements"
+  }
+];
+
+    const batch = db.batch();
+    const userRef = db.collection('users').doc(currentUser.uid);
+
+    modules.forEach(mod => {
+        const slug = mod.code.toLowerCase().replace(/\s+/g, '-');
+        const docRef = userRef.collection('modules').doc(slug);
+        batch.set(docRef, mod);
+    });
+
+    await batch.commit();
+    console.log('✓ Seeded', modules.length, 'modules to Firestore for', currentUser.email);
+    console.log('Reload the dashboard to see your modules loading dynamically.');
+}
+
+// Run it:
+seedMyModules();

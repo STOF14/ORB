@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | Timetable App</title>
+  <link rel="stylesheet" href="css/shared.css">
+  <link rel="stylesheet" href="css/dashboard.css">
+  <link rel="stylesheet" href="css/assignments.css">
+  <link rel="icon" href="icons/icon-192.png">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#2d3a4a">
+  <style>
+    .login-container {
+      max-width: 400px;
+      margin: 8vh auto 0 auto;
+      background: var(--card-bg, #fff);
+      border-radius: 16px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+      padding: 2.5rem 2rem 2rem 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .login-logo {
+      width: 64px;
+      height: 64px;
+      margin-bottom: 1.5rem;
+    }
+    .login-title {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+      color: var(--primary, #2d3a4a);
+    }
+    .login-form {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+    }
+    .login-form input {
+      font-size: 1rem;
+      padding: 0.75rem 1rem;
+      border-radius: 8px;
+      border: 1px solid #d0d4da;
+      background: #f8fafc;
+      outline: none;
+      transition: border 0.2s;
+    }
+    .login-form input:focus {
+      border: 1.5px solid var(--primary, #2d3a4a);
+    }
+    .login-form button {
+      background: var(--primary, #2d3a4a);
+      color: #fff;
+      font-weight: 600;
+      border: none;
+      border-radius: 8px;
+      padding: 0.9rem 0;
+      font-size: 1.1rem;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .login-form button:active {
+      background: #1a2330;
+    }
+    .login-links {
+      margin-top: 1.2rem;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      font-size: 0.97rem;
+    }
+    .login-links a {
+      color: var(--primary, #2d3a4a);
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+    .login-links a:hover {
+      color: #1a2330;
+    }
+    .login-error {
+      color: #c0392b;
+      background: #ffeaea;
+      border-radius: 6px;
+      padding: 0.7rem 1rem;
+      margin-bottom: 0.5rem;
+      width: 100%;
+      text-align: center;
+      font-size: 1rem;
+      display: none;
+    }
+    @media (max-width: 600px) {
+      .login-container {
+        margin: 0;
+        min-height: 100vh;
+        border-radius: 0;
+        box-shadow: none;
+        padding: 2.5rem 1rem 2rem 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <div class="login-wordmark" style="margin-bottom:1.5rem;">
+      <div style="display:flex;flex-direction:column;align-items:flex-start;gap:0;">
+        <div style="height:2px;width:100%;background:#0d0d0d;margin-bottom:12px;"></div>
+        <div style="font-family:'Syne',sans-serif;font-weight:800;font-size:2.8rem;letter-spacing:-0.06em;color:#0d0d0d;line-height:1;">
+          OR<span style="color:#E63222;">B</span>
+        </div>
+        <div style="font-family:'Barlow Condensed',sans-serif;font-weight:300;font-size:11px;letter-spacing:0.4em;text-transform:uppercase;color:#8a8a8a;margin-top:8px;">
+          Academic Management System
+        </div>
+      </div>
+    </div>
+    <div id="loginError" class="login-error"></div>
+    <form id="loginForm" class="login-form" autocomplete="on">
+      <input type="email" id="email" placeholder="Email address" required autofocus>
+      <input type="password" id="password" placeholder="Password" required>
+      <button type="submit">Sign In</button>
+      <button type="button" id="googleLogin" style="background:#fff;color:#2d3a4a;border:1.5px solid #d0d4da;display:flex;align-items:center;justify-content:center;gap:0.7em;margin-top:0.5em;font-weight:500;">
+        <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" alt="Google" style="width:22px;height:22px;vertical-align:middle;"> Sign in with Google
+      </button>
+    </form>
+    <div class="login-links">
+      <a href="#" id="forgotPassword">Forgot password?</a>
+      <a href="#" id="signupLink">Create account</a>
+    </div>
+  </div>
+  <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore-compat.js"></script>
+  <script src="js/firebase-config.js"></script>
+  <script src="js/login.js"></script>
+</body>
+</html>
