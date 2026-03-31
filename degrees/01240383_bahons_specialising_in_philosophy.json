@@ -1,0 +1,216 @@
+{
+  "metadata": {
+    "year": 2026,
+    "degree_code": "01240383",
+    "degree_name": "BAHons specialising in Philosophy",
+    "faculty": "Humanities",
+    "faculty_code": "HUM",
+    "level": "Honours",
+    "source_url": "https://www.up.ac.za/yearbooks/2026/HUM-faculty/HO-programmes/view/01240383",
+    "duration_years": 1,
+    "total_credits": 120,
+    "nqf_level": 8,
+    "department": "Philosophy"
+  },
+  "curriculum": [
+    {
+      "module_code": "FIL 310",
+      "year_level": 3,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "FIL 320",
+      "year_level": 3,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "FIL 710",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "FIL 711",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "FIL 712",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "FIL 713",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "FIL 770",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    }
+  ],
+  "module_catalog": [
+    {
+      "module_code": "FIL 310",
+      "year_level": 3,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Self and subjectivity 310",
+      "credits": 30.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/HUM-faculty/UG-modules/view/FIL 310",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "In this module the focus is on understanding humankind, its knowledge and its relation to reality.This module traces the development of the conceptions of \u2018self\u2019 and \u2018subjectivity\u2019 in any given philosophical tradition in Africa, or more generally the Global South or the West, by focussing, amongst others, on issues such as the nature of the human mind, existentialism, the nature of personal identity, the relation between personal identity and morality, the nature of subjective experience and the issue of free will.",
+      "prerequisites": "At least three of FIL 110, 120, 210, 220",
+      "nqf_level": 7,
+      "presentation_period": "Semester 1",
+      "language": "Module is presented in English",
+      "contact_time": "2 lectures per week, 1 discussion class per week",
+      "service_modules": "Faculty of Engineering, Built Environment and Information Technology"
+    },
+    {
+      "module_code": "FIL 320",
+      "year_level": 3,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Philosophy in context 320",
+      "credits": 30.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/HUM-faculty/UG-modules/view/FIL 320",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "In this module contextually relevant aspects of human reality are reflected on through philosophy considered as practical activity. Students will engage issues of social, political, or economic relevance in contemporary (South) Africa, the Global South and beyond. A range of themes may be investigated, such as, structure and agency, social imaginaries, issues of social justice, gender and sexuality, the ethics of science and technology, the role of art and others. The focus is on key themes and debates of contemporary relevance and may include issues from any of the sub-disciplines of philosophy such as political philosophy, moral philosophy, epistemology, aesthetics, philosophy of mind and artificial intelligence, and philosophy of science.",
+      "prerequisites": "FIL 110, 120, 210, 220 and 310",
+      "nqf_level": 7,
+      "presentation_period": "Semester 2",
+      "language": "Module is presented in English",
+      "contact_time": "1 discussion class per week, 2 lectures per week",
+      "service_modules": "Faculty of Engineering, Built Environment and Information Technology"
+    },
+    {
+      "module_code": "FIL 710",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "History of philosophy 710",
+      "credits": 20.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/HUM-faculty/PG-modules/view/FIL 710",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "A study of selected texts and/or themes from the history of philosophy. The content of the module may vary from year to year and will be announced at the beginning of each year. Please see the department\u2019s website for more information.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Semester 1",
+      "language": "Module is presented in English",
+      "contact_time": "1 discussion class per week"
+    },
+    {
+      "module_code": "FIL 711",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Social philosophical debates 711",
+      "credits": 20.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/HUM-faculty/PG-modules/view/FIL 711",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "The focus is on key issues or themes in moral and political philosophy, including themes in the philosophy of economics. The content of the module may vary from year to year and will be announced at the beginning of each year. Please see the department\u2019s website for more information.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Semester 1",
+      "language": "Module is presented in English",
+      "contact_time": "1 discussion class per week"
+    },
+    {
+      "module_code": "FIL 712",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Contemporary philosophy 712",
+      "credits": 20.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/HUM-faculty/PG-modules/view/FIL 712",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Critical investigation of the work of key authors or themes in recent philosophy, with some likely emphasis on metaphysics, epistemology, the philosophy of science or a related field. The contents of the module may vary from year to year and will be announced at the beginning of each year. Please see the department\u2019s website for more information.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Semester 2",
+      "language": "Module is presented in English",
+      "contact_time": "1 discussion class per week"
+    },
+    {
+      "module_code": "FIL 713",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Current theme/debate 713",
+      "credits": 20.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/HUM-faculty/PG-modules/view/FIL 713",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Critical investigation of current debates in philosophy. The content of the module may vary from year to year and will be announced at the beginning of each year. Please see the department\u2019s website for more information.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Semester 2",
+      "language": "Module is presented in English",
+      "contact_time": "1 discussion class per week"
+    },
+    {
+      "module_code": "FIL 770",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Research report: Philosophy 770",
+      "credits": 40.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/HUM-faculty/PG-modules/view/FIL 770",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Research essay on an appropriate topic in Philosophy as approved by the head of department.",
+      "prerequisites": null,
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English"
+    }
+  ],
+  "streams_by_year": {
+    "year_1": [],
+    "year_2": [],
+    "year_3": [],
+    "year_4": [],
+    "final_year": []
+  },
+  "stream_checks": {
+    "year_1_stream_count": 0,
+    "year_2_stream_count": 0,
+    "year_3_stream_count": 0,
+    "year_4_stream_count": 0,
+    "final_year_stream_count": 0,
+    "missing_stream_module_codes_in_catalog_by_year": {
+      "year_1": [],
+      "year_2": [],
+      "year_3": [],
+      "year_4": [],
+      "final_year": []
+    }
+  }
+}

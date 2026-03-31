@@ -1,0 +1,189 @@
+{
+  "metadata": {
+    "year": 2026,
+    "degree_code": "01250216",
+    "degree_name": "MA in Clinical Psychology (Coursework)",
+    "faculty": "Humanities",
+    "faculty_code": "HUM",
+    "level": "Masters",
+    "source_url": "https://www.up.ac.za/yearbooks/2026/HUM-faculty/MA-programmes/view/01250216",
+    "duration_years": 2,
+    "total_credits": 180,
+    "nqf_level": 9,
+    "department": "Psychology"
+  },
+  "curriculum": [
+    {
+      "module_code": "KLS 803",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "KLS 871",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "KLS 872",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "KLS 874",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "KLS 895",
+      "year_level": 2,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "KLS 896",
+      "year_level": 2,
+      "is_compulsory": true,
+      "module_type": "core"
+    }
+  ],
+  "module_catalog": [
+    {
+      "module_code": "KLS 803",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Clinical assessment and patient management 803",
+      "credits": 20.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/HUM-faculty/PG-modules/view/KLS 803",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "*Closed \u2013 admission to this module is subject to departmental selection for the MA in Clinical Psychology. The aim of this module is to equip students with the advanced knowledge and applied skills to undertake a clinically comprehensive process of psychological assessment. The module focuses on: (1) the multi-dimensional and contextually appropriate clinico-diagnostic and psychometric assessment of patients across the lifespan; (2) the clinical management of patients within the context of multi-disciplinary health care; (3)the neuropsychological bases of clinical assessment and patientmanagement; and (4) psychological assessment for forensic and psycho-legal purposes. This is accomplished by means of professional training in the clinical theory and practice of psychodiagnostic assessment, multi-disciplinary patient management, psychometric theory and testing, clinical neuropsychology, as well as forensic and psycho-legal assessment.",
+      "prerequisites": "DS: MA Clinical Psychology Programme",
+      "nqf_level": 9,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "2 seminars per week"
+    },
+    {
+      "module_code": "KLS 871",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Clinical interventions and therapeutics 871",
+      "credits": 30.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/HUM-faculty/PG-modules/view/KLS 871",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "*Closed - admission to this module is subject to departmental selection for the MA in Clinical Psychology. The aim of this module is to equip students with the advanced theoretical knowledge and practical skills which underpin contemporary, evidence-based, and context-sensitive clinical psychological interventions with patients across the lifespan. The module focuses on the: (1) clinical conceptualisation; (2) therapeutic implementation; (3) critical evaluation; and (4) contextual application of different models of psychotherapy, which span promotive, preventative, curative and supportive strategies of clinical intervention. This is accomplished by means of professional training in individual, relational, familial, and group-based psychological interventions.",
+      "prerequisites": "DS: MA Clinical Psychology Programme",
+      "nqf_level": 9,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "2 seminars per week"
+    },
+    {
+      "module_code": "KLS 872",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Professional development and clinical practice 872",
+      "credits": 20.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/HUM-faculty/PG-modules/view/KLS 872",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "*Closed \u2013 admission to this module is subject to departmental selection for the MA in Clinical Psychology. The aim of this module is to equip students with the professional knowledge and skills required to competently practice clinical psychology. The module focuses on the acquisition and development of professional skills related to: (1) ethically and legally compliant practice; (2) clinical assessment; (3) diagnostic formulation; (4) treatment planning; (5) therapeutic interventions; (6) report writing; (7) personal-professional reflexivity; and (8) casepresentation. This is accomplished by means of the clinically supervised assessment, management, and treatment of patients across the lifespan, in different clinical settings.",
+      "prerequisites": "DS: MA Clinical Psychology Programme",
+      "nqf_level": 9,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "2 practicals per week, 1 clinical session per week, 1 panel-based clinical case oral exam per sem, 1 seminar per week"
+    },
+    {
+      "module_code": "KLS 874",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Clinical Psychopathology in context 874",
+      "credits": 20.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/HUM-faculty/PG-modules/view/KLS 874",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "*Closed \u2013 admission to this module is subject to departmental selection for the MA in Clinical Psychology. The aim of this module is to equip students with advanced theoretical and empirically informed knowledge of psychopathology and psychological distress across the lifespan. The module focuses on a comprehensive and complex knowledge of clinical psychopathology as well as a critical awareness of conceptual issues and current research related to: (1) international and indigenous nosologies and aetiologies of psychological disorders; (2) theories and evidence in child, adolescent, adult, and geriatric psychopathology; (3) the contextually peculiar prevalence, culturally diverse, and socio-structural manifestation of psychological distress; (4) public mental health; and (5) psychopharmacology. This is accomplished by means of professional training in the diagnosis and treatment of clinical psychopathology within diverse patient populations through individual, communal, as well as policy development and programme design interventions.",
+      "prerequisites": "DS: MA Clinical Psychology Programme",
+      "nqf_level": 9,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "2 seminars per week"
+    },
+    {
+      "module_code": "KLS 895",
+      "year_level": 2,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Mini-dissertation: Clinical Psychology 895",
+      "credits": 90.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/HUM-faculty/PG-modules/view/KLS 895",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "*Admission to this module is subject to departmental selection for the MA in Clinical Psychology. The aim of this module is to equip students to conduct independent and relevant research and to ensure that students are capable of critically evaluating research within the Humanities and Social Sciences, broadly, and Psychology, in particular. In this regard, students will be required to write an independent dissertation on a topic which is approved and supervised by the Department of Psychology. During this process students will be required to: (1) write and present an appropriate research proposal for ethical approval; (2) research and write a literature review relevant to their selected research topic; (3) collect data relevant to their research question; (4) analyse the data; and (5) formulate their research findings in a coherent and logical manner.",
+      "prerequisites": "DS: MA Clinical Psychology Programme",
+      "nqf_level": 9,
+      "presentation_period": "Year",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "KLS 896",
+      "year_level": 2,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Internship: Clinical Psychology 896",
+      "credits": 0.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/HUM-faculty/PG-modules/view/KLS 896",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "*Admission to this module is subject to departmental selection for the MA in Clinical Psychology. The aim of this module is to enable students to participate in a period ofprofessional internship in Clinical Psychology. In this regard, students willbe required to independently secure and successfully complete aprofessional internship in Clinical Psychology with an internship siteaccredited and recognised by the Health Professions Council of SouthAfrica for such an internship. To complete the internship students will berequired to meet all the standards of professional and clinical competenceoutlined by the Professional Board for Psychology and the HealthProfessions Council of South Africa, as applicable at the time of theinternship.",
+      "prerequisites": "DS: MA Clinical Psychology Programme",
+      "nqf_level": 9,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "Internship"
+    }
+  ],
+  "streams_by_year": {
+    "year_1": [],
+    "year_2": [],
+    "year_3": [],
+    "year_4": [],
+    "final_year": []
+  },
+  "stream_checks": {
+    "year_1_stream_count": 0,
+    "year_2_stream_count": 0,
+    "year_3_stream_count": 0,
+    "year_4_stream_count": 0,
+    "final_year_stream_count": 0,
+    "missing_stream_module_codes_in_catalog_by_year": {
+      "year_1": [],
+      "year_2": [],
+      "year_3": [],
+      "year_4": [],
+      "final_year": []
+    }
+  }
+}

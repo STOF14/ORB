@@ -1,0 +1,161 @@
+{
+  "metadata": {
+    "year": 2026,
+    "degree_code": "09240039",
+    "degree_name": "BEdHons in Curriculum and Instructional Design and Development option Teacher Education and Professional Development",
+    "faculty": "Education",
+    "faculty_code": "EDU",
+    "level": "Honours",
+    "source_url": "https://www.up.ac.za/yearbooks/2026/EDU-faculty/HO-programmes/view/09240039",
+    "duration_years": 1,
+    "total_credits": 128,
+    "nqf_level": 8,
+    "department": "Humanities Education"
+  },
+  "curriculum": [
+    {
+      "module_code": "EDI 720",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective"
+    },
+    {
+      "module_code": "GEE 730",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective"
+    },
+    {
+      "module_code": "HIE 730",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective"
+    },
+    {
+      "module_code": "JGL 730",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective"
+    },
+    {
+      "module_code": "JLO 710",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective"
+    }
+  ],
+  "module_catalog": [
+    {
+      "module_code": "EDI 720",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "Diversity in education 720",
+      "credits": 16.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EDU-faculty/PG-modules/view/EDI 720",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Visions of education for a multicultural society strive for equity of opportunity to learn, largely through the convergence of three practices: heterogeneous grouping, highly interactive instruction that appeals to a wide variety of learning styles, and inclusive curricula. A constructivist understanding of education, in which learners are active architects of meaning, permeates this collaborative vision of education. From a multicultural perspective, all students should receive an education that continuously affirms human diversity; one that embraces the history and culture of all racial groups and that teaches people to take charge of their own destinies.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Semester 1",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "GEE 730",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "Gender in education 730",
+      "credits": 16.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EDU-faculty/PG-modules/view/GEE 730",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "This module is informed by a commitment to gender equality and gender justice. It explores the concept of gender in various educational settings. It entails the intersecting relationships between gender, curriculum and identity by including related topics such as feminism and its origins, masculinity and femininity in the classroom and LGBTI issues in education among other. The module further explores topics such as gendered relationships between dominant and marginalised subjects, gender curriculum and young children as well as sexuality and the curriculum. It aims to develop a gendered awareness of how the curriculum operates in terms of curricula policies, classroom practices and materials and how this influences the construction of gendered identities.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Semester 1 or Semester 2",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "HIE 730",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "History education 730",
+      "credits": 16.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EDU-faculty/PG-modules/view/HIE 730",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "The module aims to examine and debate the nature of African History and how it manifests itself within African and non-African school contexts. Selected issues related to the teaching of African History such as Eurocentrism; African scepticism; Gender; Racism; African indigenous historical knowledge; postcolonialism; decolonisation and the nature of historical evidence on Africa will be engaged with. In the process methodologies, policies and theories to teach African History effectively will be explored.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Semester 1 or Semester 2",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "JGL 730",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "Multi-literacies 730",
+      "credits": 16.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EDU-faculty/PG-modules/view/JGL 730",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "This module introduces the concepts of multi-literacies and multimodality highlighting the importance of these when teaching learners from diverse linguistic and cultural communities. The topics dealt with in this module should not be seen in isolation but are interrelated and are applicable to teaching in the global classroom. Topics include, among others, language and literacies; language acquisition theories; current language policies; the multilingual classroom; English as a lingua franca ; World Englishes; globalisation and school and social literacies. The student is expected to design appropriate applications of various concepts in innovative classroom practices that reflect an advanced knowledge of key South African texts, policies and issues as addressed in this module.",
+      "prerequisites": "Any undergraduate equivalent language and/or literacy module",
+      "nqf_level": 8,
+      "presentation_period": "Semester 1 or Semester 2",
+      "language": "Module is presented in English",
+      "contact_time": "7 lectures"
+    },
+    {
+      "module_code": "JLO 710",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "Life orientation education 710",
+      "credits": 16.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EDU-faculty/PG-modules/view/JLO 710",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "The aim of this module is to develop skills, knowledge, values and attitudes that empower students to make informed decisions and to take appropriate actions in diverse educational contexts. Life orientation\u00a0focuses on the self in society. As an educator it is important to realise that\u00a0teaching and learning of\u00a0skills, values and attitudes that occurs in the classroom must be linked to learners' everyday lives. This module aims to equip students to achieve their optimal intellectual, personal and emotional potential.",
+      "prerequisites": null,
+      "nqf_level": 8,
+      "presentation_period": "Semester 1",
+      "language": "Module is presented in English"
+    }
+  ],
+  "streams_by_year": {
+    "year_1": [],
+    "year_2": [],
+    "year_3": [],
+    "year_4": [],
+    "final_year": []
+  },
+  "stream_checks": {
+    "year_1_stream_count": 0,
+    "year_2_stream_count": 0,
+    "year_3_stream_count": 0,
+    "year_4_stream_count": 0,
+    "final_year_stream_count": 0,
+    "missing_stream_module_codes_in_catalog_by_year": {
+      "year_1": [],
+      "year_2": [],
+      "year_3": [],
+      "year_4": [],
+      "final_year": []
+    }
+  }
+}

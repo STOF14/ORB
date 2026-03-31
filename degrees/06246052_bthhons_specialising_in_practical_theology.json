@@ -1,0 +1,240 @@
+{
+  "metadata": {
+    "year": 2026,
+    "degree_code": "06246052",
+    "degree_name": "BThHons specialising in Practical Theology",
+    "faculty": "Theology and Religion",
+    "faculty_code": "THEO",
+    "level": "Honours",
+    "source_url": "https://www.up.ac.za/yearbooks/2026/THEO-faculty/HO-programmes/view/06246052",
+    "duration_years": 1,
+    "total_credits": 120,
+    "nqf_level": 8,
+    "department": "Practical Theology and Mission Studies"
+  },
+  "curriculum": [
+    {
+      "module_code": "PRT 710",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "PRT 720",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "PRT 730",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "PRT 740",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "PRT 750",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "PRT 770",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "PRT 780",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "PRT 790",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    }
+  ],
+  "module_catalog": [
+    {
+      "module_code": "PRT 710",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Research report: Practical theology 710",
+      "credits": 30.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/THEO-faculty/PG-modules/view/PRT 710",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Research module. Fundamental component: orientation, research methodology. Essay.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "1 lecture per week"
+    },
+    {
+      "module_code": "PRT 720",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Practical theology 720",
+      "credits": 30.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/THEO-faculty/PG-modules/view/PRT 720",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Core module. Practical Theology \u2013 its history and current development.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "1 lecture per week"
+    },
+    {
+      "module_code": "PRT 730",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Practical theology 730",
+      "credits": 30.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/THEO-faculty/PG-modules/view/PRT 730",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Core module. The different components of Practical Theology \u2013 an overview.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "1 lecture per week"
+    },
+    {
+      "module_code": "PRT 740",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Practical theology 740",
+      "credits": 30.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/THEO-faculty/PG-modules/view/PRT 740",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Core module: specialisation. Epistemology and methodology.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "1 lecture per week"
+    },
+    {
+      "module_code": "PRT 750",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Research report: Community development: Action research 750",
+      "credits": 30.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/THEO-faculty/PG-modules/view/PRT 750",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Research methodologies; emancipatory community development; research project; mini-dissertation; reflective praxis IV.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": null,
+      "contact_time": "1 lecture per week"
+    },
+    {
+      "module_code": "PRT 770",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Community development: practices 770",
+      "credits": 30.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/THEO-faculty/PG-modules/view/PRT 770",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Approaches to community development; community development as social justice; community development as social enterprise; community development and social policy; the SDGs and community development; community development and sustainability; reflective praxis II.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "1 lecture per week"
+    },
+    {
+      "module_code": "PRT 780",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Community development: Introduction 780",
+      "credits": 30.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/THEO-faculty/PG-modules/view/PRT 780",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Theories of community development; community development as art, science and theology; South African communities today; reflective praxis I.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "1 lecture per week"
+    },
+    {
+      "module_code": "PRT 790",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Community development: Personal and organisational formation 790",
+      "credits": 30.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/THEO-faculty/PG-modules/view/PRT 790",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "The person of the community developer; organizational development and management; resource development and community transformation; spirituality and community development; reflective praxis III.",
+      "prerequisites": "No prerequisite.",
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "1 lecture per week"
+    }
+  ],
+  "streams_by_year": {
+    "year_1": [],
+    "year_2": [],
+    "year_3": [],
+    "year_4": [],
+    "final_year": []
+  },
+  "stream_checks": {
+    "year_1_stream_count": 0,
+    "year_2_stream_count": 0,
+    "year_3_stream_count": 0,
+    "year_4_stream_count": 0,
+    "final_year_stream_count": 0,
+    "missing_stream_module_codes_in_catalog_by_year": {
+      "year_1": [],
+      "year_2": [],
+      "year_3": [],
+      "year_4": [],
+      "final_year": []
+    }
+  }
+}

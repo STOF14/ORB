@@ -1,0 +1,140 @@
+{
+  "metadata": {
+    "year": 2026,
+    "degree_code": "12240232",
+    "degree_name": "BEngHons specialising in Control Engineering",
+    "faculty": "Engineering, Built Environment and IT",
+    "faculty_code": "EBIT",
+    "level": "Honours",
+    "source_url": "https://www.up.ac.za/yearbooks/2026/EBIT-faculty/HO-programmes/view/12240232",
+    "duration_years": 1,
+    "total_credits": 128,
+    "nqf_level": 8,
+    "department": "Chemical Engineering"
+  },
+  "curriculum": [
+    {
+      "module_code": "CBO 700",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "CBT 700",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "CML 732",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "CSP 732",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    }
+  ],
+  "module_catalog": [
+    {
+      "module_code": "CBO 700",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Multivariable control system design 700",
+      "credits": 32.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EBIT-faculty/PG-modules/view/CBO 700",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": null,
+      "prerequisites": "Admission to relevant programme.",
+      "nqf_level": 8,
+      "presentation_period": "Semester 2",
+      "language": "Module is presented in English",
+      "contact_time": "40 contact hours per semester"
+    },
+    {
+      "module_code": "CBT 700",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Multivariable control system theory 700",
+      "credits": 32.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EBIT-faculty/PG-modules/view/CBT 700",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": null,
+      "prerequisites": "Admission to relevant programme.",
+      "nqf_level": 8,
+      "presentation_period": "Semester 1",
+      "language": "Module is presented in English",
+      "contact_time": "48 contact hours per semester"
+    },
+    {
+      "module_code": "CML 732",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Model-based control laboratory 732",
+      "credits": 32.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EBIT-faculty/PG-modules/view/CML 732",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": null,
+      "prerequisites": "Admission to relevant programme.",
+      "nqf_level": 8,
+      "presentation_period": "Semester 1 or Semester 2",
+      "language": "Module is presented in English",
+      "contact_time": "12 contact hours per semester"
+    },
+    {
+      "module_code": "CSP 732",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Process control system research and development 732",
+      "credits": 32.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EBIT-faculty/PG-modules/view/CSP 732",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": null,
+      "prerequisites": "Admission to relevant programme.",
+      "nqf_level": 8,
+      "presentation_period": "Semester 1",
+      "language": "Module is presented in English",
+      "contact_time": "32 contact hours per semester"
+    }
+  ],
+  "streams_by_year": {
+    "year_1": [],
+    "year_2": [],
+    "year_3": [],
+    "year_4": [],
+    "final_year": []
+  },
+  "stream_checks": {
+    "year_1_stream_count": 0,
+    "year_2_stream_count": 0,
+    "year_3_stream_count": 0,
+    "year_4_stream_count": 0,
+    "final_year_stream_count": 0,
+    "missing_stream_module_codes_in_catalog_by_year": {
+      "year_1": [],
+      "year_2": [],
+      "year_3": [],
+      "year_4": [],
+      "final_year": []
+    }
+  }
+}

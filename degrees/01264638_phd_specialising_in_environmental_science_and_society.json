@@ -1,0 +1,38 @@
+{
+  "metadata": {
+    "year": 2026,
+    "degree_code": "01264638",
+    "degree_name": "PhD specialising in Environmental Science and Society",
+    "faculty": "Humanities",
+    "faculty_code": "HUM",
+    "level": "Doctorate",
+    "source_url": "https://www.up.ac.za/yearbooks/2026/HUM-faculty/DO-programmes/view/01264638",
+    "duration_years": 2,
+    "total_credits": 360,
+    "nqf_level": 10,
+    "department": "Humanities Dean's Office"
+  },
+  "curriculum": [],
+  "module_catalog": [],
+  "streams_by_year": {
+    "year_1": [],
+    "year_2": [],
+    "year_3": [],
+    "year_4": [],
+    "final_year": []
+  },
+  "stream_checks": {
+    "year_1_stream_count": 0,
+    "year_2_stream_count": 0,
+    "year_3_stream_count": 0,
+    "year_4_stream_count": 0,
+    "final_year_stream_count": 0,
+    "missing_stream_module_codes_in_catalog_by_year": {
+      "year_1": [],
+      "year_2": [],
+      "year_3": [],
+      "year_4": [],
+      "final_year": []
+    }
+  }
+}

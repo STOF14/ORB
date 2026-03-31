@@ -1,0 +1,170 @@
+{
+  "metadata": {
+    "year": 2026,
+    "degree_code": "07250069",
+    "degree_name": "MCom specialising in Advanced Data Analytics (Coursework)",
+    "faculty": "Economic and Management Sciences",
+    "faculty_code": "EMS",
+    "level": "Masters",
+    "source_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/MA-programmes/view/07250069",
+    "duration_years": 1,
+    "total_credits": 180,
+    "nqf_level": 9,
+    "department": "Economic and Management Sciences Dean's Office"
+  },
+  "curriculum": [
+    {
+      "module_code": "MVA 880",
+      "year_level": 8,
+      "is_compulsory": false,
+      "module_type": "elective"
+    },
+    {
+      "module_code": "STK 880",
+      "year_level": 8,
+      "is_compulsory": false,
+      "module_type": "elective"
+    },
+    {
+      "module_code": "TRA 880",
+      "year_level": 8,
+      "is_compulsory": false,
+      "module_type": "elective"
+    },
+    {
+      "module_code": "TRG 880",
+      "year_level": 8,
+      "is_compulsory": false,
+      "module_type": "elective"
+    },
+    {
+      "module_code": "WST 802",
+      "year_level": 8,
+      "is_compulsory": false,
+      "module_type": "elective"
+    }
+  ],
+  "module_catalog": [
+    {
+      "module_code": "MVA 880",
+      "year_level": 8,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "Statistical and machine learning 880",
+      "credits": 20.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/PG-modules/view/MVA 880",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Unsupervised learning: deterministic clustering, model-based clustering, latent class and behavioural analytics, dimension reduction. Natural language processing and topic modelling; recommender systems.\u00a0Organisation of data, data wrangling and data structure exploration.",
+      "prerequisites": "Admission to the relevant programme.",
+      "nqf_level": 9,
+      "presentation_period": "Semester 1 or Semester 2",
+      "language": "Module is presented in English",
+      "contact_time": "1 lecture per week",
+      "service_modules": "Faculty of Natural and Agricultural Sciences"
+    },
+    {
+      "module_code": "STK 880",
+      "year_level": 8,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "Capita selecta: Statistics 880",
+      "credits": 20.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/PG-modules/view/STK 880",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "This module covers the most recent literature that discusses current and contemporary research topics in advanced data analytics.",
+      "prerequisites": "Admission to the relevant programme.",
+      "nqf_level": 9,
+      "presentation_period": "Semester 1 or Semester 2",
+      "language": "Module is presented in English",
+      "contact_time": "1 lecture per week, 1 other contact session per week",
+      "service_modules": "Faculty of Natural and Agricultural Sciences"
+    },
+    {
+      "module_code": "TRA 880",
+      "year_level": 8,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "Analysis of time series 880",
+      "credits": 20.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/PG-modules/view/TRA 880",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Difference equations. Lag operators. Stationary ARMA processes. Maximum likelihood estimation. Spectral analysis.\u00a0 Vector processes. Non-stationary time series. Long-memory processes.",
+      "prerequisites": "WST 321 or STK 320",
+      "nqf_level": 9,
+      "presentation_period": "Semester 1 or Semester 2",
+      "language": "Module is presented in English",
+      "contact_time": "1 lecture per week",
+      "service_modules": "Faculty of Natural and Agricultural Sciences"
+    },
+    {
+      "module_code": "TRG 880",
+      "year_level": 8,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "Data science: analytics and visualisation 880",
+      "credits": 20.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/PG-modules/view/TRG 880",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Supervised learning and applications. Multicollinearity, ridge regression, the LASSO and the elastic net. Parametric and nonparametric logistic regression and nonlinear regression. Survival regression. Regression extensions: Random forests MARS and Conjoint analysis. Neural networks.",
+      "prerequisites": "Admission to relevant programme.",
+      "nqf_level": 9,
+      "presentation_period": "Semester 1 or Semester 2",
+      "language": "Module is presented in English",
+      "contact_time": "1 lecture per week",
+      "service_modules": "Faculty of Natural and Agricultural Sciences"
+    },
+    {
+      "module_code": "WST 802",
+      "year_level": 8,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "Cyber analytics 802",
+      "credits": 20.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/PG-modules/view/WST 802",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Reviewing, from a statistical perspective, the cyber-infrastructure ecosystem including distributed computing, multi node and distributed file eco systems, such as Amazon Web Services.\u00a0Structured and unstructured data sources, including social media data and image data. Setting up of large data structures for analysis. Algorithms and techniques for computing statistics and statistical models on distributed data. Software to be used include, Hadoop, Map reduce, SAS, SAS Data loader for Hadoop.",
+      "prerequisites": null,
+      "nqf_level": 9,
+      "presentation_period": "Semester 1 or Semester 2",
+      "language": "Module is presented in English",
+      "contact_time": "1 lecture per week",
+      "service_modules": "Faculty of Natural and Agricultural Sciences"
+    }
+  ],
+  "streams_by_year": {
+    "year_1": [],
+    "year_2": [],
+    "year_3": [],
+    "year_4": [],
+    "final_year": []
+  },
+  "stream_checks": {
+    "year_1_stream_count": 0,
+    "year_2_stream_count": 0,
+    "year_3_stream_count": 0,
+    "year_4_stream_count": 0,
+    "final_year_stream_count": 0,
+    "missing_stream_module_codes_in_catalog_by_year": {
+      "year_1": [],
+      "year_2": [],
+      "year_3": [],
+      "year_4": [],
+      "final_year": []
+    }
+  }
+}

@@ -1,0 +1,188 @@
+{
+  "metadata": {
+    "year": 2026,
+    "degree_code": "04253026",
+    "degree_name": "LLM specialising in Estate Law (Coursework)",
+    "faculty": "Law",
+    "faculty_code": "LAW",
+    "level": "Masters",
+    "source_url": "https://www.up.ac.za/yearbooks/2026/LAW-faculty/MA-programmes/view/04253026",
+    "duration_years": 1,
+    "total_credits": 200,
+    "nqf_level": 9,
+    "department": "Private Law"
+  },
+  "curriculum": [
+    {
+      "module_code": "RHP 801",
+      "year_level": 1,
+      "is_compulsory": false,
+      "module_type": "elective"
+    },
+    {
+      "module_code": "RHP 803",
+      "year_level": 1,
+      "is_compulsory": false,
+      "module_type": "elective"
+    },
+    {
+      "module_code": "AOE 801",
+      "year_level": 8,
+      "is_compulsory": false,
+      "module_type": "elective"
+    },
+    {
+      "module_code": "ASC 801",
+      "year_level": 8,
+      "is_compulsory": false,
+      "module_type": "elective"
+    },
+    {
+      "module_code": "AVT 802",
+      "year_level": 8,
+      "is_compulsory": false,
+      "module_type": "elective"
+    },
+    {
+      "module_code": "MND 800",
+      "year_level": 8,
+      "is_compulsory": false,
+      "module_type": "elective"
+    }
+  ],
+  "module_catalog": [
+    {
+      "module_code": "RHP 801",
+      "year_level": 1,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "Research methodology 801",
+      "credits": 5.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/LAW-faculty/PG-modules/view/RHP 801",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Planning and organising a research project Drafting a research proposal: Hypotheses and research question Theory in research and methodological approaches to legal research Language Citation and ethics of citation Drafting of chapters and presentation",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 9,
+      "presentation_period": "Semester 1 or Semester 2",
+      "language": "Module is presented in English",
+      "contact_time": "8 seminars or block sessions"
+    },
+    {
+      "module_code": "RHP 803",
+      "year_level": 1,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "Research proposal 803",
+      "credits": 5.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/LAW-faculty/PG-modules/view/RHP 803",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Development and presentation of a research\u00a0 proposal. (A research proposal must be submitted to the supervisor and accepted in the first semester of the second year of study\u00a0 before the student will be allowed to register for the mini-dissertation.)",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 9,
+      "presentation_period": "Year",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "AOE 801",
+      "year_level": 8,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "Administration of estates 801",
+      "credits": 30.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/LAW-faculty/PG-modules/view/AOE 801",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "The administration process and legislation Executor appointment and duties Methods of liquidation The liquidation and distribution account Estate duty Drafting of the executor\u2019s account",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 9,
+      "presentation_period": "Semester 1",
+      "language": "Module is presented in English",
+      "contact_time": "2 lectures per week"
+    },
+    {
+      "module_code": "ASC 801",
+      "year_level": 8,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "Aspects of the law of succession 801",
+      "credits": 30.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/LAW-faculty/PG-modules/view/ASC 801",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "General principles of intestate and testate succession Formalities and incorporation by reference Power of condonation Influence of the Constitution on succession Pactum successorium and massing Aspects of revocation and revival of wills Testamentary capacity and capacity to benefit",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 9,
+      "presentation_period": "Semester 1 or Semester 2",
+      "language": "Module is presented in English",
+      "contact_time": "2 lectures per week"
+    },
+    {
+      "module_code": "AVT 802",
+      "year_level": 8,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "Aspects of the law of trusts 802",
+      "credits": 30.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/LAW-faculty/PG-modules/view/AVT 802",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "The basic trust-idea and the importance thereof in the formation and administration of trusts The trust and other legal institutions; anomalies in the law of trusts Essentialia of the trust with the emphasis on problems identified in case law The juridical construction of the inter vivos trust \u2013 a critical evaluation The protection of trust beneficiaries with specific reference to the so-called \u201ccore elements\u201d of the trust Parties to the trust The trust and taxation The trust as instrument in estate planning",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 9,
+      "presentation_period": "Semester 1 or Semester 2",
+      "language": "Module is presented in English",
+      "contact_time": "2 lectures per week"
+    },
+    {
+      "module_code": "MND 800",
+      "year_level": 8,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "Mini-dissertation 800",
+      "credits": 100.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/LAW-faculty/PG-modules/view/MND 800",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "The student must submit a research proposal during his/her first year of registration for the LLM degree to the supervisor prior to commencing with the writing of the mini-dissertation. A mini-dissertation (MND 800) of 13 000 to 15 000 words inclusive of footnotes but excluding the list of contents and the bibliography, is required. The mini-dissertation must be submitted to the supervisor not later than August of the second year of registration for the LLM programme. The mini-dissertation must deal with the subject content of one of the modules or a combination of the modules registered for by the student for his/her LLM degree. Any request for an extension of the period for submission of the mini-dissertation may only be granted by the Dean on recommendation of the LLM Committee",
+      "prerequisites": "RHP 801 and RHP 803",
+      "nqf_level": 9,
+      "presentation_period": "Year",
+      "language": "Module is presented in English"
+    }
+  ],
+  "streams_by_year": {
+    "year_1": [],
+    "year_2": [],
+    "year_3": [],
+    "year_4": [],
+    "final_year": []
+  },
+  "stream_checks": {
+    "year_1_stream_count": 0,
+    "year_2_stream_count": 0,
+    "year_3_stream_count": 0,
+    "year_4_stream_count": 0,
+    "final_year_stream_count": 0,
+    "missing_stream_module_codes_in_catalog_by_year": {
+      "year_1": [],
+      "year_2": [],
+      "year_3": [],
+      "year_4": [],
+      "final_year": []
+    }
+  }
+}

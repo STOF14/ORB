@@ -1,0 +1,214 @@
+{
+  "metadata": {
+    "year": 2026,
+    "degree_code": "02240602",
+    "degree_name": "BScHons in Food Science",
+    "faculty": "Natural and Agricultural Sciences",
+    "faculty_code": "SCI",
+    "level": "Honours",
+    "source_url": "https://www.up.ac.za/yearbooks/2026/SCI-faculty/HO-programmes/view/02240602",
+    "duration_years": 1,
+    "total_credits": 135,
+    "nqf_level": 8,
+    "department": "Consumer and Food Sciences"
+  },
+  "curriculum": [
+    {
+      "module_code": "FST 700",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective"
+    },
+    {
+      "module_code": "FST 701",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective"
+    },
+    {
+      "module_code": "FST 702",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective"
+    },
+    {
+      "module_code": "FST 712",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective"
+    },
+    {
+      "module_code": "FST 713",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective"
+    },
+    {
+      "module_code": "FST 720",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective"
+    },
+    {
+      "module_code": "FST 763",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective"
+    }
+  ],
+  "module_catalog": [
+    {
+      "module_code": "FST 700",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "Research methodology and seminars 700",
+      "credits": 15.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/SCI-faculty/PG-modules/view/FST 700",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Lectures and assignments: Research methodology. Literature study and seminar presentations on topics in Food Science and/or Technology. The candidate must also pass an oral examination at the end of the module.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "1 workshop of 5 days in semester 1, 1 day seminar in semester 2"
+    },
+    {
+      "module_code": "FST 701",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "Animal food technologies 701",
+      "credits": 15.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/SCI-faculty/PG-modules/view/FST 701",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Dairy technology: The technology of fluid, concentrated, dried, frozen and fermented dairy products and starter cultures. Requirements for milk supply and other ingredients. Principles for the manufacturing of products in this category. Possible defects, causes and prevention. Practical work: Preparation of condensed milk, custard, ready-to-eat milk-based desserts, flavoured milk beverages, dairy-fruit juice mixtures; ice cream and other frozen desserts; yoghurt and cultured milk products; cheeses. Evaluation and analysis of the products. Effect of processing on the nutritional value of dairy products. Factory visits. Meat, poultry, fish and egg technology: Meat, poultry, fish and egg processing and equipment. Meat emulsion, curing, dehydration and fermentation technology. Preservation and storage. Packaging. Legislation. Quality control and hygiene. Effect of processing on the nutritional value of meat products. Practical work: Manufacturing of dried, cured, fermented and emulsion type products. Visits to processing factories.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "9 practicals, 30 discussion classes"
+    },
+    {
+      "module_code": "FST 702",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "Advanced plant food science and technologies 702",
+      "credits": 15.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/SCI-faculty/PG-modules/view/FST 702",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Plant food functionality:\u00a0 Starch, non-starch polysaccharides, protein.\u00a0 Advanced rheology and texture.\u00a0 Malting and brewing.\u00a0 Ready-to-eat (RTE) technologies and their impact on functional and nutritional quality.\u00a0 Plant oil processing.\u00a0 Minimal processing of fruits and vegetables.\u00a0 Practical work:\u00a0 Pasting properties of starch; Dough rheology; Isolation of legume and cereal proteins;\u00a0 SDS-PAGE electrophoreses of legume and cereal proteins; Malting and mashing of sorghum and barley male; Extraction of essential oils; Extraction and identification of phenolic compounds; Minimal processing of fruit and vegetables.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "5 practicals S1, 8 discussion classes in semester 1, 3 practicals S2, 5 discussion classes in semester 2"
+    },
+    {
+      "module_code": "FST 712",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "Sensory evaluation 712",
+      "credits": 10.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/SCI-faculty/PG-modules/view/FST 712",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Lectures: principles and applications of sensory evaluation. Types of panels, tests and test conditions and their functions. Selection and training of panelists for descriptive sensory evaluation. Instrumental sensory quality measurements. Statistical analysis and interpretation of data. Practicals: Practical aspects and execution of sensory evaluation techniques, analysis and interpretation of data.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Semester 1",
+      "language": "Module is presented in English",
+      "contact_time": "12 discussion classes, 6 practicals"
+    },
+    {
+      "module_code": "FST 713",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "Production development and quality management 713",
+      "credits": 25.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/SCI-faculty/PG-modules/view/FST 713",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Lectures: principles involved and steps that are followed to develop new food products that are safe, tasty, nutritious and cost effective. Application of the theory of food product development. Quality management systems with specific reference to Good Manufacturing Practices, HACCP and ISO 9000. National and international standards, Codex Alimentarius, FDA. Application of food legislation. Food packaging. Practicals: A product development project will be planned, conducted and presented. Application and implementation of HACCP.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Semester 1",
+      "language": "Module is presented in English",
+      "contact_time": "6 practicals per semester, 15 discussion classes"
+    },
+    {
+      "module_code": "FST 720",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "Advanced food science 720",
+      "credits": 15.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/SCI-faculty/PG-modules/view/FST 720",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Discussion classes in advanced level food chemistry, food microbiology, food engineering, food processing and nutrition. Problem solving and literature discussion.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "12 discussion classes"
+    },
+    {
+      "module_code": "FST 763",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "Research project 763",
+      "credits": 40.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/SCI-faculty/PG-modules/view/FST 763",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "A short research project on an approved topic in food science and/or technology is planned, executed and presented in the form of a written report.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English"
+    }
+  ],
+  "streams_by_year": {
+    "year_1": [],
+    "year_2": [],
+    "year_3": [],
+    "year_4": [],
+    "final_year": []
+  },
+  "stream_checks": {
+    "year_1_stream_count": 0,
+    "year_2_stream_count": 0,
+    "year_3_stream_count": 0,
+    "year_4_stream_count": 0,
+    "final_year_stream_count": 0,
+    "missing_stream_module_codes_in_catalog_by_year": {
+      "year_1": [],
+      "year_2": [],
+      "year_3": [],
+      "year_4": [],
+      "final_year": []
+    }
+  }
+}

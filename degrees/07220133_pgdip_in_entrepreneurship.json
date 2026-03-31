@@ -1,0 +1,160 @@
+{
+  "metadata": {
+    "year": 2026,
+    "degree_code": "07220133",
+    "degree_name": "PGDip in Entrepreneurship",
+    "faculty": "Economic and Management Sciences",
+    "faculty_code": "EMS",
+    "level": "Postgraduate Diploma/Certificate",
+    "source_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/PC-programmes/view/07220133",
+    "duration_years": 1,
+    "total_credits": 120,
+    "nqf_level": 8,
+    "department": "Business Management"
+  },
+  "curriculum": [
+    {
+      "module_code": "ENP 700",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "ENP 701",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "ENP 702",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "ENP 703",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "NME 700",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    }
+  ],
+  "module_catalog": [
+    {
+      "module_code": "ENP 700",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Business plan 700",
+      "credits": 30.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/PG-modules/view/ENP 700",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Idea Generation and Business Start-up The Business Plan \u2013 preparation, evaluation The financial aspects as part of the business plan Break-even analysis Financial statements Budget What potential financiers look for in business plan Business partners Venture capitalists Commercial banks Designing a business model and case towards drafting a complete business plan for both the start-up and financing requirements in Africa.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Semester 2",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "ENP 701",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Small business management 701",
+      "credits": 30.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/PG-modules/view/ENP 701",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Understanding and applying the principles of the functional areas of business management within the context of the small business venture. A contextualised focus will be placed on supply chain, marketing human resources and financial management.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Semester 2",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "ENP 702",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Introduction to entrepreneurship 702",
+      "credits": 30.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/PG-modules/view/ENP 702",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "The entrepreneurship ecosystem in Africa and its socio-economic impact. Identifying the elements of the entrepreneurial process and determine its interrelatedness. Apply the new business idea in the context of the entire process.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Semester 1",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "ENP 703",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Creativity and innovation 703",
+      "credits": 30.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/PG-modules/view/ENP 703",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Understand and implement the theory of creativity and innovation. Ideation and design thinking towards refining a business idea for the African market environment. Engage in understating the process of innovation and innovation management.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Semester 1",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "NME 700",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Yearbooks Home",
+      "credits": null,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/PG-modules/view/NME%20700",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 2,
+      "content": null,
+      "prerequisites": null,
+      "nqf_level": null,
+      "presentation_period": null,
+      "language": null
+    }
+  ],
+  "streams_by_year": {
+    "year_1": [],
+    "year_2": [],
+    "year_3": [],
+    "year_4": [],
+    "final_year": []
+  },
+  "stream_checks": {
+    "year_1_stream_count": 0,
+    "year_2_stream_count": 0,
+    "year_3_stream_count": 0,
+    "year_4_stream_count": 0,
+    "final_year_stream_count": 0,
+    "missing_stream_module_codes_in_catalog_by_year": {
+      "year_1": [],
+      "year_2": [],
+      "year_3": [],
+      "year_4": [],
+      "final_year": []
+    }
+  }
+}

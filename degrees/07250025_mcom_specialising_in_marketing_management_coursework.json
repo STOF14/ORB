@@ -1,0 +1,139 @@
+{
+  "metadata": {
+    "year": 2026,
+    "degree_code": "07250025",
+    "degree_name": "MCom specialising in Marketing Management (Coursework)",
+    "faculty": "Economic and Management Sciences",
+    "faculty_code": "EMS",
+    "level": "Masters",
+    "source_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/MA-programmes/view/07250025",
+    "duration_years": 1,
+    "total_credits": 180,
+    "nqf_level": 9,
+    "department": "Marketing Management"
+  },
+  "curriculum": [
+    {
+      "module_code": "BEM 801",
+      "year_level": 8,
+      "is_compulsory": false,
+      "module_type": "elective"
+    },
+    {
+      "module_code": "BEM 811",
+      "year_level": 8,
+      "is_compulsory": false,
+      "module_type": "elective"
+    },
+    {
+      "module_code": "BEM 822",
+      "year_level": 8,
+      "is_compulsory": false,
+      "module_type": "elective"
+    },
+    {
+      "module_code": "BEM 882",
+      "year_level": 8,
+      "is_compulsory": false,
+      "module_type": "elective"
+    }
+  ],
+  "module_catalog": [
+    {
+      "module_code": "BEM 801",
+      "year_level": 8,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "Research process 801",
+      "credits": 40.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/PG-modules/view/BEM 801",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "This module focuses on the fundamental research processes, principles and techniques necessary to conduct and interpret empirical research in marketing. This includes the conceptualisation and scientific thinking process; the research process; research planning and design; data gathering and analysis; and reporting of research results.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 9,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "11 lectures"
+    },
+    {
+      "module_code": "BEM 811",
+      "year_level": 8,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "Research article 811",
+      "credits": 100.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/PG-modules/view/BEM 811",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "This module equips the student to conduct independent research by executing\u00a0 a research project on a relevant topic, of which the findings are reported in an academic article.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 9,
+      "presentation_period": "Year",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "BEM 822",
+      "year_level": 8,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "Strategic issues in marketing 822",
+      "credits": 20.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/PG-modules/view/BEM 822",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "This module aims to apply theoretical paradigms and perspectives in a strategic marketing context. The module will develop students' holistic, creative and abstract thoughts with the aim to integrate their previous knowledge.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 9,
+      "presentation_period": "Semester 1",
+      "language": "Module is presented in English",
+      "contact_time": "5 lectures"
+    },
+    {
+      "module_code": "BEM 882",
+      "year_level": 8,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "Marketing management 882",
+      "credits": 20.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/PG-modules/view/BEM 882",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "This module introduces various marketing themes, which will be debated to provide new insights, scientific reasoning and practical application. The aim is to stimulate critical reading, thinking and writing; integrate current knowledge and work experience in a holistic and pragmatic manner; and formulate thoughts scientifically and logically.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 9,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "5 lectures"
+    }
+  ],
+  "streams_by_year": {
+    "year_1": [],
+    "year_2": [],
+    "year_3": [],
+    "year_4": [],
+    "final_year": []
+  },
+  "stream_checks": {
+    "year_1_stream_count": 0,
+    "year_2_stream_count": 0,
+    "year_3_stream_count": 0,
+    "year_4_stream_count": 0,
+    "final_year_stream_count": 0,
+    "missing_stream_module_codes_in_catalog_by_year": {
+      "year_1": [],
+      "year_2": [],
+      "year_3": [],
+      "year_4": [],
+      "final_year": []
+    }
+  }
+}

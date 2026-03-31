@@ -1,0 +1,218 @@
+{
+  "metadata": {
+    "year": 2026,
+    "degree_code": "07240052",
+    "degree_name": "BComHons specialising in Economics",
+    "faculty": "Economic and Management Sciences",
+    "faculty_code": "EMS",
+    "level": "Honours",
+    "source_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/HO-programmes/view/07240052",
+    "duration_years": 1,
+    "total_credits": 120,
+    "nqf_level": 8,
+    "department": "Economics"
+  },
+  "curriculum": [
+    {
+      "module_code": "EKN 795",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "EKT 713",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "EKT 723",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "MEK 780",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "MEK 781",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "MIE 780",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "MIE 781",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    }
+  ],
+  "module_catalog": [
+    {
+      "module_code": "EKN 795",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Research essay 795",
+      "credits": 30.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/PG-modules/view/EKN 795",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "This module will present the underlying principles of research methodology, as well as the principles of writing, referencing, and research ethics. The module will be evaluated based on an economics research proposal, a research ethics submission and a research paper focussing on the analysis of economic issues or policies.",
+      "prerequisites": "Only for Honours Economics students",
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "1 lecture per week"
+    },
+    {
+      "module_code": "EKT 713",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Econometrics 713",
+      "credits": 15.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/PG-modules/view/EKT 713",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "An introductory yet comprehensive course in econometrics, encompassing an in-depth examination of elementary statistics and regression analysis. This includes the fundamentals of simple and multiple regression analyses, as well as estimation, inference and hypothesis testing. Considerable attention is devoted to practical applications on current economic issues and examples drawn from the applied economic literature.",
+      "prerequisites": "Only for BComHons: Agricultural Economics, Econometrics or Economics students",
+      "nqf_level": 8,
+      "presentation_period": "Semester 1",
+      "language": "Module is presented in English",
+      "contact_time": "2 lectures per week",
+      "service_modules": "Faculty of Humanities"
+    },
+    {
+      "module_code": "EKT 723",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Econometrics 723",
+      "credits": 15.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/PG-modules/view/EKT 723",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "An advanced course in econometrics that goes beyond elementary statistics and regression analysis. This includes in-depth analyses of the theory and application of stationarity, unit roots and co-integration in single equations. In addition to this, the concepts of qualitative analysis, cross-sectional modelling and simultaneous-equation modelling are dealt with.",
+      "prerequisites": "Only for Hons Econometrics or Economics students: EKT 713",
+      "nqf_level": 8,
+      "presentation_period": "Semester 2",
+      "language": "Module is presented in English",
+      "contact_time": "2 lectures per week"
+    },
+    {
+      "module_code": "MEK 780",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Macroeconomics 780",
+      "credits": 15.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/PG-modules/view/MEK 780",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "This module will cover the core theoretical concepts of macroeconomics focussing specifically on labour and goods markets as well as intertemporal issues, such as capital markets. Topics will include economic growth, exogenous and endogenous, business cycles, monetary economics, stabilization policies and structural policies.",
+      "prerequisites": "Admission into relevant programme",
+      "nqf_level": 8,
+      "presentation_period": "Semester 1",
+      "language": "Module is presented in English",
+      "contact_time": "1 seminar per week, 2 lectures per week",
+      "service_modules": "Faculty of Humanities"
+    },
+    {
+      "module_code": "MEK 781",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Macroeconomics 781",
+      "credits": 15.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/PG-modules/view/MEK 781",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "As a follow-on to the first semester of macroeconomics MEK 780, this module will cover more advanced topics in macroeconomics, especially international finance and political economy. The role of money will also receive attention.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Semester 1 or Semester 2",
+      "language": "Module is presented in English",
+      "contact_time": "1 lecture per week"
+    },
+    {
+      "module_code": "MIE 780",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Microeconomics 780",
+      "credits": 15.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/PG-modules/view/MIE 780",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "The core concepts of microeconomic theory will be the focus of the module, including: demand and supply, consumer theory, firm theory, markets and market structure, general equilibrium, information economics and behavioural economics. Applications of this theory will feature prominently.",
+      "prerequisites": "Admission into relevant programme",
+      "nqf_level": 8,
+      "presentation_period": "Semester 1",
+      "language": "Module is presented in English",
+      "contact_time": "4 lectures per week",
+      "service_modules": "Faculty of Humanities"
+    },
+    {
+      "module_code": "MIE 781",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Microeconomics 781",
+      "credits": 15.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/PG-modules/view/MIE 781",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "As a follow-on to the first semester of microeconomics MIE 780, this module will enable the students to analyse relevant real-world situations by means of formal models which have become standard in Economic Theory. To this end, newsworthy economic events, e.g., bail-out decisions, speculative attacks etc., will be discussed. The theoretical focus of this module will be on concepts from general equilibrium theory, game theory, and information economics.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Semester 2",
+      "language": "Module is presented in English",
+      "contact_time": "1 lecture per week"
+    }
+  ],
+  "streams_by_year": {
+    "year_1": [],
+    "year_2": [],
+    "year_3": [],
+    "year_4": [],
+    "final_year": []
+  },
+  "stream_checks": {
+    "year_1_stream_count": 0,
+    "year_2_stream_count": 0,
+    "year_3_stream_count": 0,
+    "year_4_stream_count": 0,
+    "final_year_stream_count": 0,
+    "missing_stream_module_codes_in_catalog_by_year": {
+      "year_1": [],
+      "year_2": [],
+      "year_3": [],
+      "year_4": [],
+      "final_year": []
+    }
+  }
+}

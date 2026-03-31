@@ -1,0 +1,112 @@
+{
+  "metadata": {
+    "year": 2026,
+    "degree_code": "01250108",
+    "degree_name": "MA specialising in Fine Arts",
+    "faculty": "Humanities",
+    "faculty_code": "HUM",
+    "level": "Masters",
+    "source_url": "https://www.up.ac.za/yearbooks/2026/HUM-faculty/MA-programmes/view/01250108",
+    "duration_years": 1,
+    "total_credits": 180,
+    "nqf_level": 9,
+    "department": "School of the Arts"
+  },
+  "curriculum": [
+    {
+      "module_code": "BKS 858",
+      "year_level": 8,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "BKS 859",
+      "year_level": 8,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "BKS 860",
+      "year_level": 8,
+      "is_compulsory": true,
+      "module_type": "core"
+    }
+  ],
+  "module_catalog": [
+    {
+      "module_code": "BKS 858",
+      "year_level": 8,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Dissertation: Advanced research in Fine Arts  858",
+      "credits": 180.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/HUM-faculty/PG-modules/view/BKS 858",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "A dissertation on an approved topic completed under supervision of a supervisor.",
+      "prerequisites": "A four-year degree in Fine Arts or equivalent qualification (with approval by Senate) with an average of at least 65%.",
+      "nqf_level": 9,
+      "presentation_period": "Year",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "BKS 859",
+      "year_level": 8,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Dissertation and creative production 859",
+      "credits": 180.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/HUM-faculty/PG-modules/view/BKS 859",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "A solo exhibition of creative work investigating a relevant research theme/idea that has been meaningfully and appropriately delimited within contemporary discourses, accompanied by a dissertation of limited scope serving as a framing document and a catalogue for the exhibition. The creative work and the dissertation must be conceptually linked and integrated.",
+      "prerequisites": "A four-year degree in Fine Arts or equivalent qualification (with approval by Senate) with an average of at least 65%",
+      "nqf_level": 9,
+      "presentation_period": "Year",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "BKS 860",
+      "year_level": 8,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Dissertation and curatorial practice 860",
+      "credits": 180.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/HUM-faculty/PG-modules/view/BKS 860",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "A curated exhibition investigating a relevant research theme/idea that has been meaningfully and appropriately delimited to comply with contemporary requirements; a dissertation of limited scope which will serve as a framing document, and a catalogue for the exhibition. The area and topic for research are those that were delineated in the research proposal. The curated exhibition and the dissertation must be conceptually linked and integrated.",
+      "prerequisites": "A four-year degree in Fine Arts or equivalent qualification (with approval by Senate) with an average of at least 65%.",
+      "nqf_level": 9,
+      "presentation_period": "Year",
+      "language": "Module is presented in English"
+    }
+  ],
+  "streams_by_year": {
+    "year_1": [],
+    "year_2": [],
+    "year_3": [],
+    "year_4": [],
+    "final_year": []
+  },
+  "stream_checks": {
+    "year_1_stream_count": 0,
+    "year_2_stream_count": 0,
+    "year_3_stream_count": 0,
+    "year_4_stream_count": 0,
+    "final_year_stream_count": 0,
+    "missing_stream_module_codes_in_catalog_by_year": {
+      "year_1": [],
+      "year_2": [],
+      "year_3": [],
+      "year_4": [],
+      "final_year": []
+    }
+  }
+}

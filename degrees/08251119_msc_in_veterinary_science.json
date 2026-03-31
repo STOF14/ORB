@@ -1,0 +1,184 @@
+{
+  "metadata": {
+    "year": 2026,
+    "degree_code": "08251119",
+    "degree_name": "MSc in Veterinary Science",
+    "faculty": "Veterinary Science",
+    "faculty_code": "VET",
+    "level": "Masters",
+    "source_url": "https://www.up.ac.za/yearbooks/2026/VET-faculty/MA-programmes/view/08251119",
+    "duration_years": 1,
+    "total_credits": 180,
+    "nqf_level": 9,
+    "department": "Anatomy and Physiology Companion Animal Clinical Studies"
+  },
+  "curriculum": [
+    {
+      "module_code": "VRM 813",
+      "year_level": 8,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "VWE 801",
+      "year_level": 8,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "VWE 802",
+      "year_level": 8,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "VWE 803",
+      "year_level": 8,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "VWE 804",
+      "year_level": 8,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "VWE 805",
+      "year_level": 8,
+      "is_compulsory": true,
+      "module_type": "core"
+    }
+  ],
+  "module_catalog": [
+    {
+      "module_code": "VRM 813",
+      "year_level": 8,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Research methodology 813",
+      "credits": 0.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/VET-faculty/PG-modules/view/VRM 813",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "A web-based introductory module in research methodology that includes planning and undertaking a research project or clinical trial, collecting and analysing data, scientific writing, and enabling preparation and presenting of a research protocol.",
+      "prerequisites": null,
+      "nqf_level": 9,
+      "presentation_period": "Semester 1 and Semester 2",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "VWE 801",
+      "year_level": 8,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Dissertation: Veterinary tropical diseases 801",
+      "credits": 180.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/VET-faculty/PG-modules/view/VWE 801",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": null,
+      "prerequisites": "VRM 813",
+      "nqf_level": 9,
+      "presentation_period": "Year",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "VWE 802",
+      "year_level": 8,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Dissertation: Anatomy and physiology 802",
+      "credits": 180.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/VET-faculty/PG-modules/view/VWE 802",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": null,
+      "prerequisites": "VRM 813",
+      "nqf_level": 9,
+      "presentation_period": "Year",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "VWE 803",
+      "year_level": 8,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Dissertation: Companion animal clinical studies 803",
+      "credits": 180.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/VET-faculty/PG-modules/view/VWE 803",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": null,
+      "prerequisites": "VRM 813",
+      "nqf_level": 9,
+      "presentation_period": "Year",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "VWE 804",
+      "year_level": 8,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Dissertation: Paraclinical sciences 804",
+      "credits": 180.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/VET-faculty/PG-modules/view/VWE 804",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": null,
+      "prerequisites": "VRM 813",
+      "nqf_level": 9,
+      "presentation_period": "Year",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "VWE 805",
+      "year_level": 8,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Dissertation: Production animal studies 805",
+      "credits": 180.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/VET-faculty/PG-modules/view/VWE 805",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": null,
+      "prerequisites": "VRM 813",
+      "nqf_level": 9,
+      "presentation_period": "Year",
+      "language": "Module is presented in English"
+    }
+  ],
+  "streams_by_year": {
+    "year_1": [],
+    "year_2": [],
+    "year_3": [],
+    "year_4": [],
+    "final_year": []
+  },
+  "stream_checks": {
+    "year_1_stream_count": 0,
+    "year_2_stream_count": 0,
+    "year_3_stream_count": 0,
+    "year_4_stream_count": 0,
+    "final_year_stream_count": 0,
+    "missing_stream_module_codes_in_catalog_by_year": {
+      "year_1": [],
+      "year_2": [],
+      "year_3": [],
+      "year_4": [],
+      "final_year": []
+    }
+  }
+}

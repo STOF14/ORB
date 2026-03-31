@@ -1,0 +1,113 @@
+{
+  "metadata": {
+    "year": 2026,
+    "degree_code": "10243006",
+    "degree_name": "BScHons in Human Cell Biology",
+    "faculty": "Health Sciences",
+    "faculty_code": "MED",
+    "level": "Honours",
+    "source_url": "https://www.up.ac.za/yearbooks/2026/MED-faculty/HO-programmes/view/10243006",
+    "duration_years": 1,
+    "total_credits": 120,
+    "nqf_level": 8,
+    "department": "Anatomy"
+  },
+  "curriculum": [
+    {
+      "module_code": "ANA 714",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "MBS 700",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "TNM 700",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    }
+  ],
+  "module_catalog": [
+    {
+      "module_code": "ANA 714",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Human cell biology 714",
+      "credits": 100.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/MED-faculty/PG-modules/view/ANA 714",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "This module includes 30 research credits.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "MBS 700",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Medical biostatistics 700",
+      "credits": 20.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/MED-faculty/PG-modules/view/MBS 700",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "The role of statistics and the data analysis process, collecting data sensibly, graphical methods for describing data, numerical methods for describing data, summarizing bivariate data, probability, random variables and probability distributions, sampling variability and sampling distributions, estimation using a single sample, hypothesis testing using a single sample, comparing two populations or treatments, the analysis of categorical data and goodness-of-fit tests, simple linear regression and correlation: inferential methods, multiple regression analysis, analysis of variance, nonparametric (distribution-free) statistical methods. This course is designed as a statistics building block for a non-statistics major postgraduate student at master's level.",
+      "prerequisites": null,
+      "nqf_level": 8,
+      "presentation_period": "Semester 1",
+      "language": "Module is presented in English",
+      "contact_time": "1 lecture per week"
+    },
+    {
+      "module_code": "TNM 700",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Applied research methodology 700",
+      "credits": 0.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/MED-faculty/PG-modules/view/TNM 700",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "*Attendance module only.",
+      "prerequisites": null,
+      "nqf_level": 8,
+      "presentation_period": "Semester 1",
+      "language": "Module is presented in English"
+    }
+  ],
+  "streams_by_year": {
+    "year_1": [],
+    "year_2": [],
+    "year_3": [],
+    "year_4": [],
+    "final_year": []
+  },
+  "stream_checks": {
+    "year_1_stream_count": 0,
+    "year_2_stream_count": 0,
+    "year_3_stream_count": 0,
+    "year_4_stream_count": 0,
+    "final_year_stream_count": 0,
+    "missing_stream_module_codes_in_catalog_by_year": {
+      "year_1": [],
+      "year_2": [],
+      "year_3": [],
+      "year_4": [],
+      "final_year": []
+    }
+  }
+}

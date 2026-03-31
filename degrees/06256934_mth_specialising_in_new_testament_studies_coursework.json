@@ -1,0 +1,88 @@
+{
+  "metadata": {
+    "year": 2026,
+    "degree_code": "06256934",
+    "degree_name": "MTh specialising in New Testament Studies (Coursework)",
+    "faculty": "Theology and Religion",
+    "faculty_code": "THEO",
+    "level": "Masters",
+    "source_url": "https://www.up.ac.za/yearbooks/2026/THEO-faculty/MA-programmes/view/06256934",
+    "duration_years": 1,
+    "total_credits": 180,
+    "nqf_level": 9,
+    "department": "New Testament and Related Literature"
+  },
+  "curriculum": [
+    {
+      "module_code": "NTW 803",
+      "year_level": 8,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "NTW 893",
+      "year_level": 8,
+      "is_compulsory": true,
+      "module_type": "core"
+    }
+  ],
+  "module_catalog": [
+    {
+      "module_code": "NTW 803",
+      "year_level": 8,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "New Testament studies 803",
+      "credits": 90.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/THEO-faculty/PG-modules/view/NTW 803",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "A course work module on a thematically specialized reading list as focused on the candidate's field of research.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 9,
+      "presentation_period": "Year",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "NTW 893",
+      "year_level": 8,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Mini-dissertation: New Testament studies 893",
+      "credits": 90.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/THEO-faculty/PG-modules/view/NTW 893",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "A mini-dissertation on an approved topic from the seminar work in the field of New Testament Studies.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 9,
+      "presentation_period": "Year",
+      "language": "Module is presented in English"
+    }
+  ],
+  "streams_by_year": {
+    "year_1": [],
+    "year_2": [],
+    "year_3": [],
+    "year_4": [],
+    "final_year": []
+  },
+  "stream_checks": {
+    "year_1_stream_count": 0,
+    "year_2_stream_count": 0,
+    "year_3_stream_count": 0,
+    "year_4_stream_count": 0,
+    "final_year_stream_count": 0,
+    "missing_stream_module_codes_in_catalog_by_year": {
+      "year_1": [],
+      "year_2": [],
+      "year_3": [],
+      "year_4": [],
+      "final_year": []
+    }
+  }
+}

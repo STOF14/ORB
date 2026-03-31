@@ -1,0 +1,215 @@
+{
+  "metadata": {
+    "year": 2026,
+    "degree_code": "02256004",
+    "degree_name": "Master of Agriculture in Rural Development Planning",
+    "faculty": "Natural and Agricultural Sciences",
+    "faculty_code": "SCI",
+    "level": "Masters",
+    "source_url": "https://www.up.ac.za/yearbooks/2026/SCI-faculty/MA-programmes/view/02256004",
+    "duration_years": 2,
+    "total_credits": 180,
+    "nqf_level": 9,
+    "department": "Agricultural  Economics, Extension and Rural Development"
+  },
+  "curriculum": [
+    {
+      "module_code": "LEK 833",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "LEK 834",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "LEK 882",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "LEK 884",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "LEK 885",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "LEK 888",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "LEK 894",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core"
+    }
+  ],
+  "module_catalog": [
+    {
+      "module_code": "LEK 833",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Food policy 833",
+      "credits": 15.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/SCI-faculty/PG-modules/view/LEK 833",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "The concept and interrelated causes of food insecurity (production, markets and socio-economic climate) and the global food economy.\u00a0 Household coping strategies and response to risk and shocks.\u00a0 Household dynamics (including livelihoods, purchasing behaviour and nutrition).\u00a0Practical tools for programme and policy analysis and targeting.\u00a0Evaluation of possible programme and policy options and their effectiveness in terms of achieving comprehensive and pro-poor growth. Sustainable Development Goal two that seeks to end hunger, achieve food security and improved nutrition and promote sustainable agriculture.",
+      "prerequisites": "Registration for at least a master's degree",
+      "nqf_level": 9,
+      "presentation_period": "Semester 2",
+      "language": "Module is presented in English",
+      "contact_time": "1 lecture per week for 12 wks"
+    },
+    {
+      "module_code": "LEK 834",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Measuring and monitoring food security 834",
+      "credits": 15.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/SCI-faculty/PG-modules/view/LEK 834",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "The international and African context for monitoring and evaluation of Sustainable Development Goals related to food security.\u00a0Indicators, scores, indexes, measurement approaches, systems and analysis methods\u00a0for multisectoral food security monitoring and evaluation.\u00a0Best practice related to the identification, selection, presentation and analytical approaches to managing and analysing large datasets across multiple sectors to generate clear, concise findings for policymakers.\u00a0Communicating food security information for decision makers.",
+      "prerequisites": "Registration for at least a master's degree. Simultaneous registration for LEK 833.",
+      "nqf_level": 9,
+      "presentation_period": "Semester 2",
+      "language": "Module is presented in English",
+      "contact_time": "3 hours of online learning per week (6 weeks), 1 practical per week (2 weeks), 1 lecture per week for 4 weeks"
+    },
+    {
+      "module_code": "LEK 882",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Institutional economics 882",
+      "credits": 15.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/SCI-faculty/PG-modules/view/LEK 882",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Institutional and behavioural economics. This module will expose students to the principles of the New Institutional Economics paradigm and how it can be utilized to improve the analysis of agricultural economic and agricultural development problems and issues. Major themes covered are: The agricultural development challenge: stylised features; new institutional economics: distinctive features and concepts; institutions and development: A historical and macro-perspective techno-economic characteristics and agricultural systems and products in poor countries; NIE analysis of markets and markets structures; the State: Political and institutional determinants of agricultural policy; collective action; transactions costs in smallholder agriculture; case studies.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 9,
+      "presentation_period": "Semester 1",
+      "language": "Module is presented in English",
+      "contact_time": "1 lecture per week",
+      "service_modules": "Faculty of Economic and Management Sciences"
+    },
+    {
+      "module_code": "LEK 884",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Advanced rural finance 884",
+      "credits": 15.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/SCI-faculty/PG-modules/view/LEK 884",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Overview of rural finance: conceptual issues. Role of financial services in economic development. Relationship between financial development and economic growth. Economic theory underlying rural financial markets: market and government failure, imperfect information, transaction costs, agency theory, and pecking order theory. Supply of and demand for financial services in rural areas: theory and measurement issues. Estimating credit demand, supply and constraints. Institutions involved in the provision of rural financial services and innovations in rural finance. Assessing performance of institutions providing rural financial services.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 9,
+      "presentation_period": "Semester 1",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "LEK 885",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Agricultural and rural development 885",
+      "credits": 15.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/SCI-faculty/PG-modules/view/LEK 885",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Review of theories and principles of growth and development. The role of agriculture in rural and economic development. The economic nature of smallholder agriculture. Problems and policies in agricultural and rural development: issues, options and challenges. Strategies for modernising agriculture (lessons from experience). Poverty dynamics, food and the environmental nexus. Land tenure reforms and policy.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 9,
+      "presentation_period": "Semester 2",
+      "language": "Module is presented in English",
+      "contact_time": "1 lecture per week"
+    },
+    {
+      "module_code": "LEK 888",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Research methodology 888",
+      "credits": 15.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/SCI-faculty/PG-modules/view/LEK 888",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Research methodology and dissertation design. Research in perspective. The research process. Formulating research problems, hypotheses and objectives. Developing a conceptual framework. Review of literature. Methods and procedures. Data collection, processing and analysis. Developing a good research proposal.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 9,
+      "presentation_period": "Semester 1",
+      "language": "Module is presented in English",
+      "contact_time": "1 lecture per week"
+    },
+    {
+      "module_code": "LEK 894",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Mini-dissertation: Rural development 894",
+      "credits": 90.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/SCI-faculty/PG-modules/view/LEK 894",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": null,
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 9,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "3 lectures per week, 1 practical per week"
+    }
+  ],
+  "streams_by_year": {
+    "year_1": [],
+    "year_2": [],
+    "year_3": [],
+    "year_4": [],
+    "final_year": []
+  },
+  "stream_checks": {
+    "year_1_stream_count": 0,
+    "year_2_stream_count": 0,
+    "year_3_stream_count": 0,
+    "year_4_stream_count": 0,
+    "final_year_stream_count": 0,
+    "missing_stream_module_codes_in_catalog_by_year": {
+      "year_1": [],
+      "year_2": [],
+      "year_3": [],
+      "year_4": [],
+      "final_year": []
+    }
+  }
+}

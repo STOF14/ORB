@@ -1,0 +1,139 @@
+{
+  "metadata": {
+    "year": 2026,
+    "degree_code": "01243016",
+    "degree_name": "BSocSciHons specialising in Anthropology",
+    "faculty": "Humanities",
+    "faculty_code": "HUM",
+    "level": "Honours",
+    "source_url": "https://www.up.ac.za/yearbooks/2026/HUM-faculty/HO-programmes/view/01243016",
+    "duration_years": 1,
+    "total_credits": 120,
+    "nqf_level": 8,
+    "department": "Anthropology, Archaeology and Development Studies"
+  },
+  "curriculum": [
+    {
+      "module_code": "APL 755",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "APL 756",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "APL 761",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "APL 770",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    }
+  ],
+  "module_catalog": [
+    {
+      "module_code": "APL 755",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Research methodology in anthropology 755",
+      "credits": 20.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/HUM-faculty/PG-modules/view/APL 755",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Theory and practice of participant observation. Other techniques of data collection used by anthropologists. Organisation and use of field notes. Reflexivity and fieldwork. Practical application of research methods.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Quarter 1 or 2 or 3 or 4",
+      "language": "Module is presented in English",
+      "contact_time": "1 other contact session per week, 2 lectures per week"
+    },
+    {
+      "module_code": "APL 756",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Politics of identity 756",
+      "credits": 30.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/HUM-faculty/PG-modules/view/APL 756",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "This module builds on the anthropological and ethnographic knowledge students have acquired. With reference to contemporary anthropological theories, students will deepen their insights into the world around them and the discipline itself. This will aid in the development of critical thinking and problem solving skills from a contemporary anthropological perspective.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Quarter 2",
+      "language": "Module is presented in English",
+      "contact_time": "2 lectures per week, 1 other contact session per week"
+    },
+    {
+      "module_code": "APL 761",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Contemporary ethnography 761",
+      "credits": 30.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/HUM-faculty/PG-modules/view/APL 761",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "The production of ethnographic texts, reflexivity in ethnographic writing, postmodernism, contemporary concerns about ethnographic texts and the \u201ccrisis of representation\u201d. A critical reading of three recent ethnographies.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Quarter 3",
+      "language": "Module is presented in English",
+      "contact_time": "1 other contact session per week, 2 lectures per week"
+    },
+    {
+      "module_code": "APL 770",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Research report: Anthropology 770",
+      "credits": 40.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/HUM-faculty/PG-modules/view/APL 770",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "The honours degree entails one year of full-time study and comprises of coursework, ethnographic field research and examinations as well as a research report of between 12,000 to a maximum of 15,000 words based on field research which must be completed by the end of the academic year.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English"
+    }
+  ],
+  "streams_by_year": {
+    "year_1": [],
+    "year_2": [],
+    "year_3": [],
+    "year_4": [],
+    "final_year": []
+  },
+  "stream_checks": {
+    "year_1_stream_count": 0,
+    "year_2_stream_count": 0,
+    "year_3_stream_count": 0,
+    "year_4_stream_count": 0,
+    "final_year_stream_count": 0,
+    "missing_stream_module_codes_in_catalog_by_year": {
+      "year_1": [],
+      "year_2": [],
+      "year_3": [],
+      "year_4": [],
+      "final_year": []
+    }
+  }
+}

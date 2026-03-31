@@ -1,0 +1,239 @@
+{
+  "metadata": {
+    "year": 2026,
+    "degree_code": "07251153",
+    "degree_name": "Master of Public Administration [MPA] (Coursework)",
+    "faculty": "Economic and Management Sciences",
+    "faculty_code": "EMS",
+    "level": "Masters",
+    "source_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/MA-programmes/view/07251153",
+    "duration_years": 1,
+    "total_credits": 180,
+    "nqf_level": 9,
+    "department": "School of Public Management and Administration"
+  },
+  "curriculum": [
+    {
+      "module_code": "FHB 800",
+      "year_level": 8,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "HPB 801",
+      "year_level": 8,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "NME 801",
+      "year_level": 8,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "OXA 800",
+      "year_level": 8,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "PAD 801",
+      "year_level": 8,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "PAD 803",
+      "year_level": 8,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "PAD 804",
+      "year_level": 8,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "PAD 899",
+      "year_level": 8,
+      "is_compulsory": true,
+      "module_type": "core"
+    }
+  ],
+  "module_catalog": [
+    {
+      "module_code": "FHB 800",
+      "year_level": 8,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Financial resource management 800",
+      "credits": 20.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/PG-modules/view/FHB 800",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Concepts, aims and principles of public finance Governments and the distribution of income Role players in financial resource management Budgeting, budgeting techniques and systems Financial performance measurement Tariff settings and viability techniques Internal control and accounting Policy documents relating to financial management Logistical and asset management Tendering tenders and contracts Monitoring and auditing Financial accountability",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 9,
+      "presentation_period": "Semester 1 or Semester 2",
+      "language": "Module is presented in English",
+      "contact_time": "1 contact week per year"
+    },
+    {
+      "module_code": "HPB 801",
+      "year_level": 8,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Human resource management 801",
+      "credits": 20.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/PG-modules/view/HPB 801",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Institutions and functionaries involved in public human resource management Basic values and directives governing public human resource management. Strategic human resource management Developing a performance culture Talent management, People development Creating and maintaining a learning culture Role players and their functions Employee relationship management Issues in people resource management Labour relations management Ethics and Accountability",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 9,
+      "presentation_period": "Semester 2",
+      "language": "Module is presented in English",
+      "contact_time": "1 contact week per year"
+    },
+    {
+      "module_code": "NME 801",
+      "year_level": 8,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Research methodology 801",
+      "credits": 20.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/PG-modules/view/NME 801",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Research design Conceptualisation and measurement Operationalisation The logic of sampling Surveys Research proposal to be submitted during year one and a supervisor will be allocated.\u00a0 Candidate to identify one of the specified areas (energy, water, sanitation or roads and transport) to conduct the research within a managerial and administrative context.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 9,
+      "presentation_period": "Semester 1 or Semester 2",
+      "language": "Module is presented in English",
+      "contact_time": "1 contact week per year"
+    },
+    {
+      "module_code": "OXA 800",
+      "year_level": 8,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Public policy analysis and problem solving 800",
+      "credits": 10.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/PG-modules/view/OXA 800",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Key concepts in public policy formulation and implementation Participants (role players) in policy formulation Key concepts in public policy analysis and implementation Ethics and policy analysis Approaches to policy analysis (A typology) Models for policy analysis Policy analysis as a process: A general overview Policy analysis as a process: Identifying problems and determining objectives for research Policy analysis as a process: Cost effectiveness, alternative options and determination of cost Forecasting and policy analysis Methods and techniques in policy analysis: An overview Acceptance and implementations of policy proposals Monitoring and evaluation of policy outcomes Pitfalls and limitations of policy analysis Design sectoral specific policies to achieve policy objectives Direct and control the implementation of sectoral specific policy and limitations of policy analysis Problem solving and techniques",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 9,
+      "presentation_period": "Semester 1 or Semester 2",
+      "language": "Module is presented in English",
+      "contact_time": "1 contact week per year"
+    },
+    {
+      "module_code": "PAD 801",
+      "year_level": 8,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Public administration and management theories: selected topics 801",
+      "credits": 20.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/PG-modules/view/PAD 801",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Development of Public Administration as a practice Relationship between Public Administration and other dimensions Administrative activities Functional activities Auxiliary functions Sector governance and utility regulations",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 9,
+      "presentation_period": "Semester 1 or Semester 2",
+      "language": "Module is presented in English",
+      "contact_time": "1 contact week per year"
+    },
+    {
+      "module_code": "PAD 803",
+      "year_level": 8,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Strategic capability and leadership 803",
+      "credits": 20.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/PG-modules/view/PAD 803",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Leadership theories Leadership styles in the public sector Ethical leadership Regulatory framework in the public sector Communication Decision-making Team roles Planning and objective writing Performance information in the public sector Management processes Project and change management Leadership challenges in the public sector",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 9,
+      "presentation_period": "Semester 1",
+      "language": "Module is presented in English",
+      "contact_time": "1 contact week per year"
+    },
+    {
+      "module_code": "PAD 804",
+      "year_level": 8,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Programme and project management 804",
+      "credits": 10.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/PG-modules/view/PAD 804",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Fundamentals, aims and concepts of programme and project management Legislative and policy framework Programme and project governance Programme and project lifecycles Programme and project methodology Business process reengineering Management of systems in public organisations Strategic and operational management Monitoring and evaluation and programme performance management Budget programmes Programme and project applications",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 9,
+      "presentation_period": "Semester 1 or Semester 2",
+      "language": "Module is presented in English",
+      "contact_time": "1 contact week per year"
+    },
+    {
+      "module_code": "PAD 899",
+      "year_level": 8,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Mini-dissertation: Public administration 899",
+      "credits": 60.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/PG-modules/view/PAD 899",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "To be registered simultaneously with the course work modules.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 9,
+      "presentation_period": "Year",
+      "language": "Module is presented in English"
+    }
+  ],
+  "streams_by_year": {
+    "year_1": [],
+    "year_2": [],
+    "year_3": [],
+    "year_4": [],
+    "final_year": []
+  },
+  "stream_checks": {
+    "year_1_stream_count": 0,
+    "year_2_stream_count": 0,
+    "year_3_stream_count": 0,
+    "year_4_stream_count": 0,
+    "final_year_stream_count": 0,
+    "missing_stream_module_codes_in_catalog_by_year": {
+      "year_1": [],
+      "year_2": [],
+      "year_3": [],
+      "year_4": [],
+      "final_year": []
+    }
+  }
+}

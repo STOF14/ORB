@@ -1,0 +1,239 @@
+{
+  "metadata": {
+    "year": 2026,
+    "degree_code": "01240483",
+    "degree_name": "BAHons specialising in Drama and Film Studies",
+    "faculty": "Humanities",
+    "faculty_code": "HUM",
+    "level": "Honours",
+    "source_url": "https://www.up.ac.za/yearbooks/2026/HUM-faculty/HO-programmes/view/01240483",
+    "duration_years": 1,
+    "total_credits": 120,
+    "nqf_level": 8,
+    "department": "School of the Arts"
+  },
+  "curriculum": [
+    {
+      "module_code": "DFK 774",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "DRA 702",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "DRA 703",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "DRA 704",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "DRA 705",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "DRA 709",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "DRA 710",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "SOA 700",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    }
+  ],
+  "module_catalog": [
+    {
+      "module_code": "DFK 774",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Playwriting and screenwriting 774",
+      "credits": 40.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/HUM-faculty/PG-modules/view/DFK 774",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "This four-part module focuses on the construction of a visual narrative. Autobiographical writing: This part of the module develops creative writing skills through exploring and recording personal narratives. The student also investigates principles of literary theory. Stage plays: The module introduces notions of structure, narrative, plot, dialogue and character development. The student is familiarised with various format and conventions of the stage play, as well as the languages of drama and performance. The student will produce at least one stage play script. Television writing: Students become familiar with the three-act structure, story, narrative, content, plot and genre (such as soap operas and situational comedy). Students are required to write a sample screenplay of a pre-existing television programme (\"show script\") as well as an original television script. Film writing: The module introduces students to the language and theory of film. Students will watch films, read screenplays and write their own short film screenplay. The module also includes the formalities of screenwriting, such as script formatting and pitching.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "2 lectures per week"
+    },
+    {
+      "module_code": "DRA 702",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Performance studies 702",
+      "credits": 40.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/HUM-faculty/PG-modules/view/DRA 702",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "This module investigates the theoretical and practical components of different approaches to performance in selected theatrical and media contexts. The module aims to interrogate audience/performer relationships with the view to challenging accepted models in order to promote innovative ways of conceptualising and presenting performances.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "4 practicals per week"
+    },
+    {
+      "module_code": "DRA 703",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Directing and theatre making 703",
+      "credits": 40.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/HUM-faculty/PG-modules/view/DRA 703",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "This module contextualises and interrogates the roles of the director in contemporary theatre. The investigation includes a critical analysis of selected directors\u2019 contributions to theatre and the opportunity for students to develop their own theoretical and practical approaches to directing.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "2 practicals per week, 2 lectures per week"
+    },
+    {
+      "module_code": "DRA 704",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Applied drama and theatre 704",
+      "credits": 40.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/HUM-faculty/PG-modules/view/DRA 704",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "This module develops strategies for using drama and theatre as modes of intervention in educational and community contexts. The uses of drama in disseminating information, as agents for change, for concientisation and for social empowerment are explored. Existing pedagogical and methodological approaches are investigated and innovative approaches to interventionist performances are encouraged.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "1 other contact session per week, 2 lectures per week"
+    },
+    {
+      "module_code": "DRA 705",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Physical theatre 705",
+      "credits": 40.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/HUM-faculty/PG-modules/view/DRA 705",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "This module investigates selected pedagogies relating to physical training and choreography. Students theorise modes of constructing, reading and presenting physical performances in order to contextualise their work within existing paradigms and to encourage discourse around their own creative work.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "2 lectures per week, 2 practicals per week"
+    },
+    {
+      "module_code": "DRA 709",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Performing arts management 709",
+      "credits": 40.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/HUM-faculty/PG-modules/view/DRA 709",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "This module explores performing arts management within local contexts, develops strategies for defining, positioning and pricing performances, formulates marketing strategies, and offers approaches for designing and managing market-effective organisations. The module also includes professional and developmental approaches to events marketing and management.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "2 lectures per week, 2 discussion classes per week"
+    },
+    {
+      "module_code": "DRA 710",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Digital media and performance 710",
+      "credits": 40.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/HUM-faculty/PG-modules/view/DRA 710",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "New and digital media investigates digital film-making, computer media and the internet in relation to performance and culture. The main emphasis is on digital film production and editing, with a secondary focus on distribution and screening.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "SOA 700",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Arts research and methodology 700",
+      "credits": 40.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/HUM-faculty/PG-modules/view/SOA 700",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "A research report on an approved topic.",
+      "prerequisites": "Admission into the programme.",
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "2 lectures per week"
+    }
+  ],
+  "streams_by_year": {
+    "year_1": [],
+    "year_2": [],
+    "year_3": [],
+    "year_4": [],
+    "final_year": []
+  },
+  "stream_checks": {
+    "year_1_stream_count": 0,
+    "year_2_stream_count": 0,
+    "year_3_stream_count": 0,
+    "year_4_stream_count": 0,
+    "final_year_stream_count": 0,
+    "missing_stream_module_codes_in_catalog_by_year": {
+      "year_1": [],
+      "year_2": [],
+      "year_3": [],
+      "year_4": [],
+      "final_year": []
+    }
+  }
+}

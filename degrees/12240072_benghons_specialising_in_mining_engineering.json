@@ -1,0 +1,239 @@
+{
+  "metadata": {
+    "year": 2026,
+    "degree_code": "12240072",
+    "degree_name": "BEngHons specialising in Mining Engineering",
+    "faculty": "Engineering, Built Environment and IT",
+    "faculty_code": "EBIT",
+    "level": "Honours",
+    "source_url": "https://www.up.ac.za/yearbooks/2026/EBIT-faculty/HO-programmes/view/12240072",
+    "duration_years": 1,
+    "total_credits": 128,
+    "nqf_level": 8,
+    "department": "Mining Engineering"
+  },
+  "curriculum": [
+    {
+      "module_code": "PFZ 780",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "PKB 711",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "PKB 712",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "PMZ 780",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "POY 783",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "PRX 785",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "PSS 700",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "PSZ 786",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    }
+  ],
+  "module_catalog": [
+    {
+      "module_code": "PFZ 780",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Financial mine valuation 780",
+      "credits": 16.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EBIT-faculty/PG-modules/view/PFZ 780",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": null,
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Semester 1 or Semester 2",
+      "language": "Module is presented in English",
+      "contact_time": "Self study"
+    },
+    {
+      "module_code": "PKB 711",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Airflow and fans 711",
+      "credits": 16.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EBIT-faculty/PG-modules/view/PKB 711",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": null,
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Semester 1 or Semester 2",
+      "language": "Module is presented in English",
+      "contact_time": "Self study"
+    },
+    {
+      "module_code": "PKB 712",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Heat and refrigeration 712",
+      "credits": 16.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EBIT-faculty/PG-modules/view/PKB 712",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": null,
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Semester 1 or Semester 2",
+      "language": "Module is presented in English",
+      "contact_time": "Self study"
+    },
+    {
+      "module_code": "PMZ 780",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Advanced design: Mining 780",
+      "credits": 16.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EBIT-faculty/PG-modules/view/PMZ 780",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": null,
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Semester 1 or Semester 2",
+      "language": "Module is presented in English",
+      "contact_time": "Self study"
+    },
+    {
+      "module_code": "POY 783",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Open-pit mining 783",
+      "credits": 16.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EBIT-faculty/PG-modules/view/POY 783",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": null,
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Semester 1 or Semester 2",
+      "language": "Module is presented in English",
+      "contact_time": "Self study"
+    },
+    {
+      "module_code": "PRX 785",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Advanced explosive engineering 785",
+      "credits": 16.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EBIT-faculty/PG-modules/view/PRX 785",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Types of commercial explosives. Properties of explosives. Explosive initiating systems, application of explosives in rock breaking; Surface and underground blast designs and specialised blast designs; the effects of geology on blast results. Fragmentation, blasting and environmental control. Blast assessment. Ethics and regulatory compliance. Safety in blasting.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Semester 1 or Semester 2",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "PSS 700",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Research project 700",
+      "credits": 32.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EBIT-faculty/PG-modules/view/PSS 700",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "*This is a compulsory research module.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "Self study"
+    },
+    {
+      "module_code": "PSZ 786",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Strata control: Hard-rock mining 786",
+      "credits": 16.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EBIT-faculty/PG-modules/view/PSZ 786",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": null,
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Semester 1 or Semester 2",
+      "language": "Module is presented in English",
+      "contact_time": "Self study"
+    }
+  ],
+  "streams_by_year": {
+    "year_1": [],
+    "year_2": [],
+    "year_3": [],
+    "year_4": [],
+    "final_year": []
+  },
+  "stream_checks": {
+    "year_1_stream_count": 0,
+    "year_2_stream_count": 0,
+    "year_3_stream_count": 0,
+    "year_4_stream_count": 0,
+    "final_year_stream_count": 0,
+    "missing_stream_module_codes_in_catalog_by_year": {
+      "year_1": [],
+      "year_2": [],
+      "year_3": [],
+      "year_4": [],
+      "final_year": []
+    }
+  }
+}

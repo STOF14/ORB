@@ -1,0 +1,191 @@
+{
+  "metadata": {
+    "year": 2026,
+    "degree_code": "07240045",
+    "degree_name": "BComHons specialising in Taxation",
+    "faculty": "Economic and Management Sciences",
+    "faculty_code": "EMS",
+    "level": "Honours",
+    "source_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/HO-programmes/view/07240045",
+    "duration_years": 1,
+    "total_credits": 120,
+    "nqf_level": 8,
+    "department": "Taxation"
+  },
+  "curriculum": [
+    {
+      "module_code": "BEL 300",
+      "year_level": 3,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "BUS 300",
+      "year_level": 3,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "TXA 301",
+      "year_level": 3,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "TXA 755",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "TXA 765",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "TXA 795",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    }
+  ],
+  "module_catalog": [
+    {
+      "module_code": "BEL 300",
+      "year_level": 3,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Taxation 300",
+      "credits": 40.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/UG-modules/view/BEL 300",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "The purpose of the module is to enable the learner to calculate the value-added tax liability and to journalise transactions; calculate the normal tax liability (including the determination of taxable capital gains and assessed capital losses) of individuals, companies, estates and trusts,discuss tax principles on value-added tax and normal tax; and calculate and discuss provisional and employees' tax and to object against an assessment.",
+      "prerequisites": "BEL 200",
+      "nqf_level": 7,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "1 discussion class per week, 4 lectures per week",
+      "service_modules": "Faculty of Engineering, Built Environment and Information Technology"
+    },
+    {
+      "module_code": "BUS 300",
+      "year_level": 3,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Business acumen 300",
+      "credits": 21.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/UG-modules/view/BUS 300",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "To use self-efficacy skills to set goals, acquire and critically reflect on new knowledge, skills or experiences and influence\u00a0\u00a0 \u00a0themselves,\u00a0\u00a0 \u00a0others\u00a0\u00a0 \u00a0and\u00a0\u00a0 \u00a0society\u00a0\u00a0 \u00a0in straightforward and unambiguous settings. To use a comprehensive conceptual understanding of their in- depth foundational knowledge and skills in an intra-, inter-, multi- and transdisciplinary unfamiliar business context that is relevant to companies or complex group of companies to identify and interpret ethical and authentic business- related problems and propose innovative and creative ethical solutions with compelling justification that creates value for society.",
+      "prerequisites": "BUS 200 GS, FDM 200, GOA 200, RRP 200 and TXA 201",
+      "nqf_level": 7,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "1 lecture per week, 4 practicals per week"
+    },
+    {
+      "module_code": "TXA 301",
+      "year_level": 3,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Taxation 301",
+      "credits": 20.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/UG-modules/view/TXA 301",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "To use a comprehensive conceptual understanding of in-depth foundational knowledge of the structure and legislative framework of the different types of taxes in South Africa in an unfamiliar business context that is relevant to individuals, companies or complex group of companies to interpret and apply the relevant tax laws and calculate the tax payable fulfil the compliance obligations of different types of taxpayers identify tax related and ethical problems, further information required or the need to obtain specialist advice and propose optimal ethical solutions with compelling justification that creates value for society.",
+      "prerequisites": "TXA 201",
+      "nqf_level": 7,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "2 lectures per week"
+    },
+    {
+      "module_code": "TXA 755",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Taxation 755",
+      "credits": 40.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/PG-modules/view/TXA 755",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "This module is principle-based where students will be able to conceptually understand, analyse and apply taxation concepts, approaches, strategies, principles, techniques and methods.",
+      "prerequisites": "At least Taxation on an NQF level 7",
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "2,5 hours per week"
+    },
+    {
+      "module_code": "TXA 765",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Taxation 765",
+      "credits": 50.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/PG-modules/view/TXA 765",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Students will be able to solve complex taxation problems through applied knowledge integration and argumentation in an unfamiliar business context. Students will also be able to present and communicate scientific arguments or ideas in an oral format (supported by visual aids) to relevant stakeholders. During this module students will be involved in a community engagement project.",
+      "prerequisites": "At least Taxation on an NQF level 7",
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "2,5 hours per week"
+    },
+    {
+      "module_code": "TXA 795",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Research report 795",
+      "credits": 30.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/PG-modules/view/TXA 795",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Students will be able to compile a scientific report by accessing and processing information in a taxation context. Students will further be able to evaluate the ethical implications of their decisions in relation to personal, organisational and societal value systems.",
+      "prerequisites": "At least Taxation on an NQF level 7",
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "1 hour per week"
+    }
+  ],
+  "streams_by_year": {
+    "year_1": [],
+    "year_2": [],
+    "year_3": [],
+    "year_4": [],
+    "final_year": []
+  },
+  "stream_checks": {
+    "year_1_stream_count": 0,
+    "year_2_stream_count": 0,
+    "year_3_stream_count": 0,
+    "year_4_stream_count": 0,
+    "final_year_stream_count": 0,
+    "missing_stream_module_codes_in_catalog_by_year": {
+      "year_1": [],
+      "year_2": [],
+      "year_3": [],
+      "year_4": [],
+      "final_year": []
+    }
+  }
+}

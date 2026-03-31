@@ -1,0 +1,136 @@
+{
+  "metadata": {
+    "year": 2026,
+    "degree_code": "07255373",
+    "degree_name": "MPhil specialising in Tourism Management\u00a0(Coursework)",
+    "faculty": "Economic and Management Sciences",
+    "faculty_code": "EMS",
+    "level": "Masters",
+    "source_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/MA-programmes/view/07255373",
+    "duration_years": 1,
+    "total_credits": 180,
+    "nqf_level": 9,
+    "department": "Marketing Management"
+  },
+  "curriculum": [
+    {
+      "module_code": "TBE 801",
+      "year_level": 8,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "TBE 809",
+      "year_level": 8,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "TBE 810",
+      "year_level": 8,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "TBE 891",
+      "year_level": 8,
+      "is_compulsory": true,
+      "module_type": "core"
+    }
+  ],
+  "module_catalog": [
+    {
+      "module_code": "TBE 801",
+      "year_level": 8,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Research methodology 801",
+      "credits": 40.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/PG-modules/view/TBE 801",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "This module covers the research processes, principles and techniques necessary to conduct and interpret empirical research in tourism. It flows from the conceptualisation phase to conducting empirical research, and finally culminating in the\u00a0reporting of research results.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 9,
+      "presentation_period": "Year",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "TBE 809",
+      "year_level": 8,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Strategic tourism management A 809",
+      "credits": 20.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/PG-modules/view/TBE 809",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "This module introduces tourism as an interdependent system and aims to apply theoretical paradigms and perspectives in a strategic tourism management context. It explains the nature and importance of tourism while developing students\u2019 holistic, creative and abstract thoughts.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 9,
+      "presentation_period": "Year",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "TBE 810",
+      "year_level": 8,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Strategic tourism management B 810",
+      "credits": 20.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/PG-modules/view/TBE 810",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "This module introduces tourism themes which cover some of the major\u00a0sectors in the tourism industry such as transport (with particular emphasis on air transport), destination marketing, ecotourism, attractions and events (including sports tourism management).\u00a0Selected themes will be debated to provide new insights, scientific reasoning and practical application. The aim is to formulate thoughts scientifically and logically, and to stimulate critical reading, thinking and writing.",
+      "prerequisites": "No prerequisite.",
+      "nqf_level": 9,
+      "presentation_period": "Year",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "TBE 891",
+      "year_level": 8,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Research article 891",
+      "credits": 100.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/PG-modules/view/TBE 891",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "The article equips the student to conduct independent research by executing a research project on a relevant topic, of which the findings are reported in an academic article.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 9,
+      "presentation_period": "Year",
+      "language": "Module is presented in English"
+    }
+  ],
+  "streams_by_year": {
+    "year_1": [],
+    "year_2": [],
+    "year_3": [],
+    "year_4": [],
+    "final_year": []
+  },
+  "stream_checks": {
+    "year_1_stream_count": 0,
+    "year_2_stream_count": 0,
+    "year_3_stream_count": 0,
+    "year_4_stream_count": 0,
+    "final_year_stream_count": 0,
+    "missing_stream_module_codes_in_catalog_by_year": {
+      "year_1": [],
+      "year_2": [],
+      "year_3": [],
+      "year_4": [],
+      "final_year": []
+    }
+  }
+}

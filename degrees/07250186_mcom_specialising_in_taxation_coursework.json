@@ -1,0 +1,115 @@
+{
+  "metadata": {
+    "year": 2026,
+    "degree_code": "07250186",
+    "degree_name": "MCom specialising in Taxation (Coursework)",
+    "faculty": "Economic and Management Sciences",
+    "faculty_code": "EMS",
+    "level": "Masters",
+    "source_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/MA-programmes/view/07250186",
+    "duration_years": 2,
+    "total_credits": 180,
+    "nqf_level": 9,
+    "department": "Taxation"
+  },
+  "curriculum": [
+    {
+      "module_code": "TXA 801",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "TXA 802",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "TXA 885",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core"
+    }
+  ],
+  "module_catalog": [
+    {
+      "module_code": "TXA 801",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Principles of South African taxes 801",
+      "credits": 30.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/PG-modules/view/TXA 801",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "The current and future South African tax landscape.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 9,
+      "presentation_period": "Semester 1 or Semester 2",
+      "language": "Module is presented in English",
+      "contact_time": "20 contact hours"
+    },
+    {
+      "module_code": "TXA 802",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Selected topics in taxation 802",
+      "credits": 30.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/PG-modules/view/TXA 802",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Current tax issues arising from contemporary business or other transactions.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 9,
+      "presentation_period": "Semester 1 or Semester 2",
+      "language": "Module is presented in English",
+      "contact_time": "20 contact hours"
+    },
+    {
+      "module_code": "TXA 885",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Research methodology for taxation 885",
+      "credits": 20.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/PG-modules/view/TXA 885",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "This module equips students with research skills that are relevant to a variety of new questions and challenges faced by stakeholders in the transdisciplinary field of taxation research.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 9,
+      "presentation_period": "Semester 1 or Semester 2",
+      "language": "Module is presented in English",
+      "contact_time": "15 contact hours in-person"
+    }
+  ],
+  "streams_by_year": {
+    "year_1": [],
+    "year_2": [],
+    "year_3": [],
+    "year_4": [],
+    "final_year": []
+  },
+  "stream_checks": {
+    "year_1_stream_count": 0,
+    "year_2_stream_count": 0,
+    "year_3_stream_count": 0,
+    "year_4_stream_count": 0,
+    "final_year_stream_count": 0,
+    "missing_stream_module_codes_in_catalog_by_year": {
+      "year_1": [],
+      "year_2": [],
+      "year_3": [],
+      "year_4": [],
+      "final_year": []
+    }
+  }
+}

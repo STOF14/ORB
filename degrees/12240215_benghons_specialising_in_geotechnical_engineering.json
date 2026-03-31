@@ -1,0 +1,90 @@
+{
+  "metadata": {
+    "year": 2026,
+    "degree_code": "12240215",
+    "degree_name": "BEngHons specialising in Geotechnical Engineering",
+    "faculty": "Engineering, Built Environment and IT",
+    "faculty_code": "EBIT",
+    "level": "Honours",
+    "source_url": "https://www.up.ac.za/yearbooks/2026/EBIT-faculty/HO-programmes/view/12240215",
+    "duration_years": 1,
+    "total_credits": 128,
+    "nqf_level": 8,
+    "department": "Civil Engineering"
+  },
+  "curriculum": [
+    {
+      "module_code": "SHC 798",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective"
+    },
+    {
+      "module_code": "SIK 790",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective"
+    }
+  ],
+  "module_catalog": [
+    {
+      "module_code": "SHC 798",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "Applied statistical methods and optimisation 798",
+      "credits": 24.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EBIT-faculty/PG-modules/view/SHC 798",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "A research term paper will be prepared. The course will apply some of the basics theories and methodologies in statistics and operations research to solve common civil engineering problems. The course seeks to demonstrate the use and application in the civil engineering field. Each of the applications seeks to determine how best to design and operate a system, usually under conditions requiring the allocation of scarce resources.\u00a0 Emphasis will be on the applications of these methods in common civil engineering practice. Some of the applications will include; optimum network design, maximum flow problem, project scheduling, queuing theory, probabilistic analysis, Markov chain applications, etc.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "40 Contact hours"
+    },
+    {
+      "module_code": "SIK 790",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "Numerical methods and finite element applications for Civil Engineers 790",
+      "credits": 24.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EBIT-faculty/PG-modules/view/SIK 790",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "In the first part of this course, numerical procedures and some underlying theory for solving systems of equations, eigenvalue problems, integration, approximation and boundary value problems will be discussed. The second part of the course covers general finite element theory, discretization aspects related to geometry, nodes and numbering, element type and shape, interpolation functions, formulation of element characteristic matrices and vectors for elasticity problems, assembly and solution of the finite element equations, modelling procedures and results processing. The student will use Finite Element software to apply the theory that was covered in the course for solving typical Civil Engineering problems.",
+      "prerequisites": null,
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "40 contact hours"
+    }
+  ],
+  "streams_by_year": {
+    "year_1": [],
+    "year_2": [],
+    "year_3": [],
+    "year_4": [],
+    "final_year": []
+  },
+  "stream_checks": {
+    "year_1_stream_count": 0,
+    "year_2_stream_count": 0,
+    "year_3_stream_count": 0,
+    "year_4_stream_count": 0,
+    "final_year_stream_count": 0,
+    "missing_stream_module_codes_in_catalog_by_year": {
+      "year_1": [],
+      "year_2": [],
+      "year_3": [],
+      "year_4": [],
+      "final_year": []
+    }
+  }
+}

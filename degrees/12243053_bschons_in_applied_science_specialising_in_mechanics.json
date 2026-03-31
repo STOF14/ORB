@@ -1,0 +1,115 @@
+{
+  "metadata": {
+    "year": 2026,
+    "degree_code": "12243053",
+    "degree_name": "BScHons in Applied Science specialising in Mechanics",
+    "faculty": "Engineering, Built Environment and IT",
+    "faculty_code": "EBIT",
+    "level": "Honours",
+    "source_url": "https://www.up.ac.za/yearbooks/2026/EBIT-faculty/HO-programmes/view/12243053",
+    "duration_years": 1,
+    "total_credits": 128,
+    "nqf_level": 8,
+    "department": "Mechanical and Aeronautical Engineering"
+  },
+  "curriculum": [
+    {
+      "module_code": "MIP 780",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective"
+    },
+    {
+      "module_code": "MIR 781",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective"
+    },
+    {
+      "module_code": "MSS 732",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective"
+    }
+  ],
+  "module_catalog": [
+    {
+      "module_code": "MIP 780",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "Maintenance practice 780",
+      "credits": 16.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EBIT-faculty/PG-modules/view/MIP 780",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Introduction to Asset management, Mechanisms of failure, Quantitative descriptions of failure, Maintenance policies/strategies, Renewal theory, Lubrication, Asset management strategy, Replacement decision-making, RCM principles, Maintenance & failure risk, A business case for maintenance, Repairable systems, Integrated failure data analysis, Maintenance profit impact, Life cycle modelling.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Semester 1",
+      "language": "Module is presented in English",
+      "contact_time": "21 contact hours per semester"
+    },
+    {
+      "module_code": "MIR 781",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "Reliability engineering 781",
+      "credits": 16.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EBIT-faculty/PG-modules/view/MIR 781",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Introduction to probabilistic distributions, computation of system reliability, building reliability models and optimisation of system reliability; Fault Tree Analysis; Failure Modes, Effects and Criticality Analysis (FMECA), Monte Carlo Simulation; probability-based design.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Semester 1",
+      "language": "Module is presented in English",
+      "contact_time": "21 contact hours per semester"
+    },
+    {
+      "module_code": "MSS 732",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "Research study 732",
+      "credits": 32.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EBIT-faculty/PG-modules/view/MSS 732",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "*This is a compulsory research module. This module allows a student to do research on a certain topic in mechanical or aeronautical engineering, as specified by a lecturer in the Department of Mechanical and Aeronautical Engineering, on an individual basis, under the supervision of that lecturer. The study should be seen as a precursor to the master\u2019s degree research that may follow the honours degree. The total volume of work that is to be invested in this module by an average student must be 320 hours. The body of knowledge studied must be of an advanced nature, at the level of the other postgraduate modules offered by the Department. Normal requirements for assessment that include the use of an external examiner apply to this module also.",
+      "prerequisites": "Completion of 48 credits of relevant Honours coursework",
+      "nqf_level": 8,
+      "presentation_period": "Semester 1 or Semester 2",
+      "language": "Module is presented in English",
+      "contact_time": "12 other contact sessions per week"
+    }
+  ],
+  "streams_by_year": {
+    "year_1": [],
+    "year_2": [],
+    "year_3": [],
+    "year_4": [],
+    "final_year": []
+  },
+  "stream_checks": {
+    "year_1_stream_count": 0,
+    "year_2_stream_count": 0,
+    "year_3_stream_count": 0,
+    "year_4_stream_count": 0,
+    "final_year_stream_count": 0,
+    "missing_stream_module_codes_in_catalog_by_year": {
+      "year_1": [],
+      "year_2": [],
+      "year_3": [],
+      "year_4": [],
+      "final_year": []
+    }
+  }
+}

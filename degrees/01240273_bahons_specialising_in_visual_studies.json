@@ -1,0 +1,139 @@
+{
+  "metadata": {
+    "year": 2026,
+    "degree_code": "01240273",
+    "degree_name": "BAHons specialising in Visual Studies",
+    "faculty": "Humanities",
+    "faculty_code": "HUM",
+    "level": "Honours",
+    "source_url": "https://www.up.ac.za/yearbooks/2026/HUM-faculty/HO-programmes/view/01240273",
+    "duration_years": 1,
+    "total_credits": 120,
+    "nqf_level": 8,
+    "department": "School of the Arts"
+  },
+  "curriculum": [
+    {
+      "module_code": "DRA 710",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective"
+    },
+    {
+      "module_code": "SOA 700",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective"
+    },
+    {
+      "module_code": "VKK 751",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective"
+    },
+    {
+      "module_code": "VKK 756",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective"
+    }
+  ],
+  "module_catalog": [
+    {
+      "module_code": "DRA 710",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "Digital media and performance 710",
+      "credits": 40.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/HUM-faculty/PG-modules/view/DRA 710",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "New and digital media investigates digital film-making, computer media and the internet in relation to performance and culture. The main emphasis is on digital film production and editing, with a secondary focus on distribution and screening.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "SOA 700",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "Arts research and methodology 700",
+      "credits": 40.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/HUM-faculty/PG-modules/view/SOA 700",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "A research report on an approved topic.",
+      "prerequisites": "Admission into the programme.",
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "2 lectures per week"
+    },
+    {
+      "module_code": "VKK 751",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "Key texts in visual culture 751",
+      "credits": 40.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/HUM-faculty/PG-modules/view/VKK 751",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "This module examines some of the seminal texts and theoretical frameworks in the field of visual culture. As far as possible, these texts and frameworks will be illustrated with reference to the South African context.",
+      "prerequisites": "Recommended: VKK 311 & VKK 321",
+      "nqf_level": 8,
+      "presentation_period": "Semester 1",
+      "language": "Module is presented in English",
+      "contact_time": "3 lectures per week"
+    },
+    {
+      "module_code": "VKK 756",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "Visual and digital scholarship 756",
+      "credits": 40.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/HUM-faculty/PG-modules/view/VKK 756",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "This module exposes students to the latest visual and digital humanities tools and scholarship. These may include photo diaries, interactive web documentaries, social media analysis, as well as the mapping and visualisation of data . A three-tiered analysis of images across media is followed, namely the site of production, the image itself and the meanings negotiated in specific social contexts.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Semester 2",
+      "language": "Module is presented in English",
+      "contact_time": "Blended mode"
+    }
+  ],
+  "streams_by_year": {
+    "year_1": [],
+    "year_2": [],
+    "year_3": [],
+    "year_4": [],
+    "final_year": []
+  },
+  "stream_checks": {
+    "year_1_stream_count": 0,
+    "year_2_stream_count": 0,
+    "year_3_stream_count": 0,
+    "year_4_stream_count": 0,
+    "final_year_stream_count": 0,
+    "missing_stream_module_codes_in_catalog_by_year": {
+      "year_1": [],
+      "year_2": [],
+      "year_3": [],
+      "year_4": [],
+      "final_year": []
+    }
+  }
+}

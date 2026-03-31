@@ -1,0 +1,209 @@
+{
+  "metadata": {
+    "year": 2026,
+    "degree_code": "01250217",
+    "degree_name": "MA in Counselling Psychology (Coursework)",
+    "faculty": "Humanities",
+    "faculty_code": "HUM",
+    "level": "Masters",
+    "source_url": "https://www.up.ac.za/yearbooks/2026/HUM-faculty/MA-programmes/view/01250217",
+    "duration_years": 2,
+    "total_credits": 180,
+    "nqf_level": 9,
+    "department": "Psychology"
+  },
+  "curriculum": [
+    {
+      "module_code": "SLK 807",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "SLK 809",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "SLK 810",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "SLK 811",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "SLK 812",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "SLK 813",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "VOS 895",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core"
+    }
+  ],
+  "module_catalog": [
+    {
+      "module_code": "SLK 807",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Professional practice and ethics 807",
+      "credits": 10.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/HUM-faculty/PG-modules/view/SLK 807",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "This module is concerned with the values and scope of the profession of counselling psychology and includes inter alia professional ethics, legal frameworks, and diversity psychology.",
+      "prerequisites": "Departmental selection: MA Counselling Psychology students only.",
+      "nqf_level": 9,
+      "presentation_period": "Year",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "SLK 809",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Therapeutic intervention 809",
+      "credits": 30.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/HUM-faculty/PG-modules/view/SLK 809",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "In this module, students will be exposed to various models of therapeutic intervention, as well as models of therapy integration. The aim is to equip students with knowledge and skills to enhance psychological well-being as well as address psychological distress.",
+      "prerequisites": "Departmental selection: MA Counselling Psychology students only",
+      "nqf_level": 9,
+      "presentation_period": "Year",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "SLK 810",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Community psychology 810",
+      "credits": 10.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/HUM-faculty/PG-modules/view/SLK 810",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "In this module students will develop skills to implement psychological programmes (e.g. life skills programmes) within social communities that will enable them to interpret the role of a community consultant.",
+      "prerequisites": "Departmental selection: MA Counselling Psychology students only.",
+      "nqf_level": 9,
+      "presentation_period": "Year",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "SLK 811",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Psychological assessment 811",
+      "credits": 30.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/HUM-faculty/PG-modules/view/SLK 811",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "This module focusses on the process of psychological assessment, including knowledge of psychopathology, psychodiagnostics, neuropsychology, and various assessment techniques. These include the administration, marking scoring and interpretation of psychological psychometric assessment techniques within various contexts.",
+      "prerequisites": "Departmental selection: MA Counselling Psychology students only.",
+      "nqf_level": 9,
+      "presentation_period": "Year",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "SLK 812",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Counselling psychology practical 812",
+      "credits": 10.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/HUM-faculty/PG-modules/view/SLK 812",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "In this module, students will engage in practical work at various institutions under supervision. Practicals will allow integration and application of theoretical knowledge.",
+      "prerequisites": "Departmental selection: MA Counselling Psychology students only.",
+      "nqf_level": 9,
+      "presentation_period": "Year",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "SLK 813",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Internship for Counselling psychology 813",
+      "credits": 0.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/HUM-faculty/PG-modules/view/SLK 813",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": null,
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 9,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "Internship"
+    },
+    {
+      "module_code": "VOS 895",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Mini-dissertation: Counselling psychology 895",
+      "credits": 90.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/HUM-faculty/PG-modules/view/VOS 895",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": null,
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 9,
+      "presentation_period": "Year",
+      "language": "Module is presented in English"
+    }
+  ],
+  "streams_by_year": {
+    "year_1": [],
+    "year_2": [],
+    "year_3": [],
+    "year_4": [],
+    "final_year": []
+  },
+  "stream_checks": {
+    "year_1_stream_count": 0,
+    "year_2_stream_count": 0,
+    "year_3_stream_count": 0,
+    "year_4_stream_count": 0,
+    "final_year_stream_count": 0,
+    "missing_stream_module_codes_in_catalog_by_year": {
+      "year_1": [],
+      "year_2": [],
+      "year_3": [],
+      "year_4": [],
+      "final_year": []
+    }
+  }
+}

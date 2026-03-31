@@ -1,0 +1,164 @@
+{
+  "metadata": {
+    "year": 2026,
+    "degree_code": "02240601",
+    "degree_name": "BScHons in Microbiology",
+    "faculty": "Natural and Agricultural Sciences",
+    "faculty_code": "SCI",
+    "level": "Honours",
+    "source_url": "https://www.up.ac.za/yearbooks/2026/SCI-faculty/HO-programmes/view/02240601",
+    "duration_years": 1,
+    "total_credits": 135,
+    "nqf_level": 8,
+    "department": "Biochemistry, Genetics and Microbiology"
+  },
+  "curriculum": [
+    {
+      "module_code": "MCP 751",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "MCP 752",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "MCP 753",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "MCP 754",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "MLB 721",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    }
+  ],
+  "module_catalog": [
+    {
+      "module_code": "MCP 751",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Research methods 751",
+      "credits": 25.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/SCI-faculty/PG-modules/view/MCP 751",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "The module provides students with planning, data handling, writing, and presentation skills required for microbiological research.\u00a0In addition, students are provided with hands-on experience in the advanced techniques utilised in research and analysis.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "2 Practicals/Discussion classes per week"
+    },
+    {
+      "module_code": "MCP 752",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Scientific communication 752",
+      "credits": 15.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/SCI-faculty/PG-modules/view/MCP 752",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Students are guided to collect relevant literature from disparate papers in the broader field of Microbiology\u00a0and to condense and collate this into a written seminar, which is also presented verbally.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "1 seminar per week, 1 discussion class per week"
+    },
+    {
+      "module_code": "MCP 753",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Trends in microbiology 753",
+      "credits": 20.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/SCI-faculty/PG-modules/view/MCP 753",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Discussions and essays focusing on recent advances in the field of Microbiology, as well as contextualising these developments within the broader framework of the biosciences and its role in the workplace and modern society.\u00a0Ethnical and philosophical issues in the broader field of Microbiology are also addressed.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "2 discussion classes per week"
+    },
+    {
+      "module_code": "MCP 754",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Research project and literature study 754",
+      "credits": 60.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/SCI-faculty/PG-modules/view/MCP 754",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "The module includes both practical and theoretical components.\u00a0 In addition to an individual research project with well-defined limits that is undertaken under the guidance of a lecturer, the module also acquaint the student with the theoretical aspects relevant to a specific research topic.\u00a0 The research project is thus preceded by the presentation of an in-depth review of the relevant literature, and the project is\u00a0 concluded with a progress report, presented in the format of a short publication and an oral presentation.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "MLB 721",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Molecular and cellular biology 721",
+      "credits": 15.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/SCI-faculty/PG-modules/view/MLB 721",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Principles and applications of recombinant DNA, and other novel molecular and genomics technologies, to address questions in the biological sciences and/or biotechnology.\u00a0 Strong emphasis is placed on the principles of research planning, including identifying suitable research objectives, formulating a research strategy and understanding the relevance and feasibility of research.\u00a0 The module is assessed by means of a research project proposal, conceived and formulated by each student.\u00a0 The proposal must focus on the use of molecular technologies in addressing realistic questions in biology and/or biotechnology.\u00a0 There is also an oral defense of the project proposal. This module is jointly presented in the Departments of Biochemistry, Genetics and Microbiology and Plant and Soil Sciences.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "2 discussion classes per week"
+    }
+  ],
+  "streams_by_year": {
+    "year_1": [],
+    "year_2": [],
+    "year_3": [],
+    "year_4": [],
+    "final_year": []
+  },
+  "stream_checks": {
+    "year_1_stream_count": 0,
+    "year_2_stream_count": 0,
+    "year_3_stream_count": 0,
+    "year_4_stream_count": 0,
+    "final_year_stream_count": 0,
+    "missing_stream_module_codes_in_catalog_by_year": {
+      "year_1": [],
+      "year_2": [],
+      "year_3": [],
+      "year_4": [],
+      "final_year": []
+    }
+  }
+}

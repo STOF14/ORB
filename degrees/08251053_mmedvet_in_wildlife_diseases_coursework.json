@@ -1,0 +1,113 @@
+{
+  "metadata": {
+    "year": 2026,
+    "degree_code": "08251053",
+    "degree_name": "MMedVet in Wildlife Diseases\u00a0(Coursework)",
+    "faculty": "Veterinary Science",
+    "faculty_code": "VET",
+    "level": "Masters",
+    "source_url": "https://www.up.ac.za/yearbooks/2026/VET-faculty/MA-programmes/view/08251053",
+    "duration_years": 3,
+    "total_credits": 360,
+    "nqf_level": 9,
+    "department": "Production Animal Studies"
+  },
+  "curriculum": [
+    {
+      "module_code": "VRM 813",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "WLS 800",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "WSK 890",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core"
+    }
+  ],
+  "module_catalog": [
+    {
+      "module_code": "VRM 813",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Research methodology 813",
+      "credits": 0.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/VET-faculty/PG-modules/view/VRM 813",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "A web-based introductory module in research methodology that includes planning and undertaking a research project or clinical trial, collecting and analysing data, scientific writing, and enabling preparation and presenting of a research protocol.",
+      "prerequisites": null,
+      "nqf_level": 9,
+      "presentation_period": "Semester 1 and Semester 2",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "WLS 800",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Veterinary wildlife studies 800",
+      "credits": 270.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/VET-faculty/PG-modules/view/WLS 800",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Broad-based, in-depth theoretical and practical training with emphasis on the skills required to capture, transport and manage free-ranging and captive animals with due consideration of conservation ecology, the interaction of wildlife and domestic animals and the control of diseases of wildlife.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 9,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "1 discussion class per week, 1 seminar per week, 5 practicals per week"
+    },
+    {
+      "module_code": "WSK 890",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Mini-dissertation: Wildlife diseases 890",
+      "credits": 90.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/VET-faculty/PG-modules/view/WSK 890",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": null,
+      "prerequisites": "VRM 813",
+      "nqf_level": 9,
+      "presentation_period": "Year",
+      "language": "Module is presented in English"
+    }
+  ],
+  "streams_by_year": {
+    "year_1": [],
+    "year_2": [],
+    "year_3": [],
+    "year_4": [],
+    "final_year": []
+  },
+  "stream_checks": {
+    "year_1_stream_count": 0,
+    "year_2_stream_count": 0,
+    "year_3_stream_count": 0,
+    "year_4_stream_count": 0,
+    "final_year_stream_count": 0,
+    "missing_stream_module_codes_in_catalog_by_year": {
+      "year_1": [],
+      "year_2": [],
+      "year_3": [],
+      "year_4": [],
+      "final_year": []
+    }
+  }
+}

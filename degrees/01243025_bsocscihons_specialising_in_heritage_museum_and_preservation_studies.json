@@ -1,0 +1,115 @@
+{
+  "metadata": {
+    "year": 2026,
+    "degree_code": "01243025",
+    "degree_name": "BSocSciHons specialising in Heritage, Museum and Preservation Studies",
+    "faculty": "Humanities",
+    "faculty_code": "HUM",
+    "level": "Honours",
+    "source_url": "https://www.up.ac.za/yearbooks/2026/HUM-faculty/HO-programmes/view/01243025",
+    "duration_years": 1,
+    "total_credits": 120,
+    "nqf_level": 8,
+    "department": "History, Heritage, and Cultural Tourism"
+  },
+  "curriculum": [
+    {
+      "module_code": "MKD 712",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "MKD 713",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "SOA 700",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    }
+  ],
+  "module_catalog": [
+    {
+      "module_code": "MKD 712",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Museum skills 712",
+      "credits": 40.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/HUM-faculty/PG-modules/view/MKD 712",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "This module will introduce students to the practices in museums including collecting, collections management, conservation and curation. In addition to mainstream museum collections, students will work with \u2018ordinary\u2019 and hidden archives found beyond the museum walls. This module is strongly focused on developing a familiarity and confidence when working with heritage objects including appropriate handling, housing and mounting for storage and exhibition; risk assessment and mitigation and general collections care theory and practice. In addition, students will be exposed to contemporary curatorial practices necessary for the practicalities of conceptualising and mounting of exhibitions and displays in a public space. They will as well be introduced to the growing field of digital curation.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Semester 2",
+      "language": "Module is presented in English",
+      "contact_time": "2 Block weeks"
+    },
+    {
+      "module_code": "MKD 713",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Heritage and museum development 713",
+      "credits": 40.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/HUM-faculty/PG-modules/view/MKD 713",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "This module provides an overview of basic elements of museums, their missions, history and their characteristics. It is organised around key activities of museums, viz history, structure, management, collections, display, interpretation, education and civil engagement.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "2 lectures per week"
+    },
+    {
+      "module_code": "SOA 700",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Arts research and methodology 700",
+      "credits": 40.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/HUM-faculty/PG-modules/view/SOA 700",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "A research report on an approved topic.",
+      "prerequisites": "Admission into the programme.",
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "2 lectures per week"
+    }
+  ],
+  "streams_by_year": {
+    "year_1": [],
+    "year_2": [],
+    "year_3": [],
+    "year_4": [],
+    "final_year": []
+  },
+  "stream_checks": {
+    "year_1_stream_count": 0,
+    "year_2_stream_count": 0,
+    "year_3_stream_count": 0,
+    "year_4_stream_count": 0,
+    "final_year_stream_count": 0,
+    "missing_stream_module_codes_in_catalog_by_year": {
+      "year_1": [],
+      "year_2": [],
+      "year_3": [],
+      "year_4": [],
+      "final_year": []
+    }
+  }
+}

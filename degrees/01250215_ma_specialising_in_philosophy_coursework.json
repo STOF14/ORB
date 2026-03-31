@@ -1,0 +1,164 @@
+{
+  "metadata": {
+    "year": 2026,
+    "degree_code": "01250215",
+    "degree_name": "MA specialising in Philosophy (Coursework)",
+    "faculty": "Humanities",
+    "faculty_code": "HUM",
+    "level": "Masters",
+    "source_url": "https://www.up.ac.za/yearbooks/2026/HUM-faculty/MA-programmes/view/01250215",
+    "duration_years": 1,
+    "total_credits": 180,
+    "nqf_level": 9,
+    "department": "Philosophy"
+  },
+  "curriculum": [
+    {
+      "module_code": "FIL 810",
+      "year_level": 8,
+      "is_compulsory": false,
+      "module_type": "elective"
+    },
+    {
+      "module_code": "FIL 813",
+      "year_level": 8,
+      "is_compulsory": false,
+      "module_type": "elective"
+    },
+    {
+      "module_code": "FIL 814",
+      "year_level": 8,
+      "is_compulsory": false,
+      "module_type": "elective"
+    },
+    {
+      "module_code": "FIL 815",
+      "year_level": 8,
+      "is_compulsory": false,
+      "module_type": "elective"
+    },
+    {
+      "module_code": "FIL 870",
+      "year_level": 8,
+      "is_compulsory": false,
+      "module_type": "elective"
+    }
+  ],
+  "module_catalog": [
+    {
+      "module_code": "FIL 810",
+      "year_level": 8,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "History of philosophy 810",
+      "credits": 30.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/HUM-faculty/PG-modules/view/FIL 810",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "A study of selected texts and/or themes from the history of philosophy. The\u00a0contents of the module may vary from year to year and will be announced at\u00a0the beginning of each year. Please see the department\u2019s website for more information.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 9,
+      "presentation_period": "Semester 1 or Semester 2",
+      "language": "Module is presented in English",
+      "contact_time": "Arranged internally"
+    },
+    {
+      "module_code": "FIL 813",
+      "year_level": 8,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "Social philosophical debates 813",
+      "credits": 30.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/HUM-faculty/PG-modules/view/FIL 813",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "The focus is on key issues or themes in moral and political philosophy,\u00a0including themes in the philosophy of economics. The contents of the module\u00a0may vary from year to year and will be announced at the beginning of each year. Please see the department\u2019s website for more information.",
+      "prerequisites": "No prerequisite.",
+      "nqf_level": 9,
+      "presentation_period": "Semester 1 or Semester 2",
+      "language": "Module is presented in English",
+      "contact_time": "Arranged internally"
+    },
+    {
+      "module_code": "FIL 814",
+      "year_level": 8,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "Contemporary philosophy 814",
+      "credits": 30.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/HUM-faculty/PG-modules/view/FIL 814",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Critical investigation of the work of key authors or themes in recent\u00a0philosophy, with some likely emphasis on metaphysics, epistemology, the\u00a0philosophy of science or a related field. The contents of the module may vary from year to year and will be announced at the beginning of each year. Please\u00a0see the department\u2019s website for more information.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 9,
+      "presentation_period": "Semester 1 or Semester 2",
+      "language": "Module is presented in English",
+      "contact_time": "Arranged internally"
+    },
+    {
+      "module_code": "FIL 815",
+      "year_level": 8,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "Current theme/debate 815",
+      "credits": 30.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/HUM-faculty/PG-modules/view/FIL 815",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Critical investigation of current debates in philosophy. The contents of the\u00a0module may vary from year to year and will be announced at the beginning of\u00a0each year. Please see the department\u2019s website for more information.",
+      "prerequisites": "No prerequisites",
+      "nqf_level": 9,
+      "presentation_period": "Semester 1 or Semester 2",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "FIL 870",
+      "year_level": 8,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "Mini-dissertation 870",
+      "credits": 90.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/HUM-faculty/PG-modules/view/FIL 870",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Mini-dissertation of 16,000-19,000 words as per Faculty guidelines on a topic\u00a0of the student\u2019s choice as approved by a supervisor.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 9,
+      "presentation_period": "Semester 1 or Semester 2",
+      "language": "Module is presented in English",
+      "contact_time": "Arranged internally"
+    }
+  ],
+  "streams_by_year": {
+    "year_1": [],
+    "year_2": [],
+    "year_3": [],
+    "year_4": [],
+    "final_year": []
+  },
+  "stream_checks": {
+    "year_1_stream_count": 0,
+    "year_2_stream_count": 0,
+    "year_3_stream_count": 0,
+    "year_4_stream_count": 0,
+    "final_year_stream_count": 0,
+    "missing_stream_module_codes_in_catalog_by_year": {
+      "year_1": [],
+      "year_2": [],
+      "year_3": [],
+      "year_4": [],
+      "final_year": []
+    }
+  }
+}

@@ -1,0 +1,232 @@
+{
+  "metadata": {
+    "year": 2026,
+    "degree_code": "10220020",
+    "degree_name": "PGDip in Family Medicine",
+    "faculty": "Health Sciences",
+    "faculty_code": "MED",
+    "level": "Postgraduate Diploma/Certificate",
+    "source_url": "https://www.up.ac.za/yearbooks/2026/MED-faculty/PC-programmes/view/10220020",
+    "duration_years": 2,
+    "total_credits": 120,
+    "nqf_level": 8,
+    "department": "Family Medicine"
+  },
+  "curriculum": [
+    {
+      "module_code": "FFM 700",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "FMD 700",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "FMF 700",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "FMI 700",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "FMX 700",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "HAK 700",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "PCC 700",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "PCP 700",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core"
+    }
+  ],
+  "module_catalog": [
+    {
+      "module_code": "FFM 700",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Family-oriented patient care 700",
+      "credits": 15.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/MED-faculty/PG-modules/view/FFM 700",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Study of the family as the object of care; family systems theory; tools for family-oriented care; family life-cycle; ethics of treating families; family conference; the family and chronic illness; family violence and alcohol abuse in the family.",
+      "prerequisites": null,
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "FMD 700",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Chronic diseases 700",
+      "credits": 15.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/MED-faculty/PG-modules/view/FMD 700",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Study of diabetes mellitus, asthma, epilepsy, hypertension, cardiac failure, obesity and chronic pain.",
+      "prerequisites": null,
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "FMF 700",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Psychiatry 700",
+      "credits": 15.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/MED-faculty/PG-modules/view/FMF 700",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Psychiatry in family practice Study of depression, anxiety; suicide; the difficult adolescent; substance use and abuse; schizophrenia; dementia and delirium.",
+      "prerequisites": null,
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "FMI 700",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Infectious diseases 700",
+      "credits": 15.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/MED-faculty/PG-modules/view/FMI 700",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Introduction; study of contagious disease important to the traveller; contagious diseases in the tropical regions; viral illnesses in children; fever of unknown origin; sexually transmitted diseases; haemorrhagic fever; infective diarrhoea; meningitis; leprosy; HIV/Aids; tuberculosis; rabies; school attendance and infectious diseases; community-acquired pneumonia (CAP); acute virus hepatitis; rational use of antibiotics and other exogenous infections.",
+      "prerequisites": null,
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "FMX 700",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Practice management 700",
+      "credits": 15.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/MED-faculty/PG-modules/view/FMX 700",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Study of human resource management; financial management; auditing of management and services management. The study of leadership and clinical governance for clinical primary care. The study of learning in primary care teams.",
+      "prerequisites": null,
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "HAK 700",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Philosophy and principles of family medicine 700",
+      "credits": 15.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/MED-faculty/PG-modules/view/HAK 700",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Study of the origins and emergence of Family Medicine. Study of the principles of Family Medicine. Study of the consultation. Study of patient-centred medicine, communication and the doctor-patient relationship. Study of medical ethics.",
+      "prerequisites": null,
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "PCC 700",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Clinical primary care 700",
+      "credits": 15.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/MED-faculty/PG-modules/view/PCC 700",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Study of primary care over the whole quadruple burden of disease (HIV/AIDS, TB, maternal and child care, non-communicable diseases, trauma and violence) and in terms of the morbidity profile of primary care in South Africa. This include acute (emergency) care, chronic care and in some cases care provided in the midwife obstetric unit. Up-skilling to ensure that primary care doctors are familiar with the latest national guidelines across the whole burden of disease, and refreshed of all the clinical skills required.",
+      "prerequisites": null,
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "PCP 700",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Community-orientated primary care 700",
+      "credits": 15.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/MED-faculty/PG-modules/view/PCP 700",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Study of the concept of community-orientated primary care. Study of the five principles of community-orientated primary care; Local health and institutional analysis, comprehensive care, equity, practice with science and service integration around users. A practical guide to doing community-orientated primary care.",
+      "prerequisites": null,
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English"
+    }
+  ],
+  "streams_by_year": {
+    "year_1": [],
+    "year_2": [],
+    "year_3": [],
+    "year_4": [],
+    "final_year": []
+  },
+  "stream_checks": {
+    "year_1_stream_count": 0,
+    "year_2_stream_count": 0,
+    "year_3_stream_count": 0,
+    "year_4_stream_count": 0,
+    "final_year_stream_count": 0,
+    "missing_stream_module_codes_in_catalog_by_year": {
+      "year_1": [],
+      "year_2": [],
+      "year_3": [],
+      "year_4": [],
+      "final_year": []
+    }
+  }
+}

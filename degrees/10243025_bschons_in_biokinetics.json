@@ -1,0 +1,164 @@
+{
+  "metadata": {
+    "year": 2026,
+    "degree_code": "10243025",
+    "degree_name": "BScHons in Biokinetics",
+    "faculty": "Health Sciences",
+    "faculty_code": "MED",
+    "level": "Honours",
+    "source_url": "https://www.up.ac.za/yearbooks/2026/MED-faculty/HO-programmes/view/10243025",
+    "duration_years": 1,
+    "total_credits": 120,
+    "nqf_level": 8,
+    "department": "Biokinetics and Sports Science"
+  },
+  "curriculum": [
+    {
+      "module_code": "III 702",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "MBK 718",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "MBK 719",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "MBK 721",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "NMR 702",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    }
+  ],
+  "module_catalog": [
+    {
+      "module_code": "III 702",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Research III 702",
+      "credits": 30.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/MED-faculty/PG-modules/view/NMR 702",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "In this module the focus will be on the execution of a research proposal and writing a research manuscript on the study executed, and the presentation of the research project which includes an introduction, literature survey, methodology, results and discussion, and conclusion and recommendations.",
+      "prerequisites": "None",
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "1 lecture per week"
+    },
+    {
+      "module_code": "MBK 718",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Biokinetics clinical practice II 718",
+      "credits": 40.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/MED-faculty/PG-modules/view/MBK 718",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "This module serves as the practical platform for students to acquire exposure to an experience in health promotion, the maintenance of physical abilities and final phase rehabilitation. This will be achieved by means of the practical application of scientifically based assessement and physical activity programme prescription for healthy and special populations. This module requires the student to meet the expected requirements stipulated by the Health Professions Council of South Africa and have accumulated 65 hours of Sport First aid.",
+      "prerequisites": null,
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "2 practicals per week"
+    },
+    {
+      "module_code": "MBK 719",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Clinical exercise physiology 719",
+      "credits": 25.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/MED-faculty/PG-modules/view/MBK 719",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "The module examines exercise physiology from a biokinetics perspective and includes the normal and pathophysiology of bio-energetics, adaptation of the body systems, environmental influences, ergogenic aids and special considerations such as aging, gender, genetics and fatigue. (1 hour contact time per week with work assignments for the following week).",
+      "prerequisites": null,
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "MBK 721",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Biokinetics 721",
+      "credits": 25.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/MED-faculty/PG-modules/view/MBK 721",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "This module serves as the theoretical platform for students to acquire the knowledge and understanding of the role of the biokineticist in health promotion, the maintenance of physical abilities and final phase rehabilitation. This will be achieved by means of acquring the knowledge and understanding of scientifically based assessement and physical activity programme prescription in healthy and special populations.",
+      "prerequisites": null,
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "2 lectures per week, 1 practical per week"
+    },
+    {
+      "module_code": "NMR 702",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Research III 702",
+      "credits": 30.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/MED-faculty/PG-modules/view/NMR%20702",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 2,
+      "content": "In this module the focus will be on the execution of a research proposal and writing a research manuscript on the study executed, and the presentation of the research project which includes an introduction, literature survey, methodology, results and discussion, and conclusion and recommendations.",
+      "prerequisites": "None",
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "1 lecture per week"
+    }
+  ],
+  "streams_by_year": {
+    "year_1": [],
+    "year_2": [],
+    "year_3": [],
+    "year_4": [],
+    "final_year": []
+  },
+  "stream_checks": {
+    "year_1_stream_count": 0,
+    "year_2_stream_count": 0,
+    "year_3_stream_count": 0,
+    "year_4_stream_count": 0,
+    "final_year_stream_count": 0,
+    "missing_stream_module_codes_in_catalog_by_year": {
+      "year_1": [],
+      "year_2": [],
+      "year_3": [],
+      "year_4": [],
+      "final_year": []
+    }
+  }
+}

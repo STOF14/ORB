@@ -1,0 +1,215 @@
+{
+  "metadata": {
+    "year": 2026,
+    "degree_code": "02240142",
+    "degree_name": "BScHons in Geology",
+    "faculty": "Natural and Agricultural Sciences",
+    "faculty_code": "SCI",
+    "level": "Honours",
+    "source_url": "https://www.up.ac.za/yearbooks/2026/SCI-faculty/HO-programmes/view/02240142",
+    "duration_years": 1,
+    "total_credits": 135,
+    "nqf_level": 8,
+    "department": "Geology"
+  },
+  "curriculum": [
+    {
+      "module_code": "GLY 701",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "GLY 704",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "GLY 707",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "GLY 710",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "GLY 713",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "GLY 715",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "GLY 716",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    }
+  ],
+  "module_catalog": [
+    {
+      "module_code": "GLY 701",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Petrology and geochemistry 701",
+      "credits": 20.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/SCI-faculty/PG-modules/view/GLY 701",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Interpretation and application of advanced petrogenetic tools: the Rb/Sr and Sm/Nd isotopic systems, quantitative interpretation of binary and ternary phase diagrams, Harker type diagrams, assimilation-fractional crystallisation \u2013 partial melting. Geothermometers and geobarometers, PT-t loops. Abundance of elements in the crust, crust-forming models. Hydrous geochemistry. Recognition of geochemical anomalies. Analytical methods and the treatment of geochemical data. A one-week field trip to the Bushveld Complex.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "2 practicals per week, 2 lectures per week"
+    },
+    {
+      "module_code": "GLY 704",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Crustal evolution 704",
+      "credits": 20.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/SCI-faculty/PG-modules/view/GLY 704",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Precambrian crustal evolution.\u00a0Precambrian plate tectonics. Precambrian evolution of the African plate (Eburnean, Kibaran and Pan-African events). Phanerozoic evolution to the African plate; global examples of tectonics as a continental crustal source. Determination of deformational history of crustal rocks; determination of palaeostress conditions in ancient crustal rocks. Practical experience of structural analysis and determination of deformational history. A one-week field trip to a tectonically complex area.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "2 practicals per week, 2 lectures per week"
+    },
+    {
+      "module_code": "GLY 707",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Mapping camp 707",
+      "credits": 10.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/SCI-faculty/PG-modules/view/GLY 707",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Mapping and analysis of a geologically complex area using different techniques.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "2 practicals per week"
+    },
+    {
+      "module_code": "GLY 710",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Honours project 710",
+      "credits": 35.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/SCI-faculty/PG-modules/view/GLY 710",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Independent acquisition of geological field and/or laboratory data, treatment and interpretation thereof, and writing of an honours essay.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "5 practical sessions per week"
+    },
+    {
+      "module_code": "GLY 713",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Economic geology 713",
+      "credits": 20.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/SCI-faculty/PG-modules/view/GLY 713",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Basic remote sensing methods and their applications to geology; basic geophysical and geochemical exploration techniques; exploration target generation - philosophies and methods; professional geological practice; the SAMREC and similar codes; geologists in the business environment; case studies. Practical component (runs parallel to theory above) encompasses ore-microscopy; ore mineral identification; ore textures; analysis of ore assemblages; instrumental techniques applied to ores. Various short field trips to both opencast and underground mines.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "2 practicals per week, 2 lectures per week"
+    },
+    {
+      "module_code": "GLY 715",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Modern analytical methods and sampling theory 715",
+      "credits": 20.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/SCI-faculty/PG-modules/view/GLY 715",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Modern analytical methods, including X-ray Diffraction (XRD), X-ray Fluorescence (XRF), inductively coupled mass spectrometry (ICP-MS), methods of isotopic analysis, and electron beam methods (EPMA, SEM, CT). An introductory statistical course in sampling methods, treatment of data, statistical validity, and basic geostatistics.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "2 lectures per week, 2 practicals per week"
+    },
+    {
+      "module_code": "GLY 716",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Trends in geoscience 716",
+      "credits": 10.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/SCI-faculty/PG-modules/view/GLY 716",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "The field of Geology is rapidly evolving both in terms of industry requirements and the type of science done. This module includes short courses offered by staff and industry on a variety of topics, as well as a weekly departmental seminar on current research in the department. The content of this module is expected to vary year by year according to availability of internal and external lecturers.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "2 practicals per week, 2 lectures per week"
+    }
+  ],
+  "streams_by_year": {
+    "year_1": [],
+    "year_2": [],
+    "year_3": [],
+    "year_4": [],
+    "final_year": []
+  },
+  "stream_checks": {
+    "year_1_stream_count": 0,
+    "year_2_stream_count": 0,
+    "year_3_stream_count": 0,
+    "year_4_stream_count": 0,
+    "final_year_stream_count": 0,
+    "missing_stream_module_codes_in_catalog_by_year": {
+      "year_1": [],
+      "year_2": [],
+      "year_3": [],
+      "year_4": [],
+      "final_year": []
+    }
+  }
+}

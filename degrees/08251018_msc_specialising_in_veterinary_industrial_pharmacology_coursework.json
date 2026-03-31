@@ -1,0 +1,136 @@
+{
+  "metadata": {
+    "year": 2026,
+    "degree_code": "08251018",
+    "degree_name": "MSc specialising in Veterinary Industrial Pharmacology\u00a0(Coursework)",
+    "faculty": "Veterinary Science",
+    "faculty_code": "VET",
+    "level": "Masters",
+    "source_url": "https://www.up.ac.za/yearbooks/2026/VET-faculty/MA-programmes/view/08251018",
+    "duration_years": 2,
+    "total_credits": 180,
+    "nqf_level": 9,
+    "department": "Paraclinical Sciences"
+  },
+  "curriculum": [
+    {
+      "module_code": "FAK 876",
+      "year_level": 1,
+      "is_compulsory": false,
+      "module_type": "elective"
+    },
+    {
+      "module_code": "VIP 800",
+      "year_level": 1,
+      "is_compulsory": false,
+      "module_type": "elective"
+    },
+    {
+      "module_code": "VRM 813",
+      "year_level": 1,
+      "is_compulsory": false,
+      "module_type": "elective"
+    },
+    {
+      "module_code": "VIP 890",
+      "year_level": 2,
+      "is_compulsory": false,
+      "module_type": "elective"
+    }
+  ],
+  "module_catalog": [
+    {
+      "module_code": "FAK 876",
+      "year_level": 1,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "Advanced fundamentals of pharmacology 876",
+      "credits": 40.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/VET-faculty/PG-modules/view/FAK 876",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Scope and historical development of veterinary pharmacology. Veterinary pharmaceutics and formulation theory. Pharmacokinetic theory, pharmacokinetic analysis and modelling. Bioequivalence theory and evaluation. Physicochemical and molecular basis of drug action. Dose response and calculation of dose response parameters. Pharmacological modulation of organ and body functions. Molecular basis of action and pharmacological effects of chemotherapeutic agents. Adverse drug reactions, interactions and pharmacovigilance. Comparative species pharmacology, pharmacogenomics and pharmacogenetics. Background on complementary medicines. Fundamentals of pharmacological research.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 9,
+      "presentation_period": "Year",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "VIP 800",
+      "year_level": 1,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "Veterinary industrial pharmacology 800",
+      "credits": 50.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/VET-faculty/PG-modules/view/VIP 800",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Veterinary pharmaceutical discovery and development. Non-clinical safety and preclinical toxicology. Clinical safety and efficacy evaluation. Good laboratory and clinical practices. Drug statutory and application requirement. Drug application submission. Regulatory procedures, evaluation and veterinary drug control. Drug residue risk assessment. Product planning, production management and quality assurance. Drug marketing, pricing and promotion. Technical services, training, extension, product support and complaint investigation.",
+      "prerequisites": "FAK 876",
+      "nqf_level": 9,
+      "presentation_period": "Year",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "VRM 813",
+      "year_level": 1,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "Research methodology 813",
+      "credits": 0.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/VET-faculty/PG-modules/view/VRM 813",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "A web-based introductory module in research methodology that includes planning and undertaking a research project or clinical trial, collecting and analysing data, scientific writing, and enabling preparation and presenting of a research protocol.",
+      "prerequisites": null,
+      "nqf_level": 9,
+      "presentation_period": "Semester 1 and Semester 2",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "VIP 890",
+      "year_level": 2,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "Mini-dissertation: Veterinary industrial pharmacology 890",
+      "credits": 90.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/VET-faculty/PG-modules/view/VIP 890",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": null,
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 9,
+      "presentation_period": "Year",
+      "language": "Module is presented in English"
+    }
+  ],
+  "streams_by_year": {
+    "year_1": [],
+    "year_2": [],
+    "year_3": [],
+    "year_4": [],
+    "final_year": []
+  },
+  "stream_checks": {
+    "year_1_stream_count": 0,
+    "year_2_stream_count": 0,
+    "year_3_stream_count": 0,
+    "year_4_stream_count": 0,
+    "final_year_stream_count": 0,
+    "missing_stream_module_codes_in_catalog_by_year": {
+      "year_1": [],
+      "year_2": [],
+      "year_3": [],
+      "year_4": [],
+      "final_year": []
+    }
+  }
+}

@@ -1,0 +1,256 @@
+{
+  "metadata": {
+    "year": 2026,
+    "degree_code": "09250005",
+    "degree_name": "Master of Education [MEd]",
+    "faculty": "Education",
+    "faculty_code": "EDU",
+    "level": "Masters",
+    "source_url": "https://www.up.ac.za/yearbooks/2026/EDU-faculty/MA-programmes/view/09250005",
+    "duration_years": 2,
+    "total_credits": 180,
+    "nqf_level": 9,
+    "department": "Humanities Education Science, Mathematics and Technology"
+  },
+  "curriculum": [
+    {
+      "module_code": "CIE 890",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "ECD 890",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "HUE 890",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "LSN 890",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "MCE 890",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "NMQ 801",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "OWB 891",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "PHN 890",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "TNO 890",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core"
+    }
+  ],
+  "module_catalog": [
+    {
+      "module_code": "CIE 890",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Dissertation: Computer Integrated Education 890",
+      "credits": 180.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EDU-faculty/PG-modules/view/CIE 890",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "A dissertation conducted under supervision of a supervisor in the area of computer integrated education.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 9,
+      "presentation_period": "Year",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "ECD 890",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Dissertation: Early childhood education 890",
+      "credits": 180.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EDU-faculty/PG-modules/view/ECD 890",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "A dissertation conducted under supervision of a supervisor in the area of early childhood education.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 9,
+      "presentation_period": "Year",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "HUE 890",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Dissertation: Humanities education 890",
+      "credits": 180.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EDU-faculty/PG-modules/view/HUE 890",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "A dissertation conducted under supervision of a supervisor in the area of humanities education.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 9,
+      "presentation_period": "Year",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "LSN 890",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Dissertation: Life sciences education 890",
+      "credits": 180.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EDU-faculty/PG-modules/view/LSN 890",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "A dissertation conducted under supervision of a supervisor in the area of life sciences education.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 9,
+      "presentation_period": "Year",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "MCE 890",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Dissertation: Mathematics education 890",
+      "credits": 180.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EDU-faculty/PG-modules/view/MCE 890",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "A dissertation conducted under supervision of a supervisor in the area of mathematics education.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 9,
+      "presentation_period": "Year",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "NMQ 801",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Research proposal 801",
+      "credits": 0.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EDU-faculty/PG-modules/view/NMQ 801",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Development of a research proposal. Research methodology. Overview and principles of quantitative and qualitative research methodology. Data collection methods, data analysis methods, paradigm analysis and theoretical frameworks for educational studies. Global theoretical perspectives in education.",
+      "prerequisites": null,
+      "nqf_level": 9,
+      "presentation_period": "Year",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "OWB 891",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Dissertation: Education management and policy studies 891",
+      "credits": 180.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EDU-faculty/PG-modules/view/OWB 891",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "A dissertation conducted under supervision of a supervisor in the area of education management and policy studies.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 9,
+      "presentation_period": "Year",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "PHN 890",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Dissertation: Physical Sciences Education 890",
+      "credits": 180.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EDU-faculty/PG-modules/view/PHN 890",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "A dissertation conducted under supervision of a supervisor in the area of physical sciences education.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 9,
+      "presentation_period": "Year",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "TNO 890",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Dissertation: Technology Education 890",
+      "credits": 180.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EDU-faculty/PG-modules/view/TNO 890",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "A dissertation conducted under supervision of a supervisor in the area of technology education.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 9,
+      "presentation_period": "Year",
+      "language": "Module is presented in English"
+    }
+  ],
+  "streams_by_year": {
+    "year_1": [],
+    "year_2": [],
+    "year_3": [],
+    "year_4": [],
+    "final_year": []
+  },
+  "stream_checks": {
+    "year_1_stream_count": 0,
+    "year_2_stream_count": 0,
+    "year_3_stream_count": 0,
+    "year_4_stream_count": 0,
+    "final_year_stream_count": 0,
+    "missing_stream_module_codes_in_catalog_by_year": {
+      "year_1": [],
+      "year_2": [],
+      "year_3": [],
+      "year_4": [],
+      "final_year": []
+    }
+  }
+}

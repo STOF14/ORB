@@ -1,0 +1,90 @@
+{
+  "metadata": {
+    "year": 2026,
+    "degree_code": "06246042",
+    "degree_name": "BThHons specialising in Old Testament Studies",
+    "faculty": "Theology and Religion",
+    "faculty_code": "THEO",
+    "level": "Honours",
+    "source_url": "https://www.up.ac.za/yearbooks/2026/THEO-faculty/HO-programmes/view/06246042",
+    "duration_years": 1,
+    "total_credits": 120,
+    "nqf_level": 8,
+    "department": "Old Testament and Hebrew Scriptures"
+  },
+  "curriculum": [
+    {
+      "module_code": "OTW 730",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective"
+    },
+    {
+      "module_code": "OTW 731",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective"
+    }
+  ],
+  "module_catalog": [
+    {
+      "module_code": "OTW 730",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "Old Testament studies 730",
+      "credits": 30.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/THEO-faculty/PG-modules/view/OTW 730",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Elective module. Pentateuch and Deuteronomistic literature (including exegetical study of the Hebrew text).",
+      "prerequisites": "HEB 110 and HEB 120",
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "1 lecture per week"
+    },
+    {
+      "module_code": "OTW 731",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "Old Testament studies 731",
+      "credits": 30.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/THEO-faculty/PG-modules/view/OTW 731",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Elective module. Pentateuch and Deuteronomistic literature (including exegetical study of the translated text).",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "1 lecture per week"
+    }
+  ],
+  "streams_by_year": {
+    "year_1": [],
+    "year_2": [],
+    "year_3": [],
+    "year_4": [],
+    "final_year": []
+  },
+  "stream_checks": {
+    "year_1_stream_count": 0,
+    "year_2_stream_count": 0,
+    "year_3_stream_count": 0,
+    "year_4_stream_count": 0,
+    "final_year_stream_count": 0,
+    "missing_stream_module_codes_in_catalog_by_year": {
+      "year_1": [],
+      "year_2": [],
+      "year_3": [],
+      "year_4": [],
+      "final_year": []
+    }
+  }
+}

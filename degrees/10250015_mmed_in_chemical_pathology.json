@@ -1,0 +1,160 @@
+{
+  "metadata": {
+    "year": 2026,
+    "degree_code": "10250015",
+    "degree_name": "MMed in Chemical Pathology",
+    "faculty": "Health Sciences",
+    "faculty_code": "MED",
+    "level": "Masters",
+    "source_url": "https://www.up.ac.za/yearbooks/2026/MED-faculty/MA-programmes/view/10250015",
+    "duration_years": 5,
+    "total_credits": 480,
+    "nqf_level": 9,
+    "department": "Anatomical Pathology"
+  },
+  "curriculum": [
+    {
+      "module_code": "CHP 800",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "MMS 890",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "TNM 802",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "MMS 800",
+      "year_level": 4,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "TNM 800",
+      "year_level": 4,
+      "is_compulsory": true,
+      "module_type": "core"
+    }
+  ],
+  "module_catalog": [
+    {
+      "module_code": "CHP 800",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Chemical pathology 800",
+      "credits": 300.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/MED-faculty/PG-modules/view/CHP 800",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": null,
+      "prerequisites": "FCPath (Chem)(SA) Part I",
+      "nqf_level": 9,
+      "presentation_period": "Year",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "MMS 890",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Dissertation 890",
+      "credits": 180.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/MED-faculty/PG-modules/view/MMS 890",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": null,
+      "prerequisites": null,
+      "nqf_level": 9,
+      "presentation_period": "Year",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "TNM 802",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Applied research methodology 802",
+      "credits": 0.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/MED-faculty/PG-modules/view/TNM 802",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "*Attendance module only.",
+      "prerequisites": null,
+      "nqf_level": 9,
+      "presentation_period": "Year",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "MMS 800",
+      "year_level": 4,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "MMed: Essay 800",
+      "credits": 12.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/MED-faculty/UG-modules/view/MMS%20800",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 2,
+      "content": null,
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 9,
+      "presentation_period": "Semester 1",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "TNM 800",
+      "year_level": 4,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Yearbooks Home",
+      "credits": null,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/MED-faculty/UG-modules/view/TNM%20800",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 2,
+      "content": null,
+      "prerequisites": null,
+      "nqf_level": null,
+      "presentation_period": null,
+      "language": null
+    }
+  ],
+  "streams_by_year": {
+    "year_1": [],
+    "year_2": [],
+    "year_3": [],
+    "year_4": [],
+    "final_year": []
+  },
+  "stream_checks": {
+    "year_1_stream_count": 0,
+    "year_2_stream_count": 0,
+    "year_3_stream_count": 0,
+    "year_4_stream_count": 0,
+    "final_year_stream_count": 0,
+    "missing_stream_module_codes_in_catalog_by_year": {
+      "year_1": [],
+      "year_2": [],
+      "year_3": [],
+      "year_4": [],
+      "final_year": []
+    }
+  }
+}

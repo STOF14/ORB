@@ -1,0 +1,164 @@
+{
+  "metadata": {
+    "year": 2026,
+    "degree_code": "02240705",
+    "degree_name": "BScHons in Genetics",
+    "faculty": "Natural and Agricultural Sciences",
+    "faculty_code": "SCI",
+    "level": "Honours",
+    "source_url": "https://www.up.ac.za/yearbooks/2026/SCI-faculty/HO-programmes/view/02240705",
+    "duration_years": 1,
+    "total_credits": 135,
+    "nqf_level": 8,
+    "department": "Biochemistry, Genetics and Microbiology"
+  },
+  "curriculum": [
+    {
+      "module_code": "GTK 702",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "GTK 703",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "GTK 704",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "GTK 705",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "MLB 721",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    }
+  ],
+  "module_catalog": [
+    {
+      "module_code": "GTK 702",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Scientific communication 702",
+      "credits": 15.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/SCI-faculty/PG-modules/view/GTK 702",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Students are guided to collect relevant and up-to-date literature on large topics from databases using referencing software, and to select and condense relevant papers into the outline for a literature review. Critical reading of research papers, article discussions and presentations. Scientific writing skills.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "1 discussion class per week, 1 seminar per week"
+    },
+    {
+      "module_code": "GTK 703",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Research project 703",
+      "credits": 60.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/SCI-faculty/PG-modules/view/GTK 703",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "A mini-dissertation with well-defined limits is undertaken under the guidance of a supervisor.\u00a0 The students are allowed to choose from a number of projects from the different research programmes in the department.\u00a0 The module also has a strong theoretical component since emphasis is placed on writing and presenting a comprehensive literature review and project proposal.\u00a0 Additional technical and analytical training is provided. The project is concluded with a final report, presented in the format of a short manuscript, as well as a poster and an oral presentation.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "GTK 704",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Trends in genetics 704",
+      "credits": 20.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/SCI-faculty/PG-modules/view/GTK 704",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Discussions and essays focusing on a selection of current topics, as well as recent advances in the field of genetics. There is emphasis on contextualising these developments in the broader framework of the biosciences and its role in the workplace and modern society.\u00a0 Ethical and philosophical issues in genetics are debated. Concepts related to intellectual property, legal issues and biosafety in biotechnology are introduced.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "2 discussion classes per week"
+    },
+    {
+      "module_code": "GTK 705",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Research methods 705",
+      "credits": 25.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/SCI-faculty/PG-modules/view/GTK 705",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Students are guided through the methodology of research planning and data handling.\u00a0They are offered hands-on experience in a range of advanced techniques employed in molecular research and analysis.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "2 Practicals/Discussion classes per week"
+    },
+    {
+      "module_code": "MLB 721",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Molecular and cellular biology 721",
+      "credits": 15.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/SCI-faculty/PG-modules/view/MLB 721",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Principles and applications of recombinant DNA, and other novel molecular and genomics technologies, to address questions in the biological sciences and/or biotechnology.\u00a0 Strong emphasis is placed on the principles of research planning, including identifying suitable research objectives, formulating a research strategy and understanding the relevance and feasibility of research.\u00a0 The module is assessed by means of a research project proposal, conceived and formulated by each student.\u00a0 The proposal must focus on the use of molecular technologies in addressing realistic questions in biology and/or biotechnology.\u00a0 There is also an oral defense of the project proposal. This module is jointly presented in the Departments of Biochemistry, Genetics and Microbiology and Plant and Soil Sciences.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "2 discussion classes per week"
+    }
+  ],
+  "streams_by_year": {
+    "year_1": [],
+    "year_2": [],
+    "year_3": [],
+    "year_4": [],
+    "final_year": []
+  },
+  "stream_checks": {
+    "year_1_stream_count": 0,
+    "year_2_stream_count": 0,
+    "year_3_stream_count": 0,
+    "year_4_stream_count": 0,
+    "final_year_stream_count": 0,
+    "missing_stream_module_codes_in_catalog_by_year": {
+      "year_1": [],
+      "year_2": [],
+      "year_3": [],
+      "year_4": [],
+      "final_year": []
+    }
+  }
+}

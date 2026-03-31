@@ -1,0 +1,241 @@
+{
+  "metadata": {
+    "year": 2026,
+    "degree_code": "07240162",
+    "degree_name": "BComHons specialising in Marketing Management",
+    "faculty": "Economic and Management Sciences",
+    "faculty_code": "EMS",
+    "level": "Honours",
+    "source_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/HO-programmes/view/07240162",
+    "duration_years": 1,
+    "total_credits": 125,
+    "nqf_level": 8,
+    "department": "Marketing Management"
+  },
+  "curriculum": [
+    {
+      "module_code": "BEM 314",
+      "year_level": 3,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "BEM 321",
+      "year_level": 3,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "OBS 330",
+      "year_level": 3,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "BEM 783",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "BEM 795",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "BVD 780",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "NME 703",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "SBB 781",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    }
+  ],
+  "module_catalog": [
+    {
+      "module_code": "BEM 314",
+      "year_level": 3,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Marketing research 314",
+      "credits": 20.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/UG-modules/view/BEM 314",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "The role of marketing research, the process of marketing research, interpretation of secondary research, qualitative research, survey research, observation, measurement and attitude scaling, questionnaire design, sampling design and sampling procedures, basic data analysis, descriptive statistical analysis, interpretation and reporting of results, research report writing.",
+      "prerequisites": "BEM 120 and STK 110 GS",
+      "nqf_level": 7,
+      "presentation_period": "Semester 1",
+      "language": "Module is presented in English",
+      "contact_time": "3 lectures per week",
+      "service_modules": "Faculty of Humanities Faculty of Natural and Agricultural Sciences"
+    },
+    {
+      "module_code": "BEM 321",
+      "year_level": 3,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Marketing management 321",
+      "credits": 20.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/UG-modules/view/BEM 321",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Strategic issues in marketing, strategic marketing, strategic analysis (market analysis, customer analysis, competitor analysis and internal analysis), market strategies (competitive strategies, strategies in the product life cycle and relationship building strategies) and strategy implementation and control.",
+      "prerequisites": "BEM 120",
+      "nqf_level": 7,
+      "presentation_period": "Semester 2",
+      "language": "Module is presented in English",
+      "contact_time": "3 lectures per week",
+      "service_modules": "Faculty of Engineering, Built Environment and Information Technology Faculty of Humanities Faculty of Natural and Agricultural Sciences"
+    },
+    {
+      "module_code": "OBS 330",
+      "year_level": 3,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Business management 330",
+      "credits": 20.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/UG-modules/view/OBS 330",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Strategy execution: The role of management in strategy implementation; budgets as instrument in the implementation process; leading processes of change within enterprises; supporting policies, procedures and information systems for implementation in the various functional areas; evaluation and control of implementation. South African case studies to create contextual relevance.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 7,
+      "presentation_period": "Semester 2",
+      "language": "Module is presented in English",
+      "contact_time": "3 lectures per week"
+    },
+    {
+      "module_code": "BEM 783",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Marketing in practice 783",
+      "credits": 20.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/PG-modules/view/BEM 783",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "The module requires the learner to develop a portfolio that demonstrates their ability to conduct research, write research reports, compile different marketing documents/reports, present to audiences, solve marketing-related strategic problems and prepare profile documents. One of the module projects involves community engagement activities where community partners are assisted with marketing-related knowledge and/or activities.",
+      "prerequisites": "Only for BComHons specialising in Marketing Management students.",
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "1 lecture per week"
+    },
+    {
+      "module_code": "BEM 795",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Research report: Marketing management 795",
+      "credits": 30.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/PG-modules/view/BEM 795",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "This module focuses on the practicalities of writing an academic research article or report (flowing from the research proposal in NME 703). This includes, but is not limited to, understanding and applying the statistical tests most frequently applied in marketing-related scientific studies and publications, interpreting results from the analyses, making suggestions for managerial decision-making, discussing the theoretical and practical implications of the research, as well as limitations and recommendations for future research.",
+      "prerequisites": "NME 703",
+      "nqf_level": 8,
+      "presentation_period": "Semester 2",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "BVD 780",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Marketing of services 780",
+      "credits": 25.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/PG-modules/view/BVD 780",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "This module exposes students to key service marketing principles, and explores essential concepts, practical applications, and recent developments in service marketing. Topics include the distinction between products and services, the expanded services marketing mix, and service quality.",
+      "prerequisites": "Only for BComHons specialising in Marketing Management students.",
+      "nqf_level": 8,
+      "presentation_period": "Semester 1 or Semester 2",
+      "language": "Module is presented in English",
+      "contact_time": "1 lecture per week"
+    },
+    {
+      "module_code": "NME 703",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Research methodology 703",
+      "credits": 25.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/PG-modules/view/NME 703",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "This module addresses research methodology with the ultimate aim of compiling a research proposal. It focuses on teaching some of the fundamental processes, principles and techniques necessary to conduct and interpret empirical research in a marketing context. This includes, but is not limited to, compiling a literature review, proposing a methodology and developing a research instrument for conducting quantitative research. The research proposal submitted as the examination for NME 703 will be implemented in the BEM 795 module.",
+      "prerequisites": "No prerequisites",
+      "nqf_level": 8,
+      "presentation_period": "Semester 1",
+      "language": "Module is presented in English",
+      "contact_time": "1 lecture per week"
+    },
+    {
+      "module_code": "SBB 781",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Strategic marketing management 781",
+      "credits": 25.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/PG-modules/view/SBB 781",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "This module aims to cultivate students' strategic thinking, practical analytical skills, and the ability to integrate prior knowledge through practical application. It encourages an understanding of corporate and marketing alignment, ethical awareness, and responsible practices while building skills in scientific communication and creative problem-solving.",
+      "prerequisites": "Only for BComHons specialising in Marketing Management students.",
+      "nqf_level": 8,
+      "presentation_period": "Semester 1 or Semester 2",
+      "language": "Module is presented in English",
+      "contact_time": "1 lecture per week"
+    }
+  ],
+  "streams_by_year": {
+    "year_1": [],
+    "year_2": [],
+    "year_3": [],
+    "year_4": [],
+    "final_year": []
+  },
+  "stream_checks": {
+    "year_1_stream_count": 0,
+    "year_2_stream_count": 0,
+    "year_3_stream_count": 0,
+    "year_4_stream_count": 0,
+    "final_year_stream_count": 0,
+    "missing_stream_module_codes_in_catalog_by_year": {
+      "year_1": [],
+      "year_2": [],
+      "year_3": [],
+      "year_4": [],
+      "final_year": []
+    }
+  }
+}

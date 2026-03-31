@@ -1,0 +1,65 @@
+{
+  "metadata": {
+    "year": 2026,
+    "degree_code": "12240252",
+    "degree_name": "BEngHons specialising in Engineering and Technology Management",
+    "faculty": "Engineering, Built Environment and IT",
+    "faculty_code": "EBIT",
+    "level": "Honours",
+    "source_url": "https://www.up.ac.za/yearbooks/2026/EBIT-faculty/HO-programmes/view/12240252",
+    "duration_years": 1,
+    "total_credits": 128,
+    "nqf_level": 8,
+    "department": "Engineering and Technology Management"
+  },
+  "curriculum": [
+    {
+      "module_code": "IGB 780",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective"
+    }
+  ],
+  "module_catalog": [
+    {
+      "module_code": "IGB 780",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "Research project 780",
+      "credits": 32.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EBIT-faculty/PG-modules/view/IGB 780",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "The research project is the capstone of the MOT programme. It comprises an independent research study into an area of technology management, applying the principles learned during the programme. Although this is a research project of limited breadth and scope, it nonetheless has to comply with the requirements of scientific research on post-graduate level. The total volume of work that is to be invested in this module by an average student must be 320 hours. Normal requirements for assessment that include the use of an external examiner apply to this module.",
+      "prerequisites": null,
+      "nqf_level": 8,
+      "presentation_period": "Semester 1 and Semester 2",
+      "language": "Module is presented in English",
+      "contact_time": "20 contact hours"
+    }
+  ],
+  "streams_by_year": {
+    "year_1": [],
+    "year_2": [],
+    "year_3": [],
+    "year_4": [],
+    "final_year": []
+  },
+  "stream_checks": {
+    "year_1_stream_count": 0,
+    "year_2_stream_count": 0,
+    "year_3_stream_count": 0,
+    "year_4_stream_count": 0,
+    "final_year_stream_count": 0,
+    "missing_stream_module_codes_in_catalog_by_year": {
+      "year_1": [],
+      "year_2": [],
+      "year_3": [],
+      "year_4": [],
+      "final_year": []
+    }
+  }
+}

@@ -1,0 +1,256 @@
+{
+  "metadata": {
+    "year": 2026,
+    "degree_code": "10220017",
+    "degree_name": "PGDip in Occupational Medicine and Health",
+    "faculty": "Health Sciences",
+    "faculty_code": "MED",
+    "level": "Postgraduate Diploma/Certificate",
+    "source_url": "https://www.up.ac.za/yearbooks/2026/MED-faculty/PC-programmes/view/10220017",
+    "duration_years": 2,
+    "total_credits": 120,
+    "nqf_level": 8,
+    "department": "School of Health Systems and Public Health"
+  },
+  "curriculum": [
+    {
+      "module_code": "AOH 771",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "EHM 774",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "EOH 776",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "HCL 773",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "OCM 774",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "PHM 776",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "PHM 777",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "PHM 778",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "SCM 773",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core"
+    }
+  ],
+  "module_catalog": [
+    {
+      "module_code": "AOH 771",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Research project: Occupational health 771",
+      "credits": 30.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/MED-faculty/PG-modules/view/AOH 771",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": null,
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "EHM 774",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Health risk assessment 774",
+      "credits": 10.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/MED-faculty/PG-modules/view/EHM 774",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": null,
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "EOH 776",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Introduction to environmental and occupational health 776",
+      "credits": 10.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/MED-faculty/PG-modules/view/EOH 776",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": null,
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "HCL 773",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Occupational health law 773",
+      "credits": 10.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/MED-faculty/UG-modules/view/HCL%20773",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 2,
+      "content": null,
+      "prerequisites": "EOH 775",
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "OCM 774",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Clinical skills in occupational medicine 774",
+      "credits": 5.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/MED-faculty/PG-modules/view/OCM 774",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "*Attendance module only",
+      "prerequisites": null,
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "PHM 776",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Diploma examination: Occupational health (Part 1) 776",
+      "credits": 0.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/MED-faculty/PG-modules/view/PHM 776",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": null,
+      "prerequisites": null,
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "PHM 777",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Diploma examination: Occupational health (Part 2) 777",
+      "credits": 0.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/MED-faculty/PG-modules/view/PHM 777",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": null,
+      "prerequisites": null,
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "PHM 778",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Learning in public health 778",
+      "credits": 5.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/MED-faculty/PG-modules/view/PHM 778",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Special introduction to fundamentals in Executive Leadership in health The emerging student will be taught the fundamentals in executive leadership in healthcare systems which will form the basic platform or foundation for understanding the challenges for application of leadership modalities at the different levels of healthcare service delivery in the public health service and how to begin to think and analyse how the principles of executive leadership at their level of appointment can improve health service delivery.",
+      "prerequisites": null,
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "SCM 773",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Human resource management and industrial sociology 773",
+      "credits": 10.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/MED-faculty/PG-modules/view/SCM 773",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": null,
+      "prerequisites": null,
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English"
+    }
+  ],
+  "streams_by_year": {
+    "year_1": [],
+    "year_2": [],
+    "year_3": [],
+    "year_4": [],
+    "final_year": []
+  },
+  "stream_checks": {
+    "year_1_stream_count": 0,
+    "year_2_stream_count": 0,
+    "year_3_stream_count": 0,
+    "year_4_stream_count": 0,
+    "final_year_stream_count": 0,
+    "missing_stream_module_codes_in_catalog_by_year": {
+      "year_1": [],
+      "year_2": [],
+      "year_3": [],
+      "year_4": [],
+      "final_year": []
+    }
+  }
+}

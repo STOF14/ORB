@@ -1,0 +1,138 @@
+{
+  "metadata": {
+    "year": 2026,
+    "degree_code": "07220136",
+    "degree_name": "PGDip in Accounting Sciences",
+    "faculty": "Economic and Management Sciences",
+    "faculty_code": "EMS",
+    "level": "Postgraduate Diploma/Certificate",
+    "source_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/PC-programmes/view/07220136",
+    "duration_years": 1,
+    "total_credits": 160,
+    "nqf_level": 8,
+    "department": "Accounting"
+  },
+  "curriculum": [
+    {
+      "module_code": "BEL 705",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "FBS 705",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "FRK 705",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "ODT 705",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    }
+  ],
+  "module_catalog": [
+    {
+      "module_code": "BEL 705",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Taxation 705",
+      "credits": 40.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/PG-modules/view/BEL 705",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "This module will be principle based and a lot of attention will be given to ensuring students have grasped and can apply the core principles, with emphasis on developing lifelong learners. Our aim is to equip students with sufficient base knowledge about tax to further upskill themselves as tax legislation changes or as they move into a tax specialist role in future. Provisions from the following Acts are included in the syllabus: The Income Tax Act, 1962 (Act 58 of 1962); The Estate Duty Act, 1955 (Act 45 of 1955); The Value-Added Tax Act, 1991 (Act 89 of 1991); The Tax Administration Act, 2011 (Act 28 of 2011). The Transfer Duty Act, 1949 (Act 49 of 1949); and The Securities Transfer Tax Act, 2007 (Act 25 of 2007).",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Separate classes for Afrikaans and English",
+      "contact_time": "1 lecture per week"
+    },
+    {
+      "module_code": "FBS 705",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Financial management 705",
+      "credits": 40.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/PG-modules/view/FBS 705",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "This module covers two subject areas \u2013 financial management and management accounting. Financial management learning areas Analysis and interpretation of the annual report and sustainability report of an entity; working capital management; financing covering the sources of financing including the capital, debt and money markets, export financing, off-balance-sheet financing structures, and an evaluation of the feasibility of the different financing instruments; cost of capital incorporating the calculation of the weighted average and weighted marginal cost of financing; capital structure theory; dividend theory; valuations incorporating the valuation of preference shares, debentures or bonds, selected financial instruments on a cash flow basis (swaps, options and forward rate agreements), the valuation of equity instruments (using the following models: intrinsic, dividend yield and dividend growth models, earnings yield and price-earnings, free cash flow or discounted cash flow) and the valuation of intellectual capital; mergers and acquisitions; and risk management, in particular managing currency and interest rate risk. Management accounting learning areas Costing in both manufacturing and service environments; decision making incorporating short-term decisions (incorporating cost-volume-profit analysis, relevant costing issues and linear programming), long-term decisions (incorporating different techniques for evaluating long-term decisions) and risk and uncertainty into the decision-making process; transfer pricing; performance measurement and management; planning incorporating budgeting, forecasting techniques, learning curves and human behavioural aspects of planning; standard costing and variance analysis; and trends in management accounting (developments in the subject area).",
+      "prerequisites": null,
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "FRK 705",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Financial accounting 705",
+      "credits": 40.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/PG-modules/view/FRK 705",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": null,
+      "prerequisites": null,
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "ODT 705",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Auditing 705",
+      "credits": 40.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/PG-modules/view/ODT 705",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": null,
+      "prerequisites": null,
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Separate classes for Afrikaans and English",
+      "contact_time": "1 lecture per week"
+    }
+  ],
+  "streams_by_year": {
+    "year_1": [],
+    "year_2": [],
+    "year_3": [],
+    "year_4": [],
+    "final_year": []
+  },
+  "stream_checks": {
+    "year_1_stream_count": 0,
+    "year_2_stream_count": 0,
+    "year_3_stream_count": 0,
+    "year_4_stream_count": 0,
+    "final_year_stream_count": 0,
+    "missing_stream_module_codes_in_catalog_by_year": {
+      "year_1": [],
+      "year_2": [],
+      "year_3": [],
+      "year_4": [],
+      "final_year": []
+    }
+  }
+}

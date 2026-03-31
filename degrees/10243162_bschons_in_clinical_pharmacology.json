@@ -1,0 +1,166 @@
+{
+  "metadata": {
+    "year": 2026,
+    "degree_code": "10243162",
+    "degree_name": "BScHons in Clinical Pharmacology",
+    "faculty": "Health Sciences",
+    "faculty_code": "MED",
+    "level": "Honours",
+    "source_url": "https://www.up.ac.za/yearbooks/2026/MED-faculty/HO-programmes/view/10243162",
+    "duration_years": 1,
+    "total_credits": 120,
+    "nqf_level": 8,
+    "department": "Pharmacology"
+  },
+  "curriculum": [
+    {
+      "module_code": "FAR 381",
+      "year_level": 3,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "FAR 382",
+      "year_level": 3,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "FAR 705",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "MBS 700",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "TNM 700",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    }
+  ],
+  "module_catalog": [
+    {
+      "module_code": "FAR 381",
+      "year_level": 3,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Pharmacology 381",
+      "credits": 18.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/MED-faculty/UG-modules/view/FAR 381",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "This module aims to enhance integrated healthcare leadership through interprofessional teamwork in the context of community health. The focus is especially on communication skills, project development and health promotion. The theory is applied in a health education needs/strength analysis.",
+      "prerequisites": "FSG 251, FSG 252, FSG 261, FSG 262",
+      "nqf_level": 7,
+      "presentation_period": "Semester 1",
+      "language": "Module is presented in English",
+      "contact_time": "2 lectures per week",
+      "service_modules": "Faculty of Natural and Agricultural Sciences"
+    },
+    {
+      "module_code": "FAR 382",
+      "year_level": 3,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Pharmacology 382",
+      "credits": 18.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/MED-faculty/UG-modules/view/FAR 382",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Hormones, drugs that act on the histaminergic, serotonergic, and dopaminergic receptors. Pharmacotherapy of diabetes mellitus, schizophrenia, depression, obesity, anxiety, insomnia, gastro-intestinal diseases. Anticoagulants, antimicrobial drugs.",
+      "prerequisites": "FAR 381, FLG 211, FLG 212, FLG 221, FLG 222 GS",
+      "nqf_level": 7,
+      "presentation_period": "Semester 2",
+      "language": "Module is presented in English",
+      "contact_time": "1 lecture per week",
+      "service_modules": "Faculty of Natural and Agricultural Sciences"
+    },
+    {
+      "module_code": "FAR 705",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Pharmacology 705",
+      "credits": 100.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/MED-faculty/PG-modules/view/FAR 705",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Covers the following topics: Immunology, pain and inflammation, pharmacokinetics, wound healing, proteomics, pharmacogenetics, law, pharmaceutics, traditional and plant-based medicines, lifestyle disorders, drug/drug interactions, drug adverse effects, malaria, cancer and malignancies and psycho/neuropharmacology, Good Clinical Practice (GCP), Good Laboratory Practice (GLP). Practicals are as per study guide.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "1 tutorial per week, 1 seminar per week, 16 hours per week, 6 lectures per week"
+    },
+    {
+      "module_code": "MBS 700",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Medical biostatistics 700",
+      "credits": 20.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/MED-faculty/PG-modules/view/MBS 700",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "The role of statistics and the data analysis process, collecting data sensibly, graphical methods for describing data, numerical methods for describing data, summarizing bivariate data, probability, random variables and probability distributions, sampling variability and sampling distributions, estimation using a single sample, hypothesis testing using a single sample, comparing two populations or treatments, the analysis of categorical data and goodness-of-fit tests, simple linear regression and correlation: inferential methods, multiple regression analysis, analysis of variance, nonparametric (distribution-free) statistical methods. This course is designed as a statistics building block for a non-statistics major postgraduate student at master's level.",
+      "prerequisites": null,
+      "nqf_level": 8,
+      "presentation_period": "Semester 1",
+      "language": "Module is presented in English",
+      "contact_time": "1 lecture per week"
+    },
+    {
+      "module_code": "TNM 700",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Applied research methodology 700",
+      "credits": 0.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/MED-faculty/PG-modules/view/TNM 700",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "*Attendance module only.",
+      "prerequisites": null,
+      "nqf_level": 8,
+      "presentation_period": "Semester 1",
+      "language": "Module is presented in English"
+    }
+  ],
+  "streams_by_year": {
+    "year_1": [],
+    "year_2": [],
+    "year_3": [],
+    "year_4": [],
+    "final_year": []
+  },
+  "stream_checks": {
+    "year_1_stream_count": 0,
+    "year_2_stream_count": 0,
+    "year_3_stream_count": 0,
+    "year_4_stream_count": 0,
+    "final_year_stream_count": 0,
+    "missing_stream_module_codes_in_catalog_by_year": {
+      "year_1": [],
+      "year_2": [],
+      "year_3": [],
+      "year_4": [],
+      "final_year": []
+    }
+  }
+}

@@ -1,0 +1,234 @@
+{
+  "metadata": {
+    "year": 2026,
+    "degree_code": "04253118",
+    "degree_name": "LLM specialising in Extractive Industry Law in Africa (Coursework)",
+    "faculty": "Law",
+    "faculty_code": "LAW",
+    "level": "Masters",
+    "source_url": "https://www.up.ac.za/yearbooks/2026/LAW-faculty/MA-programmes/view/04253118",
+    "duration_years": 1,
+    "total_credits": 200,
+    "nqf_level": 9,
+    "department": "Public Law"
+  },
+  "curriculum": [
+    {
+      "module_code": "RHP 801",
+      "year_level": 1,
+      "is_compulsory": false,
+      "module_type": "elective"
+    },
+    {
+      "module_code": "RHP 803",
+      "year_level": 1,
+      "is_compulsory": false,
+      "module_type": "elective"
+    },
+    {
+      "module_code": "EIL 801",
+      "year_level": 8,
+      "is_compulsory": false,
+      "module_type": "elective"
+    },
+    {
+      "module_code": "EIL 802",
+      "year_level": 8,
+      "is_compulsory": false,
+      "module_type": "elective"
+    },
+    {
+      "module_code": "EIL 803",
+      "year_level": 8,
+      "is_compulsory": false,
+      "module_type": "elective"
+    },
+    {
+      "module_code": "EIL 804",
+      "year_level": 8,
+      "is_compulsory": false,
+      "module_type": "elective"
+    },
+    {
+      "module_code": "EIL 812",
+      "year_level": 8,
+      "is_compulsory": false,
+      "module_type": "elective"
+    },
+    {
+      "module_code": "MND 800",
+      "year_level": 8,
+      "is_compulsory": false,
+      "module_type": "elective"
+    }
+  ],
+  "module_catalog": [
+    {
+      "module_code": "RHP 801",
+      "year_level": 1,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "Research methodology 801",
+      "credits": 5.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/LAW-faculty/PG-modules/view/RHP 801",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Planning and organising a research project Drafting a research proposal: Hypotheses and research question Theory in research and methodological approaches to legal research Language Citation and ethics of citation Drafting of chapters and presentation",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 9,
+      "presentation_period": "Semester 1 or Semester 2",
+      "language": "Module is presented in English",
+      "contact_time": "8 seminars or block sessions"
+    },
+    {
+      "module_code": "RHP 803",
+      "year_level": 1,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "Research proposal 803",
+      "credits": 5.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/LAW-faculty/PG-modules/view/RHP 803",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Development and presentation of a research\u00a0 proposal. (A research proposal must be submitted to the supervisor and accepted in the first semester of the second year of study\u00a0 before the student will be allowed to register for the mini-dissertation.)",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 9,
+      "presentation_period": "Year",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "EIL 801",
+      "year_level": 8,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "Rights to and regulation of natural resources 801",
+      "credits": 30.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/LAW-faculty/PG-modules/view/EIL 801",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "The objective of this module is to equip students with a thorough understanding of the legal and policy aspects of natural resources and the regulation of natural resources and industries to extract natural resources. Topics include: Industry background such as the extractive industry value chain and the role of extractive industries in national, regional and global economies, basic extractive industry business and project feasibility metrics, typical national public policy priorities, the differences between the mining and oil and gas industries, gas industry specifics, the various downstream industries (smelters, refineries and petrochemical and energy industries and policy issues pertaining to renewable energy and unconventional extraction methods such as hydraulic fracturing (\"fracking\"); Natural resource and extractive industry policy concepts and regulatory options; Ownership of mineral rights dispensations (state versus private ownership of mineral rights), the legal position of the owner of the land and the owner of the products of extraction; The advantages and disadvantages of the main granting methodologies applied by host governments including concessions, production sharing agreements, participation agreements, services agreements and hybrid methods; Typical conditions to obtain, renew or transfer exploration or extraction rights and the veracity of the public policy basis of such requirements; Agreements and transactions to transfer rights to prospect and/or to extract; Constitutional and administrative law aspects of relevance in dealing with extractive industry legislation and regulation including the legality of administrative processes governed by an Act such as the MPRD Act and related regulation, the right of third parties to be heard in applications by resource companies under the MPRD Act and the constitutionality of the conversion of \"old order mineral rights\" to \"new order mineral rights\".",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 9,
+      "presentation_period": "Semester 1",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "EIL 802",
+      "year_level": 8,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "Sustainability aspects of extractive industries 802",
+      "credits": 30.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/LAW-faculty/PG-modules/view/EIL 802",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "The objective of this module is to equip students with a thorough understanding of the sustainability aspects of extractive industries. Topics include: A general introduction to sustainability, sustainable development, corporate social responsibility, good governance as it pertains to governments and good corporate governance; International, regional and national instruments related to sustainability aspects of extractive industries such as the protection of human rights, forced labour, inappropriate security practices, \"conflict minerals\" and \"blood diamonds\" (including the Kimberley Process Certification Scheme and the US Dodd-Frank Act and SEC disclosure requirements); the Extractive Industry Transparency Initiative (EITI) and the UN Global Compact; [US Dodd-Frank Act; Safety, health and environmental (SHE) aspects of extractive industries including emerging issues such as climate change and personal criminal liability of directors and officers for SHE contraventions; Corporate governance and company law developments of relevance to sustainability including the King 3 Code and similar Codes internationally, Responsible Investment Codes, the role of Social and Ethics Committees as required by the Companies Act 2008, sustainability indexes of the stock exchanges such as the JSE SRI Index and the Dow Jones Sustainability Index, public reporting on sustainability and international reporting guidelines such as the Global Reporting Initiative",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 9,
+      "presentation_period": "Semester 1 or Semester 2",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "EIL 803",
+      "year_level": 8,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "The South Africa Mineral and Petroleum Resources Development Act 803",
+      "credits": 30.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/LAW-faculty/PG-modules/view/EIL%20803",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 2,
+      "content": "The objective of this module is to equip students with a thorough understanding of conceptual and practical aspects of the South African Mineral and Resources Development Act and related jurisprudence.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 9,
+      "presentation_period": "Semester 1 or Semester 2",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "EIL 804",
+      "year_level": 8,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "International law aspects of extractive industries 804",
+      "credits": 30.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/LAW-faculty/PG-modules/view/EIL 804",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "The objective of this module is to equip students with a thorough understanding of the international law aspects of extractive industries. Topics include: Sovereignty in respect of legal regimes and laws governing extractive industries including the act of state doctrine, the doctrine of sovereign immunity and waivers of immunity and compensation for expropriation; An overview of the most relevant treaties and conventions of relevance to extractive industries including the Convention on the Continental Shelf, the OILPOL convention, the UN Convention on Contracts for the International Sale of Goods, the UN Conventions of the Law of the Sea, the New York Convention, the Convention on the Settlement on Investment Disputes between States and Nationals of Other States, the Energy Charter Treaty to protect international energy investment and trade; international environmental law treaties and conventions and the Guiding Principles on Business and Human Rights. Relevant aspects pertaining to the World Trade Organisation including extractive industry subsidies, environmental labelling and confiscatory taxation; Direct and indirect forms of resource nationalisation and investment treaties to protect natural resource investors; The legal status of offshore petroleum and mining installations and vessels including production platforms, floating production, storage and offloading (FPSOs) vessels and subsea pipelines as well as state jurisdiction in respect of such installations. International dispute resolution mechanisms including enforcement of arbitration awards.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 9,
+      "presentation_period": "Semester 1 or Semester 2",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "EIL 812",
+      "year_level": 8,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "Socio-economic development and management of non-renewable natural resources 812",
+      "credits": 30.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/LAW-faculty/PG-modules/view/EIL 812",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "The aim of this module is to equip students, without a formal legal background, a thorough understanding of the various socio-economic aspects and challenges related to the sustainable development and management of mineral and hydrocarbon resources. The topics covered include: Historical, philosophical and foundational aspects of non-renewable natural resource development and regulation, with particular reference to development in an African context. Basic concepts relating to the sustainable use and development of mineral, oil and gas resources, in general, and with specific reference to sustainable development, economic viability of resource deposits, project operationalisation requirements, good governance in private and public sectors, regulatory burden and policy development. The specific interface between responsible resource development and foreign direct investment.",
+      "prerequisites": null,
+      "nqf_level": 9,
+      "presentation_period": "Semester 2",
+      "language": "Module is presented in English",
+      "contact_time": "30 contact hours per semester"
+    },
+    {
+      "module_code": "MND 800",
+      "year_level": 8,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "Mini-dissertation 800",
+      "credits": 100.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/LAW-faculty/PG-modules/view/MND 800",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "The student must submit a research proposal during his/her first year of registration for the LLM degree to the supervisor prior to commencing with the writing of the mini-dissertation. A mini-dissertation (MND 800) of 13 000 to 15 000 words inclusive of footnotes but excluding the list of contents and the bibliography, is required. The mini-dissertation must be submitted to the supervisor not later than August of the second year of registration for the LLM programme. The mini-dissertation must deal with the subject content of one of the modules or a combination of the modules registered for by the student for his/her LLM degree. Any request for an extension of the period for submission of the mini-dissertation may only be granted by the Dean on recommendation of the LLM Committee",
+      "prerequisites": "RHP 801 and RHP 803",
+      "nqf_level": 9,
+      "presentation_period": "Year",
+      "language": "Module is presented in English"
+    }
+  ],
+  "streams_by_year": {
+    "year_1": [],
+    "year_2": [],
+    "year_3": [],
+    "year_4": [],
+    "final_year": []
+  },
+  "stream_checks": {
+    "year_1_stream_count": 0,
+    "year_2_stream_count": 0,
+    "year_3_stream_count": 0,
+    "year_4_stream_count": 0,
+    "final_year_stream_count": 0,
+    "missing_stream_module_codes_in_catalog_by_year": {
+      "year_1": [],
+      "year_2": [],
+      "year_3": [],
+      "year_4": [],
+      "final_year": []
+    }
+  }
+}

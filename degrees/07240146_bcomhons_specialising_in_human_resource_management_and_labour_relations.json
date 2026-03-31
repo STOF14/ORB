@@ -1,0 +1,240 @@
+{
+  "metadata": {
+    "year": 2026,
+    "degree_code": "07240146",
+    "degree_name": "BComHons specialising in Human Resource Management and Labour Relations",
+    "faculty": "Economic and Management Sciences",
+    "faculty_code": "EMS",
+    "level": "Honours",
+    "source_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/HO-programmes/view/07240146",
+    "duration_years": 1,
+    "total_credits": 120,
+    "nqf_level": 8,
+    "department": "Human Resource Management"
+  },
+  "curriculum": [
+    {
+      "module_code": "HRC 700",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "HRC 701",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "HRC 702",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "HRC 703",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "HRC 704",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "HRC 705",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "LAM 701",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "LAM 702",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    }
+  ],
+  "module_catalog": [
+    {
+      "module_code": "HRC 700",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Research report 700",
+      "credits": 30.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/PG-modules/view/HRC 700",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "This module requires the student to demonstrate their ability to conduct independent research by conducting research on a topic in either the Human Resource Management or Labour Relations Management field and submit a research report.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "30 Hours"
+    },
+    {
+      "module_code": "HRC 701",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Research methodology 701",
+      "credits": 16.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/PG-modules/view/HRC 701",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "This module requires students to identify research problems/gaps, formulate a problem statement and literature study and develop research objectives/questions/hypotheses within the fields of Industrial Psychology, Human Resource Management and Labour Relations. Qualitative and quantitative methodologies will be learned and applied, and students need to apply knowledge in order to gather information (articles, books etc), referencing, data collection and data analyses.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "24 Hours"
+    },
+    {
+      "module_code": "HRC 702",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Human resource management and Labour relations practicum 702",
+      "credits": 15.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/PG-modules/view/HRC 702",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Compile a portfolio concerning practicums pertaining to collective bargaining, and dispute resolutions, as well as organisational-, personnel- and career psychology.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "1 practical per week"
+    },
+    {
+      "module_code": "HRC 703",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Personnel and career psychology 703",
+      "credits": 12.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/PG-modules/view/HRC 703",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "To understand and develop insight regarding personnel psychology, career dynamics; career development and the framework in which career management, and personnel psychology can be pursued.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Semester 1 or Semester 2",
+      "language": "Module is presented in English",
+      "contact_time": "21 contact hours per semester"
+    },
+    {
+      "module_code": "HRC 704",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Employee health and safety 704",
+      "credits": 12.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/PG-modules/view/HRC 704",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Understand and apply the legal aspects of the Health and Safety Act 85 of 1993, and what is meant with \u2018health\u2019 and \u2018safety\u2019 in the work context. Have knowledge based on the content of an Employee Aid Programme (EAP) and how to deal with HIV/Aids, alcohol and drug dependence, psychological and physical health, traditional healers, and workplace psychopathology in the work context.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Semester 1 or Semester 2",
+      "language": "Module is presented in English",
+      "contact_time": "21 contact hours per semester"
+    },
+    {
+      "module_code": "HRC 705",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Organisational psychology and diversity management 705",
+      "credits": 12.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/PG-modules/view/HRC 705",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Know and apply theories pertaining to group dynamics, leadership and group functioning and how to utilise groups in decision-making, problem-solving and reaching organisational objectives. Students must understand the paradigm shifts in the development of historically disadvantaged employees and phasing in of historically disadvantaged employees in the organisation to retain and generate organisational effectiveness. Student should apply knowledge pertaining to the nature and future changes that could impact on organisations, as well as the strategies that organisations can use to address these organisational changes.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Semester 1 or Semester 2",
+      "language": "Module is presented in English",
+      "contact_time": "21 contact hours per semester"
+    },
+    {
+      "module_code": "LAM 701",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Collective bargaining and negotiation 701",
+      "credits": 15.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/PG-modules/view/LAM 701",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "In this module students should know and understand national and international trends and developments pertaining to collective bargaining and negotiation. Students should describe the collective bargaining role players (including trade unions), and what is meant with organised labour. Pertaining to negotiation, know and apply relevant negotiation skills and how to obtain the optimal outcomes in a negotiation situation.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Semester 1 or Semester 2",
+      "language": "Module is presented in English",
+      "contact_time": "21 contact hours per semester"
+    },
+    {
+      "module_code": "LAM 702",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Dispute resolutions 702",
+      "credits": 12.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/PG-modules/view/LAM 702",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Students should know, understand and apply best practices pertaining to labour disputes, with particular focus on processes and relevant legislation.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Semester 1 or Semester 2",
+      "language": "Module is presented in English",
+      "contact_time": "18 contact hours per semester"
+    }
+  ],
+  "streams_by_year": {
+    "year_1": [],
+    "year_2": [],
+    "year_3": [],
+    "year_4": [],
+    "final_year": []
+  },
+  "stream_checks": {
+    "year_1_stream_count": 0,
+    "year_2_stream_count": 0,
+    "year_3_stream_count": 0,
+    "year_4_stream_count": 0,
+    "final_year_stream_count": 0,
+    "missing_stream_module_codes_in_catalog_by_year": {
+      "year_1": [],
+      "year_2": [],
+      "year_3": [],
+      "year_4": [],
+      "final_year": []
+    }
+  }
+}

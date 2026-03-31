@@ -1,0 +1,165 @@
+{
+  "metadata": {
+    "year": 2026,
+    "degree_code": "06246072",
+    "degree_name": "BThHons specialising in Theological Studies",
+    "faculty": "Theology and Religion",
+    "faculty_code": "THEO",
+    "level": "Honours",
+    "source_url": "https://www.up.ac.za/yearbooks/2026/THEO-faculty/HO-programmes/view/06246072",
+    "duration_years": 1,
+    "total_credits": 120,
+    "nqf_level": 8,
+    "department": "Theology and Religion Dean's Office"
+  },
+  "curriculum": [
+    {
+      "module_code": "NTL 704",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective"
+    },
+    {
+      "module_code": "OTL 704",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective"
+    },
+    {
+      "module_code": "PRT 704",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective"
+    },
+    {
+      "module_code": "REL 704",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective"
+    },
+    {
+      "module_code": "SHT 704",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective"
+    }
+  ],
+  "module_catalog": [
+    {
+      "module_code": "NTL 704",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "Research report: New Testament and related literature 704",
+      "credits": 30.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/THEO-faculty/PG-modules/view/NTL 704",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Research module. Research methodology and independent research report in the field of New Testament and Related literature.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "2 seminars per week, 1 lecture per week"
+    },
+    {
+      "module_code": "OTL 704",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "Research report: Old Testament and Hebrew scriptures 704",
+      "credits": 30.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/THEO-faculty/PG-modules/view/OTL 704",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Research module. Research methodology and independent research report in the field of Old Testament and Hebrew scriptures.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "1 lecture per week, 2 seminars per week"
+    },
+    {
+      "module_code": "PRT 704",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "Research report: Practical theology and mission studies 704",
+      "credits": 30.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/THEO-faculty/PG-modules/view/PRT 704",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Research module. Research methodology and independent research report in the field of Practical theology and mission studies.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "2 seminars per week, 1 lecture per week"
+    },
+    {
+      "module_code": "REL 704",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "Research report: Religion studies 704",
+      "credits": 30.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/THEO-faculty/PG-modules/view/REL 704",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Research module. Research methodology and independent research report in the field of religion studies.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "1 lecture per week, 2 seminars per week"
+    },
+    {
+      "module_code": "SHT 704",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "Research report: Systematic and historical theology 704",
+      "credits": 30.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/THEO-faculty/PG-modules/view/SHT 704",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Research module. Research methodology and independent research report in the field of systematic and historical theology.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "2 seminars per week, 1 lecture per week"
+    }
+  ],
+  "streams_by_year": {
+    "year_1": [],
+    "year_2": [],
+    "year_3": [],
+    "year_4": [],
+    "final_year": []
+  },
+  "stream_checks": {
+    "year_1_stream_count": 0,
+    "year_2_stream_count": 0,
+    "year_3_stream_count": 0,
+    "year_4_stream_count": 0,
+    "final_year_stream_count": 0,
+    "missing_stream_module_codes_in_catalog_by_year": {
+      "year_1": [],
+      "year_2": [],
+      "year_3": [],
+      "year_4": [],
+      "final_year": []
+    }
+  }
+}

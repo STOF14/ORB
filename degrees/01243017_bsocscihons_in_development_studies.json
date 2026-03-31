@@ -1,0 +1,164 @@
+{
+  "metadata": {
+    "year": 2026,
+    "degree_code": "01243017",
+    "degree_name": "BSocSciHons in Development Studies",
+    "faculty": "Humanities",
+    "faculty_code": "HUM",
+    "level": "Honours",
+    "source_url": "https://www.up.ac.za/yearbooks/2026/HUM-faculty/HO-programmes/view/01243017",
+    "duration_years": 1,
+    "total_credits": 120,
+    "nqf_level": 8,
+    "department": "Anthropology, Archaeology and Development Studies"
+  },
+  "curriculum": [
+    {
+      "module_code": "GSO 750",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "GSO 751",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "GSO 755",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "GSO 756",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "GSO 759",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    }
+  ],
+  "module_catalog": [
+    {
+      "module_code": "GSO 750",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Research report: Development studies 750",
+      "credits": 40.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/HUM-faculty/PG-modules/view/GSO 750",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "A research report of approximately 30 pages (10 000 words) that is based on original research on an approved topic within the study field of community development.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "GSO 751",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Development theories 751",
+      "credits": 20.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/HUM-faculty/PG-modules/view/GSO 751",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Changing attitudes towards change and social inequality at different times and places. The concept \"development\" in the natural sciences and humanities. Key concepts in development theory: capitalism, socialism, colonialism, neocolonialism. Changing theories of development: linear states theory, neo-classical structural change model, modernisation theory, dependency theory and postmodernist challenges. Contemporary debates regarding the utilisation of scientific knowledge: predicting and inducing change, ethical considerations and multidisciplinary cooperation in development. Relationship between theory and practice and between community development and related fields of specialisation.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Semester 1",
+      "language": "Module is presented in English",
+      "contact_time": "1 other contact session per week, 2 lectures per week"
+    },
+    {
+      "module_code": "GSO 755",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Development research methods 755",
+      "credits": 20.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/HUM-faculty/PG-modules/view/GSO 755",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "This module investigates methodological approaches to the practice of development. It focuses on methods and approaches most utilised by development researchers and practitioners in the field. The module aims to equip learners with applied and practical knowledge, as well as the skills to critically examine the approaches, methods, and techniques within the broader scholarly literature. Thus, the module will cover practical instruction in methodologies and approaches including participatory rural appraisal, monitoring and evaluation, aspects of qualitative and quantitative approaches, case study as well as primary and secondary data collection and analysis techniques.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Semester 1",
+      "language": "Module is presented in English",
+      "contact_time": "1 other contact session per week, 2 lectures per week"
+    },
+    {
+      "module_code": "GSO 756",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Contemporary development issues and debates 756",
+      "credits": 20.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/HUM-faculty/PG-modules/view/GSO 756",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "The module provides a critical analysis of contemporary development themes currently dominating development debates and the world of development practice. Particular attention is given to development strategies and practices in the post-development theory impasse era, as well as development challenges and their manifestation in the 21st century. The module will take students through a journey in post-1980s/1990s development, and explores in depth the future prospect of development. Topical themes include grassroots development, gender and development, democracy and governance, food security, climate change and local adaptation, migration and development, disaster and humanitarian emergencies. It will also cover initiatives like the MDGs and the SDGs to demonstrate changing emphasis in development practice.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Semester 2",
+      "language": "Module is presented in English",
+      "contact_time": "2 lectures per week, 1 other contact session per week"
+    },
+    {
+      "module_code": "GSO 759",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Case studies in development practice 759",
+      "credits": 20.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/HUM-faculty/PG-modules/view/GSO 759",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "The module adopts an applied approach. It takes learners through a journey in the world of development practice since the 1950s, and provides a critical analysis of the different ideological positions influencing post-WW II development. With a bias towards grandiose schemes that dominated the world of development practice in the postcolonial era, it draws the attention of the student to the role of a range of organisations and institutions involved in developing country development process, and the challenges associated with the development culture of the time. The module will look at classic case studies like the Ujamaa, development projects in Lesotho, colonial betterment schemes, and contemporary cases including indigenisation policies, policies promoting migration, gender mainstreaming, land and tenure reforms, etc.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Semester 2",
+      "language": "Module is presented in English",
+      "contact_time": "1 other contact session per week, 2 lectures per week"
+    }
+  ],
+  "streams_by_year": {
+    "year_1": [],
+    "year_2": [],
+    "year_3": [],
+    "year_4": [],
+    "final_year": []
+  },
+  "stream_checks": {
+    "year_1_stream_count": 0,
+    "year_2_stream_count": 0,
+    "year_3_stream_count": 0,
+    "year_4_stream_count": 0,
+    "final_year_stream_count": 0,
+    "missing_stream_module_codes_in_catalog_by_year": {
+      "year_1": [],
+      "year_2": [],
+      "year_3": [],
+      "year_4": [],
+      "final_year": []
+    }
+  }
+}

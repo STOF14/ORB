@@ -1,0 +1,188 @@
+{
+  "metadata": {
+    "year": 2026,
+    "degree_code": "01242133",
+    "degree_name": "BAHons in Augmentative and Alternative Communication",
+    "faculty": "Humanities",
+    "faculty_code": "HUM",
+    "level": "Honours",
+    "source_url": "https://www.up.ac.za/yearbooks/2026/HUM-faculty/HO-programmes/view/01242133",
+    "duration_years": 1,
+    "total_credits": 120,
+    "nqf_level": 8,
+    "department": "Centre for Augmentative and Alternative Communication"
+  },
+  "curriculum": [
+    {
+      "module_code": "AAC 717",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "AAK 702",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "AAK 703",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "AAK 715",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "AAK 717",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "AAK 718",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    }
+  ],
+  "module_catalog": [
+    {
+      "module_code": "AAC 717",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Research report: AAC 717",
+      "credits": 30.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/HUM-faculty/PG-modules/view/AAK 717",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "The module covers planning for data collection, field work, analysing data collected and writing up the results and discussion of the results in the form of a complete research report. On completion of the module, the student will be expected to complete a research report on an approved topic in the field of augmentative and alternative communication.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "AAK 702",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "AAC assessment procedures 702",
+      "credits": 20.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/HUM-faculty/PG-modules/view/AAK 702",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Training of observation skills with the use of an assessment schedule. A practical component is included in this module. At the end of this module the student must be able to understand the process of communication evaluation of people with severe disabilities by describing the assessment principles, as well as the assessment of opportunity and access barriers and of specific capabilities.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "5 other contact sessions per week"
+    },
+    {
+      "module_code": "AAK 703",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Communication technology 703",
+      "credits": 15.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/HUM-faculty/PG-modules/view/AAK 703",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Implementation of assistive devices by the communicatively disabled population. At the end of this module the student must be able to understand the different types of assistive communication technology ranging from low to high technology in order to assist clients with little or no functional speech to select the most suitable device.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "5 other contact sessions per week"
+    },
+    {
+      "module_code": "AAK 715",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Implementation of Augmentative and Alternative Communication in children 715",
+      "credits": 25.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/HUM-faculty/PG-modules/view/AAK 715",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "AAC intervention for the child with severe disabilities will be followed in this module. A practical component is included in this module. At the end of this module the student must be able to describe and implement appropriate AAC strategies for children with a variety of abilities, and integrate AAC implementation within contexts such as adapted play, integrated early intervention- and educational settings.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "5 other contact sessions per week"
+    },
+    {
+      "module_code": "AAK 717",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Research report: AAC 717",
+      "credits": 30.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/HUM-faculty/PG-modules/view/AAK%20717",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 2,
+      "content": "The module covers planning for data collection, field work, analysing data collected and writing up the results and discussion of the results in the form of a complete research report. On completion of the module, the student will be expected to complete a research report on an approved topic in the field of augmentative and alternative communication.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "AAK 718",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Introduction to severe disabilities and AAC symbol systems 718",
+      "credits": 30.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/HUM-faculty/PG-modules/view/AAK 718",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Introduction to augmentative and alternative communication (AAC), definition of AAC, identification and discussion of key issues in AAC implementation and description of candidates who may benefit from AAC; their basic rights to communication, education and to work; as well as Communication for people with severe disabilities and the use of unaided (dynamic and/or manual) and aided (static) systems.\u00a0 At the end of this module, the student must be able to define concepts in AAC and identify and discuss key issues in AAC implementation and describe candidates who can benefit from AAC, and understand AAC symbol systems and the impact of using them with a person with little or no functional speech. A practical component is included.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "5 other contact sessions per week once a year"
+    }
+  ],
+  "streams_by_year": {
+    "year_1": [],
+    "year_2": [],
+    "year_3": [],
+    "year_4": [],
+    "final_year": []
+  },
+  "stream_checks": {
+    "year_1_stream_count": 0,
+    "year_2_stream_count": 0,
+    "year_3_stream_count": 0,
+    "year_4_stream_count": 0,
+    "final_year_stream_count": 0,
+    "missing_stream_module_codes_in_catalog_by_year": {
+      "year_1": [],
+      "year_2": [],
+      "year_3": [],
+      "year_4": [],
+      "final_year": []
+    }
+  }
+}

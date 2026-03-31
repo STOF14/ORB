@@ -1,0 +1,90 @@
+{
+  "metadata": {
+    "year": 2026,
+    "degree_code": "01252136",
+    "degree_name": "MA in Augmentative and Alternative Communication (Coursework)",
+    "faculty": "Humanities",
+    "faculty_code": "HUM",
+    "level": "Masters",
+    "source_url": "https://www.up.ac.za/yearbooks/2026/HUM-faculty/MA-programmes/view/01252136",
+    "duration_years": 2,
+    "total_credits": 180,
+    "nqf_level": 9,
+    "department": "Centre for Augmentative and Alternative Communication"
+  },
+  "curriculum": [
+    {
+      "module_code": "AAC 811",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "AAK 811",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core"
+    }
+  ],
+  "module_catalog": [
+    {
+      "module_code": "AAC 811",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Theoretical constructs in AAC 811",
+      "credits": 45.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/HUM-faculty/PG-modules/view/AAK 811",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Theories of communication, information processing, language development and literacy acquisition are dealt with as related to persons in need of or using augmentative and alternative communication (AAC). The role of AAC within a bioecological, social constructivist view of disability is explored. Current research issues in the field are explored in relation to different contexts and different\u00a0populations. At the end of this module the student must be able to: discuss the influence of AAC on communication, information processing, language development\u00a0and literacy acquisition in relation to specific cases; Identify and review current research focus areas in the field",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 9,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "3 other contact sessions per week"
+    },
+    {
+      "module_code": "AAK 811",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Theoretical constructs in AAC 811",
+      "credits": 45.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/HUM-faculty/UG-modules/view/AAK%20811",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 2,
+      "content": "Theories of communication, information processing, language development and literacy acquisition are dealt with as related to persons in need of or using augmentative and alternative communication (AAC). The role of AAC within a bioecological, social constructivist view of disability is explored. Current research issues in the field are explored in relation to different contexts and different\u00a0populations. At the end of this module the student must be able to: discuss the influence of AAC on communication, information processing, language development\u00a0and literacy acquisition in relation to specific cases; Identify and review current research focus areas in the field",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 9,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "3 other contact sessions per week"
+    }
+  ],
+  "streams_by_year": {
+    "year_1": [],
+    "year_2": [],
+    "year_3": [],
+    "year_4": [],
+    "final_year": []
+  },
+  "stream_checks": {
+    "year_1_stream_count": 0,
+    "year_2_stream_count": 0,
+    "year_3_stream_count": 0,
+    "year_4_stream_count": 0,
+    "final_year_stream_count": 0,
+    "missing_stream_module_codes_in_catalog_by_year": {
+      "year_1": [],
+      "year_2": [],
+      "year_3": [],
+      "year_4": [],
+      "final_year": []
+    }
+  }
+}

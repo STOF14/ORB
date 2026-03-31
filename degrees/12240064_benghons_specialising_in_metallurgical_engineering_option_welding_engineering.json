@@ -1,0 +1,165 @@
+{
+  "metadata": {
+    "year": 2026,
+    "degree_code": "12240064",
+    "degree_name": "BEngHons specialising in Metallurgical Engineering option\u00a0Welding Engineering",
+    "faculty": "Engineering, Built Environment and IT",
+    "faculty_code": "EBIT",
+    "level": "Honours",
+    "source_url": "https://www.up.ac.za/yearbooks/2026/EBIT-faculty/HO-programmes/view/12240064",
+    "duration_years": 1,
+    "total_credits": 128,
+    "nqf_level": 8,
+    "department": "Materials Science and Metallurgical Engineering"
+  },
+  "curriculum": [
+    {
+      "module_code": "NFE 700",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "NLO 700",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "NSW 700",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "NWP 700",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "NWP 701",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    }
+  ],
+  "module_catalog": [
+    {
+      "module_code": "NFE 700",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Fabrication engineering 700",
+      "credits": 24.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EBIT-faculty/PG-modules/view/NFE 700",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "This module looks at quality assurance and control in welded fabrication and manufacture, and introduces various standards and codes of manufacture used in the welding industry. Measurement, control and recording in welding, the principle of fitness for purpose, as well as health and safety issues are addressed. Control of residual stresses and distortion during welding, non-destructive testing, repair welding, and the economics of welding are considered. This module also examines plant facilities, welding jigs and fixtures. Special emphasis is placed on the design and implementation of welding procedure specifications, procedure qualification records and quality control plans. A number of case studies are examined.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Semester 1 or Semester 2",
+      "language": "Module is presented in English",
+      "contact_time": "48 contact hours per semester"
+    },
+    {
+      "module_code": "NLO 700",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Research project 700",
+      "credits": 32.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EBIT-faculty/PG-modules/view/NLO 700",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "The refereed literature on a specific topic (normally related to subsequent research towards a master's degree) is studied and summarised in a written report.\u00a0 The important skills are finding appropriate papers, reading and comprehending these, and using the information in the paper to construct your own view on the research topic.\u00a0 There are no formal contact sessions.\u00a0 The first part of this module involves definition of a research topic (to be approved by the head of the department), development of a literature survey and compilation of a detailed research proposal. The second part of the module involves generation, presentation and critical interpretation of a project plan/results, and compilation of a written report and an oral presentation.\u00a0The written document must be submitted at the end of October, with an oral presentation of 20-30 minutes in the week following submission of the survey.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Semester 1 or Semester 2",
+      "language": "Module is presented in English",
+      "contact_time": "48 contact hours per semester"
+    },
+    {
+      "module_code": "NSW 700",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Welding metallurgy 700",
+      "credits": 24.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EBIT-faculty/PG-modules/view/NSW 700",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "This module examines the basic physical metallurgy and heat treatment of various metals and alloys, and the application of various mechanical testing techniques, microstructural analysis and corrosion testing to characterise metals and alloys.\u00a0 The structure and properties of welds in carbon steels, stainless steels, cast irons, copper and copper alloys, nickel and nickel alloys, aluminium and aluminium alloys and other materials (Ti, Mg, Ta and Zr) are discussed.\u00a0 Defects are discussed and various techniques to avoid the formation of these defects in welds are considered.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Semester 1 or Semester 2",
+      "language": "Module is presented in English",
+      "contact_time": "48 contact hours per semester"
+    },
+    {
+      "module_code": "NWP 700",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Welding processes 700",
+      "credits": 24.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EBIT-faculty/PG-modules/view/NWP 700",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "This module examines arc physics, electrotechnics as applied to weld power sources, and power source design. The fundamental principles, applications, consumables and process variables of various arc welding processes, oxy-gas welding techniques, resistance welding processes, power beam processes and solid-state welding techniques are considered. Brazing and soldering, cutting, surfacing and metal spraying techniques are discussed. The module also looks at the welding of plastics, ceramics and composites, and at the mechanisation and use of robotics in the welding and joining industries. Practical training is included in this module.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Semester 1 or Semester 2",
+      "language": "Module is presented in English",
+      "contact_time": "48 contact hours per semester"
+    },
+    {
+      "module_code": "NWP 701",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Design of welded structures 701",
+      "credits": 24.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EBIT-faculty/PG-modules/view/NWP 701",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "This module examines welded joint design, the basics of weld design and the role of fracture mechanics in joint design. The behaviour of welded structures under different types of loading are considered, with special focus on the design of welded structures with predominantly static loading and the design of dynamically loaded welded structures. The design of welded pressure equipment, aluminium alloy structures and reinforcing-steel welded joints is considered.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Semester 1 or Semester 2",
+      "language": "Module is presented in English",
+      "contact_time": "48 contact hours per semester"
+    }
+  ],
+  "streams_by_year": {
+    "year_1": [],
+    "year_2": [],
+    "year_3": [],
+    "year_4": [],
+    "final_year": []
+  },
+  "stream_checks": {
+    "year_1_stream_count": 0,
+    "year_2_stream_count": 0,
+    "year_3_stream_count": 0,
+    "year_4_stream_count": 0,
+    "final_year_stream_count": 0,
+    "missing_stream_module_codes_in_catalog_by_year": {
+      "year_1": [],
+      "year_2": [],
+      "year_3": [],
+      "year_4": [],
+      "final_year": []
+    }
+  }
+}

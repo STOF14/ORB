@@ -1,0 +1,215 @@
+{
+  "metadata": {
+    "year": 2026,
+    "degree_code": "02240376",
+    "degree_name": "BScHons in Engineering and Environmental Geology option\u00a0Hydrogeology",
+    "faculty": "Natural and Agricultural Sciences",
+    "faculty_code": "SCI",
+    "level": "Honours",
+    "source_url": "https://www.up.ac.za/yearbooks/2026/SCI-faculty/HO-programmes/view/02240376",
+    "duration_years": 1,
+    "total_credits": 135,
+    "nqf_level": 8,
+    "department": "Geology"
+  },
+  "curriculum": [
+    {
+      "module_code": "GTX 713",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "GTX 714",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "GTX 715",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "GTX 716",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "GTX 718",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "GTX 725",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "GTX 728",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    }
+  ],
+  "module_catalog": [
+    {
+      "module_code": "GTX 713",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Site investigation project 713",
+      "credits": 30.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/SCI-faculty/PG-modules/view/GTX 713",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Field work which includes mapping, soil and rock description, joint surveys, borehole testing, water sampling, interpretation of laboratory test results and compilation of site investigation reports.\u00a0 Larger projects of at least two months of fieldwork and report writing which involves surface and underground studies, mapping, drill core logging, discontinuity surveys, rock mass classification, stability analyses, interpretation of laboratory tests or pollution studies including water and/or soil sampling, interpretation of laboratory tests, development of a rehabilitation plan or groundwater model and compilation of a report. Compulsory attendance at conferences, short courses, specialist lectures, visits to construction sites and fields excursions.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "5 practicals per week (8 weeks)"
+    },
+    {
+      "module_code": "GTX 714",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Engineering geology of South Africa 714",
+      "credits": 20.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/SCI-faculty/PG-modules/view/GTX 714",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Overview of site investigation phases;\u00a0 site investigation techniques;\u00a0 soil profiling and rock core description.\u00a0 Literature study and compilation of reports on the stratigraphy of South African rock types and engineering problems of rocks and soils within different stratigraphic units and climatic regions.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "4 lectures per week (5 weeks), 2 practicals per week (5 weeks)"
+    },
+    {
+      "module_code": "GTX 715",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Environmental geochemistry 715",
+      "credits": 20.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/SCI-faculty/PG-modules/view/GTX 715",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Principles of low temperature geochemistry; geochemistry and origin of acid mine water; acid-mineral reactions; industrial effluents, remediation methods, waste disposal, environmental sampling and data analysis; geochemical modelling.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "4 lectures per week (5 weeks), 2 practicals per week (5 weeks)"
+    },
+    {
+      "module_code": "GTX 716",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Environmental management and risk assessment 716",
+      "credits": 20.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/SCI-faculty/PG-modules/view/GTX 716",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Principles of integrated environmental management; environmental impact assessment; environmental management systems (ISO 14000 series); water resource management; environmental legislation; site investigation guidelines; natural hazard risk assessment; seismicity; project management and professional business practice.Geological models and software.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "2 practicals per week (3 weeks), 4 lectures per week"
+    },
+    {
+      "module_code": "GTX 718",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Hydrogeological modelling 718",
+      "credits": 20.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/SCI-faculty/PG-modules/view/GTX 718",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Groundwater hydraulics and contaminant transport; finite-difference methods;\u00a0flow and transport equations; spatial and temporal discretisation, stability criteria; development of conceptual models; introduction to appropriate flow and/or transport modelling software.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "2 practicals per week (5 weeks), 4 lectures per week (5 weeks)"
+    },
+    {
+      "module_code": "GTX 725",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Fluid mechanics in geological media 725",
+      "credits": 20.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/SCI-faculty/PG-modules/view/GTX 725",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Water cycle and distribution of water in the Earth's crust. Single phase flow and multiphase flow; saturated and unsaturated flow. Flow through porous and fractured media. Quantification of hydrological parameters. South African hydrostratigraphy. Drainage and dewatering.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "4 lectures per week (5 weeks), 2 practicals per week (5 weeks)"
+    },
+    {
+      "module_code": "GTX 728",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Applied geological field methods 728",
+      "credits": 10.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/SCI-faculty/PG-modules/view/GTX 728",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Practical field-based investigation methods for engineering geological and hydrogeological application; geological mapping.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "5 practicals per week (2 weeks)"
+    }
+  ],
+  "streams_by_year": {
+    "year_1": [],
+    "year_2": [],
+    "year_3": [],
+    "year_4": [],
+    "final_year": []
+  },
+  "stream_checks": {
+    "year_1_stream_count": 0,
+    "year_2_stream_count": 0,
+    "year_3_stream_count": 0,
+    "year_4_stream_count": 0,
+    "final_year_stream_count": 0,
+    "missing_stream_module_codes_in_catalog_by_year": {
+      "year_1": [],
+      "year_2": [],
+      "year_3": [],
+      "year_4": [],
+      "final_year": []
+    }
+  }
+}

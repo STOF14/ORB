@@ -1,0 +1,190 @@
+{
+  "metadata": {
+    "year": 2026,
+    "degree_code": "12252036",
+    "degree_name": "Master of Town and Regional Planning [MTRP] (Coursework)",
+    "faculty": "Engineering, Built Environment and IT",
+    "faculty_code": "EBIT",
+    "level": "Masters",
+    "source_url": "https://www.up.ac.za/yearbooks/2026/EBIT-faculty/MA-programmes/view/12252036",
+    "duration_years": 2,
+    "total_credits": 240,
+    "nqf_level": 9,
+    "department": "Town and Regional Planning"
+  },
+  "curriculum": [
+    {
+      "module_code": "TPD 820",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "TPI 811",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "TPI 821",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "TPS 810",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "TPS 820",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "TRP 810",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core"
+    }
+  ],
+  "module_catalog": [
+    {
+      "module_code": "TPD 820",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Integrated development planning 820",
+      "credits": 20.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EBIT-faculty/PG-modules/view/TPD 820",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Introduction to development and development planning theories; the integrated development planning process; legal, institutional and policy frameworks in which integrated planning functions in South Africa; implementation of integrated development plans; case studies of integrated development planning; simulations of integrated development planning exercises.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 9,
+      "presentation_period": "Semester 2",
+      "language": "Module is presented in English",
+      "contact_time": "40 contact hours per semester"
+    },
+    {
+      "module_code": "TPI 811",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Metropolitan and urban area-based interventions 811",
+      "credits": 20.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EBIT-faculty/PG-modules/view/TPI 811",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Scope, nature and rationale of metropolitan and urban area-based interventions; unique problems in metropolitan areas, for example inner city decay, fringe development, housing, services backlog, the dysfunctional apartheid cityscape and dependency on private transport; types of intervention (inter alia institutional, spatial, economic and social) in order to accomplish restructuring and development in metropolitan areas in South Africa in a relevant, social and environmentally accountable way; policy and legislation regarding urban restructuring and development in South Africa; international and local case studies; impact of globalisation on South African metropolitan areas and major cities; simulated metropolitan and urban area-based intervention exercise.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 9,
+      "presentation_period": "Semester 1",
+      "language": "Module is presented in English",
+      "contact_time": "40 contact hours per semester"
+    },
+    {
+      "module_code": "TPI 821",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Regional interventions 821",
+      "credits": 20.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EBIT-faculty/PG-modules/view/TPI 821",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Scope, nature and rationale of regional interventions on both a supra-national and subnational scale; approaches to planning and development on continental, macro-regional, provincial and district scales; types of intervention (inter alia institutional, spatial, economic and social) in order to accomplish restructuring and development in regions in a relevant, social and environmentally accountable way, past and present examples of planning on each of these scales; planners\u2019 roles in planning exercises at these scales; critiques and improvements on current practice; rural urban linkages and their significance for regional interventions; debates around the way in which problems facing rural settlements (such as the absence of an economic base and necessary infrastructure, lack of access to land and conflicting demands on natural resources) in regions can be addressed; international and local case studies; simulated regional intervention exercise.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 9,
+      "presentation_period": "Semester 2",
+      "language": "Module is presented in English",
+      "contact_time": "40 contact hours per semester"
+    },
+    {
+      "module_code": "TPS 810",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Sustainable settlement planning and design 810",
+      "credits": 20.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EBIT-faculty/PG-modules/view/TPS 810",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Normative principles for sustainable settlement planning and design; design theory; planning and design processes; simulated urban and rural settlement planning and design exercise.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 9,
+      "presentation_period": "Semester 1",
+      "language": "Module is presented in English",
+      "contact_time": "40 contact hours per semester"
+    },
+    {
+      "module_code": "TPS 820",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Introduction to urban design 820",
+      "credits": 20.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EBIT-faculty/PG-modules/view/TPS 820",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Theory of urban design and its relation to town and regional planning; urban design principles for well-performing settlements; urban design process; urban design frameworks and precinct plans; simulated urban design exercise at neighbourhood level.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 9,
+      "presentation_period": "Semester 2",
+      "language": "Module is presented in English",
+      "contact_time": "40 contact hours per semester"
+    },
+    {
+      "module_code": "TRP 810",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "An overview of planning theory and practice 810",
+      "credits": 20.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EBIT-faculty/PG-modules/view/TRP 810",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": null,
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 9,
+      "presentation_period": "Semester 1",
+      "language": "Module is presented in English",
+      "contact_time": "40 contact hours per semester"
+    }
+  ],
+  "streams_by_year": {
+    "year_1": [],
+    "year_2": [],
+    "year_3": [],
+    "year_4": [],
+    "final_year": []
+  },
+  "stream_checks": {
+    "year_1_stream_count": 0,
+    "year_2_stream_count": 0,
+    "year_3_stream_count": 0,
+    "year_4_stream_count": 0,
+    "final_year_stream_count": 0,
+    "missing_stream_module_codes_in_catalog_by_year": {
+      "year_1": [],
+      "year_2": [],
+      "year_3": [],
+      "year_4": [],
+      "final_year": []
+    }
+  }
+}

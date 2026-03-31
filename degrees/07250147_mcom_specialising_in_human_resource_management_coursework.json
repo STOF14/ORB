@@ -1,0 +1,281 @@
+{
+  "metadata": {
+    "year": 2026,
+    "degree_code": "07250147",
+    "degree_name": "MCom specialising in Human Resource Management (Coursework)",
+    "faculty": "Economic and Management Sciences",
+    "faculty_code": "EMS",
+    "level": "Masters",
+    "source_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/MA-programmes/view/07250147",
+    "duration_years": 1,
+    "total_credits": 180,
+    "nqf_level": 9,
+    "department": "Human Resource Management"
+  },
+  "curriculum": [
+    {
+      "module_code": "HRC 801",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "HRC 802",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "HRC 803",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "HRC 804",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "HRC 805",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "HRC 806",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "HRC 807",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "IPS 804",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "IPS 806",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "LAM 801",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core"
+    }
+  ],
+  "module_catalog": [
+    {
+      "module_code": "HRC 801",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Strategic human resource management 801",
+      "credits": 12.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/PG-modules/view/HRC 801",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Students will develop an in-depth knowledge of the context and content of strategic human resource management. They will integrate them to develop and implement strategic human resource management plans and communicate them to a variety of audiences in different contexts. Students will be able to critically appraise the state of strategic human resource management in South African organisations.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 9,
+      "presentation_period": "Semester 1 or Semester 2",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "HRC 802",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Talent management 802",
+      "credits": 12.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/PG-modules/view/HRC 802",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Students will design, conduct and evaluate research in talent management in the management of human resources; they will design, facilitate and monitor the implementation of talent management practices; as an internal or external consultant they will appreciate the complexity of behaviour in the workplace; they will combine theoretical knowledge with practical examples and provide guidelines on talent management as a decision science.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 9,
+      "presentation_period": "Semester 1 or Semester 2",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "HRC 803",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Leadership 803",
+      "credits": 12.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/PG-modules/view/HRC 803",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Students will be knowledgeable about the history of leadership theory and critically apply contemporary approaches to design, deliver and evaluate leadership development programmes. They will be able to communicate their rationale for leadership development programmes to a variety of audiences.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 9,
+      "presentation_period": "Semester 1 or Semester 2",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "HRC 804",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Human resource metrics 804",
+      "credits": 12.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/PG-modules/view/HRC 804",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Students will know the principles of data management, data mining, assuring data integrity and its utilisation as the source of human capital measurement in personnel management. Students will be able to critically apply metrics to analyse the effectiveness and value of typical human resource management initiatives and be able to communicate them to a variety of audiences.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 9,
+      "presentation_period": "Semester 1 or Semester 2",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "HRC 805",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Diversity dynamics 805",
+      "credits": 12.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/PG-modules/view/HRC 805",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Students will develop an in-depth understanding of diversity approaches and practices and be able to apply them in a critical manner to manage diversity related issues in South African organisations. Students will have an understanding of issues that are detrimental in a diverse work context (i.e. stereotyping, ethnocentrism, bias) and will demonstrate reflexive self and social awareness in managing diversity.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 9,
+      "presentation_period": "Semester 1 or Semester 2",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "HRC 806",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Research in practice 806",
+      "credits": 30.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/PG-modules/view/HRC 806",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Part 1: Research design and proposal development Students will design a suitable research project by developing a research proposal commencing with the background, the problem statement and the purpose of the proposed study. An integrated and in-depth literature review follows, demonstrating academic scholarship in the field of study and the student\u2019s ability to reflect critically on their own and others\u2019 research. They will develop research questions or hypotheses and justify an appropriate methodology for the study. The proposal will include ethical considerations and the criteria for ethical conduct in doing research, adhering to UP\u2019s Code of ethics for scholarly activities (S4755/12). Students will present their proposals to a panel of members of D-HRM. Students will follow the APA guidelines in their academic writing. Part 2: Qualitative research Students will be proficient in advanced qualitative research methods, and knowledgeable of the relevant paradigms, designs, sampling procedures, data collection and analysis methods as well as the criteria for quality and rigour. Students will demonstrate reflexivity in applying these by conducting a qualitative research project of limited scope in which they justify their methodological choices. Part 3: Quantitative research Students will be proficient in quantitative research methods and the relevant paradigms, research designs, sampling procedures and data collection methods. They will be able to select and apply appropriate statistical models for different types of designs and justify their choices in line with the specific purpose of the study and data requirements. They will develop a practical ability to analyse data using SPSS and AMOS.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 9,
+      "presentation_period": "Year",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "HRC 807",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Mini-Dissertation:Human Resource Management 807",
+      "credits": 60.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/PG-modules/view/HRC 807",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "The research component (Human Resource Management mini-dissertation) can be completed after the successful completion of HRC 806 (or IPS 806). It needs to be submitted for examination by 30 September in Year 2. In line with the proposal developed as part of HRC 806, students will conduct their research study by collecting, analysing and interpreting their findings in a scholarly manner, demonstrating a critical engagement with related academic work. They should also discuss the limitations of their study, its practical implications and its contribution. The findings will be communicated in the form of a mini- dissertation, following APA guidelines.",
+      "prerequisites": "HRC 806 or IPS 806",
+      "nqf_level": 9,
+      "presentation_period": "Year",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "IPS 804",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Change dynamics 804",
+      "credits": 12.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/PG-modules/view/IPS 804",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Students will be knowledgeable about psychological theories of change in individuals and groups. They will build and communicate their own mental models of a changing post-modern society and of the organization as change territory. They will integrate this knowledge to develop suitable frameworks to facilitate change interventions and manage the dynamics of change in contemporary organisations. Students will be able to critically appraise and articulate the intended benefits and possible unintended consequences of a change intervention to different audiences.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 9,
+      "presentation_period": "Semester 1 or Semester 2",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "IPS 806",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Research in practice 806",
+      "credits": 30.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/PG-modules/view/IPS 806",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Part 1: Research design and proposal development Students will design a suitable research project by developing a research proposal commencing with the background, the problem statement and the purpose of the proposed study. An integrated and in-depth literature review follows, demonstrating academic scholarship in the field of study and the student\u2019s ability to reflect critically on their own and others\u2019 research. They will develop research questions or hypotheses and justify an appropriate methodology for the study. The proposal will include ethical considerations and \u00a0the criteria for ethical conduct in doing research, adhering to UP\u2019s Code of ethics for scholarly activities (S4755/12). Students will present their proposals to a panel of members of D-HRM. Students will follow the APA guidelines in their academic writing. Part 2: Qualitative research Students will be proficient in advanced qualitative research methods, and knowledgeable of the relevant paradigms, designs, sampling procedures, data collection and analysis methods as well as the criteria for quality and rigour. Students will demonstrate reflexivity in applying these by conducting a qualitative research project of limited scope in which they justify their methodological choices. Part 3: Quantitative research Students will be proficient in quantitative research methods and the relevant paradigms, research designs, sampling procedures and data collection methods. They will be able to select and apply appropriate statistical models for different types of designs and justify their choices in line with the specific purpose of the study and data requirements. They will develop a practical ability to analyse data using SPSS and AMOS.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 9,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "32 contact hours"
+    },
+    {
+      "module_code": "LAM 801",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Labour relations management practices 801",
+      "credits": 18.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/PG-modules/view/LAM 801",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Students will acquire an in-depth knowledge of labour relations management principles and understand employment contracting in the context of South African Labour legislation. Students will develop an understanding of different approaches for managing grievances and understand different strategies and policies used in labour relations management. Students will integrate and apply these critically in solving South African based labour issues.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 9,
+      "presentation_period": "Semester 1 or Semester 2",
+      "language": "Module is presented in English"
+    }
+  ],
+  "streams_by_year": {
+    "year_1": [],
+    "year_2": [],
+    "year_3": [],
+    "year_4": [],
+    "final_year": []
+  },
+  "stream_checks": {
+    "year_1_stream_count": 0,
+    "year_2_stream_count": 0,
+    "year_3_stream_count": 0,
+    "year_4_stream_count": 0,
+    "final_year_stream_count": 0,
+    "missing_stream_module_codes_in_catalog_by_year": {
+      "year_1": [],
+      "year_2": [],
+      "year_3": [],
+      "year_4": [],
+      "final_year": []
+    }
+  }
+}

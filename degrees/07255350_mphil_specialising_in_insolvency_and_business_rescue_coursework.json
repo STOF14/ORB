@@ -1,0 +1,263 @@
+{
+  "metadata": {
+    "year": 2026,
+    "degree_code": "07255350",
+    "degree_name": "MPhil specialising in Insolvency and Business Rescue (Coursework)",
+    "faculty": "Economic and Management Sciences",
+    "faculty_code": "EMS",
+    "level": "Masters",
+    "source_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/MA-programmes/view/07255350",
+    "duration_years": 1,
+    "total_credits": 190,
+    "nqf_level": 9,
+    "department": "Mercantile Law Business Management"
+  },
+  "curriculum": [
+    {
+      "module_code": "IBR 821",
+      "year_level": 8,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "IBR 822",
+      "year_level": 8,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "NME 804",
+      "year_level": 8,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "NME 815",
+      "year_level": 8,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "OBS 821",
+      "year_level": 8,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "OBS 822",
+      "year_level": 8,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "OBS 892",
+      "year_level": 8,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "RHP 801",
+      "year_level": 8,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "RHP 803",
+      "year_level": 8,
+      "is_compulsory": true,
+      "module_type": "core"
+    }
+  ],
+  "module_catalog": [
+    {
+      "module_code": "IBR 821",
+      "year_level": 8,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Comparative and international insolvency principles 821",
+      "credits": 20.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/LAW-faculty/PG-modules/view/IBR 821",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "The aim of the module is to provide students with the required background regarding the principles and theory of the South African insolvency system within an international and comparative context. The outcome of this module is to equip students with an advanced knowledge of the issues related to this ever-evolving industry.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 9,
+      "presentation_period": "Semester 2",
+      "language": "Module is presented in English",
+      "contact_time": "20 contact hours"
+    },
+    {
+      "module_code": "IBR 822",
+      "year_level": 8,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Corporate liquidation and business rescue regulation 822",
+      "credits": 20.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/LAW-faculty/PG-modules/view/IBR 822",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "The aim of the module is to provide students with advanced knowledge regarding the principles of corporate liquidation and rescue including the administration of an insolvent or financially distressed estate.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 9,
+      "presentation_period": "Semester 1",
+      "language": "Module is presented in English",
+      "contact_time": "20 contact hours"
+    },
+    {
+      "module_code": "NME 804",
+      "year_level": 8,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Research methodology 804",
+      "credits": 48.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/PG-modules/view/NME 804",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "This essential module serves as the methodological foundation for MPhil programmes in Management Sciences. It equips students with the skills to design, execute, and evaluate rigorous research across different paradigms. The module is delivered in a blended format, offering flexibility for working professionals, and incorporates intensive in-person workshops, guided online sessions, and personalised consultations.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 9,
+      "presentation_period": "Semester 1 and Semester 2",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "NME 815",
+      "year_level": 8,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Research Methodology 815",
+      "credits": 10.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/LAW-faculty/PG-modules/view/NME 815",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Strong emphasis on market research, quantification of the market but also a basis for academic publications and a doctorate.",
+      "prerequisites": "No prerequisites",
+      "nqf_level": 9,
+      "presentation_period": "Semester 1",
+      "language": "Module is presented in English",
+      "contact_time": "3 lectures per week"
+    },
+    {
+      "module_code": "OBS 821",
+      "year_level": 8,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Distressed business assessment 821",
+      "credits": 20.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/PG-modules/view/OBS 821",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "The aim of this module is to equip students to explore the concepts, theories, patterns and recent cases of the four stages of corporate sickness: decline, distress, insolvency and bankruptcy. It examines contemporary product, production, accounting, financial, marketing, alliance and joint venture-based turnaround strategies. The module provides students with a perspective on identifying and remedying turnaround business situations, that is, established businesses experiencing operational, financial and managerial difficulties. Students learn, from the viewpoint of a general manager, how to distinguish between \"troubled\" and \"crisis\" companies and how to use both qualitative and quantitative tools to effect solutions.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 9,
+      "presentation_period": "Semester 2",
+      "language": "Module is presented in English",
+      "contact_time": "20 contact hours"
+    },
+    {
+      "module_code": "OBS 822",
+      "year_level": 8,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Financial distress assessment 822",
+      "credits": 20.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/PG-modules/view/OBS 822",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "The aim of this module is to equip students to explore modern research in corporate financial distress. Topics covered include financial distress identification and prediction, the link between distress and macroeconomic conditions, and financial bubbles. It also incorporates various tools from business analytics. The module covers business valuation in distress situations.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 9,
+      "presentation_period": "Semester 2",
+      "language": "Module is presented in English",
+      "contact_time": "20 contact hours"
+    },
+    {
+      "module_code": "OBS 892",
+      "year_level": 8,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Mini-dissertation 892",
+      "credits": 90.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/PG-modules/view/OBS 892",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "This module equips the student to conduct independent research by executing a research project on a relevant topic, of which the findings are reported in an academic article.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 9,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "service_modules": "Faculty of Law"
+    },
+    {
+      "module_code": "RHP 801",
+      "year_level": 8,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Research methodology 801",
+      "credits": 5.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/LAW-faculty/PG-modules/view/RHP 801",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Planning and organising a research project Drafting a research proposal: Hypotheses and research question Theory in research and methodological approaches to legal research Language Citation and ethics of citation Drafting of chapters and presentation",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 9,
+      "presentation_period": "Semester 1 or Semester 2",
+      "language": "Module is presented in English",
+      "contact_time": "8 seminars or block sessions"
+    },
+    {
+      "module_code": "RHP 803",
+      "year_level": 8,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Research proposal 803",
+      "credits": 5.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/LAW-faculty/PG-modules/view/RHP 803",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Development and presentation of a research\u00a0 proposal. (A research proposal must be submitted to the supervisor and accepted in the first semester of the second year of study\u00a0 before the student will be allowed to register for the mini-dissertation.)",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 9,
+      "presentation_period": "Year",
+      "language": "Module is presented in English"
+    }
+  ],
+  "streams_by_year": {
+    "year_1": [],
+    "year_2": [],
+    "year_3": [],
+    "year_4": [],
+    "final_year": []
+  },
+  "stream_checks": {
+    "year_1_stream_count": 0,
+    "year_2_stream_count": 0,
+    "year_3_stream_count": 0,
+    "year_4_stream_count": 0,
+    "final_year_stream_count": 0,
+    "missing_stream_module_codes_in_catalog_by_year": {
+      "year_1": [],
+      "year_2": [],
+      "year_3": [],
+      "year_4": [],
+      "final_year": []
+    }
+  }
+}

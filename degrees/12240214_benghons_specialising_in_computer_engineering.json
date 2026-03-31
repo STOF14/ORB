@@ -1,0 +1,240 @@
+{
+  "metadata": {
+    "year": 2026,
+    "degree_code": "12240214",
+    "degree_name": "BEngHons specialising in Computer Engineering",
+    "faculty": "Engineering, Built Environment and IT",
+    "faculty_code": "EBIT",
+    "level": "Honours",
+    "source_url": "https://www.up.ac.za/yearbooks/2026/EBIT-faculty/HO-programmes/view/12240214",
+    "duration_years": 1,
+    "total_credits": 128,
+    "nqf_level": 8,
+    "department": "Electrical, Electronic and Computer Engineering"
+  },
+  "curriculum": [
+    {
+      "module_code": "EAI 732",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "EAI 733",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "EIN 732",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "EKS 732",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "EPT 732",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "EPT 733",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "ETD 732",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "ETT 732",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    }
+  ],
+  "module_catalog": [
+    {
+      "module_code": "EAI 732",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Intelligent systems 732",
+      "credits": 32.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EBIT-faculty/PG-modules/view/EAI 732",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "This module provides the theoretical background necessary to understand, research and develop real-world software and hardware systems that incorporate and exhibit intelligent behaviour. The module incorporates advanced theory from fields such as Artificial Intelligence, Computational Intelligence, Machine Learning, Pattern Recognition and Signal Processing. Core topics of the module include: Bayesian Theory, Neural Networks, Kernel Methods, Graphic Models, and Numerical Bayesian Methods.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Semester 1",
+      "language": "Module is presented in English",
+      "contact_time": "10 lectures per week"
+    },
+    {
+      "module_code": "EAI 733",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Advanced topics in intelligent systems 733",
+      "credits": 32.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EBIT-faculty/PG-modules/view/EAI 733",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "The aim of the module is to augment the general background provided by the EAI 732 module with the specific theoretical background required for MEng. The module will, depending on the intended research field of the student, incorporate advanced theory from fields such as: Digital Image Processing, Computer and Robotic Vision, Probabilistic Robotics, Data Fusion, Hardware and Software Parallel Processing, Real-Time and Reactive Systems.",
+      "prerequisites": "EAI 732",
+      "nqf_level": 8,
+      "presentation_period": "Semester 1 or Semester 2",
+      "language": "Module is presented in English",
+      "contact_time": "10 lectures per week"
+    },
+    {
+      "module_code": "EIN 732",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Introduction to research 732",
+      "credits": 32.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EBIT-faculty/PG-modules/view/EIN 732",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "*This is a compulsory module. The aim of this module is to teach students to critically evaluate research literature, including conference papers and journal articles, in order to determine the current state of knowledge in a particular specialist area. It will also provide students with the principles of research to enable them to conduct research and prepare an original project in their particular specialist area.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Semester 1 or Semester 2",
+      "language": "Module is presented in English",
+      "contact_time": "16 contact hours per semester"
+    },
+    {
+      "module_code": "EKS 732",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Wireless sensor networks 732",
+      "credits": 32.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EBIT-faculty/PG-modules/view/EKS 732",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "WSN consist of individual nodes interacting with their environment by sensing or controlling physical parameters; these nodes have to collaborate (using wireless communication) to fulfil their tasks. The course can be structured in two parts: architectures covering single node and network architectures, and communication protocols focusing on algorithms and protocols relevant to wireless sensor networks. The latter include the physical layer, MAC protocols, link-layer, naming and addressing, time synchronisation, localisation and positioning, topology control, routing protocols, data-centric and content-based networking, transport layer an QoS, and advanced application support (e.g. security).",
+      "prerequisites": "ERN 780",
+      "nqf_level": 8,
+      "presentation_period": "Semester 1 or Semester 2",
+      "language": "Module is presented in English",
+      "contact_time": "32 contact hours per semester"
+    },
+    {
+      "module_code": "EPT 732",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Research project: Theory 732",
+      "credits": 32.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EBIT-faculty/PG-modules/view/EPT 732",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "This module will cover the essential theoretical background of the student\u2019s proposed M Eng topic and include inter alia the following: (i) Field definition and descriptions (ii) In-depth study into background and theory relevant to the problem to be addressed (iii) Problem definition and description (iv) Mathematical simulations of the problem",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Semester 1 or Semester 2",
+      "language": "Module is presented in English",
+      "contact_time": "10 lectures per week"
+    },
+    {
+      "module_code": "EPT 733",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Research project: Design and laboratory 733",
+      "credits": 32.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EBIT-faculty/PG-modules/view/EPT 733",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "This module will include extensive laboratory experiments to test the principles and possible solutions of the proposed M Eng research project and will include inter alia the following. These will include hardware and/or software experiments: (i) Introduction to instrumentation and measuring techniques in general and specifically as applied in the field of research. (ii) Structured laboratory work to introduce the specific problem investigated for the research undertaken. (iii) Structured laboratory work to test the proposed solution for the problem addressed. (iv) Confirmation experiments.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Semester 1 or Semester 2",
+      "language": "Module is presented in English",
+      "contact_time": "10 lectures per week"
+    },
+    {
+      "module_code": "ETD 732",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Digital communications 732",
+      "credits": 32.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EBIT-faculty/PG-modules/view/ETD 732",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Digital Communications ETD 732 is a first semester graduate course in Electronic Engineering, presented by the Signal Processing and Telecommunications Group, in collaboration with the Centre for Radio and Digital Communication (CRDC). The content of the course is as follows: Introduction to digital communications, digital communications applications and services. Review of: probability and stochastic processes, source coding, characterisation of communication signals and systems and optimum receivers for the AWGN channel. Advanced synchronisation systems: Carrier and symbol recovery. Shannon\u2019s channel capacity theorem and introduction to coding. Signal design for band-limited channels. Digital modulation techniques. Communication through band-limited linear filter channels. Introduction to adaptive equalisation. Spread spectrum signals for digital communications. Simulation of digital communication systems. Digital realisation of digital communication subsystems. Digital communication laboratory.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Semester 1",
+      "language": "Module is presented in English",
+      "contact_time": "32 contact hours per semester"
+    },
+    {
+      "module_code": "ETT 732",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Telecommunication systems engineering 732",
+      "credits": 32.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EBIT-faculty/PG-modules/view/ETT 732",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Telecommunication systems engineering ETT 732 is a first semester graduate course in Electronic Engineering, presented by the Signals and Telecommunications Group. This module provides an Introduction to telecommunication concepts, telecommunication systems, virtual private networks (VPN), advanced intelligent networks (AIN), local number portability (LNP), computer-to-telephony integration (CTI), signalling system 7 (SS7), CTI technologies and application, ISDN, frame relay, ATM, ATM and frame relay internetworking, data over power lines, xDSL, microwave and radio-based systems, local multipoint distribution services (LMDS), specialized mobile radio (SMR), cellular communication, GSM, personal communication services (PCS), wireless data communication (Mobile IP), satellite communication (Networking, LEO), Sonet and SDH, wave division multiplexing (WDM), the internet (TCP/IP, VoIP, networking, management).",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Semester 1 or Semester 2",
+      "language": "Module is presented in English",
+      "contact_time": "32 contact hours per semester"
+    }
+  ],
+  "streams_by_year": {
+    "year_1": [],
+    "year_2": [],
+    "year_3": [],
+    "year_4": [],
+    "final_year": []
+  },
+  "stream_checks": {
+    "year_1_stream_count": 0,
+    "year_2_stream_count": 0,
+    "year_3_stream_count": 0,
+    "year_4_stream_count": 0,
+    "final_year_stream_count": 0,
+    "missing_stream_module_codes_in_catalog_by_year": {
+      "year_1": [],
+      "year_2": [],
+      "year_3": [],
+      "year_4": [],
+      "final_year": []
+    }
+  }
+}

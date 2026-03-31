@@ -1,0 +1,160 @@
+{
+  "metadata": {
+    "year": 2026,
+    "degree_code": "07241113",
+    "degree_name": "BAdminHons specialising in Public Administration",
+    "faculty": "Economic and Management Sciences",
+    "faculty_code": "EMS",
+    "level": "Honours",
+    "source_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/HO-programmes/view/07241113",
+    "duration_years": 1,
+    "total_credits": 120,
+    "nqf_level": 8,
+    "department": "School of Public Management and Administration"
+  },
+  "curriculum": [
+    {
+      "module_code": "AET 700",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "BLN 700",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "FIA 700",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "NME 702",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "PAS 700",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    }
+  ],
+  "module_catalog": [
+    {
+      "module_code": "AET 700",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Public administration and management theory 700",
+      "credits": 20.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/PG-modules/view/AET 700",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "The nature, origins and scope of Public Administration Sub-fields of Public Administration Relationship between Public Administration and other disciplines Theoretical discourse in Public Administration Politics-administration interface Application of Public Administration The nature, concepts and techniques of Public Management New Public Management doctrine Issues in public management Strategic management Measurement of efficiency and effectiveness in public organisations",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Semester 1",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "BLN 700",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Policy and organisational studies 700",
+      "credits": 20.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/PG-modules/view/BLN 700",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Concepts and theories of public policy Law making and policy making Policy implementation Policy actors and role players Models for policy analysis Policy evaluation Policy dynamics and change Policy innovation Policy termination Theories and approaches to organisation studies Organisational systems and the creation of work units Delegation and communication Organisational behaviour Organisational development and change",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Semester 2",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "FIA 700",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Financial administration and management 700",
+      "credits": 20.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/PG-modules/view/FIA 700",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Concepts and aims of public finance Fiscal policy and monetary policy Legislative framework for public finance Role players in public finance Budgeting, budgeting techniques and systems Financial reporting Procurement and supply chain management Contract management Internal controls and accounting",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Semester 1",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "NME 702",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Research methodology 702",
+      "credits": 40.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/PG-modules/view/NME 702",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Qualitative research Quantitative research Reseach design in Public Administration A three worlds perspective on research Surveys and interview data collection technique Sampling and sampling design Ethical issues in social research Data analysis in qualitative research Data analysis in quantitative research Preparation and submission of research proposal",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "PAS 700",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Public human capital administration and management 700",
+      "credits": 20.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/PG-modules/view/PAS 700",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Strategic human capital administration and management practices Legislative framework for public human capital administration and managment Human capital planning and procurement (employment equity) Recruitment, selection and placement practices Change management for human capital maintenance Career and talent management for staff retention in the public service Performance management Mentoring and coaching Conflict management Ethical conduct in the public service Labour relations and employee assistance in the public service",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Semester 2",
+      "language": "Module is presented in English"
+    }
+  ],
+  "streams_by_year": {
+    "year_1": [],
+    "year_2": [],
+    "year_3": [],
+    "year_4": [],
+    "final_year": []
+  },
+  "stream_checks": {
+    "year_1_stream_count": 0,
+    "year_2_stream_count": 0,
+    "year_3_stream_count": 0,
+    "year_4_stream_count": 0,
+    "final_year_stream_count": 0,
+    "missing_stream_module_codes_in_catalog_by_year": {
+      "year_1": [],
+      "year_2": [],
+      "year_3": [],
+      "year_4": [],
+      "final_year": []
+    }
+  }
+}

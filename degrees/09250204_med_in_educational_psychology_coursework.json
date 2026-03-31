@@ -1,0 +1,261 @@
+{
+  "metadata": {
+    "year": 2026,
+    "degree_code": "09250204",
+    "degree_name": "MEd in Educational Psychology (Coursework)",
+    "faculty": "Education",
+    "faculty_code": "EDU",
+    "level": "Masters",
+    "source_url": "https://www.up.ac.za/yearbooks/2026/EDU-faculty/MA-programmes/view/09250204",
+    "duration_years": 2,
+    "total_credits": 180,
+    "nqf_level": 9,
+    "department": "Educational Psychology"
+  },
+  "curriculum": [
+    {
+      "module_code": "BOP 805",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "NMQ 800",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "ODD 875",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "ODH 875",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "ODK 895",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "OPG 805",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "OPR 801",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "OPR 805",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "OUB 805",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core"
+    }
+  ],
+  "module_catalog": [
+    {
+      "module_code": "BOP 805",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Career counselling 805",
+      "credits": 10.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EDU-faculty/PG-modules/view/BOP 805",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Theory and application counselling; of career counselling; addressing contemporary Global South inequality issues by privileging social justice and diversity agenda in the practice of guidance and counselling, Interviewing, implementation and interpretation of media, diagnosing, counselling to develop strengths, identify and leverage resources and assets (individual, collective and contextual) for life design; career resilience, adaptability and employability.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 9,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "1 lecture every fortnight"
+    },
+    {
+      "module_code": "NMQ 800",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Research proposal 800",
+      "credits": 30.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EDU-faculty/PG-modules/view/NMQ 800",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Development of a research proposal. Research methodology. Overview and principles of quantitative and qualitative research methodology. Data collection methods, data analysis methods, paradigm analysis and theoretical frameworks for educational studies. Global theoretical perspectives in education.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 9,
+      "presentation_period": "Year",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "ODD 875",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Educational psychology assessment for learning and development 875",
+      "credits": 10.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EDU-faculty/PG-modules/view/ODD 875",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "This module focuses on fundamental approaches concerning barriers to learning, with reference to the South African context; theoretical framework(s) for diagnostic assessment in respect of academic achievement difficulties within the South African context; how appraise a battery of neuropsychological tests and to understand which neuropsychological domains they measure; to use standardised tests and informal techniques to assess young children in low resources settings; to \u00a0assess reading, writing, spelling, numeracy and mathematical skills, study skills, educational and environmental disadvantage; professional skills and values of accountable diagnostic assessment practice and reporting of findings in respect of learners\u2019 academic achievement difficulties within the South African context.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 9,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "1 lecture every fortnight"
+    },
+    {
+      "module_code": "ODH 875",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Educational psychological learning support 875",
+      "credits": 10.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EDU-faculty/PG-modules/view/ODH 875",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Guided by educational psychological assessment for learning and development, the module addresses learning support in Southern Africa: contextualisation; and application of theories for learning support, including evidence-based local knowledge; the learner and learning support; inclusive education; individual and group learning support; micro and macro-level support and preventative programmes; intervention, support and prevention of challenges regarding learners\u2019 academic achievement.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 9,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "1 lecture every fortnight"
+    },
+    {
+      "module_code": "ODK 895",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Mini-dissertation 895",
+      "credits": 60.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EDU-faculty/PG-modules/view/ODK 895",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Educational Psychology dissertation of limited scope conducted under supervision of a supervisor in the area of Career Counselling, Orientation Pedagogics; Educational psychological assessment for learning and development; Educational Psychology Pathways to Emotional & Behavioural Wellbeing; Family-oriented assessment intervention.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 9,
+      "presentation_period": "Year",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "OPG 805",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Educational psychology pathways to emotional and  behavioural wellbeing 805",
+      "credits": 10.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EDU-faculty/PG-modules/view/OPG 805",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "The educational psychologist within a multi-cultural post-colonial, resource-constrained context; underlying theories and approaches to educational psychological assessment, diagnosis, and intervention aimed at individual functioning in relation to learning and development; and the well-founded use thereof with to prevent/manage emotional and behavioural problems and facilitate resilience; conceptualise theoretical cases therapeutic techniques; and the educational psychologist as a person.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 9,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "1 lecture every fortnight"
+    },
+    {
+      "module_code": "OPR 801",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Educational Psychology Practice 801",
+      "credits": 40.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EDU-faculty/PG-modules/view/OPR 801",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Practical module: Apply relevant, evidence-based, Southern African indigenous and global theoretical foundations relating to educational psychological assessment and support of children/youth with emotional, behavioural, learning and/or career-related needs, family oriented educational psychology, group work, (also in school and/or community work settings); conceptualise cases (including formulating clinical impressions, implementation and interpretation of psychological media, making diagnoses, clinical decision-making, and formulating intervention plans that address risks but also harness existing strengths and supports), referrals, report writing, (summary and full reports) feedback sessions with parents, multi-disciplinary liaison, education/guidance, for caregivers and/or school- and/or community-based stakeholders; interviewing skills, ethical issues and the rights of the client. The practice of the educational psychologist (including critical reflection on current debates relating to the psychology profession).",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 9,
+      "presentation_period": "Year",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "OPR 805",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Internship in Educational Psychology 805",
+      "credits": 0.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EDU-faculty/PG-modules/view/OPR 805",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Further practical training after the completion of the coursework component of the programme.",
+      "prerequisites": "No prerequisite.",
+      "nqf_level": 9,
+      "presentation_period": "Year",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "OUB 805",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Family-oriented intervention 805",
+      "credits": 10.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EDU-faculty/PG-modules/view/OUB 805",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Diversity in families; family life cycle development; parameters of family functioning; family resilience models for the analysis of family functioning; family therapy models problems; analysis of families with special concerns, with family-orientated intervention with regard to all these aspects as the central theme.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 9,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "1 lecture every fortnight"
+    }
+  ],
+  "streams_by_year": {
+    "year_1": [],
+    "year_2": [],
+    "year_3": [],
+    "year_4": [],
+    "final_year": []
+  },
+  "stream_checks": {
+    "year_1_stream_count": 0,
+    "year_2_stream_count": 0,
+    "year_3_stream_count": 0,
+    "year_4_stream_count": 0,
+    "final_year_stream_count": 0,
+    "missing_stream_module_codes_in_catalog_by_year": {
+      "year_1": [],
+      "year_2": [],
+      "year_3": [],
+      "year_4": [],
+      "final_year": []
+    }
+  }
+}

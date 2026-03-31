@@ -1,0 +1,165 @@
+{
+  "metadata": {
+    "year": 2026,
+    "degree_code": "12240112",
+    "degree_name": "BEngHons specialising in Transportation Engineering",
+    "faculty": "Engineering, Built Environment and IT",
+    "faculty_code": "EBIT",
+    "level": "Honours",
+    "source_url": "https://www.up.ac.za/yearbooks/2026/EBIT-faculty/HO-programmes/view/12240112",
+    "duration_years": 1,
+    "total_credits": 128,
+    "nqf_level": 8,
+    "department": "Civil Engineering"
+  },
+  "curriculum": [
+    {
+      "module_code": "SGC 793",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective"
+    },
+    {
+      "module_code": "SGC 794",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective"
+    },
+    {
+      "module_code": "SGC 797",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective"
+    },
+    {
+      "module_code": "SIK 790",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective"
+    },
+    {
+      "module_code": "SSI 790",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective"
+    }
+  ],
+  "module_catalog": [
+    {
+      "module_code": "SGC 793",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "Pavement design 793",
+      "credits": 24.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EBIT-faculty/PG-modules/view/SGC 793",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "A research term paper will be prepared. Design philosophy in First and Third World environments; characterising and use of pavement materials; drainage; systems approach to layout, geometric and pavement design; stresses and strains in pavements; mechanistic design methods and elasto-plastic behaviour; economic analysis; designing pavements for streets, gravel and paved roads, runways, and industrial areas. Report writing.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "40 Contact hours"
+    },
+    {
+      "module_code": "SGC 794",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "Concrete technology 794",
+      "credits": 24.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EBIT-faculty/PG-modules/view/SGC 794",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "A research term paper will be prepared. Properties of concrete and concrete mixes. Characteristics of Portland cement and supplementary cementitious materials. Aggregates, admixtures and practical design of mixes. Manufacture, curing and testing, including non-destructive methods. Statistical approach to quality control. Time-dependent behaviour and durability of concrete. The principles for appropriate selection of materials and techniques for repair, maintenance and strengthening of civil engineering structures. Investigation and diagnosis. Corrosion of reinforcement. Alkali-aggregate reaction, sulphate attack. Physical degradation. Repair materials. Protective systems. Systems for repair.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "40 Contact hours"
+    },
+    {
+      "module_code": "SGC 797",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "Road rehabilitation technology 797",
+      "credits": 24.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EBIT-faculty/PG-modules/view/SGC 797",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "A research term paper will be prepared. Development of road management systems and application to existing street and road networks. Evaluation of, and measurements on existing facilities. Maintenance management. Recycling of materials. Design methods for upgrading, re-construction and strengthening of the existing road infrastructure. Prerequisite: Pavement Design SGC 793.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "40 Contact hours"
+    },
+    {
+      "module_code": "SIK 790",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "Numerical methods and finite element applications for Civil Engineers 790",
+      "credits": 24.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EBIT-faculty/PG-modules/view/SIK 790",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "In the first part of this course, numerical procedures and some underlying theory for solving systems of equations, eigenvalue problems, integration, approximation and boundary value problems will be discussed. The second part of the course covers general finite element theory, discretization aspects related to geometry, nodes and numbering, element type and shape, interpolation functions, formulation of element characteristic matrices and vectors for elasticity problems, assembly and solution of the finite element equations, modelling procedures and results processing. The student will use Finite Element software to apply the theory that was covered in the course for solving typical Civil Engineering problems.",
+      "prerequisites": null,
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "40 contact hours"
+    },
+    {
+      "module_code": "SSI 790",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "Infrastructure management 790",
+      "credits": 24.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EBIT-faculty/PG-modules/view/SSI 790",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "A research term paper will be prepared. This module will cover the following topics: Asset Management principles, Maintenance Management principles, Maintenance strategies and philosophies, Condition based Maintenance, Reliability Centred Maintenance (RCM), Resource Management, Maintenance Management Systems, Total Productive Maintenance (TPM) and Risk Management. Maintenance management of the following disciplines will be studied in detail: Road infrastructure, Railway infrastructure, Airport infrastructure, Buildings and other structures, Water resources and water supply.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "40 Contact hours"
+    }
+  ],
+  "streams_by_year": {
+    "year_1": [],
+    "year_2": [],
+    "year_3": [],
+    "year_4": [],
+    "final_year": []
+  },
+  "stream_checks": {
+    "year_1_stream_count": 0,
+    "year_2_stream_count": 0,
+    "year_3_stream_count": 0,
+    "year_4_stream_count": 0,
+    "final_year_stream_count": 0,
+    "missing_stream_module_codes_in_catalog_by_year": {
+      "year_1": [],
+      "year_2": [],
+      "year_3": [],
+      "year_4": [],
+      "final_year": []
+    }
+  }
+}

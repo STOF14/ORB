@@ -1,0 +1,64 @@
+{
+  "metadata": {
+    "year": 2026,
+    "degree_code": "01264619",
+    "degree_name": "PhD specialising in Creative Writing",
+    "faculty": "Humanities",
+    "faculty_code": "HUM",
+    "level": "Doctorate",
+    "source_url": "https://www.up.ac.za/yearbooks/2026/HUM-faculty/DO-programmes/view/01264619",
+    "duration_years": 2,
+    "total_credits": 360,
+    "nqf_level": 10,
+    "department": "Unit for Creative Writing"
+  },
+  "curriculum": [
+    {
+      "module_code": "KSK 990",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core"
+    }
+  ],
+  "module_catalog": [
+    {
+      "module_code": "KSK 990",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Thesis: Creative writing 990",
+      "credits": 360.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/HUM-faculty/PG-modules/view/KSK 990",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "The thesis should demonstrate creative achievement appropriate to a doctoral degree in one of the following genres: poetry, drama and screenplays, prose (fiction), prose (creative non-fiction: biography or autobiography), or literary translation/adaptation. The creative component should be a complete work, or set of complete shorter works and should in substance be the equivalent of at least (in fiction) a full-length novel or a collection of short stories, or (in poetry) a book-length collection of poems, or (in drama) a full-length play or a collection of at least three one-act plays. The theoretical component should be substantive scholarly/academic research on a related topic. * The language of tuition depends on the language in which the creative and theoretical components are written.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 10,
+      "presentation_period": "Year",
+      "language": "Module is presented in English"
+    }
+  ],
+  "streams_by_year": {
+    "year_1": [],
+    "year_2": [],
+    "year_3": [],
+    "year_4": [],
+    "final_year": []
+  },
+  "stream_checks": {
+    "year_1_stream_count": 0,
+    "year_2_stream_count": 0,
+    "year_3_stream_count": 0,
+    "year_4_stream_count": 0,
+    "final_year_stream_count": 0,
+    "missing_stream_module_codes_in_catalog_by_year": {
+      "year_1": [],
+      "year_2": [],
+      "year_3": [],
+      "year_4": [],
+      "final_year": []
+    }
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "metadata": {
+    "year": 2026,
+    "degree_code": "08250059",
+    "degree_name": "MMedVet in Bovine Medicine (Coursework)",
+    "faculty": "Veterinary Science",
+    "faculty_code": "VET",
+    "level": "Masters",
+    "source_url": "https://www.up.ac.za/yearbooks/2026/VET-faculty/MA-programmes/view/08250059",
+    "duration_years": 3,
+    "total_credits": 360,
+    "nqf_level": 9,
+    "department": "Production Animal Studies"
+  },
+  "curriculum": [
+    {
+      "module_code": "BHP 800",
+      "year_level": 1,
+      "is_compulsory": false,
+      "module_type": "elective"
+    },
+    {
+      "module_code": "BHP 890",
+      "year_level": 1,
+      "is_compulsory": false,
+      "module_type": "elective"
+    },
+    {
+      "module_code": "VRM 813",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core"
+    }
+  ],
+  "module_catalog": [
+    {
+      "module_code": "BHP 800",
+      "year_level": 1,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "Bovine health and production 800",
+      "credits": 270.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/VET-faculty/PG-modules/view/BHP 800",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Advanced and applied training to augment theoretical material presented in core and elective modules.\u00a0 Depending on the students\u2019 focus and field of interest he/she can chose per capita topics pertaining to either dairy herd health, beef herd health, feedlot beef production or clinical medicine. Dairy herd health can include in depth reviews on mastitis problems, dairy nutrition, dairy reproduction, lameness, young stock management and associated metabolic conditions. Beef herd health can include veld and pasture management, beef production and nutrition, reproduction and pertinent diseases and conditions. Feedlot beef production can include feedlot nutrition, respiratory anatomy and physiology, respiratory diseases, conditions, diagnosis and treatment, pharmacology, young stock management and production indices. Clinical medicine can include organ, metabolic and deficiency conditions along with the relevant pathophysiology, diagnosis and treatment methods. Advanced training in the chosen topics will be offered firstly in the form of seminar presentation and discussions. Clinical applications will be offered in the form of field visits to the relevant chosen areas and fields of interest as well as clinical supervision within the veterinary hospital clinical rotations. Supervised clinical training comprises a minimum 90 weeks. Integration and application of knowledge of health and production problems and evaluation of health status, production and economic effectiveness of dairy and or beef systems will be core.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 9,
+      "presentation_period": "Year",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "BHP 890",
+      "year_level": 1,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "Mini-dissertation: Bovine health and production 890",
+      "credits": 90.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/VET-faculty/PG-modules/view/BHP 890",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Mini-dissertation",
+      "prerequisites": "VRM 813",
+      "nqf_level": 9,
+      "presentation_period": "Year",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "VRM 813",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Research methodology 813",
+      "credits": 0.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/VET-faculty/PG-modules/view/VRM 813",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "A web-based introductory module in research methodology that includes planning and undertaking a research project or clinical trial, collecting and analysing data, scientific writing, and enabling preparation and presenting of a research protocol.",
+      "prerequisites": null,
+      "nqf_level": 9,
+      "presentation_period": "Semester 1 and Semester 2",
+      "language": "Module is presented in English"
+    }
+  ],
+  "streams_by_year": {
+    "year_1": [],
+    "year_2": [],
+    "year_3": [],
+    "year_4": [],
+    "final_year": []
+  },
+  "stream_checks": {
+    "year_1_stream_count": 0,
+    "year_2_stream_count": 0,
+    "year_3_stream_count": 0,
+    "year_4_stream_count": 0,
+    "final_year_stream_count": 0,
+    "missing_stream_module_codes_in_catalog_by_year": {
+      "year_1": [],
+      "year_2": [],
+      "year_3": [],
+      "year_4": [],
+      "final_year": []
+    }
+  }
+}

@@ -1,0 +1,189 @@
+{
+  "metadata": {
+    "year": 2026,
+    "degree_code": "01250409",
+    "degree_name": "MA specialising in Diplomatic Studies (Coursework)",
+    "faculty": "Humanities",
+    "faculty_code": "HUM",
+    "level": "Masters",
+    "source_url": "https://www.up.ac.za/yearbooks/2026/HUM-faculty/MA-programmes/view/01250409",
+    "duration_years": 1,
+    "total_credits": 180,
+    "nqf_level": 9,
+    "department": "Political Sciences"
+  },
+  "curriculum": [
+    {
+      "module_code": "DIP 872",
+      "year_level": 8,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "DIP 876",
+      "year_level": 8,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "DIP 877",
+      "year_level": 8,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "DIP 878",
+      "year_level": 8,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "DIP 895",
+      "year_level": 8,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "PTO 871",
+      "year_level": 8,
+      "is_compulsory": true,
+      "module_type": "core"
+    }
+  ],
+  "module_catalog": [
+    {
+      "module_code": "DIP 872",
+      "year_level": 8,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Diplomatic practice 872",
+      "credits": 30.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/HUM-faculty/PG-modules/view/DIP 872",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "An introduction and advanced analysis is provided of global diplomatic practice, one of the most important institutionalised activities within the international system. The focus is predominantly state-centric, although the growing impact of non-state entities on the form and substance of diplomacy is accommodated. Aspects such as the evolution, modes, styles, legal framework and institutions of diplomacy are investigated, as well as the specific roles and functions of diplomats and emerging areas of diplomatic specialisation such as defence diplomacy.\u00a0 An African perspective on all of the above is prioritised, and in this regard specific emphasis is placed on negotiation - a diplomatic mode and specialisation that is crucial within the context of African diplomatic practice.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 9,
+      "presentation_period": "Semester 1 or Semester 2",
+      "language": "Module is presented in English",
+      "contact_time": "1 lecture per week"
+    },
+    {
+      "module_code": "DIP 876",
+      "year_level": 8,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Diplomacy and international studies 876",
+      "credits": 30.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/HUM-faculty/PG-modules/view/DIP 876",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "The holistic nature and interdisciplinary scope of diplomacy, as an institution, practice and area of academic study and research, are introduced and contextualised within the broad framework of international studies, incorporating aspects of international relations, international law and international political economy. Subsequently, the focus shifts to the theoretical and practical relationship between international relations, foreign policy and diplomacy as a tool of foreign policy. Accordingly, South Africa\u2019s diplomacy, at a global and regional level, is critically analysed using the comparative method amongst others.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 9,
+      "presentation_period": "Semester 1 or Semester 2",
+      "language": "Module is presented in English",
+      "contact_time": "1 lecture per week"
+    },
+    {
+      "module_code": "DIP 877",
+      "year_level": 8,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Diplomatic theory 877",
+      "credits": 30.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/HUM-faculty/PG-modules/view/DIP 877",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "An introduction to and analysis of diplomatic theory, defined as systematic reflection on diplomatic ideas, activities and issues. Such reflection has historical, conceptual and normative elements that by nature pertain to diplomatic practice as empirical referent. This involves the critical examination of key assumptions on diplomacy. On the one hand, since diplomatic ideas inevitably reflect broader international relations theories and since the modern diplomat should have some understanding of the latter, attention is given to these. On the other hand, on a capita selecta basis, attention is paid to theoretical perspectives on issues that appear on the global diplomatic agenda.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 9,
+      "presentation_period": "Semester 1 or Semester 2",
+      "language": "Module is presented in English",
+      "contact_time": "1 lecture per week"
+    },
+    {
+      "module_code": "DIP 878",
+      "year_level": 8,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Methodology of diplomatic studies 878",
+      "credits": 30.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/HUM-faculty/PG-modules/view/DIP 878",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Using appropriate methodological approaches and research methods, aspects of the diplomatic theory and diplomatic practice modules are applied to specific diplomatic case studies and issues of international and transnational importance. In addition to the emphasis of methodology and selected research methods, attention is also paid to the development, structure and writing of research reports in the field of diplomatic studies. The outcome of this module is an approved research proposal on a diplomatic theme for the mini-dissertation, that also complies with ethical guidelines.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 9,
+      "presentation_period": "Semester 1 or Semester 2",
+      "language": "Module is presented in English",
+      "contact_time": "1 lecture per week"
+    },
+    {
+      "module_code": "DIP 895",
+      "year_level": 8,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Mini-dissertation: Diplomatic studies 895",
+      "credits": 60.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/HUM-faculty/PG-modules/view/DIP 895",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "A mini-dissertation based on independent research done by the student in the broad field of diplomacy, is written under the guidance of a supervisor.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 9,
+      "presentation_period": "Year",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "PTO 871",
+      "year_level": 8,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Mediation in African conflicts 871",
+      "credits": 30.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/HUM-faculty/PG-modules/view/PTO 871",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "The module aims to develop an advanced understanding of the key academic and policy debates regarding international mediation; to explore both the theory and the practice of mediation; and to develop strategising skills for peacemaking. The focus is on mediation undertaken by the United Nations, the African Union and sub-regional bodies in major conflicts in Africa. This module may be taken by students enrolled in MA specialising in Security Studies, after consultation with the department.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 9,
+      "presentation_period": "Semester 1 or Semester 2",
+      "language": "Module is presented in English",
+      "contact_time": "1 lecture per week"
+    }
+  ],
+  "streams_by_year": {
+    "year_1": [],
+    "year_2": [],
+    "year_3": [],
+    "year_4": [],
+    "final_year": []
+  },
+  "stream_checks": {
+    "year_1_stream_count": 0,
+    "year_2_stream_count": 0,
+    "year_3_stream_count": 0,
+    "year_4_stream_count": 0,
+    "final_year_stream_count": 0,
+    "missing_stream_module_codes_in_catalog_by_year": {
+      "year_1": [],
+      "year_2": [],
+      "year_3": [],
+      "year_4": [],
+      "final_year": []
+    }
+  }
+}

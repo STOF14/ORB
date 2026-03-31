@@ -1,0 +1,188 @@
+{
+  "metadata": {
+    "year": 2026,
+    "degree_code": "04252103",
+    "degree_name": "LLM specialising in Intellectual Property Law (Coursework)",
+    "faculty": "Law",
+    "faculty_code": "LAW",
+    "level": "Masters",
+    "source_url": "https://www.up.ac.za/yearbooks/2026/LAW-faculty/MA-programmes/view/04252103",
+    "duration_years": 1,
+    "total_credits": 200,
+    "nqf_level": 9,
+    "department": "Private Law"
+  },
+  "curriculum": [
+    {
+      "module_code": "RHP 801",
+      "year_level": 1,
+      "is_compulsory": false,
+      "module_type": "elective"
+    },
+    {
+      "module_code": "RHP 803",
+      "year_level": 1,
+      "is_compulsory": false,
+      "module_type": "elective"
+    },
+    {
+      "module_code": "IGZ 802",
+      "year_level": 8,
+      "is_compulsory": false,
+      "module_type": "elective"
+    },
+    {
+      "module_code": "IGZ 803",
+      "year_level": 8,
+      "is_compulsory": false,
+      "module_type": "elective"
+    },
+    {
+      "module_code": "IGZ 804",
+      "year_level": 8,
+      "is_compulsory": false,
+      "module_type": "elective"
+    },
+    {
+      "module_code": "MND 800",
+      "year_level": 8,
+      "is_compulsory": false,
+      "module_type": "elective"
+    }
+  ],
+  "module_catalog": [
+    {
+      "module_code": "RHP 801",
+      "year_level": 1,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "Research methodology 801",
+      "credits": 5.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/LAW-faculty/PG-modules/view/RHP 801",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Planning and organising a research project Drafting a research proposal: Hypotheses and research question Theory in research and methodological approaches to legal research Language Citation and ethics of citation Drafting of chapters and presentation",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 9,
+      "presentation_period": "Semester 1 or Semester 2",
+      "language": "Module is presented in English",
+      "contact_time": "8 seminars or block sessions"
+    },
+    {
+      "module_code": "RHP 803",
+      "year_level": 1,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "Research proposal 803",
+      "credits": 5.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/LAW-faculty/PG-modules/view/RHP 803",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Development and presentation of a research\u00a0 proposal. (A research proposal must be submitted to the supervisor and accepted in the first semester of the second year of study\u00a0 before the student will be allowed to register for the mini-dissertation.)",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 9,
+      "presentation_period": "Year",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "IGZ 802",
+      "year_level": 8,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "Intellectual property, new technologies and innovation 802",
+      "credits": 30.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/LAW-faculty/PG-modules/view/IGZ 802",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "The following aspects will be dealt with: Patents Act no. 57 of 1978 Designs Act 195 of 1993. Plant Breeders\u2019 Rights Act 15 of 1976 Patent-related international instruments New technologies and the law Innovation and the law Registrability of patents and designs Capita selecta including: validity; interpretation of specifications; infringement; amendment or correction; compulsory licences; convention applications and exhaustion of rights.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 9,
+      "presentation_period": "Semester 1",
+      "language": "Module is presented in English",
+      "contact_time": "2 lectures per week"
+    },
+    {
+      "module_code": "IGZ 803",
+      "year_level": 8,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "Intellectual property, branding and advertising  803",
+      "credits": 30.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/LAW-faculty/PG-modules/view/IGZ 803",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "The following aspects will be dealt with: Trade Marks Act 194 of 1993 Merchandise Marks Act 17 of 1941 Counterfeit Goods Act 37 of 1997 Relationship between registered trade marks and unregistered trade marks Branding and trade marks Advertising and trade marks Compliance with international instruments Trademark-related international instruments Compliance with international instruments Capita selecta including: registrability and validity; infringement; amendment or correction Civil remedies for the infringement of intellectual property rights Criminal remedies for the infringement of intellectual property rights",
+      "prerequisites": null,
+      "nqf_level": 9,
+      "presentation_period": "Semester 1",
+      "language": "Module is presented in English",
+      "contact_time": "2 lectures per week"
+    },
+    {
+      "module_code": "IGZ 804",
+      "year_level": 8,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "Intellectual property, creative industries and expression of ideas 804",
+      "credits": 30.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/LAW-faculty/PG-modules/view/IGZ 804",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "The following aspects will be dealt with: Copyright Act 98 of 1978 Performers\u2019 Protection Act 11 of 1967 Registration of Copyright in Cinematograph Films Act 62 of 1977 Creative industries and the law Creative expression and the law Copyright-related international instruments Compliance of South African law with international instruments Capita selecta including: subsistence and conferral of copyright; scope of and exceptions to copyright; infringement of copyright",
+      "prerequisites": null,
+      "nqf_level": 9,
+      "presentation_period": "Semester 1 or Semester 2",
+      "language": "Module is presented in English",
+      "contact_time": "2 lectures per week"
+    },
+    {
+      "module_code": "MND 800",
+      "year_level": 8,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "Mini-dissertation 800",
+      "credits": 100.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/LAW-faculty/PG-modules/view/MND 800",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "The student must submit a research proposal during his/her first year of registration for the LLM degree to the supervisor prior to commencing with the writing of the mini-dissertation. A mini-dissertation (MND 800) of 13 000 to 15 000 words inclusive of footnotes but excluding the list of contents and the bibliography, is required. The mini-dissertation must be submitted to the supervisor not later than August of the second year of registration for the LLM programme. The mini-dissertation must deal with the subject content of one of the modules or a combination of the modules registered for by the student for his/her LLM degree. Any request for an extension of the period for submission of the mini-dissertation may only be granted by the Dean on recommendation of the LLM Committee",
+      "prerequisites": "RHP 801 and RHP 803",
+      "nqf_level": 9,
+      "presentation_period": "Year",
+      "language": "Module is presented in English"
+    }
+  ],
+  "streams_by_year": {
+    "year_1": [],
+    "year_2": [],
+    "year_3": [],
+    "year_4": [],
+    "final_year": []
+  },
+  "stream_checks": {
+    "year_1_stream_count": 0,
+    "year_2_stream_count": 0,
+    "year_3_stream_count": 0,
+    "year_4_stream_count": 0,
+    "final_year_stream_count": 0,
+    "missing_stream_module_codes_in_catalog_by_year": {
+      "year_1": [],
+      "year_2": [],
+      "year_3": [],
+      "year_4": [],
+      "final_year": []
+    }
+  }
+}

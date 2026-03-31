@@ -1,0 +1,163 @@
+{
+  "metadata": {
+    "year": 2026,
+    "degree_code": "07255286",
+    "degree_name": "MPhil specialising in Responsible Leadership\u00a0(Coursework)",
+    "faculty": "Economic and Management Sciences",
+    "faculty_code": "EMS",
+    "level": "Masters",
+    "source_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/MA-programmes/view/07255286",
+    "duration_years": 1,
+    "total_credits": 180,
+    "nqf_level": 9,
+    "department": "Business Management"
+  },
+  "curriculum": [
+    {
+      "module_code": "NME 807",
+      "year_level": 8,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "OBS 811",
+      "year_level": 8,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "OBS 819",
+      "year_level": 8,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "OBS 820",
+      "year_level": 8,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "OBS 860",
+      "year_level": 8,
+      "is_compulsory": true,
+      "module_type": "core"
+    }
+  ],
+  "module_catalog": [
+    {
+      "module_code": "NME 807",
+      "year_level": 8,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Research methodology: Responsible leadership 807",
+      "credits": 20.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/PG-modules/view/NME 807",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "The focus of this module is to assist students to conceptualise their research projects and finalise their research proposals.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 9,
+      "presentation_period": "Semester 1",
+      "language": "Module is presented in English",
+      "contact_time": "15 contact hours"
+    },
+    {
+      "module_code": "OBS 811",
+      "year_level": 8,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Strategic management 811",
+      "credits": 20.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/PG-modules/view/OBS 811",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Key principles and concepts of strategy and strategic management; competitive strategy; emergent and deliberate strategy; formulation of strategy; analysis of the external and internal environment; stakeholder analysis; competitive advantage; shareholder value; strategy and performance; hyper-competition; corporate and business level strategy. An advanced strategic management simulation that is online and interactive to apply strategy principles, and to foster team collaboration.",
+      "prerequisites": "OBS 320 or equivalent and admission to relevant programme",
+      "nqf_level": 9,
+      "presentation_period": "Semester 1 or Semester 2",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "OBS 819",
+      "year_level": 8,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Responsible leadership 819",
+      "credits": 25.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/PG-modules/view/OBS 819",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "This module critically analyses individual and collective leadership responsibility, with a particular emphasis on business leadership and its role in shaping a sustainable future. The aim of the module is to develop an appreciation for the emerging theories on leadership and alternative views on the role and nature of leadership. Some of the topics covered within this module include: An introduction to the philosophy of business with a view to a fundamental re-evaluation of the dominant neoliberal world view and the concomitant economisation of individual and collective life; The ethical roles and responsibilities of modern corporations and their leaders; responsible leadership qualities. An explicit transdisciplinary approach will be followed but the module will be anchored in a framework for reflective and critical practice.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 9,
+      "presentation_period": "Semester 1 or Semester 2",
+      "language": "Module is presented in English",
+      "contact_time": "1 lecture per week"
+    },
+    {
+      "module_code": "OBS 820",
+      "year_level": 8,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Business in society 820",
+      "credits": 25.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/PG-modules/view/OBS 820",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "The aim of this module is to develop an understanding of the role of business in a complex multi-stakeholder society. The module will reflect on the state of major sustainability systems (natural environment, society and economy) and the role and impact of business on those. Some of the topics covered within this module include: politics and business, sustainable development, environmental sustainability, social justice, corporate citizenship, systems thinking and reflective practice. An explicit transdisciplinary approach will be followed but the module will be anchored in a framework for reflective and critical practice.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 9,
+      "presentation_period": "Semester 1 or Semester 2",
+      "language": "Module is presented in English",
+      "contact_time": "1 lecture per week"
+    },
+    {
+      "module_code": "OBS 860",
+      "year_level": 8,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Mini-dissertation: Responsible leadership research article 860",
+      "credits": 90.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/PG-modules/view/OBS 860",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "This module equips the student to conduct independent research by executing a research project on a relevant topic, of which the findings are reported in an academic article.",
+      "prerequisites": "NME 804",
+      "nqf_level": 9,
+      "presentation_period": "Year",
+      "language": "Module is presented in English"
+    }
+  ],
+  "streams_by_year": {
+    "year_1": [],
+    "year_2": [],
+    "year_3": [],
+    "year_4": [],
+    "final_year": []
+  },
+  "stream_checks": {
+    "year_1_stream_count": 0,
+    "year_2_stream_count": 0,
+    "year_3_stream_count": 0,
+    "year_4_stream_count": 0,
+    "final_year_stream_count": 0,
+    "missing_stream_module_codes_in_catalog_by_year": {
+      "year_1": [],
+      "year_2": [],
+      "year_3": [],
+      "year_4": [],
+      "final_year": []
+    }
+  }
+}

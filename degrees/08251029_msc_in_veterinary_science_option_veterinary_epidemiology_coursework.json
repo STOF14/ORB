@@ -1,0 +1,237 @@
+{
+  "metadata": {
+    "year": 2026,
+    "degree_code": "08251029",
+    "degree_name": "MSc in Veterinary Science\u00a0option Veterinary Epidemiology\u00a0(Coursework)",
+    "faculty": "Veterinary Science",
+    "faculty_code": "VET",
+    "level": "Masters",
+    "source_url": "https://www.up.ac.za/yearbooks/2026/VET-faculty/MA-programmes/view/08251029",
+    "duration_years": 2,
+    "total_credits": 180,
+    "nqf_level": 9,
+    "department": "Production Animal Studies"
+  },
+  "curriculum": [
+    {
+      "module_code": "EPL 851",
+      "year_level": 1,
+      "is_compulsory": false,
+      "module_type": "elective"
+    },
+    {
+      "module_code": "EPL 852",
+      "year_level": 1,
+      "is_compulsory": false,
+      "module_type": "elective"
+    },
+    {
+      "module_code": "EPL 853",
+      "year_level": 1,
+      "is_compulsory": false,
+      "module_type": "elective"
+    },
+    {
+      "module_code": "EPL 855",
+      "year_level": 1,
+      "is_compulsory": false,
+      "module_type": "elective"
+    },
+    {
+      "module_code": "EPL 856",
+      "year_level": 1,
+      "is_compulsory": false,
+      "module_type": "elective"
+    },
+    {
+      "module_code": "EPL 859",
+      "year_level": 1,
+      "is_compulsory": false,
+      "module_type": "elective"
+    },
+    {
+      "module_code": "VRM 813",
+      "year_level": 1,
+      "is_compulsory": false,
+      "module_type": "elective"
+    },
+    {
+      "module_code": "EPL 891",
+      "year_level": 8,
+      "is_compulsory": false,
+      "module_type": "elective"
+    }
+  ],
+  "module_catalog": [
+    {
+      "module_code": "EPL 851",
+      "year_level": 1,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "Basic veterinary epidemiology 851",
+      "credits": 10.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/VET-faculty/PG-modules/view/EPL 851",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "An introductory module in veterinary epidemiology designed to provide a sound foundation in epidemiology that can be applied in practice and upon which further studies can be built.\u00a0 The module covers aspects of population medicine, disease outbreak investigation, clinical epidemiology, experimental studies, observational studies, surveys, basic analytical tools and diagnostic tests",
+      "prerequisites": "A BVSc or equivalent qualification. Non-veterinary graduates will be considered under exceptional circumstances. Recommended: Grade 12 Mathematics.",
+      "nqf_level": 9,
+      "presentation_period": "Semester 1",
+      "language": "Module is presented in English",
+      "contact_time": "1 web-based period per week, 1 other contact session per week"
+    },
+    {
+      "module_code": "EPL 852",
+      "year_level": 1,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "Biostatistics in veterinary science 852",
+      "credits": 20.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/VET-faculty/PG-modules/view/EPL 852",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "This module provides the student with a foundation in basic statistical methods commonly used by postgraduate students in veterinary science. It covers statistical building blocks, confidence intervals, hypothesis testing, chi-square procedures, regression and correlation, paired and pooled t-tests, analysis of variance and non-parametric tests.",
+      "prerequisites": "BVSc or equivalent qualification and Grade 12 Mathematics.",
+      "nqf_level": 9,
+      "presentation_period": "Semester 1",
+      "language": "Module is presented in English",
+      "contact_time": "2 seminars per week"
+    },
+    {
+      "module_code": "EPL 853",
+      "year_level": 1,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "Analytical veterinary epidemiology 853",
+      "credits": 20.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/VET-faculty/PG-modules/view/EPL 853",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "This module provides the student with further knowledge and skills in veterinary epidemiology and an introduction to certain more advanced statistical methods commonly used in veterinary science, including adjustment for confounding, multiple linear regression, logistic regression and survival analysis, and will provide the basis for further studies and research involving these techniques.",
+      "prerequisites": "EPL 851 and EPL 852",
+      "nqf_level": 9,
+      "presentation_period": "Semester 2",
+      "language": "Module is presented in English",
+      "contact_time": "2 seminars per week"
+    },
+    {
+      "module_code": "EPL 855",
+      "year_level": 1,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "Animal health information management 855",
+      "credits": 5.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/VET-faculty/PG-modules/view/EPL 855",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "This module covers the principles and practice of the collection, entry, storage, management and processing of animal health-related data. It provides the knowledge necessary to be able to effectively work with data in veterinary epidemiology and animal health research.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 9,
+      "presentation_period": "Semester 1 or Semester 2",
+      "language": "Module is presented in English",
+      "contact_time": "1 web-based period per week"
+    },
+    {
+      "module_code": "EPL 856",
+      "year_level": 1,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "Scientific reasoning in veterinary epidemiology 856",
+      "credits": 5.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/VET-faculty/PG-modules/view/EPL 856",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "This module covers, using practical examples, the processes of scientific reasoning and critical thinking applicable to veterinary epidemiology, and equips the student to use clear lines of reasoning in developing and testing hypotheses and making inferences, and to be able to critically evaluate information presented in the literature.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 9,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "1 web-based period per week"
+    },
+    {
+      "module_code": "EPL 859",
+      "year_level": 1,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "Advanced topics in veterinary epidemiology 859",
+      "credits": 15.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/VET-faculty/PG-modules/view/EPL 859",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "This module consists of assignments, seminars, discussions, required reading and/or attendance of short courses on various specialised or advanced topics in veterinary epidemiology of interest to the student and relevant to the chosen research project. Activities are decided upon by the student, in consultation with and subject to approval by the supervisor",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 9,
+      "presentation_period": "Year",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "VRM 813",
+      "year_level": 1,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "Research methodology 813",
+      "credits": 0.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/VET-faculty/PG-modules/view/VRM 813",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "A web-based introductory module in research methodology that includes planning and undertaking a research project or clinical trial, collecting and analysing data, scientific writing, and enabling preparation and presenting of a research protocol.",
+      "prerequisites": null,
+      "nqf_level": 9,
+      "presentation_period": "Semester 1 and Semester 2",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "EPL 891",
+      "year_level": 8,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "Mini-dissertation: Veterinary epidemiology 891",
+      "credits": 90.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/VET-faculty/PG-modules/view/EPL 891",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Mini-dissertation",
+      "prerequisites": "VRM 813",
+      "nqf_level": 9,
+      "presentation_period": "Year",
+      "language": "Module is presented in English"
+    }
+  ],
+  "streams_by_year": {
+    "year_1": [],
+    "year_2": [],
+    "year_3": [],
+    "year_4": [],
+    "final_year": []
+  },
+  "stream_checks": {
+    "year_1_stream_count": 0,
+    "year_2_stream_count": 0,
+    "year_3_stream_count": 0,
+    "year_4_stream_count": 0,
+    "final_year_stream_count": 0,
+    "missing_stream_module_codes_in_catalog_by_year": {
+      "year_1": [],
+      "year_2": [],
+      "year_3": [],
+      "year_4": [],
+      "final_year": []
+    }
+  }
+}

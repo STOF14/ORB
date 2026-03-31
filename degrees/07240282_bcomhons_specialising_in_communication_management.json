@@ -1,0 +1,164 @@
+{
+  "metadata": {
+    "year": 2026,
+    "degree_code": "07240282",
+    "degree_name": "BComHons specialising in Communication Management",
+    "faculty": "Economic and Management Sciences",
+    "faculty_code": "EMS",
+    "level": "Honours",
+    "source_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/HO-programmes/view/07240282",
+    "duration_years": 1,
+    "total_credits": 120,
+    "nqf_level": 8,
+    "department": "Business Management"
+  },
+  "curriculum": [
+    {
+      "module_code": "CMG 791",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "KPK 780",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "OBS 790",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "OWK 780",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "SKO 780",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    }
+  ],
+  "module_catalog": [
+    {
+      "module_code": "CMG 791",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Integrated communication project 791",
+      "credits": 20.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/PG-modules/view/CMG 791",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "The purpose of this module is to develop a corporate communication strategy for a real client. Study themes: The building blocks of a corporate communication strategy and plan; Entrepreneurship development for starting a consulting firm; Specifics skills to be refined include project management, team communication, conflict management, creativity, writing and content creation for all media and platforms, as well as business presentation skills. The purpose of this module is to guide students through the process of developing a corporate communication strategy which will be presented to a panel of lecturers and representatives of the client.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Semester 2",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "KPK 780",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Corporate communication 780",
+      "credits": 20.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/PG-modules/view/KPK 780",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "The purpose of this module is to introduce students to the scope and theoretical foundations of the field of corporate communication. Study themes: Introduction to the field of communication management; Specialisation fields, different sectors and the corporate vs. consulting contexts of communication management; Key requirements for excellence in communication management; The place of professional associations and ethics in communication management; Contemporary issues like the research contributions of global, regional and national professional and research associations. The purpose of this module is to introduce students to the field of communication management, to differentiate between contexts, sectors and specialisation fields. The pursuit of communication excellence forms the foundation of all efforts and requires and understanding of key organisational requirements. The contribution of professional associations (global, regional and national), as well as the place of professional ethics are also investigated.",
+      "prerequisites": "Only for BComHons: Communication students",
+      "nqf_level": 8,
+      "presentation_period": "Semester 1",
+      "language": "Module is presented in English",
+      "contact_time": "1 lecture per week, 6 discussion classes per week"
+    },
+    {
+      "module_code": "OBS 790",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Research report 790",
+      "credits": 40.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/PG-modules/view/OBS 790",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "The purpose of this module is to introduce students to the nature and the role of research in a business enterprise so that they will be able to conduct and utilise research. Study themes: The role of research in an enterprise; Conceptualisation and the scientific thinking process; The research process; Research planning and design; Data gathering and analysis; and Reporting of research results. The purpose of this module is to guide students through the process of planning a small-scale academic research study in the field of Business Management, collecting and analysing empirical data, and presenting the findings of the study in the form of a research article. Students will be guided to develop a research proposal for the research study during the first semester. During the second semester, students will be guided to collect and analyse the required data and to write a research article. Students will only be allowed to continue with the execution of their research projects (i.e., with the collection and analysis of data and the writing of a research article) during the second semester, if they have obtained a progress mark of at least 50% and passed the final research proposal at the end of the first semester with a sub-minimum mark of 50% 1 lecture per week during the first semester and ad hoc workshops during the second semester",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "1 lecture per week S1, ad hoc"
+    },
+    {
+      "module_code": "OWK 780",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Development communication 780",
+      "credits": 20.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/PG-modules/view/OWK 780",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "The purpose of this module is to introduce students to the field of development communication Study themes: \u2022 The building blocks of a development communication; \u2022 The nature and different approaches to corporate social responsibility; \u2022 Different role players in the development arena. Contemporary issues like the UN\u2019s sustainability development goals (SDG\u2019s); The purpose of this module is to investigate global, regional and local issues in development communication and emphasises corporate social responsibility (CSR) as an avenue to address these issues. The roles of the private and public sectors, as well as non-governmental organisations in society will be evaluated. Different stages and models of CSR will be discussed to see how corporations can strategically plan their CSR programmes to contribute to the achievement of development and business goals.",
+      "prerequisites": "Only for BComHons: Communication students",
+      "nqf_level": 8,
+      "presentation_period": "Semester 2",
+      "language": "Module is presented in English",
+      "contact_time": "1 lecture per week"
+    },
+    {
+      "module_code": "SKO 780",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Strategic communication management 780",
+      "credits": 20.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/PG-modules/view/SKO 780",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "The purpose of this module is to introduce students to the value creation role of communication for organisations Study themes: The different roles (technical, managerial and strategic) of the communication specialist; Different vantage points (micro, meso and macro levels) regarding communication within and on behalf of an organisation; Corporate reputation; Crisis management; Organisational communication; Contemporary issues like communication in digital environments, diversity, transformation and leadership. The purpose of this module is to explore how communication specialist function in different roles and thus contribute to the overall success of the organisation. Knowledge of key issues such as reputation, crisis management, organisational communication, the digital environment, diversity, transformation and leadership are pivotal for communication specialists who aspire to function at a managerial level.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Semester 1",
+      "language": "Module is presented in English",
+      "contact_time": "1 lecture per week, 1 other contact session per week"
+    }
+  ],
+  "streams_by_year": {
+    "year_1": [],
+    "year_2": [],
+    "year_3": [],
+    "year_4": [],
+    "final_year": []
+  },
+  "stream_checks": {
+    "year_1_stream_count": 0,
+    "year_2_stream_count": 0,
+    "year_3_stream_count": 0,
+    "year_4_stream_count": 0,
+    "final_year_stream_count": 0,
+    "missing_stream_module_codes_in_catalog_by_year": {
+      "year_1": [],
+      "year_2": [],
+      "year_3": [],
+      "year_4": [],
+      "final_year": []
+    }
+  }
+}

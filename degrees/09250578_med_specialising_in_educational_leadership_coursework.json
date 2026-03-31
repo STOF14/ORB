@@ -1,0 +1,160 @@
+{
+  "metadata": {
+    "year": 2026,
+    "degree_code": "09250578",
+    "degree_name": "MEd specialising in Educational Leadership (Coursework)",
+    "faculty": "Education",
+    "faculty_code": "EDU",
+    "level": "Masters",
+    "source_url": "https://www.up.ac.za/yearbooks/2026/EDU-faculty/MA-programmes/view/09250578",
+    "duration_years": 2,
+    "total_credits": 180,
+    "nqf_level": 9,
+    "department": "Education Management and Policy Studies"
+  },
+  "curriculum": [
+    {
+      "module_code": "HFE 880",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "LBL 880",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "NMQ 800",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "OWR 880",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "OWR 895",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core"
+    }
+  ],
+  "module_catalog": [
+    {
+      "module_code": "HFE 880",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Human and financial resources management in education 880",
+      "credits": 30.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EDU-faculty/PG-modules/view/HFE 880",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Continuous professional teacher development (CPTD) as part of Human Resource Management (HRM) in South Africa towards quality education. International debates on continuous professional teacher development and management. Budget construction and budget interpretation. The quality and equity debate.",
+      "prerequisites": null,
+      "nqf_level": 9,
+      "presentation_period": "Semester 1",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "LBL 880",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Leadership and management of learning in education 880",
+      "credits": 30.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EDU-faculty/PG-modules/view/LBL 880",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "This module introduces students to the principal as leader of curriculum and instruction in the school context, with the primary goal of enhancing learning. Prospective principals will acquire competence in the deployment of effective leadership strategies (including coaching and teacher appraisal) to enhance the quality of teaching and learning in their schools.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 9,
+      "presentation_period": "Semester 1",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "NMQ 800",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Research proposal 800",
+      "credits": 30.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EDU-faculty/PG-modules/view/NMQ 800",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Development of a research proposal. Research methodology. Overview and principles of quantitative and qualitative research methodology. Data collection methods, data analysis methods, paradigm analysis and theoretical frameworks for educational studies. Global theoretical perspectives in education.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 9,
+      "presentation_period": "Year",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "OWR 880",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Education law 880",
+      "credits": 30.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EDU-faculty/UG-modules/view/OWR%20880",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 2,
+      "content": "In this module students will become competent in education law matters that impact daily on the life of the school principal. The module will make extensive use of case studies of critical incidents in the school context, including human rights, equity and discrimination. In addition, students gain and learn to apply knowledge of education labour relations, the SACE code of conduct, and international comparative case studies regarding education and the law.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 9,
+      "presentation_period": "Semester 2",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "OWR 895",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Mini-dissertation 895",
+      "credits": 60.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EDU-faculty/PG-modules/view/OWR 895",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Dissertation of limited scope conducted under supervision of a supervisor on any identified and selected problem in the area of education management, law and policy.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 9,
+      "presentation_period": "Semester 1",
+      "language": "Module is presented in English"
+    }
+  ],
+  "streams_by_year": {
+    "year_1": [],
+    "year_2": [],
+    "year_3": [],
+    "year_4": [],
+    "final_year": []
+  },
+  "stream_checks": {
+    "year_1_stream_count": 0,
+    "year_2_stream_count": 0,
+    "year_3_stream_count": 0,
+    "year_4_stream_count": 0,
+    "final_year_stream_count": 0,
+    "missing_stream_module_codes_in_catalog_by_year": {
+      "year_1": [],
+      "year_2": [],
+      "year_3": [],
+      "year_4": [],
+      "final_year": []
+    }
+  }
+}

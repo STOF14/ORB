@@ -1,0 +1,140 @@
+{
+  "metadata": {
+    "year": 2026,
+    "degree_code": "12240222",
+    "degree_name": "BEngHons specialising in Environmental Engineering",
+    "faculty": "Engineering, Built Environment and IT",
+    "faculty_code": "EBIT",
+    "level": "Honours",
+    "source_url": "https://www.up.ac.za/yearbooks/2026/EBIT-faculty/HO-programmes/view/12240222",
+    "duration_years": 1,
+    "total_credits": 128,
+    "nqf_level": 8,
+    "department": "Chemical Engineering"
+  },
+  "curriculum": [
+    {
+      "module_code": "CAM 780",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "CEM 780",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "WAI 780",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "WQB 780",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    }
+  ],
+  "module_catalog": [
+    {
+      "module_code": "CAM 780",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Air quality control 780",
+      "credits": 32.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EBIT-faculty/PG-modules/view/CAM 780",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Air quality awareness and impacts of air pollutants. South African air pollution legislation. Meteorology and dispersion modelling. Measurement of air pollution \u2013 sampling and analysis. Equipment design of settling chambers and cyclones. Venturis and other wet cleaning equipment. Bag filters. Electrostatic precipitators. Incinerators, adsorption and absorption equipment.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Semester 1 or Semester 2",
+      "language": "Module is presented in English",
+      "contact_time": "32 contact hours per semester"
+    },
+    {
+      "module_code": "CEM 780",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Principles of environmental engineering 780",
+      "credits": 32.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EBIT-faculty/PG-modules/view/CEM 780",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Engineering principles for environmental preservation and management, pollution control, life-cycle assessment, interactions in the macro and micro-environments, global and ecological systems, social-economic factors in environmental systems, predictive models for the current and future environment, environmental engineering as the driver of economic systems.",
+      "prerequisites": "Admission to relevant programme.",
+      "nqf_level": 8,
+      "presentation_period": "Semester 1",
+      "language": "Module is presented in English",
+      "contact_time": "32 contact hours per semester"
+    },
+    {
+      "module_code": "WAI 780",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Industrial waste engineering 780",
+      "credits": 32.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EBIT-faculty/PG-modules/view/WAI 780",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Identification of source materials, physical and chemical properties of waste. Release and transport mechanisms from source to air, groundwater, soil. Primary pathways of contaminants including sorption, volatilisation, biotic and abiotic transformations. Toxicology: absorption, distribution, biochemical transformation, and secretion of chemicals. Acute and chronic toxicity quantification and evaluation of risk. Hazard identification, exposure assessment, toxicity assessment and risk characterisation. Minimum requirements for the handling, classification and disposal of hazardous waste. Minimum requirements for waste disposal by landfill. Minimum requirements for water monitoring at waste management facilities. Recycling and resource management. Waste prevention, minimisation and optimisation.",
+      "prerequisites": "Admission to relevant programme.",
+      "nqf_level": 8,
+      "presentation_period": "Semester 1 or Semester 2",
+      "language": "Module is presented in English",
+      "contact_time": "32 contact hours per semester"
+    },
+    {
+      "module_code": "WQB 780",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Water quality management and research 780",
+      "credits": 32.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EBIT-faculty/PG-modules/view/WQB 780",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": null,
+      "prerequisites": "Admission to relevant programme.",
+      "nqf_level": 8,
+      "presentation_period": "Semester 1 or Semester 2",
+      "language": "Module is presented in English",
+      "contact_time": "32 contact hours per semester"
+    }
+  ],
+  "streams_by_year": {
+    "year_1": [],
+    "year_2": [],
+    "year_3": [],
+    "year_4": [],
+    "final_year": []
+  },
+  "stream_checks": {
+    "year_1_stream_count": 0,
+    "year_2_stream_count": 0,
+    "year_3_stream_count": 0,
+    "year_4_stream_count": 0,
+    "final_year_stream_count": 0,
+    "missing_stream_module_codes_in_catalog_by_year": {
+      "year_1": [],
+      "year_2": [],
+      "year_3": [],
+      "year_4": [],
+      "final_year": []
+    }
+  }
+}

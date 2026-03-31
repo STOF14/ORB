@@ -1,0 +1,113 @@
+{
+  "metadata": {
+    "year": 2026,
+    "degree_code": "04260003",
+    "degree_name": "Doctor of Laws [LLD]",
+    "faculty": "Law",
+    "faculty_code": "LAW",
+    "level": "Doctorate",
+    "source_url": "https://www.up.ac.za/yearbooks/2026/LAW-faculty/DO-programmes/view/04260003",
+    "duration_years": 2,
+    "total_credits": 360,
+    "nqf_level": 10,
+    "department": "Law Dean's Office"
+  },
+  "curriculum": [
+    {
+      "module_code": "LLD 990",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "RHP 902",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "RHP 904",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core"
+    }
+  ],
+  "module_catalog": [
+    {
+      "module_code": "LLD 990",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Thesis: Law 990",
+      "credits": 360.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/LAW-faculty/UG-modules/view/LLD%20990",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 2,
+      "content": null,
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 10,
+      "presentation_period": "Year",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "RHP 902",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Research methodology 902",
+      "credits": 5.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/LAW-faculty/PG-modules/view/RHP 902",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Planning and organising a research project Drafting a research proposal: Hypotheses and Research question Theory in research and Methodological approaches to legal research Language Citation and ethics of citation Drafting of chapters and presentation Substantive themes in legal research",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 10,
+      "presentation_period": "Semester 1 and Semester 2",
+      "language": "Module is presented in English",
+      "contact_time": "40 seminars"
+    },
+    {
+      "module_code": "RHP 904",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Research proposal and oral defence of the research proposal 904",
+      "credits": 5.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/LAW-faculty/PG-modules/view/RHP 904",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Research proposal and oral defence of the research proposal. A draft proposal must be approved by the supervisor. The student must convince the adjudicating panel of the feasibility of the topic and his or her knowledge of the research subject and ability to conduct the research. This module must be completed within one year after registration.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 10,
+      "presentation_period": "Year",
+      "language": "Module is presented in English"
+    }
+  ],
+  "streams_by_year": {
+    "year_1": [],
+    "year_2": [],
+    "year_3": [],
+    "year_4": [],
+    "final_year": []
+  },
+  "stream_checks": {
+    "year_1_stream_count": 0,
+    "year_2_stream_count": 0,
+    "year_3_stream_count": 0,
+    "year_4_stream_count": 0,
+    "final_year_stream_count": 0,
+    "missing_stream_module_codes_in_catalog_by_year": {
+      "year_1": [],
+      "year_2": [],
+      "year_3": [],
+      "year_4": [],
+      "final_year": []
+    }
+  }
+}

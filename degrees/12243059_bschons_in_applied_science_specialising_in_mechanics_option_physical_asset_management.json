@@ -1,0 +1,165 @@
+{
+  "metadata": {
+    "year": 2026,
+    "degree_code": "12243059",
+    "degree_name": "BScHons in Applied Science specialising in Mechanics option Physical Asset Management",
+    "faculty": "Engineering, Built Environment and IT",
+    "faculty_code": "EBIT",
+    "level": "Honours",
+    "source_url": "https://www.up.ac.za/yearbooks/2026/EBIT-faculty/HO-programmes/view/12243059",
+    "duration_years": 1,
+    "total_credits": 128,
+    "nqf_level": 8,
+    "department": "Mechanical and Aeronautical Engineering"
+  },
+  "curriculum": [
+    {
+      "module_code": "IKN 780",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective"
+    },
+    {
+      "module_code": "IMC 780",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective"
+    },
+    {
+      "module_code": "MIP 780",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective"
+    },
+    {
+      "module_code": "MIR 781",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective"
+    },
+    {
+      "module_code": "MSS 732",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective"
+    }
+  ],
+  "module_catalog": [
+    {
+      "module_code": "IKN 780",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "Engineering technology economics 780",
+      "credits": 16.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EBIT-faculty/PG-modules/view/IKN 780",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Engineering Economy assists the engineer in making a wide range of decisions. These decisions involve the fundamental elements of monetary cash flow, time, value of money, project life and the interest rate. Engineering Economy calculates the net present worth, future worth, annual equivalent worth and the internal rentability of the cash flows of the alternatives under consideration. By applying these values in different ways, the most economical alternative can be identified. Calculation of these values for a cash flow takes into account the effective interest rate, inflation and the income tax payable.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Semester 1 and Semester 2",
+      "language": "Module is presented in English",
+      "contact_time": "20 contact hours per semester"
+    },
+    {
+      "module_code": "IMC 780",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "Maintenance and asset management 780",
+      "credits": 16.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EBIT-faculty/PG-modules/view/IMC 780",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Every man-made component, spare part, equipment, system or infrastructure has an inherent reliability that is determined by design, construction, installation, manufacture or how it is built. This inherent reliability is influenced by both organisational and physical conditions under which, for example, an item of equipment operates. The operational reliability significantly determines the availability of the equipment. A primary objective of maintenance intervention is to eliminate the operating environment hazards, which reduce the operational reliability of equipment and consequently, the availability of equipment for use. In the event of malfunction or failure, the goal of maintenance is to restore the operational reliability and availability of an item of equipment. Irrespective of whether a maintenance activity is intervening or restorative, it needs to be properly planned, scheduled and executed towards achieving the highest levels of operational reliability and availability, whilst concurrently minimising the expenditure of time and resources. Organisational systems of work (which encompass business processes, culture, and information technology) greatly influence the planning, scheduling and execution of maintenance activities. Furthermore, knowledge of technologies embedded, as well as how various items of equipment malfunction or fail in operation, determines how well the maintenance activities are planned, scheduled and executed. The content of the module not only covers strategies, technical principles, practical processes and systems but also includes standards (e.g., CEN13306) and legislative guidelines that influence the management of maintenance in all industrial sectors. The content will also include an introduction to the ISO 5500x asset management standards.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Semester 1 and Semester 2",
+      "language": "Module is presented in English",
+      "contact_time": "20 contact hours per semester"
+    },
+    {
+      "module_code": "MIP 780",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "Maintenance practice 780",
+      "credits": 16.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EBIT-faculty/PG-modules/view/MIP 780",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Introduction to Asset management, Mechanisms of failure, Quantitative descriptions of failure, Maintenance policies/strategies, Renewal theory, Lubrication, Asset management strategy, Replacement decision-making, RCM principles, Maintenance & failure risk, A business case for maintenance, Repairable systems, Integrated failure data analysis, Maintenance profit impact, Life cycle modelling.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Semester 1",
+      "language": "Module is presented in English",
+      "contact_time": "21 contact hours per semester"
+    },
+    {
+      "module_code": "MIR 781",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "Reliability engineering 781",
+      "credits": 16.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EBIT-faculty/PG-modules/view/MIR 781",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Introduction to probabilistic distributions, computation of system reliability, building reliability models and optimisation of system reliability; Fault Tree Analysis; Failure Modes, Effects and Criticality Analysis (FMECA), Monte Carlo Simulation; probability-based design.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Semester 1",
+      "language": "Module is presented in English",
+      "contact_time": "21 contact hours per semester"
+    },
+    {
+      "module_code": "MSS 732",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "Research study 732",
+      "credits": 32.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EBIT-faculty/PG-modules/view/MSS 732",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "*This is a compulsory research module. This module allows a student to do research on a certain topic in mechanical or aeronautical engineering, as specified by a lecturer in the Department of Mechanical and Aeronautical Engineering, on an individual basis, under the supervision of that lecturer. The study should be seen as a precursor to the master\u2019s degree research that may follow the honours degree. The total volume of work that is to be invested in this module by an average student must be 320 hours. The body of knowledge studied must be of an advanced nature, at the level of the other postgraduate modules offered by the Department. Normal requirements for assessment that include the use of an external examiner apply to this module also.",
+      "prerequisites": "Completion of 48 credits of relevant Honours coursework",
+      "nqf_level": 8,
+      "presentation_period": "Semester 1 or Semester 2",
+      "language": "Module is presented in English",
+      "contact_time": "12 other contact sessions per week"
+    }
+  ],
+  "streams_by_year": {
+    "year_1": [],
+    "year_2": [],
+    "year_3": [],
+    "year_4": [],
+    "final_year": []
+  },
+  "stream_checks": {
+    "year_1_stream_count": 0,
+    "year_2_stream_count": 0,
+    "year_3_stream_count": 0,
+    "year_4_stream_count": 0,
+    "final_year_stream_count": 0,
+    "missing_stream_module_codes_in_catalog_by_year": {
+      "year_1": [],
+      "year_2": [],
+      "year_3": [],
+      "year_4": [],
+      "final_year": []
+    }
+  }
+}

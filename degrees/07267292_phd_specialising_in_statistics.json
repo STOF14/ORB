@@ -1,0 +1,90 @@
+{
+  "metadata": {
+    "year": 2026,
+    "degree_code": "07267292",
+    "degree_name": "PhD specialising in Statistics",
+    "faculty": "Economic and Management Sciences",
+    "faculty_code": "EMS",
+    "level": "Doctorate",
+    "source_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/DO-programmes/view/07267292",
+    "duration_years": 2,
+    "total_credits": 360,
+    "nqf_level": 10,
+    "department": "Economic and Management Sciences Dean's Office"
+  },
+  "curriculum": [
+    {
+      "module_code": "STK 911",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "STK 990",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core"
+    }
+  ],
+  "module_catalog": [
+    {
+      "module_code": "STK 911",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Research orientation 911",
+      "credits": 0.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/SCI-faculty/PG-modules/view/STK 911",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "A compulsory bootcamp must be attended as part of this module \u2013 usually presented during the last week of January each year. Details regarding the venue and specific dates are made available by the department each year. The bootcamp will cover the basics of research to prepare the student for the research component of their degree. Students can be exempt from the bootcamp if it has already been attended in a previous year or for a previous degree. Each year of registration for the doctoral degree will also require the attendance of three departmental seminars. Students should ensure that their attendance is recorded by the postgraduate co-ordinator present at the seminars. The department approves the seminars attended.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 10,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "Ad Hoc",
+      "service_modules": "Faculty of Economic and Management Sciences"
+    },
+    {
+      "module_code": "STK 990",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Thesis: Statistics 990",
+      "credits": 360.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/PG-modules/view/STK 990",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": null,
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 10,
+      "presentation_period": "Year",
+      "language": "Module is presented in English"
+    }
+  ],
+  "streams_by_year": {
+    "year_1": [],
+    "year_2": [],
+    "year_3": [],
+    "year_4": [],
+    "final_year": []
+  },
+  "stream_checks": {
+    "year_1_stream_count": 0,
+    "year_2_stream_count": 0,
+    "year_3_stream_count": 0,
+    "year_4_stream_count": 0,
+    "final_year_stream_count": 0,
+    "missing_stream_module_codes_in_catalog_by_year": {
+      "year_1": [],
+      "year_2": [],
+      "year_3": [],
+      "year_4": [],
+      "final_year": []
+    }
+  }
+}

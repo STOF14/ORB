@@ -1,0 +1,240 @@
+{
+  "metadata": {
+    "year": 2026,
+    "degree_code": "02240700",
+    "degree_name": "BScHons in Wildlife Management",
+    "faculty": "Natural and Agricultural Sciences",
+    "faculty_code": "SCI",
+    "level": "Honours",
+    "source_url": "https://www.up.ac.za/yearbooks/2026/SCI-faculty/HO-programmes/view/02240700",
+    "duration_years": 1,
+    "total_credits": 135,
+    "nqf_level": 8,
+    "department": "Zoology and Entomology"
+  },
+  "curriculum": [
+    {
+      "module_code": "BME 780",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "BOT 786",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "NLB 780",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "NLB 781",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "NLB 782",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "NLB 783",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "NLB 795",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "WDE 781",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    }
+  ],
+  "module_catalog": [
+    {
+      "module_code": "BME 780",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Statistics for biological sciences 780",
+      "credits": 15.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/PG-modules/view/BME 780",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Introduction to ANOVA, correlation and linear regression and analysis of covariance. Chi-squared tests. Basic concepts in generalised linear models. The principles of experimental design as required for the selection of an appropriate research design. Identification of the design limitations and the impact thereof on the research hypotheses and the statistical methods needed. Identification and application of the appropriate statistical methods needed. Interpreting of statistical results and translating these results to the biological context.",
+      "prerequisites": "Entrance into a postgraduate degree in the Faculty of Natural and Agricultural Sciences and a NQF level 7 qualification.",
+      "nqf_level": 8,
+      "presentation_period": "Semester 1",
+      "language": "Module is presented in English",
+      "contact_time": "3 Block weeks starting Mon 1 week before S1 begins",
+      "service_modules": "Faculty of Natural and Agricultural Sciences"
+    },
+    {
+      "module_code": "BOT 786",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Plant identification and herbarium curation 786",
+      "credits": 15.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/SCI-faculty/PG-modules/view/BOT 786",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Principles of identification, classification and nomenclature; identification of plants; family recognition; collection of plant specimens for identification; herbarium as a source of information. Variation in seed plants and breeding systems. Legal and ethical aspects of plant collection and permit requirements. Specimen preparation, including pressing, sterilisation, mounting, labelling and data capture. Introduction to herbarium databases. Herbarium curation and upkeep, including nomenclatural and taxonomic updates and classification systems, and aspects of pest control and health and safety. Practical work involves an excursion.",
+      "prerequisites": "No prerequisites",
+      "nqf_level": 8,
+      "presentation_period": "Semester 1",
+      "language": "Module is presented in English",
+      "contact_time": "Block of 2 weeks for lectures"
+    },
+    {
+      "module_code": "NLB 780",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Wildlife ecology 780",
+      "credits": 10.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/SCI-faculty/PG-modules/view/NLB 780",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Research in wildlife management focuses on gaining a better understanding of patterns of animal distribution, abundance, and diversity, and implementation of scientifically sound strategies for sustainable management and conservation of wildlife populations. This module will develop an in-depth understanding of core wildlife management concepts with a focus on population characteristics, the density concept, mortality, natality, life tables, population growth, harvesting quotas, population regulation, population structure, dispersal, dispersion, aggregation, isolation and territoriality, competition and predator-prey relationships. This module will also explore new ideas, and advanced research methods to evaluate ecological data in the context of wildlife ecology.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Semester 1",
+      "language": "Module is presented in English",
+      "contact_time": "2 lectures per week, 2 practicals per week"
+    },
+    {
+      "module_code": "NLB 781",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Wildlife management principles and techniques 781",
+      "credits": 10.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/SCI-faculty/PG-modules/view/NLB 781",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "The most important techniques applicable to wildlife management and wildlife research are discussed. The principles, applications and restrictions of the following are discussed amongst others: wildlife counts, age determination, age and sex ratios, translocation of animals, chemical immobilisation, mechanical capture techniques, transport of wildlife, land-use, predator control and predator-prey studies.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "1 discussion class per month, 1 lecture per week"
+    },
+    {
+      "module_code": "NLB 782",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Wildlife nutrition 782",
+      "credits": 10.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/SCI-faculty/PG-modules/view/NLB 782",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Ensuring essential prior knowledge of the fundamentals of nutrition through peer-assisted learning strategies. The digestive functioning of selected wild ruminant and non-ruminant herbivores is discussed as well as their nutrient requirements and deficiencies that commonly occur. The spatial scaling of nutrients in vegetation is explained, followed by the foraging strategies that large African herbivores of varying body sizes use to adapt to spatial and temporal nutrient heterogeneity. Optimal foraging theory is discussed. This module supports the Sustainable Development Goals 2 (Zero hunger) and 15 (Life on land).",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Semester 2",
+      "language": "Module is presented in English",
+      "contact_time": "2 practicals, 2 Block weeks"
+    },
+    {
+      "module_code": "NLB 783",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Parasites, diseases and the capture of wildlife animals 783",
+      "credits": 10.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/SCI-faculty/PG-modules/view/NLB 783",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Parasites, diseases and capture of wild animals. An overview of veterinary aspects with reference to important parasites and diseases of wild animals. The capture of wildlife and the stress-related consequences of the capture of wild animals. The module content includes a discussion of all the different chemicals used to immobilise wild animals, darting, and handling of wild animals under sedation. The internal and external parasites, most important contagious wildlife diseases and the prevention of capture related diseases are discussed.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Semester 1",
+      "language": "Module is presented in English",
+      "contact_time": "2 lectures per week, 2 practicals per week"
+    },
+    {
+      "module_code": "NLB 795",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Research project 795",
+      "credits": 50.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/SCI-faculty/PG-modules/view/NLB 795",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "A research protocol, field work and project report based on an ecological or wildlife management topic. This module will introduce aspects of scientific communication, developing skills in communication, writing and public presentation. The module addresses the Life on Land Sustainable Development Goal.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "WDE 781",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Rangeland management 781",
+      "credits": 15.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/SCI-faculty/PG-modules/view/WDE 781",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "The development of rangeland management strategies integrating ecological and physiological principles with economic and sociological constraints to achieve desired objectives whilst ensuring sustainability in different vegetation types for both livestock and wildlife systems; range evaluation and monitoring techniques for rangeland health and to guide adaptive management; rangeland restoration/rehabilitation; interactions among herbivores, including integrated livestock/wildlife systems.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "1 lecture per week"
+    }
+  ],
+  "streams_by_year": {
+    "year_1": [],
+    "year_2": [],
+    "year_3": [],
+    "year_4": [],
+    "final_year": []
+  },
+  "stream_checks": {
+    "year_1_stream_count": 0,
+    "year_2_stream_count": 0,
+    "year_3_stream_count": 0,
+    "year_4_stream_count": 0,
+    "final_year_stream_count": 0,
+    "missing_stream_module_codes_in_catalog_by_year": {
+      "year_1": [],
+      "year_2": [],
+      "year_3": [],
+      "year_4": [],
+      "final_year": []
+    }
+  }
+}

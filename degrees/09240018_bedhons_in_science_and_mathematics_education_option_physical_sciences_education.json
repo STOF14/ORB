@@ -1,0 +1,232 @@
+{
+  "metadata": {
+    "year": 2026,
+    "degree_code": "09240018",
+    "degree_name": "BEdHons in Science and Mathematics Education option Physical Sciences Education",
+    "faculty": "Education",
+    "faculty_code": "EDU",
+    "level": "Honours",
+    "source_url": "https://www.up.ac.za/yearbooks/2026/EDU-faculty/HO-programmes/view/09240018",
+    "duration_years": 1,
+    "total_credits": 128,
+    "nqf_level": 8,
+    "department": "Science, Mathematics and Technology Education"
+  },
+  "curriculum": [
+    {
+      "module_code": "API 711",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "CDD 710",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "EDS 711",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "NMQ 745",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "NMQ 755",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "PHN 730",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "SCU 731",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "SMP 780",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core"
+    }
+  ],
+  "module_catalog": [
+    {
+      "module_code": "API 711",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Assessment approaches and instruments 711",
+      "credits": 16.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EDU-faculty/PG-modules/view/API 711",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Foundations, principles and ethics of assessment practices. International trends. Quantitative and qualitative modes of assessment and appropriate instruments. Generating evidence for assessment. Assessment and quality assurance. Techniques of computer-based assessment.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Semester 2",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "CDD 710",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Curriculum development 710",
+      "credits": 16.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EDU-faculty/PG-modules/view/CDD 710",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Principles and foundations of curriculum/programme design and development. International and national models and trends in curriculum/programme development. Principles of outcomes-based programming in the SAQA context. Curriculum development models and instruments in action. Situation and task analysis needs assessment. Development. Dissemination. Implementation as a change process. Assessment and evaluation.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Semester 1 or Semester 2",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "EDS 711",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Philosophy and social imperatives of education 711",
+      "credits": 16.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EDU-faculty/PG-modules/view/EDS 711",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Meta-theories in education. Empiricism; rational empiricism; critical rationalism; critical theory; phenomenology; hermeneutics; system theory; philosophies in education: traditional philosophies; indigenous (African) philosophies. The influence of modernism and postmodernism on education. Sociological imperatives for education. Theories of societal change and roles and values of education. Comparative perspectives on learning theories and their meaning for education.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Semester 1",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "NMQ 745",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Educational research methodology 745",
+      "credits": 16.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EDU-faculty/PG-modules/view/NMQ 745",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "The nature of educational enquiry: contexts of research, research ethics, truth, rationality, subjectivity and objectivity; Quantitative and qualitative modes of enquiry, research designs and data collection techniques. Various approaches to qualitative research including case study research, historical research, ethnographic research, and action research. Basic concepts and principles of quantitative research. Statistical techniques in the educational research process. Survey methodology and questionnaire design. Classification and graphical representation of data. Descriptive measures. Statistical inference. Data-processing procedures. Parametric versus non-parametric tests. Some test statistics (e.g. F-Test and T-test). Formulating a research methodology for a limited project.",
+      "prerequisites": null,
+      "nqf_level": 8,
+      "presentation_period": "Semester 1",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "NMQ 755",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Part 1: Research proposal 755",
+      "credits": 16.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EDU-faculty/PG-modules/view/NMQ 755",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Guided literature research, formulation of a conceptual framework and development of a research proposal for a supervised research project of limited scope.",
+      "prerequisites": null,
+      "nqf_level": 8,
+      "presentation_period": "Semester 1",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "PHN 730",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Physical sciences education 730",
+      "credits": 16.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EDU-faculty/PG-modules/view/PHN 730",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Instructional strategies; reform in physics and chemistry education; alternative concepts. Curriculum leadership in Physical Sciences Education in multiple contexts.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Semester 1 or Semester 2",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "SCU 731",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Sciences curriculum 731",
+      "credits": 16.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EDU-faculty/PG-modules/view/SCU 731",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "The nature of the natural sciences, technology and mathematics: public understanding of scientific, mathematical and technological endeavours and their impact on society. Ethical implications of practices and advances in these fields. Indigenous Knowledge Systems (IKS), ethno-mathematics and technologies and ways of knowing. Implications for teaching and learning content, and anticipated outcomes. The purpose and nature of curricula to develop scientific ways of understanding the world.",
+      "prerequisites": null,
+      "nqf_level": 8,
+      "presentation_period": "Semester 2",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "SMP 780",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Part 2: Research report 780",
+      "credits": 16.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EDU-faculty/PG-modules/view/SMP 780",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Supervised research project of limited scope. Research proposal development; Use quantitative and/or qualitative methods. Writing a research report.",
+      "prerequisites": "NMQ 755",
+      "nqf_level": 8,
+      "presentation_period": "Semester 2",
+      "language": "Module is presented in English"
+    }
+  ],
+  "streams_by_year": {
+    "year_1": [],
+    "year_2": [],
+    "year_3": [],
+    "year_4": [],
+    "final_year": []
+  },
+  "stream_checks": {
+    "year_1_stream_count": 0,
+    "year_2_stream_count": 0,
+    "year_3_stream_count": 0,
+    "year_4_stream_count": 0,
+    "final_year_stream_count": 0,
+    "missing_stream_module_codes_in_catalog_by_year": {
+      "year_1": [],
+      "year_2": [],
+      "year_3": [],
+      "year_4": [],
+      "final_year": []
+    }
+  }
+}

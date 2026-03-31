@@ -1,0 +1,215 @@
+{
+  "metadata": {
+    "year": 2026,
+    "degree_code": "02241000",
+    "degree_name": "BAgricHons in Extension",
+    "faculty": "Natural and Agricultural Sciences",
+    "faculty_code": "SCI",
+    "level": "Honours",
+    "source_url": "https://www.up.ac.za/yearbooks/2026/SCI-faculty/HO-programmes/view/02241000",
+    "duration_years": 1,
+    "total_credits": 120,
+    "nqf_level": 8,
+    "department": "Agricultural  Economics, Extension and Rural Development"
+  },
+  "curriculum": [
+    {
+      "module_code": "AGV 712",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective"
+    },
+    {
+      "module_code": "AGV 713",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective"
+    },
+    {
+      "module_code": "AGV 715",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective"
+    },
+    {
+      "module_code": "AGV 726",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective"
+    },
+    {
+      "module_code": "AGV 728",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective"
+    },
+    {
+      "module_code": "AGV 729",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective"
+    },
+    {
+      "module_code": "AGV 785",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective"
+    }
+  ],
+  "module_catalog": [
+    {
+      "module_code": "AGV 712",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "Leadership and group dynamics 712",
+      "credits": 15.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/SCI-faculty/PG-modules/view/AGV 712",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Nature, philosophy and objectives of Extension.\u00a0 The group as channel and instrument in extension; definitions and characteristics of groups; group formation; theories regarding the functioning of groups; group norms; group goals;\u00a0 small group techniques;\u00a0 rural groups and their engagement;\u00a0 definitions and theories of leadership;\u00a0 behaviour and attitude in group work;\u00a0 the extensionist as professional leader;\u00a0 group analysis in group context and process;\u00a0 training of leaders.\u00a0 Conflict resolution, mediation and negotiation.\u00a0 Ethics in extension and agricultural development.\u00a0 Management in extension;\u00a0 Strategic planning;\u00a0 functions of management.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "1 four-hour lecture in 5 block week sessions"
+    },
+    {
+      "module_code": "AGV 713",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "Communication for sustainable rural development 713",
+      "credits": 15.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/SCI-faculty/PG-modules/view/AGV 713",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Introduction to the Communication Process, its role and importance.\u00a0 Communication and perception - role of Extension in AKIS.\u00a0 Clarification of principles and definitions; theory of\u00a0 communication;\u00a0 Strategies for communication and Extension methods.\u00a0 Key elements and channels of communication;\u00a0 credibility;\u00a0 persuasion;\u00a0 public speaking;\u00a0 audio visual aids; mass media and their effect;\u00a0 new reporting;\u00a0 articles and newsletters.\u00a0 Designing communication interventions.\u00a0 Impact assessment approaches and tools.\u00a0 Appreciative Communication Inquiry:\u00a0 5-D Approach.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "1 four-hour lecture in 5 block week sessions"
+    },
+    {
+      "module_code": "AGV 715",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "Principles and approaches of rural development and extension 715",
+      "credits": 15.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/SCI-faculty/PG-modules/view/AGV 715",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Overview of the origin, role, development of extension; Philosophy and principles of extension.\u00a0 International approaches to extension delivery:\u00a0 Training and Visit, Farming system development, Project approach,\u00a0 Farmer Field Schools, Participatory Extension and Participatory Technology Development.\u00a0 Extension's role in sustainable agriculture development;\u00a0 Adult learning principles, privatizing and outsourcing of agricultural extension;\u00a0 the role of non-governmental organisations (NGO's) in extension delivery.\u00a0 Decentralisation of extension.\u00a0 Participation and coordination of stakeholders in the planning of linkages between extension, research and the farming community.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "1 four-hour lecture in 5 block week sessions"
+    },
+    {
+      "module_code": "AGV 726",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "Extension programme planning and management 726",
+      "credits": 15.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/SCI-faculty/PG-modules/view/AGV 726",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Nature, purpose and principles of a programmed and purposeful Extension.\u00a0 The philosophy, principles and assumptions of program development.\u00a0 Institutional framework for community participation, ownership and empowerment;\u00a0 linking with complementary and support services.\u00a0 Overview of the program cycle:\u00a0 consideration, survey, planning, action and evaluation phases.\u00a0 Participatory need appraisal, problem identification and delimination;\u00a0 problem conceptualisation and development of survey instrument;\u00a0 situation surveys and analysis;\u00a0 formulation of objectives;\u00a0 identification and scheduling of methods and activities;\u00a0 Work plan of calendar construction, budgeting.\u00a0 The project management process.\u00a0 Personnel management and administration.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "1 four-hour lecture in 5 block week sessions"
+    },
+    {
+      "module_code": "AGV 728",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "Extension programme evaluation and research 728",
+      "credits": 30.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/SCI-faculty/PG-modules/view/AGV 728",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Meaning, scope and place of evaluation in extension; the research- and evaluation process; problem identification; theory and hypotheses; objectives; literature research and information sources; sampling; methods of data collection; evaluation criteria; quality of measuring instruments; scale construction; interviewing. Conducting research and reporting research findings. Preparation of an evaluation report of an extension programme/project.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "1 four-hour lecture in 5 block week sessions"
+    },
+    {
+      "module_code": "AGV 729",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "Human and organisational behaviour change and management 729",
+      "credits": 15.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/SCI-faculty/PG-modules/view/AGV 729",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Understanding change and the time lag phenomenon.\u00a0 Principles of human behaviour and its influence on change.\u00a0 Theoretical perspectives on behaviour change.\u00a0 Understanding resistance and barriers to change.\u00a0 Adoption and diffusion of new innovations.\u00a0 Theories and models of decision-making.\u00a0 Introduction to organisational dynamics;\u00a0 Role of Extension organisations in Rural Development.\u00a0 Theoretical perspectives on organisational change;\u00a0 organisations as rationale and open systems.\u00a0 Understanding organisations and society;\u00a0 organisational pathologies;\u00a0 organisational effectiveness.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "1 four-hour lecture in 5 block week sessions"
+    },
+    {
+      "module_code": "AGV 785",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "Principles and approaches of community development 785",
+      "credits": 15.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/SCI-faculty/PG-modules/view/AGV 785",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "The local development environment, including the political, social, cultural, economic and psychological environments. Stakeholders in community development. Coordination principles in community development. Ethical principles of community development including human orientation, participation, empowerment, ownership and release. Practical principles of community development including learning, addictiveness and simplicity. The features and outcomes of community development including collective action, need orientation, objective orientation, actions at grassroots level. Outcomes of community development, including awareness creation and community building. Communities as role players in development.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "1 four-hour lecture in 5 block week sessions"
+    }
+  ],
+  "streams_by_year": {
+    "year_1": [],
+    "year_2": [],
+    "year_3": [],
+    "year_4": [],
+    "final_year": []
+  },
+  "stream_checks": {
+    "year_1_stream_count": 0,
+    "year_2_stream_count": 0,
+    "year_3_stream_count": 0,
+    "year_4_stream_count": 0,
+    "final_year_stream_count": 0,
+    "missing_stream_module_codes_in_catalog_by_year": {
+      "year_1": [],
+      "year_2": [],
+      "year_3": [],
+      "year_4": [],
+      "final_year": []
+    }
+  }
+}

@@ -1,0 +1,280 @@
+{
+  "metadata": {
+    "year": 2026,
+    "degree_code": "01243023",
+    "degree_name": "BSocSciHons specialising in Sociology",
+    "faculty": "Humanities",
+    "faculty_code": "HUM",
+    "level": "Honours",
+    "source_url": "https://www.up.ac.za/yearbooks/2026/HUM-faculty/HO-programmes/view/01243023",
+    "duration_years": 1,
+    "total_credits": 125,
+    "nqf_level": 8,
+    "department": "Sociology"
+  },
+  "curriculum": [
+    {
+      "module_code": "GNR 758",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective"
+    },
+    {
+      "module_code": "LAB 754",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective"
+    },
+    {
+      "module_code": "SOC 730",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective"
+    },
+    {
+      "module_code": "SOC 751",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective"
+    },
+    {
+      "module_code": "SOC 753",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective"
+    },
+    {
+      "module_code": "SOC 756",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective"
+    },
+    {
+      "module_code": "SOC 757",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective"
+    },
+    {
+      "module_code": "SOC 761",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective"
+    },
+    {
+      "module_code": "SOC 762",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective"
+    },
+    {
+      "module_code": "SOC 763",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective"
+    }
+  ],
+  "module_catalog": [
+    {
+      "module_code": "GNR 758",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "Introduction to gender studies 758",
+      "credits": 25.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/HUM-faculty/PG-modules/view/GNR 758",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "This module traces the history of feminist theory and the emergence of gender studies and feminist movements with masculinity studies and queer theory as powerful sub-fields. Tracing the early traditions of feminism and definitions of women\u2019s issues and struggles for equality, globally, and in Southern Africa, we next follow the rise of black feminist thoughts in India, Latin America, the USA and on the African continent, and the rise of the fields of gay and lesbian studies since the 1980s. We end with a focus on the emergence of the study of masculinities in our region. Oscillating between key texts and applied examples and case studies, the module is both theoretical and empirical. This module traces and examines the many intersectional and overlapping threads in the formation of systems power and as well as arguments for freedom, bound up with and shaped by \u2018gender\u2019 as a key form of human identity.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Semester 1",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "LAB 754",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "Sociology of work and employment relations 754",
+      "credits": 25.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/HUM-faculty/PG-modules/view/LAB 754",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "This module explores the relationship between work and employment relations with particular reference to South Africa and the global south. It includes a focus on the relationships between employers and employees, labour, organisations and the state. It also demonstrates how these relationships are embedded in the type of work and the changing workplace.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Semester 1",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "SOC 730",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "Sociology of organisations 730",
+      "credits": 25.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/HUM-faculty/PG-modules/view/SOC 730",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "This module explores the changing nature of organisational forms that dominated certain historical periods in economic history. Concepts such as bureaucracy, Fordism and post-Fordism within the context of changing organisational forms are examined, The module will also examine organisational cultures particularly within the context of debates around employment equity.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Semester 1",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "SOC 751",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "Research methodology 751",
+      "credits": 20.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/HUM-faculty/PG-modules/view/SOC 751",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "The module focuses on debates about, as well as the practice of, research. The idea of science, the role of theoretical conceptualisations, and the epistemological assumptions underpinning research are introduced with reference to competing paradigms, including positivism, interpretivism and realism. With regard to research practice, general principles of planning\u00a0such as identifying a topic, delineating a problem area, selecting sites, sampling participants and addressing ethical questions are considered. Thereafter the use of methods through which data can be collected and/or constructed are introduced and ways in which evidence can be interpreted and analysed are discussed.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Semester 1",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "SOC 753",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "Research paper 753",
+      "credits": 30.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/HUM-faculty/PG-modules/view/SOC 753",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "In this module students are expected to produce a research paper under weekly supervision. In the first instance, the paper ought to demonstrate a student\u2019s ability to conduct empirical research. However, with the necessary permission a student may also base the paper on the analysis of secondary data or draw on archival and/or documentary sources. The research paper needs to demonstrate students\u2019 understanding of and competence in all aspects of the research process, including making an argument, writing a report, analysing data, integrating research findings with the literature, and research ethics. Students who are registered for the BSocSciHons (Gender Studies) or BSocSciHons (Industrial Sociology and Labour Studies) need to ensure that the topic of their research paper aligns to the degree focus.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "SOC 756",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "Social theory 756",
+      "credits": 25.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/HUM-faculty/PG-modules/view/SOC 756",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "This module introduces students to key conceptual vocabularies, as well as selected theoretical paradigms and scholarly works in order to facilitate an understanding of some of the current debates, innovations and controversies in the field. A balance is struck between classic and contemporary social theory, and an emphasis is placed on questions of textuality, canonicity and interdisciplinarity in shaping conversations about social theory and its significance for research, thought and politics.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Semester 1",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "SOC 757",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "Environment, society, and development 757",
+      "credits": 25.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/HUM-faculty/PG-modules/view/SOC 757",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "This module aims to provide students with comprehensive conceptual, theoretical and empirical skills to comprehend issues at the nexus of the environment, society and development. Etched in environmental and natural resource governance, extractivism and development, as well as sustainability, the module endeavours to unravel the roots of environmental degradation, natural resources conflicts, environmental injustice, and how different actors, in society and globally, contribute or respond to these challenges. The module unpacks these issues using theoretical aspects of political ecology, political economy, coloniality and sustainable development. While focusing on environmental issues in Africa, the module engages with broader global developments, in particular, relations between the Global North and Global South.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Semester 2",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "SOC 761",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "Sociology of South Africa 761",
+      "credits": 25.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/HUM-faculty/PG-modules/view/SOC 761",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "This module takes a sociological approach to understanding and interrogating South African society. It begins by looking at some of the debates and discussions about Sociology in South Africa. It then reviews and debates key issues in order to understand the political economy of Apartheid. Finally it looks at some key debates associated with post-apartheid South Africa.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Semester 2",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "SOC 762",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "Identity, culture and society 762",
+      "credits": 25.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/HUM-faculty/PG-modules/view/SOC 762",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "This module focuses on the relationship between the personal and social and how these two domains are intricately related, simultaneously implying sameness and difference in the process of identification. It considers how societal structures and institutions shape and construct identities historically, whilst being shaped by individual agency, in turn. Human experience reveals a range of cross-cutting affiliations, based on ethnicity, race, religion, gender, sexuality and generation, amongst others, implying a multiplicity in belonging, suggesting a relational process, rather than an essence. The social, contingent and constructed nature of identities is highlighted against experiences of dislocation within a context of globalisation.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Semester 1",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "SOC 763",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "Gender, reproduction and the politics of intimacy 763",
+      "credits": 25.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/HUM-faculty/PG-modules/view/SOC 763",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "This module explores the gendered, intersectional and feminist politics of reproduction across a range of transnational contexts. Grappling with core debates about the meaning/s of gendered labour, family and kin relations, love, home, mothering and the social stratification of reproductive work across race, class and geopolitical boundaries, the course puts reproduction and the politics of intimacy at the centre of theoretical, social and political inquiry. A range of issues in reproductive politics are explored, including surrogacy, birth, teenage pregnancy and obstetric violence.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Semester 1",
+      "language": "Module is presented in English"
+    }
+  ],
+  "streams_by_year": {
+    "year_1": [],
+    "year_2": [],
+    "year_3": [],
+    "year_4": [],
+    "final_year": []
+  },
+  "stream_checks": {
+    "year_1_stream_count": 0,
+    "year_2_stream_count": 0,
+    "year_3_stream_count": 0,
+    "year_4_stream_count": 0,
+    "final_year_stream_count": 0,
+    "missing_stream_module_codes_in_catalog_by_year": {
+      "year_1": [],
+      "year_2": [],
+      "year_3": [],
+      "year_4": [],
+      "final_year": []
+    }
+  }
+}

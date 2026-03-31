@@ -1,0 +1,140 @@
+{
+  "metadata": {
+    "year": 2026,
+    "degree_code": "06246002",
+    "degree_name": "BThHons specialising in Dogmatics and Christian Ethics",
+    "faculty": "Theology and Religion",
+    "faculty_code": "THEO",
+    "level": "Honours",
+    "source_url": "https://www.up.ac.za/yearbooks/2026/THEO-faculty/HO-programmes/view/06246002",
+    "duration_years": 1,
+    "total_credits": 120,
+    "nqf_level": 8,
+    "department": "Systematic and Historical Theology"
+  },
+  "curriculum": [
+    {
+      "module_code": "DCE 710",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "DCE 720",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "DCE 730",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "DCE 740",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    }
+  ],
+  "module_catalog": [
+    {
+      "module_code": "DCE 710",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Research report: Dogmatics and Christian ethics 710",
+      "credits": 30.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/THEO-faculty/PG-modules/view/DCE 710",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Research module. Fundamental component: orientation, research methodology. Essay.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "1 lecture per week"
+    },
+    {
+      "module_code": "DCE 720",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Dogmatics and Christian ethics 720",
+      "credits": 30.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/THEO-faculty/PG-modules/view/DCE 720",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Core module. Survey of Systematic-Theological designs.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "1 lecture per week"
+    },
+    {
+      "module_code": "DCE 730",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Dogmatics and Christian ethics 730",
+      "credits": 30.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/THEO-faculty/PG-modules/view/DCE 730",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Core module. Specialised study of a selection of Systematic Theological loci.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "1 lecture per week"
+    },
+    {
+      "module_code": "DCE 740",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Dogmatics and Christian ethics 740",
+      "credits": 30.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/THEO-faculty/PG-modules/view/DCE 740",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Core module. Survey of Christian ethical issues and themes.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "1 lecture per week"
+    }
+  ],
+  "streams_by_year": {
+    "year_1": [],
+    "year_2": [],
+    "year_3": [],
+    "year_4": [],
+    "final_year": []
+  },
+  "stream_checks": {
+    "year_1_stream_count": 0,
+    "year_2_stream_count": 0,
+    "year_3_stream_count": 0,
+    "year_4_stream_count": 0,
+    "final_year_stream_count": 0,
+    "missing_stream_module_codes_in_catalog_by_year": {
+      "year_1": [],
+      "year_2": [],
+      "year_3": [],
+      "year_4": [],
+      "final_year": []
+    }
+  }
+}

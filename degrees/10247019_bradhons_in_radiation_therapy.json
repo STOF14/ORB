@@ -1,0 +1,165 @@
+{
+  "metadata": {
+    "year": 2026,
+    "degree_code": "10247019",
+    "degree_name": "BRadHons in Radiation Therapy",
+    "faculty": "Health Sciences",
+    "faculty_code": "MED",
+    "level": "Honours",
+    "source_url": "https://www.up.ac.za/yearbooks/2026/MED-faculty/HO-programmes/view/10247019",
+    "duration_years": 1,
+    "total_credits": 120,
+    "nqf_level": 8,
+    "department": "Radiography"
+  },
+  "curriculum": [
+    {
+      "module_code": "NVB 700",
+      "year_level": 2,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "RDB 700",
+      "year_level": 2,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "RSK 700",
+      "year_level": 2,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "RSZ 701",
+      "year_level": 2,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "SFR 700",
+      "year_level": 2,
+      "is_compulsory": true,
+      "module_type": "core"
+    }
+  ],
+  "module_catalog": [
+    {
+      "module_code": "NVB 700",
+      "year_level": 2,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Research principles 700",
+      "credits": 5.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/MED-faculty/PG-modules/view/NVB 700",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Development and submission of a research protocol.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Semester 1",
+      "language": "Module is presented in English",
+      "contact_time": "1 discussion class per week"
+    },
+    {
+      "module_code": "RDB 700",
+      "year_level": 2,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Radiotherapeutic dosage planning 700",
+      "credits": 35.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/MED-faculty/PG-modules/view/RDB 700",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Part 1 Target volumes determination, treatment filed localisation and treatment prescription. Treatment localisation equipment and principles of image geometry. Patient positioning, marking fields, and immobilisation in radiotherapy. Use of mechanical and mathematical radiation beam modification in treatment planning and delivery. Principles of 2-Dimensional and 3-Dimensional external beam photon radiation dose planning and dose calculation. Application of standard 2-Dimensional and 3-Dimensional external radiotherapy treatment planning. Principles of electron beam planning. Treatment planning quality assurance. Part 2 Brachytherapy. ICRU level-3 Radiation dose planning. Stereotactic radio-surgery and stereotactic radiotherapy. Image-based and image-guided radiotherapy. Large field irradiation with photons. Current trends in Electron Therapy, proton therapy, heavy particle therapy and neutron therapy treatment planning and delivery.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "1 discussion class per week, 1 practical per week, 1 lecture per week"
+    },
+    {
+      "module_code": "RSK 700",
+      "year_level": 2,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Research report: Radiography 700",
+      "credits": 30.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/MED-faculty/PG-modules/view/RSK 700",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Continuation of the research process which includes the implementation of the approved research protocol and writing up a research essay of the completed research project.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "as scheduled with study leader"
+    },
+    {
+      "module_code": "RSZ 701",
+      "year_level": 2,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Radiation therapy 701",
+      "credits": 35.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/MED-faculty/PG-modules/view/RSZ 701",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Part 1: Clinical ethics and m patient care and support in radiotherapy. Medico-legal aspects in radiation therapy. Radiotherapy assessment, patient care and support for patients receiving radiation therapy for tumours of the oral cavity, digestive tract, respiratory system, urinary system, nervous system, reproductive system, skin and blood. Management of patients receiving radiotherapy with co-existing medical conditions of anaemia, infection, ascites, pleural effusion, pain and neutropenia. Care of patients with tracheostomy, mastectomy, amputations and dental care. Radiobiological principles and concepts that underpin the interaction of radiation with cells, tissues, whole body. Tumour kinetics and tumour response to radiation. Carcinogenesis. Tumour micro-environment. Fractionation. Normal tissue responses of skin, oral mucosa, salivary glands, bone marrow, bone, cartilage, lung, kidney, testis, central nervous system and peripheral nervous tissue. Radiation effects on developing embryo. Hyperthermia. Basic principles of application of superficial superficial x-ray, megavoltage x-ray, electron, neutron therapy, proton therapy, brachytherapy, intensity modulated radiotherapy and intra-operative radiotherapy. Basic radiotherapy treatment techniques in the treatment of malignant tumours of gynaecological, head and neck, skin, breast, genitourinary, gastrointestinal, lymphomas, leukemias, lung, mediastinum, bone, soft tissue, central nervous system and paediatric tumours. Radiotherapy treatment techniques for non-malignant tumours. Cancer biology and pathology. Epidemiology, prevention, early diagnosis and education. General principles in oncological management of the patient. Oncological principles related to the treatment of malignant tumours of different anatomical regions. Radiation oncology principles related to management of benign tumours, non-malignant medical conditions and oncological emergencies. Part 2: Basic management principles. Quality management. Brachytherapy. Treatment field conformation and treatment dose conformation in radiotherapy treatment delivery. Large field irradiation with photons and superficial photon therapy.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "1 lecture per week, 1 practical per week, 1 discussion class per week"
+    },
+    {
+      "module_code": "SFR 700",
+      "year_level": 2,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Radiation physics and radiation protection 700",
+      "credits": 15.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/MED-faculty/PG-modules/view/SFR 700",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Basic radiation physics. Interactions of X-radiation and gamma rays with matter. Radiation beam attenuation. Treatment machines for external beam radiotherapy. External photon beam and dose quantities. Photon beam measurements and calibrations and treatment dose calculations. Photon beam modification for treatment dose optimisation. Electron interaction with matter and electron therapy. Radiotherapy quality assurance of external beam units and treatment planning systems. Radiation protection and shielding and personnel monitoring. Imaging in radiation oncology. Radiation physics principles of three dimensional conformal radiation therapy and intensity modulated radiation therapy. Procedures and processes involved in Stereotactic radiotherapy and stereotactic radiosurgery. Radiation physics principles of Brachytherapy. Principles of total body irradiation. Radiation interactions in proton and neutron therapy,",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "1 discussion class per week"
+    }
+  ],
+  "streams_by_year": {
+    "year_1": [],
+    "year_2": [],
+    "year_3": [],
+    "year_4": [],
+    "final_year": []
+  },
+  "stream_checks": {
+    "year_1_stream_count": 0,
+    "year_2_stream_count": 0,
+    "year_3_stream_count": 0,
+    "year_4_stream_count": 0,
+    "final_year_stream_count": 0,
+    "missing_stream_module_codes_in_catalog_by_year": {
+      "year_1": [],
+      "year_2": [],
+      "year_3": [],
+      "year_4": [],
+      "final_year": []
+    }
+  }
+}

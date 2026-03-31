@@ -1,0 +1,65 @@
+{
+  "metadata": {
+    "year": 2026,
+    "degree_code": "02241002",
+    "degree_name": "BAgricHons in Rural Development Planning",
+    "faculty": "Natural and Agricultural Sciences",
+    "faculty_code": "SCI",
+    "level": "Honours",
+    "source_url": "https://www.up.ac.za/yearbooks/2026/SCI-faculty/HO-programmes/view/02241002",
+    "duration_years": 1,
+    "total_credits": 120,
+    "nqf_level": 8,
+    "department": "Agricultural  Economics, Extension and Rural Development"
+  },
+  "curriculum": [
+    {
+      "module_code": "AGV 712",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective"
+    }
+  ],
+  "module_catalog": [
+    {
+      "module_code": "AGV 712",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "Leadership and group dynamics 712",
+      "credits": 15.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/SCI-faculty/PG-modules/view/AGV 712",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Nature, philosophy and objectives of Extension.\u00a0 The group as channel and instrument in extension; definitions and characteristics of groups; group formation; theories regarding the functioning of groups; group norms; group goals;\u00a0 small group techniques;\u00a0 rural groups and their engagement;\u00a0 definitions and theories of leadership;\u00a0 behaviour and attitude in group work;\u00a0 the extensionist as professional leader;\u00a0 group analysis in group context and process;\u00a0 training of leaders.\u00a0 Conflict resolution, mediation and negotiation.\u00a0 Ethics in extension and agricultural development.\u00a0 Management in extension;\u00a0 Strategic planning;\u00a0 functions of management.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "1 four-hour lecture in 5 block week sessions"
+    }
+  ],
+  "streams_by_year": {
+    "year_1": [],
+    "year_2": [],
+    "year_3": [],
+    "year_4": [],
+    "final_year": []
+  },
+  "stream_checks": {
+    "year_1_stream_count": 0,
+    "year_2_stream_count": 0,
+    "year_3_stream_count": 0,
+    "year_4_stream_count": 0,
+    "final_year_stream_count": 0,
+    "missing_stream_module_codes_in_catalog_by_year": {
+      "year_1": [],
+      "year_2": [],
+      "year_3": [],
+      "year_4": [],
+      "final_year": []
+    }
+  }
+}

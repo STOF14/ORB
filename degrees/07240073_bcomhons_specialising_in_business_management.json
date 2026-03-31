@@ -1,0 +1,216 @@
+{
+  "metadata": {
+    "year": 2026,
+    "degree_code": "07240073",
+    "degree_name": "BComHons specialising in Business Management",
+    "faculty": "Economic and Management Sciences",
+    "faculty_code": "EMS",
+    "level": "Honours",
+    "source_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/HO-programmes/view/07240073",
+    "duration_years": 1,
+    "total_credits": 120,
+    "nqf_level": 8,
+    "department": "Business Management"
+  },
+  "curriculum": [
+    {
+      "module_code": "OBS 320",
+      "year_level": 3,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "INR 780",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "OBS 780",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "OBS 782",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "OBS 785",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "OBS 790",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "SBE 780",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    }
+  ],
+  "module_catalog": [
+    {
+      "module_code": "OBS 320",
+      "year_level": 3,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Business management 320",
+      "credits": 20.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/UG-modules/view/OBS%20320",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 2,
+      "content": "Strategy execution: Strategic management implementation. The role of management in strategy implementation; budgets as instrument in the implementation process; leading processes of change within enterprises; supporting policies, procedures and information systems for implementation in the various functional areas; evaluation and control of implementation. South African case studies to create contextual relevance.",
+      "prerequisites": "OBS 114 or 124 with admission to the examination in the other",
+      "nqf_level": 7,
+      "presentation_period": "Semester 2",
+      "language": "Module is presented in English",
+      "contact_time": "3 lectures per week",
+      "service_modules": "Faculty of Engineering, Built Environment and Information Technology Faculty of Education"
+    },
+    {
+      "module_code": "INR 780",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "International business management 780",
+      "credits": 15.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/PG-modules/view/INR 780",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "The purpose of this module is to enhance the international perspective of South African business people and other interested parties in order to increase the competitiveness of local businesses.\u00a0 This can be done by the student gaining appropriate knowledge on international trade in general and international or multinational businesses in particular. Study themes: \u2022 Globalisation; \u2022 National differences in political economy; \u2022 International trade theory; \u2022 Foreign direct investment; \u2022 The strategy of international business; \u2022 The organising of international business; \u2022 Entry strategy and strategic alliances and \u2022 Global marketing and RandD.",
+      "prerequisites": "Only for BComHons (Business Management) students.",
+      "nqf_level": 8,
+      "presentation_period": "Semester 1 or Semester 2",
+      "language": "Module is presented in English",
+      "contact_time": "5 block weeks of 3 hours each"
+    },
+    {
+      "module_code": "OBS 780",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Strategic finance 780",
+      "credits": 15.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/PG-modules/view/OBS 780",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "This module builds on the basic financial management and costing skills acquired at undergraduate level. It emphasises and expands on basic costing skills that managers may need to provide sound oversight of the costing function. The focus of the module is to provide the aggregated financial management knowledge to make informed capital budgeting decisions. There is furthermore an emphasis on emerging forms of reporting and alternative source of finance, with a specific emphasis on sustainable finance and integrated reporting.",
+      "prerequisites": "FBS 212 and FBS 222",
+      "nqf_level": 8,
+      "presentation_period": "Semester 1 or Semester 2",
+      "language": "Module is presented in English",
+      "contact_time": "5 block weeks of 3 hours each"
+    },
+    {
+      "module_code": "OBS 782",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Strategic operations management 782",
+      "credits": 20.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/PG-modules/view/OBS 782",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "The module focuses on the design, implementation and analysis of an operations management strategy; the role of operations management and the relationship between operations, products and services; contemporary trends and innovations in operations management; aims of an operations strategy and how operations strategy develops over time; designing a product operations strategy and the appropriate strategic fit to the environment, designing the services operations strategy and the appropriate strategic fit to the environment; implementing the operations strategy and how global and dynamic contexts affects the implementation; analysing the operations strategy and measurement of the operations strategy.",
+      "prerequisites": "Only students registered for BComHons (Supply Chain Management) or BComHons (Business Management)",
+      "nqf_level": 8,
+      "presentation_period": "Semester 1 or Semester 2",
+      "language": "Module is presented in English",
+      "contact_time": "15 contact hours"
+    },
+    {
+      "module_code": "OBS 785",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Analytical decision-making 785",
+      "credits": 15.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/PG-modules/view/OBS 785",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "The module aims to inform future managers, consultants, and advisors on the psychological processes and biases underlying the decisions made by customers, competitors, colleagues, and themselves, with emphasis on how to incorporate such insights into business. This course will provide new insights into a personal approach to decision-making and enable the development of thinking and influencing skills required for effective strategic decisions, especially when faced with complex or ambiguous situations. Business analytics is covered within the context of decision-making. In addition, an applied decision-making aspect will focus on mastering quantitative modelling tools and techniques for business decision-making and deterministic optimisation techniques.",
+      "prerequisites": "Only students registered for BComHons (Supply Chain Management) or BComHons (Business Management).",
+      "nqf_level": 8,
+      "presentation_period": "Semester 1 or Semester 2",
+      "language": "Module is presented in English",
+      "contact_time": "5 block weeks of 3 hours each"
+    },
+    {
+      "module_code": "OBS 790",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Research report 790",
+      "credits": 40.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/PG-modules/view/OBS 790",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "The purpose of this module is to introduce students to the nature and the role of research in a business enterprise so that they will be able to conduct and utilise research. Study themes: The role of research in an enterprise; Conceptualisation and the scientific thinking process; The research process; Research planning and design; Data gathering and analysis; and Reporting of research results. The purpose of this module is to guide students through the process of planning a small-scale academic research study in the field of Business Management, collecting and analysing empirical data, and presenting the findings of the study in the form of a research article. Students will be guided to develop a research proposal for the research study during the first semester. During the second semester, students will be guided to collect and analyse the required data and to write a research article. Students will only be allowed to continue with the execution of their research projects (i.e., with the collection and analysis of data and the writing of a research article) during the second semester, if they have obtained a progress mark of at least 50% and passed the final research proposal at the end of the first semester with a sub-minimum mark of 50% 1 lecture per week during the first semester and ad hoc workshops during the second semester",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "1 lecture per week S1, ad hoc"
+    },
+    {
+      "module_code": "SBE 780",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Strategic management 780",
+      "credits": 15.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/PG-modules/view/SBE 780",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "This module, Strategic management, analyses the combination of competitive moves and business approaches that organisations can employ to please customers, achieve organisational objectives and compete successfully in a dynamic business environment. Study themes: The strategic management process: an overview; Establishing company direction: developing a strategic vision, setting objectives and crafting a strategy; Industry and competitive analysis; Evaluating company resources and competitive capabilities; Strategy and competitive advantage; Tailoring strategy to fit specific industry and company situations; Strategy and competitive advantage; Evaluating the strategies of diversified companies; Building resource strengths and organisational capabilities; Managing the internal organisation to promote better strategy execution and Corporate culture and leadership - keys to effective strategy execution.",
+      "prerequisites": "Only for BComHons (Business Management) students.",
+      "nqf_level": 8,
+      "presentation_period": "Semester 1 or Semester 2",
+      "language": "Module is presented in English",
+      "contact_time": "5 block weeks of 3 hours each"
+    }
+  ],
+  "streams_by_year": {
+    "year_1": [],
+    "year_2": [],
+    "year_3": [],
+    "year_4": [],
+    "final_year": []
+  },
+  "stream_checks": {
+    "year_1_stream_count": 0,
+    "year_2_stream_count": 0,
+    "year_3_stream_count": 0,
+    "year_4_stream_count": 0,
+    "final_year_stream_count": 0,
+    "missing_stream_module_codes_in_catalog_by_year": {
+      "year_1": [],
+      "year_2": [],
+      "year_3": [],
+      "year_4": [],
+      "final_year": []
+    }
+  }
+}

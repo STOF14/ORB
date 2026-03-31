@@ -1,0 +1,140 @@
+{
+  "metadata": {
+    "year": 2026,
+    "degree_code": "01250218",
+    "degree_name": "MA in Research Psychology (Coursework)",
+    "faculty": "Humanities",
+    "faculty_code": "HUM",
+    "level": "Masters",
+    "source_url": "https://www.up.ac.za/yearbooks/2026/HUM-faculty/MA-programmes/view/01250218",
+    "duration_years": 2,
+    "total_credits": 180,
+    "nqf_level": 9,
+    "department": "Psychology"
+  },
+  "curriculum": [
+    {
+      "module_code": "PSY 801",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "PSY 802",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "PSY 803",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "PSY 804",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core"
+    }
+  ],
+  "module_catalog": [
+    {
+      "module_code": "PSY 801",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Research methodology 801",
+      "credits": 40.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/HUM-faculty/PG-modules/view/PSY 801",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "This module exposes students to research methodology, including quantitative and qualitative methodology, as well as mixed methods. Specific research methodology themes covered include the theoretical underpinnings of methodology, research designs/approaches, market and media research, data collection and analysis, and research ethics. Students will also receive training in the use of software to analyse data. The module will enable students to conceptualise, plan and execute rigorous research in a psychological context and expose them to a broad range of research techniques. This will equip students with the skills necessary to be flexible and adapt to the ever-changing research workplace. Instruction will be delivered through workshops, contact sessions and online materials.",
+      "prerequisites": "DS (Research Psychology)",
+      "nqf_level": 9,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "2 lectures per week"
+    },
+    {
+      "module_code": "PSY 802",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Project management 802",
+      "credits": 15.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/HUM-faculty/PG-modules/view/PSY 802",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "This module equips students with a diverse set of practical research skills to apply in various settings. Students are exposed to community research theory, programme monitoring and evaluation, and policy development. The research proposal sub-component of this module is included to assist students with completing their research proposals for approval by the Faculty.",
+      "prerequisites": "DS (Research Psychology)",
+      "nqf_level": 9,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "2 lectures per week"
+    },
+    {
+      "module_code": "PSY 803",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Psychological theory 803",
+      "credits": 25.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/HUM-faculty/PG-modules/view/PSY 803",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "The module introduces students to theories relevant to research in psychology. These theories deal with new developments related to Research Psychology, thus providing students opportunities to identify research problems and questions relevant to their own research. These theories include positive psychology, cognitive and behavioural neuroscience, environmental psychology, indigenous psychology and critical social psychology. In recognising the importance of curriculum transformation, emphasis will be placed on issues of diversity and inclusion and how this relates to research.",
+      "prerequisites": "DS (Research Psychology)",
+      "nqf_level": 9,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "2 lectures per week"
+    },
+    {
+      "module_code": "PSY 804",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Psychometrics 804",
+      "credits": 10.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/HUM-faculty/PG-modules/view/PSY 804",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "This module will demonstrate the process of test development from the perspective of Classical Test Theory (CTT) and Item Response Theory (IRT). Students are introduced to measurement theory, which includes an overview of measurement philosophy, true score theory, reliability, validity, item selection and use of statistical software. The specific IRT model constitutes the Rasch model allowing inspection of item fit, multidimensionality, bias, and related topics. Students are introduced to Winsteps and related software to enable them to do item calibration and IRT analysis. A brief introduction to how multidimensionality of tests can be assessed with Structural Equation Modeling (SEM) will also be included.",
+      "prerequisites": "DS (Research Psychology)",
+      "nqf_level": 9,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "1 lecture per week"
+    }
+  ],
+  "streams_by_year": {
+    "year_1": [],
+    "year_2": [],
+    "year_3": [],
+    "year_4": [],
+    "final_year": []
+  },
+  "stream_checks": {
+    "year_1_stream_count": 0,
+    "year_2_stream_count": 0,
+    "year_3_stream_count": 0,
+    "year_4_stream_count": 0,
+    "final_year_stream_count": 0,
+    "missing_stream_module_codes_in_catalog_by_year": {
+      "year_1": [],
+      "year_2": [],
+      "year_3": [],
+      "year_4": [],
+      "final_year": []
+    }
+  }
+}

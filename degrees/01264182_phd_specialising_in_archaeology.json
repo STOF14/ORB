@@ -1,0 +1,64 @@
+{
+  "metadata": {
+    "year": 2026,
+    "degree_code": "01264182",
+    "degree_name": "PhD specialising in Archaeology",
+    "faculty": "Humanities",
+    "faculty_code": "HUM",
+    "level": "Doctorate",
+    "source_url": "https://www.up.ac.za/yearbooks/2026/HUM-faculty/DO-programmes/view/01264182",
+    "duration_years": 2,
+    "total_credits": 360,
+    "nqf_level": 10,
+    "department": "Anthropology, Archaeology and Development Studies"
+  },
+  "curriculum": [
+    {
+      "module_code": "AGL 990",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core"
+    }
+  ],
+  "module_catalog": [
+    {
+      "module_code": "AGL 990",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Thesis: Archaeology 990",
+      "credits": 360.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/HUM-faculty/PG-modules/view/AGL 990",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "A comprehensive and original contribution to archaeological knowledge based on an approved research proposal and ethical clearance. The research must be expert and show the ability to work within and beyond disciplinary boundaries. Thesis must be between 50 000\u2013100 000 words and must substantively advance the state of knowledge in the discipline. The thesis must show mastery over advanced field and analytical techniques as well as sophisticated grasp and application of relevant archaeological theory. The entire project must be institutionally, socially and intellectually accountable, demonstrating an advanced grasp of what conducting archaeological research in a postcolonial context entails.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 10,
+      "presentation_period": "Year",
+      "language": "Module is presented in English"
+    }
+  ],
+  "streams_by_year": {
+    "year_1": [],
+    "year_2": [],
+    "year_3": [],
+    "year_4": [],
+    "final_year": []
+  },
+  "stream_checks": {
+    "year_1_stream_count": 0,
+    "year_2_stream_count": 0,
+    "year_3_stream_count": 0,
+    "year_4_stream_count": 0,
+    "final_year_stream_count": 0,
+    "missing_stream_module_codes_in_catalog_by_year": {
+      "year_1": [],
+      "year_2": [],
+      "year_3": [],
+      "year_4": [],
+      "final_year": []
+    }
+  }
+}

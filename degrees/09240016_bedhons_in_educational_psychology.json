@@ -1,0 +1,235 @@
+{
+  "metadata": {
+    "year": 2026,
+    "degree_code": "09240016",
+    "degree_name": "BEdHons in Educational Psychology",
+    "faculty": "Education",
+    "faculty_code": "EDU",
+    "level": "Honours",
+    "source_url": "https://www.up.ac.za/yearbooks/2026/EDU-faculty/HO-programmes/view/09240016",
+    "duration_years": 2,
+    "total_credits": 128,
+    "nqf_level": 8,
+    "department": "Educational Psychology"
+  },
+  "curriculum": [
+    {
+      "module_code": "EDS 711",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "ISA 731",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "KGG 730",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "LDS 730",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "LOT 730",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "NMQ 745",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "NMQ 755",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "NOS 780",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core"
+    }
+  ],
+  "module_catalog": [
+    {
+      "module_code": "EDS 711",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Philosophy and social imperatives of education 711",
+      "credits": 16.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EDU-faculty/PG-modules/view/EDS 711",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Meta-theories in education. Empiricism; rational empiricism; critical rationalism; critical theory; phenomenology; hermeneutics; system theory; philosophies in education: traditional philosophies; indigenous (African) philosophies. The influence of modernism and postmodernism on education. Sociological imperatives for education. Theories of societal change and roles and values of education. Comparative perspectives on learning theories and their meaning for education.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Semester 1",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "ISA 731",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Inclusive education 731",
+      "credits": 16.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EDU-faculty/PG-modules/view/ISA 731",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Theoretical basis and nature of learning diversity, learning problems/barriers to learning, learning disabilities, cognitive functioning and special educational needs. Background, principles and implementation of inclusive education policy. Principles and practical application of learning support. Identification, screening, informal assessment and support to learners who display spoken and written language, mathematics, perceptions and non-verbal learning difficulties.",
+      "prerequisites": null,
+      "nqf_level": 8,
+      "presentation_period": "Semester 2",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "KGG 730",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Socio-emotional health and wellbeing 730",
+      "credits": 16.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EDU-faculty/PG-modules/view/KGG 730",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "The Socio-emotional\u00a0health and wellbeing module is aimed at educating\u00a0students in the proactive promotion of\u00a0wellbeing through socio-emotional learning and socio-emotional competence. It lays the theoretical foundation for informing stakeholders how students, teachers, parents and significant caregivers can help, guide and support\u00a0(young) people\u00a0in order to understand how they act in the family system and society context. The module explores systemic support strategies in contexts of high need. The module furthermore aims to assist\u00a0students in developing\u00a0the socio-emotional skills of people (especially younger people).",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Semester 1 or Semester 2",
+      "language": "Module is presented in English",
+      "contact_time": "1 lecture per week"
+    },
+    {
+      "module_code": "LDS 730",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Learning diversity 730",
+      "credits": 16.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EDU-faculty/PG-modules/view/LDS 730",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "The Learning diversity module aims to introduce the theory of effective learning\u00a0and barriers to learning. It will discuss\u00a0enablers of\u00a0effective learning, how barriers to learning can be addressed, the implications of inclusion when accommodating learners with\u00a0barriers to learning, and how learning can be facilitated in multilingual contexts.\u00a0It reviews the assessment of difficulties in reading, spoken and written language, mathematics, perceptual development as well as non-verbal learning challenges.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Semester 1 or Semester 2",
+      "language": "Module is presented in English",
+      "contact_time": "1 lecture per week"
+    },
+    {
+      "module_code": "LOT 730",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Life design 730",
+      "credits": 16.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EDU-faculty/PG-modules/view/LOT 730",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "The Life design module aims to provide an overview of career theories with emphasis on the life design paradigm in a South African career counselling context. This module will equip students with the knowledge and skills required to provide meaningful and relevant career guidance services by applying the principles of major career theories alongside the principles of life design. Students will be introduced to using career information and education to foster career development. Students will learn how to facilitate the process of life design with learners in order to enable them to construct a career in equilibrium with other life demands.",
+      "prerequisites": "no prerequisites",
+      "nqf_level": 8,
+      "presentation_period": "Semester 1 or Semester 2",
+      "language": "Module is presented in English",
+      "contact_time": "1 lecture per week"
+    },
+    {
+      "module_code": "NMQ 745",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Educational research methodology 745",
+      "credits": 16.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EDU-faculty/PG-modules/view/NMQ 745",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "The nature of educational enquiry: contexts of research, research ethics, truth, rationality, subjectivity and objectivity; Quantitative and qualitative modes of enquiry, research designs and data collection techniques. Various approaches to qualitative research including case study research, historical research, ethnographic research, and action research. Basic concepts and principles of quantitative research. Statistical techniques in the educational research process. Survey methodology and questionnaire design. Classification and graphical representation of data. Descriptive measures. Statistical inference. Data-processing procedures. Parametric versus non-parametric tests. Some test statistics (e.g. F-Test and T-test). Formulating a research methodology for a limited project.",
+      "prerequisites": null,
+      "nqf_level": 8,
+      "presentation_period": "Semester 1",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "NMQ 755",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Part 1: Research proposal 755",
+      "credits": 16.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EDU-faculty/PG-modules/view/NMQ 755",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Guided literature research, formulation of a conceptual framework and development of a research proposal for a supervised research project of limited scope.",
+      "prerequisites": null,
+      "nqf_level": 8,
+      "presentation_period": "Semester 1",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "NOS 780",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Part 2: Research report 780",
+      "credits": 16.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EDU-faculty/PG-modules/view/NOS 780",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Supervised research project of limited scope. Application of quantitative and/or qualitative research methods. Writing a research report and presenting a research paper in a team. Classes will be directed towards using real-life examples from educational contexts, through which students learn the theory and methods associated with various approaches to research. It will includea sound foundation in the understanding of meta-theories and the application of the philosophical underpinnings within educational research.",
+      "prerequisites": "NMQ 755",
+      "nqf_level": 8,
+      "presentation_period": "Semester 2",
+      "language": "Module is presented in English"
+    }
+  ],
+  "streams_by_year": {
+    "year_1": [],
+    "year_2": [],
+    "year_3": [],
+    "year_4": [],
+    "final_year": []
+  },
+  "stream_checks": {
+    "year_1_stream_count": 0,
+    "year_2_stream_count": 0,
+    "year_3_stream_count": 0,
+    "year_4_stream_count": 0,
+    "final_year_stream_count": 0,
+    "missing_stream_module_codes_in_catalog_by_year": {
+      "year_1": [],
+      "year_2": [],
+      "year_3": [],
+      "year_4": [],
+      "final_year": []
+    }
+  }
+}

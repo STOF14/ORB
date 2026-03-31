@@ -1,0 +1,263 @@
+{
+  "metadata": {
+    "year": 2026,
+    "degree_code": "04252105",
+    "degree_name": "LLM specialising in Labour Law (Coursework)",
+    "faculty": "Law",
+    "faculty_code": "LAW",
+    "level": "Masters",
+    "source_url": "https://www.up.ac.za/yearbooks/2026/LAW-faculty/MA-programmes/view/04252105",
+    "duration_years": 1,
+    "total_credits": 200,
+    "nqf_level": 9,
+    "department": "Mercantile Law"
+  },
+  "curriculum": [
+    {
+      "module_code": "RHP 801",
+      "year_level": 1,
+      "is_compulsory": false,
+      "module_type": "elective"
+    },
+    {
+      "module_code": "RHP 803",
+      "year_level": 1,
+      "is_compulsory": false,
+      "module_type": "elective"
+    },
+    {
+      "module_code": "ASL 802",
+      "year_level": 8,
+      "is_compulsory": false,
+      "module_type": "elective"
+    },
+    {
+      "module_code": "CLL 802",
+      "year_level": 8,
+      "is_compulsory": false,
+      "module_type": "elective"
+    },
+    {
+      "module_code": "CSL 801",
+      "year_level": 8,
+      "is_compulsory": false,
+      "module_type": "elective"
+    },
+    {
+      "module_code": "ITA 802",
+      "year_level": 8,
+      "is_compulsory": false,
+      "module_type": "elective"
+    },
+    {
+      "module_code": "IVL 801",
+      "year_level": 8,
+      "is_compulsory": false,
+      "module_type": "elective"
+    },
+    {
+      "module_code": "MCA 810",
+      "year_level": 8,
+      "is_compulsory": false,
+      "module_type": "elective"
+    },
+    {
+      "module_code": "MND 800",
+      "year_level": 8,
+      "is_compulsory": false,
+      "module_type": "elective"
+    }
+  ],
+  "module_catalog": [
+    {
+      "module_code": "RHP 801",
+      "year_level": 1,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "Research methodology 801",
+      "credits": 5.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/LAW-faculty/PG-modules/view/RHP 801",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Planning and organising a research project Drafting a research proposal: Hypotheses and research question Theory in research and methodological approaches to legal research Language Citation and ethics of citation Drafting of chapters and presentation",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 9,
+      "presentation_period": "Semester 1 or Semester 2",
+      "language": "Module is presented in English",
+      "contact_time": "8 seminars or block sessions"
+    },
+    {
+      "module_code": "RHP 803",
+      "year_level": 1,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "Research proposal 803",
+      "credits": 5.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/LAW-faculty/PG-modules/view/RHP 803",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Development and presentation of a research\u00a0 proposal. (A research proposal must be submitted to the supervisor and accepted in the first semester of the second year of study\u00a0 before the student will be allowed to register for the mini-dissertation.)",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 9,
+      "presentation_period": "Year",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "ASL 802",
+      "year_level": 8,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "Administrative law 802",
+      "credits": 30.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/LAW-faculty/PG-modules/view/ASL%20802",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 2,
+      "content": "An advanced study of a selection of topics in the administrative law",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 9,
+      "presentation_period": "Semester 1 or Semester 2",
+      "language": "Module is presented in English",
+      "contact_time": "2 lectures per week"
+    },
+    {
+      "module_code": "CLL 802",
+      "year_level": 8,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "Collective labour law 802",
+      "credits": 30.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/LAW-faculty/PG-modules/view/CLL%20802",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 2,
+      "content": "This module covers the following aspects: International perspectives and the South African Constitution Freedom of association and the duty to collective bargaining Strikes and lockouts Private and compulsory dispute resolution Unfair discrimination and affirmative action",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 9,
+      "presentation_period": "Semester 1 or Semester 2",
+      "language": "Module is presented in English",
+      "contact_time": "2 lectures per week"
+    },
+    {
+      "module_code": "CSL 801",
+      "year_level": 8,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "Constitutional law 801",
+      "credits": 30.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/LAW-faculty/PG-modules/view/CSL%20801",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 2,
+      "content": "(a) Revisiting the concept of constitutional supremacy and its interaction with popular sovereignity (b) Constitutional dynamics \u2013 (tacit) constitutional change in ways not constitutionally authorised (c) A critical reassessment of separation of powers, judicial independence and impartiality and the impact of judicial review in the contemporary state (d) Consideration of legality and constitutionality in view of relevant South African case law (e) The foundation of the state, effectiveness and legitimacy particularly in the face of rampant violent crime (f) Co-operative government in South African constitutional practice (g) Constitutional values with specific reference to democracy in the South African constitution (h) The legal claims of communities in contemporary constitutional law (i) New trends in South African constitutional jurisprudence and the local and international scholarly discourse",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 9,
+      "presentation_period": "Semester 1",
+      "language": "Module is presented in English",
+      "contact_time": "2 lectures per week"
+    },
+    {
+      "module_code": "ITA 802",
+      "year_level": 8,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "International labour law 802",
+      "credits": 30.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/LAW-faculty/PG-modules/view/ITA%20802",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 2,
+      "content": "This module covers aspects of international labour law and includes: International instruments (ILO and EU) Employment equity Termination of contracts of employment Collective bargaining and strikes",
+      "prerequisites": null,
+      "nqf_level": 9,
+      "presentation_period": "Semester 1",
+      "language": "Module is presented in English",
+      "contact_time": "2 lectures per week"
+    },
+    {
+      "module_code": "IVL 801",
+      "year_level": 8,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "Individual labour law 801",
+      "credits": 30.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/LAW-faculty/PG-modules/view/IVL%20801",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 2,
+      "content": "Advanced study of: Employment contract: essentialia and duties of parties Application and scope of Labour Relations Act of 1995 Unfair labour practices Unfair dismissal Retrenchment and transfer of employment contracts",
+      "prerequisites": null,
+      "nqf_level": 9,
+      "presentation_period": "Semester 1",
+      "language": "Module is presented in English",
+      "contact_time": "2 lectures per week"
+    },
+    {
+      "module_code": "MCA 810",
+      "year_level": 8,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "Mediation, conciliation, arbitration 810",
+      "credits": 30.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/LAW-faculty/PG-modules/view/MCA 810",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "The topics covered include: Mediation practice, techniques, theory. Conciliation practice, techniques, theory. Arbitration practice, techniques, theory Practical case studies and practical training",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 9,
+      "presentation_period": "Semester 1",
+      "language": "Module is presented in English",
+      "contact_time": "2 lectures per week"
+    },
+    {
+      "module_code": "MND 800",
+      "year_level": 8,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "Mini-dissertation 800",
+      "credits": 100.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/LAW-faculty/PG-modules/view/MND 800",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "The student must submit a research proposal during his/her first year of registration for the LLM degree to the supervisor prior to commencing with the writing of the mini-dissertation. A mini-dissertation (MND 800) of 13 000 to 15 000 words inclusive of footnotes but excluding the list of contents and the bibliography, is required. The mini-dissertation must be submitted to the supervisor not later than August of the second year of registration for the LLM programme. The mini-dissertation must deal with the subject content of one of the modules or a combination of the modules registered for by the student for his/her LLM degree. Any request for an extension of the period for submission of the mini-dissertation may only be granted by the Dean on recommendation of the LLM Committee",
+      "prerequisites": "RHP 801 and RHP 803",
+      "nqf_level": 9,
+      "presentation_period": "Year",
+      "language": "Module is presented in English"
+    }
+  ],
+  "streams_by_year": {
+    "year_1": [],
+    "year_2": [],
+    "year_3": [],
+    "year_4": [],
+    "final_year": []
+  },
+  "stream_checks": {
+    "year_1_stream_count": 0,
+    "year_2_stream_count": 0,
+    "year_3_stream_count": 0,
+    "year_4_stream_count": 0,
+    "final_year_stream_count": 0,
+    "missing_stream_module_codes_in_catalog_by_year": {
+      "year_1": [],
+      "year_2": [],
+      "year_3": [],
+      "year_4": [],
+      "final_year": []
+    }
+  }
+}

@@ -1,0 +1,262 @@
+{
+  "metadata": {
+    "year": 2026,
+    "degree_code": "07240149",
+    "degree_name": "BComHons specialising in Supply Chain Management",
+    "faculty": "Economic and Management Sciences",
+    "faculty_code": "EMS",
+    "level": "Honours",
+    "source_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/HO-programmes/view/07240149",
+    "duration_years": 1,
+    "total_credits": 120,
+    "nqf_level": 8,
+    "department": "Business Management"
+  },
+  "curriculum": [
+    {
+      "module_code": "GLB 780",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "GLB 788",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "OBS 782",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "OBS 783",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "OBS 784",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "OBS 785",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "OBS 786",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "OBS 787",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "OBS 790",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    }
+  ],
+  "module_catalog": [
+    {
+      "module_code": "GLB 780",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Yearbooks Home",
+      "credits": null,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/PG-modules/view/GLB%20780",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 2,
+      "content": null,
+      "prerequisites": null,
+      "nqf_level": null,
+      "presentation_period": null,
+      "language": null
+    },
+    {
+      "module_code": "GLB 788",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Strategic supply chain management 788",
+      "credits": 15.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/PG-modules/view/GLB 788",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "The purpose of this module is to have students gain insight and perspective into the integrated total materials flow through the enterprise to the target market. Study themes: Logistics management in perspective; The materials supply activities required for operations; Supporting the activities of materials supply; Physical transformation of materials during the production process with emphasis on operations planning and control; Support of logistics management including physical distribution; Assessment of logistics performance and Logistics management \u2013 an integrated context. Global dimensions of supply chain management; supply chain structure, processes and trade-offs; key strategic principles; distribution and omni-channel network design; demand management; order management; customer service; managing fulfilment; aligning supply chains; supply chain performance measurement; supply chain technology; strategic supply chain challenges and the supply chain of the future.",
+      "prerequisites": "Only students registered for BComHons (Supply Chain Management)",
+      "nqf_level": 8,
+      "presentation_period": "Semester 1 or Semester 2",
+      "language": "Module is presented in English",
+      "contact_time": "15 contact hours"
+    },
+    {
+      "module_code": "OBS 782",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Strategic operations management 782",
+      "credits": 20.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/PG-modules/view/OBS 782",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "The module focuses on the design, implementation and analysis of an operations management strategy; the role of operations management and the relationship between operations, products and services; contemporary trends and innovations in operations management; aims of an operations strategy and how operations strategy develops over time; designing a product operations strategy and the appropriate strategic fit to the environment, designing the services operations strategy and the appropriate strategic fit to the environment; implementing the operations strategy and how global and dynamic contexts affects the implementation; analysing the operations strategy and measurement of the operations strategy.",
+      "prerequisites": "Only students registered for BComHons (Supply Chain Management) or BComHons (Business Management)",
+      "nqf_level": 8,
+      "presentation_period": "Semester 1 or Semester 2",
+      "language": "Module is presented in English",
+      "contact_time": "15 contact hours"
+    },
+    {
+      "module_code": "OBS 783",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Yearbooks Home",
+      "credits": null,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/PG-modules/view/OBS%20783",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 2,
+      "content": null,
+      "prerequisites": null,
+      "nqf_level": null,
+      "presentation_period": null,
+      "language": null
+    },
+    {
+      "module_code": "OBS 784",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Yearbooks Home",
+      "credits": null,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/PG-modules/view/OBS%20784",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 2,
+      "content": null,
+      "prerequisites": null,
+      "nqf_level": null,
+      "presentation_period": null,
+      "language": null
+    },
+    {
+      "module_code": "OBS 785",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Analytical decision-making 785",
+      "credits": 15.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/PG-modules/view/OBS 785",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "The module aims to inform future managers, consultants, and advisors on the psychological processes and biases underlying the decisions made by customers, competitors, colleagues, and themselves, with emphasis on how to incorporate such insights into business. This course will provide new insights into a personal approach to decision-making and enable the development of thinking and influencing skills required for effective strategic decisions, especially when faced with complex or ambiguous situations. Business analytics is covered within the context of decision-making. In addition, an applied decision-making aspect will focus on mastering quantitative modelling tools and techniques for business decision-making and deterministic optimisation techniques.",
+      "prerequisites": "Only students registered for BComHons (Supply Chain Management) or BComHons (Business Management).",
+      "nqf_level": 8,
+      "presentation_period": "Semester 1 or Semester 2",
+      "language": "Module is presented in English",
+      "contact_time": "5 block weeks of 3 hours each"
+    },
+    {
+      "module_code": "OBS 786",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Procurement and supply management 786",
+      "credits": 15.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/PG-modules/view/OBS 786",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "The focus of the module is on procurement as a strategic function within the firm; the role of procurement and supply management in the supply chain; drivers and challenges within procurement; supply processes and technology; needs identification and specification-category of needs, volume, determining the right price to pay for the right value; strategic cost management; cost management tools and techniques; negotiation and contracting; make versus buy decisions; supplier selection and development; supplier evaluation; supplier assessment methods and supplier ranking; E-procurement-approaches, benefits and limitations; supplier relationship management; suppliers as a source of innovation; total cost of ownership; global supply management; reasons and challenges of global sourcing; incoterms; corporate social responsibility (CSR) in procurement; sustainability in procurement.",
+      "prerequisites": "Only students registered for BComHons (Supply Chain Management).",
+      "nqf_level": 8,
+      "presentation_period": "Semester 1 or Semester 2",
+      "language": "Module is presented in English",
+      "contact_time": "15 contact hours"
+    },
+    {
+      "module_code": "OBS 787",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Physical distribution management 787",
+      "credits": 15.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/PG-modules/view/OBS 787",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "The integrated nature of inventory, transportation and warehousing management within the supply chain is analysed. Optimisation techniques and strategies enable students to systematically rationalise inventory levels and improve warehousing and transportation performance from a cost and customer service perspective. Key topics to be covered includes: Planning to fine tune inventory holding; distribution requirements planning; functionalities of inventory optimisation tools; vendor managed inventory process; optimising warehouse costs; warehouse risk management assessment; optimising transport mode selection; evaluating freight market and selecting appropriate carriers, transport supplier agreements; optimising transport scheduling; reverse logistics systems; designing a distribution network; key performance indicators to improve inventory levels and warehouse and transportation operations; selecting appropriate information technology systems.",
+      "prerequisites": "Only students registered for BComHons (Supply Chain Management).",
+      "nqf_level": 8,
+      "presentation_period": "Semester 1 or Semester 2",
+      "language": "Module is presented in English",
+      "contact_time": "15 contact hours"
+    },
+    {
+      "module_code": "OBS 790",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Research report 790",
+      "credits": 40.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/PG-modules/view/OBS 790",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "The purpose of this module is to introduce students to the nature and the role of research in a business enterprise so that they will be able to conduct and utilise research. Study themes: The role of research in an enterprise; Conceptualisation and the scientific thinking process; The research process; Research planning and design; Data gathering and analysis; and Reporting of research results. The purpose of this module is to guide students through the process of planning a small-scale academic research study in the field of Business Management, collecting and analysing empirical data, and presenting the findings of the study in the form of a research article. Students will be guided to develop a research proposal for the research study during the first semester. During the second semester, students will be guided to collect and analyse the required data and to write a research article. Students will only be allowed to continue with the execution of their research projects (i.e., with the collection and analysis of data and the writing of a research article) during the second semester, if they have obtained a progress mark of at least 50% and passed the final research proposal at the end of the first semester with a sub-minimum mark of 50% 1 lecture per week during the first semester and ad hoc workshops during the second semester",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "1 lecture per week S1, ad hoc"
+    }
+  ],
+  "streams_by_year": {
+    "year_1": [],
+    "year_2": [],
+    "year_3": [],
+    "year_4": [],
+    "final_year": []
+  },
+  "stream_checks": {
+    "year_1_stream_count": 0,
+    "year_2_stream_count": 0,
+    "year_3_stream_count": 0,
+    "year_4_stream_count": 0,
+    "final_year_stream_count": 0,
+    "missing_stream_module_codes_in_catalog_by_year": {
+      "year_1": [],
+      "year_2": [],
+      "year_3": [],
+      "year_4": [],
+      "final_year": []
+    }
+  }
+}

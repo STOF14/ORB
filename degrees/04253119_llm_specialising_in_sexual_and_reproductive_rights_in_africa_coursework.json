@@ -1,0 +1,263 @@
+{
+  "metadata": {
+    "year": 2026,
+    "degree_code": "04253119",
+    "degree_name": "LLM specialising in Sexual and Reproductive Rights in Africa (Coursework)",
+    "faculty": "Law",
+    "faculty_code": "LAW",
+    "level": "Masters",
+    "source_url": "https://www.up.ac.za/yearbooks/2026/LAW-faculty/MA-programmes/view/04253119",
+    "duration_years": 1,
+    "total_credits": 200,
+    "nqf_level": 9,
+    "department": "Centre for Human Rights"
+  },
+  "curriculum": [
+    {
+      "module_code": "RHP 803",
+      "year_level": 1,
+      "is_compulsory": false,
+      "module_type": "elective"
+    },
+    {
+      "module_code": "NRM 801",
+      "year_level": 2,
+      "is_compulsory": false,
+      "module_type": "elective"
+    },
+    {
+      "module_code": "HRA 802",
+      "year_level": 8,
+      "is_compulsory": false,
+      "module_type": "elective"
+    },
+    {
+      "module_code": "HRA 803",
+      "year_level": 8,
+      "is_compulsory": false,
+      "module_type": "elective"
+    },
+    {
+      "module_code": "HRA 804",
+      "year_level": 8,
+      "is_compulsory": false,
+      "module_type": "elective"
+    },
+    {
+      "module_code": "HRA 805",
+      "year_level": 8,
+      "is_compulsory": false,
+      "module_type": "elective"
+    },
+    {
+      "module_code": "HRA 806",
+      "year_level": 8,
+      "is_compulsory": false,
+      "module_type": "elective"
+    },
+    {
+      "module_code": "HRA 807",
+      "year_level": 8,
+      "is_compulsory": false,
+      "module_type": "elective"
+    },
+    {
+      "module_code": "MND 802",
+      "year_level": 8,
+      "is_compulsory": false,
+      "module_type": "elective"
+    }
+  ],
+  "module_catalog": [
+    {
+      "module_code": "RHP 803",
+      "year_level": 1,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "Research proposal 803",
+      "credits": 5.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/LAW-faculty/PG-modules/view/RHP 803",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Development and presentation of a research\u00a0 proposal. (A research proposal must be submitted to the supervisor and accepted in the first semester of the second year of study\u00a0 before the student will be allowed to register for the mini-dissertation.)",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 9,
+      "presentation_period": "Year",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "NRM 801",
+      "year_level": 2,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "Research methodology for human rights 801",
+      "credits": 5.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/LAW-faculty/PG-modules/view/NRM 801",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "In this module, the focus is on aspects of human rights research, fact finding, advocacy and education.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 9,
+      "presentation_period": "Semester 1",
+      "language": "Module is presented in English",
+      "contact_time": "2 lectures per week"
+    },
+    {
+      "module_code": "HRA 802",
+      "year_level": 8,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "International human rights law relevant to sexual and reproductive rights in Africa 802",
+      "credits": 15.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/LAW-faculty/PG-modules/view/HRA 802",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "The focus of this module is on the principles and processes of international human rights law at the global and regional level, and their relevance to issues of reproductive and sexual health and to the situation of sexual minorities, with specific reference to Africa. Topics include: History, philosophy and ideology of human rights, with particular reference to Africa Basic concepts of international and national human rights law The global (UN) system of human rights protection: norms, institutions, procedures, and their relevance to reproductive and sexual rights The African (African Union) system of human rights protection: norms, institutions, procedures, and their relevance to reproductive and sexual rights (placed in comparative perspective, with reference to European and inter-American systems) The actual and potential role of regional economic communities regional level) in Africa in the protection of human rights in Africa, with specific reference to reproductive and sexual rights An overview of human rights protection at the domestic level, with specific reference to selected African states Understanding the role of international human rights mechanisms in the protection of sexual minorities",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 9,
+      "presentation_period": "Semester 1",
+      "language": "Module is presented in English",
+      "contact_time": "30 contact hours per semester"
+    },
+    {
+      "module_code": "HRA 803",
+      "year_level": 8,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "Applying human rights principles to realise sexual and reproductive health rights claims 803",
+      "credits": 15.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/LAW-faculty/PG-modules/view/HRA 803",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "The focus of this module is on the application of human rights principles to reproductive and sexual health with a view to realising claims on these rights at domestic, regional and global levels.\u00a0Topics include: Applying human rights to sexual and reproductive health, including the rights\u00a0to equality, life, human dignity, freedom from inhuman and degrading\u00a0treatment, health, information, education, reproductive self-determination,\u00a0maternity protection in employment, liberty and security of the person, and\u00a0privacy. Developing a sexual and reproductive rights claim through identifying the\u00a0reproductive health wrong, its causes and the wrongdoer; documenting the\u00a0alleged wrongs; determining which laws are implicated, identifying human rights standards for determining breach of a reproductive right. Advancing a sexual and reproductive rights claim at the domestic level with\u00a0reference to realising reproductive rights through regulatory and disciplinary\u00a0procedures, courts of law, alternative dispute resolution, domestic human\u00a0rights institutions, and ombudspersons. Advancing a sexual and reproductive rights claim at the regional and sub-regional levels with reference to realising reproductive rights through African\u00a0regional and sub-regional institutions. Advancing a sexual and reproductive rights claim at the global level with\u00a0particular reference to realising reproductive rights through United Nations\u00a0treaty monitoring bodies. Drawing lessons from comparable regional human rights systems with\u00a0particular reference to the European and Inter-American regional human\u00a0rights systems.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 9,
+      "presentation_period": "Semester 1",
+      "language": "Module is presented in English",
+      "contact_time": "30 contact hours per semester"
+    },
+    {
+      "module_code": "HRA 804",
+      "year_level": 8,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "Applying human rights principles to selected reproductive health issues in Africa 804",
+      "credits": 15.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/LAW-faculty/PG-modules/view/HRA 804",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "The focus of this module is on the application of human rights principles to discrete reproductive health issues with a view to developing human rights responses to contemporary reproductive health challenges in the African region.\u00a0Topics include: Contraception Domestic violence Female genital cutting Infertility and medical-assisted reproduction Maternal death Sexual violence in times of conflict Sexuality and reproductive health education Trafficking in women and children Unsafe abortion",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 9,
+      "presentation_period": "Semester 2",
+      "language": "Module is presented in English",
+      "contact_time": "30 contact hours per semester"
+    },
+    {
+      "module_code": "HRA 805",
+      "year_level": 8,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "Applying human rights principles to selected sexual rights and sexuality issues in Africa 805",
+      "credits": 15.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/LAW-faculty/PG-modules/view/HRA 805",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "The focus of this module is on the application of human rights principles to selected issues related to sexual and sexuality issues in Africa, with a view to developing human rights responses to related contemporary challenges in the African region. Topics include: Overview of relevant concepts The foundation of sexual rights in international human rights instruments Sexual norms and gender stereotypes Sex work and human rights Sexual coercion and abuse Sexually transmitted infections including HIV and rights relating to\u00a0information and prevention The right to comprehensive sexual education Harmful traditional practices that violate sexual rights Link between sexual rights and reproductive health rights Advocacy strategies for sexual rights",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 9,
+      "presentation_period": "Semester 1",
+      "language": "Module is presented in English",
+      "contact_time": "30 contact hours per semester"
+    },
+    {
+      "module_code": "HRA 806",
+      "year_level": 8,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "Applying human rights principles to selected rights of sexual minorities in Africa 806",
+      "credits": 15.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/LAW-faculty/PG-modules/view/HRA 806",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "The focus of this module is on the application of human rights principles to selected issues affecting sexual minorities in Africa, with a view to developing human rights responses to related contemporary challenges in the African region.\u00a0Topics include: Providing a critical understanding of the concepts \u2018sexual orientation\u2019\u00a0and \u2018gender identity', \u2018homosexual\u2019, \u2018bisexual\u2019, \u2018gay\u2019, \u2018lesbian\u2019, \u2018transgender\u2019,\u00a0\u2018intersex\u2019, \u2018sexual minority\u2019, \u2018heterosexism\u2019, and \u2018queer\u2019 Understanding theories on the psychology, biology and sociobiology of\u00a0homosexuality Investigating the global history of homosexuality, particularly in the \u2018West\u2019\u00a0(USA and Britain) and its influence on Africa Investigating the evolution of homosexuality and society in Africa, including\u00a0an anthropological review of homosexuality in traditional African societies,\u00a0and under colonialism and in post-colonial Africa Understanding the nature of the violation of rights of \u2018sexual minorities\u2019\u00a0including violations to the rights to health; discrimination based on actual\u00a0or presumed sexual orientation, gender identity and HIV status; sexual and\u00a0other forms of violence; violations of the right to privacy; stigmatisation and\u00a0its consequences) particularly by states and non-state actors in Africa Understanding the reasons for rights violations and homophobia in Africa by\u00a0investigating the role of culture/tradition, religion and majoritarianism Considering the role of public policy, by focusing on the need and\u00a0possibilities for legal reform, and strategies to sensitise communities for\u00a0the rights of sexual minorities and change homophobic attitudes",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 9,
+      "presentation_period": "Semester 1",
+      "language": "Module is presented in English",
+      "contact_time": "30 contact hours per semester"
+    },
+    {
+      "module_code": "HRA 807",
+      "year_level": 8,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "Research and adv to realise sexual, reprod health and sexual minority rights claims in Africa 807",
+      "credits": 15.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/LAW-faculty/PG-modules/view/HRA 807",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "This module aims to equip students with the skills for advocacy of and to conduct research on sexual and reproductive health issues, with a view to the realisation of these rights and the rights of sexual minorities in Africa.\u00a0Topics include: Defining human rights violations Analysing root causes of human rights violations Social sciences research methods Investigating facts and gathering evidence Conducting interviews Strategic thinking including developing strategic partnerships Advanced legal reasoning and legal writing Strategic impact litigation Negotiation and mediation Media advocacy Engaging government and other stakeholders Conducting a practical exercise as simulation of an actual intervention to\u00a0decrease stigma and increase sensitisation and acceptance of the rights of\u00a0LGBTI communities in the context of the country in which the students find\u00a0themselves.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 9,
+      "presentation_period": "Semester 1",
+      "language": "Module is presented in English",
+      "contact_time": "30 contact hours per semester"
+    },
+    {
+      "module_code": "MND 802",
+      "year_level": 8,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "Mini-dissertation 802",
+      "credits": 100.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/LAW-faculty/PG-modules/view/MND 802",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "The student must submit a research proposal during his/her first year of registration for the LLM degree to the supervisor prior to commencing with the writing of the mini-dissertation. A mini-dissertation (MND 802) of 18 000 to 20 000 words inclusive of footnotes but excluding the list of contents and the bibliography, is required. The mini-dissertation must be submitted to the study leader not later than August of the second year of registration for the LLM programme. The mini-dissertation must deal with the subject content of one of the modules or a combination of the modules registered for by the student for his/her LLM degree. Any request for an extension of the period for submission of the mini-dissertation may only be granted by the Dean on recommendation of the LLM Committee.",
+      "prerequisites": "NRM 801 and RHP 803",
+      "nqf_level": 9,
+      "presentation_period": "Year",
+      "language": "Module is presented in English"
+    }
+  ],
+  "streams_by_year": {
+    "year_1": [],
+    "year_2": [],
+    "year_3": [],
+    "year_4": [],
+    "final_year": []
+  },
+  "stream_checks": {
+    "year_1_stream_count": 0,
+    "year_2_stream_count": 0,
+    "year_3_stream_count": 0,
+    "year_4_stream_count": 0,
+    "final_year_stream_count": 0,
+    "missing_stream_module_codes_in_catalog_by_year": {
+      "year_1": [],
+      "year_2": [],
+      "year_3": [],
+      "year_4": [],
+      "final_year": []
+    }
+  }
+}

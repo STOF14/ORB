@@ -1,0 +1,189 @@
+{
+  "metadata": {
+    "year": 2026,
+    "degree_code": "02240278",
+    "degree_name": "BScHons in Actuarial Science",
+    "faculty": "Natural and Agricultural Sciences",
+    "faculty_code": "SCI",
+    "level": "Honours",
+    "source_url": "https://www.up.ac.za/yearbooks/2026/SCI-faculty/HO-programmes/view/02240278",
+    "duration_years": 1,
+    "total_credits": 135,
+    "nqf_level": 8,
+    "department": "Actuarial Science"
+  },
+  "curriculum": [
+    {
+      "module_code": "FNI 700",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective"
+    },
+    {
+      "module_code": "IAS 712",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective"
+    },
+    {
+      "module_code": "IAS 721",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective"
+    },
+    {
+      "module_code": "IAS 722",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective"
+    },
+    {
+      "module_code": "LEW 700",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective"
+    },
+    {
+      "module_code": "NPN 780",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective"
+    }
+  ],
+  "module_catalog": [
+    {
+      "module_code": "FNI 700",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "Finance and investment 700",
+      "credits": 40.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/SCI-faculty/PG-modules/view/FNI 700",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "The application of modern techniques in financial management to the financing of corporate entities and the management of assets. Topics include: the theory of finance, valuation of investments, asset modelling, capital structure and the cost of capital, portfolio management, capital project appraisal and performance management.",
+      "prerequisites": null,
+      "nqf_level": 8,
+      "presentation_period": "Semester 2",
+      "language": "Module is presented in English",
+      "contact_time": "2 practicals per week, 2 lectures per week"
+    },
+    {
+      "module_code": "IAS 712",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "Actuarial risk management 712",
+      "credits": 50.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/SCI-faculty/PG-modules/view/IAS 712",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Surplus management. Mergers, acquisitions, insolvency and closure. Options and guarantees. Stakeholders. External environment. Regulation. Introduction to financial products and customer needs. Benefits overview and providers of benefits. Life insurance overview and life products. General insurance overview and products. Cash flows of simple products. Contract design. Project management. Capital project appraisal. Money markets. Bond markets. Equity markets. Property markets. Futures and options. Collective investment schemes. Overseas markets. Economic influences on investment markets. Other influences on investment markets. Relationship between returns on asset classes. Valuation of individual investments. Valuation of asset classes and portfolios. Investment strategy \u2013 institutions. Investment strategy \u2013 individuals. Developing an investment strategy. Modelling. Data. Setting assumptions. Expenses. Pricing and financing strategies. Discontinuance. Valuing liabilities. Accounting and disclosure. Surplus and surplus management. Sources of risk. Risks in benefit schemes. Pricing and insuring risks. The risk Management process. Risk management tools. Capital management. Monitoring.",
+      "prerequisites": null,
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "4 lectures per week, 2 practicals per week"
+    },
+    {
+      "module_code": "IAS 721",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "Enterprise risk management 721",
+      "credits": 40.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/SCI-faculty/PG-modules/view/IAS 721",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "ERM framework. External risk frameworks. Stakeholders. Risk appetite. The risk management function. Risk management processes. Risk identification and assessment. Risk classification. Risk Measurement. Risk modelling. Analysis of data. Copulas. Fitting models. Extreme Value Theory. The use of models in ERM. Analysis of selected risks. Risk optimisation and risk responses. Risk management of selected risks. Economic Capital.",
+      "prerequisites": null,
+      "nqf_level": 8,
+      "presentation_period": "Semester 2",
+      "language": "Module is presented in English",
+      "contact_time": "2 lectures per week, 2 practicals per week"
+    },
+    {
+      "module_code": "IAS 722",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "Actuarial communication 722",
+      "credits": 15.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/SCI-faculty/PG-modules/view/IAS 722",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Communicating technical actuarial concepts effectively, the drafting process of a document, planning and structure of a document or presentation, style and tone of a document or presentation.\u00a0 Drafting documents (letters, reports, discussion documents, memos, emails).\u00a0 Presentations (preparation and delivery, follow up, designing visual aids).",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Semester 2",
+      "language": "Module is presented in English",
+      "contact_time": "2 lectures per week"
+    },
+    {
+      "module_code": "LEW 700",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "Life assurance 700",
+      "credits": 40.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/SCI-faculty/PG-modules/view/LEW 700",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "The following aspects of the operation of a life insurance company are covered: General business environment; products offered; asset shares for life insurance contracts; with-profits surplus distribution; actuarial funding; models; setting of assumptions; aspects of products design; alterations to contracts; development and maintenance; investment; risk management procedures including reinsurance and underwriting; cost of guarantees; policy data checks; capital management and the actuarial control cycle. Modelling and monitoring policy cashflows for purposes of pricing, profit analysis, statutory valuation reserves and ongoing solvency.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Semester 2",
+      "language": "Module is presented in English",
+      "contact_time": "2 practicals per week, 2 lectures per week"
+    },
+    {
+      "module_code": "NPN 780",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "Research project 780",
+      "credits": 30.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/SCI-faculty/PG-modules/view/NPN 780",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "The research project is compulsory. A detailed project proposal should be submitted to the head of department by a prescribed date for approval, as described in the departmental document in this regard.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English"
+    }
+  ],
+  "streams_by_year": {
+    "year_1": [],
+    "year_2": [],
+    "year_3": [],
+    "year_4": [],
+    "final_year": []
+  },
+  "stream_checks": {
+    "year_1_stream_count": 0,
+    "year_2_stream_count": 0,
+    "year_3_stream_count": 0,
+    "year_4_stream_count": 0,
+    "final_year_stream_count": 0,
+    "missing_stream_module_codes_in_catalog_by_year": {
+      "year_1": [],
+      "year_2": [],
+      "year_3": [],
+      "year_4": [],
+      "final_year": []
+    }
+  }
+}

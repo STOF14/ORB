@@ -1,0 +1,165 @@
+{
+  "metadata": {
+    "year": 2026,
+    "degree_code": "10247018",
+    "degree_name": "BRadHons in Nuclear Medicine",
+    "faculty": "Health Sciences",
+    "faculty_code": "MED",
+    "level": "Honours",
+    "source_url": "https://www.up.ac.za/yearbooks/2026/MED-faculty/HO-programmes/view/10247018",
+    "duration_years": 1,
+    "total_credits": 120,
+    "nqf_level": 8,
+    "department": "Radiography"
+  },
+  "curriculum": [
+    {
+      "module_code": "INX 700",
+      "year_level": 2,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "KDE 700",
+      "year_level": 2,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "NVB 700",
+      "year_level": 2,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "RDF 700",
+      "year_level": 2,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "RSK 700",
+      "year_level": 2,
+      "is_compulsory": true,
+      "module_type": "core"
+    }
+  ],
+  "module_catalog": [
+    {
+      "module_code": "INX 700",
+      "year_level": 2,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Instrumentation 700",
+      "credits": 25.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/MED-faculty/PG-modules/view/INX 700",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "PET/CT. PET/MRI. Hybrid image reconstruction technology.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "1 lecture per week, 1 discussion class per week, 1 practical per week"
+    },
+    {
+      "module_code": "KDE 700",
+      "year_level": 2,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Nuclear medicine 700",
+      "credits": 30.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/MED-faculty/PG-modules/view/KDE 700",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Advanced imaging and processing techniques. Procedures involving the use of emerging technologies and radiopharmaceuticals. Paediatric nuclear medicine diagnostic imaging. Management and administration of therapeutic radiopharmaceuticals. Radiation safety aspects. Comprehensive quality assurance and unit management. Establishing nuclear medicine services. Advanced concepts, current quality management theory, accreditation, and audit documentation. Basic principles and practices necessary for effective supervision and leadership in a healthcare environment. Principles and practices in human resource management in healthcare settings.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "1 practical per week, 1 lecture per week, 1 discussion class per week"
+    },
+    {
+      "module_code": "NVB 700",
+      "year_level": 2,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Research principles 700",
+      "credits": 5.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/MED-faculty/PG-modules/view/NVB 700",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Development and submission of a research protocol.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Semester 1",
+      "language": "Module is presented in English",
+      "contact_time": "1 discussion class per week"
+    },
+    {
+      "module_code": "RDF 700",
+      "year_level": 2,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Radiopharmacology 700",
+      "credits": 30.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/MED-faculty/PG-modules/view/RDF 700",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Radiopharmaceutical development trial processes and novel applications.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "1 lecture per week, 1 discussion class per week, 1 seminar per week"
+    },
+    {
+      "module_code": "RSK 700",
+      "year_level": 2,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Research report: Radiography 700",
+      "credits": 30.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/MED-faculty/PG-modules/view/RSK 700",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Continuation of the research process which includes the implementation of the approved research protocol and writing up a research essay of the completed research project.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "as scheduled with study leader"
+    }
+  ],
+  "streams_by_year": {
+    "year_1": [],
+    "year_2": [],
+    "year_3": [],
+    "year_4": [],
+    "final_year": []
+  },
+  "stream_checks": {
+    "year_1_stream_count": 0,
+    "year_2_stream_count": 0,
+    "year_3_stream_count": 0,
+    "year_4_stream_count": 0,
+    "final_year_stream_count": 0,
+    "missing_stream_module_codes_in_catalog_by_year": {
+      "year_1": [],
+      "year_2": [],
+      "year_3": [],
+      "year_4": [],
+      "final_year": []
+    }
+  }
+}

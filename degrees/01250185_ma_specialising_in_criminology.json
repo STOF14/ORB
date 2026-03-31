@@ -1,0 +1,64 @@
+{
+  "metadata": {
+    "year": 2026,
+    "degree_code": "01250185",
+    "degree_name": "MA specialising in Criminology",
+    "faculty": "Humanities",
+    "faculty_code": "HUM",
+    "level": "Masters",
+    "source_url": "https://www.up.ac.za/yearbooks/2026/HUM-faculty/MA-programmes/view/01250185",
+    "duration_years": 1,
+    "total_credits": 180,
+    "nqf_level": 9,
+    "department": "Social Work and Criminology"
+  },
+  "curriculum": [
+    {
+      "module_code": "KRM 890",
+      "year_level": 8,
+      "is_compulsory": true,
+      "module_type": "core"
+    }
+  ],
+  "module_catalog": [
+    {
+      "module_code": "KRM 890",
+      "year_level": 8,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Dissertation: Criminology 890",
+      "credits": 180.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/HUM-faculty/PG-modules/view/KRM 890",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "A subject chosen by the learner must be researched independently. The nature of the study should convince that the learner has the ability to identify a research problem and to research it. A comprehensive report (100-150 pages) on an approved research project must be compiled. Other requirements: Specialised knowledge of Criminology as a discipline, the analysis, transformation, and evaluation of abstract data and concepts, and the creation of appropriate responses to resolve contextual abstract problems. Independent planning, resourcing, and managing processes within broad parameters and functions of the envisaged study is expected. Use of computer programmes for analysis and/or report writing is a requirement.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 9,
+      "presentation_period": "Year",
+      "language": "Module is presented in English"
+    }
+  ],
+  "streams_by_year": {
+    "year_1": [],
+    "year_2": [],
+    "year_3": [],
+    "year_4": [],
+    "final_year": []
+  },
+  "stream_checks": {
+    "year_1_stream_count": 0,
+    "year_2_stream_count": 0,
+    "year_3_stream_count": 0,
+    "year_4_stream_count": 0,
+    "final_year_stream_count": 0,
+    "missing_stream_module_codes_in_catalog_by_year": {
+      "year_1": [],
+      "year_2": [],
+      "year_3": [],
+      "year_4": [],
+      "final_year": []
+    }
+  }
+}

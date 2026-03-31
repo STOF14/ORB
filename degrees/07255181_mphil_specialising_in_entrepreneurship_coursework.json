@@ -1,0 +1,160 @@
+{
+  "metadata": {
+    "year": 2026,
+    "degree_code": "07255181",
+    "degree_name": "MPhil specialising in Entrepreneurship\u00a0(Coursework)",
+    "faculty": "Economic and Management Sciences",
+    "faculty_code": "EMS",
+    "level": "Masters",
+    "source_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/MA-programmes/view/07255181",
+    "duration_years": 1,
+    "total_credits": 180,
+    "nqf_level": 9,
+    "department": "Business Management"
+  },
+  "curriculum": [
+    {
+      "module_code": "ENP 822",
+      "year_level": 8,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "ENP 843",
+      "year_level": 8,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "NME 804",
+      "year_level": 8,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "OBS 811",
+      "year_level": 8,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "OBS 898",
+      "year_level": 8,
+      "is_compulsory": true,
+      "module_type": "core"
+    }
+  ],
+  "module_catalog": [
+    {
+      "module_code": "ENP 822",
+      "year_level": 8,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Entrepreneurial start-up process 822",
+      "credits": 25.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/PG-modules/view/ENP 822",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "The module is designed to engage students to the entrepreneurial start-up process by focusing on the interaction between science and reality of the entrepreneurship enabling environment, entrepreneurial behaviour elements, creativity and innovation, business modelling, as well as performance motivation. It additionally embraces the world of the social entrepreneur within the stated constructs of the entrepreneurial start-up process. The five themes provide a reflective perspective on entrepreneurship and its strategic importance and socio-economic relevance. It also endeavours to facilitate a deep understanding of the dependant and independent variables embedded in and around the start-up phase. Its key purpose conveys entrepreneurship enablement in different branches of industry, sectors and impact spheres. The curriculum integrates distinctive aspects of the entrepreneurial start-up process in identifying problems in the enabling market environment towards translation into entrepreneurial opportunities via the creative process of ideation. The entrepreneurial action (start-up) model is designed to guide the learning process to enable potential entrepreneurs to turn the feasible business opportunity into a realistic business venture, in both profit or social impact orientation.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 9,
+      "presentation_period": "Semester 1",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "ENP 843",
+      "year_level": 8,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Entrepreneurial growth process 843",
+      "credits": 25.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/PG-modules/view/ENP 843",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "The module is designed to engage students in the management and growth of small businesses and entrepreneurial ventures by focusing on the interaction between science and reality of entrepreneurship in a difficult and complex socio-economic environment. Insights in managing growth, how to market a growing business as well as financing growth are emphasised. The module also includes a focus on failure and turnaround of struggling small businesses. The curriculum integrates distinctive aspects of the venture growth through relevant themes in providing a reflective perspective on entrepreneurship and small business to facilitate a deep understanding of the dependent and independent variables embedded in and around the growth process.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 9,
+      "presentation_period": "Semester 2",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "NME 804",
+      "year_level": 8,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Research methodology 804",
+      "credits": 48.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/PG-modules/view/NME 804",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "This essential module serves as the methodological foundation for MPhil programmes in Management Sciences. It equips students with the skills to design, execute, and evaluate rigorous research across different paradigms. The module is delivered in a blended format, offering flexibility for working professionals, and incorporates intensive in-person workshops, guided online sessions, and personalised consultations.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 9,
+      "presentation_period": "Semester 1 and Semester 2",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "OBS 811",
+      "year_level": 8,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Strategic management 811",
+      "credits": 20.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/PG-modules/view/OBS 811",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Key principles and concepts of strategy and strategic management; competitive strategy; emergent and deliberate strategy; formulation of strategy; analysis of the external and internal environment; stakeholder analysis; competitive advantage; shareholder value; strategy and performance; hyper-competition; corporate and business level strategy. An advanced strategic management simulation that is online and interactive to apply strategy principles, and to foster team collaboration.",
+      "prerequisites": "OBS 320 or equivalent and admission to relevant programme",
+      "nqf_level": 9,
+      "presentation_period": "Semester 1 or Semester 2",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "OBS 898",
+      "year_level": 8,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Mini-dissertation: Research article 898",
+      "credits": 90.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/PG-modules/view/OBS 898",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "This module equips the student to conduct independent research by executing a research project on a relevant topic, of which the findings are reported in an academic article.",
+      "prerequisites": "NME 804.",
+      "nqf_level": 9,
+      "presentation_period": "Year",
+      "language": "Module is presented in English"
+    }
+  ],
+  "streams_by_year": {
+    "year_1": [],
+    "year_2": [],
+    "year_3": [],
+    "year_4": [],
+    "final_year": []
+  },
+  "stream_checks": {
+    "year_1_stream_count": 0,
+    "year_2_stream_count": 0,
+    "year_3_stream_count": 0,
+    "year_4_stream_count": 0,
+    "final_year_stream_count": 0,
+    "missing_stream_module_codes_in_catalog_by_year": {
+      "year_1": [],
+      "year_2": [],
+      "year_3": [],
+      "year_4": [],
+      "final_year": []
+    }
+  }
+}

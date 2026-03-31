@@ -1,0 +1,191 @@
+{
+  "metadata": {
+    "year": 2026,
+    "degree_code": "02240702",
+    "degree_name": "BScHons in Bioinformatics",
+    "faculty": "Natural and Agricultural Sciences",
+    "faculty_code": "SCI",
+    "level": "Honours",
+    "source_url": "https://www.up.ac.za/yearbooks/2026/SCI-faculty/HO-programmes/view/02240702",
+    "duration_years": 1,
+    "total_credits": 135,
+    "nqf_level": 8,
+    "department": "Biochemistry, Genetics and Microbiology"
+  },
+  "curriculum": [
+    {
+      "module_code": "BIF 701",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective"
+    },
+    {
+      "module_code": "BIF 702",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective"
+    },
+    {
+      "module_code": "BIF 703",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective"
+    },
+    {
+      "module_code": "BIF 704",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective"
+    },
+    {
+      "module_code": "BME 780",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective"
+    },
+    {
+      "module_code": "MLB 721",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective"
+    }
+  ],
+  "module_catalog": [
+    {
+      "module_code": "BIF 701",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "Bioinformatics theory and applications 701",
+      "credits": 30.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/SCI-faculty/PG-modules/view/BIF 701",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "General concepts in bioinformatics; sequence motifs and features; sequence databases; common bioinformatics tools; programming in Python; the bioinformatics toolkit for Python; pairwise and multiple sequence alignments; genome analysis; data visualisation; specialised statistics for bioinformatics; specialised algorithms for bioinformatics; nucleic acid modelling; transcription analysis; microarray data analysis; genome annotation; phylogenetics; mapping and markers; structural modelling.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "2 lectures per week, 2 practicals per week"
+    },
+    {
+      "module_code": "BIF 702",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "Trends in bioinformatics and literature seminar 702",
+      "credits": 15.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/SCI-faculty/PG-modules/view/BIF 702",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Study and discussion of topical research results from recent scientific publications.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "1 lecture per week"
+    },
+    {
+      "module_code": "BIF 703",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "Research project and report 703",
+      "credits": 60.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/SCI-faculty/PG-modules/view/BIF 703",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": null,
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "1 other contact session per week"
+    },
+    {
+      "module_code": "BIF 704",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "Introduction to molecular biology for bioinformatics 704",
+      "credits": 15.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/SCI-faculty/PG-modules/view/BIF 704",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Atoms and molecules; the chemistry of life, organisation of the cell; energy; chromosomes; heredity; DNA; RNA and protein synthesis; gene regulation; genetic engineering; genomes; genes and development; evolution; speciation; diversity.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "1 lecture per week"
+    },
+    {
+      "module_code": "BME 780",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "Statistics for biological sciences 780",
+      "credits": 15.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/PG-modules/view/BME 780",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Introduction to ANOVA, correlation and linear regression and analysis of covariance. Chi-squared tests. Basic concepts in generalised linear models. The principles of experimental design as required for the selection of an appropriate research design. Identification of the design limitations and the impact thereof on the research hypotheses and the statistical methods needed. Identification and application of the appropriate statistical methods needed. Interpreting of statistical results and translating these results to the biological context.",
+      "prerequisites": "Entrance into a postgraduate degree in the Faculty of Natural and Agricultural Sciences and a NQF level 7 qualification.",
+      "nqf_level": 8,
+      "presentation_period": "Semester 1",
+      "language": "Module is presented in English",
+      "contact_time": "3 Block weeks starting Mon 1 week before S1 begins",
+      "service_modules": "Faculty of Natural and Agricultural Sciences"
+    },
+    {
+      "module_code": "MLB 721",
+      "year_level": 7,
+      "is_compulsory": false,
+      "module_type": "elective",
+      "source": "curriculum",
+      "name": "Molecular and cellular biology 721",
+      "credits": 15.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/SCI-faculty/PG-modules/view/MLB 721",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Principles and applications of recombinant DNA, and other novel molecular and genomics technologies, to address questions in the biological sciences and/or biotechnology.\u00a0 Strong emphasis is placed on the principles of research planning, including identifying suitable research objectives, formulating a research strategy and understanding the relevance and feasibility of research.\u00a0 The module is assessed by means of a research project proposal, conceived and formulated by each student.\u00a0 The proposal must focus on the use of molecular technologies in addressing realistic questions in biology and/or biotechnology.\u00a0 There is also an oral defense of the project proposal. This module is jointly presented in the Departments of Biochemistry, Genetics and Microbiology and Plant and Soil Sciences.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "2 discussion classes per week"
+    }
+  ],
+  "streams_by_year": {
+    "year_1": [],
+    "year_2": [],
+    "year_3": [],
+    "year_4": [],
+    "final_year": []
+  },
+  "stream_checks": {
+    "year_1_stream_count": 0,
+    "year_2_stream_count": 0,
+    "year_3_stream_count": 0,
+    "year_4_stream_count": 0,
+    "final_year_stream_count": 0,
+    "missing_stream_module_codes_in_catalog_by_year": {
+      "year_1": [],
+      "year_2": [],
+      "year_3": [],
+      "year_4": [],
+      "final_year": []
+    }
+  }
+}

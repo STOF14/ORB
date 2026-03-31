@@ -1,0 +1,89 @@
+{
+  "metadata": {
+    "year": 2026,
+    "degree_code": "07267052",
+    "degree_name": "PhD specialising in Economics",
+    "faculty": "Economic and Management Sciences",
+    "faculty_code": "EMS",
+    "level": "Doctorate",
+    "source_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/DO-programmes/view/07267052",
+    "duration_years": 2,
+    "total_credits": 360,
+    "nqf_level": 10,
+    "department": "Economics"
+  },
+  "curriculum": [
+    {
+      "module_code": "EBW 801",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "EKN 995",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core"
+    }
+  ],
+  "module_catalog": [
+    {
+      "module_code": "EBW 801",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Research methodology 801",
+      "credits": 0.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/PG-modules/view/EBW 801",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Developing the background to a research problem, and developing a problem statement and propositions and hypotheses relevant to their study. Compiling a thorough literature review of the topics they intend to study. Approaches to research: An overview of the different approaches to research (qualitative, quantitative and mixed methods) and the philosophical approaches that underpin them (positivism, post-positivism, interpretivism, constructivism, critical theory and pragmatism). Different research designs in quantitative and qualitative methods, and appropriate sampling approaches for the different research designs. Qualitative research methodology: An overview of qualitative methods for organisational research. An overview of the different methodologies on a continuum between modernistic qualitative and post-modernistic qualitative research. Quantitative research methodology",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 9,
+      "presentation_period": "Year",
+      "language": "Module is presented in English",
+      "contact_time": "Friday and Saturday classes"
+    },
+    {
+      "module_code": "EKN 995",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Thesis 995",
+      "credits": 360.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EMS-faculty/PG-modules/view/EKN 995",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": null,
+      "prerequisites": "Only for PhD Economics students",
+      "nqf_level": 10,
+      "presentation_period": "Year",
+      "language": "Module is presented in English"
+    }
+  ],
+  "streams_by_year": {
+    "year_1": [],
+    "year_2": [],
+    "year_3": [],
+    "year_4": [],
+    "final_year": []
+  },
+  "stream_checks": {
+    "year_1_stream_count": 0,
+    "year_2_stream_count": 0,
+    "year_3_stream_count": 0,
+    "year_4_stream_count": 0,
+    "final_year_stream_count": 0,
+    "missing_stream_module_codes_in_catalog_by_year": {
+      "year_1": [],
+      "year_2": [],
+      "year_3": [],
+      "year_4": [],
+      "final_year": []
+    }
+  }
+}

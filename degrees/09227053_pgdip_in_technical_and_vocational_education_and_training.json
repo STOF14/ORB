@@ -1,0 +1,232 @@
+{
+  "metadata": {
+    "year": 2026,
+    "degree_code": "09227053",
+    "degree_name": "PGDip in Technical and Vocational Education and Training",
+    "faculty": "Education",
+    "faculty_code": "EDU",
+    "level": "Postgraduate Diploma/Certificate",
+    "source_url": "https://www.up.ac.za/yearbooks/2026/EDU-faculty/PC-programmes/view/09227053",
+    "duration_years": 1,
+    "total_credits": 130,
+    "nqf_level": 8,
+    "department": "Education Management and Policy Studies"
+  },
+  "curriculum": [
+    {
+      "module_code": "CDD 711",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "EDM 734",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "KGG 731",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "LMD 700",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "LVO 732",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "OWT 730",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "PFO 700",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    },
+    {
+      "module_code": "QPI 713",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core"
+    }
+  ],
+  "module_catalog": [
+    {
+      "module_code": "CDD 711",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Curriculum development 711",
+      "credits": 14.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EDU-faculty/PG-modules/view/CDD 711",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Theories, principles and foundations of curriculum design and development processes. Overview of international and national models and trends in curriculum/programme development. Project-based approach to managing curriculum design, development and evaluation processes in a real-world context.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Semester 1 or Semester 2",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "EDM 734",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Financial and human resource management 734",
+      "credits": 14.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EDU-faculty/PG-modules/view/EDM 734",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "The aim of this module is to provide theoretical and practical approaches to financial and human resources management within the TVET sector. Aspects of budgets, strategic management and governance, asset management, recruitment and selection of staff, performance management and continuous professional development are core themes explored in this module.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Semester 1 or Semester 2",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "KGG 731",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Emotional-social wellbeing 731",
+      "credits": 14.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EDU-faculty/PG-modules/view/KGG 731",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "This module will enhance higher education managers\u2019 understanding and capacity to promote mental wellbeing of staff and students. A focus on systemic support strategies encompassing the context of high need to\u00a0empower managers to advance preventative psychological health and to\u00a0acquire specialised knowledge regarding how to strengthen staff and students\u2019 emotional-social wellbeing and resilience is key. The module will\u00a0provide managers in higher education with an integrated wellbeing and\u00a0emotional-social intelligence framework to promote their insight into an advancing learning and development as lifelong processes.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Semester 1 or Semester 2",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "LMD 700",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Instructional management 700",
+      "credits": 14.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EDU-faculty/PG-modules/view/LMD 700",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Monitoring and evaluation of instruction in higher education. Managers in higher education will develop strategies to enhance the quality of teaching and learning by exploring best practices in learning facilitation, and the provision of professional development initiatives and interventions to improve instructional practices.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Semester 1 or Semester 2",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "LVO 732",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Management and leadership in education 732",
+      "credits": 14.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EDU-faculty/PG-modules/view/LVO 732",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Introduction to education management theories, processes and models related to education management as functions to ensure effective task execution in the TVET sector. Students will acquire competence in the deployment of effective leadership and management strategies to enhance the quality of teaching and learning and to create a productive internal educational environment in their institutions.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Semester 1 or Semester 2",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "OWT 730",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Educational technology in higher education 730",
+      "credits": 14.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EDU-faculty/PG-modules/view/OWT 730",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "This module explores e-learning and e-assessment in the context of the fourth industrial revolution, as well developing and supporting digital competencies in the TVET context. Educators will explore how higher education institutional policy can be transformed to accommodate technology in education and to make effective use of digital media and blended learning environments.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Semester 1",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "PFO 700",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Professional development in TVET 700",
+      "credits": 32.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EDU-faculty/PG-modules/view/PFO 700",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Professional development of TVET managers and professional leadership in the TVET context from a holistic viewpoint. It integrates theoretical and practical aspects and considers both national and international perspectives. It encompasses project-based learning that requires implementation of the programme components and their integration within a context of school and workplace as well as a professional and substantiated reflection. Thus, participants will develop a professional portfolio as a valid and reliable scientific proof of learning, which should integrate all modules.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Year",
+      "language": "Module is presented in English"
+    },
+    {
+      "module_code": "QPI 713",
+      "year_level": 7,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Assessment and quality assurance 713",
+      "credits": 14.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/EDU-faculty/PG-modules/view/QPI 713",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "The module provides knowledge on quality assurance, assessment and accreditation requirements within the context of the national education and training system. The focus is the legislative base, policies and structures of national and international accreditation and quality assurance bodies. Models and perspectives on quality assurance of institutions are explored. Processes relevant to quality management and the monitoring and evaluation of programmes within the TVET sector and broader Higher Education arena are central to the course. The design and development of quality assessment instruments will be covered. TVET managers will be equipped with principles and strategies for the assessment of C21st skills relevant to training students entering the current, globalised economy.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 8,
+      "presentation_period": "Semester 1 or Semester 2",
+      "language": "Module is presented in English"
+    }
+  ],
+  "streams_by_year": {
+    "year_1": [],
+    "year_2": [],
+    "year_3": [],
+    "year_4": [],
+    "final_year": []
+  },
+  "stream_checks": {
+    "year_1_stream_count": 0,
+    "year_2_stream_count": 0,
+    "year_3_stream_count": 0,
+    "year_4_stream_count": 0,
+    "final_year_stream_count": 0,
+    "missing_stream_module_codes_in_catalog_by_year": {
+      "year_1": [],
+      "year_2": [],
+      "year_3": [],
+      "year_4": [],
+      "final_year": []
+    }
+  }
+}

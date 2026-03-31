@@ -1,0 +1,64 @@
+{
+  "metadata": {
+    "year": 2026,
+    "degree_code": "01260162",
+    "degree_name": "PhD specialising in Afrikaans",
+    "faculty": "Humanities",
+    "faculty_code": "HUM",
+    "level": "Doctorate",
+    "source_url": "https://www.up.ac.za/yearbooks/2026/HUM-faculty/DO-programmes/view/01260162",
+    "duration_years": 2,
+    "total_credits": 360,
+    "nqf_level": 10,
+    "department": "Afrikaans"
+  },
+  "curriculum": [
+    {
+      "module_code": "AFR 990",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core"
+    }
+  ],
+  "module_catalog": [
+    {
+      "module_code": "AFR 990",
+      "year_level": 1,
+      "is_compulsory": true,
+      "module_type": "core",
+      "source": "curriculum",
+      "name": "Proefskrif: Afrikaans 990",
+      "credits": 360.0,
+      "module_page_url": "https://www.up.ac.za/yearbooks/2026/HUM-faculty/PG-modules/view/AFR 990",
+      "module_page_title": "Yearbooks 2026 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+      "fetch_status": "ok",
+      "candidate_urls_count": 1,
+      "content": "Die student moet in navorsingsverslag van ongeveer 100 000 woorde (200 bladsye) bewys lewer van sy/haar vermo\u00eb om selfstandig oorspronklike wetenskaplike ondersoek te beplan en uit te voer oor goedgekeurde tema uit die Afrikaanse of Nederlandse letterkunde, taalkunde, kultuur- of mediastudie.",
+      "prerequisites": "No prerequisites.",
+      "nqf_level": 10,
+      "presentation_period": "Year",
+      "language": "Module is presented in Afrikaans"
+    }
+  ],
+  "streams_by_year": {
+    "year_1": [],
+    "year_2": [],
+    "year_3": [],
+    "year_4": [],
+    "final_year": []
+  },
+  "stream_checks": {
+    "year_1_stream_count": 0,
+    "year_2_stream_count": 0,
+    "year_3_stream_count": 0,
+    "year_4_stream_count": 0,
+    "final_year_stream_count": 0,
+    "missing_stream_module_codes_in_catalog_by_year": {
+      "year_1": [],
+      "year_2": [],
+      "year_3": [],
+      "year_4": [],
+      "final_year": []
+    }
+  }
+}
