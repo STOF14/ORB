@@ -6,21 +6,12 @@
 body {
     background: var(--bg);
     color: #181818;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 16px;
     line-height: 1.6;
-    -webkit-font-smoothing: antialiased;
     scroll-behavior: smooth;
 }
 
-/* ── Nav overrides ── */
-.site-nav { background: var(--black); padding: 0 40px; }
-.site-nav a { font-weight: 700; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; }
-.nav-label {
-    display: inline; color: #555; font-size: 10px; font-weight: 500;
-    letter-spacing: 2px; text-transform: uppercase; padding-right: 10px;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
+/* Nav — base styles in shared.css */
 
 /* ── Container ── */
 .container {
@@ -32,47 +23,7 @@ body {
     gap: 20px;
 }
 
-/* ── Auth Bar ── */
-.auth-bar {
-    background: linear-gradient(180deg, #090909 0%, #111 100%);
-    color: #999;
-    padding: max(8px, env(safe-area-inset-top)) 40px 8px;
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    font-size: 11px;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    box-shadow: inset 0 -1px 0 rgba(230, 57, 70, 0.18);
-}
-.sync-status {
-    font-weight: 700;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    font-size: 9px;
-    padding: 3px 8px;
-    border: 1px solid #333;
-}
-.sync-status.online { color: #22c55e; border-color: #22c55e; }
-.sync-status.offline { color: #f59e0b; border-color: #f59e0b; }
-.auth-btn {
-    background: none;
-    border: 1px solid #555;
-    color: #ccc;
-    padding: 5px 14px;
-    font-size: 11px;
-    font-weight: 600;
-    cursor: pointer;
-    letter-spacing: 0.5px;
-    transition: all 0.2s;
-}
-.auth-btn:hover { border-color: #fff; color: #fff; }
-.user-info { display: flex; align-items: center; gap: 8px; }
-.user-avatar { width: 22px; height: 22px; border-radius: 50%; }
-.user-name { font-size: 11px; color: #ccc; }
-.signout-btn {
-    background: none; border: none; color: #666;
-    cursor: pointer; font-size: 10px; text-decoration: underline;
-}
+/* Auth bar — base styles in shared.css */
 
 /* ── Typography ── */
 h1 {
@@ -243,7 +194,7 @@ header {
 }
 .kanban-col[data-status="todo"] .kanban-col-header { border-bottom: 3px solid var(--accent); }
 .kanban-col[data-status="in-progress"] .kanban-col-header { border-bottom: 3px solid var(--mod-orange); }
-.kanban-col[data-status="done"] .kanban-col-header { border-bottom: 3px solid #22c55e; }
+.kanban-col[data-status="done"] .kanban-col-header { border-bottom: 3px solid var(--green); }
 .kanban-count {
     font-size: 18px;
     font-weight: 300;

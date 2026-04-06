@@ -53,15 +53,15 @@
     <nav class="site-nav" role="navigation" aria-label="Main Navigation">
         <span class="nav-label">Navigate</span>
         <a href="dashboard.html" class="active">Dashboard</a>
+        <a href="calendar.html">Calendar</a>
         <a href="Semester1Timetable2026.html">Semester 1 Timetable</a>
         <a href="index.html">Semester 2 Timetable</a>
         <a href="planner.html">Day Planner</a>
-        <a href="timer.html">Focus Timer</a>
         <a href="assignments.html">Assignments</a>
-        <a href="analytics.html">Analytics</a>
+        <a href="grades.html">Grades</a>
     </nav>
 
-    <div class="container">
+    <main class="container" role="main">
         <!-- Orb Brand -->
         <div class="orbitdesk-brand orbitdesk-brand--masthead orbitdesk-brand--full">
             <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Orb mini logo" role="img">
@@ -175,7 +175,7 @@
                     <h4>Assessment</h4>
                     <table class="assessment-table">
                         <thead>
-                            <tr><th>Component</th><th>Date</th><th style="text-align: right;">Weight</th></tr>
+                            <tr><th scope="col">Component</th><th scope="col">Date</th><th scope="col" style="text-align: right;">Weight</th></tr>
                         </thead>
                         <tbody>
                             <tr><td>Semester Test 1</td><td>Tuesday, 18 March</td><td style="text-align: right;"><span class="percentage">35%</span></td></tr>
@@ -229,7 +229,7 @@
                     <h4>Assessment</h4>
                     <table class="assessment-table">
                         <thead>
-                            <tr><th>Component</th><th>Details</th><th style="text-align: right;">Weight</th></tr>
+                            <tr><th scope="col">Component</th><th scope="col">Details</th><th scope="col" style="text-align: right;">Weight</th></tr>
                         </thead>
                         <tbody>
                             <tr><td>Semester Test 1</td><td>Monday, 16 March</td><td style="text-align: right;"><span class="percentage">35%</span></td></tr>
@@ -306,7 +306,7 @@
                     <h4>Semester Mark Breakdown (50%)</h4>
                     <table class="assessment-table">
                         <thead>
-                            <tr><th>Component</th><th>Details</th><th style="text-align: right;">Weight</th></tr>
+                            <tr><th scope="col">Component</th><th scope="col">Details</th><th scope="col" style="text-align: right;">Weight</th></tr>
                         </thead>
                         <tbody>
                             <tr><td>Thermodynamics Continuous</td><td>9 Feb – 5 Mar</td><td style="text-align: right;"><span class="percentage">20.42%</span></td></tr>
@@ -320,7 +320,7 @@
                     <h4>Modern Physics CAM (49.58% of Semester Mark)</h4>
                     <table class="assessment-table">
                         <thead>
-                            <tr><th>Component</th><th>Details</th><th style="text-align: right;">Weight</th></tr>
+                            <tr><th scope="col">Component</th><th scope="col">Details</th><th scope="col" style="text-align: right;">Weight</th></tr>
                         </thead>
                         <tbody>
                             <tr><td>Class Tests</td><td>6 × 6% (no aegrotat — exemption with valid docs)</td><td style="text-align: right;"><span class="percentage">36%</span></td></tr>
@@ -416,7 +416,7 @@
                     <h4>Assessment</h4>
                     <table class="assessment-table">
                         <thead>
-                            <tr><th>Component</th><th>Details</th><th style="text-align: right;">Weight</th></tr>
+                            <tr><th scope="col">Component</th><th scope="col">Details</th><th scope="col" style="text-align: right;">Weight</th></tr>
                         </thead>
                         <tbody>
                             <tr><td>Practicals</td><td>Best 4 of 5</td><td style="text-align: right;"><span class="percentage">20%</span></td></tr>
@@ -484,7 +484,7 @@
                     <h4>Semester Mark (60%)</h4>
                     <table class="assessment-table">
                         <thead>
-                            <tr><th>Component</th><th>Details</th><th style="text-align: right;">Weight</th></tr>
+                            <tr><th scope="col">Component</th><th scope="col">Details</th><th scope="col" style="text-align: right;">Weight</th></tr>
                         </thead>
                         <tbody>
                             <tr><td>Worksheets</td><td>Best 9 of 10</td><td style="text-align: right;"><span class="percentage">10%</span></td></tr>
@@ -634,13 +634,13 @@
 
         <!-- Footer Links -->
         <div class="footer-links">
-            <a href="https://clickup.up.ac.za" class="link-card" target="_blank">ClickUP Portal</a>
-            <a href="http://portal.cs.up.ac.za" class="link-card" target="_blank">CS Portal</a>
-            <a href="http://ff.cs.up.ac.za" class="link-card" target="_blank">Fitchfork</a>
-            <a href="https://www.library.up.ac.za" class="link-card" target="_blank">Library</a>
+            <a href="https://clickup.up.ac.za" class="link-card" target="_blank" rel="noopener noreferrer">ClickUP Portal</a>
+            <a href="https://portal.cs.up.ac.za" class="link-card" target="_blank" rel="noopener noreferrer">CS Portal</a>
+            <a href="https://ff.cs.up.ac.za" class="link-card" target="_blank" rel="noopener noreferrer">Fitchfork</a>
+            <a href="https://www.library.up.ac.za" class="link-card" target="_blank" rel="noopener noreferrer">Library</a>
             <a href="mailto:fly@up.ac.za" class="link-card">FLY@UP Support</a>
-            <a href="tel:0124202333" class="link-card">Counselling</a>
-            <a href="tel:0800006428" class="link-card">Crisis Line</a>
+            <a href="tel:+27124202333" class="link-card">Counselling</a>
+            <a href="tel:+27800006428" class="link-card">Crisis Line</a>
             <a href="mailto:cos212queries@cs.up.ac.za" class="link-card">COS 212</a>
         </div>
 
@@ -658,7 +658,7 @@
                 Verify all dates and requirements via official channels • ClickUP for updates
             </p>
         </footer>
-    </div>
+    </main>
 
     <!-- Mobile Navigation -->
     <nav class="bottom-nav" aria-label="Mobile navigation">
@@ -675,18 +675,19 @@
         </div>
         <nav class="nav-overlay__links">
             <a href="dashboard.html" class="active">Dashboard</a>
+            <a href="calendar.html">Calendar</a>
             <a href="Semester1Timetable2026.html">Semester 1 Timetable</a>
             <a href="index.html">Semester 2 Timetable</a>
             <a href="planner.html">Day Planner</a>
-            <a href="timer.html">Focus Timer</a>
             <a href="assignments.html">Assignments</a>
-            <a href="analytics.html">Analytics</a>
+            <a href="grades.html">Grades</a>
         </nav>
     </div>
     <script>(function(){var t=document.getElementById('navToggle'),o=document.getElementById('navOverlay'),c=document.getElementById('navClose');function open(){o.classList.add('open');t.setAttribute('aria-expanded','true');document.body.style.overflow='hidden';}function shut(){o.classList.remove('open');t.setAttribute('aria-expanded','false');document.body.style.overflow='';}t.addEventListener('click',open);c.addEventListener('click',shut);})();</script>
 
     <!-- Scripts -->
     <script src="js/firebase-config.js"></script>
+    <script src="js/shared-dates.js"></script>
     <script src="js/loader.js"></script>
     <script src="js/mobile-workflow.js"></script>
     <script src="js/dashboard.js"></script>

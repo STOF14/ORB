@@ -322,8 +322,7 @@ const SECTION_LABELS = {
 };
 
 const DAYS = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-const MONTHS = ['January', 'February', 'March', 'April', 'May', 'June',
-                'July', 'August', 'September', 'October', 'November', 'December'];
+const MONTHS = MONTHS_LONG;
 
 let currentDate = new Date();
 
@@ -560,6 +559,7 @@ function countClassLoad() {
 }
 
 function addRoughTask(bucket, text) {
+    if (!ROUGH_BUCKETS.includes(bucket)) return;
     const items = ensureBucketTasks(bucket);
     const id = genRoughTaskId();
     items.push({ id, carryId: id, text: text || '', done: false, createdOn: dateKey(currentDate), carriedFrom: null });
@@ -568,6 +568,7 @@ function addRoughTask(bucket, text) {
 }
 
 function toggleRoughTask(bucket, taskId, done) {
+    if (!ROUGH_BUCKETS.includes(bucket)) return;
     const items = ensureBucketTasks(bucket);
     const task = items.find(item => item.id === taskId);
     if (!task) return;
@@ -578,6 +579,7 @@ function toggleRoughTask(bucket, taskId, done) {
 }
 
 function updateRoughTaskText(bucket, taskId, text) {
+    if (!ROUGH_BUCKETS.includes(bucket)) return;
     const items = ensureBucketTasks(bucket);
     const task = items.find(item => item.id === taskId);
     if (!task) return;
@@ -585,9 +587,11 @@ function updateRoughTaskText(bucket, taskId, text) {
     saveCurrentPlannerData();
     renderRoughPlanSummary();
     renderRoughSuggestions();
+    updateStats();
 }
 
 function deleteRoughTask(bucket, taskId) {
+    if (!ROUGH_BUCKETS.includes(bucket)) return;
     const items = ensureBucketTasks(bucket);
     cachedData.roughTasks[bucket] = items.filter(item => item.id !== taskId);
     saveCurrentPlannerData();
@@ -694,7 +698,7 @@ function renderRoughSuggestions() {
 function renderRoughBuckets() {
     ROUGH_BUCKETS.forEach(bucket => {
         const el = document.getElementById(ROUGH_BUCKET_ELEMENT_IDS[bucket]);
-        if (!el) return;
+        if (!el) { console.warn('[Planner] Missing DOM element for bucket:', bucket); return; }
         const tasks = getBucketTasks(bucket);
 
         if (!tasks.length) {
@@ -757,8 +761,11 @@ async function renderPlanner() {
     const key = dateKey(currentDate);
     const data = await loadData(key);
     if (roughCarrySyncedKey !== key) {
+        const roughPlanEl = document.getElementById('roughPlan');
+        if (roughPlanEl) roughPlanEl.classList.add('rough-loading');
         await syncCarriedRoughTasksForDate(key);
         roughCarrySyncedKey = key;
+        if (roughPlanEl) roughPlanEl.classList.remove('rough-loading');
     }
     listenToDate(key);
     const tbody = document.getElementById('plannerBody');
@@ -963,6 +970,12 @@ function bindRoughPlanEvents() {
         bucketsEl.addEventListener('input', event => {
             if (event.target.matches('[data-role="rough-text"]')) {
                 updateRoughTaskText(event.target.dataset.bucket, event.target.dataset.taskId, event.target.value);
+            }
+        });
+
+        bucketsEl.addEventListener('focusout', event => {
+            if (event.target.matches('[data-role="rough-text"]') && !event.target.value.trim()) {
+                deleteRoughTask(event.target.dataset.bucket, event.target.dataset.taskId);
             }
         });
     }

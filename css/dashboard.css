@@ -7,35 +7,13 @@
 body {
     background: var(--bg);
     color: #181818;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 16px;
     line-height: 1.6;
-    -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     scroll-behavior: smooth;
 }
 
-/* ── Nav overrides for Dashboard (Helvetica + wider padding) ── */
-.site-nav {
-    background: var(--primary);
-    padding: 0 40px;
-}
-
-.site-nav a {
-    font-weight: 700;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
-
-.nav-label {
-    display: inline;
-    color: #555;
-    font-size: 10px;
-    font-weight: 500;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    padding-right: 10px;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
+/* Nav — base styles in shared.css */
 
 /* ── Container: 12-col grid ── */
 .container {
@@ -654,7 +632,7 @@ body::before {
 }
 
 .sleep-bar.low { background: var(--secondary); }
-.sleep-bar.good { background: #22c55e; }
+.sleep-bar.good { background: var(--green); }
 
 .sleep-day-labels {
     display: flex;
@@ -852,16 +830,6 @@ body::before {
         align-items: center;
         justify-content: center;
         box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
-    }
-
-    /* Dashboard bottom-nav font override */
-    .bottom-nav a {
-        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-        font-weight: 700;
-    }
-
-    .nav-label {
-        display: none;
     }
 
     /* Progress mobile */

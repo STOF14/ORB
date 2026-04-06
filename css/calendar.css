@@ -1,0 +1,657 @@
+/* ============================================================
+   Orb — Calendar Page
+   ============================================================ */
+
+body {
+    background: var(--paper);
+    color: var(--black);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 24px 120px;
+}
+
+/* ── Header ── */
+.cal-header {
+    margin-bottom: 30px;
+}
+
+.cal-header h1 {
+    font-size: clamp(36px, 8vw, 64px);
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    line-height: 1.1;
+}
+
+.color-accent {
+    width: 60px;
+    height: 4px;
+    background: var(--red);
+    margin: 12px 0;
+}
+
+.cal-subtitle {
+    font-size: 14px;
+    color: var(--text-muted);
+    margin-top: 8px;
+}
+
+/* ── Week Strip ── */
+.week-strip {
+    background: var(--black);
+    color: #fff;
+    padding: 20px 24px;
+    margin-bottom: 24px;
+    border-bottom: 3px solid var(--red);
+}
+
+.week-strip__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.week-strip__header h3 {
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.week-nav {
+    background: none;
+    border: 1px solid rgba(255,255,255,0.25);
+    color: #fff;
+    font-size: 16px;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.15s;
+}
+
+.week-nav:hover {
+    background: rgba(255,255,255,0.1);
+}
+
+.week-strip__days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 6px;
+}
+
+.week-day {
+    text-align: center;
+    padding: 10px 4px;
+    border-radius: 0;
+    cursor: pointer;
+    transition: background 0.15s;
+    position: relative;
+}
+
+.week-day:hover {
+    background: rgba(255,255,255,0.08);
+}
+
+.week-day__label {
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #777;
+    margin-bottom: 4px;
+}
+
+.week-day__num {
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+.week-day--today {
+    background: var(--red);
+}
+
+.week-day--today .week-day__label {
+    color: rgba(255,255,255,0.7);
+}
+
+.week-day--selected {
+    border: 2px solid var(--red);
+}
+
+.week-day--past .week-day__num {
+    color: #555;
+}
+
+.week-day__dots {
+    display: flex;
+    gap: 3px;
+    justify-content: center;
+    margin-top: 6px;
+    min-height: 7px;
+}
+
+.week-day__dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+}
+
+.week-day__dot--test {
+    background: var(--red);
+}
+
+.week-day__dot--lecture {
+    background: var(--blue);
+}
+
+.week-day__dot--university {
+    background: var(--yellow);
+}
+
+.week-day__dot--assignment {
+    background: var(--orange);
+}
+
+.week-day__dot--exam {
+    background: var(--dark-blue);
+}
+
+/* ── Day Detail ── */
+.day-detail {
+    background: #fff;
+    border: 3px solid var(--black);
+    padding: 20px 24px;
+    margin-bottom: 24px;
+    display: none;
+}
+
+.day-detail.open {
+    display: block;
+}
+
+.day-detail h3 {
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--grid-line);
+}
+
+.day-detail__content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.day-event {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 10px 12px;
+    border-left: 4px solid var(--blue);
+    background: rgba(0,0,0,0.02);
+}
+
+.day-event--test {
+    border-left-color: var(--red);
+    background: rgba(230, 57, 70, 0.04);
+}
+
+.day-event--exam {
+    border-left-color: var(--dark-blue);
+    background: rgba(29, 53, 87, 0.04);
+}
+
+.day-event--university {
+    border-left-color: var(--yellow);
+    background: rgba(233, 196, 106, 0.06);
+}
+
+.day-event--assignment {
+    border-left-color: var(--orange);
+    background: rgba(244, 162, 97, 0.04);
+}
+
+.day-event--recess {
+    border-left-color: var(--grid-line);
+    background: rgba(0,0,0,0.02);
+}
+
+.day-event__badge {
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 3px 7px;
+    background: var(--black);
+    color: #fff;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.day-event__info {
+    flex: 1;
+    min-width: 0;
+}
+
+.day-event__title {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 2px;
+}
+
+.day-event__meta {
+    font-size: 12px;
+    color: var(--text-muted);
+}
+
+/* ── Filter Chips ── */
+.cal-filters {
+    margin-bottom: 24px;
+}
+
+.cal-filters h3 {
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-bottom: 10px;
+}
+
+.filter-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.chip {
+    font-family: "Futura", "Arial", sans-serif;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    padding: 8px 16px;
+    background: #fff;
+    border: 2px solid var(--grid-line);
+    color: var(--text-muted);
+    cursor: pointer;
+    transition: all 0.15s;
+}
+
+.chip:hover {
+    border-color: var(--black);
+    color: var(--black);
+}
+
+.chip--active {
+    background: var(--black);
+    border-color: var(--black);
+    color: #fff;
+}
+
+.chip[data-filter="phy-255"].chip--active { background: var(--red); border-color: var(--red); }
+.chip[data-filter="wtw-211"].chip--active { background: var(--orange); border-color: var(--orange); color: #000; }
+.chip[data-filter="wtw-218"].chip--active { background: var(--yellow); border-color: var(--yellow); color: #000; }
+.chip[data-filter="cos-210"].chip--active { background: var(--blue); border-color: var(--blue); }
+.chip[data-filter="cos-212"].chip--active { background: var(--dark-blue); border-color: var(--dark-blue); }
+.chip[data-filter="university"].chip--active { background: #555; border-color: #555; }
+
+/* ── Month Calendar Grid ── */
+.cal-month-section {
+    margin-bottom: 40px;
+}
+
+.cal-month-nav {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.cal-month-nav h2 {
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    flex: 1;
+    text-align: center;
+}
+
+.month-nav-btn {
+    background: var(--black);
+    border: none;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 800;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.15s;
+}
+
+.month-nav-btn:hover {
+    background: #333;
+}
+
+.month-today-btn {
+    width: auto;
+    padding: 0 14px;
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.cal-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    border: 3px solid var(--black);
+    border-bottom: none;
+}
+
+.cal-grid__head {
+    background: var(--black);
+    color: #fff;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 10px 4px;
+}
+
+.cal-grid__head--weekend {
+    color: #999;
+}
+
+.cal-cell {
+    min-height: 90px;
+    border-bottom: 1px solid var(--grid-line);
+    border-right: 1px solid var(--grid-line);
+    padding: 6px;
+    cursor: pointer;
+    transition: background 0.1s;
+    position: relative;
+}
+
+.cal-cell:nth-child(7n) {
+    border-right: none;
+}
+
+.cal-cell:hover {
+    background: rgba(0,0,0,0.03);
+}
+
+.cal-cell--outside {
+    background: rgba(0,0,0,0.03);
+    color: #ccc;
+}
+
+.cal-cell--today {
+    background: rgba(230, 57, 70, 0.06);
+    box-shadow: inset 0 0 0 2px var(--red);
+}
+
+.cal-cell--selected {
+    box-shadow: inset 0 0 0 2px var(--black);
+}
+
+.cal-cell__num {
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.cal-cell--today .cal-cell__num {
+    background: var(--red);
+    color: #fff;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+}
+
+.cal-cell--weekend {
+    background: rgba(0,0,0,0.015);
+}
+
+.cal-cell__events {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.cal-event-pip {
+    font-size: 9px;
+    font-weight: 700;
+    padding: 2px 4px;
+    border-radius: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1.4;
+}
+
+.cal-event-pip--lecture { background: rgba(69, 123, 157, 0.15); color: var(--blue); }
+.cal-event-pip--test { background: rgba(230, 57, 70, 0.15); color: var(--red); font-weight: 800; }
+.cal-event-pip--exam { background: rgba(29, 53, 87, 0.2); color: var(--dark-blue); font-weight: 800; }
+.cal-event-pip--assignment { background: rgba(244, 162, 97, 0.2); color: #b5651d; }
+.cal-event-pip--university { background: rgba(233, 196, 106, 0.2); color: #8b6914; }
+.cal-event-pip--recess { background: rgba(0,0,0,0.06); color: #999; }
+
+.cal-cell__more {
+    font-size: 9px;
+    color: var(--text-muted);
+    font-weight: 700;
+    margin-top: 2px;
+}
+
+/* Recess / holiday shading */
+.cal-cell--recess {
+    background: repeating-linear-gradient(
+        45deg,
+        transparent,
+        transparent 4px,
+        rgba(0,0,0,0.025) 4px,
+        rgba(0,0,0,0.025) 8px
+    );
+}
+
+.cal-cell--test-week {
+    background: rgba(230, 57, 70, 0.03);
+}
+
+/* ── Agenda Section ── */
+.agenda-section {
+    margin-bottom: 40px;
+}
+
+.agenda-section h2 {
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+}
+
+.color-accent-red {
+    background: var(--red);
+    width: 40px;
+    height: 3px;
+    margin-bottom: 20px;
+}
+
+.agenda-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.agenda-item {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    border-bottom: 1px solid var(--grid-line);
+    min-height: 56px;
+    transition: background 0.1s;
+}
+
+.agenda-item:hover {
+    background: rgba(0,0,0,0.02);
+}
+
+.agenda-item--past {
+    opacity: 0.4;
+}
+
+.agenda-date {
+    padding: 12px 10px;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    border-right: 3px solid var(--grid-line);
+}
+
+.agenda-date--today {
+    color: var(--red);
+    border-right-color: var(--red);
+}
+
+.agenda-date--test {
+    color: var(--red);
+    border-right-color: var(--red);
+}
+
+.agenda-date--exam {
+    color: var(--dark-blue);
+    border-right-color: var(--dark-blue);
+}
+
+.agenda-body {
+    padding: 10px 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2px;
+}
+
+.agenda-title {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.agenda-meta {
+    font-size: 11px;
+    color: var(--text-muted);
+}
+
+.agenda-tag {
+    display: inline-block;
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 2px 6px;
+    margin-right: 6px;
+}
+
+.agenda-tag--test { background: var(--red); color: #fff; }
+.agenda-tag--exam { background: var(--dark-blue); color: #fff; }
+.agenda-tag--assignment { background: var(--orange); color: #000; }
+.agenda-tag--university { background: var(--yellow); color: #000; }
+.agenda-tag--lecture { background: var(--blue); color: #fff; }
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+    .container {
+        padding: 16px 10px 140px;
+    }
+
+    .cal-header h1 {
+        font-size: 32px;
+        letter-spacing: 3px;
+    }
+
+    .week-strip {
+        padding: 14px 12px;
+        margin-left: -10px;
+        margin-right: -10px;
+    }
+
+    .week-day__num {
+        font-size: 17px;
+    }
+
+    .cal-cell {
+        min-height: 60px;
+        padding: 4px 2px;
+    }
+
+    .cal-cell__num {
+        font-size: 11px;
+    }
+
+    .cal-event-pip {
+        font-size: 7px;
+        padding: 1px 2px;
+    }
+
+    .cal-month-nav h2 {
+        font-size: 14px;
+        letter-spacing: 2px;
+    }
+
+    .agenda-item {
+        grid-template-columns: 60px 1fr;
+    }
+
+    .day-detail {
+        margin-left: -10px;
+        margin-right: -10px;
+        border-left: none;
+        border-right: none;
+    }
+
+    .filter-chips {
+        gap: 6px;
+    }
+
+    .chip {
+        padding: 6px 10px;
+        font-size: 9px;
+    }
+}
+
+@media (max-width: 420px) {
+    .week-strip__days {
+        gap: 3px;
+    }
+
+    .week-day {
+        padding: 8px 2px;
+    }
+
+    .cal-cell {
+        min-height: 48px;
+    }
+
+    .cal-event-pip {
+        font-size: 6px;
+    }
+}

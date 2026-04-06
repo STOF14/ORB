@@ -1,0 +1,540 @@
+/* ============================================================
+   Orb — Grades Stylesheet
+   Module grade cards, mark inputs, predictions, summary bar
+   Swiss editorial design — matches dashboard / assignments
+   ============================================================ */
+
+body {
+    background: var(--bg);
+    color: #181818;
+    font-size: 16px;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+/* ── Subtle Grid Background ── */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image:
+        linear-gradient(var(--grid-line) 1px, transparent 1px),
+        linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
+    background-size: 20px 20px;
+    opacity: 0.3;
+    pointer-events: none;
+    z-index: -1;
+}
+
+/* ── Container: 12-col grid ── */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 40px 80px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px;
+}
+
+/* ── Typography ── */
+h1 {
+    font-size: 54px;
+    font-weight: 300;
+    letter-spacing: -2px;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+/* ── Header ── */
+header {
+    grid-column: 1 / -1;
+    border-bottom: 1px solid var(--black);
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+}
+
+.header-row {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 30px;
+    align-items: end;
+}
+
+.color-accent {
+    width: 40px;
+    height: 3px;
+    background: var(--secondary);
+    margin: 12px 0;
+}
+
+.header-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.header-stat {
+    border-left: 3px solid var(--black);
+    padding-left: 12px;
+}
+
+.header-stat__number {
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 1;
+    margin-bottom: 4px;
+}
+
+.header-stat__label {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--text-muted);
+}
+
+.header-stat--red .header-stat__number { color: var(--secondary); }
+.header-stat--green .header-stat__number { color: var(--green); }
+
+/* ── Grade Cards ── */
+.grade-cards {
+    grid-column: 1 / -1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.grade-card {
+    background: #fff;
+    border: 1px solid var(--primary);
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.2s ease;
+}
+
+.grade-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: var(--mod-color);
+}
+
+.grade-card:hover {
+    transform: translateY(-2px);
+}
+
+.grade-card__header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    padding: 24px 30px;
+    background: var(--primary);
+    color: #fff;
+    gap: 20px;
+}
+
+.grade-card__code {
+    font-size: 28px;
+    font-weight: 300;
+    letter-spacing: -0.5px;
+}
+
+.grade-card__name {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.7);
+    margin-top: 2px;
+    letter-spacing: 0.5px;
+}
+
+.grade-card__right {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 8px;
+}
+
+.grade-card__sem {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+}
+
+.grade-card__sem-label {
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.grade-card__sem-value {
+    font-size: 28px;
+    font-weight: 300;
+    letter-spacing: -0.5px;
+}
+
+.grade-card__status {
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 3px 10px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #fff;
+}
+
+.status--green { background: var(--green); border-color: var(--green); }
+.status--red { background: var(--secondary); border-color: var(--secondary); }
+.status--amber { background: var(--amber); border-color: var(--amber); }
+
+/* ── Grade Table ── */
+.grade-card__body {
+    padding: 0 30px 30px;
+}
+
+.grade-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 14px;
+}
+
+.grade-table th {
+    text-align: left;
+    padding: 12px 15px;
+    background: var(--primary);
+    color: #fff;
+    font-weight: 500;
+    font-size: 11px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.grade-table th:nth-child(2),
+.grade-table th:nth-child(3) {
+    text-align: right;
+}
+
+.grade-table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid var(--grid-line);
+    vertical-align: middle;
+}
+
+.grade-table tr:hover {
+    background: #f3f4f6;
+}
+
+.weight-cell {
+    text-align: right;
+    color: var(--text-muted);
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.mark-cell {
+    text-align: right;
+}
+
+.mark-input {
+    width: 64px;
+    height: 32px;
+    text-align: right;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: inherit;
+    border: 1px solid var(--grid-line);
+    padding: 0 8px;
+    background: #fafafa;
+    color: #181818;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+    -moz-appearance: textfield;
+}
+
+.mark-input::-webkit-outer-spin-button,
+.mark-input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.mark-input:focus {
+    outline: none;
+    border-color: var(--black);
+    box-shadow: none;
+    background: #fff;
+}
+
+.mark-input--exam {
+    border-color: var(--secondary);
+    background: #fff5f5;
+}
+
+.mark-input--exam:focus {
+    border-color: var(--secondary);
+}
+
+.exam-row td {
+    border-top: 2px solid var(--primary);
+    padding-top: 12px;
+    font-weight: 600;
+}
+
+/* ── Predictions ── */
+.predictions {
+    margin-top: 20px;
+    padding: 20px 25px;
+    background: #fff;
+    border: 1px solid var(--primary);
+}
+
+.predictions__title {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-bottom: 12px;
+}
+
+.predictions__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+}
+
+.predictions__row + .predictions__row {
+    border-top: 1px solid var(--grid-line);
+}
+
+.predictions__target {
+    font-size: 13px;
+    color: #444;
+}
+
+.predictions__value {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.predictions__value--safe { color: var(--green); }
+.predictions__value--warning { color: var(--amber); }
+.predictions__value--impossible { color: var(--secondary); font-size: 12px; font-weight: 700; }
+
+/* ── Final Mark ── */
+.final-mark {
+    margin-top: 20px;
+    padding: 20px 25px;
+    background: var(--primary);
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.final-mark__label {
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.final-mark__value {
+    font-size: 28px;
+    font-weight: 300;
+    letter-spacing: -0.5px;
+}
+
+/* ── Pass Rules ── */
+.grade-card__rules {
+    margin-top: 20px;
+    font-size: 12px;
+    color: var(--text-muted);
+}
+
+.grade-card__rules summary {
+    cursor: pointer;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 10px;
+    padding: 6px 0;
+}
+
+.grade-card__rules ul {
+    margin: 6px 0 0 18px;
+    line-height: 1.8;
+}
+
+/* ── Expandable Sub-items ── */
+.expandable-row {
+    cursor: pointer;
+    user-select: none;
+}
+
+.expandable-row:hover td {
+    background: #f3f4f6;
+}
+
+.expand-icon {
+    display: inline-block;
+    font-size: 10px;
+    margin-right: 6px;
+    color: var(--text-muted);
+}
+
+.sub-row td {
+    background: #fafafa;
+}
+
+.sub-row td:first-child {
+    padding-left: 40px;
+}
+
+.sub-label {
+    color: var(--text-muted);
+    font-size: 13px;
+}
+
+.computed-mark {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.mark-input--sub {
+    width: 56px;
+    height: 28px;
+    font-size: 13px;
+}
+
+/* ── Footer ── */
+footer {
+    grid-column: 1 / -1;
+    margin-top: 60px;
+    padding-top: 40px;
+    border-top: 1px solid var(--primary);
+}
+
+footer p {
+    font-size: 11px;
+    color: var(--text-muted);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* ── Mobile ── */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px 16px 100px;
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    h1 {
+        font-size: 32px;
+        letter-spacing: -1px;
+    }
+
+    .header-row {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .header-stats {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .header-stat__number {
+        font-size: 28px;
+    }
+
+    .grade-card__header {
+        grid-template-columns: 1fr;
+        padding: 18px 20px;
+        gap: 10px;
+    }
+
+    .grade-card__right {
+        align-items: flex-start;
+        flex-direction: row;
+        gap: 12px;
+    }
+
+    .grade-card__code {
+        font-size: 22px;
+    }
+
+    .grade-card__sem-value {
+        font-size: 22px;
+    }
+
+    .grade-card__body {
+        padding: 0 20px 20px;
+    }
+
+    .grade-table {
+        font-size: 12px;
+    }
+
+    .grade-table th,
+    .grade-table td {
+        padding: 10px 8px;
+    }
+
+    .mark-input {
+        width: 56px;
+        height: 30px;
+        font-size: 13px;
+    }
+
+    .mark-input--sub {
+        width: 48px;
+        height: 26px;
+        font-size: 12px;
+    }
+
+    .sub-row td:first-child {
+        padding-left: 28px;
+    }
+
+    .predictions {
+        padding: 16px;
+    }
+
+    .predictions__value {
+        font-size: 15px;
+    }
+}
+
+/* ── Print ── */
+@media print {
+    .site-nav,
+    .bottom-nav,
+    .nav-overlay,
+    .auth-bar,
+    .orbitdesk-loader {
+        display: none;
+    }
+
+    body::before { display: none; }
+
+    .mark-input {
+        border: none;
+        background: none;
+        font-weight: 700;
+    }
+
+    .grade-card {
+        break-inside: avoid;
+    }
+}

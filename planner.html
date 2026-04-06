@@ -53,12 +53,12 @@
     <nav class="site-nav" role="navigation" aria-label="Main Navigation">
         <span class="nav-label">Navigate</span>
         <a href="dashboard.html">Dashboard</a>
+        <a href="calendar.html">Calendar</a>
         <a href="Semester1Timetable2026.html">Semester 1 Timetable</a>
         <a href="index.html">Semester 2 Timetable</a>
         <a href="planner.html" class="active">Day Planner</a>
-        <a href="timer.html">Focus Timer</a>
         <a href="assignments.html">Assignments</a>
-        <a href="analytics.html">Analytics</a>
+        <a href="grades.html">Grades</a>
     </nav>
 
     <!-- Auth Bar -->
@@ -69,7 +69,7 @@
         </div>
     </div>
 
-    <div class="container">
+    <main class="container" role="main">
         <!-- Orb Brand -->
         <div class="orbitdesk-brand orbitdesk-brand--masthead">
             <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Orb mini logo" role="img">
@@ -223,9 +223,9 @@
         <table class="planner-table">
             <thead>
                 <tr>
-                    <th>Time</th>
-                    <th>Activity</th>
-                    <th>✓</th>
+                    <th scope="col">Time</th>
+                    <th scope="col">Activity</th>
+                    <th scope="col">✓</th>
                 </tr>
             </thead>
             <tbody id="plannerBody">
@@ -270,7 +270,7 @@
             </div>
             <div class="sleep-quality" id="sleepQuality"></div>
         </div>
-    </div>
+    </main>
 
     <!-- Mobile Navigation -->
     <nav class="bottom-nav" aria-label="Mobile navigation">
@@ -287,18 +287,19 @@
         </div>
         <nav class="nav-overlay__links">
             <a href="dashboard.html">Dashboard</a>
+            <a href="calendar.html">Calendar</a>
             <a href="Semester1Timetable2026.html">Semester 1 Timetable</a>
             <a href="index.html">Semester 2 Timetable</a>
             <a href="planner.html" class="active">Day Planner</a>
-            <a href="timer.html">Focus Timer</a>
             <a href="assignments.html">Assignments</a>
-            <a href="analytics.html">Analytics</a>
+            <a href="grades.html">Grades</a>
         </nav>
     </div>
     <script>(function(){var t=document.getElementById('navToggle'),o=document.getElementById('navOverlay'),c=document.getElementById('navClose');function open(){o.classList.add('open');t.setAttribute('aria-expanded','true');document.body.style.overflow='hidden';}function shut(){o.classList.remove('open');t.setAttribute('aria-expanded','false');document.body.style.overflow='';}t.addEventListener('click',open);c.addEventListener('click',shut);})();</script>
 
     <!-- Scripts -->
     <script src="js/firebase-config.js"></script>
+    <script src="js/shared-dates.js"></script>
     <script src="js/loader.js"></script>
     <script src="js/mobile-workflow.js"></script>
     <script src="js/planner.js"></script>

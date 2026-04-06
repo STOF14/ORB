@@ -13,7 +13,7 @@ const MODULE_COLORS = {
     'Other':   'var(--grid-line)'
 };
 
-const MONTHS = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+const MONTHS = MONTHS_SHORT;
 const DAYS   = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
 
 let assignments = [];
