@@ -255,6 +255,165 @@ body {
     color: var(--text-muted);
 }
 
+/* ── Edit UI ── */
+.day-event {
+    position: relative;
+}
+
+.event-edit-btn {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    width: 28px;
+    height: 28px;
+    border: 1px solid var(--grid-line);
+    background: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity .15s;
+}
+
+.day-event:hover .event-edit-btn {
+    opacity: 1;
+}
+
+.event-edited-tag {
+    display: inline-block;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    padding: 1px 5px;
+    background: var(--yellow);
+    color: var(--black);
+    margin-left: 6px;
+    vertical-align: middle;
+}
+
+.edit-form {
+    border: 2px solid var(--black);
+    padding: 16px;
+    margin-top: 4px;
+    background: #fff;
+}
+
+.edit-form__row {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-bottom: 12px;
+}
+
+.edit-form__row--half {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+.edit-form__row--half > div {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.edit-form label {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--text-muted);
+}
+
+.edit-form__input {
+    width: 100%;
+    padding: 8px 10px;
+    font-size: 13px;
+    font-family: inherit;
+    border: 1px solid var(--grid-line);
+    background: #fff;
+    outline: none;
+    transition: border-color .15s;
+    box-sizing: border-box;
+}
+
+.edit-form__input:focus {
+    border-color: var(--black);
+}
+
+.edit-form__actions {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-top: 4px;
+}
+
+.edit-form__save,
+.edit-form__cancel,
+.edit-form__delete,
+.edit-form__reset {
+    padding: 7px 16px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    border: 1px solid var(--black);
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.edit-form__save {
+    background: var(--black);
+    color: #fff;
+}
+.edit-form__save:hover { opacity: .85; }
+
+.edit-form__cancel {
+    background: #fff;
+    color: var(--black);
+}
+.edit-form__cancel:hover { background: #f5f5f5; }
+
+.edit-form__delete {
+    background: #fff;
+    color: var(--red);
+    border-color: var(--red);
+    margin-left: auto;
+}
+.edit-form__delete:hover { background: rgba(230,57,70,.06); }
+
+.edit-form__reset {
+    background: #fff;
+    color: var(--text-muted);
+    border-color: var(--grid-line);
+}
+.edit-form__reset:hover { background: #f5f5f5; }
+
+.add-event-btn {
+    width: 100%;
+    padding: 10px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border: 2px dashed var(--grid-line);
+    background: transparent;
+    color: var(--text-muted);
+    cursor: pointer;
+    font-family: inherit;
+    transition: border-color .15s, color .15s;
+}
+
+.add-event-btn:hover {
+    border-color: var(--black);
+    color: var(--black);
+}
+
 /* ── Filter Chips ── */
 .cal-filters {
     margin-bottom: 24px;

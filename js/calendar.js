@@ -293,8 +293,24 @@ const PHY255_EVENTS = [
     { date: '2026-05-20', event: 'PHY 255: L48 MP + Tut 12', type: 'lecture', module: 'phy-255' },
 ];
 
-// ── Merge all events ──
-const ALL_EVENTS = [
+// ── Merge all events & assign stable IDs ──
+function makeEventId(e) {
+    return (e.date + '|' + e.event + '|' + (e.module || e.type)).replace(/[^a-zA-Z0-9|]/g, '_');
+}
+
+(function assignIds() {
+    const seen = {};
+    [CRITICAL_DATES, UNIVERSITY_DATES, COS212_EVENTS, COS210_EVENTS, WTW218_EVENTS, WTW211_EVENTS, PHY255_EVENTS].forEach(arr => {
+        arr.forEach(e => {
+            let id = makeEventId(e);
+            if (seen[id]) { seen[id]++; id += '_' + seen[id]; }
+            else { seen[id] = 1; }
+            e._id = id;
+        });
+    });
+})();
+
+const BASE_EVENTS = [
     ...CRITICAL_DATES,
     ...UNIVERSITY_DATES,
     ...COS212_EVENTS,
@@ -303,6 +319,94 @@ const ALL_EVENTS = [
     ...WTW211_EVENTS,
     ...PHY255_EVENTS,
 ];
+
+// ── Edits overlay ──
+// Structure: { eventId: { date?, event?, time?, venue?, type?, module?, deleted? } }
+// Custom events: { "custom_xxx": { date, event, type, module, time?, venue?, custom: true } }
+let calendarEdits = {};
+const LS_KEY = 'orb_calendar_edits';
+
+function loadEditsLocal() {
+    try { return JSON.parse(localStorage.getItem(LS_KEY)) || {}; }
+    catch { return {}; }
+}
+
+function saveEditsLocal() {
+    localStorage.setItem(LS_KEY, JSON.stringify(calendarEdits));
+}
+
+async function saveEditsRemote() {
+    saveEditsLocal();
+    if (currentUser) {
+        try {
+            await db.collection('users').doc(currentUser.uid)
+                .collection('calendar').doc('edits')
+                .set(calendarEdits);
+        } catch (e) { console.warn('Calendar edits write failed:', e); }
+    }
+}
+
+async function loadEditsRemote() {
+    if (!currentUser) return loadEditsLocal();
+    try {
+        const snap = await db.collection('users').doc(currentUser.uid)
+            .collection('calendar').doc('edits').get();
+        if (snap.exists) {
+            calendarEdits = snap.data();
+            saveEditsLocal();
+            return calendarEdits;
+        }
+    } catch (e) { console.warn('Calendar edits read failed:', e); }
+    return loadEditsLocal();
+}
+
+let editUnsub = null;
+
+function listenToEdits() {
+    if (editUnsub) editUnsub();
+    if (!currentUser) return;
+    editUnsub = db.collection('users').doc(currentUser.uid)
+        .collection('calendar').doc('edits')
+        .onSnapshot(snap => {
+            if (snap.metadata.hasPendingWrites) return;
+            if (snap.exists) {
+                calendarEdits = snap.data();
+                saveEditsLocal();
+                renderAll();
+            }
+        });
+}
+
+// ── Build effective events list (base + edits overlay) ──
+function getEffectiveEvents() {
+    const events = [];
+    BASE_EVENTS.forEach(e => {
+        const edit = calendarEdits[e._id];
+        if (edit && edit.deleted) return; // skip deleted
+        if (edit) {
+            events.push({
+                ...e,
+                date: edit.date || e.date,
+                event: edit.event !== undefined ? edit.event : e.event,
+                time: edit.time !== undefined ? edit.time : e.time,
+                venue: edit.venue !== undefined ? edit.venue : e.venue,
+                type: edit.type || e.type,
+                module: edit.module !== undefined ? edit.module : e.module,
+                _id: e._id,
+                _edited: true
+            });
+        } else {
+            events.push({ ...e });
+        }
+    });
+    // Add custom events
+    Object.keys(calendarEdits).forEach(id => {
+        if (id.startsWith('custom_') && !calendarEdits[id].deleted) {
+            events.push({ ...calendarEdits[id], _id: id, _custom: true });
+        }
+    });
+    return events;
+}
 
 // ── State ──
 let currentWeekStart = getMonday(new Date());
@@ -339,7 +443,7 @@ function isInRange(dateStr, start, end) {
 }
 
 function getEventsForDate(dateStr) {
-    let events = ALL_EVENTS.filter(e => e.date === dateStr);
+    let events = getEffectiveEvents().filter(e => e.date === dateStr);
     if (activeFilter !== 'all') {
         events = events.filter(e => e.module === activeFilter || e.type === activeFilter);
     }
@@ -417,6 +521,14 @@ function selectDay(d) {
 }
 
 // ── Day Detail ──
+let editingEventId = null;
+
+function escHtml(s) {
+    const d = document.createElement('div');
+    d.textContent = s;
+    return d.innerHTML;
+}
+
 function renderDayDetail() {
     const panel = document.getElementById('dayDetail');
     const titleEl = document.getElementById('dayDetailTitle');
@@ -432,34 +544,210 @@ function renderDayDetail() {
     const opts = { weekday: 'long', month: 'long', day: 'numeric', year: 'numeric' };
     titleEl.textContent = selectedDate.toLocaleDateString('en-ZA', opts);
 
+    let html = '';
+
     if (events.length === 0) {
-        // Check if recess
         const inRecess = RECESS_RANGES.some(r => isInRange(ds, r.start, r.end));
         if (inRecess) {
-            content.innerHTML = '<div class="day-event day-event--recess"><div class="day-event__info"><div class="day-event__title">Recess — No lectures</div></div></div>';
+            html = '<div class="day-event day-event--recess"><div class="day-event__info"><div class="day-event__title">Recess — No lectures</div></div></div>';
         } else {
-            content.innerHTML = '<div style="color: var(--text-muted); font-size: 13px; padding: 8px 0;">No events scheduled</div>';
+            html = '<div style="color: var(--text-muted); font-size: 13px; padding: 8px 0;">No events scheduled</div>';
         }
     } else {
-        content.innerHTML = events.map(e => {
+        html = events.map(e => {
             const cls = e.type === 'test' ? 'day-event--test' :
                         e.type === 'exam' ? 'day-event--exam' :
                         e.type === 'university' || e.type === 'recess' ? 'day-event--university' :
                         e.type === 'assignment' ? 'day-event--assignment' : '';
             const badge = e.module ? e.module.replace('-', ' ').toUpperCase() : e.type.toUpperCase();
-            const meta = [e.time, e.venue].filter(Boolean).join(' • ');
+            const meta = [e.time, e.venue].filter(Boolean).join(' \u2022 ');
+            const editedTag = (e._edited || e._custom) ? '<span class="event-edited-tag">edited</span>' : '';
+
+            if (editingEventId === e._id) {
+                return renderEditForm(e, ds);
+            }
+
             return `
                 <div class="day-event ${cls}">
                     <div class="day-event__badge">${badge}</div>
                     <div class="day-event__info">
-                        <div class="day-event__title">${e.event}</div>
-                        ${meta ? `<div class="day-event__meta">${meta}</div>` : ''}
+                        <div class="day-event__title">${escHtml(e.event)} ${editedTag}</div>
+                        ${meta ? `<div class="day-event__meta">${escHtml(meta)}</div>` : ''}
                     </div>
+                    <button class="event-edit-btn" data-id="${e._id}" title="Edit event">&#9998;</button>
                 </div>`;
         }).join('');
     }
 
+    // Add event button
+    html += '<button class="add-event-btn" id="addEventBtn">+ Add event</button>';
+
+    content.innerHTML = html;
     panel.classList.add('open');
+
+    // Wire edit buttons
+    content.querySelectorAll('.event-edit-btn').forEach(btn => {
+        btn.addEventListener('click', (ev) => {
+            ev.stopPropagation();
+            editingEventId = btn.dataset.id;
+            renderDayDetail();
+        });
+    });
+
+    // Wire add event button
+    const addBtn = document.getElementById('addEventBtn');
+    if (addBtn) {
+        addBtn.addEventListener('click', () => {
+            const id = 'custom_' + Date.now();
+            calendarEdits[id] = {
+                date: ds,
+                event: 'New event',
+                type: 'university',
+                module: '',
+                time: '',
+                venue: '',
+                custom: true
+            };
+            saveEditsRemote();
+            editingEventId = id;
+            renderAll();
+        });
+    }
+
+    // Wire edit form buttons (if editing)
+    wireEditForm(content, ds);
+}
+
+function renderEditForm(e, dateStr) {
+    const types = ['lecture', 'test', 'exam', 'assignment', 'university'];
+    const modules = [
+        { val: '', label: 'None' },
+        { val: 'phy-255', label: 'PHY 255' },
+        { val: 'wtw-211', label: 'WTW 211' },
+        { val: 'wtw-218', label: 'WTW 218' },
+        { val: 'cos-210', label: 'COS 210' },
+        { val: 'cos-212', label: 'COS 212' },
+    ];
+
+    const typeOptions = types.map(t =>
+        '<option value="' + t + '"' + (e.type === t ? ' selected' : '') + '>' + t.charAt(0).toUpperCase() + t.slice(1) + '</option>'
+    ).join('');
+
+    const modOptions = modules.map(m =>
+        '<option value="' + m.val + '"' + ((e.module || '') === m.val ? ' selected' : '') + '>' + m.label + '</option>'
+    ).join('');
+
+    const isCustom = e._custom;
+    const resetBtn = !isCustom ?
+        '<button class="edit-form__reset" data-action="reset" data-id="' + e._id + '">Reset</button>' : '';
+
+    return '<div class="edit-form" data-edit-id="' + e._id + '">' +
+        '<div class="edit-form__row">' +
+            '<label>Name</label>' +
+            '<input type="text" class="edit-form__input" name="event" value="' + escHtml(e.event) + '" />' +
+        '</div>' +
+        '<div class="edit-form__row">' +
+            '<label>Date</label>' +
+            '<input type="date" class="edit-form__input" name="date" value="' + e.date + '" />' +
+        '</div>' +
+        '<div class="edit-form__row edit-form__row--half">' +
+            '<div><label>Time</label>' +
+            '<input type="text" class="edit-form__input" name="time" value="' + escHtml(e.time || '') + '" placeholder="e.g. 07:30 – 09:00" /></div>' +
+            '<div><label>Venue</label>' +
+            '<input type="text" class="edit-form__input" name="venue" value="' + escHtml(e.venue || '') + '" placeholder="e.g. HB 4-8" /></div>' +
+        '</div>' +
+        '<div class="edit-form__row edit-form__row--half">' +
+            '<div><label>Type</label>' +
+            '<select class="edit-form__input" name="type">' + typeOptions + '</select></div>' +
+            '<div><label>Module</label>' +
+            '<select class="edit-form__input" name="module">' + modOptions + '</select></div>' +
+        '</div>' +
+        '<div class="edit-form__actions">' +
+            '<button class="edit-form__save" data-action="save" data-id="' + e._id + '">Save</button>' +
+            '<button class="edit-form__cancel" data-action="cancel">Cancel</button>' +
+            '<button class="edit-form__delete" data-action="delete" data-id="' + e._id + '">Delete</button>' +
+            resetBtn +
+        '</div>' +
+    '</div>';
+}
+
+function wireEditForm(container, dateStr) {
+    const form = container.querySelector('.edit-form');
+    if (!form) return;
+
+    form.querySelectorAll('button[data-action]').forEach(btn => {
+        btn.addEventListener('click', (ev) => {
+            ev.stopPropagation();
+            const action = btn.dataset.action;
+            const id = btn.dataset.id;
+
+            if (action === 'cancel') {
+                editingEventId = null;
+                renderDayDetail();
+                return;
+            }
+
+            if (action === 'delete') {
+                if (id.startsWith('custom_')) {
+                    delete calendarEdits[id];
+                } else {
+                    calendarEdits[id] = { deleted: true };
+                }
+                editingEventId = null;
+                saveEditsRemote();
+                renderAll();
+                return;
+            }
+
+            if (action === 'reset') {
+                delete calendarEdits[id];
+                editingEventId = null;
+                saveEditsRemote();
+                renderAll();
+                return;
+            }
+
+            if (action === 'save') {
+                const eventName = form.querySelector('[name="event"]').value.trim();
+                const date = form.querySelector('[name="date"]').value;
+                const time = form.querySelector('[name="time"]').value.trim();
+                const venue = form.querySelector('[name="venue"]').value.trim();
+                const type = form.querySelector('[name="type"]').value;
+                const mod = form.querySelector('[name="module"]').value;
+
+                if (!eventName) return;
+
+                if (id.startsWith('custom_')) {
+                    calendarEdits[id] = { date: date, event: eventName, type: type, module: mod, time: time, venue: venue, custom: true };
+                } else {
+                    const base = BASE_EVENTS.find(e => e._id === id);
+                    const edit = {};
+                    if (date !== base.date) edit.date = date;
+                    if (eventName !== base.event) edit.event = eventName;
+                    if (time !== (base.time || '')) edit.time = time;
+                    if (venue !== (base.venue || '')) edit.venue = venue;
+                    if (type !== base.type) edit.type = type;
+                    if (mod !== (base.module || '')) edit.module = mod;
+                    if (Object.keys(edit).length > 0) {
+                        calendarEdits[id] = edit;
+                    } else {
+                        delete calendarEdits[id];
+                    }
+                }
+
+                editingEventId = null;
+                if (date !== dateStr) {
+                    selectedDate = new Date(date + 'T00:00:00');
+                    currentWeekStart = getMonday(selectedDate);
+                    currentMonth = selectedDate.getMonth();
+                    currentYear = selectedDate.getFullYear();
+                }
+                saveEditsRemote();
+                renderAll();
+                return;
+            }
+        });
+    });
 }
 
 // ── Month Grid ──
@@ -566,7 +854,7 @@ function renderAgenda() {
     today.setHours(0, 0, 0, 0);
 
     // Show important events: tests, exams, assignments, university dates (no lectures)
-    let agendaEvents = ALL_EVENTS.filter(e =>
+    let agendaEvents = getEffectiveEvents().filter(e =>
         e.type === 'test' || e.type === 'exam' || e.type === 'assignment' || e.type === 'university' || e.type === 'recess'
     );
 
@@ -657,12 +945,39 @@ function renderAll() {
     renderAgenda();
 }
 
+// ── Auth ──
+auth.onAuthStateChanged(user => {
+    currentUser = user;
+    const authContent = document.getElementById('authContent');
+    const syncStatus  = document.getElementById('syncStatus');
+
+    if (user) {
+        if (authContent) {
+            authContent.innerHTML =
+                '<span class="user-name">' + escHtml(user.displayName || user.email) + '</span>' +
+                '<button class="signout-btn" onclick="signOutUser()">Sign Out</button>';
+        }
+        if (syncStatus) { syncStatus.textContent = 'Synced'; syncStatus.className = 'sync-status online'; }
+        loadEditsRemote().then(() => renderAll());
+        listenToEdits();
+    } else {
+        if (editUnsub) { editUnsub(); editUnsub = null; }
+        calendarEdits = {};
+        saveEditsLocal();
+        if (authContent) {
+            authContent.innerHTML = '<button class="auth-btn" onclick="signInWithGoogle()">Sign in with Google</button>';
+        }
+        if (syncStatus) { syncStatus.textContent = 'Local only'; syncStatus.className = 'sync-status offline'; }
+        renderAll();
+    }
+});
+
 // ── Init ──
 document.addEventListener('DOMContentLoaded', () => {
-    // Auto-select today
     selectedDate = new Date();
     selectedDate.setHours(0, 0, 0, 0);
 
+    loadEditsLocal();
     initFilters();
     initNavigation();
     renderAll();
