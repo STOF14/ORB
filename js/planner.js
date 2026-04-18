@@ -91,6 +91,7 @@ async function loadData(key) {
             if (snap.exists) {
                 cachedData = snap.data();
                 saveDataLocal(key, cachedData);
+                validateAndMigrateData(cachedData);
                 return cachedData;
             }
         } catch (e) {
@@ -98,6 +99,7 @@ async function loadData(key) {
         }
     }
     cachedData = loadDataLocal(key);
+    validateAndMigrateData(cachedData);
     return cachedData;
 }
 
@@ -349,9 +351,14 @@ function getBucketTasks(bucket, data = cachedData) {
 
 function normalizeRoughTask(task, fallbackDateKey) {
     const id = task && task.id ? task.id : genRoughTaskId();
+    // Ensure carryId is always a valid string
+    let carryId = task && task.carryId ? task.carryId : id;
+    if (!carryId || typeof carryId !== 'string' || !carryId.trim()) {
+        carryId = id;  // Fallback to id if carryId is invalid
+    }
     return {
         id,
-        carryId: task && task.carryId ? task.carryId : id,
+        carryId,
         text: task && typeof task.text === 'string' ? task.text : '',
         done: !!(task && task.done),
         createdOn: task && task.createdOn ? task.createdOn : fallbackDateKey,
@@ -380,6 +387,34 @@ function normalizeRoughTasksInData(data, fallbackDateKey) {
     return changed;
 }
 
+// Validate and migrate old planner data to new format
+function validateAndMigrateData(data) {
+    if (!data || typeof data !== 'object') return;
+    
+    // Ensure deletedCarryIds array exists
+    if (!Array.isArray(data.deletedCarryIds)) {
+        data.deletedCarryIds = [];
+    }
+    
+    // Ensure all tasks have valid carryIds
+    if (data.roughTasks && typeof data.roughTasks === 'object' && !Array.isArray(data.roughTasks)) {
+        ROUGH_BUCKETS.forEach(bucket => {
+            if (Array.isArray(data.roughTasks[bucket])) {
+                data.roughTasks[bucket].forEach(task => {
+                    // If task lacks carryId or it's invalid, assign one
+                    if (!task.carryId || typeof task.carryId !== 'string' || !task.carryId.trim()) {
+                        task.carryId = task.id || genRoughTaskId();
+                    }
+                    // Ensure task has an id
+                    if (!task.id || typeof task.id !== 'string' || !task.id.trim()) {
+                        task.id = genRoughTaskId();
+                    }
+                });
+            }
+        });
+    }
+}
+
 async function readPlannerDataForKey(key) {
     if (currentUser) {
         try {
@@ -397,19 +432,40 @@ async function readPlannerDataForKey(key) {
 }
 
 function buildRoughCarryClone(task, fromDateKey) {
+    // Ensure the carried task has a valid carryId
+    const carryId = (task.carryId && typeof task.carryId === 'string' && task.carryId.trim())
+        ? task.carryId
+        : genRoughTaskId();
     return {
         id: genRoughTaskId(),
-        carryId: task.carryId,
-        text: task.text,
+        carryId: carryId,
+        text: task.text || '',
         done: false,
         createdOn: task.createdOn || fromDateKey,
         carriedFrom: fromDateKey
     };
 }
 
+// Clean up old deletions from 45+ days ago to prevent unbounded growth
+function cleanupOldDeletions() {
+    if (!cachedData.deletedCarryIds || cachedData.deletedCarryIds.length === 0) return false;
+    
+    // Periodically (e.g., weekly) clear the list to prevent unbounded growth
+    const lastCleanup = parseInt(localStorage.getItem('planner_cleanup_time') || '0');
+    const now = Date.now();
+    if (now - lastCleanup > 7 * 24 * 60 * 60 * 1000) {  // Weekly cleanup
+        cachedData.deletedCarryIds = [];
+        localStorage.setItem('planner_cleanup_time', now.toString());
+        console.log('[Planner] Cleared old deletion tracking (weekly cleanup)');
+        return true;
+    }
+    return false;
+}
+
 async function syncCarriedRoughTasksForDate(key) {
     let changed = normalizeRoughTasksInData(cachedData, key);
     const currentCarryIds = new Set();
+    const deletedCarryIds = new Set(cachedData.deletedCarryIds || []);
 
     ROUGH_BUCKETS.forEach(bucket => {
         getBucketTasks(bucket).forEach(task => {
@@ -440,10 +496,17 @@ async function syncCarriedRoughTasksForDate(key) {
     latestByCarry.forEach(entry => {
         if (entry.task.done) return;
         if (currentCarryIds.has(entry.task.carryId)) return;
+        // Skip tasks that were explicitly deleted
+        if (deletedCarryIds.has(entry.task.carryId)) return;
         ensureBucketTasks(entry.bucket).push(buildRoughCarryClone(entry.task, entry.dateKey));
         currentCarryIds.add(entry.task.carryId);
         changed = true;
     });
+
+    // Periodically clean up old deletion records
+    if (cleanupOldDeletions()) {
+        changed = true;
+    }
 
     if (changed) {
         saveCurrentPlannerData();
@@ -562,7 +625,23 @@ function addRoughTask(bucket, text) {
     if (!ROUGH_BUCKETS.includes(bucket)) return;
     const items = ensureBucketTasks(bucket);
     const id = genRoughTaskId();
-    items.push({ id, carryId: id, text: text || '', done: false, createdOn: dateKey(currentDate), carriedFrom: null });
+    
+    // Validate and prepare task data
+    if (!id || typeof id !== 'string' || !id.trim()) {
+        console.error('Failed to generate valid task ID');
+        return;
+    }
+    
+    const newTask = {
+        id: id,
+        carryId: id,  // Ensure carryId equals id for new tasks
+        text: (typeof text === 'string' ? text : '').trim(),
+        done: false,
+        createdOn: dateKey(currentDate),
+        carriedFrom: null
+    };
+    
+    items.push(newTask);
     saveCurrentPlannerData();
     renderRoughPlan();
 }
@@ -593,6 +672,18 @@ function updateRoughTaskText(bucket, taskId, text) {
 function deleteRoughTask(bucket, taskId) {
     if (!ROUGH_BUCKETS.includes(bucket)) return;
     const items = ensureBucketTasks(bucket);
+    const taskToDelete = items.find(item => item.id === taskId);
+    
+    // Track the carryId of deleted tasks so they don't get re-carried forward
+    if (taskToDelete && taskToDelete.carryId) {
+        if (!cachedData.deletedCarryIds) {
+            cachedData.deletedCarryIds = [];
+        }
+        if (!cachedData.deletedCarryIds.includes(taskToDelete.carryId)) {
+            cachedData.deletedCarryIds.push(taskToDelete.carryId);
+        }
+    }
+    
     cachedData.roughTasks[bucket] = items.filter(item => item.id !== taskId);
     saveCurrentPlannerData();
     renderRoughPlan();
