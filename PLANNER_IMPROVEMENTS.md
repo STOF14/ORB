@@ -1,7 +1,9 @@
 # Planner Robustness Improvements - Summary
 
 ## Problem Solved
+
 Deleted rough planner tasks were reappearing after browser reload due to:
+
 1. Automatic task carry-forward logic recreating deleted tasks from old daily records
 2. No validation of task data structure (carryId could be null/missing)
 3. Unbounded growth of deletion tracking list
@@ -9,25 +11,34 @@ Deleted rough planner tasks were reappearing after browser reload due to:
 ## Solutions Implemented
 
 ### 1. ✅ Deletion Tracking (Original Fix)
+
 **File:** `js/planner.js` - `deleteRoughTask()` function
+
 - Tracks deleted task IDs in `deletedCarryIds` array
+
 - Prevents carry-forward logic from re-adding deleted tasks
 
 ### 2. ✅ CarryId Validation in Normalization  
+
 **File:** `js/planner.js` - `normalizeRoughTask()` function
+
 - Ensures carryId is always a valid string
 - Falls back to task ID if carryId is null, empty, or whitespace-only
 - Fixes old data that may have invalid carryIds
 
 ### 3. ✅ CarryId Validation in Carry-Forward Clone
+
 **File:** `js/planner.js` - `buildRoughCarryClone()` function
+
 - Validates carryId before carrying task forward
 - Generates new carryId if original is invalid
 - Ensures task text is never null
 
 ### 4. ✅ New Migration/Validation Function
+
 **File:** `js/planner.js` - `validateAndMigrateData()` function
 ```javascript
+
 // Automatically fixes old planner data on load:
 - Adds missing deletedCarryIds field
 - Fixes null/invalid carryIds (assigns task id)
@@ -38,14 +49,18 @@ Deleted rough planner tasks were reappearing after browser reload due to:
 **Called:** Automatically in `loadData()` whenever planner data is loaded
 
 ### 5. ✅ Weekly Cleanup of Deletions
+
 **File:** `js/planner.js` - `cleanupOldDeletions()` function
+
 - Prevents `deletedCarryIds` array from growing unbounded
 - Clears deletion tracking once per week
 - Stored in localStorage as `planner_cleanup_time`
 - Called automatically during carry-forward sync
 
 ### 6. ✅ Improved Task Creation
+
 **File:** `js/planner.js` - `addRoughTask()` function
+
 - Validates generated task IDs before use
 - Ensures new tasks always have valid `id` and `carryId`
 - Text input is sanitized and trimmed
@@ -53,6 +68,7 @@ Deleted rough planner tasks were reappearing after browser reload due to:
 ## Test Results
 
 ### Test Suite 1: Core Logic (15 tests)
+
 ✓ Basic deletion tracking
 ✓ Carry-forward respects deletions  
 ✓ Done tasks not carried forward
@@ -60,6 +76,7 @@ Deleted rough planner tasks were reappearing after browser reload due to:
 ✓ Multi-bucket handling
 
 ### Test Suite 2: Improvements (10 tests)
+
 ✓ Fixes null carryId → uses task id
 ✓ Fixes missing carryId field → creates from id
 ✓ Adds missing deletedCarryIds → creates array
@@ -72,6 +89,7 @@ Deleted rough planner tasks were reappearing after browser reload due to:
 ## Migration Path
 
 ### For Users With Old Data
+
 1. When planner page loads, `loadData()` calls `validateAndMigrateData()`
 2. Old data is automatically fixed:
    - Missing `deletedCarryIds` array is created
@@ -81,6 +99,7 @@ Deleted rough planner tasks were reappearing after browser reload due to:
 4. Process is transparent to user
 
 ### Example: Old Data Before → After
+
 ```javascript
 // BEFORE (old data from previous version)
 {
@@ -152,6 +171,7 @@ node test-planner-improvements.js   # 10 improvement tests
 ```
 
 ## Performance Impact
+
 - Migration: **<1ms per 1000 tasks**
 - Cleanup: Runs **once per week**
 - Carry-forward: **No performance change**
@@ -171,6 +191,7 @@ node test-planner-improvements.js   # 10 improvement tests
 ✓ Large datasets (1000+ tasks)
 
 ## Backward Compatibility
+
 - ✅ All existing valid data works unchanged
 - ✅ Old data is automatically fixed on load
 - ✅ No breaking changes to API

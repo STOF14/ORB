@@ -1,0 +1,15 @@
+{
+  "name": "orb",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Orb student planner and dashboard app",
+  "scripts": {
+    "dev": "vite --host",
+    "start": "npm run dev",
+    "build": "vite build",
+    "preview": "vite preview --host"
+  },
+  "devDependencies": {
+    "vite": "^5.4.10"
+  }
+}

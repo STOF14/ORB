@@ -118,7 +118,7 @@ document.getElementById('addForm').addEventListener('submit', e => {
     const date  = document.getElementById('addDate').value;
     const time  = document.getElementById('addTime').value || '23:59';
     const prio  = document.getElementById('addPriority').value;
-    const notes = document.getElementById('addNotes').value.trim();
+    const notes = document.getElementById('addNotes').value;
 
     if (!title || !date) return;
 
@@ -274,7 +274,7 @@ function cardHTML(item) {
             (item.time ? ' · ' + item.time : '') +
             ' — ' + dueText(item.date, item.status) +
         '</div>' +
-        (item.notes ? '<div class="card-notes">' + escapeHtml(item.notes) + '</div>' : '') +
+        (item.notes && item.notes.trim() ? '<div class="card-notes">' + renderMarkdown(item.notes) + '</div>' : '') +
         '<div class="card-actions">' + actions + '</div>' +
     '</div>';
 }
@@ -283,6 +283,74 @@ function escapeHtml(str) {
     const div = document.createElement('div');
     div.textContent = str;
     return div.innerHTML;
+}
+
+function replaceTokens(input, tokenPrefix, values) {
+    let output = input;
+    values.forEach((value, idx) => {
+        const token = tokenPrefix + idx + '__';
+        output = output.split(token).join(value);
+    });
+    return output;
+}
+
+function renderMarkdown(markdownText) {
+    const source = String(markdownText || '').replace(/\r\n?/g, '\n');
+    if (!source.trim()) return '';
+
+    let html = escapeHtml(source);
+    const fencedBlocks = [];
+    const inlineCodes = [];
+
+    html = html.replace(/```([\s\S]*?)```/g, (_, codeBlock) => {
+        const token = '__FENCED_' + fencedBlocks.length + '__';
+        fencedBlocks.push('<pre class="md-code-block"><code>' + codeBlock.trimEnd() + '</code></pre>');
+        return token;
+    });
+
+    html = html.replace(/`([^`\n]+)`/g, (_, inlineCode) => {
+        const token = '__INLINE_' + inlineCodes.length + '__';
+        inlineCodes.push('<code>' + inlineCode + '</code>');
+        return token;
+    });
+
+    html = html.replace(/^######\s+(.+)$/gm, '<h6>$1</h6>');
+    html = html.replace(/^#####\s+(.+)$/gm, '<h5>$1</h5>');
+    html = html.replace(/^####\s+(.+)$/gm, '<h4>$1</h4>');
+    html = html.replace(/^###\s+(.+)$/gm, '<h3>$1</h3>');
+    html = html.replace(/^##\s+(.+)$/gm, '<h2>$1</h2>');
+    html = html.replace(/^#\s+(.+)$/gm, '<h1>$1</h1>');
+
+    html = html.replace(/\[([^\]]+)\]\((https?:\/\/[^\s)]+)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer">$1</a>');
+    html = html.replace(/\*\*([^*\n]+)\*\*/g, '<strong>$1</strong>');
+    html = html.replace(/__([^_\n]+)__/g, '<strong>$1</strong>');
+    html = html.replace(/(^|[^*_])\*([^*\n]+)\*(?=[^*]|$)/g, '$1<em>$2</em>');
+    html = html.replace(/(^|[^_])_([^_\n]+)_(?=[^_]|$)/g, '$1<em>$2</em>');
+    html = html.replace(/^>\s?(.*)$/gm, '<blockquote>$1</blockquote>');
+
+    html = html.replace(/(?:^|\n)((?:[-*+]\s+.+(?:\n|$))+)/g, (_, listBlock) => {
+        const items = listBlock.trim().split('\n').map(line => '<li>' + line.replace(/^[-*+]\s+/, '') + '</li>').join('');
+        return '\n<ul>' + items + '</ul>\n';
+    });
+
+    html = html.replace(/(?:^|\n)((?:\d+\.\s+.+(?:\n|$))+)/g, (_, listBlock) => {
+        const items = listBlock.trim().split('\n').map(line => '<li>' + line.replace(/^\d+\.\s+/, '') + '</li>').join('');
+        return '\n<ol>' + items + '</ol>\n';
+    });
+
+    html = html.split(/\n{2,}/).map(block => {
+        const trimmed = block.trim();
+        if (!trimmed) return '';
+        if (/^<(h[1-6]|ul|ol|pre|blockquote)/.test(trimmed)) {
+            return trimmed;
+        }
+        return '<p>' + trimmed.replace(/\n/g, '<br>') + '</p>';
+    }).join('\n');
+
+    html = replaceTokens(html, '__INLINE_', inlineCodes);
+    html = replaceTokens(html, '__FENCED_', fencedBlocks);
+
+    return html;
 }
 
 function renderKanban() {
