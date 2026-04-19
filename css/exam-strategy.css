@@ -1,0 +1,182 @@
+/* Calendar-style page with small page-specific accents */
+
+.day-event__method {
+    display: inline-block;
+    margin-top: 5px;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    background: rgba(0, 0, 0, 0.06);
+    color: #333;
+    padding: 2px 6px;
+}
+
+.day-event__module {
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-bottom: 2px;
+}
+
+.day-event--meta {
+    border-left-color: #777;
+    background: rgba(0, 0, 0, 0.03);
+}
+
+.day-event--wtw-218 {
+    border-left-color: var(--yellow);
+    background: rgba(233, 196, 106, 0.10);
+}
+
+.day-event--wtw-211 {
+    border-left-color: var(--orange);
+    background: rgba(244, 162, 97, 0.10);
+}
+
+.day-event--cos-210 {
+    border-left-color: var(--blue);
+    background: rgba(69, 123, 157, 0.09);
+}
+
+.day-event--cos-212 {
+    border-left-color: var(--dark-blue);
+    background: rgba(29, 53, 87, 0.08);
+}
+
+.day-event--phy-255 {
+    border-left-color: var(--red);
+    background: rgba(230, 57, 70, 0.08);
+}
+
+.chip[data-filter="meta"].chip--active {
+    background: #555;
+    border-color: #555;
+}
+
+.cal-event-pip--meta {
+    background: rgba(0, 0, 0, 0.08);
+    color: #555;
+}
+
+.agenda-tag--meta {
+    background: #555;
+    color: #fff;
+}
+
+.exam-footer {
+    margin-top: 40px;
+    padding-top: 28px;
+    border-top: 1px solid var(--grid-line);
+}
+
+.exam-footer p {
+    font-size: 11px;
+    color: var(--text-muted);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.range-section {
+    margin-bottom: 28px;
+}
+
+.range-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.range-head h2 {
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.range-meta {
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--text-muted);
+}
+
+.date-rail {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 8px;
+}
+
+.date-chip {
+    border: 2px solid var(--grid-line);
+    background: #fff;
+    padding: 10px 8px;
+    text-align: left;
+    cursor: pointer;
+    transition: border-color 0.15s, transform 0.15s;
+}
+
+.date-chip:hover {
+    border-color: var(--black);
+    transform: translateY(-1px);
+}
+
+.date-chip--active {
+    border-color: var(--black);
+    box-shadow: inset 0 0 0 1px var(--black);
+}
+
+.date-chip--test {
+    border-color: rgba(230, 57, 70, 0.55);
+}
+
+.date-chip__dow {
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-bottom: 3px;
+}
+
+.date-chip__date {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.date-chip__count {
+    font-size: 10px;
+    color: var(--text-muted);
+}
+
+.date-chip__flag {
+    display: inline-block;
+    margin-top: 4px;
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 2px 5px;
+    background: var(--red);
+    color: #fff;
+}
+
+.date-chip--empty {
+    opacity: 0.45;
+}
+
+.week-day--outside {
+    opacity: 0.35;
+}
+
+@media (max-width: 768px) {
+    .date-rail {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}

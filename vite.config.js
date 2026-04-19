@@ -9,6 +9,7 @@ export default defineConfig({
         dashboard: resolve(__dirname, 'dashboard.html'),
         calendar: resolve(__dirname, 'calendar.html'),
         planner: resolve(__dirname, 'planner.html'),
+        examStrategy: resolve(__dirname, 'exam-strategy.html'),
         assignments: resolve(__dirname, 'assignments.html'),
         grades: resolve(__dirname, 'grades.html'),
         semester1Timetable2026: resolve(__dirname, 'Semester1Timetable2026.html'),

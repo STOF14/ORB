@@ -7,7 +7,9 @@
     "dev": "vite --host",
     "start": "npm run dev",
     "build": "vite build",
-    "preview": "vite preview --host"
+    "preview": "vite preview --host",
+    "test:planner:logic": "node tests/test-planner-logic.js",
+    "test:planner:improvements": "node tests/test-planner-improvements.js"
   },
   "devDependencies": {
     "vite": "^5.4.10"

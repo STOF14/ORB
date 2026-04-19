@@ -166,8 +166,8 @@ Deleted rough planner tasks were reappearing after browser reload due to:
 
 Run test suites:
 ```bash
-node test-planner-logic.js          # 15 core logic tests
-node test-planner-improvements.js   # 10 improvement tests
+node tests/test-planner-logic.js          # 15 core logic tests
+node tests/test-planner-improvements.js   # 10 improvement tests
 ```
 
 ## Performance Impact

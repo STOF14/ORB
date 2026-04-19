@@ -49,7 +49,7 @@ test('Timetable edit persists (Semester 1, non-empty event)', async ({ page }) =
     await expect(timeInput).toHaveValue(newTime);
     await expect(activityInput).toHaveValue(newActivity);
   } catch (e) {
-    await page.screenshot({ path: 'fail-sem1.png', fullPage: false });
+    await page.screenshot({ path: 'test-screenshots/fail-sem1.png', fullPage: false });
     // Try to log the outer HTML of the parent row, fallback to error message if not found
     try {
       const failedRow = await page.locator('.edit-row').nth(1);

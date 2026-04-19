@@ -6,7 +6,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <meta name="theme-color" content="#000000" />
-    <meta name="apple-mobile-web-app-title" content="Calendar" />
+    <meta name="apple-mobile-web-app-title" content="Exam Strategy" />
     <link rel="manifest" href="manifest.json" />
     <link rel="apple-touch-icon" sizes="180x180" href="icons/icon-192.png" />
     <link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png" />
@@ -14,12 +14,12 @@
     <meta name="format-detection" content="telephone=no" />
     <meta name="apple-touch-fullscreen" content="yes" />
     <meta name="apple-touch-startup-image" content="icons/icon-512.png" />
-    <title>Calendar — Semester 1 2026</title>
+    <title>Exam Strategy - Orb</title>
     <link rel="stylesheet" href="css/shared.css" />
     <link rel="stylesheet" href="css/calendar.css" />
+    <link rel="stylesheet" href="css/exam-strategy.css" />
 </head>
 <body>
-    <!-- Loader -->
     <div id="orbitdesk-loader" class="orbitdesk-loader" role="dialog" aria-label="Loading Orb">
         <div class="orbitdesk-loader__grid">
             <div class="orbitdesk-loader__text">
@@ -44,34 +44,19 @@
         </div>
     </div>
 
-    <!-- Firebase SDK -->
-    <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-auth-compat.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore-compat.js"></script>
-
-    <!-- Navigation -->
     <nav class="site-nav" role="navigation" aria-label="Main Navigation">
         <span class="nav-label">Navigate</span>
         <a href="dashboard.html">Dashboard</a>
-        <a href="calendar.html" class="active">Calendar</a>
+        <a href="calendar.html">Calendar</a>
         <a href="Semester1Timetable2026.html">Semester 1 Timetable</a>
         <a href="index.html">Semester 2 Timetable</a>
         <a href="planner.html">Day Planner</a>
-        <a href="exam-strategy.html">Exam Strategy</a>
+        <a href="exam-strategy.html" class="active">Exam Strategy</a>
         <a href="assignments.html">Assignments</a>
         <a href="grades.html">Grades</a>
     </nav>
 
-    <!-- Auth Bar -->
-    <div class="auth-bar" id="authBar">
-        <span class="sync-status offline" id="syncStatus">Local only</span>
-        <div id="authContent">
-            <button class="auth-btn" onclick="signInWithGoogle()">Sign in with Google</button>
-        </div>
-    </div>
-
     <main class="container" role="main">
-        <!-- Orb Brand -->
         <div class="orbitdesk-brand orbitdesk-brand--masthead orbitdesk-brand--full">
             <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Orb mini logo" role="img">
                 <rect x="0" y="0" width="38" height="38" rx="8" fill="#fff"/>
@@ -81,21 +66,19 @@
                 <circle cx="19" cy="6" r="3" fill="#e63946"/>
             </svg>
             <div class="orbitdesk-brand__meta">
-                <span class="orbitdesk-brand__eyebrow">Semester Calendar</span>
+                <span class="orbitdesk-brand__eyebrow">Exam Protocol</span>
                 <span class="orbitdesk-brand__name">Orb</span>
             </div>
         </div>
 
-        <!-- Header -->
         <header class="cal-header">
             <div>
-                <h1>Calendar</h1>
+                <h1>Exam Strategy</h1>
                 <div class="color-accent"></div>
-                <p class="cal-subtitle">Your one-stop semester overview — lectures, tests, exams &amp; university dates</p>
+                <p class="cal-subtitle" id="headerSubtitle">Every day mapped from 22 Apr to 16 May. Click any date for full session detail.</p>
             </div>
         </header>
 
-        <!-- Week Strip (current week at-a-glance) -->
         <section class="week-strip" id="weekStrip">
             <div class="week-strip__header">
                 <button class="week-nav" id="weekPrev" aria-label="Previous week">&larr;</button>
@@ -105,65 +88,39 @@
             <div class="week-strip__days" id="weekDays"></div>
         </section>
 
-        <!-- Day Detail Panel -->
-        <section class="day-detail" id="dayDetail">
-            <h3 id="dayDetailTitle">Select a day</h3>
+        <section class="day-detail open" id="dayDetail">
+            <h3 id="dayDetailTitle">Selected Day</h3>
             <div id="dayDetailContent" class="day-detail__content"></div>
         </section>
 
-        <!-- Filter Controls -->
         <section class="cal-filters">
             <h3>Filter</h3>
             <div class="filter-chips" id="filterChips">
                 <button class="chip chip--active" data-filter="all">All</button>
-                <button class="chip" data-filter="phy-255">PHY 255</button>
-                <button class="chip" data-filter="wtw-211">WTW 211</button>
                 <button class="chip" data-filter="wtw-218">WTW 218</button>
+                <button class="chip" data-filter="wtw-211">WTW 211</button>
                 <button class="chip" data-filter="cos-210">COS 210</button>
                 <button class="chip" data-filter="cos-212">COS 212</button>
-                <button class="chip" data-filter="university">University</button>
+                <button class="chip" data-filter="phy-255">PHY 255</button>
+                <button class="chip" data-filter="meta">Meta / Rest</button>
             </div>
         </section>
 
-        <!-- Month Calendar Grid -->
-        <section class="cal-month-section">
-            <div class="cal-month-nav">
-                <button class="month-nav-btn" id="monthPrev" aria-label="Previous month">&larr;</button>
-                <h2 id="monthTitle">February 2026</h2>
-                <button class="month-nav-btn" id="monthNext" aria-label="Next month">&rarr;</button>
-                <button class="month-nav-btn month-today-btn" id="monthToday">Today</button>
+        <section class="range-section" aria-label="Mapped exam date range">
+            <div class="range-head">
+                <h2>Mapped Window</h2>
+                <div class="range-meta" id="rangeMeta"></div>
             </div>
-            <div class="cal-grid" id="calGrid">
-                <div class="cal-grid__head">Mon</div>
-                <div class="cal-grid__head">Tue</div>
-                <div class="cal-grid__head">Wed</div>
-                <div class="cal-grid__head">Thu</div>
-                <div class="cal-grid__head">Fri</div>
-                <div class="cal-grid__head cal-grid__head--weekend">Sat</div>
-                <div class="cal-grid__head cal-grid__head--weekend">Sun</div>
-            </div>
+            <div class="date-rail" id="dateRail"></div>
         </section>
 
-        <!-- Upcoming Events (agenda) -->
-        <section class="agenda-section" id="agendaSection">
-            <h2>Upcoming</h2>
-            <div class="color-accent color-accent-red"></div>
-            <div class="agenda-list" id="agendaList"></div>
-        </section>
-
-        <footer style="grid-column: 1 / -1; margin-top: 60px; padding-top: 40px; border-top: 1px solid var(--grid-line);">
-            <p style="font-size: 11px; color: var(--text-muted); letter-spacing: 1px; text-transform: uppercase;">
-                University of Pretoria — Semester 1, 2026 — Non-official reference
-            </p>
-            <p style="font-size: 11px; color: var(--text-muted); margin-top: 10px;">
-                Verify all dates and requirements via official channels • ClickUP for updates
-            </p>
+        <footer class="exam-footer">
+            <p>University of Pretoria - Active Recall Plan - Non-official reference</p>
         </footer>
     </main>
 
-    <!-- Mobile Navigation -->
     <nav class="bottom-nav" aria-label="Mobile navigation">
-        <span class="bottom-nav__page">Calendar</span>
+        <span class="bottom-nav__page">Exam Strategy</span>
         <button class="nav-toggle" id="navToggle" aria-label="Open navigation" aria-expanded="false">
             <span class="nav-toggle__icon"><span></span><span></span><span></span></span>
             <span class="nav-toggle__label">Menu</span>
@@ -176,22 +133,19 @@
         </div>
         <nav class="nav-overlay__links">
             <a href="dashboard.html">Dashboard</a>
-            <a href="calendar.html" class="active">Calendar</a>
+            <a href="calendar.html">Calendar</a>
             <a href="Semester1Timetable2026.html">Semester 1 Timetable</a>
             <a href="index.html">Semester 2 Timetable</a>
             <a href="planner.html">Day Planner</a>
-        <a href="exam-strategy.html">Exam Strategy</a>
+            <a href="exam-strategy.html" class="active">Exam Strategy</a>
             <a href="assignments.html">Assignments</a>
             <a href="grades.html">Grades</a>
         </nav>
     </div>
     <script>(function(){var t=document.getElementById('navToggle'),o=document.getElementById('navOverlay'),c=document.getElementById('navClose');function open(){o.classList.add('open');t.setAttribute('aria-expanded','true');document.body.style.overflow='hidden';}function shut(){o.classList.remove('open');t.setAttribute('aria-expanded','false');document.body.style.overflow='';}t.addEventListener('click',open);c.addEventListener('click',shut);})();</script>
 
-    <!-- Scripts -->
-    <script src="js/firebase-config.js"></script>
-    <script src="js/shared-dates.js"></script>
     <script src="js/loader.js"></script>
     <script src="js/mobile-workflow.js"></script>
-    <script src="js/calendar.js"></script>
+    <script src="js/exam-strategy.js"></script>
 </body>
 </html>
