@@ -49,6 +49,9 @@
     <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-auth-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore-compat.js"></script>
 
+    <!-- Markdown Parser -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
     <!-- Navigation -->
     <nav class="site-nav" role="navigation" aria-label="Main Navigation">
         <span class="nav-label">Navigate</span>
@@ -124,21 +127,16 @@
                     <div class="rough-card__header">
                         <div>
                             <div class="rough-card__eyebrow">Brain Dump</div>
-                            <h3>Notes</h3>
+                            <h3>Notes (Markdown supported)</h3>
                         </div>
+                        <button class="rough-notes-toggle-preview" id="roughNotesPreviewToggle" type="button" title="Toggle preview">👁️</button>
                     </div>
-                    <textarea id="roughNotes" class="rough-notes-input" rows="6" placeholder="Dump thoughts, reminders, things to not forget..."></textarea>
+                    <div class="rough-notes-container">
+                        <textarea id="roughNotes" class="rough-notes-input" rows="6" placeholder="Dump thoughts, reminders, things to not forget... Supports Markdown formatting!"></textarea>
+                        <div class="rough-notes-preview" id="roughNotesPreview" style="display: none;"></div>
+                    </div>
                 </section>
 
-                <section class="rough-card rough-card--smart">
-                    <div class="rough-card__header">
-                        <div>
-                            <div class="rough-card__eyebrow">Smart Nudge</div>
-                            <h3>Suggested focus</h3>
-                        </div>
-                    </div>
-                    <div class="rough-suggestions" id="roughSuggestions"></div>
-                </section>
             </div>
 
             <section class="rough-card rough-card--tasks">

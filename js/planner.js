@@ -817,6 +817,11 @@ function renderRoughPlan() {
     const notesEl = document.getElementById('roughNotes');
     if (notesEl && document.activeElement !== notesEl && notesEl.value !== (cachedData.roughNotes || '')) {
         notesEl.value = cachedData.roughNotes || '';
+        // Update preview if it's visible
+        const previewEl = document.getElementById('roughNotesPreview');
+        if (previewEl && previewEl.style.display !== 'none') {
+            updateMarkdownPreview();
+        }
     }
     renderRoughPlanSummary();
     renderRoughSuggestions();
@@ -1069,6 +1074,44 @@ function bindRoughPlanEvents() {
                 deleteRoughTask(event.target.dataset.bucket, event.target.dataset.taskId);
             }
         });
+    }
+
+    // ── Markdown preview toggle ──
+    const previewToggleBtn = document.getElementById('roughNotesPreviewToggle');
+    const notesInputEl = document.getElementById('roughNotes');
+    const previewEl = document.getElementById('roughNotesPreview');
+
+    if (previewToggleBtn && notesInputEl && previewEl) {
+        previewToggleBtn.addEventListener('click', () => {
+            const isShowingPreview = previewEl.style.display !== 'none';
+            if (isShowingPreview) {
+                notesInputEl.style.display = 'block';
+                previewEl.style.display = 'none';
+                previewToggleBtn.textContent = '👁️';
+                previewToggleBtn.title = 'Show preview';
+            } else {
+                notesInputEl.style.display = 'none';
+                previewEl.style.display = 'block';
+                updateMarkdownPreview();
+                previewToggleBtn.textContent = '✎';
+                previewToggleBtn.title = 'Show editor';
+            }
+        });
+
+        notesInputEl.addEventListener('input', () => {
+            if (previewEl.style.display !== 'none') {
+                updateMarkdownPreview();
+            }
+        });
+    }
+}
+
+function updateMarkdownPreview() {
+    const notesEl = document.getElementById('roughNotes');
+    const previewEl = document.getElementById('roughNotesPreview');
+    if (notesEl && previewEl && window.marked) {
+        const markdown = notesEl.value || '';
+        previewEl.innerHTML = marked.parse(markdown);
     }
 }
 
