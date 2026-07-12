@@ -123,10 +123,43 @@
         .cos-212::before { background: var(--dark-blue); }
         .wtw-211::before { background: var(--orange); }
         .wtw-218::before { background: var(--yellow); }
+
+        nav {
+            background: var(--black);
+            padding: 15px 20px;
+            margin-bottom: 30px;
+            border: 3px solid var(--black);
+            display: flex;
+            gap: 30px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: color 0.2s;
+        }
+
+        nav a:hover {
+            color: var(--yellow);
+        }
+
+        nav a.active {
+            color: var(--red);
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
     <div class="container">
+        <nav>
+            <a href="index.html" class="active">Timetable</a>
+            <a href="planner.html">Day Planner</a>
+        </nav>
+
         <h1>Timetable</h1>
 
         <div class="day monday">
