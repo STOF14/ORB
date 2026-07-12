@@ -63,47 +63,94 @@
     </nav>
 
     <main class="container" role="main">
-        <!-- Orb Brand -->
-        <div class="orbitdesk-brand orbitdesk-brand--masthead">
-            <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Orb mini logo" role="img">
-                <rect x="0" y="0" width="38" height="38" rx="8" fill="#fff"/>
-                <circle cx="19" cy="19" r="13" stroke="#000" stroke-width="1.5" fill="none"/>
-                <circle cx="19" cy="19" r="8" stroke="#000" stroke-width="0.75" stroke-dasharray="3 3" fill="none"/>
-                <circle cx="19" cy="19" r="4" fill="#000"/>
-                <circle cx="19" cy="6" r="3" fill="#e63946"/>
-            </svg>
-            <div class="orbitdesk-brand__meta">
-                <span class="orbitdesk-brand__eyebrow">Semester Board</span>
-                <span class="orbitdesk-brand__name">Orb</span>
-            </div>
-        </div>
+        <header class="page-header">
+            <h1>Timetable</h1>
+            <button class="edit-toggle" id="editToggle" type="button" aria-pressed="false">Edit</button>
+        </header>
 
-        <!-- Bauhaus Under Construction -->
-        <div class="bauhaus-construction">
-            <div class="bauhaus-bg">
-                <svg id="bauhaus-svg" width="100%" height="220" viewBox="0 0 600 220" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <defs>
-                        <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
-                            <feGaussianBlur stdDeviation="6" result="coloredBlur"/>
-                            <feMerge>
-                                <feMergeNode in="coloredBlur"/>
-                                <feMergeNode in="SourceGraphic"/>
-                            </feMerge>
-                        </filter>
-                    </defs>
-                    <rect x="0" y="0" width="600" height="220" fill="#e63946"/>
-                    <circle id="egg-circle" cx="120" cy="110" r="80" fill="#f4a261"/>
-                    <rect id="egg-rect" x="320" y="40" width="180" height="140" fill="#457b9d"/>
-                    <rect x="420" y="120" width="80" height="80" fill="#e9c46a"/>
-                    <circle cx="500" cy="60" r="40" fill="#1d3557"/>
-                    <g id="impossible-cursor-group"></g>
-                </svg>
-            </div>
-            <div class="bauhaus-text">
-                <h1 id="egg-title">UNDER CONSTRUCTION</h1>
-                <p>Semester 2 timetable is coming soon.<br>Check back later for updates!</p>
-            </div>
-        </div>
+        <section class="whats-next" id="whatsNext" aria-live="polite">
+            <div class="whats-next-label">Next Up</div>
+            <div class="whats-next-class" id="nextClass">—</div>
+            <div class="whats-next-time" id="nextTime"></div>
+        </section>
+
+        <button class="toggle-empty active" id="toggleEmpty" onclick="toggleEmptySlots()" aria-pressed="true">Show Free Periods</button>
+
+        <section class="day monday" aria-label="Monday">
+            <div class="day-header">Monday</div>
+            <div class="event empty"><div class="time">07:30-08:20</div><div class="activity"></div></div>
+            <div class="event cos-330"><div class="time">08:30-09:20</div><div class="activity"><a href="dashboard.html#cos-330">COS 330 Lecture L1 (IT 2-27)</a></div></div>
+            <div class="event empty"><div class="time">09:30-10:20</div><div class="activity"></div></div>
+            <div class="event empty"><div class="time">10:30-11:20</div><div class="activity"></div></div>
+            <div class="event empty"><div class="time">11:30-12:20</div><div class="activity"></div></div>
+            <div class="event empty"><div class="time">12:30-13:20</div><div class="activity"></div></div>
+            <div class="event empty"><div class="time">13:30-14:20</div><div class="activity"></div></div>
+            <div class="event cos-284"><div class="time">14:30-15:20</div><div class="activity"><a href="dashboard.html#cos-284">COS 284 Practical P01 (if in P01) — Informatorium Brown/Grey/Maroon/Purple</a></div></div>
+            <div class="event cos-284"><div class="time">15:30-16:20</div><div class="activity"><a href="dashboard.html#cos-284">COS 284 Practical P01 (if in P01) — Informatorium Brown/Grey/Maroon/Purple</a></div></div>
+            <div class="event cos-284"><div class="time">16:30-17:20</div><div class="activity"><a href="dashboard.html#cos-284">COS 284 Practical P01 (if in P01) — Informatorium Brown/Grey/Maroon/Purple</a></div></div>
+        </section>
+
+        <section class="day tuesday" aria-label="Tuesday">
+            <div class="day-header">Tuesday</div>
+            <div class="event empty"><div class="time">07:30-08:20</div><div class="activity"></div></div>
+            <div class="event empty"><div class="time">08:30-09:20</div><div class="activity"></div></div>
+            <div class="event empty"><div class="time">09:30-10:20</div><div class="activity"></div></div>
+            <div class="event cos-284"><div class="time">10:30-11:20</div><div class="activity"><a href="dashboard.html#cos-284">COS 284 Lecture L1 (Centenary 1)</a></div></div>
+            <div class="event empty"><div class="time">11:30-12:20</div><div class="activity"></div></div>
+            <div class="event empty"><div class="time">12:30-13:20</div><div class="activity"></div></div>
+            <div class="event empty"><div class="time">13:30-14:20</div><div class="activity"></div></div>
+            <div class="event cos-284"><div class="time">14:30-15:20</div><div class="activity"><a href="dashboard.html#cos-284">COS 284 Practical P02 (if in P02) — Informatorium Blue Lab 2/3</a></div></div>
+            <div class="event cos-284"><div class="time">15:30-16:20</div><div class="activity"><a href="dashboard.html#cos-284">COS 284 Practical P02 (if in P02) — Informatorium Blue Lab 2/3</a></div></div>
+            <div class="event cos-284"><div class="time">16:30-17:20</div><div class="activity"><a href="dashboard.html#cos-284">COS 284 Practical P02 (if in P02) — Informatorium Blue Lab 2/3</a></div></div>
+        </section>
+
+        <section class="day wednesday" aria-label="Wednesday">
+            <div class="day-header">Wednesday</div>
+            <div class="event cos-330"><div class="time">07:30-08:20</div><div class="activity"><a href="dashboard.html#cos-330">COS 330 Practical P01 (if in P01) — Informatorium SIT 1</a></div></div>
+            <div class="event cos-330"><div class="time">08:30-09:20</div><div class="activity"><a href="dashboard.html#cos-330">COS 330 Practical P01 (if in P01) — Informatorium SIT 1</a></div></div>
+            <div class="event cos-330"><div class="time">09:30-10:20</div><div class="activity"><a href="dashboard.html#cos-330">COS 330 Practical P01 (if in P01) + COS 284 Lecture L2 (IT 2-23)</a></div></div>
+            <div class="event empty"><div class="time">10:30-11:20</div><div class="activity"></div></div>
+            <div class="event empty"><div class="time">11:30-12:20</div><div class="activity"></div></div>
+            <div class="event empty"><div class="time">12:30-13:20</div><div class="activity"></div></div>
+            <div class="event cos-330"><div class="time">13:30-14:20</div><div class="activity"><a href="dashboard.html#cos-330">COS 330 Practical P02 (if in P02) — Informatorium Blue Lab 1/2</a></div></div>
+            <div class="event cos-330"><div class="time">14:30-15:20</div><div class="activity"><a href="dashboard.html#cos-330">COS 330 Practical P02 (if in P02) — Informatorium Blue Lab 1/2</a></div></div>
+            <div class="event cos-330"><div class="time">15:30-16:20</div><div class="activity"><a href="dashboard.html#cos-330">COS 330 Practical P02 (if in P02) — Informatorium Blue Lab 1/2</a></div></div>
+            <div class="event empty"><div class="time">16:30-17:20</div><div class="activity"></div></div>
+        </section>
+
+        <section class="day thursday" aria-label="Thursday">
+            <div class="day-header">Thursday</div>
+            <div class="event cos-284"><div class="time">07:30-08:20</div><div class="activity"><a href="dashboard.html#cos-284">COS 284 Lecture L3 (IT 2-23)</a></div></div>
+            <div class="event empty"><div class="time">08:30-09:20</div><div class="activity"></div></div>
+            <div class="event empty"><div class="time">09:30-10:20</div><div class="activity"></div></div>
+            <div class="event empty"><div class="time">10:30-11:20</div><div class="activity"></div></div>
+            <div class="event cos-330"><div class="time">11:30-12:20</div><div class="activity"><a href="dashboard.html#cos-330">COS 330 Lecture L2 (IT 4-4)</a></div></div>
+            <div class="event empty"><div class="time">12:30-13:20</div><div class="activity"></div></div>
+            <div class="event empty"><div class="time">13:30-14:20</div><div class="activity"></div></div>
+            <div class="event empty"><div class="time">14:30-15:20</div><div class="activity"></div></div>
+            <div class="event empty"><div class="time">15:30-16:20</div><div class="activity"></div></div>
+            <div class="event empty"><div class="time">16:30-17:20</div><div class="activity"></div></div>
+        </section>
+
+        <section class="day friday" aria-label="Friday">
+            <div class="day-header">Friday</div>
+            <div class="event empty"><div class="time">07:30-08:20</div><div class="activity"></div></div>
+            <div class="event empty"><div class="time">08:30-09:20</div><div class="activity"></div></div>
+            <div class="event cos-284"><div class="time">09:30-10:20</div><div class="activity"><a href="dashboard.html#cos-284">COS 284 Lecture L4 (IT 2-23)</a></div></div>
+            <div class="event empty"><div class="time">10:30-11:20</div><div class="activity"></div></div>
+            <div class="event empty"><div class="time">11:30-12:20</div><div class="activity"></div></div>
+            <div class="event empty"><div class="time">12:30-13:20</div><div class="activity"></div></div>
+            <div class="event empty"><div class="time">13:30-14:20</div><div class="activity"></div></div>
+            <div class="event empty"><div class="time">14:30-15:20</div><div class="activity"></div></div>
+            <div class="event empty"><div class="time">15:30-16:20</div><div class="activity"></div></div>
+            <div class="event empty"><div class="time">16:30-17:20</div><div class="activity"></div></div>
+        </section>
+
+        <section class="whats-next" aria-live="polite">
+            <div class="whats-next-label">Semester Notes</div>
+            <div class="whats-next-class">Practical groups are mutually exclusive.</div>
+            <div class="whats-next-time">Confirm your COS 284/COS 330 group (P01 or P02), then delete the non-applicable practical rows in Edit mode. Exams are PRELIM and should be rechecked closer to November.</div>
+        </section>
     </main>
 
     <!-- Mobile Navigation -->

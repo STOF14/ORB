@@ -5,64 +5,25 @@
 
 // ── Module colour map ──
 const MOD_COLORS = {
-    'phy-255': 'var(--red)',
-    'wtw-211': 'var(--orange)',
-    'wtw-218': 'var(--yellow)',
-    'cos-210': 'var(--blue)',
-    'cos-212': 'var(--dark-blue)',
+    'cos-284': 'var(--blue)',
+    'cos-330': 'var(--dark-blue)',
     'university': '#888'
 };
 
 // CRITICAL_DATES loaded from shared-dates.js
 
 // ── UNIVERSITY DATES (from UP Academic Calendar 2026) ──
-const UNIVERSITY_DATES = [
-    { date: '2026-01-05', event: 'Start of Academic Year', type: 'university' },
-    { date: '2026-02-02', event: 'Orientation Week Begins', type: 'university' },
-    { date: '2026-02-06', event: 'Orientation Ends', type: 'university' },
-    { date: '2026-02-09', event: 'Lectures Begin (S1)', type: 'university' },
-    { date: '2026-02-20', event: 'Last Day of Registration (S1)', type: 'university' },
-    { date: '2026-02-21', event: 'RAG of Hope Day', type: 'university' },
-    { date: '2026-03-09', event: 'Last Day to Cancel/Swap Modules', type: 'university' },
-    { date: '2026-03-14', event: 'Test Week 1 Begins', type: 'university' },
-    { date: '2026-03-21', event: 'Human Rights Day (Public Holiday)', type: 'university' },
-    { date: '2026-03-27', event: 'Q1 Lectures End', type: 'university' },
-    { date: '2026-03-29', event: 'March/April Recess Begins', type: 'recess' },
-    { date: '2026-04-03', event: 'Good Friday (Public Holiday)', type: 'university' },
-    { date: '2026-04-06', event: 'Family Day (Public Holiday) / Recess Ends', type: 'university' },
-    { date: '2026-04-07', event: 'Q2 Lectures Begin (Monday TT)', type: 'university' },
-    { date: '2026-04-08', event: 'Friday Timetable Followed', type: 'university' },
-    { date: '2026-04-11', event: 'Test Week 1 Continues', type: 'university' },
-    { date: '2026-04-27', event: 'Freedom Day (Public Holiday)', type: 'university' },
-    { date: '2026-05-01', event: "Workers' Day (Public Holiday)", type: 'university' },
-    { date: '2026-05-02', event: 'Test Week 2 Begins', type: 'university' },
-    { date: '2026-05-27', event: 'Lectures End (Q2 & S1)', type: 'university' },
-    { date: '2026-05-28', event: 'Pre-Exam Study Period', type: 'university' },
-    { date: '2026-05-29', event: 'Pre-Exam Study Period', type: 'university' },
-    { date: '2026-05-30', event: 'Exam Period Begins', type: 'university' },
-    { date: '2026-06-16', event: 'Youth Day (Public Holiday)', type: 'university' },
-    { date: '2026-06-18', event: 'Exam Period Ends', type: 'university' },
-    { date: '2026-06-22', event: 'Supplementary Exams Begin', type: 'university' },
-    { date: '2026-06-27', event: 'Supplementary Exams End', type: 'university' },
-    { date: '2026-06-28', event: 'July Recess Begins', type: 'recess' },
-];
+const UNIVERSITY_DATES = [];
 
 // ── RECESS / NON-LECTURE PERIODS ──
-const RECESS_RANGES = [
-    { start: '2026-03-29', end: '2026-04-06', label: 'March/April Recess' },
-    { start: '2026-05-28', end: '2026-05-29', label: 'Study Period' },
-    { start: '2026-06-28', end: '2026-07-19', label: 'July Recess' },
-];
+const RECESS_RANGES = [];
 
 const TEST_WEEK_RANGES = [
-    { start: '2026-03-14', end: '2026-03-20', label: 'Test Week 1' },
-    { start: '2026-03-28', end: '2026-03-28', label: 'Test Week 1 (cont.)' },
-    { start: '2026-04-11', end: '2026-04-11', label: 'Test Week 1 (cont.)' },
-    { start: '2026-05-02', end: '2026-05-09', label: 'Test Week 2' },
-    { start: '2026-05-16', end: '2026-05-16', label: 'Test Week 2 (cont.)' },
+    { start: '2026-08-22', end: '2026-08-28', label: 'Test Week 1' },
+    { start: '2026-10-12', end: '2026-10-12', label: 'Test Week 2' },
 ];
 
-const EXAM_RANGE = { start: '2026-05-30', end: '2026-06-18' };
+const EXAM_RANGE = { start: '2026-11-11', end: '2026-11-21' };
 
 // ── MODULE WEEKLY SCHEDULES (from semester schedule PDFs) ──
 
@@ -300,7 +261,7 @@ function makeEventId(e) {
 
 (function assignIds() {
     const seen = {};
-    [CRITICAL_DATES, UNIVERSITY_DATES, COS212_EVENTS, COS210_EVENTS, WTW218_EVENTS, WTW211_EVENTS, PHY255_EVENTS].forEach(arr => {
+    [CRITICAL_DATES, UNIVERSITY_DATES].forEach(arr => {
         arr.forEach(e => {
             let id = makeEventId(e);
             if (seen[id]) { seen[id]++; id += '_' + seen[id]; }
@@ -313,11 +274,6 @@ function makeEventId(e) {
 const BASE_EVENTS = [
     ...CRITICAL_DATES,
     ...UNIVERSITY_DATES,
-    ...COS212_EVENTS,
-    ...COS210_EVENTS,
-    ...WTW218_EVENTS,
-    ...WTW211_EVENTS,
-    ...PHY255_EVENTS,
 ];
 
 // ── Edits overlay ──

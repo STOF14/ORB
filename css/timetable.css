@@ -154,6 +154,8 @@ body.edit-mode .event {
 .phy-255::before { background: var(--red); }
 .cos-210::before { background: var(--blue); }
 .cos-212::before { background: var(--dark-blue); }
+.cos-284::before { background: var(--blue); }
+.cos-330::before { background: var(--dark-blue); }
 .wtw-211::before { background: var(--orange); }
 .wtw-218::before { background: var(--yellow); }
 
