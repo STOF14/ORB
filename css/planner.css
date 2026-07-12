@@ -723,6 +723,8 @@ h1 {
 .class-badge.phy-255 { background: var(--red); }
 .class-badge.cos-210 { background: var(--blue); }
 .class-badge.cos-212 { background: var(--dark-blue); }
+.class-badge.cos-284 { background: var(--blue); }
+.class-badge.cos-330 { background: var(--dark-blue); }
 .class-badge.wtw-211 { background: var(--orange); }
 .class-badge.wtw-218 { background: var(--yellow); color: #000; }
 

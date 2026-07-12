@@ -51,6 +51,16 @@
     background: rgba(230, 57, 70, 0.08);
 }
 
+.day-event--cos-284 {
+    border-left-color: var(--blue);
+    background: rgba(69, 123, 157, 0.09);
+}
+
+.day-event--cos-330 {
+    border-left-color: var(--dark-blue);
+    background: rgba(29, 53, 87, 0.08);
+}
+
 .chip[data-filter="meta"].chip--active {
     background: #555;
     border-color: #555;

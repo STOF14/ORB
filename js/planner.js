@@ -8,21 +8,15 @@ let roughCarrySyncedKey = null;
 const MODE_TRANSITION_MS = 320;
 const ROUGH_CARRY_LOOKBACK_DAYS = 45;
 
-const ROUGH_BUCKETS = ['PHY 255', 'WTW 211', 'WTW 218', 'COS 210', 'COS 212', 'Life/Admin'];
+const ROUGH_BUCKETS = ['COS 284', 'COS 330', 'Life/Admin'];
 const ROUGH_BUCKET_ELEMENT_IDS = {
-    'PHY 255': 'roughBucketPhy',
-    'WTW 211': 'roughBucketWtw211',
-    'WTW 218': 'roughBucketWtw218',
-    'COS 210': 'roughBucketCos210',
-    'COS 212': 'roughBucketCos212',
+    'COS 284': 'roughBucketCos284',
+    'COS 330': 'roughBucketCos330',
     'Life/Admin': 'roughBucketLife'
 };
 const ROUGH_TEMPLATE_SUGGESTIONS = {
-    'PHY 255': ['revise lecture notes', 'finish tutorial questions', 'summarize practical work'],
-    'WTW 211': ['review proofs', 'do 5 algebra questions', 'rewrite weak concepts'],
-    'WTW 218': ['practice multivariable problems', 'review tutorial mistakes', 'do quick derivative drill'],
-    'COS 210': ['review lecture examples', 'trace one algorithm by hand', 'clean up notes'],
-    'COS 212': ['practice coding question', 'review practical prep', 'read ahead for next topic'],
+    'COS 284': ['review lecture notes', 'prepare for upcoming practical', 'summarize key concepts'],
+    'COS 330': ['revise lecture material', 'practice practical exercises', 'write a short topic recap'],
     'Life/Admin': ['sort admin task', 'reset room and desk', 'plan tomorrow']
 };
 
@@ -242,45 +236,34 @@ async function migrateLocalToFirestore() {
     }
 }
 
-// ── Timetable auto-fill data (Semester 1) ──
+// ── Timetable auto-fill data (Semester 2) ──
 const TIMETABLE = {
     1: { // Monday
-        '08:30': { code: 'phy-255', text: 'PHY 255 Lecture (NS1 5-42)' },
-        '11:30': { code: 'cos-210', text: 'COS 210 Lecture (IT 2-26)' },
-        '12:30': { code: 'wtw-211', text: 'WTW 211 Lecture (Centenary 5)' },
-        '13:30': { code: 'phy-255', text: 'PHY 255 Practical (NS1 5-42)' },
-        '14:30': { code: 'phy-255', text: 'PHY 255 Practical (NS1 5-42)' },
-        '15:30': { code: 'phy-255', text: 'PHY 255 Practical (NS1 5-42)' },
-        '16:30': { code: 'cos-212', text: 'COS 212 Lecture (Large Chemistry Hall)' },
+        '08:30': { code: 'cos-330', text: 'COS 330 Lecture L1 (IT 2-27)' },
+        '14:30': { code: 'cos-284', text: 'COS 284 Practical P01 (if in P01)' },
+        '15:30': { code: 'cos-284', text: 'COS 284 Practical P01 (if in P01)' },
+        '16:30': { code: 'cos-284', text: 'COS 284 Practical P01 (if in P01)' },
     },
     2: { // Tuesday
-        '08:30': { code: 'wtw-218', text: 'WTW 218 Lecture (HB 4-3) G02' },
-        '14:30': { code: 'phy-255', text: 'PHY 255 Lecture (NS1 5-42)' },
-        '15:30': { code: 'phy-255', text: 'PHY 255 Tutorial (NS1 5-42)' },
-        '16:30': { code: 'phy-255', text: 'PHY 255 Tutorial (NS1 5-42)' },
+        '10:30': { code: 'cos-284', text: 'COS 284 Lecture L1 (Centenary 1)' },
+        '14:30': { code: 'cos-284', text: 'COS 284 Practical P02 (if in P02)' },
+        '15:30': { code: 'cos-284', text: 'COS 284 Practical P02 (if in P02)' },
+        '16:30': { code: 'cos-284', text: 'COS 284 Practical P02 (if in P02)' },
     },
     3: { // Wednesday
-        '08:30': { code: 'cos-210', text: 'COS 210 Lecture (IT 2-26)' },
-        '09:30': { code: 'cos-212', text: 'COS 212 Lecture (Louw Hall)' },
-        '11:30': { code: 'wtw-218', text: 'WTW 218 Tutorial (HB 4-9) T03' },
-        '12:30': { code: 'wtw-218', text: 'WTW 218 Tutorial (HB 4-9) T03 [Ends at 12:50]' },
-        '15:30': { code: 'wtw-211', text: 'WTW 211 Tutorial (Roos Hall) T02 [Starts at 16:00]' },
-        '16:30': { code: 'wtw-211', text: 'WTW 211 Tutorial (Roos Hall) T02' },
+        '07:30': { code: 'cos-330', text: 'COS 330 Practical P01 (if in P01)' },
+        '08:30': { code: 'cos-330', text: 'COS 330 Practical P01 (if in P01)' },
+        '09:30': { code: 'cos-330', text: 'COS 330 Practical P01 (if in P01) + COS 284 Lecture L2 (IT 2-23)' },
+        '13:30': { code: 'cos-330', text: 'COS 330 Practical P02 (if in P02)' },
+        '14:30': { code: 'cos-330', text: 'COS 330 Practical P02 (if in P02)' },
+        '15:30': { code: 'cos-330', text: 'COS 330 Practical P02 (if in P02)' },
     },
     4: { // Thursday
-        '08:30': { code: 'wtw-218', text: 'WTW 218 Lecture (HB 4-3) G01' },
-        '12:30': { code: 'phy-255', text: 'PHY 255 Tutorial (NS1 5-42)' },
-        '13:30': { code: 'phy-255', text: 'PHY 255 Lecture (NS1 5-42)' },
-        '16:30': { code: 'cos-212', text: 'COS 212 Lecture (Roos Hall)' },
+        '07:30': { code: 'cos-284', text: 'COS 284 Lecture L3 (IT 2-23)' },
+        '11:30': { code: 'cos-330', text: 'COS 330 Lecture L2 (IT 4-4)' },
     },
     5: { // Friday
-        '07:30': { code: 'wtw-211', text: 'WTW 211 Lecture (Centenary 5)' },
-        '08:30': { code: 'phy-255', text: 'PHY 255 Lecture (NS1 5-42)' },
-        '09:30': { code: 'cos-212', text: 'COS 212 Tutorial [Lecture] (Louw Hall)' },
-        '11:30': { code: 'cos-212', text: 'COS 212 Practical (Informatorium CBT 1,2,3 Labs)' },
-        '12:30': { code: 'cos-212', text: 'COS 212 Practical (Informatorium CBT 1,2,3 Labs)' },
-        '13:30': { code: 'cos-212', text: 'COS 212 Practical (Informatorium CBT 1,2,3 Labs)' },
-        '14:30': { code: 'cos-210', text: 'COS 210 Tutorial (IT 2-26)' },
+        '09:30': { code: 'cos-284', text: 'COS 284 Lecture L4 (IT 2-23)' },
     },
 };
 

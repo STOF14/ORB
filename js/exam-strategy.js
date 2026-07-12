@@ -1,307 +1,115 @@
 (function () {
     var DAY_PLANS = [
         {
-            date: '2026-04-22',
-            label: 'Wednesday 22 Apr',
-            note: 'PHY ST1 done yesterday; reset day.',
+            date: '2026-08-18',
+            label: 'Tuesday 18 Aug',
+            note: 'Final prep stretch before COS 284 Test 1.',
             sessions: [
-                { time: '17:30', module: 'WTW 218', key: 'wtw-218', method: 'closed-book problems', type: 'study', task: 'Partial derivatives problem set from scratch (8-10).' },
-                { time: '19:15', module: 'COS 212', key: 'cos-212', method: 'teach-it-back', type: 'study', task: 'Trees and heaps aloud as if teaching.' },
-                { time: '20:15', module: 'COS 210', key: 'cos-210', method: 'closed-book problems', type: 'study', task: 'Build five DFA or NFA from memory.' },
-                { time: '21:15', module: 'Meta', key: 'meta', method: 'sleep', type: 'meta', task: 'Lights out by 22:00.' }
+                { time: '17:30', module: 'COS 284', key: 'cos-284', method: 'active recall', type: 'study', task: 'Summarize all L1-L2 concepts from memory and fill gaps.' },
+                { time: '19:00', module: 'COS 284', key: 'cos-284', method: 'problem drill', type: 'study', task: 'Complete one timed question set without notes.' },
+                { time: '21:00', module: 'Meta', key: 'meta', method: 'shutdown', type: 'meta', task: 'Pack stationery and sleep early.' }
             ]
         },
         {
-            date: '2026-04-23',
-            label: 'Thursday 23 Apr',
-            note: 'Spaced review starts one day after first pass.',
+            date: '2026-08-21',
+            label: 'Friday 21 Aug',
+            note: 'Light load and confidence reset before test day.',
             sessions: [
-                { time: '08:30', module: 'Class', key: 'meta', method: 'class block', type: 'class', task: 'WTW 218, PHY tutorial, PHY lecture, COS 212.' },
-                { time: '17:30', module: 'WTW 218', key: 'wtw-218', method: 'spaced review', type: 'study', task: 'Redo Wednesday errors without solutions.' },
-                { time: '18:30', module: 'WTW 218', key: 'wtw-218', method: 'closed-book problems', type: 'study', task: 'Chain rule and implicit theorem set.' },
-                { time: '19:45', module: 'WTW 211', key: 'wtw-211', method: 'teach-it-back', type: 'study', task: 'Inverse matrices and linear independence then six problems.' },
-                { time: '21:00', module: 'COS 210', key: 'cos-210', method: 'spaced review', type: 'study', task: 'DFA review and five regular-language proofs.' },
-                { time: '21:45', module: 'Meta', key: 'meta', method: 'sleep', type: 'meta', task: 'Lights out by 22:15.' }
+                { time: '16:30', module: 'COS 284', key: 'cos-284', method: 'flash recall', type: 'study', task: 'Quick concept run-through and weak-point checklist.' },
+                { time: '18:00', module: 'COS 330', key: 'cos-330', method: 'preview', type: 'study', task: 'Prep Monday lecture and practical notes.' },
+                { time: '20:30', module: 'Meta', key: 'meta', method: 'sleep', type: 'meta', task: 'Hard stop and rest.' }
             ]
         },
         {
-            date: '2026-04-24',
-            label: 'Friday 24 Apr',
-            note: 'High retrieval, early shutdown.',
+            date: '2026-08-22',
+            label: 'Saturday 22 Aug',
+            note: 'COS 284 Test 1 day.',
             sessions: [
-                { time: '07:30', module: 'Class', key: 'meta', method: 'class block', type: 'class', task: 'WTW 211, PHY, COS 212 tutorial, COS 212 practical, COS 210 tutorial.' },
-                { time: '17:30', module: 'WTW 218', key: 'wtw-218', method: 'closed-book problems', type: 'study', task: 'Gradient and directional derivatives, ten problems.' },
-                { time: '19:00', module: 'COS 212', key: 'cos-212', method: 'flashcard recall', type: 'study', task: 'Hashing and graphs complexity recall.' },
-                { time: '20:00', module: 'WTW 211', key: 'wtw-211', method: 'spaced review', type: 'study', task: 'Subspaces and dimension follow-up set.' },
-                { time: '21:00', module: 'Meta', key: 'meta', method: 'sleep', type: 'meta', task: 'Lights out by 21:30.' }
+                { time: '08:45', module: 'Meta', key: 'meta', method: 'warm-up', type: 'meta', task: 'Short warm-up and travel buffer.' },
+                { time: '10:00', module: 'COS 284', key: 'cos-284', method: 'test day', type: 'test', task: 'COS 284 Test 1 (Hatfield Informatorium).' },
+                { time: '14:00', module: 'COS 330', key: 'cos-330', method: 'light review', type: 'study', task: 'Review practical workflow for next week.' }
             ]
         },
         {
-            date: '2026-04-25',
-            label: 'Saturday 25 Apr',
-            note: 'Full active day with NSDR anchors.',
+            date: '2026-08-27',
+            label: 'Thursday 27 Aug',
+            note: 'Final prep before COS 330 Test 1.',
             sessions: [
-                { time: '07:30', module: 'Meta', key: 'meta', method: 'nsdr', type: 'meta', task: '10 min NSDR before starting.' },
-                { time: '08:00', module: 'WTW 218', key: 'wtw-218', method: 'closed-book problems', type: 'study', task: 'Optimization and second derivative test, ten problems.' },
-                { time: '09:30', module: 'WTW 218', key: 'wtw-218', method: 'teach-it-back', type: 'study', task: 'Lagrange multipliers plus concept teaching.' },
-                { time: '11:20', module: 'WTW 211', key: 'wtw-211', method: 'closed-book problems', type: 'study', task: 'Linear transformations set.' },
-                { time: '13:10', module: 'Meta', key: 'meta', method: 'nsdr', type: 'meta', task: '10 to 15 min NSDR after lunch.' },
-                { time: '13:30', module: 'COS 212', key: 'cos-212', method: 'closed-book problems', type: 'study', task: 'Merge sort and quicksort from memory.' },
-                { time: '15:00', module: 'COS 210', key: 'cos-210', method: 'teach-it-back', type: 'study', task: 'CFG and PDA retrieval problems.' },
-                { time: '16:15', module: 'WTW 218', key: 'wtw-218', method: 'spaced review', type: 'study', task: 'Redo all weekly misses.' },
-                { time: '17:15', module: 'Meta', key: 'meta', method: 'off', type: 'meta', task: 'Full rest evening.' }
+                { time: '17:30', module: 'COS 330', key: 'cos-330', method: 'timed drill', type: 'study', task: 'Run one full timed test-style set.' },
+                { time: '19:15', module: 'COS 330', key: 'cos-330', method: 'error log', type: 'study', task: 'Review mistakes and write fixed patterns.' },
+                { time: '21:00', module: 'Meta', key: 'meta', method: 'sleep', type: 'meta', task: 'Early cutoff for test day.' }
             ]
         },
         {
-            date: '2026-04-26',
-            label: 'Sunday 26 Apr',
-            note: 'Church morning, focused afternoon.',
+            date: '2026-08-28',
+            label: 'Friday 28 Aug',
+            note: 'COS 330 Test 1 day.',
             sessions: [
-                { time: 'Morning', module: 'Meta', key: 'meta', method: 'church', type: 'meta', task: 'Church, full mental off block.' },
-                { time: '13:30', module: 'Meta', key: 'meta', method: 'nsdr', type: 'meta', task: '10 min NSDR before session.' },
-                { time: '13:45', module: 'WTW 218', key: 'wtw-218', method: 'closed-book problems', type: 'study', task: 'Double and triple integrals set.' },
-                { time: '15:15', module: 'WTW 211', key: 'wtw-211', method: 'closed-book problems', type: 'study', task: 'Eigenvalues and eigenvectors derive-first set.' },
-                { time: '16:30', module: 'COS 212', key: 'cos-212', method: 'closed-book problems', type: 'study', task: 'BFS, DFS, Dijkstra hand tracing.' },
-                { time: '17:30', module: 'Meta', key: 'meta', method: 'off', type: 'meta', task: 'Done and rest.' }
+                { time: '10:00', module: 'COS 330', key: 'cos-330', method: 'test day', type: 'test', task: 'COS 330 Test 1 (Hatfield Informatorium).' },
+                { time: '15:00', module: 'COS 284', key: 'cos-284', method: 'maintenance', type: 'study', task: 'Quick recap so COS 284 momentum stays steady.' }
             ]
         },
         {
-            date: '2026-04-27',
-            label: 'Monday 27 Apr',
-            note: '6 days to WTW 218 ST2.',
+            date: '2026-10-10',
+            label: 'Saturday 10 Oct',
+            note: 'Last major revision block before COS 284 Test 2.',
             sessions: [
-                { time: '08:30', module: 'Class', key: 'meta', method: 'class block', type: 'class', task: 'PHY, COS 210, WTW 211, PHY practical, COS 212.' },
-                { time: '17:30', module: 'WTW 218', key: 'wtw-218', method: 'closed-book problems', type: 'study', task: 'Polar and cylindrical coordinates, ten problems.' },
-                { time: '19:00', module: 'WTW 211', key: 'wtw-211', method: 'spaced review', type: 'study', task: 'Eigenvalue mistakes plus diagonalisation intro.' },
-                { time: '20:00', module: 'COS 210', key: 'cos-210', method: 'closed-book problems', type: 'study', task: 'Three Turing machines from memory.' },
-                { time: '21:00', module: 'Meta', key: 'meta', method: 'sleep', type: 'meta', task: 'Lights out by 21:45.' }
+                { time: '09:00', module: 'COS 284', key: 'cos-284', method: 'past-paper', type: 'study', task: 'Complete one timed paper and mark immediately.' },
+                { time: '12:00', module: 'COS 284', key: 'cos-284', method: 'targeted fix', type: 'study', task: 'Redo all weak sections from the timed run.' },
+                { time: '16:00', module: 'Meta', key: 'meta', method: 'reset', type: 'meta', task: 'Short walk and early night.' }
             ]
         },
         {
-            date: '2026-04-28',
-            label: 'Tuesday 28 Apr',
-            note: '5 days to WTW 218 ST2.',
+            date: '2026-10-12',
+            label: 'Monday 12 Oct',
+            note: 'COS 284 Test 2 day.',
             sessions: [
-                { time: '08:30', module: 'Class', key: 'meta', method: 'class block', type: 'class', task: 'WTW 218, PHY, PHY tutorial.' },
-                { time: '17:30', module: 'WTW 218', key: 'wtw-218', method: 'closed-book problems', type: 'study', task: 'Spherical coordinates and integration drill.' },
-                { time: '19:15', module: 'COS 212', key: 'cos-212', method: 'closed-book problems', type: 'study', task: 'DP coding: Fibonacci, knapsack, LCS from memory.' },
-                { time: '20:15', module: 'WTW 211', key: 'wtw-211', method: 'closed-book problems', type: 'study', task: 'Diagonalisation process retrieval.' },
-                { time: '21:15', module: 'Meta', key: 'meta', method: 'sleep', type: 'meta', task: 'Lights out by 22:00.' }
+                { time: '10:00', module: 'COS 284', key: 'cos-284', method: 'test day', type: 'test', task: 'COS 284 Test 2 (Hatfield Informatorium).' },
+                { time: '18:00', module: 'COS 330', key: 'cos-330', method: 'bridge', type: 'study', task: 'Resume COS 330 exam prep plan.' }
             ]
         },
         {
-            date: '2026-04-29',
-            label: 'Wednesday 29 Apr',
-            note: '4 days to WTW 218 ST2.',
+            date: '2026-11-09',
+            label: 'Monday 9 Nov',
+            note: 'Final 48-hour phase before COS 284 exam.',
             sessions: [
-                { time: '08:30', module: 'Class', key: 'meta', method: 'class block', type: 'class', task: 'COS 210, COS 212, WTW 218 tutorial, WTW 211 tutorial.' },
-                { time: '17:30', module: 'WTW 218', key: 'wtw-218', method: 'past paper', type: 'study', task: 'Timed full past paper, 90 minutes.' },
-                { time: '19:00', module: 'WTW 218', key: 'wtw-218', method: 'past paper', type: 'study', task: 'Mark and variation of each wrong answer.' },
-                { time: '20:15', module: 'COS 210', key: 'cos-210', method: 'closed-book problems', type: 'study', task: 'Decidability proofs from scratch.' },
-                { time: '21:15', module: 'Meta', key: 'meta', method: 'sleep', type: 'meta', task: 'Lights out by 22:00.' }
+                { time: '08:30', module: 'COS 284', key: 'cos-284', method: 'exam drill', type: 'study', task: 'Write one condensed formula and concept sheet from memory.' },
+                { time: '14:00', module: 'COS 284', key: 'cos-284', method: 'timed mix', type: 'study', task: 'Mixed timed questions across all major topics.' },
+                { time: '20:30', module: 'Meta', key: 'meta', method: 'sleep', type: 'meta', task: 'No late-night studying.' }
             ]
         },
         {
-            date: '2026-04-30',
-            label: 'Thursday 30 Apr',
-            note: '3 days to WTW 218 ST2.',
+            date: '2026-11-11',
+            label: 'Wednesday 11 Nov',
+            note: 'COS 284 Exam (Paper 1, PRELIM).',
             sessions: [
-                { time: '08:30', module: 'Class', key: 'meta', method: 'class block', type: 'class', task: 'WTW 218, PHY tutorial, PHY lecture, COS 212.' },
-                { time: '17:30', module: 'WTW 218', key: 'wtw-218', method: 'closed-book problems', type: 'study', task: 'Weakness-only targeting from timed paper.' },
-                { time: '19:00', module: 'WTW 211', key: 'wtw-211', method: 'past paper', type: 'study', task: 'Similarity and diagonalisation paper questions.' },
-                { time: '20:15', module: 'COS 212', key: 'cos-212', method: 'spaced review', type: 'study', task: 'EO2 flashcard sweep.' },
-                { time: '21:15', module: 'Meta', key: 'meta', method: 'sleep', type: 'meta', task: 'Lights out by 22:00.' }
+                { time: '07:30', module: 'COS 284', key: 'cos-284', method: 'exam day', type: 'exam', task: 'COS 284 Exam Paper 1 at Hatfield.' },
+                { time: '13:30', module: 'COS 330', key: 'cos-330', method: 're-focus', type: 'study', task: 'Switch focus to COS 330 exam prep.' }
             ]
         },
         {
-            date: '2026-05-01',
-            label: 'Friday 1 May',
-            note: '1 day to WTW 218 ST2.',
+            date: '2026-11-19',
+            label: 'Thursday 19 Nov',
+            note: 'Final revision before COS 330 exam.',
             sessions: [
-                { time: '07:30', module: 'Class', key: 'meta', method: 'class block', type: 'class', task: 'Friday classes, attend as normal.' },
-                { time: '17:30', module: 'WTW 218', key: 'wtw-218', method: 'flashcard recall', type: 'study', task: 'Formula and theorem write-out, 1 hour max.' },
-                { time: '18:30', module: 'COS 212', key: 'cos-212', method: 'flashcard recall', type: 'study', task: 'Complexity table from memory.' },
-                { time: '19:15', module: 'Meta', key: 'meta', method: 'sleep', type: 'meta', task: 'Shutdown and sleep by 21:00.' }
+                { time: '09:00', module: 'COS 330', key: 'cos-330', method: 'timed paper', type: 'study', task: 'Complete one final full timed paper.' },
+                { time: '13:00', module: 'COS 330', key: 'cos-330', method: 'mistake sweep', type: 'study', task: 'Only revise recurring mistakes and edge cases.' },
+                { time: '20:00', module: 'Meta', key: 'meta', method: 'sleep', type: 'meta', task: 'Pack docs and sleep early.' }
             ]
         },
         {
-            date: '2026-05-02',
-            label: 'Saturday 2 May',
-            note: 'WTW 218 ST2 day.',
+            date: '2026-11-21',
+            label: 'Saturday 21 Nov',
+            note: 'COS 330 Exam (Paper 1, PRELIM).',
             sessions: [
-                { time: '06:15', module: 'Meta', key: 'meta', method: 'prep', type: 'meta', task: 'Wake, eat, 5 minute formula glance.' },
-                { time: '07:30', module: 'WTW 218', key: 'wtw-218', method: 'test day', type: 'test', task: 'WTW 218 Semester Test 2 at AE Annex.' },
-                { time: '10:00', module: 'WTW 211', key: 'wtw-211', method: 'past paper', type: 'study', task: 'Full timed paper, exam conditions.' },
-                { time: '11:30', module: 'WTW 211', key: 'wtw-211', method: 'past paper', type: 'study', task: 'Mark and redo every wrong answer.' },
-                { time: '13:30', module: 'COS 212', key: 'cos-212', method: 'closed-book problems', type: 'study', task: 'EO2 timed algorithm tracing set.' },
-                { time: '15:30', module: 'Meta', key: 'meta', method: 'off', type: 'meta', task: 'Afternoon recovery.' }
-            ]
-        },
-        {
-            date: '2026-05-03',
-            label: 'Sunday 3 May',
-            note: 'Church morning and final Sunday before EO2.',
-            sessions: [
-                { time: 'Morning', module: 'Meta', key: 'meta', method: 'church', type: 'meta', task: 'Church and full off block.' },
-                { time: '13:30', module: 'COS 212', key: 'cos-212', method: 'teach-it-back', type: 'study', task: 'Teach every major algorithm family.' },
-                { time: '15:00', module: 'WTW 211', key: 'wtw-211', method: 'spaced review', type: 'study', task: 'Saturday misses plus six new eigenvalue problems.' },
-                { time: '16:30', module: 'COS 210', key: 'cos-210', method: 'teach-it-back', type: 'study', task: 'P vs NP and three reductions.' },
-                { time: '17:30', module: 'Meta', key: 'meta', method: 'off', type: 'meta', task: 'Sleep well.' }
-            ]
-        },
-        {
-            date: '2026-05-04',
-            label: 'Monday 4 May',
-            note: '3 days to COS 212 EO2.',
-            sessions: [
-                { time: '08:30', module: 'Class', key: 'meta', method: 'class block', type: 'class', task: 'PHY, COS 210, WTW 211, PHY practical, COS 212.' },
-                { time: '17:30', module: 'COS 212', key: 'cos-212', method: 'past paper', type: 'study', task: 'EO2 full timed paper.' },
-                { time: '19:00', module: 'COS 212', key: 'cos-212', method: 'past paper', type: 'study', task: 'Mark and redo wrong answers.' },
-                { time: '20:00', module: 'WTW 211', key: 'wtw-211', method: 'closed-book problems', type: 'study', task: 'Ten linear transformations and eigenvalue problems.' },
-                { time: '21:15', module: 'Meta', key: 'meta', method: 'sleep', type: 'meta', task: 'Lights out by 22:00.' }
-            ]
-        },
-        {
-            date: '2026-05-05',
-            label: 'Tuesday 5 May',
-            note: '2 days to EO2, 3 days to WTW 211 ST2.',
-            sessions: [
-                { time: '08:30', module: 'Class', key: 'meta', method: 'class block', type: 'class', task: 'WTW 218, PHY, PHY tutorial.' },
-                { time: '17:30', module: 'COS 212', key: 'cos-212', method: 'closed-book problems', type: 'study', task: 'Two variations per weak EO2 type.' },
-                { time: '18:45', module: 'WTW 211', key: 'wtw-211', method: 'past paper', type: 'study', task: 'Second full timed past paper.' },
-                { time: '20:15', module: 'WTW 211', key: 'wtw-211', method: 'past paper', type: 'study', task: 'Mark and redo.' },
-                { time: '21:00', module: 'Meta', key: 'meta', method: 'sleep', type: 'meta', task: 'Lights out by 22:00.' }
-            ]
-        },
-        {
-            date: '2026-05-06',
-            label: 'Wednesday 6 May',
-            note: '1 day to EO2, 2 days to WTW 211 ST2.',
-            sessions: [
-                { time: '08:30', module: 'Class', key: 'meta', method: 'class block', type: 'class', task: 'COS 210, COS 212, WTW 218 tutorial, WTW 211 tutorial.' },
-                { time: '17:30', module: 'COS 212', key: 'cos-212', method: 'flashcard recall', type: 'study', task: 'Complexity table and key algorithm steps.' },
-                { time: '18:30', module: 'WTW 211', key: 'wtw-211', method: 'spaced review', type: 'study', task: 'Every wrong answer from both papers.' },
-                { time: '19:45', module: 'COS 210', key: 'cos-210', method: 'closed-book problems', type: 'study', task: 'Three NP-completeness reductions from memory.' },
-                { time: '21:00', module: 'Meta', key: 'meta', method: 'sleep', type: 'meta', task: 'Lights out by 21:30.' }
-            ]
-        },
-        {
-            date: '2026-05-07',
-            label: 'Thursday 7 May',
-            note: 'COS 212 EO2 day.',
-            sessions: [
-                { time: '08:00', module: 'COS 212', key: 'cos-212', method: 'prep', type: 'study', task: 'Tab notes and skim complexity table only.' },
-                { time: '10:00', module: 'COS 212', key: 'cos-212', method: 'exam opportunity', type: 'exam', task: 'COS 212 EO2 at Centenary 4/5/6.' },
-                { time: '11:30', module: 'WTW 211', key: 'wtw-211', method: 'teach-it-back', type: 'study', task: 'Teach major theorems aloud.' },
-                { time: '13:00', module: 'WTW 211', key: 'wtw-211', method: 'flashcard recall', type: 'study', task: 'Formula write-out and four weak-spot drills.' },
-                { time: '14:00', module: 'Meta', key: 'meta', method: 'rest', type: 'meta', task: 'Recover and sleep by 21:00.' }
-            ]
-        },
-        {
-            date: '2026-05-08',
-            label: 'Friday 8 May',
-            note: 'WTW 211 ST2 day.',
-            sessions: [
-                { time: '07:30', module: 'Class', key: 'meta', method: 'class block', type: 'class', task: 'WTW 211 and PHY lectures, no cramming.' },
-                { time: '09:30', module: 'WTW 211', key: 'wtw-211', method: 'flashcard recall', type: 'study', task: 'Theorems and definitions recall.' },
-                { time: '12:30', module: 'WTW 211', key: 'wtw-211', method: 'test day', type: 'test', task: 'WTW 211 Semester Test 2 at AE Annex.' },
-                { time: '14:30', module: 'COS 210', key: 'cos-210', method: 'past paper', type: 'study', task: 'Start COS 210 ST2 prep with full timed paper.' },
-                { time: '16:30', module: 'Meta', key: 'meta', method: 'off', type: 'meta', task: 'Done for the day.' }
-            ]
-        },
-        {
-            date: '2026-05-09',
-            label: 'Saturday 9 May',
-            note: '7 days to double test day.',
-            sessions: [
-                { time: '07:30', module: 'Meta', key: 'meta', method: 'nsdr', type: 'meta', task: '10 min NSDR before starting.' },
-                { time: '08:00', module: 'PHY 255', key: 'phy-255', method: 'past paper', type: 'study', task: 'Modern Physics full timed paper.' },
-                { time: '11:00', module: 'PHY 255', key: 'phy-255', method: 'past paper', type: 'study', task: 'Mark and immediate redo.' },
-                { time: '13:15', module: 'COS 210', key: 'cos-210', method: 'past paper', type: 'study', task: 'Full timed COS 210 paper.' },
-                { time: '15:00', module: 'COS 210', key: 'cos-210', method: 'past paper', type: 'study', task: 'Mark and redo all misses.' },
-                { time: '16:30', module: 'Meta', key: 'meta', method: 'off', type: 'meta', task: 'Full rest evening.' }
-            ]
-        },
-        {
-            date: '2026-05-10',
-            label: 'Sunday 10 May',
-            note: 'Weakness elimination day.',
-            sessions: [
-                { time: 'Morning', module: 'Meta', key: 'meta', method: 'church', type: 'meta', task: 'Church morning off block.' },
-                { time: '13:30', module: 'PHY 255', key: 'phy-255', method: 'spaced review', type: 'study', task: 'Target every PHY weak area with two variations.' },
-                { time: '15:00', module: 'COS 210', key: 'cos-210', method: 'spaced review', type: 'study', task: 'Target every COS 210 weak area.' },
-                { time: '16:30', module: 'Meta', key: 'meta', method: 'off', type: 'meta', task: 'Done by 16:30.' }
-            ]
-        },
-        {
-            date: '2026-05-11',
-            label: 'Monday 11 May',
-            note: 'Final push begins: five days out.',
-            sessions: [
-                { time: 'Evening', module: 'PHY 255', key: 'phy-255', method: 'closed-book problems', type: 'study', task: 'Relativity topic block plus teach-it-back.' },
-                { time: 'Evening', module: 'COS 210', key: 'cos-210', method: 'spaced review', type: 'study', task: 'Automata and CFG topic block.' },
-                { time: '21:30', module: 'Meta', key: 'meta', method: 'sleep', type: 'meta', task: 'Hard lights-out cutoff.' }
-            ]
-        },
-        {
-            date: '2026-05-12',
-            label: 'Tuesday 12 May',
-            note: 'Four days out.',
-            sessions: [
-                { time: 'Evening', module: 'PHY 255', key: 'phy-255', method: 'closed-book problems', type: 'study', task: 'Quantum mechanics block plus teach-it-back.' },
-                { time: 'Evening', module: 'COS 210', key: 'cos-210', method: 'spaced review', type: 'study', task: 'Turing machines and decidability.' },
-                { time: '21:30', module: 'Meta', key: 'meta', method: 'sleep', type: 'meta', task: 'Hard lights-out cutoff.' }
-            ]
-        },
-        {
-            date: '2026-05-13',
-            label: 'Wednesday 13 May',
-            note: 'Three days out.',
-            sessions: [
-                { time: 'Evening', module: 'PHY 255', key: 'phy-255', method: 'closed-book problems', type: 'study', task: 'Nuclear topic block plus teach-it-back.' },
-                { time: 'Evening', module: 'COS 210', key: 'cos-210', method: 'spaced review', type: 'study', task: 'NP topic block and retrieval.' },
-                { time: '21:30', module: 'Meta', key: 'meta', method: 'sleep', type: 'meta', task: 'Hard lights-out cutoff.' }
-            ]
-        },
-        {
-            date: '2026-05-14',
-            label: 'Thursday 14 May',
-            note: 'Two days out, light review only.',
-            sessions: [
-                { time: 'Evening', module: 'PHY 255', key: 'phy-255', method: 'light review', type: 'study', task: 'Formula walkthrough and weak spots only.' },
-                { time: 'Evening', module: 'COS 210', key: 'cos-210', method: 'light review', type: 'study', task: 'Definitions and proof skeleton recall only.' },
-                { time: '21:30', module: 'Meta', key: 'meta', method: 'sleep', type: 'meta', task: 'Hard lights-out cutoff.' }
-            ]
-        },
-        {
-            date: '2026-05-15',
-            label: 'Friday 15 May',
-            note: '1 day to double test day.',
-            sessions: [
-                { time: '07:30', module: 'Class', key: 'meta', method: 'class block', type: 'class', task: 'Attend Friday classes normally.' },
-                { time: '17:30', module: 'COS 210', key: 'cos-210', method: 'flashcard recall', type: 'study', task: 'Key definitions and proofs, 45 mins.' },
-                { time: '18:15', module: 'PHY 255', key: 'phy-255', method: 'flashcard recall', type: 'study', task: 'Formula sheet review and mental walkthrough, 45 mins.' },
-                { time: '19:00', module: 'Meta', key: 'meta', method: 'sleep', type: 'meta', task: 'Done at 19:00. In bed by 20:30.' }
-            ]
-        },
-        {
-            date: '2026-05-16',
-            label: 'Saturday 16 May',
-            note: 'Double test day: COS 210 then PHY 255.',
-            sessions: [
-                { time: '08:00', module: 'COS 210', key: 'cos-210', method: 'flashcard recall', type: 'study', task: 'Theorems and proofs recall. Finish by 09:30.' },
-                { time: '09:30', module: 'PHY 255', key: 'phy-255', method: 'flashcard recall', type: 'study', task: 'Formula sheet and one mental walkthrough.' },
-                { time: '11:00', module: 'Meta', key: 'meta', method: 'prep', type: 'meta', task: 'Eat and travel to Informatorium.' },
-                { time: '12:30', module: 'COS 210', key: 'cos-210', method: 'test day', type: 'test', task: 'COS 210 ST2 at Informatorium Labs.' },
-                { time: '14:15', module: 'PHY 255', key: 'phy-255', method: 'prep', type: 'study', task: '10 minute formula glance and travel.' },
-                { time: '15:00', module: 'PHY 255', key: 'phy-255', method: 'test day', type: 'test', task: 'PHY 255 Modern Physics ST2. Confirm venue beforehand.' },
-                { time: '18:00', module: 'Meta', key: 'meta', method: 'off', type: 'meta', task: 'Done. Full rest.' }
+                { time: '15:00', module: 'COS 330', key: 'cos-330', method: 'exam day', type: 'exam', task: 'COS 330 Exam Paper 1 at Hatfield.' },
+                { time: '19:30', module: 'Meta', key: 'meta', method: 'recover', type: 'meta', task: 'Shut down and recover after exam block.' }
             ]
         }
     ];
 
     var selectedFilter = 'all';
-    var selectedDate = normalizeDate(new Date('2026-04-22T00:00:00'));
+    var selectedDate = normalizeDate(new Date(DAY_PLANS[0].date + 'T00:00:00'));
 
     function normalizeDate(date) {
         return new Date(date.getFullYear(), date.getMonth(), date.getDate());
@@ -439,10 +247,9 @@
         }
 
         var html = sessions.map(function (session) {
-            var badge = session.time;
             return [
                 '<div class="day-event ' + sessionEventClass(session) + '">',
-                '<div class="day-event__badge">' + badge + '</div>',
+                '<div class="day-event__badge">' + session.time + '</div>',
                 '<div class="day-event__info">',
                 '<div class="day-event__module">' + session.module + '</div>',
                 '<div class="day-event__title">' + session.task + '</div>',
@@ -473,7 +280,7 @@
             return filteredSessions(plan).length > 0;
         }).length;
 
-        meta.textContent = '22 Apr - 16 May · ' + visibleDays + '/' + DAY_PLANS.length + ' days visible';
+        meta.textContent = DAY_PLANS[0].date + ' - ' + DAY_PLANS[DAY_PLANS.length - 1].date + ' · ' + visibleDays + '/' + DAY_PLANS.length + ' days visible';
     }
 
     function renderDateRail() {
@@ -514,7 +321,7 @@
         if (!el) return;
         var plan = planForDate(selectedDate);
         if (!plan) {
-            el.textContent = 'Select a mapped date between 22 Apr and 16 May.';
+            el.textContent = 'Select a mapped date in the semester 2 test/exam window.';
             return;
         }
 

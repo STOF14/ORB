@@ -151,8 +151,8 @@ setInterval(renderCountdowns, 60000);
 
 // ── Semester Progress Bar ──
 function renderProgress() {
-    const semStart = new Date('2026-02-09T00:00:00');
-    const semEnd = new Date('2026-06-13T00:00:00');
+    const semStart = new Date('2026-07-20T00:00:00');
+    const semEnd = new Date('2026-11-21T00:00:00');
     const now = new Date();
     const total = semEnd - semStart;
     const elapsed = now - semStart;
