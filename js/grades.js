@@ -8,125 +8,44 @@
 /* ── Module definitions ── */
 const MODULES = [
     {
-        code: 'PHY 255',
-        slug: 'phy-255',
-        name: 'Physics',
-        credits: 24,
-        color: 'var(--red)',
-        semWeight: 0.5,
-        examWeight: 0.5,
-        passRules: [
-            '≥40% CAM subminimum for exam entrance',
-            '≥40% exam subminimum to pass',
-            'All 12 practicals must be completed'
-        ],
-        components: [
-            { key: 'thermo',    label: 'Thermodynamics Continuous', weight: 0.2042 },
-            { key: 'mp_ct1',    label: 'Modern Physics Class Test 1', weight: 0.4958 * 0.36 / 6 },
-            { key: 'mp_ct2',    label: 'Modern Physics Class Test 2', weight: 0.4958 * 0.36 / 6 },
-            { key: 'mp_ct3',    label: 'Modern Physics Class Test 3', weight: 0.4958 * 0.36 / 6 },
-            { key: 'mp_ct4',    label: 'Modern Physics Class Test 4', weight: 0.4958 * 0.36 / 6 },
-            { key: 'mp_ct5',    label: 'Modern Physics Class Test 5', weight: 0.4958 * 0.36 / 6 },
-            { key: 'mp_ct6',    label: 'Modern Physics Class Test 6', weight: 0.4958 * 0.36 / 6 },
-            { key: 'mp_st1',    label: 'Semester Test 1 (Modern)', weight: 0.4958 * 0.28 },
-            { key: 'mp_st2',    label: 'Semester Test 2 (Modern)', weight: 0.4958 * 0.36 },
-            { key: 'modelling', label: 'Modelling Practicals', weight: 0.15 },
-            { key: 'error',     label: 'Error Analysis Practicals', weight: 0.15 }
-        ],
-        examSubmin: 0.40,
-        semSubmin: 0.40,
-        passMin: 0.50
-    },
-    {
-        code: 'WTW 211',
-        slug: 'wtw-211',
-        name: 'Linear Algebra',
-        credits: 12,
-        color: 'var(--orange)',
-        semWeight: 0.6,
-        examWeight: 0.4,
-        passRules: [
-            'Exam admission requires ≥40% semester mark',
-            'Pass requires ≥50% final AND ≥40% exam',
-            'No calculators permitted'
-        ],
-        components: [
-            { key: 'st1',   label: 'Semester Test 1', weight: 0.35 },
-            { key: 'st2',   label: 'Semester Test 2', weight: 0.35 },
-            { key: 'tuts',  label: 'Assignments + Tutorials', weight: 0.30 }
-        ],
-        examSubmin: 0.40,
-        semSubmin: 0.40,
-        passMin: 0.50
-    },
-    {
-        code: 'WTW 218',
-        slug: 'wtw-218',
-        name: 'Calculus',
-        credits: 12,
-        color: 'var(--yellow)',
-        semWeight: 0.6,
-        examWeight: 0.4,
-        passRules: [
-            'Exam admission requires ≥40% semester mark',
-            'Pass requires ≥50% final AND ≥40% exam'
-        ],
-        components: [
-            { key: 'st1',  label: 'Semester Test 1', weight: 0.35 },
-            { key: 'st2',  label: 'Semester Test 2', weight: 0.35 },
-            { key: 'tuts', label: 'Tutorial Tests (best 3 of 4)', weight: 0.25, subItems: { count: 4, best: 3, name: 'Tutorial Test' } },
-            { key: 'hw',   label: 'Homework (8 via ClickUP)', weight: 0.05, subItems: { count: 8, best: 8, name: 'Homework' } }
-        ],
-        examSubmin: 0.40,
-        semSubmin: 0.40,
-        passMin: 0.50
-    },
-    {
-        code: 'COS 210',
-        slug: 'cos-210',
-        name: 'Theoretical CS',
-        credits: 8,
+        code: 'COS 284',
+        slug: 'cos-284',
+        name: 'Computer Organisation and Architecture',
+        credits: 17,
         color: 'var(--blue)',
         semWeight: 0.6,
         examWeight: 0.4,
         passRules: [
-            'Exam refused if semester mark < 40%',
-            'Pass requires ≥40% exam AND ≥50% final'
+            'Track both semester tests to maintain exam readiness',
+            'Aim for at least 40% semester and exam subminimum',
+            'Confirm latest formal weighting from official module guide'
         ],
         components: [
-            { key: 'ws',   label: 'Worksheets (best 9 of 10)', weight: 0.10, subItems: { count: 10, best: 9, name: 'Worksheet' } },
-            { key: 'ct',   label: 'Class Tests (best 2 of 3)', weight: 0.20, subItems: { count: 3, best: 2, name: 'Class Test' } },
-            { key: 'st1',  label: 'Semester Test 1', weight: 0.35 },
-            { key: 'st2',  label: 'Semester Test 2', weight: 0.35 }
+            { key: 'test1', label: 'Test 1', weight: 0.5 },
+            { key: 'test2', label: 'Test 2', weight: 0.5 }
         ],
         examSubmin: 0.40,
         semSubmin: 0.40,
         passMin: 0.50
     },
     {
-        code: 'COS 212',
-        slug: 'cos-212',
-        name: 'Data Structures',
-        credits: 16,
+        code: 'COS 330',
+        slug: 'cos-330',
+        name: 'Concurrent Systems',
+        credits: 17,
         color: 'var(--dark-blue)',
-        /* COS 212 is continuous assessment — no separate exam weight.
-           The three "Exam Opportunities" are just components within the mark. */
-        semWeight: 1.0,
-        examWeight: 0,
+        semWeight: 0.6,
+        examWeight: 0.4,
         passRules: [
-            'Pass: ≥50% final AND ≥40% average on exam opportunities',
-            'EO3 entrance requires ≥20% final mark'
+            'Keep practical performance aligned with lecture progress',
+            'Aim for at least 40% semester and exam subminimum',
+            'Confirm latest formal weighting from official module guide'
         ],
         components: [
-            { key: 'pracs', label: 'Practicals (best 4 of 5)', weight: 0.20, subItems: { count: 5, best: 4, name: 'Practical' } },
-            { key: 'tuts',  label: 'Tutorials (best 9 of 11)', weight: 0.10, subItems: { count: 11, best: 9, name: 'Tutorial' } },
-            { key: 'hw',    label: 'Homework (3 Assignments)', weight: 0.10, subItems: { count: 3, best: 3, name: 'Assignment' } },
-            { key: 'eo1',   label: 'Exam Opportunity 1', weight: 0.20 },
-            { key: 'eo2',   label: 'Exam Opportunity 2', weight: 0.20 },
-            { key: 'eo3',   label: 'Exam Opportunity 3', weight: 0.20 }
+            { key: 'test1', label: 'Test 1', weight: 1.0 }
         ],
-        examSubmin: 0.40,  /* average of EOs */
-        semSubmin: 0,
+        examSubmin: 0.40,
+        semSubmin: 0.40,
         passMin: 0.50
     }
 ];

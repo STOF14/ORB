@@ -340,18 +340,24 @@ header {
 .module-phy-255 { border-left: 5px solid var(--mod-red); }
 .module-cos-212 { border-left: 5px solid var(--mod-dark-blue); }
 .module-cos-210 { border-left: 5px solid var(--mod-blue); }
+.module-cos-284 { border-left: 5px solid var(--mod-blue); }
+.module-cos-330 { border-left: 5px solid var(--mod-dark-blue); }
 
 .module-wtw-211 .color-accent { background: var(--mod-orange); }
 .module-wtw-218 .color-accent { background: var(--mod-yellow); }
 .module-phy-255 .color-accent { background: var(--mod-red); }
 .module-cos-212 .color-accent { background: var(--mod-dark-blue); }
 .module-cos-210 .color-accent { background: var(--mod-blue); }
+.module-cos-284 .color-accent { background: var(--mod-blue); }
+.module-cos-330 .color-accent { background: var(--mod-dark-blue); }
 
 .module-wtw-211 .schedule-item { border-left-color: var(--mod-orange); }
 .module-wtw-218 .schedule-item { border-left-color: var(--mod-yellow); }
 .module-phy-255 .schedule-item { border-left-color: var(--mod-red); }
 .module-cos-212 .schedule-item { border-left-color: var(--mod-dark-blue); }
 .module-cos-210 .schedule-item { border-left-color: var(--mod-blue); }
+.module-cos-284 .schedule-item { border-left-color: var(--mod-blue); }
+.module-cos-330 .schedule-item { border-left-color: var(--mod-dark-blue); }
 
 /* ── Schedule Grid ── */
 .schedule-grid {
