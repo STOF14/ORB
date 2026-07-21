@@ -1,6 +1,15 @@
 (function () {
     var DAY_PLANS = [
         {
+            date: '2026-08-07',
+            label: 'Friday 7 Aug',
+            note: 'COS 284 Class Test 1 (online, ClickUP).',
+            sessions: [
+                { time: '09:00', module: 'COS 284', key: 'cos-284', method: 'flash recall', type: 'study', task: 'Quick pass over L1-L6 slides before the window opens.' },
+                { time: '09:30', module: 'COS 284', key: 'cos-284', method: 'test day', type: 'test', task: 'COS 284 Class Test 1 — 45 min, window 09:30-12:30, online.' }
+            ]
+        },
+        {
             date: '2026-08-18',
             label: 'Tuesday 18 Aug',
             note: 'Final prep stretch before COS 284 Test 1.',
@@ -50,6 +59,15 @@
             ]
         },
         {
+            date: '2026-09-11',
+            label: 'Friday 11 Sep',
+            note: 'COS 284 Class Test 2 (online, ClickUP).',
+            sessions: [
+                { time: '09:00', module: 'COS 284', key: 'cos-284', method: 'flash recall', type: 'study', task: 'Quick pass over material since Test 1 before the window opens.' },
+                { time: '09:30', module: 'COS 284', key: 'cos-284', method: 'test day', type: 'test', task: 'COS 284 Class Test 2 — 45 min, window 09:30-12:30, online.' }
+            ]
+        },
+        {
             date: '2026-10-10',
             label: 'Saturday 10 Oct',
             note: 'Last major revision block before COS 284 Test 2.',
@@ -66,6 +84,15 @@
             sessions: [
                 { time: '10:00', module: 'COS 284', key: 'cos-284', method: 'test day', type: 'test', task: 'COS 284 Test 2 (Hatfield Informatorium).' },
                 { time: '18:00', module: 'COS 330', key: 'cos-330', method: 'bridge', type: 'study', task: 'Resume COS 330 exam prep plan.' }
+            ]
+        },
+        {
+            date: '2026-10-30',
+            label: 'Friday 30 Oct',
+            note: 'COS 284 Class Test 3 (online, ClickUP).',
+            sessions: [
+                { time: '09:00', module: 'COS 284', key: 'cos-284', method: 'flash recall', type: 'study', task: 'Quick pass over material since Test 2 before the window opens.' },
+                { time: '09:30', module: 'COS 284', key: 'cos-284', method: 'test day', type: 'test', task: 'COS 284 Class Test 3 — 45 min, window 09:30-12:30, online.' }
             ]
         },
         {
