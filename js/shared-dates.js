@@ -4,6 +4,10 @@
    ============================================================ */
 
 const CRITICAL_DATES = [
+    // ── Class Tests (online, ClickUP) ──
+    { date: '2026-08-07', event: 'COS 284 Class Test 1', type: 'test', module: 'cos-284', day: 'Friday', time: '09:30 – 12:30 (45 min once started)', venue: 'Online (ClickUP)' },
+    { date: '2026-09-11', event: 'COS 284 Class Test 2', type: 'test', module: 'cos-284', day: 'Friday', time: '09:30 – 12:30 (45 min once started)', venue: 'Online (ClickUP)' },
+    { date: '2026-10-30', event: 'COS 284 Class Test 3', type: 'test', module: 'cos-284', day: 'Friday', time: '09:30 – 12:30 (45 min once started)', venue: 'Online (ClickUP)' },
     // ── Semester Tests ──
     { date: '2026-08-22', event: 'COS 284 Test 1', type: 'test', module: 'cos-284', day: 'Saturday', time: '10:00 – 11:30', venue: 'Hatfield, Informatorium (Blue 1/2/3, Green, Purple, Red Lab)' },
     { date: '2026-08-28', event: 'COS 330 Test 1', type: 'test', module: 'cos-330', day: 'Friday', time: '10:00 – 11:30', venue: 'Hatfield, Informatorium (Blue 1/2/3, Red Lab)' },

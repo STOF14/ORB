@@ -11,18 +11,20 @@ const MODULES = [
         code: 'COS 284',
         slug: 'cos-284',
         name: 'Computer Organisation and Architecture',
-        credits: 17,
+        credits: 16,
         color: 'var(--blue)',
         semWeight: 0.6,
         examWeight: 0.4,
         passRules: [
-            'Track both semester tests to maintain exam readiness',
-            'Aim for at least 40% semester and exam subminimum',
-            'Confirm latest formal weighting from official module guide'
+            'Best 2 of 3 class tests count — no medical certificate accepted for a missed one',
+            'Need ≥40% semester mark and ≥40% on at least one semester test to enter the exam',
+            'Pass needs ≥40% exam mark and ≥50% final mark; distinction at ≥75% final mark'
         ],
         components: [
-            { key: 'test1', label: 'Test 1', weight: 0.5 },
-            { key: 'test2', label: 'Test 2', weight: 0.5 }
+            { key: 'classtests', label: 'Class Tests (best 2 of 3)', weight: 0.16 },
+            { key: 'practicals', label: 'Practical Assignments (4)', weight: 0.24 },
+            { key: 'test1', label: 'Semester Test 1', weight: 0.30 },
+            { key: 'test2', label: 'Semester Test 2', weight: 0.30 }
         ],
         examSubmin: 0.40,
         semSubmin: 0.40,
