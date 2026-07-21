@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="apple-mobile-web-app-title" content="Assignments" />
+    <link rel="manifest" href="manifest.json" />
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/icon-192.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="icons/icon-512.png" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <meta name="apple-touch-startup-image" content="icons/icon-512.png" />
+    <title>Assignments & Deadlines</title>
+    <link rel="stylesheet" href="css/shared.css" />
+    <link rel="stylesheet" href="css/assignments.css" />
+</head>
+<body>
+    <!-- Loader -->
+    <div id="orbitdesk-loader" class="orbitdesk-loader" role="dialog" aria-label="Loading Orb">
+        <div class="orbitdesk-loader__grid">
+            <div class="orbitdesk-loader__text">
+                <span class="orbitdesk-loader__word orbitdesk-loader__word--orb">Orb</span>
+            </div>
+            <div class="orbitdesk-loader__logo">
+                <svg id="orb-logo" width="160" height="160" viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Orb loader logo" role="img">
+                    <rect x="0" y="0" width="160" height="160" fill="#fff"/>
+                    <g id="orb-ring-group">
+                        <circle id="orb-ring" cx="80" cy="80" r="56" stroke="#000" stroke-width="3" fill="none"/>
+                        <circle id="orb-planet" cx="80" cy="24" r="11" fill="#e63946" filter="url(#shadow)"/>
+                    </g>
+                    <circle cx="80" cy="80" r="36" stroke="#000" stroke-width="1.5" stroke-dasharray="6 6" fill="none"/>
+                    <circle id="orb-core" cx="80" cy="80" r="16" fill="#000"/>
+                    <defs>
+                        <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+                            <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#000" flood-opacity="0.18"/>
+                        </filter>
+                    </defs>
+                </svg>
+            </div>
+        </div>
+    </div>
+
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore-compat.js"></script>
+
+    <!-- Navigation -->
+    <nav class="site-nav" role="navigation" aria-label="Main Navigation">
+        <span class="nav-label">Navigate</span>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="calendar.html">Calendar</a>
+        <a href="Semester1Timetable2026.html">Semester 1 Timetable</a>
+        <a href="index.html">Semester 2 Timetable</a>
+        <a href="planner.html">Day Planner</a>
+        <a href="exam-strategy.html">Exam Strategy</a>
+        <a href="assignments.html" class="active">Assignments</a>
+        <a href="grades.html">Grades</a>
+    </nav>
+
+    <!-- Auth Bar -->
+    <div class="auth-bar" id="authBar">
+        <span class="sync-status offline" id="syncStatus">Local only</span>
+        <div id="authContent">
+            <button class="auth-btn" onclick="signInWithGoogle()">Sign in with Google</button>
+        </div>
+    </div>
+
+    <main class="container" role="main">
+        <!-- Orb Brand -->
+        <div class="orbitdesk-brand orbitdesk-brand--masthead orbitdesk-brand--full">
+            <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Orb mini logo" role="img">
+                <rect x="0" y="0" width="38" height="38" rx="8" fill="#fff"/>
+                <circle cx="19" cy="19" r="13" stroke="#000" stroke-width="1.5" fill="none"/>
+                <circle cx="19" cy="19" r="8" stroke="#000" stroke-width="0.75" stroke-dasharray="3 3" fill="none"/>
+                <circle cx="19" cy="19" r="4" fill="#000"/>
+                <circle cx="19" cy="6" r="3" fill="#e63946"/>
+            </svg>
+            <div class="orbitdesk-brand__meta">
+                <span class="orbitdesk-brand__eyebrow">Work Queue</span>
+                <span class="orbitdesk-brand__name">Orb</span>
+            </div>
+        </div>
+
+        <header>
+            <div class="header-row">
+                <div>
+                    <h1>Assignments<br>& Deadlines</h1>
+                    <div class="color-accent"></div>
+                </div>
+                <div class="header-stats" id="headerStats"></div>
+            </div>
+        </header>
+
+        <!-- Filters -->
+        <section class="filter-bar" id="filterBar">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="todo">To Do</button>
+            <button class="filter-btn" data-filter="in-progress">In Progress</button>
+            <button class="filter-btn" data-filter="done">Done</button>
+            <div class="filter-sep"></div>
+            <button class="filter-btn" data-module="all">All Modules</button>
+            <button class="filter-btn" data-module="COS 284">COS 284</button>
+            <button class="filter-btn" data-module="COS 330">COS 330</button>
+        </section>
+
+        <!-- Add Assignment -->
+        <section class="add-section" id="addSection">
+            <h3 class="add-toggle" id="addToggle">Add Assignment <span class="toggle-icon">▾</span></h3>
+            <form class="add-form" id="addForm" autocomplete="off">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Title</label>
+                        <input type="text" id="addTitle" placeholder="e.g. COS 330 Practical 1" required maxlength="120" />
+                    </div>
+                    <div class="form-group">
+                        <label>Module</label>
+                        <select id="addModule">
+                            <option value="COS 284">COS 284</option>
+                            <option value="COS 330">COS 330</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Type</label>
+                        <select id="addType">
+                            <option value="assignment">Assignment</option>
+                            <option value="test">Test / Exam</option>
+                            <option value="practical">Practical</option>
+                            <option value="tutorial">Tutorial</option>
+                            <option value="worksheet">Worksheet</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Due Date</label>
+                        <input type="date" id="addDate" required autocomplete="off" />
+                    </div>
+                    <div class="form-group">
+                        <label>Due Time</label>
+                        <input type="time" id="addTime" value="23:59" autocomplete="off" />
+                    </div>
+                    <div class="form-group">
+                        <label>Priority</label>
+                        <select id="addPriority">
+                            <option value="normal">Normal</option>
+                            <option value="high">High</option>
+                            <option value="low">Low</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group full">
+                        <label>Notes (optional, Markdown supported)</label>
+                        <textarea id="addNotes" rows="4" placeholder="Details, links, chapters to study... Use Markdown: headings, lists, bold, links, code blocks."></textarea>
+                    </div>
+                </div>
+                <button type="submit" class="submit-btn">+ Add Assignment</button>
+            </form>
+        </section>
+
+        <!-- Kanban Board -->
+        <section class="kanban" id="kanban">
+            <div class="kanban-col" data-status="todo">
+                <div class="kanban-col-header">
+                    <h4>To Do</h4>
+                    <span class="kanban-count" id="countTodo">0</span>
+                </div>
+                <div class="kanban-items" id="colTodo"></div>
+            </div>
+            <div class="kanban-col" data-status="in-progress">
+                <div class="kanban-col-header">
+                    <h4>In Progress</h4>
+                    <span class="kanban-count" id="countProgress">0</span>
+                </div>
+                <div class="kanban-items" id="colProgress"></div>
+            </div>
+            <div class="kanban-col" data-status="done">
+                <div class="kanban-col-header">
+                    <h4>Done</h4>
+                    <span class="kanban-count" id="countDone">0</span>
+                </div>
+                <div class="kanban-items" id="colDone"></div>
+            </div>
+        </section>
+
+        <!-- Upcoming Deadlines (list view) -->
+        <section class="deadline-list-section" id="deadlineSection">
+            <h3>Upcoming Deadlines</h3>
+            <div class="deadline-list" id="deadlineList"></div>
+        </section>
+
+        <footer style="grid-column: 1 / -1; margin-top: 60px; padding-top: 40px; border-top: 1px solid var(--grid-line);">
+            <p style="font-size: 11px; color: var(--text-muted); letter-spacing: 1px; text-transform: uppercase;">
+                University of Pretoria — Semester 2, 2026 — Non-official reference
+            </p>
+        </footer>
+    </main>
+
+    <!-- Mobile Navigation -->
+    <nav class="bottom-nav" aria-label="Mobile navigation">
+        <span class="bottom-nav__page">Assignments</span>
+        <button class="nav-toggle" id="navToggle" aria-label="Open navigation" aria-expanded="false">
+            <span class="nav-toggle__icon"><span></span><span></span><span></span></span>
+            <span class="nav-toggle__label">Menu</span>
+        </button>
+    </nav>
+    <div class="nav-overlay" id="navOverlay" role="dialog" aria-label="Site navigation">
+        <div class="nav-overlay__header">
+            <span class="nav-overlay__brand">Orb</span>
+            <button class="nav-overlay__close" id="navClose" aria-label="Close navigation">Close</button>
+        </div>
+        <nav class="nav-overlay__links">
+            <a href="dashboard.html">Dashboard</a>
+            <a href="calendar.html">Calendar</a>
+            <a href="Semester1Timetable2026.html">Semester 1 Timetable</a>
+            <a href="index.html">Semester 2 Timetable</a>
+            <a href="planner.html">Day Planner</a>
+        <a href="exam-strategy.html">Exam Strategy</a>
+            <a href="assignments.html" class="active">Assignments</a>
+            <a href="grades.html">Grades</a>
+        </nav>
+    </div>
+    <script>(function(){var t=document.getElementById('navToggle'),o=document.getElementById('navOverlay'),c=document.getElementById('navClose');function open(){o.classList.add('open');t.setAttribute('aria-expanded','true');document.body.style.overflow='hidden';}function shut(){o.classList.remove('open');t.setAttribute('aria-expanded','false');document.body.style.overflow='';}t.addEventListener('click',open);c.addEventListener('click',shut);})();</script>
+
+    <!-- Scripts -->
+    <script src="js/firebase-config.js"></script>
+    <script src="js/shared-dates.js"></script>
+    <script src="js/loader.js"></script>
+    <script src="js/mobile-workflow.js"></script>
+    <script src="js/assignments.js"></script>
+</body>
+</html>
