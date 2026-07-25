@@ -7,7 +7,7 @@
    ============================================================ */
 
 const DAYS = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'];
-const MODULE_CLASSES = ['phy-255', 'cos-210', 'cos-212', 'wtw-211', 'wtw-218', 'cos-284', 'cos-330'];
+const MODULE_CLASSES = ['phy-255', 'cos-210', 'cos-212', 'wtw-211', 'wtw-218', 'cos-284', 'cos-330', 'wtw-224'];
 let editMode = false;
 
 /* ── Edit Persistence (Firestore + localStorage) ── */
@@ -70,6 +70,7 @@ function detectModuleClass(text) {
     if (/\bcos\s*-?\s*330\b/.test(val)) return 'cos-330';
     if (/\bwtw\s*-?\s*211\b/.test(val)) return 'wtw-211';
     if (/\bwtw\s*-?\s*218\b/.test(val)) return 'wtw-218';
+    if (/\bwtw\s*-?\s*224\b/.test(val)) return 'wtw-224';
     return null;
 }
 
@@ -272,7 +273,7 @@ function updateWhatsNext() {
     });
 
     function applyBorderColor(ev, ban) {
-        const map = { 'phy-255': '#e63946', 'cos-210': '#457b9d', 'cos-212': '#1d3557', 'wtw-211': '#f4a261', 'wtw-218': '#e9c46a', 'cos-284': '#457b9d', 'cos-330': '#1d3557' };
+        const map = { 'phy-255': '#e63946', 'cos-210': '#457b9d', 'cos-212': '#1d3557', 'wtw-211': '#f4a261', 'wtw-218': '#e9c46a', 'cos-284': '#457b9d', 'cos-330': '#1d3557', 'wtw-224': '#e9c46a' };
         const cls = Array.from(ev.el.classList).find(c => c in map);
         if (cls) ban.style.borderLeftColor = map[cls];
     }

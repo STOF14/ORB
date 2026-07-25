@@ -8,15 +8,17 @@ let roughCarrySyncedKey = null;
 const MODE_TRANSITION_MS = 320;
 const ROUGH_CARRY_LOOKBACK_DAYS = 45;
 
-const ROUGH_BUCKETS = ['COS 284', 'COS 330', 'Life/Admin'];
+const ROUGH_BUCKETS = ['COS 284', 'COS 330', 'WTW 224', 'Life/Admin'];
 const ROUGH_BUCKET_ELEMENT_IDS = {
     'COS 284': 'roughBucketCos284',
     'COS 330': 'roughBucketCos330',
+    'WTW 224': 'roughBucketWtw224',
     'Life/Admin': 'roughBucketLife'
 };
 const ROUGH_TEMPLATE_SUGGESTIONS = {
     'COS 284': ['review lecture notes', 'prepare for upcoming practical', 'summarize key concepts'],
     'COS 330': ['revise lecture material', 'practice practical exercises', 'write a short topic recap'],
+    'WTW 224': ['review lecture notes', 'work through tutorial problems', 'summarize key theorems'],
     'Life/Admin': ['sort admin task', 'reset room and desk', 'plan tomorrow']
 };
 

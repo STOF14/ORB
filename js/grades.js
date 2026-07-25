@@ -33,18 +33,40 @@ const MODULES = [
     {
         code: 'COS 330',
         slug: 'cos-330',
-        name: 'Concurrent Systems',
+        name: 'Computer Security and Ethics',
         credits: 17,
         color: 'var(--dark-blue)',
-        semWeight: 0.6,
-        examWeight: 0.4,
+        semWeight: 0.5,
+        examWeight: 0.5,
         passRules: [
-            'Keep practical performance aligned with lecture progress',
-            'Aim for at least 40% semester and exam subminimum',
-            'Confirm latest formal weighting from official module guide'
+            'Only one semester test is written the whole semester — it counts 50% of the semester mark',
+            'Need ≥40% semester mark and ≥40% examination mark (subminimum on both)',
+            'Sick notes for the exam must go to Faculty Administration, not the lecturer'
         ],
         components: [
-            { key: 'test1', label: 'Test 1', weight: 1.0 }
+            { key: 'test1', label: 'Semester Test', weight: 0.50 },
+            { key: 'practicals', label: 'Practical Assignments', weight: 0.50 }
+        ],
+        examSubmin: 0.40,
+        semSubmin: 0.40,
+        passMin: 0.50
+    },
+    {
+        code: 'WTW 224',
+        slug: 'wtw-224',
+        name: 'Techniques of Analysis',
+        credits: null, // TBC — not in any source on file, confirm via yearbook/ClickUP
+        color: 'var(--yellow)',
+        semWeight: 0.5,   // PLACEHOLDER — no WTW 224 study guide on file, confirm on ClickUP
+        examWeight: 0.5,  // PLACEHOLDER — as above
+        passRules: [
+            'PLACEHOLDER MODULE — only Test 1 (24 Aug), Test 2 (10 Oct) and exam (9 Nov, PRELIM) dates are confirmed, from the ClickUP portal',
+            'No study guide has been supplied yet — weighting, lecture times, and pass/subminimum rules below are generic UP defaults, not confirmed',
+            'Prerequisites are WTW 124, WTW 211 GS and WTW 218 GS — worth double-checking this registration against your S1 2026 results'
+        ],
+        components: [
+            { key: 'test1', label: 'Test 1 (unconfirmed weight)', weight: 0.50 },
+            { key: 'test2', label: 'Test 2 (unconfirmed weight)', weight: 0.50 }
         ],
         examSubmin: 0.40,
         semSubmin: 0.40,

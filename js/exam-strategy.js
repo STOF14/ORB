@@ -40,6 +40,14 @@
             ]
         },
         {
+            date: '2026-08-24',
+            label: 'Monday 24 Aug',
+            note: 'WTW 224 Test 1 day.',
+            sessions: [
+                { time: '10:00', module: 'WTW 224', key: 'wtw-224', method: 'test day', type: 'test', task: 'WTW 224 Test 1 (Hatfield, IT 4-2).' }
+            ]
+        },
+        {
             date: '2026-08-27',
             label: 'Thursday 27 Aug',
             note: 'Final prep before COS 330 Test 1.',
@@ -70,9 +78,10 @@
         {
             date: '2026-10-10',
             label: 'Saturday 10 Oct',
-            note: 'Last major revision block before COS 284 Test 2.',
+            note: 'WTW 224 Test 2 day; also last major revision block before COS 284 Test 2.',
             sessions: [
                 { time: '09:00', module: 'COS 284', key: 'cos-284', method: 'past-paper', type: 'study', task: 'Complete one timed paper and mark immediately.' },
+                { time: '10:00', module: 'WTW 224', key: 'wtw-224', method: 'test day', type: 'test', task: 'WTW 224 Test 2 (Hatfield, IT 4-2).' },
                 { time: '12:00', module: 'COS 284', key: 'cos-284', method: 'targeted fix', type: 'study', task: 'Redo all weak sections from the timed run.' },
                 { time: '16:00', module: 'Meta', key: 'meta', method: 'reset', type: 'meta', task: 'Short walk and early night.' }
             ]
@@ -98,8 +107,9 @@
         {
             date: '2026-11-09',
             label: 'Monday 9 Nov',
-            note: 'Final 48-hour phase before COS 284 exam.',
+            note: 'WTW 224 exam day; also final 48-hour phase before COS 284 exam.',
             sessions: [
+                { time: '07:30', module: 'WTW 224', key: 'wtw-224', method: 'exam day', type: 'exam', task: 'WTW 224 Exam (PRELIM, Hatfield) — verify time on portal before travelling.' },
                 { time: '08:30', module: 'COS 284', key: 'cos-284', method: 'exam drill', type: 'study', task: 'Write one condensed formula and concept sheet from memory.' },
                 { time: '14:00', module: 'COS 284', key: 'cos-284', method: 'timed mix', type: 'study', task: 'Mixed timed questions across all major topics.' },
                 { time: '20:30', module: 'Meta', key: 'meta', method: 'sleep', type: 'meta', task: 'No late-night studying.' }
@@ -110,7 +120,7 @@
             label: 'Wednesday 11 Nov',
             note: 'COS 284 Exam (Paper 1, PRELIM).',
             sessions: [
-                { time: '07:30', module: 'COS 284', key: 'cos-284', method: 'exam day', type: 'exam', task: 'COS 284 Exam Paper 1 at Hatfield.' },
+                { time: '08:00', module: 'COS 284', key: 'cos-284', method: 'exam day', type: 'exam', task: 'COS 284 Exam Paper 1 at Hatfield (study guide says 08:00; portal PRELIM shows 07:30 — arrive by 07:15 either way).' },
                 { time: '13:30', module: 'COS 330', key: 'cos-330', method: 're-focus', type: 'study', task: 'Switch focus to COS 330 exam prep.' }
             ]
         },

@@ -7,6 +7,7 @@
 const MOD_COLORS = {
     'cos-284': 'var(--blue)',
     'cos-330': 'var(--dark-blue)',
+    'wtw-224': 'var(--yellow)',
     'university': '#888'
 };
 
@@ -351,6 +352,7 @@ function renderEditForm(e, dateStr) {
         { val: '', label: 'None' },
         { val: 'cos-284', label: 'COS 284' },
         { val: 'cos-330', label: 'COS 330' },
+        { val: 'wtw-224', label: 'WTW 224' },
     ];
 
     const typeOptions = types.map(t =>
